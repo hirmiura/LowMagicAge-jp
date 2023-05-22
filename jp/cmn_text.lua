@@ -628,13 +628,13 @@ With the house rule on:
 DC = 10 + potential attacker's level + potential attacker's highest ability modifier + spell level.]]
 
 s_fgt_def		="Fighting Defensively"		s_fgt_def_d	="You can choose to fight defensively when attacking. If you do so, you take a –4 penalty on all attacks in a round to gain a +2 dodge bonus to AC for the same round."
-s_cbt_exp		="Combat Expertise"			s_cbt_exp_d	=[[When you use the attack action or the full attack action in melee, you can take a penalty on your attack roll and add the same number as a dodge bonus to your Armor Class.
+s_cbt_exp		="《攻防一体》"			s_cbt_exp_d	=[[近接攻撃において攻撃アクションまたは全力攻撃アクションを使用するとき、攻撃ロールにペナルティを受け、同じ数値を自分のアーマークラスに回避ボーナスとして加算することができる。
 
-This number is up to 5 and may not exceed your base attack bonus.
+この数値は最大5までで、基本攻撃ボーナスを超えることはできない。
 
-The changes to attack rolls and Armor Class last until your next action.
+攻撃ロールとアーマークラスの変化は、次のアクションまで続く。
 
-<b>Normal: </b>A character without the Combat Expertise feat can fight defensively while using the attack or full attack action to take a –4 penalty on attack rolls and gain a +2 dodge bonus to Armor Class.]]
+<b>通常: </b>《攻防一体》の特技を持たないキャラクターは、攻撃アクションまたは全力攻撃アクションを使用しながら防御的に戦うことで、攻撃ロールに-4のペナルティを受け、アーマークラスに+2の回避ボーナスを獲得することができる。]]
 
 
 -- z_cir_bns	circumstance bonuses
