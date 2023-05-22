@@ -141,8 +141,8 @@ lwr_lmt				="フローティングの下限"
 upr_lmt				="フローティングの上限"
 apply_to_boss		="ボス戦にも適用"
 
-s_cfg_mob_pty_sz	="Monster Party Size"
-s_cfg_mob_pty_sz_d	="By default, the number of monsters per encounter is automatically configured based on the number of player characters for the best battle experience.\n\nThis option can configure the number of monsters according to the specified number of player characters for special battle experience such as 1 vs. 10.\n\nHowever, this may cause the battle too difficult or too easy, so only for experienced players."
+s_cfg_mob_pty_sz     ="モンスター・パーティーサイズ"
+s_cfg_mob_pty_sz_d   ="デフォルトでは、最高の戦闘体験を実現するために、エンカウントごとのモンスターの数はプレイヤー キャラクターの数に基づいて自動的に設定されます。\n\n指定したプレイヤーキャラクター数に応じてモンスターの数を設定し、1対10などの特殊な戦闘体験を行うことができます。\n\nただし、これにより戦闘が難しすぎたり、簡単すぎたりする可能性があるため、経験豊富なプレイヤーのみに限定してください。"
 s_base_on_my_pty	="Base on player party"
 
 -- z_arn_upd
@@ -960,7 +960,7 @@ uranks={
 
 エリートモンスターは"ミニボス"を生み出す。例えば、エリートオーガがオーガの群れを従えたり、二体のエリートノールがノールの一群を導いたりする。]]},
 
- 
+
 {n="ソロ"		,d=[[ソロモンスターは、同一レベルのPCグループとの1対1の対戦相手です。
 
 それらは実際にはモンスター群として機能し、より多くのヒットポイントを持ち、より多くのダメージを与える。
