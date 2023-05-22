@@ -1100,6 +1100,9 @@ plyr_no_ch			="プレイヤーのクリティカルヒット時、ダメージ�
 enmy_no_ch			="敵のクリティカルヒット時、ダメージを増加しない"
 s_elit_imm_seckill	="Elite monsters are immune to instant kill effects"
 s_solo_imm_seckill	="Solo monsters are immune to instant kill effects"
+s_mon_adv_wpns		="Monsters have enchanted weapons"
+s_mon_adv_amrs		="Monsters have enchanted armor"
+s_mon_adv_wonds		="Monsters have more wondrous items"
 enmy_ai				="敵ＡＩ"
 
 s_fmt				="フォーメーション"
