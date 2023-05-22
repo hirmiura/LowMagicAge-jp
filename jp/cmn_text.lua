@@ -628,13 +628,13 @@ With the house rule on:
 DC = 10 + potential attacker's level + potential attacker's highest ability modifier + spell level.]]
 
 s_fgt_def		="Fighting Defensively"		s_fgt_def_d	="You can choose to fight defensively when attacking. If you do so, you take a –4 penalty on all attacks in a round to gain a +2 dodge bonus to AC for the same round."
-s_cbt_exp		="Combat Expertise"			s_cbt_exp_d	=[[When you use the attack action or the full attack action in melee, you can take a penalty on your attack roll and add the same number as a dodge bonus to your Armor Class.
+s_cbt_exp		="《攻防一体》"			s_cbt_exp_d	=[[近接攻撃において攻撃アクションまたは全力攻撃アクションを使用するとき、攻撃ロールにペナルティを受け、同じ数値を自分のアーマークラスに回避ボーナスとして加算することができる。
 
-This number is up to 5 and may not exceed your base attack bonus.
+この数値は最大5までで、基本攻撃ボーナスを超えることはできない。
 
-The changes to attack rolls and Armor Class last until your next action.
+攻撃ロールとアーマークラスの変化は、次のアクションまで続く。
 
-<b>Normal: </b>A character without the Combat Expertise feat can fight defensively while using the attack or full attack action to take a –4 penalty on attack rolls and gain a +2 dodge bonus to Armor Class.]]
+<b>通常: </b>《攻防一体》の特技を持たないキャラクターは、攻撃アクションまたは全力攻撃アクションを使用しながら防御的に戦うことで、攻撃ロールに-4のペナルティを受け、アーマークラスに+2の回避ボーナスを獲得することができる。]]
 
 
 -- z_cir_bns	circumstance bonuses
@@ -904,8 +904,8 @@ s_web_mov		="ウェブウォーキング"	s_web_mov_ench_d	="蜘蛛の糸 への
 s_hr				="ハウスルール"-- House Rules
 s_hr_d				="ハウスルールは、基本ルールの修正または拡張です。\n\n特に明記しない限り、ハウスルールは、プレイヤーキャラクターやモンスターを含む、ゲーム内のすべてのクリーチャーに適用されます。"
 s_hro				="オプションハウスルール"-- Optional House Rule
-s_hr_				="ハウスルール： "-- House Rule: 
-s_hr_opt			="オプションハウスルール： "-- Optional House Rule: 
+s_hr_				="ハウスルール： "-- House Rule:
+s_hr_opt			="オプションハウスルール： "-- Optional House Rule:
 s_hr_ori			="Original Rule Text (not used, for reference only):"
 s_hr_plyr_atk_mod	="When certain house rules are on (or when your party has characters created based on these house rules), a bonus or penalty will be applied to player characters' attack rolls."
 s_hr_plyr_def_mod	="When certain house rules are on (or when your party has characters created based on these house rules), a bonus or penalty will be applied to player characters' multiple defense abilities."
@@ -917,7 +917,7 @@ s_hr_rst			="Discard current modifications."
 s_hr_lma			="Set house rules based on default rules of Low Magic Age."
 s_hr_ogl			="Set house rules based on OGL/SRD 3.5 rules (i.e. uncheck all)."
 
-s_hr_low_abi		="Lower Abilities Compensation"	s_hr_low_abi_d	="+1 house rule bonus per 8 levels on a character's non highest abilities related rolls and values (attack rolls, saving throws, AC and spell DC, etc.), but the equivalent ability modifier does not exceed the highest ability modifier.\n\nSpecial: The bonus is reduced by 5 if the highest ability is Constitution. When a character's AC is limited by maximum dex bonus, the house rule bonus on its AC is reduced by 5."
+s_hr_low_abi		="下位アビリティ補償"	s_hr_low_abi_d	="キャラクターの最高能力以外の能力関連のロールや値（攻撃ロール、セービングスロー、ACや呪文のDCなど）に8レベルにつき+1ハウスルール・ボーナスを与えるが、同等の能力修正は最高能力修正値を超えない。\n\n特殊: 最も高い能力が耐久力である場合、ボーナスは5減少する。キャラクターのACが最大敏捷力ボーナスによって制限されている場合、そのACのハウスルール・ボーナスは5減少する。"
 s_hr_no_bsb			="change to + character level / 2"
 s_hr_no_bab			="change to + character level / 2"
 s_hr_no_bab_atks	="no extra attacks"
@@ -1486,7 +1486,7 @@ s_mus_hp			="Inspire Greatness"	s_mus_hp_d		=[[A bard of 9th level or higher wit
 
 To inspire greatness, a bard must sing and an ally must hear him sing. The effect lasts for as long as the ally hears the bard sing and for 5 rounds thereafter.
 
-A creature inspired with greatness gains 2 bonus Hit Dice (d10s), the commensurate number of temporary hit points (apply the target’s Constitution modifier, if any, to these bonus Hit Dice), a +2 competence bonus on attack rolls, and a +1 competence bonus on Fortitude saves. The bonus Hit Dice count as regular Hit Dice for determining the effect of spells that are Hit Dice dependant. 
+A creature inspired with greatness gains 2 bonus Hit Dice (d10s), the commensurate number of temporary hit points (apply the target’s Constitution modifier, if any, to these bonus Hit Dice), a +2 competence bonus on attack rolls, and a +1 competence bonus on Fortitude saves. The bonus Hit Dice count as regular Hit Dice for determining the effect of spells that are Hit Dice dependant.
 
 Inspire greatness is a mind-affecting ability.]]
 s_mus_def			="Inspire Heroics"		s_mus_def_d		=[[A bard of 15th level or higher with 18 or more ranks in a Perform skill can use music or poetics to inspire tremendous heroism in himself or a single willing ally within 30 feet. For every three bard levels the character attains beyond 15th, he can inspire heroics in one additional creature.
@@ -1955,11 +1955,11 @@ s_spl_k					= "Magical Darkness"
 s_bf_lit				= "Ambient illumination"
 s_show_precise_lit		= "Precise illumination area"
 
-s_hr_team_lit_t			= "When this house rule is on, all creatures are assumed to carry a light source, including animals that normally do not carry a light source."
-s_hr_team_lit			= "A light source carried by a creature provides illumination for its own side only"
-s_hr_lit_rng			= "Reduced radius of shadowy illumination by 1/4"
-s_hooded_lantern		= "Hooded Lantern"
-s_hooded_lantern_d		= "A hooded lantern has shuttered or hinged sides. It clearly illuminates a 30-foot radius and provides shadowy illumination in a 60-foot radius. It burns for 6 hours on a pint of oil."
+s_hr_team_lit_t			= "このハウスルールが適用されている場合、通常光源を持たない動物も含め、すべてのクリーチャーは光源を持つものとみなされる。"
+s_hr_team_lit			= "クリーチャーが携帯する光源は、自分の側だけに照明を提供する"
+s_hr_lit_rng			= "影のある照明の半径を1/4に減少"
+s_hooded_lantern		= "フード付きランタン"
+s_hooded_lantern_d		= "フード付きランタンは、側面がシャッターまたは蝶番で覆われています。半径30フィートの範囲をはっきりと照らし、半径60フィートの範囲を影のように照らします。1パイントのオイルで6時間燃焼します。"
 s_cover_lit				= "Cover/uncover light source"
 s_cover_lit_d			= "Cover or uncover the light/dark spell effect at the location or on the character."
 
@@ -1977,7 +1977,7 @@ s_darkvision			= "Darkvision"
 s_darkvision_d			= "Characters with darkvision can see in the dark. Darkvision is black and white only, but it is otherwise like normal sight. The presence of light does not spoil darkvision."
 s_darkvision_b			= "Characters with darkvision can see in the dark."
 
-s_hr_low_light_vision	= "Low-light vision treats shadowy illumination as bright illumination and cannot see farther"
+s_hr_low_light_vision	= "Low-light Visionは、影のある照明を明るい照明として扱い、遠くを見ることができない"
 s_low_light_vision		= "Low-light Vision"
 s_low_light_vision_d	= "Characters with low-light vision have eyes that are so sensitive to light that they can see twice as far as normal in dim light. Double the effective radius of bright light and of shadowy illumination for such characters. Low-light vision is color vision."
 s_low_light_vision_b	= "Characters with low-light vision can see twice as far as normal in dim light."
