@@ -904,8 +904,8 @@ s_web_mov		="ウェブウォーキング"	s_web_mov_ench_d	="蜘蛛の糸 への
 s_hr				="ハウスルール"-- House Rules
 s_hr_d				="ハウスルールは、基本ルールの修正または拡張です。\n\n特に明記しない限り、ハウスルールは、プレイヤーキャラクターやモンスターを含む、ゲーム内のすべてのクリーチャーに適用されます。"
 s_hro				="オプションハウスルール"-- Optional House Rule
-s_hr_				="ハウスルール： "-- House Rule: 
-s_hr_opt			="オプションハウスルール： "-- Optional House Rule: 
+s_hr_				="ハウスルール： "-- House Rule:
+s_hr_opt			="オプションハウスルール： "-- Optional House Rule:
 s_hr_ori			="Original Rule Text (not used, for reference only):"
 s_hr_plyr_atk_mod	="When certain house rules are on (or when your party has characters created based on these house rules), a bonus or penalty will be applied to player characters' attack rolls."
 s_hr_plyr_def_mod	="When certain house rules are on (or when your party has characters created based on these house rules), a bonus or penalty will be applied to player characters' multiple defense abilities."
@@ -917,7 +917,7 @@ s_hr_rst			="Discard current modifications."
 s_hr_lma			="Set house rules based on default rules of Low Magic Age."
 s_hr_ogl			="Set house rules based on OGL/SRD 3.5 rules (i.e. uncheck all)."
 
-s_hr_low_abi		="Lower Abilities Compensation"	s_hr_low_abi_d	="+1 house rule bonus per 8 levels on a character's non highest abilities related rolls and values (attack rolls, saving throws, AC and spell DC, etc.), but the equivalent ability modifier does not exceed the highest ability modifier.\n\nSpecial: The bonus is reduced by 5 if the highest ability is Constitution. When a character's AC is limited by maximum dex bonus, the house rule bonus on its AC is reduced by 5."
+s_hr_low_abi		="下位アビリティ補償"	s_hr_low_abi_d	="キャラクターの最高能力以外の能力関連のロールや値（攻撃ロール、セービングスロー、ACや呪文のDCなど）に8レベルにつき+1ハウスルール・ボーナスを与えるが、同等の能力修正は最高能力修正値を超えない。\n\n特殊: 最も高い能力が耐久力である場合、ボーナスは5減少する。キャラクターのACが最大敏捷力ボーナスによって制限されている場合、そのACのハウスルール・ボーナスは5減少する。"
 s_hr_no_bsb			="change to + character level / 2"
 s_hr_no_bab			="change to + character level / 2"
 s_hr_no_bab_atks	="no extra attacks"
@@ -1486,7 +1486,7 @@ s_mus_hp			="Inspire Greatness"	s_mus_hp_d		=[[A bard of 9th level or higher wit
 
 To inspire greatness, a bard must sing and an ally must hear him sing. The effect lasts for as long as the ally hears the bard sing and for 5 rounds thereafter.
 
-A creature inspired with greatness gains 2 bonus Hit Dice (d10s), the commensurate number of temporary hit points (apply the target’s Constitution modifier, if any, to these bonus Hit Dice), a +2 competence bonus on attack rolls, and a +1 competence bonus on Fortitude saves. The bonus Hit Dice count as regular Hit Dice for determining the effect of spells that are Hit Dice dependant. 
+A creature inspired with greatness gains 2 bonus Hit Dice (d10s), the commensurate number of temporary hit points (apply the target’s Constitution modifier, if any, to these bonus Hit Dice), a +2 competence bonus on attack rolls, and a +1 competence bonus on Fortitude saves. The bonus Hit Dice count as regular Hit Dice for determining the effect of spells that are Hit Dice dependant.
 
 Inspire greatness is a mind-affecting ability.]]
 s_mus_def			="Inspire Heroics"		s_mus_def_d		=[[A bard of 15th level or higher with 18 or more ranks in a Perform skill can use music or poetics to inspire tremendous heroism in himself or a single willing ally within 30 feet. For every three bard levels the character attains beyond 15th, he can inspire heroics in one additional creature.
