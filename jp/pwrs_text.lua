@@ -474,7 +474,7 @@ The warded creature gains resistance to blows, cuts, stabs, and slashes. The sub
 ]]
 
 pwr_good_hope_d=[[
-This spell instills powerful hope in the subjects. Each affected creature gains a +2 morale bonus on saving throws, attack rolls, ability checks, skill checks, and weapon damage rolls.
+この呪文は、対象者に強力な希望を植え付ける。影響を受けた各クリーチャーは、セービング・スロー、攻撃ロール、能力チェック、スキル・チェック、武器ダメージ・ロールに+2士気ボーナスを得る。
 ]]
 
 pwr_crushing_despair_d=[[
