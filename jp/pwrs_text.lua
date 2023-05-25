@@ -620,7 +620,7 @@ This spell fills a single subject with a feeling of horrible dread that causes i
 ]]
 
 pwr_sound_burst_d=[[
-You blast an area with a tremendous cacophony. Every creature in the area takes 1d8 points of sonic damage per three caster levels and must succeed on a Fortitude save to avoid being stunned for 1 round. 
+You blast an area with a tremendous cacophony. Every creature in the area takes 1d8 points of sonic damage per three caster levels and must succeed on a Fortitude save to avoid being stunned for 1 round.
 Creatures that cannot hear are not stunned but are still damaged.
 ]]
 
@@ -791,14 +791,14 @@ An undead creature struck by the ray gains 2d4x5 temporary hit points.
 ]]
 
 pwr_haste_d=[[
-The transmuted creatures move and act more quickly than normal.
+変質されたクリーチャーは、通常よりも素早く動き、行動する。
 
-This extra speed has several effects:
-- Makes one extra attack when making a full attack.
-- The movement speed increase by 30 feet enhancement bonus, to a maximum of twice the normal speed.
-- Gains a +1 bonus on attack rolls and a +1 dodge bonus to AC and Reflex saves.
+この追加スピードにはいくつかの効果がある：
+- 全力攻撃時に1回の追加攻撃を行う。
+- 移動速度が30フィート強化ボーナスで増加し、最大で通常の2倍の速度になる。
+- 攻撃ロールに+1ボーナス、ACと反射セーヴに+1ドッジボーナスを獲得する。
 
-Multiple haste effects don't stack. Haste dispels slow.
+複数のヘイスト効果はスタックしない。ヘイストはスローを払拭する。
 ]]
 
 pwr_slow_d=[[
@@ -1090,7 +1090,7 @@ pwr_blink_d=[[
 You \"blink\" back and forth between the Material Plane and the Ethereal Plane. You look as though you're winking in and out of reality very quickly and at random.
 
 Physical attacks against you have a 50% miss chance. Your attacks have a 20% miss chance. You strike as an invisible creature (with a +2 bonus on attack rolls), denying your target any Dexterity bonus to AC.
- 
+
 Individually targeted spells against you has a 50% chance to fail. Your spells have a 20% chance to fail.
 
 You take only half damage from area attacks or falling.
@@ -1663,7 +1663,7 @@ pwrs_text={
 [pwr_ray_of_exhaustion				]={n="Ray of Exhaustion					",d=pwr_ray_of_exhaustion_d					},
 [pwr_waves_of_fatigue				]={n="Waves of Fatigue					",d=pwr_waves_of_fatigue_d					},
 [pwr_waves_of_exhaustion			]={n="Waves of Exhaustion				",d=pwr_waves_of_exhaustion_d				},
-[pwr_haste							]={n="Haste								",d=pwr_haste_d								},
+[pwr_haste							]={n="ヘイスト							",d=pwr_haste_d								},
 [pwr_slow							]={n="Slow								",d=pwr_slow_d								},
 [pwr_flesh_to_stone					]={n="Flesh to Stone					",d=pwr_flesh_to_stone_d					},
 [pwr_stone_to_flesh					]={n="Stone to Flesh					",d=pwr_stone_to_flesh_d					},
