@@ -1928,8 +1928,8 @@ conds_text={
 
 [cond_warm_shield		]={n="Warm Shield			",d=pwr_fire_shield_f},
 [cond_chill_shield		]={n="Chill Shield			",d=pwr_fire_shield_c},
-[cond_prayer_favor		]={n="Prayer: Favor			",d="Special favor is upon you. You gain a +1 luck bonus on attack rolls, weapon damage rolls, saves, and skill checks."},
-[cond_prayer_disfavor	]={n="Prayer: Disfavor		",d="Special disfavor is upon you. You take a -1 penalty on attack rolls, weapon damage rolls, saves, and skill checks."},
+[cond_prayer_favor		]={n="Prayer: Favor			",d="特別な恩恵があなたに与えられる。攻撃ロール、武器ダメージロール、セーブ、スキルチェックに+1幸運ボーナスを得ることができる。"},
+[cond_prayer_disfavor	]={n="Prayer: Disfavor		",d="特別な不運があなたを襲う。攻撃ロール、武器ダメージロール、セーブ、スキルチェックに-1ペナルティを受ける。"},
 [cond_curse_penalty		]={n="Curse: Penalty		",d="-4 penalty on attack rolls, saves, ability checks, and skill checks."},
 [cond_curse_disorder	]={n="Curse: Disorder		",d="Has a 50% chance to act normally; otherwise, takes no action."},
 [cond_comatose			]={n="Comatose				",d="The subject falls into a catatonic coma. During this time, it cannot be awakened by any means short of dispelling the effect. This is not a sleep effect, and thus elves are not immune to it."},-- The subject falls into a catatonic coma for 10 minutes per caster level
