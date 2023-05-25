@@ -378,7 +378,7 @@ pwr_mass_eagles_splendor_d="複数のクリーチャーに影響を与えるこ�
 
 pwr_true_strike_d="次の攻撃の間に、即座の将来についての一時的で直感的な洞察を得ることができます。あなたの次の攻撃ロールは +20の洞察ボーナスを得る。"
 pwr_divine_favor_d="神の強さと知恵を頼りに、you gain a +1 luck bonus on attack and weapon damage rolls for every three caster levels you have (最低でも +1、最大で +3).\n\nThe attack rolls include attack rolls of weapon attacks, combat maneuvers, and touch attacks of spells."--pwr_divine_favor_d="神の強さと知恵を頼りに、３レベル毎に武器攻撃とダメージロールに +1 のボーナス(最低でも +1、最大で +3)を得る。"	--pwr_divine_favor_d="Calling upon the strength and wisdom of a deity, you gain a +1 luck bonus on attack and weapon damage rolls for every three caster levels you have (at least +1, maximum +3).\n\nThe attack rolls include attack rolls of weapon attacks, combat maneuvers, and touch attacks of spells."
-pwr_divine_power_d="自身の信仰対象から神性な力を呼び寄せ、戦闘に関する力と技を引き込む。 \n\nYour base attack bonus equals your character level (which may give you extra attacks), you gain a +6 enhancement bonus to Strength, and you gain 1 temporary hit point per caster level."
+pwr_divine_power_d="自身の信仰対象から神性な力を呼び寄せ、戦闘に関する力と技を引き込む。 \n\n基本攻撃ボーナスはキャラクター・レベルに等しく（追加攻撃を与える場合もある）、【筋力】に+6の強化ボーナスを得て、キャスター・レベルごとに一時的にヒット・ポイントを1つ得る。"
 pwr_heroism_d="戦場での偉大な勇気と高い士気を与える。ターゲットは攻撃ロール、セーヴに +2 の士気ボーナスを得る。"
 pwr_greater_heroism_d="ヒロイズムと同様だが、与えるボーナスは+4になる。さらに、対象は恐怖に対する完全耐性を得て、あなたの術者レベルに等しい一時的ヒット・ポイントを得る。"
 pwr_shield_of_faith_d="接触したクリーチャーの周りに、攻撃を避ける揺らめく魔法のフィールドを作成します。クリーチャーはACに +2の反発ボーナスを得ます。6レベル毎に+1のボーナス(18レベルで最大+5まで与えられます)。"
@@ -474,7 +474,7 @@ The warded creature gains resistance to blows, cuts, stabs, and slashes. The sub
 ]]
 
 pwr_good_hope_d=[[
-This spell instills powerful hope in the subjects. Each affected creature gains a +2 morale bonus on saving throws, attack rolls, ability checks, skill checks, and weapon damage rolls.
+この呪文は、対象者に強力な希望を植え付ける。影響を受けた各クリーチャーは、セービング・スロー、攻撃ロール、能力チェック、スキル・チェック、武器ダメージ・ロールに+2士気ボーナスを得る。
 ]]
 
 pwr_crushing_despair_d=[[
@@ -723,15 +723,15 @@ Daylight brought into an area of deeper darkness (or vice versa) is temporarily 
 ]]
 
 pwr_bless_d=[[
-Bless fills your allies with courage. Each ally gains a +1 morale bonus on attack rolls and on saving throws against fear effects.
+Blessはあなたの味方を勇気で満たす。各味方は攻撃ロールと恐怖効果に対するセービングスローに+1士気ボーナスを得る。
 ]]
 
 pwr_bane_d=[[
-Bane fills your enemies with fear and doubt. Each affected creature takes a -1 penalty on attack rolls and a -1 penalty on saving throws against fear effects.
+Baneはあなたの敵を恐怖と疑心暗鬼で満たす。影響を受けたクリーチャーはそれぞれ、攻撃ロールに-1ペナルティ、恐怖効果に対するセービングスローに-1ペナルティを受ける。
 ]]
 
 pwr_prayer_d=[[
-You bring special favor upon yourself and your allies while bringing disfavor to your enemies. You and your each of your allies gain a +1 luck bonus on attack rolls, weapon damage rolls, saves, and skill checks, while each of your foes takes a -1 penalty on such rolls.
+自分と味方に特別な恩恵をもたらし、敵に不利な状況をもたらす。あなたとあなたの味方は、攻撃ロール、武器ダメージロール、セーブ、スキルチェックに+1の幸運ボーナスを得るが、あなたの敵はそれぞれそれらのロールに-1のペナルティを受ける。
 ]]
 
 pwr_shield_other_d=[[
@@ -1928,8 +1928,8 @@ conds_text={
 
 [cond_warm_shield		]={n="Warm Shield			",d=pwr_fire_shield_f},
 [cond_chill_shield		]={n="Chill Shield			",d=pwr_fire_shield_c},
-[cond_prayer_favor		]={n="Prayer: Favor			",d="Special favor is upon you. You gain a +1 luck bonus on attack rolls, weapon damage rolls, saves, and skill checks."},
-[cond_prayer_disfavor	]={n="Prayer: Disfavor		",d="Special disfavor is upon you. You take a -1 penalty on attack rolls, weapon damage rolls, saves, and skill checks."},
+[cond_prayer_favor		]={n="Prayer: Favor			",d="特別な恩恵があなたに与えられる。攻撃ロール、武器ダメージロール、セーブ、スキルチェックに+1幸運ボーナスを得ることができる。"},
+[cond_prayer_disfavor	]={n="Prayer: Disfavor		",d="特別な不運があなたを襲う。攻撃ロール、武器ダメージロール、セーブ、スキルチェックに-1ペナルティを受ける。"},
 [cond_curse_penalty		]={n="Curse: Penalty		",d="-4 penalty on attack rolls, saves, ability checks, and skill checks."},
 [cond_curse_disorder	]={n="Curse: Disorder		",d="Has a 50% chance to act normally; otherwise, takes no action."},
 [cond_comatose			]={n="Comatose				",d="The subject falls into a catatonic coma. During this time, it cannot be awakened by any means short of dispelling the effect. This is not a sleep effect, and thus elves are not immune to it."},-- The subject falls into a catatonic coma for 10 minutes per caster level
