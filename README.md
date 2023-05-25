@@ -9,3 +9,8 @@ en フォルダは翻訳作業中の対比と、バージョンアップ時の�
 [DnD日本語版公式 対訳語リスト](https://hobbyjapan.co.jp/dd_old/support/english.html)  
 [DnD日本語版公式 第3版→第3.5版　主な用語変更・訳語変更](https://hobbyjapan.co.jp/dd_old/errata/phb3.5_dc.html)  
 [DnD日本語版公式 d20モダン対訳語リスト](https://hobbyjapan.co.jp/dd_old/errata/d20modern_taiyaku.html)  
+
+## オリジナルとの差分
+
+[公式v0.91.62との 3-dot diff](https://github.com/hirmiura/LowMagicAge-jp/compare/LMA_v0.91.62...HEAD)  
+[公式v0.91.62との 2-dot diff](https://github.com/hirmiura/LowMagicAge-jp/compare/LMA_v0.91.62..HEAD)  
