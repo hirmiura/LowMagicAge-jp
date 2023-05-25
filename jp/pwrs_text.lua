@@ -723,11 +723,11 @@ Daylight brought into an area of deeper darkness (or vice versa) is temporarily 
 ]]
 
 pwr_bless_d=[[
-Bless fills your allies with courage. Each ally gains a +1 morale bonus on attack rolls and on saving throws against fear effects.
+Blessはあなたの味方を勇気で満たす。各味方は攻撃ロールと恐怖効果に対するセービングスローに+1士気ボーナスを得る。
 ]]
 
 pwr_bane_d=[[
-Bane fills your enemies with fear and doubt. Each affected creature takes a -1 penalty on attack rolls and a -1 penalty on saving throws against fear effects.
+Baneはあなたの敵を恐怖と疑心暗鬼で満たす。影響を受けたクリーチャーはそれぞれ、攻撃ロールに-1ペナルティ、恐怖効果に対するセービングスローに-1ペナルティを受ける。
 ]]
 
 pwr_prayer_d=[[
