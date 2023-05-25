@@ -731,7 +731,7 @@ Baneはあなたの敵を恐怖と疑心暗鬼で満たす。影響を受けた�
 ]]
 
 pwr_prayer_d=[[
-You bring special favor upon yourself and your allies while bringing disfavor to your enemies. You and your each of your allies gain a +1 luck bonus on attack rolls, weapon damage rolls, saves, and skill checks, while each of your foes takes a -1 penalty on such rolls.
+自分と味方に特別な恩恵をもたらし、敵に不利な状況をもたらす。あなたとあなたの味方は、攻撃ロール、武器ダメージロール、セーブ、スキルチェックに+1の幸運ボーナスを得るが、あなたの敵はそれぞれそれらのロールに-1のペナルティを受ける。
 ]]
 
 pwr_shield_other_d=[[
