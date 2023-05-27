@@ -908,25 +908,25 @@ A banishment spell is a more powerful version of the dismissal spell. It enables
 ]]
 
 pwr_lesser_restoration_d=[[
-Lesser restoration dispels any magical effects reducing one of the subject's ability scores or cures 1d4 points of temporary ability damage to one of the subject's ability scores.
+レッサー・レストレーションは、対象者の能力値1つを低下させる魔法効果を解呪するか、対象者の能力値1つに対する一時的な能力ダメージを1d4点回復させる。
 
-It also eliminates any fatigue suffered by the character, and improves an exhausted condition to fatigued.
+また、キャラクターが受けている疲労を解消し、過労状態を疲労状態に改善することができる。
 ]]
 
 pwr_restoration_d=[[
-This spell functions like lesser restoration, except that it also dispels negative levels.
+この魔法は、負のレベルも解呪することを除けば、レッサー・レストレーションと同様の機能を持つ。
 
-Restoration cures all temporary ability damage, and it restores all points permanently drained from a single ability score.
+レストレーションは一時的な能力ダメージをすべて治し、能力値1つに対する能力値吸収をすべて回復させる。
 
-It also eliminates any fatigue or exhaustion suffered by the target.
+また、対象が受けた疲労や過労も解消される。
 ]]
 
 pwr_greater_restoration_d=[[
-This spell functions like lesser restoration, except that it also dispels negative levels.
+この魔法は、負のレベルも解呪することを除けば、レッサー・レストレーションと同様の機能を持つ。
 
-Greater restoration dispels all magical effects penalizing the creature's abilities, cures all temporary ability damage, and restores all points permanently drained from all ability scores.
+グレーター・レストレーションは、そのクリーチャーの能力にペナルティを与えるすべての魔法効果を払い、すべての一時的な能力ダメージを治し、すべての能力値に対する能力値吸収をすべて回復させる。
 
-It also eliminates fatigue and exhaustion, and removes all forms of insanity, confusion, and similar mental effects.
+また、疲労や過労を取り除き、あらゆる狂気や混乱、それに類する精神的な影響を取り除く。
 ]]
 
 pwr_delay_poison_d=[[
@@ -1675,9 +1675,9 @@ pwrs_text={
 [pwr_glitterdust					]={n="Glitterdust						",d=pwr_glitterdust_d						},
 [pwr_stinking_cloud					]={n="Stinking Cloud					",d=pwr_stinking_cloud_d					},
 [pwr_sleet_storm					]={n="Sleet Storm						",d=pwr_sleet_storm_d						},
-[pwr_lesser_restoration				]={n="Lesser Restoration				",d=pwr_lesser_restoration_d				},
-[pwr_restoration					]={n="Restoration						",d=pwr_restoration_d						},
-[pwr_greater_restoration			]={n="Greater Restoration				",d=pwr_greater_restoration_d				},
+[pwr_lesser_restoration				]={n="レッサー・レストレーション		",d=pwr_lesser_restoration_d				},
+[pwr_restoration					]={n="レストレーション					",d=pwr_restoration_d						},
+[pwr_greater_restoration			]={n="グレーター・レストレーション		",d=pwr_greater_restoration_d				},
 [pwr_delay_poison					]={n="Delay Poison						",d=pwr_delay_poison_d						},
 [pwr_neutralize_poison				]={n="Neutralize Poison					",d=pwr_neutralize_poison_d					},
 [pwr_remove_paralysis				]={n="Remove Paralysis					",d=pwr_remove_paralysis_d					},
