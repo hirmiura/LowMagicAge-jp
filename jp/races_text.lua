@@ -9,14 +9,14 @@ races_text={
 
 [race_hum		]={n=s_hum	,d=s_hum_d
 ,d_fav_cls=[[
-Humans are the most adaptable and flexible race. They are capable of any class.
+人間は最も順応性が高く、柔軟な種族である。彼らはどんなクラスにも対応できる。
 ]]
 ,d_traits=[[
-<b>ボーナス特技：</b> 1レベルで特技を1つ追加。
-<c=twc>Humans are quick to master specialized tasks and varied in their talents.</c>
+<b>ボーナス特技： </b>1レベルで特技を1つ追加。
+<c=twc>人間は専門的な仕事を素早くこなし、その才能も多様である。</c>
 
-<b>ボーナス技能：</b>4 extra skill points at 1st level and 1 extra skill point at each additional level.
-<c=twc>Humans are versatile and capable.</c>
+<b>ボーナス技能： </b>1レベルで4点の追加技能ポイント、さらに各レベルで1点の追加技能ポイント。
+<c=twc>人間は多才で有能である。</c>
 ]]
 ,d_langs=[[
 <b>Automatic Language: </b>Common.

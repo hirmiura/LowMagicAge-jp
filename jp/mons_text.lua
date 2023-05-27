@@ -3181,14 +3181,14 @@ s_bison			="Bison"
 s_rhinoceros	="Rhinoceros"
 s_elephant		="Elephant"
 
-s_monkey		="Monkey"
-s_baboon		="Baboon"
-s_ape			="Ape"
-s_ape_x			="Dire Ape"
+s_monkey		="モンキー"
+s_baboon		="ヒヒ"
+s_ape			="エイプ"
+s_ape_x			="ダイア・エイプ"
 
-s_bear_k		="Black Bear"
+s_bear_k		="ブラックベア"
 s_bear_y		="ブラウンベア"--"Brown Bear"
-s_bear_w		="Polar Bear"
+s_bear_w		="ポーラーベア"
 s_bear_x		="ダイア・ベア"--"Dire Bear"
 
 s_bat			="Bat"
@@ -3211,11 +3211,11 @@ s_lizard_g		="Monitor Lizard"
 s_croc			="Crocodile"
 s_croc_g		="Giant Crocodile"
 
-s_dino_dein		="Deinonychus"
-s_dino_mega		="Megaraptor"
-s_dino_elas		="Elasmosaurus"
-s_dino_tric		="Triceratops"
-s_dino_tyra		="Tyrannosaurus"
+s_dino_dein		="デイノニクス"
+s_dino_mega		="メガラプトル"
+s_dino_elas		="エラスモサウルス"
+s_dino_tric		="トリケラトプス"
+s_dino_tyra		="ティラノサウルス"
 
 s_manta_ray		="Manta Ray"
 s_octopus		="Octopus"
@@ -3313,7 +3313,7 @@ s_ghost_d	=[[Ghosts are the spectral remnants of intelligent beings who, for one
 
 A ghost greatly resembles its corporeal form in life, but in some cases the spiritual form is somewhat altered.]]
 
-s_ghoul		="Ghoul"
+s_ghoul		="グール"
 s_ghoul_c	="This humanoid creature has long, sharp teeth, and its pallid flesh is stretched tightly over its starved frame."
 s_ghoul_d	=[[Ghouls are undead that haunt graveyards and eat corpses. Legends hold that the first ghouls were either cannibalistic humans whose unnatural hunger dragged them back from death or humans who in life fed on the rotting remains of their kin and died (and were reborn) from the foul disease—the true source of these undead scavengers is unclear.
 
