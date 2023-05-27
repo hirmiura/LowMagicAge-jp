@@ -3186,9 +3186,9 @@ s_baboon		="ヒヒ"
 s_ape			="エイプ"
 s_ape_x			="ダイア・エイプ"
 
-s_bear_k		="Black Bear"
+s_bear_k		="ブラックベア"
 s_bear_y		="ブラウンベア"--"Brown Bear"
-s_bear_w		="Polar Bear"
+s_bear_w		="ポーラーベア"
 s_bear_x		="ダイア・ベア"--"Dire Bear"
 
 s_bat			="Bat"
