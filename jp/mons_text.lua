@@ -3313,7 +3313,7 @@ s_ghost_d	=[[Ghosts are the spectral remnants of intelligent beings who, for one
 
 A ghost greatly resembles its corporeal form in life, but in some cases the spiritual form is somewhat altered.]]
 
-s_ghoul		="Ghoul"
+s_ghoul		="グール"
 s_ghoul_c	="This humanoid creature has long, sharp teeth, and its pallid flesh is stretched tightly over its starved frame."
 s_ghoul_d	=[[Ghouls are undead that haunt graveyards and eat corpses. Legends hold that the first ghouls were either cannibalistic humans whose unnatural hunger dragged them back from death or humans who in life fed on the rotting remains of their kin and died (and were reborn) from the foul disease—the true source of these undead scavengers is unclear.
 
