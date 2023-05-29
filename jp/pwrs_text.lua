@@ -54,9 +54,9 @@ pwr_tw_d=[[
 ]]
 pwr_tw1_n="《二刀流強化》"
 pwr_tw1_d=[[
-In addition to the standard single extra attack you get with an off-hand weapon, you get a second attack with it, albeit at a –5 penalty.
+オフ・ハンド武器で得られる標準的な1回の追加攻撃に加えて、-5ペナルティではあるが、2回目の攻撃を得ることができる。
 
-<b>Special: </b>A 6th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+<b>特殊: </b>二刀流の戦闘スタイルを選択した6レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持っているものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。
 ]]
 pwr_tw2_n="《上級二刀流》"
 pwr_tw2_d=[[
