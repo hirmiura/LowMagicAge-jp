@@ -388,9 +388,9 @@ pwr_expeditious_retreat_d="速度を+６スクエア上昇させる。"
 pwr_protection_from_spells_d="対象は呪文に対して、+8の抵抗ボーナスを得る。"
 pwr_death_ward_d="対象は全ての死に関する呪文に対する完全耐性を得る。魔法的な即死効果、あらゆる負のエネルギーに関する効果が該当する。"
 
-s_fear1d	="リムーヴ・フィアー"	s_fear1d_u	="+4 morale bonus against fear effects\nリムーヴ・フィアー 効果"	s_fear1d_d	=[[You instill courage in the subject, granting it a +4 morale bonus against fear effects for 10 minutes.
+s_fear1d	="リムーヴ・フィアー"	s_fear1d_u	="恐怖効果に対して+4士気ボーナス\nリムーヴ・フィアー 効果"	s_fear1d_d	=[[対象者に勇気を与え、10分間、恐怖効果に対して+4の士気ボーナスを付与する。
 
-If the subject is under the influence of a fear effect when receiving the spell, that effect is suppressed for the duration of the spell.]]
+この呪文を受けたとき、対象が恐怖効果の影響下にある場合、その効果は呪文の持続時間中抑制される。]]
 s_fear1		="コーズ・フィアー"	s_fear1_d	=[[The affected creature becomes frightened for 1d4 rounds.
 
 If the subject succeeds on a Will save, it is shaken for 1 round.]]
