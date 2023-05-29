@@ -470,7 +470,7 @@ Waves of negative energy render all living creatures in the spell's area fatigue
 ]]
 
 pwr_stoneskin_d=[[
-The warded creature gains resistance to blows, cuts, stabs, and slashes. The subject gains damage reduction 10/adamantine per 5 caster levels. Once the spell has prevented a total of 10 points of damage per caster level, it is discharged.
+結界を張ったクリーチャーは打撃、切り傷、刺し傷、斬り傷に対する耐性を得ることができる。対象はキャスター・レベル5につきアダマンティン/10のダメージ軽減を得る。キャスター・レベルあたり合計10ポイントのダメージを防いだら、この呪文は解除される。
 ]]
 
 pwr_good_hope_d=[[
@@ -1686,7 +1686,7 @@ pwrs_text={
 [pwr_remove_curse					]={n="Remove Curse						",d=pwr_remove_curse_d						},
 [pwr_shield_other					]={n="Shield Other						",d=pwr_shield_other_d						},
 [pwr_protection_from_arrows			]={n="Protection from Arrows			",d=pwr_protection_from_arrows_d			},
-[pwr_stoneskin						]={n="Stoneskin							",d=pwr_stoneskin_d							},
+[pwr_stoneskin						]={n="ストーンスキン					",d=pwr_stoneskin_d							},
 [pwr_resist_energy					]={n="Resist Energy						",d=pwr_resist_energy_d						},
 [pwr_protection_from_energy			]={n="Protection from Energy			",d=pwr_protection_from_energy_d			},
 [pwr_spell_resistance				]={n="Spell Resistance					",d=pwr_spell_resistance_d					},
