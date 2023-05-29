@@ -60,9 +60,9 @@ In addition to the standard single extra attack you get with an off-hand weapon,
 ]]
 pwr_tw2_n="《上級二刀流》"
 pwr_tw2_d=[[
-You get a third attack with your off-hand weapon, albeit at a –10 penalty.
+オフ・ハンド武器で3回目の攻撃を与えるが、ペナルティは-10である。
 
-<b>Special: </b>An 11th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+<b>特殊: </b>二刀流の戦闘スタイルを選択した11レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持つものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。
 ]]
 pwr_tw3_n="《二刀流戦闘皆伝》"
 pwr_tw3_d="二つの武器で戦っている場合の攻撃ロールへのペナルティを受けない。オフ・ハンドの武器が軽武器でなくてもペナルティを受けない。"
