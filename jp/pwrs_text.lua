@@ -1316,7 +1316,7 @@ pwrs_text={
 -- spl
 [pwr_spl_conj				]={n="《呪文熟練：召喚術》"			,d=spl_focus_d},
 [pwr_spl_summ1				]={n="《招来クリーチャー強化》"			,d="招来されたクリーチャーは【筋力】と【耐久力】に+4を得る。"},
-[pwr_spl_elem				]={n="Spell Focus: Evocation"		,d=spl_focus_d},
+[pwr_spl_elem				]={n="《呪文熟練：力術》"		,d=spl_focus_d},
 [pwr_spl_elem1				]={n=	"Evocation Specialization"	,d="+2 damage on Evocation spells."},
 [pwr_spl_ctrl				]={n="Spell Focus: Enchantment"		,d=spl_focus_d},
 [pwr_spl_dead				]={n="《呪文熟練：死霊術》"			,d=spl_focus_d},
