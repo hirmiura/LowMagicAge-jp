@@ -436,7 +436,7 @@ s1_me_wld_trap	= "No one lives here and yet you detect a note of danger in the a
 s1_me_wld_lock	= "You discovered a small locked container during the exploration. There's likely something useful inside. Do you want to try to open it?"
 s1_me_dgn_sup	= ""
 s1_me_dgn_trap	= "That's something suspicious ahead. You need to discover and eliminate the danger before moving on."
-s1_me_dgn_lock	= "You found a locked compartment concealed in the wall of the passageway."
+s1_me_dgn_lock	= "通路の壁に隠された鍵付きの小部屋を発見した。"
 
 s2_me_wld_sup	= "Better than nothing..."
 s2_me_wld_trap	= "As expected, you find something behind the trap..."

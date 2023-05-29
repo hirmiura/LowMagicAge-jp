@@ -37,7 +37,7 @@ The table below summarizes the interaction of all these factors.
 二刀流戦闘ペナルティ:
 <b>状況				利き手	オフ・ハンド</b>
 通常ペナルティ			-6	-10
-オフ・ハンドが軽武器			-4	-8
+オフ・ハンドが軽武器		-4	-8
 《二刀流戦闘》			-4	-4
 オフ・ハンドが軽武器で《二刀流戦闘》	-2	-2
 
@@ -50,19 +50,19 @@ pwr_tw_d=[[
 <b>通常：</b>]]..s_tw_d..[[
 
 
-<b>Special: </b>A 2nd-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+<b>特殊: </b>二刀流の戦闘スタイルを選択した2レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持つものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。
 ]]
 pwr_tw1_n="《二刀流強化》"
 pwr_tw1_d=[[
-In addition to the standard single extra attack you get with an off-hand weapon, you get a second attack with it, albeit at a –5 penalty.
+オフ・ハンド武器で得られる標準的な1回の追加攻撃に加えて、-5ペナルティではあるが、2回目の攻撃を得ることができる。
 
-<b>Special: </b>A 6th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+<b>特殊: </b>二刀流の戦闘スタイルを選択した6レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持っているものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。
 ]]
 pwr_tw2_n="《上級二刀流》"
 pwr_tw2_d=[[
-You get a third attack with your off-hand weapon, albeit at a –10 penalty.
+オフ・ハンド武器で3回目の攻撃を与えるが、ペナルティは-10である。
 
-<b>Special: </b>An 11th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+<b>特殊: </b>二刀流の戦闘スタイルを選択した11レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持つものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。
 ]]
 pwr_tw3_n="《二刀流戦闘皆伝》"
 pwr_tw3_d="二つの武器で戦っている場合の攻撃ロールへのペナルティを受けない。オフ・ハンドの武器が軽武器でなくてもペナルティを受けない。"
@@ -470,7 +470,7 @@ Waves of negative energy render all living creatures in the spell's area fatigue
 ]]
 
 pwr_stoneskin_d=[[
-The warded creature gains resistance to blows, cuts, stabs, and slashes. The subject gains damage reduction 10/adamantine per 5 caster levels. Once the spell has prevented a total of 10 points of damage per caster level, it is discharged.
+結界を張ったクリーチャーは打撃、切り傷、刺し傷、斬り傷に対する耐性を得ることができる。対象はキャスター・レベル5につきアダマンティン/10のダメージ軽減を得る。キャスター・レベルあたり合計10ポイントのダメージを防いだら、この呪文は解除される。
 ]]
 
 pwr_good_hope_d=[[
@@ -1316,7 +1316,7 @@ pwrs_text={
 -- spl
 [pwr_spl_conj				]={n="《呪文熟練：召喚術》"			,d=spl_focus_d},
 [pwr_spl_summ1				]={n="《招来クリーチャー強化》"			,d="招来されたクリーチャーは【筋力】と【耐久力】に+4を得る。"},
-[pwr_spl_elem				]={n="Spell Focus: Evocation"		,d=spl_focus_d},
+[pwr_spl_elem				]={n="《呪文熟練：力術》"		,d=spl_focus_d},
 [pwr_spl_elem1				]={n=	"Evocation Specialization"	,d="+2 damage on Evocation spells."},
 [pwr_spl_ctrl				]={n="Spell Focus: Enchantment"		,d=spl_focus_d},
 [pwr_spl_dead				]={n="《呪文熟練：死霊術》"			,d=spl_focus_d},
@@ -1686,7 +1686,7 @@ pwrs_text={
 [pwr_remove_curse					]={n="Remove Curse						",d=pwr_remove_curse_d						},
 [pwr_shield_other					]={n="Shield Other						",d=pwr_shield_other_d						},
 [pwr_protection_from_arrows			]={n="Protection from Arrows			",d=pwr_protection_from_arrows_d			},
-[pwr_stoneskin						]={n="Stoneskin							",d=pwr_stoneskin_d							},
+[pwr_stoneskin						]={n="ストーンスキン					",d=pwr_stoneskin_d							},
 [pwr_resist_energy					]={n="Resist Energy						",d=pwr_resist_energy_d						},
 [pwr_protection_from_energy			]={n="Protection from Energy			",d=pwr_protection_from_energy_d			},
 [pwr_spell_resistance				]={n="Spell Resistance					",d=pwr_spell_resistance_d					},
