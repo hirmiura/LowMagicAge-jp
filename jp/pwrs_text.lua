@@ -37,7 +37,7 @@ The table below summarizes the interaction of all these factors.
 二刀流戦闘ペナルティ:
 <b>状況				利き手	オフ・ハンド</b>
 通常ペナルティ			-6	-10
-オフ・ハンドが軽武器			-4	-8
+オフ・ハンドが軽武器		-4	-8
 《二刀流戦闘》			-4	-4
 オフ・ハンドが軽武器で《二刀流戦闘》	-2	-2
 
@@ -50,7 +50,7 @@ pwr_tw_d=[[
 <b>通常：</b>]]..s_tw_d..[[
 
 
-<b>Special: </b>A 2nd-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+<b>特殊: </b>二刀流の戦闘スタイルを選択した2レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持つものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。
 ]]
 pwr_tw1_n="《二刀流強化》"
 pwr_tw1_d=[[
