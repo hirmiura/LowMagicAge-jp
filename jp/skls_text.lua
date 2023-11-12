@@ -1007,7 +1007,7 @@ You may also accept this penalty in order to charge across a precarious surface;
 
 
 
-[skl_escape_artist	]={n="Escape Artist"	,b="Use this skill to slip out of bonds or manacles, wriggle through tight spaces, or escape the grip of a monster that grapples you."
+[skl_esc	]={n="Escape Artist"	,b="Use this skill to slip out of bonds or manacles, wriggle through tight spaces, or escape the grip of a monster that grapples you."
 ,d=[[
 <b>Check: </b>The table below gives the DCs to escape various forms of restraints.
 
@@ -1068,7 +1068,7 @@ If you have 5 or more ranks in Use Rope, you get a +2 bonus on Escape Artist che
 
 
 
-[skl_use_rope	]={n="Use Rope"	,b="With this skill, you can make firm knots, undo tricky knots, and bind prisoners with ropes."
+[skl_rope	]={n="Use Rope"	,b="With this skill, you can make firm knots, undo tricky knots, and bind prisoners with ropes."
 ,d=[[
 <b>Check: </b>Most tasks with a rope are relatively simple.
 
@@ -1136,7 +1136,7 @@ If you have 5 or more ranks in Escape Artist, you get a +2 bonus on checks made 
 
 
 
-[skl_sleight_of_hand	]={n="Sleight Of Hand"	,b="You can cut or lift a purse and hide it on your person, palm an unattended object, hide a light weapon in your clothing, or perform some feat of legerdemain with an object no larger than a hat or a loaf of bread."
+[skl_hand	]={n="Sleight Of Hand"	,b="You can cut or lift a purse and hide it on your person, palm an unattended object, hide a light weapon in your clothing, or perform some feat of legerdemain with an object no larger than a hat or a loaf of bread."
 ,d=[[
 <b>Check: </b>A DC 10 Sleight of Hand check lets you palm a coin-sized, unattended object.
 
@@ -1248,7 +1248,7 @@ A 13th-level ranger can attempt a Hide check in any sort of natural terrain, eve
 
 
 
-[skl_move_silently	]={n="Move Silently"	,b="You can use this skill to sneak up behind an enemy or to slink away without being noticed."
+[skl_mov	]={n="Move Silently"	,b="You can use this skill to sneak up behind an enemy or to slink away without being noticed."
 ,d=[[
 <b>Check: </b>Your Move Silently check is opposed by the Listen check of anyone who might hear you.
 
@@ -1389,7 +1389,7 @@ The Ride skill is a prerequisite for the feats Mounted Archery, Mounted Combat, 
 
 
 
-[skl_open_lock	]={n="〈解錠〉"	,b="南京錠、差し込み錠、巧妙な組み合わせ錠などの様々な錠を選んで、〈解錠〉が可能。"
+[skl_lock	]={n="〈解錠〉"	,b="南京錠、差し込み錠、巧妙な組み合わせ錠などの様々な錠を選んで、〈解錠〉が可能。"
 ,d=[[
 The effort requires at least a simple tool of the appropriate sort (a pick, pry bar, blank key, wire, or the like).
 
@@ -1419,7 +1419,7 @@ If you use masterwork thieves’ tools, you gain a +2 circumstance bonus on the 
 
 
 
-[skl_disable_device	]={n="〈装置無力化〉"	,b="Use this skill to disarm a trap, jam a lock (in either the open or closed position), or rig a wagon wheel to fall off."
+[skl_disdev	]={n="〈装置無力化〉"	,b="Use this skill to disarm a trap, jam a lock (in either the open or closed position), or rig a wagon wheel to fall off."
 ,hr=[[
 この技能を使えば様々な罠を解除することができる。
 ]]
@@ -1546,7 +1546,7 @@ A character with the Diligent feat gets a +2 bonus on Appraise checks.
 
 
 
-[skl_decipher_script	]={n="Decipher Script"	,b="Use this skill to piece together the meaning of ancient runes carved into the wall of an abandoned temple, to get the gist of an intercepted letter written in the Infernal language, to follow the directions on a treasure map written in a forgotten alphabet, or to interpret the mysterious glyphs painted on a cave wall."
+[skl_decipher	]={n="Decipher Script"	,b="Use this skill to piece together the meaning of ancient runes carved into the wall of an abandoned temple, to get the gist of an intercepted letter written in the Infernal language, to follow the directions on a treasure map written in a forgotten alphabet, or to interpret the mysterious glyphs painted on a cave wall."
 ,d=[[
 <b>Check: </b>You can decipher writing in an unfamiliar language or a message written in an incomplete or archaic form.
 
@@ -1627,7 +1627,7 @@ A barbarian can’t learn the Forgery skill unless he has learned to read and wr
 
 
 
-[skl_spellcraft	]={n="Spellcraft"	,b="Use this skill to identify spells as they are cast or spells already in place."
+[skl_splcft	]={n="Spellcraft"	,b="Use this skill to identify spells as they are cast or spells already in place."
 ,d=[[
 <b c=ty7>Spellcraft DC	Task</b>
 
@@ -2056,7 +2056,7 @@ If you have 5 or more ranks in Search, you get a +2 bonus on Survival checks to 
 
 
 
-[skl_sense_motive	]={n="〈真意看破〉"	,b="この技能を使って、誰かがあなたに対し〈はったり〉をかけているかを見分ける事ができる。Use this skill to tell when someone is bluffing you, to discern hidden messages in conversations, or to sense when someone is being magically influenced."
+[skl_sense	]={n="〈真意看破〉"	,b="この技能を使って、誰かがあなたに対し〈はったり〉をかけているかを見分ける事ができる。Use this skill to tell when someone is bluffing you, to discern hidden messages in conversations, or to sense when someone is being magically influenced."
 ,hr=[[
 〈真意看破〉判定が成功すると、〈はったり〉の影響を避けることができる（〈はったり〉技能を参照）。
 ]]
@@ -2446,7 +2446,7 @@ If you have the Deceitful feat, you get a +2 bonus on Disguise checks.
 
 
 
-[skl_gather_information	]={n="Gather Information"	,b="Use this skill for making contacts in an area, finding out local gossip, rumormongering, and collecting general information."
+[skl_info	]={n="Gather Information"	,b="Use this skill for making contacts in an area, finding out local gossip, rumormongering, and collecting general information."
 ,d=[[
 <b>Check: </b>An evening’s time, a few gold pieces for buying drinks and making friends, and a DC 10 Gather Information check get you a general idea of a city’s major news items, assuming there are no obvious reasons why the information would be withheld. The higher your check result, the better the information.
 
@@ -2470,7 +2470,7 @@ If you have the Investigator feat, you get a +2 bonus on Gather Information chec
 
 
 
-[skl_handle_animal	]={n="Handle Animal"	,b="Use this skill to drive a team of horses pulling a wagon over rough terrain, to teach a dog to guard, or to teach a tyrannosaur to “speak” on your command."
+[skl_anim	]={n="Handle Animal"	,b="Use this skill to drive a team of horses pulling a wagon over rough terrain, to teach a dog to guard, or to teach a tyrannosaur to “speak” on your command."
 ,d=[[
 <b>Check: </b>The DC depends on what you are trying to do.
 
@@ -2621,7 +2621,7 @@ A druid or ranger with no ranks in Handle Animal can use a Charisma check to han
 
 
 
-[skl_use_magic_device	]={n="Use Magic Device"	,b="Use this skill to activate magic devices, including scrolls and wands, that you could not otherwise activate."
+[skl_umd	]={n="Use Magic Device"	,b="Use this skill to activate magic devices, including scrolls and wands, that you could not otherwise activate."
 ,d=[[
 <b>Check: </b>You can use this skill to read a spell or to activate a magic item.
 
@@ -2748,7 +2748,7 @@ If you have 5 or more ranks in Use Magic Device, you get a +2 bonus to Spellcraf
 
 
 
-[skl_concentration	]={n="〈精神集中〉"	,b="You are particularly good at focusing your mind."
+[skl_conc	]={n="〈精神集中〉"	,b="You are particularly good at focusing your mind."
 ,hr=[[
 呪文の詠唱や〈治療〉技能の使用に伴う機会攻撃を誘発する度に〈精神集中〉判定を行わなければならない。
 
@@ -2841,7 +2841,7 @@ A character with the Combat Casting feat gets a +4 bonus on Concentration checks
 
 
 
-[skl_speak_language	]={n="Speak Language"	,b="Use this skill to learn more languages."
+[skl_lang	]={n="Speak Language"	,b="Use this skill to learn more languages."
 ,d=[[
 The Speak Language skill doesn’t work like other skills. Languages work as follows.
 
@@ -3204,23 +3204,23 @@ In addition to using the Perform skill, you can entertain people with sleight of
 ]]},
 
 [skl_k_nature				]={n="Nature						"},
-[skl_k_dungeoneering		]={n="Dungeoneering					"},
-[skl_k_geography			]={n="Geography						"},
+[skl_k_dgn		]={n="Dungeoneering					"},
+[skl_k_geo			]={n="Geography						"},
 [skl_k_local				]={n="Local							"},
-[skl_k_architecture			]={n="Architecture and engineering	"},
+[skl_k_arch			]={n="Architecture and engineering	"},
 [skl_k_nobility				]={n="Nobility and royalty			"},
 [skl_k_history				]={n="History						"},
 [skl_k_religion				]={n="Religion						"},
 [skl_k_arcana				]={n="Arcana						"},
-[skl_k_the_planes			]={n="The planes					"},
+[skl_k_plane			]={n="The planes					"},
 
 [skl_f_sing					]={n="Sing					"},
 [skl_f_dance				]={n="Dance					"},
 [skl_f_oratory				]={n="Oratory				"},
 [skl_f_string				]={n="String instruments	"},
 [skl_f_wind					]={n="Wind instruments		"},
-[skl_f_percussion			]={n="Percussion instruments"},
-[skl_f_keyboard				]={n="Keyboard instruments	"},
+[skl_f_perc			]={n="Percussion instruments"},
+[skl_f_key				]={n="Keyboard instruments	"},
 [skl_f_act					]={n="Act					"},
 [skl_f_comedy				]={n="Comedy				"},
 
@@ -3233,34 +3233,34 @@ In addition to using the Perform skill, you can entertain people with sleight of
 [skl_p_farm					]={n="農場主					"},
 [skl_p_herb					]={n="薬草商					"},
 [skl_p_cook					]={n="料理人					"},
-[skl_p_lumberjack			]={n="Lumberjack			"},
+[skl_p_lumb			]={n="Lumberjack			"},
 [skl_p_tanner				]={n="Tanner				"},
-[skl_p_apothecary			]={n="Apothecary			"},
+[skl_p_apo			]={n="Apothecary			"},
 [skl_p_miller				]={n="Miller				"},
 [skl_p_baker				]={n="Baker					"},
 [skl_p_brewer				]={n="Brewer				"},
-[skl_p_architect			]={n="Architect				"},
+[skl_p_arch			]={n="Architect				"},
 [skl_p_engineer				]={n="Engineer				"},
-[skl_p_siegeengineer		]={n="Siegeengineer			"},
+[skl_p_siege		]={n="Siegeengineer			"},
 [skl_p_merchant				]={n="Merchant				"},
-[skl_p_barrister			]={n="Barrister				"},
-[skl_p_courtesan			]={n="Courtesan				"},
+[skl_p_barr			]={n="Barrister				"},
+[skl_p_cour			]={n="Courtesan				"},
 [skl_p_clerk				]={n="Clerk					"},
-[skl_p_bookkeeper			]={n="Bookkeeper			"},
+[skl_p_bkkpr			]={n="Bookkeeper			"},
 [skl_p_scribe				]={n="Scribe				"},
-[skl_p_librarian			]={n="Librarian				"},
+[skl_p_lib			]={n="Librarian				"},
 [skl_p_boater				]={n="Boater				"},
 [skl_p_driver				]={n="Driver				"},
 [skl_p_teamster				]={n="Teamster				"},
-[skl_p_stablehand			]={n="Stablehand			"},
-[skl_p_stable_master		]={n="Stable Master			"},
+[skl_p_stbhnd			]={n="Stablehand			"},
+[skl_p_stbmst		]={n="Stable Master			"},
 [skl_p_porter				]={n="Porter				"},
 [skl_p_butcher				]={n="Butcher				"},
 [skl_p_gambler				]={n="Gambler				"},
 [skl_p_gardener				]={n="Gardener				"},
 [skl_p_guide				]={n="Guide					"},
 [skl_p_herder				]={n="Herder				"},
-[skl_p_innkeeper			]={n="Innkeeper				"},
+[skl_p_innkpr			]={n="Innkeeper				"},
 [skl_p_midwife				]={n="Midwife				"},
 [skl_p_sailor				]={n="Sailor				"},
 [skl_p_soldier				]={n="Soldier				"},
@@ -3270,27 +3270,27 @@ In addition to using the Perform skill, you can entertain people with sleight of
 [skl_c_amr					]={n="防具製作				"},
 [skl_c_maa					]={n="魔法装備の製作			"},
 [skl_c_wond					]={n="ワンダラス・アイテムの製作"},-- クラフト・ワンダラス・アイテム
-[skl_c_tailoring			]={n="仕立て屋				"},
-[skl_c_leatherworking		]={n="革職人					"},
-[skl_c_carpentry			]={n="大工					"},
+[skl_c_tailor			]={n="仕立て屋				"},
+[skl_c_lthr		]={n="革職人					"},
+[skl_c_carp			]={n="大工					"},
 [skl_c_bow					]={n="弓製作					"},
-[skl_c_trapmaking			]={n="罠製作					"},
-[skl_c_locksmithing			]={n="錠前制作				"},
-[skl_c_stonemasonry			]={n="石工					"},
-[skl_c_gemcutting			]={n="宝石研磨術				"},
-[skl_c_jewelry				]={n="宝飾品					"},
+[skl_c_trap			]={n="罠製作					"},
+[skl_c_lock			]={n="錠前制作				"},
+[skl_c_stone			]={n="石工					"},
+[skl_c_gem			]={n="宝石研磨術				"},
+[skl_c_jewel				]={n="宝飾品					"},
 [skl_c_alchemy				]={n="錬金術					"},
-[skl_c_calligraphy			]={n="Calligraphy			"},
-[skl_c_painting				]={n="Painting				"},
-[skl_c_sculpting			]={n="Sculpting				"},
+[skl_c_cal			]={n="Calligraphy			"},
+[skl_c_paint				]={n="Painting				"},
+[skl_c_sculpt			]={n="Sculpting				"},
 [skl_c_pottery				]={n="Pottery				"},
-[skl_c_shipmaking			]={n="Shipmaking			"},
-[skl_c_shoemaking			]={n="Shoemaking			"},
-[skl_c_weaving				]={n="Weaving				"},
-[skl_c_basketweaving		]={n="Basketweaving			"},
-[skl_c_bookbinding			]={n="Bookbinding			"},
+[skl_c_ship			]={n="Shipmaking			"},
+[skl_c_shoe			]={n="Shoemaking			"},
+[skl_c_weave				]={n="Weaving				"},
+[skl_c_bskt		]={n="Basketweaving			"},
+[skl_c_bkbnd			]={n="Bookbinding			"},
 [skl_c_cloth				]={n="Cloth					"},
 [skl_c_clothing				]={n="Clothing				"},
-[skl_c_cobbling				]={n="Cobbling				"},
-[skl_c_glassblowing			]={n="Glassblowing			"},
+[skl_c_cob				]={n="Cobbling				"},
+[skl_c_gls			]={n="Glassblowing			"},
 }

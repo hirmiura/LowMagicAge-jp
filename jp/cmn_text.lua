@@ -1,6 +1,7 @@
 -- Settings: default values are ok for most languanges. However, some languanges need modifications. e.g. French needs wider UI for item description.
---_itm_desc_w	= 320	-- Width of description of items. Too wider cause town ui bug when low resolution.
---_hlp_tree_w	= 400	-- Width of tree control of Help
+--_itm_desc_w	= 320	-- width of description of items. Too wider cause town ui bug when low resolution.
+--_hlp_tree_w	= 400	-- width of tree control of help
+_text_lang		= "jp"	-- 语言标志 用于日文 text language id for jp text
 
 
 -- Punctuation marks with pre/post space depends on language	z_punctuation
@@ -12,6 +13,8 @@ _pm_em		="！ "	-- exclamation mark	ditto
 _pm_col		="： "	-- colon			ditto
 _pm_par_b	= "（"	-- parenthesis/parentheses
 _pm_par_e	= "）"
+_pm_bk_b	= "《"	-- 书名号 用于日文 book title mark for jp text
+_pm_bk_e	= "》"
 _pm_dqm_b	="\""	-- double quotation mark begin	todo 「 」 in story_text.lua
 _pm_dqm_e	="\""	-- end
 
@@ -99,6 +102,9 @@ s_powerful			="Powerful"
 s_balanced			="Balanced"
 s_or_				=" or "
 s_text_too			="This text also applies to: "
+s_inc				="Include"
+s_epic				="エピック"
+s_out_rng			="Out of range"
 
 s_lack_gp_			="ゴールドが足りない！"
 s_got_itms_c		="入手した商品"
@@ -599,9 +605,7 @@ Spells that target only yourself are usually beneficial, not harmful, and spell 
 Additionally, in many cases, spell resistance applies only when a resistant creature is targeted by the spell, not when a resistant creature encounters a spell that is already in place.
 
 Some spells also grant spell resistance. Spell resistance does not stack. It overlaps.]]
-s_unsr			="抵抗破り"			s_unsr_d		="You get this Spell Penetration bonus on caster level checks (1d20 + caster level) made to overcome a creature’s spell resistance."
-s_spl_unsr1		="《抵抗破り》"		s_spl_unsr1_d	="You get a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature’s spell resistance."
-s_spl_unsr2		="《上級抵抗破り》"	s_spl_unsr2_d	="You get a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature’s spell resistance. This bonus stacks with the one from Spell Penetration."
+s_unsr			="抵抗破り"					s_unsr_d		="You get this Spell Penetration bonus on caster level checks (1d20 + caster level) to beat a creature’s spell resistance."
 s_sr_yes		="Yes"
 s_sr_no			="No"
 s_sr_harmless	=" (harmless)"
@@ -628,17 +632,17 @@ With the house rule on:
 DC = 10 + potential attacker's level + potential attacker's highest ability modifier + spell level.]]
 
 s_fgt_def		="Fighting Defensively"		s_fgt_def_d	="You can choose to fight defensively when attacking. If you do so, you take a –4 penalty on all attacks in a round to gain a +2 dodge bonus to AC for the same round."
-s_cbt_exp		="《攻防一体》"			s_cbt_exp_d	=[[近接攻撃において攻撃アクションまたは全力攻撃アクションを使用するとき、攻撃ロールにペナルティを受け、同じ数値を自分のアーマークラスに回避ボーナスとして加算することができる。
+s_cbt_exp		="Combat Expertise"			s_cbt_exp_d	=[[When you use the attack action or the full attack action in melee, you can take a penalty on your attack roll and add the same number as a dodge bonus to your Armor Class.
 
-この数値は最大5までで、基本攻撃ボーナスを超えることはできない。
+This number is up to 5 and may not exceed your base attack bonus.
 
-攻撃ロールとアーマークラスの変化は、次のアクションまで続く。
+The changes to attack rolls and Armor Class last until your next action.
 
-<b>通常: </b>《攻防一体》の特技を持たないキャラクターは、攻撃アクションまたは全力攻撃アクションを使用しながら防御的に戦うことで、攻撃ロールに-4のペナルティを受け、アーマークラスに+2の回避ボーナスを獲得することができる。]]
+<b>Normal: </b>A character without the Combat Expertise feat can fight defensively while using the attack or full attack action to take a –4 penalty on attack rolls and gain a +2 dodge bonus to Armor Class.]]
 
 
 -- z_cir_bns	circumstance bonuses
-s_atk_roll_mods	="Attack Roll Modifiers"-- z_new 2
+s_atk_roll_mods	="Attack Roll Modifiers"
 s_dmg_roll_mods	="Damage Roll Modifiers"
 cir				={n="戦闘修正",d="時には1対1で向かい合っての対等な戦いを強いられることもあるだろうが、普通は攻撃と防御両方において、より良い場所を探すことでアドバンテージを得ることもできる。状況に応じて、攻撃ロールにボーナスを得たりペナルティを被ったりする。"}
 cir_full_atk	="全力攻撃"		cir_full_atk_d		="ターン開始時から、（シフト以外の）攻撃か呪文以外のアクションをとらなかった場合、攻撃ロールとダメージ・ロールに<c=g>+2</c>のボーナスを得る。"
@@ -675,6 +679,7 @@ Most characters know how to speak Common and a racial language, as appropriate. 
 <b>Speak Language Skill: </b>Characters can also purchase Speak Language to acquire more languages.
 
 <b>Literacy: </b>A literate character (anyone but a barbarian who has not spent skill points to become literate) can read and write any language he speaks. Each language has an alphabet, though sometimes several spoken languages share a single alphabet.]]
+s_x_langs			="%d言語"
 s_lang_f			="A language whose text is based on the %s alphabet.\n\nTypical speakers: %s."
 s_lang_abyssal		="Abyssal					"	s_lang_abyssal_t		="Infernal	"	s_lang_abyssal_d		="Demons, chaotic evil outsiders			"
 s_lang_aquan		="Aquan						"	s_lang_aquan_t			="Elven		"	s_lang_aquan_d			="Water-based creatures						"
@@ -893,10 +898,13 @@ Special: A creature can gain this feat multiple times. Each time the creature ta
 
 
 -- misc
-s_tgr_lmt		="Improve Triggered Attacks"	s_tgr_lmt_d ="When making non-active attacks such as Attack of Opportunity and Cleave, also use abilities that have daily limit such as Smite Evil, Extreme Strike, and Infinite Strike."
+s_dc_con		="DC = 10 + キャラクター・レベル / 2 + Con修正値"
+s_dc_int		="DC = 10 + キャラクター・レベル / 2 + Int修正値"
+s_dc_mus_uncst	="DC = 10 + your class level + your Con modifier + spell level"
 s_terr_unkn		="未知の地形"-- Unknown Terrain
 s_x_moved		="%s moved."
 s_x_disappeared	="%s disappeared."
+s_tgr_lmt		="Improve Triggered Attacks"	s_tgr_lmt_d ="When making non-active attacks such as Attack of Opportunity and Cleave, also use abilities that have daily limit such as Smite Evil, Extreme Strike, and Infinite Strike."
 s_web_mov		="ウェブウォーキング"	s_web_mov_ench_d	="蜘蛛の糸 への 完全耐性"	s_web_mov_d	=s_web_mov_ench_d.._pm_dot
 
 
@@ -904,9 +912,8 @@ s_web_mov		="ウェブウォーキング"	s_web_mov_ench_d	="蜘蛛の糸 への
 s_hr				="ハウスルール"-- House Rules
 s_hr_d				="ハウスルールは、基本ルールの修正または拡張です。\n\n特に明記しない限り、ハウスルールは、プレイヤーキャラクターやモンスターを含む、ゲーム内のすべてのクリーチャーに適用されます。"
 s_hro				="オプションハウスルール"-- Optional House Rule
-s_hr_				="ハウスルール： "-- House Rule:
-s_hr_opt			="オプションハウスルール： "-- Optional House Rule:
-s_hr_ori			="Original Rule Text (not used, for reference only):"
+s_hr_				="ハウスルール： "-- House Rule: 
+s_hr_opt			="オプションハウスルール： "-- Optional House Rule: 
 s_hr_plyr_atk_mod	="When certain house rules are on (or when your party has characters created based on these house rules), a bonus or penalty will be applied to player characters' attack rolls."
 s_hr_plyr_def_mod	="When certain house rules are on (or when your party has characters created based on these house rules), a bonus or penalty will be applied to player characters' multiple defense abilities."
 s_hr_enmy_atk_mod	="Some house rules are more favorable to player characters. For balance, when such rules are enabled, enemies gain a bonus to attack rolls.\n\nWhen multiple rules are enabled, the total bonus is the maximum bonus, plus +1 bonus from each additional rule."
@@ -917,7 +924,7 @@ s_hr_rst			="Discard current modifications."
 s_hr_lma			="Set house rules based on default rules of Low Magic Age."
 s_hr_ogl			="Set house rules based on OGL/SRD 3.5 rules (i.e. uncheck all)."
 
-s_hr_low_abi		="下位アビリティ補償"	s_hr_low_abi_d	="キャラクターの最高能力以外の能力関連のロールや値（攻撃ロール、セービングスロー、ACや呪文のDCなど）に8レベルにつき+1ハウスルール・ボーナスを与えるが、同等の能力修正は最高能力修正値を超えない。\n\n特殊: 最も高い能力が耐久力である場合、ボーナスは5減少する。キャラクターのACが最大敏捷力ボーナスによって制限されている場合、そのACのハウスルール・ボーナスは5減少する。"
+s_hr_low_abi		="Lower Abilities Compensation"	s_hr_low_abi_d	="+1 house rule bonus per 8 levels on a character's non highest abilities related rolls and values (attack rolls, saving throws, AC and spell DC, etc.), but the equivalent ability modifier does not exceed the highest ability modifier.\n\nSpecial: The bonus is reduced by 5 if the highest ability is Constitution. When a character's AC is limited by maximum dex bonus, the house rule bonus on its AC is reduced by 5."
 s_hr_no_bsb			="change to + character level / 2"
 s_hr_no_bab			="change to + character level / 2"
 s_hr_no_bab_atks	="no extra attacks"
@@ -959,7 +966,8 @@ s_hr_mnk_ac			="limit maximum bonus"	s_hr_mnk_ac_d	="If the sum of Wis bonus and
 s_hr_quivering_palm	="+2 uses per week"
 s_hr_wholeness_of_body	="add level x (Wis bonus / 2) to healing points per day"
 s_hr_mnk_dr			="damage reduction points = monk level / 2 and cannot be overcome"
-s_hr_smites			="+4 uses per day; damage bonus per level: 1 -> 4; bonus on attack rolls: +10 max"
+s_hr_dfl_x			="up to 4 times"
+s_hr_smites			="+2 uses per day; damage bonus per level: 1 -> 4; bonus on attack rolls: +10 max"
 s_hr_lay_on_hands	="add Cha bonus to healing points per day"
 s_hr_pal_saves		="+5 Max"
 s_hr_edl_mod		="effective druid level = ranger level - 3 <c=twa>(unchecked: ranger level / 2)</c>"
@@ -967,20 +975,21 @@ s_hr_brd_mus		="at least 3 uses per day"
 s_hr_mus_atk		="+5 Max"
 s_hr_mus_skl		="effect on all skill checks of all allies in range"
 s_hr_zdd_ac_bonus	="+6 Max"
-s_hr_def_stance		="+4 bonus on Combat Maneuvers Defense"
+s_hr_zdd_def		="+4 bonus on Combat Maneuvers Defense"
 s_hr_trap_sense		="+10 Max"
-s_hr_zbm_req		="remove prerequisites: <t=@pwr_mobility c=fc_b>Mobility</t>/<t=@pwr_cbt_exp c=fc_b>Combat Expertise</t>"
-s_hr_zbm_inc_use	="daily uses continue to increase after level 10"
-s_hr_zbm_act_use	="one use per action <c=twa>(unchecked: one use per attack)</c>"
-s_hr_zat_req		="remove prerequisites: <t=@pwr_sa c=fc_b>《急所攻撃》+2d6</t>"
-s_hr_sa_frc_add		="+2 uses per day"
-s_hr_sa_frc_act		="one use per action <c=twa>(unchecked: one use per attack)</c>"
-s_hr_zdr_bwpn_use	="+2 uses per day"
-s_hr_zdr_bwpn_dc	="DC = 10 + キャラクター・レベル / 2 + Con修正値"
-s_hr_death_atk_dc	="DC = 10 + キャラクター・レベル / 2 + Int修正値"
+s_hr_zaa_xa			="+1 use per day for every 2 levels, up to 3 uses per day"
+s_hr_zaa_da			="+1 use per day for every 5 levels, up to 3 uses per day"
 s_hr_prc_dmg		="+5 bonus on attack rolls"
 s_hr_zdu_ac_int		="+6 Max"
 s_hr_zdu_ac_def		="+4 Max"
+s_hr_zdr_bwpn_use	="+2 uses per day"
+s_hr_cls_dc			="When calculating DC, replace class level with character level / 2"
+s_hr_zat_req		="remove prerequisites: <t=@pwr_sa c=fc_b>《急所攻撃》+2d6</t>"
+s_hr_sa_frc_add		="+2 uses per day"
+s_hr_sa_frc_act		="one use per action <c=twa>(unchecked: one use per attack)</c>"
+s_hr_zbm_req		="remove prerequisites: <t=@pwr_mobility c=fc_b>Mobility</t>/<t=@pwr_cbt_exp c=fc_b>Combat Expertise</t>"
+s_hr_zbm_inc_use	="daily uses continue to increase after level 10"
+s_hr_zbm_act_use	="one use per action <c=twa>(unchecked: one use per attack)</c>"
 
 s_hr_spl_cd			="呪文発動モード：クールダウン<c=twa>（チェックなし：呪文スロット）</c>"-- ...の場合はオフ
 s_hr_spl_abi_50		="能力ボーナス呪文スロットを計算する際、最大有効能力値を５０に制限する"
@@ -1486,7 +1495,7 @@ s_mus_hp			="Inspire Greatness"	s_mus_hp_d		=[[A bard of 9th level or higher wit
 
 To inspire greatness, a bard must sing and an ally must hear him sing. The effect lasts for as long as the ally hears the bard sing and for 5 rounds thereafter.
 
-A creature inspired with greatness gains 2 bonus Hit Dice (d10s), the commensurate number of temporary hit points (apply the target’s Constitution modifier, if any, to these bonus Hit Dice), a +2 competence bonus on attack rolls, and a +1 competence bonus on Fortitude saves. The bonus Hit Dice count as regular Hit Dice for determining the effect of spells that are Hit Dice dependant.
+A creature inspired with greatness gains 2 bonus Hit Dice (d10s), the commensurate number of temporary hit points (apply the target’s Constitution modifier, if any, to these bonus Hit Dice), a +2 competence bonus on attack rolls, and a +1 competence bonus on Fortitude saves. The bonus Hit Dice count as regular Hit Dice for determining the effect of spells that are Hit Dice dependant. 
 
 Inspire greatness is a mind-affecting ability.]]
 s_mus_def			="Inspire Heroics"		s_mus_def_d		=[[A bard of 15th level or higher with 18 or more ranks in a Perform skill can use music or poetics to inspire tremendous heroism in himself or a single willing ally within 30 feet. For every three bard levels the character attains beyond 15th, he can inspire heroics in one additional creature.
@@ -1955,11 +1964,11 @@ s_spl_k					= "Magical Darkness"
 s_bf_lit				= "Ambient illumination"
 s_show_precise_lit		= "Precise illumination area"
 
-s_hr_team_lit_t			= "このハウスルールが適用されている場合、通常光源を持たない動物も含め、すべてのクリーチャーは光源を持つものとみなされる。"
-s_hr_team_lit			= "クリーチャーが携帯する光源は、自分の側だけに照明を提供する"
-s_hr_lit_rng			= "影のある照明の半径を1/4に減少"
-s_hooded_lantern		= "フード付きランタン"
-s_hooded_lantern_d		= "フード付きランタンは、側面がシャッターまたは蝶番で覆われています。半径30フィートの範囲をはっきりと照らし、半径60フィートの範囲を影のように照らします。1パイントのオイルで6時間燃焼します。"
+s_hr_team_lit_t			= "When this house rule is on, all creatures are assumed to carry a light source, including animals that normally do not carry a light source."
+s_hr_team_lit			= "A light source carried by a creature provides illumination for its own side only"
+s_hr_lit_rng			= "Reduced radius of shadowy illumination by 1/4"
+s_hooded_lantern		= "Hooded Lantern"
+s_hooded_lantern_d		= "A hooded lantern has shuttered or hinged sides. It clearly illuminates a 30-foot radius and provides shadowy illumination in a 60-foot radius. It burns for 6 hours on a pint of oil."
 s_cover_lit				= "Cover/uncover light source"
 s_cover_lit_d			= "Cover or uncover the light/dark spell effect at the location or on the character."
 
@@ -1977,7 +1986,7 @@ s_darkvision			= "Darkvision"
 s_darkvision_d			= "Characters with darkvision can see in the dark. Darkvision is black and white only, but it is otherwise like normal sight. The presence of light does not spoil darkvision."
 s_darkvision_b			= "Characters with darkvision can see in the dark."
 
-s_hr_low_light_vision	= "Low-light Visionは、影のある照明を明るい照明として扱い、遠くを見ることができない"
+s_hr_low_light_vision	= "Low-light vision treats shadowy illumination as bright illumination and cannot see farther"
 s_low_light_vision		= "Low-light Vision"
 s_low_light_vision_d	= "Characters with low-light vision have eyes that are so sensitive to light that they can see twice as far as normal in dim light. Double the effective radius of bright light and of shadowy illumination for such characters. Low-light vision is color vision."
 s_low_light_vision_b	= "Characters with low-light vision can see twice as far as normal in dim light."

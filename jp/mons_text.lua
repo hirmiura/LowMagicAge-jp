@@ -689,7 +689,7 @@ s_gnm_s_hr_splk="blindness/deafness, blur, disguise self."
 s_gnm_s_langs=[[
 <b>Automatic Languages: </b>Common, Gnome, and Undercommon.
 <b>Bonus Languages: </b>Dwarven, Elven, Giant, Goblin, Orc, and Terran.
-
+ 
 <c=twc>Svirfneblin speak Gnome, Common, and Undercommon.</c>
 ]]
 s_gnm_s_d=[[
@@ -2140,7 +2140,7 @@ A satyr is about as tall and heavy as a half-elf.
 [race_ed_btl]=[[
 The keen senses of a satyr make it almost impossible to surprise one in the wild. Conversely, with their own natural grace and agility, satyrs can sneak up on travelers who are not carefully watching the surrounding wilderness.
 
-Once engaged in battle, an unarmed satyr attacks with a powerful head butt. A satyr expecting trouble is likely to be armed with a bow and a dagger and typically looses arrows from hiding, weakening an enemy before closing.
+Once engaged in battle, an unarmed satyr attacks with a powerful head butt. A satyr expecting trouble is likely to be armed with a bow and a dagger and typically looses arrows from hiding, weakening an enemy before closing. 
 ]],
 [race_ed_soc]=[[
 ]],
@@ -2533,7 +2533,7 @@ Despite their fiendish appearance and netherworld origins, tieflings have a huma
 [race_ed_dd2]=[[
 Tieflings are humans with demonic, devilish, or other evil outsider blood in their ancestry. Often persecuted for their strange appearance and unnatural mannerisms, most tieflings disguise their nature or are forced to live on the fringes or underbelly of civilized society. Though they are not born evil, it is an easy path for them to find, especially as most suffer at the hands of "normal" folks while growing up.
 
-Tieflings look mostly human except for some physical traits that reveal their strange heritage.
+Tieflings look mostly human except for some physical traits that reveal their strange heritage. 
 ]],
 [race_ed_phy]=[[
 No two tieflings look alike; the fiendish blood running through their veins manifests inconsistently, granting them an array of fiendish traits.
@@ -2835,7 +2835,7 @@ s_pc_elm_e_langs=[[
 <c=twc>Oreads speak Common and Terran.</c>
 ]]
 s_pc_elm_e_d=[[
-Creatures of human ancestry mixed with the blood of creatures from the Plane of Earth, oreads are as strong and solid as stone.
+Creatures of human ancestry mixed with the blood of creatures from the Plane of Earth, oreads are as strong and solid as stone. 
 
 Often stubborn and steadfast, their unyielding nature makes it hard for them to get along with most races other than dwarves.
 
@@ -3127,17 +3127,17 @@ s_rat_x_d		=[[Dire rats are omnivorous scavengers, but will attack to defend the
 
 A dire rat can grow to be up to 4 feet long and weigh over 50 pounds. A dire rat is the size of a small dog. It has a coat of coarse fur, a long and scabby tail, and two glittering eyes.]]
 
-s_cat			="猫"
-s_cheetah		="チーター"
-s_leopard		="レオパルド"
-s_lion			="ライオン"
-s_lion_x		="ダイア・ライオン"
-s_tiger			="タイガー"
-s_tiger_x		="ダイア・タイガー"
+s_cat			="Cat"
+s_cheetah		="Cheetah"
+s_leopard		="Leopard"
+s_lion			="Lion"
+s_lion_x		="Dire Lion"
+s_tiger			="Tiger"
+s_tiger_x		="Dire Tiger"
 
-s_dog			="犬"
-s_dog_ride		="乗用犬"
-s_hyena			="ハイエナ"
+s_dog			="Dog"
+s_dog_ride		="Riding Dog"
+s_hyena			="Hyena"
 
 s_wolf			="ウルフ"--"Wolf"
 s_wolf_c		="This powerful canine watches its prey with piercing yellow eyes, darting its tongue across sharp white teeth."
@@ -3181,14 +3181,14 @@ s_bison			="Bison"
 s_rhinoceros	="Rhinoceros"
 s_elephant		="Elephant"
 
-s_monkey		="モンキー"
-s_baboon		="ヒヒ"
-s_ape			="エイプ"
-s_ape_x			="ダイア・エイプ"
+s_monkey		="Monkey"
+s_baboon		="Baboon"
+s_ape			="Ape"
+s_ape_x			="Dire Ape"
 
-s_bear_k		="ブラックベア"
+s_bear_k		="Black Bear"
 s_bear_y		="ブラウンベア"--"Brown Bear"
-s_bear_w		="ポーラーベア"
+s_bear_w		="Polar Bear"
 s_bear_x		="ダイア・ベア"--"Dire Bear"
 
 s_bat			="Bat"
@@ -3211,11 +3211,11 @@ s_lizard_g		="Monitor Lizard"
 s_croc			="Crocodile"
 s_croc_g		="Giant Crocodile"
 
-s_dino_dein		="デイノニクス"
-s_dino_mega		="メガラプトル"
-s_dino_elas		="エラスモサウルス"
-s_dino_tric		="トリケラトプス"
-s_dino_tyra		="ティラノサウルス"
+s_dino_dein		="Deinonychus"
+s_dino_mega		="Megaraptor"
+s_dino_elas		="Elasmosaurus"
+s_dino_tric		="Triceratops"
+s_dino_tyra		="Tyrannosaurus"
 
 s_manta_ray		="Manta Ray"
 s_octopus		="Octopus"
@@ -3313,7 +3313,7 @@ s_ghost_d	=[[Ghosts are the spectral remnants of intelligent beings who, for one
 
 A ghost greatly resembles its corporeal form in life, but in some cases the spiritual form is somewhat altered.]]
 
-s_ghoul		="グール"
+s_ghoul		="Ghoul"
 s_ghoul_c	="This humanoid creature has long, sharp teeth, and its pallid flesh is stretched tightly over its starved frame."
 s_ghoul_d	=[[Ghouls are undead that haunt graveyards and eat corpses. Legends hold that the first ghouls were either cannibalistic humans whose unnatural hunger dragged them back from death or humans who in life fed on the rotting remains of their kin and died (and were reborn) from the foul disease—the true source of these undead scavengers is unclear.
 

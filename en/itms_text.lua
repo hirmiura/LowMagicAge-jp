@@ -91,6 +91,20 @@ s_ie_grap		= {n="Auto Grapple"		,f="Trigger grapple check on hit"}
 s_ie_trip		= {n="Auto Trip"		,f="Trigger trip check on hit"}
 s_ie_palsy		= {n="Paralysis"		,f="Target must succeed on a Fortitude save or be paralyzed"}
 
+s_ie_thdr		="Thundering"	s_ie_thdr_d	=[[A thundering weapon creates a cacophonous roar like thunder upon striking a successful critical hit. The sonic energy does not harm the wielder.
+
+A thundering weapon deals an extra 1d8 points of sonic damage on a successful critical hit. If the weapon’s critical multiplier is x3, add an extra 2d8 points of sonic damage instead, and if the multiplier is x4, add an extra 3d8 points of sonic damage.
+
+Bows, crossbows, and slings so crafted bestow the sonic energy upon their ammunition.
+
+Subjects dealt a critical hit by a thundering weapon must make a DC 14 Fortitude save or be deafened permanently.]]
+
+s_ie_behead		="Vorpal"	s_ie_behead_d	=[[This potent and feared ability allows the weapon to sever the heads of those it strikes. Upon a roll of natural 20 (followed by a successful roll to confirm the critical hit), the weapon severs the opponent’s head (if it has one) from its body.
+
+Some creatures, such as many aberrations and all oozes, have no heads. Others, such as golems and undead creatures other than vampires, are not affected by the loss of their heads. Most other creatures, however, die when their heads are cut off.
+
+A vorpal weapon must be a slashing weapon.]]
+
 
 ench_cats={
 {n="Abilities"			},
@@ -121,7 +135,7 @@ s_mith_d		=[[This very rare silvery, glistening metal is lighter than iron but j
 - Mithral items are always masterwork items.
 - Mithral items weigh half as much as normal.
 - Mithral armors are one category lighter than normal.
-- Spell failure chances for mithral armors and shields are decreased by 10%, maximum Dexterity bonus is increased by 2, and armor check penalties are lessened by 3.
+- Spell failure chance for mithral armors and shields is decreased by 10%, maximum Dexterity bonus is increased by 2, and armor check penalty is lessened by 3.
 - Items not primarily of metal cannot be made from mithral.]]
 s_adam_d		=[[This ultrahard metal adds to the quality of a weapon or suit of armor.
 
