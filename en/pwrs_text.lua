@@ -1,27 +1,164 @@
---s_wip			= "\n\n<c=o>(In Development)</c>"
---wpn_prof_d		= "You understand how to use weapons of this group in combat."
---simple_wpn_d	= "\n\nAs the name implies, these weapons are simple and easy to use. Most classes are proficient with all simple weapons."..s_auto_prof
-s_for_touch		= "This feat applies to touch attacks, too."
-s_for_touch_m	= "This feat applies to melee touch attacks, too."
-s_for_touch_r	= "This feat applies to ranged touch attacks, too."
-spl_focus_d		= "+1 DC for all saving throws against spells from the school of magic."
-ch_1_eff		= "\n\nYou can only apply one critical effect to a given critical hit unless you have Critical Mastery."
-dodge_bns		= "\n\nA condition that makes you lose your Dex bonus to AC (if any) also makes you lose dodge bonuses.\n\nDodge bonuses stack with each other, unlike most types of bonuses."
-melee_only		= "This feat is for melee weapons only."
-th_note			= "\n\nIncluding one-handed weapons wielded with two hands.\n\n"..melee_only
-atk_pnl_2		= " -2 penalty on the attack rolls."
-use_a			= "\n\n<c=fc_b>Uses per day: 5 + Character level/4.\nNo more than 15 uses per day.</c>"
-use_b			= "\n\n<c=fc_b>Uses per day: Character level/4.\nNo more than 5 uses per day.</c>"
-s_sf			= "Skill Focus: "
-s_skl_focus_d	= "+3 bonus on all checks involving the skill."
---s_exotic_wp_d	= "You understand how to use this type of exotic weapon in combat.\n\nCompared to simple and military weapons, exotic weapons are relatively rare and difficult to use, and require specialized training to proficient with."
+--s_wip				="\n\n<c=o>(In Development)</c>"
+--wpn_prof_d		="You understand how to use weapons of this group in combat."
+--simple_wpn_d		="\n\nAs the name implies, these weapons are simple and easy to use. Most classes are proficient with all simple weapons."..s_auto_prof
+--s_exotic_wp_d		="You understand how to use this type of exotic weapon in combat.\n\nCompared to simple and military weapons, exotic weapons are relatively rare and difficult to use, and require specialized training to proficient with."
+s_for_touch			="This feat applies to touch attacks, too."
+s_for_touch_m		="This feat applies to melee touch attacks, too."
+s_for_touch_r		="This feat applies to ranged touch attacks, too."
+ch_1_eff			="\n\nYou can only apply one critical effect to a given critical hit unless you have Critical Mastery."
+dodge_bns			="\n\nA condition that makes you lose your Dex bonus to AC (if any) also makes you lose dodge bonuses.\n\nDodge bonuses stack with each other, unlike most types of bonuses."
+melee_only			="This feat is for melee weapons only."
+th_note				="\n\nIncluding one-handed weapons wielded with two hands.\n\n"..melee_only
+atk_pnl_2			=" -2 penalty on the attack rolls."
+use_a				="\n\n<c=fc_b>Uses per day: 5 + Character level/4.\nNo more than 15 uses per day.</c>"
+use_b				="\n\n<c=fc_b>Uses per day: Character level/4.\nNo more than 5 uses per day.</c>"
+s_feat_x_spl_add_2x	="You can gain this feat multiple times."
+s_feat_x_spl_cvt_1x	="You can gain this feat multiple times. Each time you take the feat, it applies to a different spell."
+s_feat_x_spl_cpy_1x	="You can gain this feat multiple times. Each time you take the feat, it applies to a different spell or spell-like ability."
+s_feat_x_mle_undr	="You can gain this feat multiple times. Each time you take the feat, it applies to a different special material. Your melee attacks are treated as being crafted of all chosen materials for purposes of bypassing damage reduction."
+s_feat_x			="You can gain this feat multiple times. Its effects stack."
+s_feat_x_max		="Up to %d times."
+s_feat_x_23			="Remember that two doublings equals a tripling, and so on."
+s_feat_no_stk		="This feat does not stack with similar abilities."
+s_feat_no_stk_itm	="This feat does not stack with similar abilities granted by magic items or nonpermanent magical effects."
+s_shp_lmt			="The size limitation is the same as your limitation on animal size."
+s_x_nwpns			="%d or more natural weapons"
+s_has_perm_sr		="Must have spell resistance from a feat, class feature, or other permanent effect"
+s_has_som_9			="Ability to cast at least one 9th-level spell of the school to be chosen."
+s_has_cst_max_spl	="Ability to cast the maximum normal spell level of at least one spellcasting class"
+s_has_acst_max_spl	="Ability to cast spells of the maximum normal spell level of an arcane spellcasting class"
+s_epic_feats		="Epic Feats"	s_epic_feats_d=[[Firing arrows at opponents standing at the horizon. Beheading opponents with your bare hands. Charming liches with the power of song. This is the stuff of the epic feat.
 
-s_pa			="Power Attack"	s_pa_d	=[[Trade extra melee attack bonus for damage.
+Like the regular feat, the epic feat is a special feature that either gives your character a new capability or improves one he already has. However, the epic feat moves the realm of capabilities from the mundane into the mythical.
+
+Epic feats are available only to epic characters whose character level is 21st or higher. The epic character is largely defined by his selection of epic feats.]]
+
+
+s_turn1				="Improved Turning"					s_turn1_d				="+1 bonus on turn checks."
+s_turn2				="Greater Turning"					s_turn2_d				="+1 bonus to Improved Turning."
+s_turn_extra		="Extra Turning"					s_turn_extra_d			="+4 uses per day of Turn."
+
+s_abi_1_1x			="Great Strength"					s_abi_1_1x_d			="Your muscle and physical power are greater than normal.\n\nYour Strength increases by 1 point."
+s_abi_2_1x			="Great Dexterity"					s_abi_2_1x_d			="Your agility and coordination are greater than normal.\n\nYour Dexterity increases by 1 point."
+s_abi_3_1x			="Great Constitution"				s_abi_3_1x_d			="Your health and endurance are greater than normal.\n\nYour Constitution increases by 1 point."
+s_abi_4_1x			="Great Intelligence"				s_abi_4_1x_d			="Your powers of reason and learning are greater than normal.\n\nYour Intelligence increases by 1 point."
+s_abi_5_1x			="Great Wisdom"						s_abi_5_1x_d			="Your willpower and insight are greater than normal.\n\nYour Wisdom increases by 1 point."
+s_abi_6_1x			="Great Charisma"					s_abi_6_1x_d			="Your powers of persuasion and leadership are greater than normal.\n\nYour Charisma increases by 1 point."
+s_abi_7_1x			="Great Physical Abilities"			s_abi_7_1x_d			="All of your physical abilities increases by 1 point."
+s_abi_8_1x			="Great Mental Abilities"			s_abi_8_1x_d			="All of your mental abilities increases by 1 point."
+s_abi_9_1x			="Great All Abilities"				s_abi_9_1x_d			="All of your abilities increases by 1 point."
+s_hp_20x			="Epic Toughness"					s_hp_20x_d				="You are preternaturally tough.\n\nYou gain +20 hit points."
+s_ft_4				="Epic Fortitude"					s_ft_4_d				="You have tremendously high fortitude.\n\nYou gain a +4 bonus on all Fortitude saving throws."
+s_rf_4				="Epic Reflexes"					s_rf_4_d				="You have tremendously fast reflexes.\n\nYou gain a +4 bonus on all Reflex saving throw."
+s_wl_4				="Epic Will"						s_wl_4_d				="You have tremendously strong willpower.\n\nYou gain a +4 bonus on all Will saving throws."
+s_spd_6				="Epic Speed"						s_spd_6_d				="You can move much more quickly than a normal person.\n\nYour speed increases by 30 feet.\n\nSpecial: This feat only functions when you are wearing medium armor, light armor, or no armor."
+s_haste_5x			="Blinding Speed"					s_haste_5x_d			="You can trigger short bursts of great speed.\n\nYou can act as if hasted for 5 rounds each day. The duration of the effect need not be consecutive rounds. Activating this power is a free action."
+s_init_4x2			="Superior Initiative"				s_init_4x2_d			="You can react even more quickly than normal in a fight.\n\nYou get a +4 bonus on initiative checks."
+s_nac_2x			="Armor Skin"						s_nac_2x_d				="Your skin becomes like armor.\n\nYou gain a +2 natural armor bonus to Armor Class, or your existing natural armor bonus increases by 2."
+s_dr_3x				="Damage Reduction"					s_dr_3x_d				="You can shrug off some damage from attacks.\n\nYou gain damage reduction 3/–."
+s_hr_3x				="Fast Healing"						s_hr_3x_d				="You heal your wounds very quickly.\n\nYou gain fast healing 3, or your existing fast healing increases by 3."
+s_imm_ill_psn		="Perfect Health"					s_imm_ill_psn_d			="You are immune to normal diseases and common poisons.\n\nYou are immune to all nonmagical diseases, as well as to all poisons whose Fortitude save DC is 25 or less."
+s_er_10x			="Energy Resistance"				s_er_10x_d				="You can resist the effects of a chosen type of energy.\n\nChoose a type of energy (acid, cold, electricity, fire, or sonic). You gain resistance 10 to that type of energy, or your existing resistance to that type of energy increases by 10."
+s_sr_2x				="Improved Spell Resistance"		s_sr_2x_d				="Your innate resistance to magical effects increases.\n\nYour spell resistance increases by +2."
+s_dk_vis_2x			="Improved Darkvision"				s_dk_vis_2x_d			="Your ability to see in the dark is greater than normal.\n\nThe range of your darkvision doubles."
+s_ll_vis_2x			="Improved Low-Light Vision"		s_ll_vis_2x_d			="The range of your low-light vision is greater than normal.\n\nThe range of your low-light vision doubles."
+
+s_sa_ao				="Sneak Attack of Opportunity"		s_sa_ao_d				="Whenever your opponent lets his guard down, you can make a sneak attack.\n\nAny attack of opportunity you make is considered a sneak attack."
+s_sa_dot			="Lingering Damage"					s_sa_dot_d				="Your sneak attacks continue to deal damage even after you strike.\n\nAny time you deal damage with a sneak attack, that target takes damage equal to your sneak attack bonus damage on your next turn as well."
+s_rf_as_ft			="Dexterous Fortitude"				s_rf_as_ft_d			="You are able to resist physical attacks with exceptional agility.\n\nOnce per round, when targeted by an effect that requires a Fortitude saving throw, you may make a Reflex save instead to avoid the effect (evasion is not applicable)."
+s_rf_as_wl			="Dexterous Will"					s_rf_as_wl_d			="You are able to resist compelling effects with exceptional agility.\n\nOnce per round, when targeted by an effect that requires a Will saving throw, you may make a Reflex save instead to avoid the effect (evasion is not applicable)."
+s_dodge_atk			="Epic Dodge"						s_dodge_atk_d			="You are able to evade attacks with exceptional agility.\n\nOnce per round, when struck by a weapon attack, you may automatically avoid all damage from the attack."
+s_miss_10			="Self-Concealment"					s_miss_10_d				="When in combat, your form becomes blurry and indistinct, making it difficult to land a blow against you.\n\nAttacks against you have a 10% miss chance, similar to the effect of concealment. You lose this benefit whenever you would lose your Dexterity bonus to AC."
+s_rage_4_2			="Mighty Rage"						s_rage_4_2_d			="Your rage becomes even more powerful than normal.\n\nWhen you rage, you gain a +8 bonus to Strength and Constitution and a +4 morale bonus on Will saves. (These bonuses replace the normal rage bonuses.)"
+s_rage_us			="Incite Rage"						s_rage_us_d				="When you enter a rage, you can incite a barbarian rage in any or all allies within 60 feet. (Any ally who doesn't wish to become enraged is unaffected.) The ally gains +4 to Strength, +4 to Constitution, and a +2 morale bonus on Will saves, but takes a –2 penalty to AC, for as long as you remain raging.\n\nThe rage of affected allies lasts a number of rounds equal to 3 + their Constitution modifier, regardless of whether they remain within 60 feet of you. This is otherwise identical with normal barbarian rage (including the fatigue at its end).\n\nSpecial: This is a mind-affecting effect."
+s_rage_chaos		="Chaotic Rage"						s_rage_chaos_d			="Your rage is particularly damaging to lawful creatures.\n\nAny weapon you wield while in a rage is treated as a chaotic weapon (it deals +2d6 points of damage against creatures of lawful alignment)."
+s_rage_thdr			="Thundering Rage"					s_rage_thdr_d			="Your rage attacks can cause thunderous roars that can deafen opponents.\n\nAny weapon you wield while in a rage is treated as a thundering weapon which deals an extra 1d8 points of sonic damage on a successful critical hit. If the weapon’s critical multiplier is x3, add 2d8 points instead, and if the multiplier is x4, add 3d8 points instead.\n\nBesides, the target must make a Fortitude save (DC = 10 + 1/2 your level + your Strength modifier) or be deafened permanently."
+s_rage_obj			="Ruinous Rage"						s_rage_obj_d			="While in a rage, you can deal tremendous damage to objects.\n\nWhile in a rage, you ignore the hardness of any object you strike. Also, double your Strength bonus for the purposes of any Strength check made to break an object with sudden force rather than by dealing normal damage (including bursting bindings, such as ropes or manacles)."
+s_smite_2x			="Great Smiting"					s_smite_2x_d			="Your smite attacks are much more powerful than normal.\n\nWhenever you make a successful smite attack, add twice the appropriate level to damage (rather than just your level)."
+s_wpn_as_good		="Holy Strike"						s_wpn_as_good_d			="Your attacks deal great damage to evil creatures.\n\nAny weapon you wield is treated as a holy weapon (it is good-aligned and deals an extra 2d6 points of damage against creatures of evil alignment). If the weapon already has an alignment, this feat has no effect on the weapon."
+s_wpn_as_evil		="Unholy Strike"					s_wpn_as_evil_d			="Your attacks deal great damage to good creatures.\n\nAny weapon you wield is treated as an unholy weapon (it is evil-aligned and deals an extra 2d6 points of damage against creatures of good alignment). If the weapon already has an alignment, this feat has no effect on the weapon."
+s_aura_vs_fear_8	="Improved Aura of Courage"			s_aura_vs_fear_8_d		="Your aura of courage is stronger than normal.\n\nYour aura of courage grants a +8 morale bonus on saving throws against fear effects."
+s_aura_saves_n4		="Improved Aura of Despair"			s_aura_saves_n4_d		="Your aura of despair is wider than normal.\n\nYour aura of despair causes a –4 morale penalty on all saving throws."
+s_aura_vs_fear_r20	="Widen Aura of Courage"			s_aura_vs_fear_r20_d	="Your aura of courage is wider than normal.\n\nYour aura of courage extends to all allies within 100 feet of you."
+s_aura_saves_r20	="Widen Aura of Despair"			s_aura_saves_r20_d		="Your aura of despair is wider than normal.\n\nYour aura of despair extends to all enemies within 100 feet of you."
+s_fav_enm_1x		="Improved Favored Enemy"			s_fav_enm_1x_d			="Add +1 to the bonus on Bluff, Listen, Sense Motive, Spot, and Survival checks and damage rolls against all your favored enemies."
+s_fav_enm_2_2d6		="Bane of Enemies"					s_fav_enm_2_2d6_d		="Your attacks deal great damage to your favored enemies.\n\nAny weapon you wield against one of your favored enemies is treated as a bane weapon for that creature type (thus, its enhancement bonus is increased by +2 and it deals +2d6 points of damage)."
+s_fav_enm_kill		="Death of Enemies"					s_fav_enm_kill_d		="You can instantly slay your favored enemies with a single strike.\n\nAny time you score a critical hit against one of your favored enemies, it must make a Fortitude save (DC 10 + 1/2 your ranger class level + your Wisdom modifier) or die instantly.\n\nSpecial: Creatures immune to critical hits can't be affected by this feat."
+s_shp_ani_s2		="Diminutive Wild Shape"			s_shp_ani_s2_d			="You can wild shape into animals of Diminutive size.\n\nYou can use your wild shape to take the shape of a Diminutive animal."
+s_shp_ani_s1		="Fine Wild Shape"					s_shp_ani_s1_d			="You can wild shape into animals of Fine size.\n\nYou can use your wild shape to take the shape of a Fine animal."
+s_shp_ani_s8		="Gargantuan Wild Shape"			s_shp_ani_s8_d			="You can wild shape into animals of Gargantuan size.\n\nYou can use your wild shape to take the shape of a Gargantuan animal."
+s_shp_ani_s9		="Colossal Wild Shape"				s_shp_ani_s9_d			="You can wild shape into animals of Colossal size.\n\nYou can use your wild shape to take the shape of a Colossal animal."
+s_shp_plt			="Plant Wild Shape"					s_shp_plt_d				="You can wild shape into plant form.\n\nYou can use your normal wild shape ability to take the form of a plant."
+s_shp_bug			="Vermin Wild Shape"				s_shp_bug_d				="You can wild shape into vermin form.\n\nYou can use your normal wild shape ability to take the form of a vermin."
+s_shp_mbs			="Magical Beast Wild Shape"			s_shp_mbs_d				="You can wild shape into magical beast form.\n\nYou can use your normal wild shape ability to take the form of a magical beast. You gain all supernatural abilities of the magical beast whose form you take."
+s_shp_dgn			="Dragon Wild Shape"				s_shp_dgn_d				="You can take the form of a dragon.\n\nYou may use wild shape to change into a dragon (black, blue, green, red, white, brass, bronze, copper, gold, or silver). You gain all extraordinary and supernatural abilities of the dragon whose form you take."
+s_shp_elm_all		="Improved Elemental Wild Shape"	s_shp_elm_all_d			="You can take the form of a greater variety of elementals than normal.\n\nYour ability to wild shape into an elemental is expanded to include all elemental creatures (not just air, earth, fire, and water elementals) of any size that you can take when using wild shape to become an animal. You gain all extraordinary and supernatural abilities of the elemental whose form you take."
+s_cmp_mbs			="Magical Beast Companion"			s_cmp_mbs_d				="You can befriend a magical beast with limited Intelligence.\n\nThe following magical beasts are added to the lists of animal companions from which you can select.\n1st Level (no adjustment) 10th Level (–9)\nstirge basilisk\ndarkmantle digester\ngirallon\nspider eater\n4th Level (–3) 13th Level (–12)\nhippogriff bulette\nshocker lizard chimera\nremorhaz\n7th Level (–6) 16th Level (–15)\ncockatrice gorgon\nankheg gray render\ndisplacer beast\ngriffon\nowlbear\nsea cat*\nSpecial: Creatures marked with an asterisk are available only in an aquatic environment."
+s_mus_deaf			="Deafening Song"					s_mus_deaf_d			="Your bardic music deafens those nearby.\n\nYou can use song or poetics to temporarily deafen all enemies within a 30-foot spread from you. A successful Fortitude save (DC 10 + 1/2 your class level + your Charisma modifier) negates the effect. The deafening effect lasts for as long as you continue the deafening song. You may keep up the deafening song for a maximum of 10 rounds."
+s_mus_uncst			="Hindering Song"					s_mus_uncst_d			="Your bardic music interferes with opposing spellcasters.\n\nYou can use song or poetics to hinder enemy spellcasters within a 30-foot spread from you. To successfully cast a spell within this area, a spellcaster must make a Concentration check as if she were casting defensively. You may keep up the hindering song for a maximum of 10 rounds."
+s_mus_abi			="Inspire Excellence"				s_mus_abi_d				="You can improve the abilities of your comrades through your performance.\n\nYou can use song or poetics to grant a bonus to one ability score to your allies. To be affected, an ally must hear the bard sing for 1 full round. The effect lasts as long as the bard sings and for 5 rounds after the bard stops singing (or 5 rounds after the ally can no longer hear the bard). Each ally to be inspired gains a +4 competence bonus to the same ability score, which you must choose before you begin inspiring.\n\nSpecial: Inspire excellence is a supernatural, mind-affecting ability. This feat is treated as a bardic music inspiration ability for purposes of feats that affect such abilities."
+s_mus_rng			="Ranged Inspiration"				s_mus_rng_d				="You can use your bardic music at a greater range than normal.\n\nDouble the range of any bardic music ability that has a range."
+s_mus_fast			="Rapid Inspiration"				s_mus_fast_d			="You can inspire your allies with bardic music more quickly than normal.\n\nYou can use any of your bardic music inspiration abilities as a standard action. The inspiration takes effect immediately after you conclude the action."
+s_mus_dur			="Lasting Inspiration"				s_mus_dur_d				="Your songs continue to inspire allies long after your words have faded.\n\nThe effects of your bardic music inspiration abilities last for ten times as long as normal after you stop singing. This feat has no effect on inspiration abilities that have no duration after you stop singing."
+s_mus_grp			="Group Inspiration"				s_mus_grp_d				="You can inspire competence or greatness in more than one ally simultaneously.\n\nThe number of allies you can affect with your inspire competence or inspire greatness bardic music ability doubles. When inspiring competence in multiple allies, you can choose different skills to inspire for different allies."
+s_mus_1x			="Epic Inspiration"					s_mus_1x_d				="Your bardic music provides greater inspiration than normally possible.\n\nAll competence bonuses, dodge bonuses, and morale bonuses granted by your bardic music ability increase by +1. If you have the inspire greatness bardic music ability, it grants one additional bonus HD."
+s_mus_mind			="Music of the Gods"				s_mus_mind_d			="You can use your bardic music to influence creatures immune to mind-affecting effects.\n\nYour bardic music can affect even those normally immune to mind-affecting effects. However, such creatures gain a +10 bonus on their Will saves to resist such effects."
+s_mus_unspl_anytime	="Reactive Countersong"				s_mus_unspl_anytime_d	="You can use countersong as a reaction to a sonic or language-dependent magical attack.\n\nYou can begin a countersong at any time, even when it isn’t your turn. Thus, you could use the countersong as a reaction to a sonic or language-dependent magical attack.\n\nYou can’t use Reactive Countersong at the same time you are using another bardic music ability (though you could stop the other bardic music ability to begin Reactive Countersong if so desired)."
+s_zdd_def_6			="Bulwark of Defense"				s_zdd_def_6_d			="Your defensive stance bonuses increase to +4 Strength, +6 Constitution, +4 resistance bonus on all saves, and +6 dodge bonus to AC."
+s_zdd_def_mov_2		="Mobile Defense"					s_zdd_def_mov_2_d		="You can adjust your position while maintaining a defensive stance.\n\nWhile in a defensive stance, you may take one 5-foot adjustment each round without losing the benefits the stance."
+s_zaa_da_2x			="Improved Arrow of Death"			s_zaa_da_2x_d			="Add +2 to the DC of your arrows of death."
+s_zas_da_2x			="Improved Death Attack"			s_zas_da_2x_d			="Add +2 to the DC of your death attack."
+
+s_all_atk_1x		="Epic Prowess"						s_all_atk_1x_d			="You gain great skill in combat.\n\nGain a +1 bonus on all attacks."
+s_wpn_atk_2x2		="Epic Weapon Focus"				s_wpn_atk_2x2_d			="You are especially good at using certain weapons.\n\nAdd a +2 bonus to all attack rolls you make using a proficient weapon."
+s_wpn_dmg_4x2		="Epic Weapon Specialization"		s_wpn_dmg_4x2_d			="You deal extraordinary damage wielding certain weapons..\n\nAdd +4 to all damage you deal using a proficient weapon. If the weapon is a ranged weapon, the damage bonus only applies if the target is within 30 feet."
+s_ch_kill			="Devastating Critical"				s_ch_kill_d				="With certain weapons, you are capable of killing any creature with a single strike.\n\nWhen using a proficient melee weapon, whenever you score a critical hit the target must make a Fortitude save (DC 10 + 1/2 your character level + your Strength modifier) or die instantly. (Creatures immune to critical hits can't be affected by this feat.)"
+s_natk_pen_0		="Improved Multiattack"				s_natk_pen_0_d			="The creature is particularly adept at using all its natural weapons at once.\n\nThe creature’s secondary attacks with natural weapons have no penalty."
+
+s_ww_std			="Improved Whirlwind Attack"		s_ww_std_d				="You become a blurry whirlwind of attacks, striking out at all enemies near your position.\n\nAs a standard action, you can make one melee attack for every five points of your base attack bonus (including your epic attack bonus). You can’t attack any one opponent more than once as part of this action. These attacks (as well as all other attacks made until the start of your next turn) suffer a –4 penalty."
+s_chg_fatk_1		="Dire Charge"						s_chg_fatk_1_d			="You can make a full attack as part of a charge.\n\nIf you charge a foe during the first round or surprise round of combat, you can make a full attack against the opponent you charge."
+s_ao_x				="Improved Combat Reflexes"			s_ao_x_d				="You can respond to any number of opponents who let their defenses down.\n\nThere is no limit to the number of attacks of opportunity you can make in one round."
+s_def_cst_pen		="Spellcasting Harrier"				s_def_cst_pen_d			="Spellcasters you threaten find it difficult to cast defensively.\n\nAny spellcaster you threaten in melee takes a -10 penalty on Concentration checks made to cast defensively."
+s_mle_undr			="Penetrate Damage Reduction"		s_mle_undr_d			="You can bypass a creature’s damage reduction.\n\nSelect a special material, your melee attacks can bypass a creature’s damage reduction as if your weapon was crafted from that material.\n\nYour melee weapons (including natural weapons) are treated as being crafted from the chosen special material for purposes of bypassing the damage reduction of any creature you strike.\n\nNone of the other special properties of special materials are gained by your melee weapons."
+
+s_bow_no_ao			="Combat Archery"					s_bow_no_ao_d			="You can fire a bow in melee safely.\n\nYou do not incur any attacks of opportunity for firing a bow when threatened."
+s_rng_no_miss_50	="Uncanny Accuracy"					s_rng_no_miss_50_d		="You can ignore anything less than total cover or total concealment when using ranged weapons.\n\nYour ranged attacks ignore the miss chance granted to targets by total concealment.\n\nSpecial: A character with at least 11 levels of ranger can qualify for this feat even if he does not have the prerequisites for it, but can only use it when wearing light armor or no armor."
+s_thr_all			="Storm of Throws"					s_thr_all_d				="You become a flurry of thrown weapons, targeting all nearby opponents.\n\nAs a full-round action, you may throw a magic light weapon at your full base attack bonus at each opponent within 30 feet."
+
+s_dfl_any			="Exceptional Deflection"			s_dfl_any_d				="You can deflect any ranged attacks (including spells that require ranged touch attacks) as if they were arrows."
+s_rfl_any			="Reflect Arrows"					s_rfl_any_d				="You reflect ranged attacks back upon the attacker.\n\nWhen you deflect an arrow or other ranged attack, the attack is reflected back upon the attacker at your base ranged attack bonus."
+s_dfl_x				="Infinite Deflection"				s_dfl_x_d				="You may perform any number of deflections each round."
+s_grap_10			="Legendary Wrestler"				s_grap_10_d				="You are exceptionally proficient at grappling.\n\nYou gain a +10 bonus on all grapple checks.\n\nSpecial: A monk can qualify for this feat without having the Improved Unarmed Strike feat."
+s_unarm_law			="Righteous Strike"					s_unarm_law_d			="Your unarmed strikes are particularly damaging to chaotic creatures.\n\nYour unarmed strike is treated as an axiomatic weapon (it is lawfully aligned and deals an extra 2d6 points of damage against creatures of chaotic alignment)."
+s_unarm_ch3			="Keen Strike"						s_unarm_ch3_d			="Your unarmed strikes become as sharp as blades.\n\nYour unarmed strike has a critical threat range of 18–20 and deals slashing damage. (At your option, any unarmed strike can deal bludgeoning damage instead, but cannot then take advantage of the enhanced threat range.)"
+s_unarm_kill		="Vorpal Strike"					s_unarm_kill_d			="Your unarmed strikes can behead your opponents.\n\nYour unarmed strike is considered to be a slashing vorpal weapon. (At your option, any unarmed strike can do bludgeoning damage instead, but it loses the vorpal quality.)"
+
+s_spl_dc_1			="Spell Focus"						s_spl_dc_1_d			="Your spells of the school of magic are far more potent than normal.\n\n+1 DC for all saving throws against spells from the school of magic."
+s_spl_dc_2			="Greater Spell Focus"				s_spl_dc_2_d			=s_spl_dc_1_d
+s_spl_dc_3			="Epic Spell Focus"					s_spl_dc_3_d			=s_spl_dc_1_d
+s_spl_unsr1			="Spell Penetration"				s_spl_unsr1_d			="Your spells are very powerful, defeating spell resistance more easily.\n\nYou get a +2 bonus on caster level checks to beat a creature’s spell resistance."
+s_spl_unsr2			="Greater Spell Penetration"		s_spl_unsr2_d			="Your spells are especially potent, defeating spell resistance more readily than normal.\n\nYou get a +2 bonus on caster level checks to beat a creature’s spell resistance."
+s_unsr_6			="Epic Spell Penetration"			s_unsr_6_d				="Your spells are tremendously potent, breaking through spell resistance with ease.\n\nYou get a +2 bonus on caster level checks to beat a creature’s spell resistance."
+s_spl_summ1			="Augment Summoning"				s_spl_summ1_d			="Summoned creatures gain +4 bonus on Str and Con."
+s_spl_elem1			="Evocation Specialization"			s_spl_elem1_d			="+2 bonus on damage rolls of Evocation spells."
+s_cst_no_ao			="Improved Combat Casting"			s_cst_no_ao_d			="You don't incur attacks of opportunity for casting spells when threatened."
+s_spl_add_2x		="Spell Knowledge"					s_spl_add_2x_d			="You learn two new arcane spells of any level up to the maximum level you can cast."
+s_spl_cpy_1x		="Spell Stowaway"					s_spl_cpy_1x_d			="Choose a spell-like ability you possess or a spell you can cast. You gain the benefits of this magic whenever it is used near you.\n\nYou are attuned to the magic you chose. If another spellcaster within 300 feet of you uses this magic, you also immediately gain the magic’s effect as if it had been used on you by the same caster.\n\nYou must have direct line of effect to the spellcaster in order to gain the benefit of the attuned magic (though you do not have to know the spellcaster is present, and you can be flat-footed). The magic’s duration, effect, and other specifics are determined by its original caster’s level."
+s_spl_cvt_1x		="Spontaneous Spell"				s_spl_cvt_1x_d			="Choose a spell you can cast. You may spontaneously convert any prepared spell of that spell’s level into that spell, just as a cleric channels energy to convert spells into cure spells."
+
+s_sf_3				="Skill Focus"						s_sf_3_d				="+3 bonus on all checks with the skill."
+s_sf_10				="Epic Skill Focus"					s_sf_10_d				="You have a legendary knack with the skill.\n\n+10 bonus on all checks with the skill."
+s_sf_4_rep			="Epic Reputation"					s_sf_4_rep_d			="Your reputation provides great bonuses on interactions with others.\n\n+4 bonus on Bluff, Diplomacy, Gather Information, Intimidate, and Perform checks."
+s_polyglot			="Polyglot"							s_polyglot_d			="You can speak all languages. If you’re literate, you can also read and write all languages (not including magical script)."
+
+
+s_quick_draw		="Quick Draw"	s_quick_draw_d	="You can draw or swap weapons as a free action instead of as a move action, and does not provoke attacks of opportunity."
+s_pa				="Power Attack"	s_pa_d			=[[Trade extra melee attack bonus for damage.
 
 If your melee attack bonus is higher than your opponent's AC, redundant part automatically converts to damage bonus (up to your base attack bonus).
 
 If you attack with a two-handed weapon, or with a one-handed weapon wielded in two hands, or with sole primary natural weapon, this damage bonus is doubled. However, this damage bonus doesn’t apply to light weapons (except unarmed attacks or natural weapons).]]
-pwr_rng_pa_n	="Deadly Aim"	pwr_rng_pa_d	="Similar with <t=@pwr_pa c=fc_b>Power Attack</t>, but for ranged attacks (except the double damage bonus rule)."
+pwr_rng_pa_n		="Deadly Aim"	pwr_rng_pa_d	="Similar with <t=@pwr_pa c=fc_b>Power Attack</t>, but for ranged attacks (except the double damage bonus rule)."
 
 s_tw="Two-Weapon Fighting"	s_tw_d=[[You can fight with a weapon in each hand. You can make one extra attack each round with the second weapon.
 
@@ -44,17 +181,16 @@ Feat + Light		-2	-2
 s_hr_tw_ratk_2="<t=$s_tw_nd c=fc_b>Two-Weapon Fighting</t>: one extra attack with second weapon for regular attack <c=twa>(unchecked: for full attack only)</c>"
 pwr_tw_n="Two-Weapon Fighting"	pwr_tw_d=[[Your penalties on attack rolls for fighting with two weapons are reduced. The penalty for your primary hand lessens by 2 and the one for your off hand lessens by 6.
 
-<b>Normal: </b>]]..s_tw_d..[[
+Normal: ]]..s_tw_d..[[
 
 
-<b>Special: </b>A 2nd-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
+Special: A 2nd-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
 pwr_tw1_n="Improved Two-Weapon Fighting"	pwr_tw1_d=[[In addition to the standard single extra attack you get with an off-hand weapon, you get a second attack with it, albeit at a –5 penalty.
 
-<b>Special: </b>A 6th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
-pwr_tw2_n="Greater Two-Weapon Fighting"
-pwr_tw2_d=[[You get a third attack with your off-hand weapon, albeit at a –10 penalty.
+Special: A 6th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
+pwr_tw2_n="Greater Two-Weapon Fighting"		pwr_tw2_d=[[You are a master at fighting two-handed.\n\nYou get a third attack with your off-hand weapon, albeit at a –10 penalty.
 
-<b>Special: </b>An 11th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
+Special: An 11th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
 pwr_tw3_n="Perfect Two-Weapon Fighting"	pwr_tw3_d="No penalty on attack rolls for fighting with two weapons, even your off-hand weapon is not light."
 pwr_tw_def_n="Two-Weapon Defence"	pwr_tw_def_d=[[When wielding a double weapon or two weapons (not including natural weapons or unarmed strikes), you gain a +1 shield bonus to your AC.
 
@@ -76,15 +212,15 @@ pwr_rng_precise1_n="Improved Precise Shot"	pwr_rng_precise1_d=[[Your ranged atta
 
 In addition, when you shoot or throw ranged weapons at a grappling opponent, you automatically strike at the opponent you have chosen. Without this feat, you must roll randomly to see which grappling combatant the attack strikes.
 
-<b>Special: </b>An 11th-level ranger who has chosen the archery combat style is treated as having Improved Precise Shot, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
+Special: An 11th-level ranger who has chosen the archery combat style is treated as having Improved Precise Shot, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
 pwr_atk_r_atk2_n="Rapid Shot"	pwr_atk_r_atk2_d=[[You can get one extra attack per round with a ranged weapon. The attack is at your highest base attack bonus, but each attack you make in that round (the extra one and the normal ones) takes a –2 penalty. You must use the full attack action to use this feat.
 
-<b>Special: </b>A 2nd-level ranger who has chosen the archery combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
+Special: A 2nd-level ranger who has chosen the archery combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
 pwr_atk_r_atk2_1_n="Improved Rapid Shot"	pwr_atk_r_atk2_1_d="No penalty for Rapid Shot."
 pwr_atk_r_atk2_2_n="Greater Rapid Shot"	pwr_atk_r_atk2_2_d="Three shots for Rapid Shot."
 pwr_atk_r_tgt3_n="Manyshot"	pwr_atk_r_tgt3_d=[[Make ranged attacks on multiple foes in designated area. Each attack is at your highest base attack bonus, but takes -2 penalty.
 
-<b>Special: </b>A 6th-level ranger who has chosen the archery combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]..use_a
+Special: A 6th-level ranger who has chosen the archery combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]..use_a
 pwr_atk_r_tgt3_1_n="Improved Manyshot"	pwr_atk_r_tgt3_1_d="No penalty for Manyshot."
 pwr_atk_r_tgtx_n="Rain of Arrows"	pwr_atk_r_tgtx_d="Make ranged attacks on all foes in ranged attack range. Each attack is at your highest base attack bonus, but takes -2 penalty."..use_b
 pwr_atk_r_tgtx_1_n="Improved Rain of Arrows"	pwr_atk_r_tgtx_1_d="No penalty for Rain of Arrows."
@@ -106,8 +242,8 @@ Uses per day: Monk level + Non-nonk level/4.
 Can be used no more than once per round. A failed attack roll ruins the attempt, too.
 ]]-- A stunned character can’t act, loses any Dexterity bonus to AC, and takes a –2 penalty to AC.	Constructs, oozes, plants, undead, incorporeal creatures, and creatures immune to critical hits cannot be stunned.	You must declare that you are using this feat before you make your attack roll (thus, a failed attack roll ruins the attempt).	Special: A monk may select Stunning Fist as a bonus feat at 1st level, even if she does not meet the prerequisites. A monk who selects this feat may attempt a stunning attack a number of times per day equal to her monk level, plus one more time per day for every four levels she has in classes other than monk. A fighter may select Stunning Fist as one of his fighter bonus feats.	You may attempt a stunning attack once per day for every four levels you have attained, and no more than once per round. A failed attack roll ruins the attempt, too.	1 round (until just before your next action)
 
-pwr_overwhelming_critical_d=[[
-When using a melee weapon, you deal an extra damage on a successful critical hit:
+pwr_ch_mle_dmg_d=[[
+When using a proficient melee weapon, you deal an extra damage on a successful critical hit:
 If the weapon’s critical multiplier is x2, add an extra 1d6 points of damage.
 If the weapon’s critical multiplier is x3, add an extra 2d6 points of damage.
 If the weapon’s critical multiplier is x4, add an extra 3d6 points of damage.
@@ -158,7 +294,7 @@ These bonuses to AC apply even against touch attacks or when the monk is flat-fo
 She loses these bonuses when she is immobilized or helpless, when she wears any armor or robe, etc., when she carries a shield, or when she carries a medium or heavy load.
 ]]
 
-pwr_ki_strike_d=[[
+pwr_ki_atk_d=[[
 A monk's unarmed attacks are empowered with ki which improves with her monk level.
 
 +1 enhancement bonus to her unarmed strikes every 5 levels (+1 at 5th, +2 at 10th, ...).
@@ -628,13 +764,6 @@ pwr_lt_0_dance_d=[[
 This spell creates a faintly glowing, vaguely humanoid shape, shedding light as a torch.
 
 Each round, it automatically moves toward the dark area.
-]]
-pwr_lt_0_dance_o=[[
-Depending on the version selected, you create up to four lights that resemble lanterns or torches (and cast that amount of light), or up to four glowing spheres of light (which look like will-o'-wisps), or one faintly glowing, vaguely humanoid shape.
-
-The dancing lights must stay within a 10-foot-radius area in relation to each other but otherwise move as you desire (no concentration required): forward or back, up or down, straight or turning corners, or the like. The lights can move up to 100 feet per round. A light winks out if the distance between you and it exceeds the spell's range.
-
-Dancing lights can be made permanent with a permanency spell.
 ]]
 
 pwr_lt_1_fey_n="Faerie Fire"
@@ -1218,7 +1347,6 @@ pwrs_text={
 -- z_pwrs.feat
 -- cmn
 [pwr_init1					]={n="Improved Initiative"							,d="+4 bonus on initiative checks."},
-[pwr_quick_draw				]={n="Quick Draw"									,d="Draw weapon with no action instead of as a move action."},
 [pwr_hp1					]={n="Toughness"									,d="+3 hit points initially and +1 additional hit point for each level beyond 3."},
 [pwr_ft1					]={n="Great Fortitude"								,d="+2 bonus on all Fortitude saving throws."},
 [pwr_rf1					]={n="Lightning Reflexes"							,d="+2 bonus on all Reflex saving throws."},
@@ -1261,20 +1389,8 @@ pwrs_text={
 [pwr_atk_m_dmg3				]={n=		"Devastating Strike"					,d="Deal three times the normal damage on a single melee attack. Half damage if missed."..use_b},
 [pwr_charge1				]={n=	"Improved Charge"							,d="+2 bonus on attack and damage rolls of charges.\n\nNormal: the bonus is 1."},
 [pwr_charge2				]={n=		"Greater Charge"						,d="+2 bonus to Improved Charge."},
-[pwr_ao_x					]={n="Combat Reflexes"								,d="Unlimited opportunity attacks.\n\nNormal: Without this feat, you can make only one opportunity attack per round."},
+[pwr_ao_dex					]={n="Combat Reflexes"								,d="You may make a number of additional attacks of opportunity equal to your Dexterity bonus.\n\nWith this feat, you may also make attacks of opportunity while flat-footed."},
 [pwr_dex_wpn				]={n="Weapon Finesse"								,d="With a light weapon, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity modifier instead of your Strength modifier on attack rolls. If you carry a shield, its armor check penalty applies to your attack rolls.\n\nNatural weapons are always considered light weapons."},
--- spl
-[pwr_spl_conj				]={n="Spell Focus: Conjuration"						,d=spl_focus_d},
-[pwr_spl_summ1				]={n=	"Augment Summoning"							,d="Summoned creatures gain +4 bonus on Str and Con."},
-[pwr_spl_elem				]={n="Spell Focus: Evocation"						,d=spl_focus_d},
-[pwr_spl_elem1				]={n=	"Evocation Specialization"					,d="+2 bonus on damage rolls of Evocation spells."},
-[pwr_spl_ctrl				]={n="Spell Focus: Enchantment"						,d=spl_focus_d},
-[pwr_spl_dead				]={n="Spell Focus: Necromancy"						,d=spl_focus_d},
-[pwr_spl_unsr1				]={n=s_spl_unsr1									,d=s_spl_unsr1_d},
-[pwr_spl_unsr2				]={n=	s_spl_unsr2									,d=s_spl_unsr2_d},
-[pwr_turn1					]={n="Improved Turning"								,d="+1 bonus on turn checks."},
-[pwr_turn2					]={n=	"Greater Turning"							,d="+1 bonus to Improved Turning."},
-[pwr_turn_extra				]={n="Extra Turning"								,d="+4 uses per day of Turn.\n\nThis feat may be taken multiple times. Its effects stack."},
 -- skl z_skl_bns
 [pwr_s2_athletic			]={n="Athletic			",d="+2 bonus on all Climb and Swim checks."},
 [pwr_s2_acrobatic			]={n="Acrobatic			",d="+2 bonus on all Jump and Tumble checks."},
@@ -1291,7 +1407,7 @@ pwrs_text={
 [pwr_s2_self_sufficient		]={n="Self-Sufficient	",d="+2 bonus on all Heal and Survival checks."},
 [pwr_s2_negotiator			]={n="Negotiator		",d="+2 bonus on all Sense Motive and Diplomacy checks."},
 [pwr_s2_persuasive			]={n="Persuasive		",d="+2 bonus on all Intimidate and Bluff checks."},
---[pwr_sf_...				]={n=s_sf.."...	",d=s_skl_focus_d}, set by code	z_skl_focus_name
+--[pwr_sf_...				]={n=s_sf_3.."...	",d=s_sf_3_d}, set by code	z_skl_focus_name
 -- z_pwrs.ex
 [pwr_dr2					]={n="PR2"},
 [pwr_dr5					]={n="PR5"},
@@ -1378,7 +1494,7 @@ pwrs_text={
 [pwr_no_fixed				]={n="No Fixed Shape"},
 
 [pwr_imm_m					]={n="Magic Immunity"			,d="Immunity to spell damage (except vulnerable damage types) and effects."},
-[pwr_res_elm				]={n="Elemental Resistance"		,d="Takes half elemental damage."},
+[pwr_er_50p					]={n="Energy Resistance"		,d="Takes only half damage of any energy type."},
 [pwr_aura5_atk2				]={n="Trueattack Aura"			,d="Allies within 3 squares gain a +2 bonus on attack rolls."},
 [pwr_aura5_dmg2				]={n="Cruelty Aura"				,d="Allies within 3 squares gain a +2 bonus on damage rolls."},
 [pwr_aura5_heal5			]={n="Healing Aura"				,d="Allies within 3 squares recover 5 hit points per turn."},
@@ -1452,17 +1568,17 @@ pwrs_text={
 [pwr_dfl_arw				]={n="Deflect Arrows"			,d="Once per round when you would normally be hit with a ranged weapon, you may deflect it so that you take no damage from it.\n\nYou must have at least one hand free (holding nothing) to use this feat. You must be aware of the attack and not flatfooted."},-- Attempting to deflect a ranged weapon doesn’t count as an action. Unusually massive ranged weapons and ranged attacks generated by spell effects can’t be deflected.	Special: A monk may select Deflect Arrows as a bonus feat at 2nd level, even if she does not meet the prerequisites.	A fighter may select Deflect Arrows as one of his fighter bonus feats.
 [pwr_snt_arw				]={n="Snatch Arrows"			,d=pwr_snt_arw_d},
 [pwr_stunning_fist			]={n="Stunning Fist"			,d=pwr_stunning_fist_d},
-[pwr_improved_stunning_fist	]={n="Improved Stunning Fist"	,d="Add +2 bonus to the Fortitude saving throw of your stunning attack.\n\nThis feat may be taken multiple times. Its effects stack."},
-[pwr_overwhelming_critical	]={n="Overwhelming Critical"	,d=pwr_overwhelming_critical_d},
-[pwr_improved_sneak_attack	]={n="Improved Sneak Attack"	,d="Your sneak attacks are more deadly than normal.\n\nAdd +1d6 to your sneak attack damage.\n\nThis feat may be taken multiple times. Its effects stack."},
-[pwr_terrifying_rage		]={n="Terrifying Rage"			,d="While in a rage, you panic your opponents.\n\nWhile you are raging, any enemy that views you must make a Will save opposed by your Intimidate check or become panicked (if its character level less than yours) or shaken (if its character level equal to or up to twice your character level) for 4d6 rounds.\n\nAn enemy with character level greater than twice your character level is not affected by this feat."},
+[pwr_improved_stunning_fist	]={n="Improved Stunning Fist"	,d="Add +2 bonus to the Fortitude saving throw of your stunning attack.\n\nSpecial: This feat may be taken multiple times. Its effects stack."},
+[pwr_ch_mle_dmg				]={n="Overwhelming Critical"	,d=pwr_ch_mle_dmg_d},
+[pwr_sa_1x					]={n="Improved Sneak Attack"	,d="Your sneak attacks are more deadly than normal.\n\nAdd +1d6 to your sneak attack damage.\n\nSpecial: This feat may be taken multiple times. Its effects stack."},
+[pwr_rage_fear				]={n="Terrifying Rage"			,d="While in a rage, you panic your opponents.\n\nWhile you are raging, any enemy that views you must make a Will save opposed by your Intimidate check or become panicked (if its character level less than yours) or shaken (if its character level equal to or up to twice your character level) for 1d4 rounds.\n\nAn enemy with character level greater than twice your character level is not affected by this feat."},
 -- mnk 17 + 2
 [pwr_unarmed_strike			]={n="Unarmed Strike"				,d=pwr_unarmed_strike_d},
 [pwr_flurry_of_blows		]={n="Flurry of Blows"				,d=pwr_flurry_of_blows_d},
 [pwr_ac_bonus				]={n="AC Bonus"						,d=pwr_ac_bonus_d},
 [pwr_fast_movement_monk		]={n="Fast Movement"				,d="A monk gains a +2 enhancement bonus to her speed every 3 levels (+2 at 3rd, +4 at 10th, ..., +20 at 30th).\n\nA monk in armor, using a shield, or carrying a medium or heavy load loses this extra speed."},
 [pwr_still_mind				]={n="Still Mind"					,d="A monk gains a +2 bonus on saving throws against mind-affecting spells and effects, since her meditation and training improve her resistance to mind-affecting attacks."},-- from the school of enchantment
-[pwr_ki_strike				]={n="Ki Strike"					,d=pwr_ki_strike_d},
+[pwr_ki_atk				]={n="Ki Strike"					,d=pwr_ki_atk_d},
 [pwr_slow_fall				]={n="Slow Fall"					,d="A monk within arm's reach of a wall can use it to slow her descent. When calculate the distance of the fall, reduce by 5 feet per monk level. At 20th level, she can fall any distance without harm."},
 [pwr_purity_of_body			]={n="Purity of Body"				,d="A monk gains control over her body's immune system. She gains immunity to all diseases except for supernatural and magical diseases."},-- (such as mummy rot and lycanthropy)
 [pwr_wholeness_of_body		]={n="Wholeness of Body"			,d="A monk can heal her own wounds.\n\nHealing points per day: level x 2. The healing can be divided among several uses."},-- twice her current monk level	She can heal a number of hit points of damage equal to her monk level x (2 + her Wis bonus / 2) each day, and she can spread this healing out among several uses.

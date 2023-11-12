@@ -141,9 +141,9 @@ lwr_lmt				="フローティングの下限"
 upr_lmt				="フローティングの上限"
 apply_to_boss		="ボス戦にも適用"
 
-s_cfg_mob_pty_sz     ="モンスター・パーティーサイズ"
-s_cfg_mob_pty_sz_d   ="デフォルトでは、最高の戦闘体験を実現するために、エンカウントごとのモンスターの数はプレイヤー キャラクターの数に基づいて自動的に設定されます。\n\n指定したプレイヤーキャラクター数に応じてモンスターの数を設定し、1対10などの特殊な戦闘体験を行うことができます。\n\nただし、これにより戦闘が難しすぎたり、簡単すぎたりする可能性があるため、経験豊富なプレイヤーのみに限定してください。"
-s_base_on_my_pty	="プレイヤーパーティに基づく"
+s_cfg_mob_pty_sz	="Monster Party Size"
+s_cfg_mob_pty_sz_d	="By default, the number of monsters per encounter is automatically configured based on the number of player characters for the best battle experience.\n\nThis option can configure the number of monsters according to the specified number of player characters for special battle experience such as 1 vs. 10.\n\nHowever, this may cause the battle too difficult or too easy, so only for experienced players."
+s_base_on_my_pty	="Base on player party"
 
 -- z_arn_upd
 s_arn_upd_glory		="コンバット・パフォーマンス"	s_arn_upd_glory_d	="優れたパフォーマンスはより多くのグローリーポイントと報酬を得られます！"	s_arn_upd_glory_b	="グローリーポイントとゴールドの報酬が +%d%% 増加"
@@ -204,7 +204,7 @@ show_u_bf_ex		="戦闘ツールチップの状態を表示する"
 show_simple_act_tip	="移動と防衛アクションのツールチップを表示する"
 s_low_fps			="Enable this feature may significantly reduce FPS in ranged characters' turns."
 show_all_hits_in_rng="攻撃範囲内のヒット率を表示する<c=twa> (またはALT/Middle Button長押し)</c> <ico=ico/_s_warn t=$s_low_fps>"
-bf_ani_text			="Show floating text"-- z_new
+bf_ani_text			="Show floating text"
 ani_u_idle			="アイドル時にアニメーションを表示する"
 edge_vp_scroll		="画面のエッジ・スクロールを有効にする"
 auto_vp				="ビューポートアニメーションを有効にする"
@@ -530,8 +530,8 @@ pre_req			="前提条件"
 reqs			="必要条件"
 cost			="コスト"
 fee				="費用"
-actv			= "Active use"
-s_switch_pwr	= "On-off type"
+s_act_pwr		= "Active use"
+s_swt_pwr		= "On-off type"
 auto_gained		="自動取得"
 
 s_provoke_ao	="機会攻撃を誘発"
@@ -907,17 +907,17 @@ imxs={
 
 -- z_pwr_cat
 pwr_cats={
-{n="一般特技"				},
-{n="武器訓練"			},
+{n="一般特技"		},
+{n="クラス特技"	},
+{n="呪文特技"		},
+{n="武器訓練"		},
 {n="盾と鎧訓練"	},
-{n="近接戦闘訓練"		},
-{n="二刀流戦闘"		},
+{n="近接戦闘訓練"	},
+{n="二刀流戦闘"	},
 {n="両手戦闘"		},
-{n="遠隔攻撃訓練"		},
-{n="戦技訓練"	},
+{n="遠隔攻撃訓練"	},
+{n="戦技訓練"		},
 {n="技能開眼"		},
-{n="呪文特技"				},
-{n="クラス特技"				},
 }
 
 --[[ z_defs
@@ -960,7 +960,7 @@ uranks={
 
 エリートモンスターは"ミニボス"を生み出す。例えば、エリートオーガがオーガの群れを従えたり、二体のエリートノールがノールの一群を導いたりする。]]},
 
-
+ 
 {n="ソロ"		,d=[[ソロモンスターは、同一レベルのPCグループとの1対1の対戦相手です。
 
 それらは実際にはモンスター群として機能し、より多くのヒットポイントを持ち、より多くのダメージを与える。
@@ -977,24 +977,28 @@ uranks={
 }
 
 load_types={
-{n="荷重(低)"	},
+{n="荷重(低)"},
 {n="荷重(中)"},
-{n="荷重(高)"	},
+{n="荷重(高)"},
 {n="荷重超過"	},
 }
 
--- z_school
-spl_cats={
-{n="召喚術"},
-{n="力術"},
-{n="強化"},
-{n="死霊術"},
+spl_cats={-- z_school
+{n="Abjuration"		},
+{n="召喚術"			},
+{n="Divination"		},
+{n="強化"			},
+{n="力術"			},
+{n="Illusion"		},
+{n="死霊術"			},
+{n="Transmutation"	},
+{n="Universal"		},
 }
 
 act_costs={
-{n="フリー・アクション"		},
+{n="フリー・アクション"	},
 {n="移動アクション"		},
-{n="標準アクション"	},
+{n="標準アクション"		},
 {n="全ラウンド・アクション"	},
 }
 
@@ -1098,19 +1102,14 @@ enmy_atk_mod		="敵の攻撃ロールの修正値"
 enmy_def_mod		="敵の防御修正値"
 plyr_no_ch			="プレイヤーのクリティカルヒット時、ダメージを増加しない"
 enmy_no_ch			="敵のクリティカルヒット時、ダメージを増加しない"
-s_elit_imm_seckill	="エリートモンスターは即死の効果を受けない"
-s_solo_imm_seckill	="ソロのモンスターは即死の効果を受けない"
-s_mon_adv_wpns		="モンスターはエンチャントされた武器を持つ"
-s_mon_adv_amrs		="モンスターはエンチャントされた鎧を持つ"
-s_mon_adv_wonds		="モンスターはより多くの不思議なアイテムを持つ"
+s_elit_imm_seckill	="Elite monsters are immune to instant kill effects"
+s_solo_imm_seckill	="Solo monsters are immune to instant kill effects"
 enmy_ai				="敵ＡＩ"
 
 s_fmt				="フォーメーション"
 s_fmt_d				="戦闘フォーメーションをプリセットまたはカスタムから選んでください。"
 fmt_pre				="プリセット・フォーメーション"
 fmt_cust			="カスタム・フォーメーション"
-
-s_rage_x			="激怒 %d／日"
 
 -- arena
 s_arn_rest			="休息"	s_arn_rest_d	="完全休息を取って、様々な能力の日常的な使用量を回復させよう。\n\nあなたのパーティーは、BOSSチャレンジの前後に無料で自動的に休息します。"
@@ -1237,6 +1236,7 @@ Animals and other creatures incapable of moral action are neutral because they l
 Nine distinct alignments define all the possible combinations of the lawful–chaotic axis with the good–evil axis. But remember that individuals vary from this norm, and that a given character may act more or less in accord with his or her alignment from day to day.
 
 The first six alignments, lawful good through chaotic neutral, are the standard alignments for adventurers. The three evil alignments are for monsters and villains.]]
+s_x_ua		="%s Alignment"
 
 u_alns_text={-- z_ua
 [ua_lg]={n="Lawful Good"		,d="Lawful Good, “Crusader”: \n\nA lawful good character acts as a good person is expected or required to act. She combines a commitment to oppose evil with the discipline to fight relentlessly. She tells the truth, keeps her word, helps those in need, and speaks out against injustice. A lawful good character hates to see the guilty go unpunished.\n\nLawful good is the best alignment you can be because it combines honor and compassion."},

@@ -85,8 +85,8 @@ mov_to_fmt				="%sへ移動"
 mov_to_dst				="目的地に移動"
 auto_mov				="オートトラベル"
 upd_sites				="すべてのサイトを更新"
-s_mon_clred				="Cleared"-- z_new 6
-s_above_fled			="この層より上のモンスターは逃げ出した"
+s_mon_clred				="Cleared"
+s_above_fled			="Monsters above this layer have fled."
 s_loc_fast				="Fast movement and action"
 s_gather_add			="Add (by region)"
 s_gather_del			="Cancel (by region)"
@@ -107,7 +107,7 @@ buy_supplies			="物資を購入"
 rest_fail_short			="物資不足"
 rest_fail_long			="物資不足！パーティーは休むことができない。"
 rest_done_msg			="物資（１）を消費。パーティーは休息した。"
-rest					= {n="キャンプ", d="ヒットポイントを回復するために8時間の休息を取る。"}-- z_new		Rest 8 hours to restore hit points and daily uses of various abilities, etc.
+rest					= {n="キャンプ", d="ヒットポイントを回復するために8時間の休息を取る。"}-- z_new	Rest 8 hours to restore hit points and daily uses of various abilities, etc.
 
 spell_materials			= {n="スペル・マテリアル", d=[[
 術者を含むパーティーでは、スペル・マテリアルは不可欠な素材です。 ほとんどの呪文は、詠唱時にスペル・マテリアルを消費します。
@@ -316,7 +316,7 @@ qst_chk_types={
 {f="<ico=ico/rep t=$reputation_nd>を %s 確保する"},
 {f="<ico=ico/sup t=$supplies_nd>を %s 確保する"},
 {f="%s の獲得"},
-{f="%s を習得する"},
+{f="%s（2 ranks） を習得する"},
 {f="パーティサイズを %s に増やす"},
 {f="%s 体のモンスターの集団を倒す"},
 {f="対決に勝利せよ"},
@@ -436,7 +436,7 @@ s1_me_wld_trap	= "No one lives here and yet you detect a note of danger in the a
 s1_me_wld_lock	= "You discovered a small locked container during the exploration. There's likely something useful inside. Do you want to try to open it?"
 s1_me_dgn_sup	= ""
 s1_me_dgn_trap	= "That's something suspicious ahead. You need to discover and eliminate the danger before moving on."
-s1_me_dgn_lock	= "通路の壁に隠された鍵付きの小部屋を発見した。"
+s1_me_dgn_lock	= "You found a locked compartment concealed in the wall of the passageway."
 
 s2_me_wld_sup	= "Better than nothing..."
 s2_me_wld_trap	= "As expected, you find something behind the trap..."

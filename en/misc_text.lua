@@ -530,8 +530,8 @@ pre_req			= "Prerequisites"
 reqs			= "Requirements"
 cost			= "Cost"
 fee				= "Fee"
-actv			= "Active use"
-s_switch_pwr	= "On-off type"
+s_act_pwr		= "Active use"
+s_swt_pwr		= "On-off type"
 auto_gained		= "Auto Gained"
 
 s_provoke_ao	= "Provoke Attacks of Opportunity"
@@ -908,6 +908,8 @@ imxs={
 -- z_pwr_cat
 pwr_cats={
 {n="General Feats"				},
+{n="Class Feats"				},
+{n="Spell Feats"				},
 {n="Weapon Training"			},
 {n="Shield and Armor Training"	},
 {n="Melee Combat Training"		},
@@ -916,8 +918,6 @@ pwr_cats={
 {n="Ranged Combat Training"		},
 {n="Combat Maneuvers Training"	},
 {n="Skill Specialization"		},
-{n="Spell Feats"				},
-{n="Class Feats"				},
 }
 
 --[[ z_defs
@@ -983,12 +983,16 @@ load_types={
 {n="Overload"	},
 }
 
--- z_school
-spl_cats={
-{n="Conjuration"},
-{n="Evocation"},
-{n="Enchantment"},
-{n="Necromancy"},
+spl_cats={-- z_school
+{n="Abjuration"		},
+{n="Conjuration"	},
+{n="Divination"		},
+{n="Enchantment"	},
+{n="Evocation"		},
+{n="Illusion"		},
+{n="Necromancy"		},
+{n="Transmutation"	},
+{n="Universal"		},
 }
 
 act_costs={
@@ -1109,8 +1113,6 @@ s_fmt				="Formations"
 s_fmt_d				="Choose a preset or customize battle formation."
 fmt_pre				="Preset Formation"
 fmt_cust			="Custom Formation"
-
-s_rage_x			="Rage %d/Day"
 
 -- arena
 s_arn_rest			="Rest"	s_arn_rest_d	="Take a complete rest to restore daily uses of various abilities.\n\nYour party will automatically rest for free before and after the BOSS challenge."
@@ -1237,6 +1239,7 @@ Animals and other creatures incapable of moral action are neutral because they l
 Nine distinct alignments define all the possible combinations of the lawful–chaotic axis with the good–evil axis. But remember that individuals vary from this norm, and that a given character may act more or less in accord with his or her alignment from day to day.
 
 The first six alignments, lawful good through chaotic neutral, are the standard alignments for adventurers. The three evil alignments are for monsters and villains.]]
+s_x_ua		="%s Alignment"
 
 u_alns_text={-- z_ua
 [ua_lg]={n="Lawful Good"		,d="Lawful Good, “Crusader”: \n\nA lawful good character acts as a good person is expected or required to act. She combines a commitment to oppose evil with the discipline to fight relentlessly. She tells the truth, keeps her word, helps those in need, and speaks out against injustice. A lawful good character hates to see the guilty go unpunished.\n\nLawful good is the best alignment you can be because it combines honor and compassion."},

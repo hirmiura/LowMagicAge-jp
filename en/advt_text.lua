@@ -317,7 +317,7 @@ qst_chk_types={
 {f="Own %s <ico=ico/rep t=$reputation_nd>"},
 {f="Own %s <ico=ico/sup t=$supplies_nd>"},
 {f="Acquire %s"},
-{f="Learn %s"},
+{f="Learn %s 2 ranks"},
 {f="Increase party size to %s"},
 {f="Defeat %s groups of monsters"},
 {f="Defeat the encounter"},

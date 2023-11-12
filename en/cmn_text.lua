@@ -1,6 +1,7 @@
 -- Settings: default values are ok for most languanges. However, some languanges need modifications. e.g. French needs wider UI for item description.
---_itm_desc_w	= 320	-- Width of description of items. Too wider cause town ui bug when low resolution.
---_hlp_tree_w	= 400	-- Width of tree control of Help
+--_itm_desc_w	= 320	-- width of description of items. Too wider cause town ui bug when low resolution.
+--_hlp_tree_w	= 400	-- width of tree control of help
+--_text_lang	= "en"	-- 语言标志 用于日文 text language id for jp text
 
 
 -- Punctuation marks with pre/post spaces depends on language	z_punctuation
@@ -12,6 +13,8 @@ _pm_em		= "! "	-- exclamation mark
 _pm_col		= ": "	-- colon
 _pm_par_b	= " ("	-- parenthesis/parentheses
 _pm_par_e	= ")"
+_pm_bk_b	= "\""	-- 书名号 用于日文 book title mark for jp text
+_pm_bk_e	= "\""
 _pm_dqm_b	= "\""	-- double quotation mark begin
 _pm_dqm_e	= "\""	-- end
 
@@ -99,6 +102,9 @@ s_powerful			="Powerful"
 s_balanced			="Balanced"
 s_or_				=" or "
 s_text_too			="This text also applies to: "
+s_inc				="Include"
+s_epic				="Epic"
+s_out_rng			="Out of range"
 
 s_lack_gp_			="Not enough gold pieces!"
 s_got_itms_c		="Obtained Items"
@@ -599,9 +605,7 @@ Spells that target only yourself are usually beneficial, not harmful, and spell 
 Additionally, in many cases, spell resistance applies only when a resistant creature is targeted by the spell, not when a resistant creature encounters a spell that is already in place.
 
 Some spells also grant spell resistance. Spell resistance does not stack. It overlaps.]]
-s_unsr			="Spell Penetration"			s_unsr_d		="You get this Spell Penetration bonus on caster level checks (1d20 + caster level) made to overcome a creature’s spell resistance."
-s_spl_unsr1		="Spell Penetration"			s_spl_unsr1_d	="You get a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature’s spell resistance."
-s_spl_unsr2		="Greater Spell Penetration"	s_spl_unsr2_d	="You get a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature’s spell resistance. This bonus stacks with the one from Spell Penetration."
+s_unsr			="Spell Penetration"			s_unsr_d		="You get this Spell Penetration bonus on caster level checks (1d20 + caster level) to beat a creature’s spell resistance."
 s_sr_yes		="Yes"
 s_sr_no			="No"
 s_sr_harmless	=" (harmless)"
@@ -675,6 +679,7 @@ Most characters know how to speak Common and a racial language, as appropriate. 
 <b>Speak Language Skill: </b>Characters can also purchase Speak Language to acquire more languages.
 
 <b>Literacy: </b>A literate character (anyone but a barbarian who has not spent skill points to become literate) can read and write any language he speaks. Each language has an alphabet, though sometimes several spoken languages share a single alphabet.]]
+s_x_langs			="%d languages"
 s_lang_f			="A language whose text is based on the %s alphabet.\n\nTypical speakers: %s."
 s_lang_abyssal		="Abyssal					"	s_lang_abyssal_t		="Infernal	"	s_lang_abyssal_d		="Demons, chaotic evil outsiders			"
 s_lang_aquan		="Aquan						"	s_lang_aquan_t			="Elven		"	s_lang_aquan_d			="Water-based creatures						"
@@ -893,10 +898,13 @@ Special: A creature can gain this feat multiple times. Each time the creature ta
 
 
 -- misc
-s_tgr_lmt		="Improve Triggered Attacks"	s_tgr_lmt_d ="When making non-active attacks such as Attacks of Opportunity and Cleave, also use abilities that have daily limit such as Smite Evil, Extreme Strike, and Infinite Strike."
+s_dc_con		="DC = 10 + character level / 2 + Con modifier"
+s_dc_int		="DC = 10 + character level / 2 + Int modifier"
+s_dc_mus_uncst	="DC = 10 + your class level + your Con modifier + spell level"
 s_terr_unkn		="Unknown Terrain"
 s_x_moved		="%s moved."
 s_x_disappeared	="%s disappeared."
+s_tgr_lmt		="Improve Triggered Attacks"	s_tgr_lmt_d ="When making non-active attacks such as Attacks of Opportunity and Cleave, also use abilities that have daily limit such as Smite Evil, Extreme Strike, and Infinite Strike."
 s_web_mov		="Web Walking"	s_web_mov_ench_d	="Immune to spiderweb"	s_web_mov_d	=s_web_mov_ench_d.._pm_dot
 
 
@@ -906,7 +914,6 @@ s_hr_d				="House rules are modifications or extensions to basic rules.\n\nUnles
 s_hro				="Optional House Rule"
 s_hr_				="House Rule: "
 s_hr_opt			="Optional House Rule: "
-s_hr_ori			="Original Rule Text (not used, for reference only):"
 s_hr_plyr_atk_mod	="When certain house rules are on (or when your party has characters created based on these house rules), a bonus or penalty will be applied to player characters' attack rolls."
 s_hr_plyr_def_mod	="When certain house rules are on (or when your party has characters created based on these house rules), a bonus or penalty will be applied to player characters' multiple defense abilities."
 s_hr_enmy_atk_mod	="Some house rules are more favorable to player characters. For balance, when such rules are enabled, enemies gain a bonus to attack rolls.\n\nWhen multiple rules are enabled, the total bonus is the maximum bonus, plus +1 bonus from each additional rule."
@@ -959,7 +966,8 @@ s_hr_mnk_ac			="limit maximum bonus"	s_hr_mnk_ac_d	="If the sum of Wis bonus and
 s_hr_quivering_palm	="+2 uses per week"
 s_hr_wholeness_of_body	="add level x (Wis bonus / 2) to healing points per day"
 s_hr_mnk_dr			="damage reduction points = monk level / 2 and cannot be overcome"
-s_hr_smites			="+4 uses per day; damage bonus per level: 1 -> 4; bonus on attack rolls: +10 max"
+s_hr_dfl_x			="up to 4 times"
+s_hr_smites			="+2 uses per day; damage bonus per level: 1 -> 4; bonus on attack rolls: +10 max"
 s_hr_lay_on_hands	="add Cha bonus to healing points per day"
 s_hr_pal_saves		="+5 Max"
 s_hr_edl_mod		="effective druid level = ranger level - 3 <c=twa>(unchecked: ranger level / 2)</c>"
@@ -967,20 +975,21 @@ s_hr_brd_mus		="at least 3 uses per day"
 s_hr_mus_atk		="+5 Max"
 s_hr_mus_skl		="effect on all skill checks of all allies in range"
 s_hr_zdd_ac_bonus	="+6 Max"
-s_hr_def_stance		="+4 bonus on Combat Maneuvers Defense"
+s_hr_zdd_def		="+4 bonus on Combat Maneuvers Defense"
 s_hr_trap_sense		="+10 Max"
-s_hr_zbm_req		="remove prerequisites: <t=@pwr_mobility c=fc_b>Mobility</t>/<t=@pwr_cbt_exp c=fc_b>Combat Expertise</t>"
-s_hr_zbm_inc_use	="daily uses continue to increase after level 10"
-s_hr_zbm_act_use	="one use per action <c=twa>(unchecked: one use per attack)</c>"
-s_hr_zat_req		="remove prerequisites: <t=@pwr_sa c=fc_b>Sneak Attack +2d6</t>"
-s_hr_sa_frc_add		="+2 uses per day"
-s_hr_sa_frc_act		="one use per action <c=twa>(unchecked: one use per attack)</c>"
-s_hr_zdr_bwpn_use	="+2 uses per day"
-s_hr_zdr_bwpn_dc	="DC = 10 + character level / 2 + Con modifier"
-s_hr_death_atk_dc	="DC = 10 + character level / 2 + Int modifier"
+s_hr_zaa_xa			="+1 use per day for every 2 levels, up to 3 uses per day"
+s_hr_zaa_da			="+1 use per day for every 5 levels, up to 3 uses per day"
 s_hr_prc_dmg		="+5 bonus on attack rolls"
 s_hr_zdu_ac_int		="+6 Max"
 s_hr_zdu_ac_def		="+4 Max"
+s_hr_zdr_bwpn_use	="+2 uses per day"
+s_hr_cls_dc			="When calculating DC, replace class level with character level / 2"
+s_hr_zat_req		="remove prerequisites: <t=@pwr_sa c=fc_b>Sneak Attack +2d6</t>"
+s_hr_sa_frc_add		="+2 uses per day"
+s_hr_sa_frc_act		="one use per action <c=twa>(unchecked: one use per attack)</c>"
+s_hr_zbm_req		="remove prerequisites: <t=@pwr_mobility c=fc_b>Mobility</t>/<t=@pwr_cbt_exp c=fc_b>Combat Expertise</t>"
+s_hr_zbm_inc_use	="daily uses continue to increase after level 10"
+s_hr_zbm_act_use	="one use per action <c=twa>(unchecked: one use per attack)</c>"
 
 s_hr_spl_cd			="Spellcasting mode: cool-down <c=twa>(unchecked: spell slots)</c>"
 s_hr_spl_abi_50		="When calculate ability bonus spell slots, effective ability score up to 50"

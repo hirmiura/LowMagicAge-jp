@@ -115,13 +115,13 @@ qsts_1007_5_n="Escort"
 qsts_1007_5_d="Despite this one victory there are no doubt others in need of help. We can’t afford to get distracted. With an unknown threat lurking in the dark, we must escort {u=brian} to {s=76} as soon as possible."
 
 qsts_1008_n="Part-time Locksmith"
-qsts_1008_d="You got several ownerless chests from the guild. If you can open them safely, the items inside will be yours.\n\n{s=62} division provides the Open Lock skill training service. Have one or two party members train to learn the Open Lock skill. It will be helpful for your future adventures.\n\nIn addition, you'll need to purchase some lockpicks along the way."
+qsts_1008_d="You got several ownerless chests from the guild. If you can open them safely, the items inside will be yours.\n\nHave one or two party members train to learn the Open Lock skill. It will be helpful for your future adventures.\n\nIn addition, you'll need to purchase some lockpicks along the way."
 
 qsts_1009_n="Better Tools"
 qsts_1009_d="Using the Disable Device and Open Lock skills requires various tools.\n\nAlthough the simple tool set is merely usable, it’s basically for rookies. For professionals, a set of decent thieves’ tools or even a masterwork tool set are a must have."
 
 qsts_1010_n="The Essential Skill"
-qsts_1010_d="For adventurers, the Disable Device skill can be a crucial life-and-death ability for dungeon exploration. It’s definitely not wise to rush into a dungeon full of traps without learning this skill.\n\nThe Adventurers Guild in {s=63} provides the Disable Device training service. It is recommended to let several high Intelligence party members learn this skill."
+qsts_1010_d="For adventurers, the Disable Device skill can be a crucial life-and-death ability for dungeon exploration. It’s definitely not wise to rush into a dungeon full of traps without learning this skill.\n\nIt is recommended to let several high Intelligence party members learn this skill."
 
 qsts_1011_n="The Plight of Artisans"
 qsts_1011_d="The nearby Artisans Guild has encountered some serious setbacks and is asking for the Adventurers Guild to help. Your party is being sent to aid them."

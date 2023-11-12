@@ -401,6 +401,7 @@ This ability can also be used to strike undead: after a successful melee touch a
 
 -- z_adv_cls
 s_adv_cls_lv_lmt	="Level Limit"
+s_adv_cls_dc		="Any prestige class feature that calculates a save DC using the class level should add only half the character’s class levels above 10th."
 s_race_no_dragon	="Any nondragon (cannot already be a half-dragon)"
 s_skl_x_ranks		="%s %d ranks"
 s_skl_xx_ranks		="%s (any %d) %d ranks in each"
@@ -434,10 +435,12 @@ If a character had more than one spellcasting class before adding the prestige c
 
 <b>Special:</b>
 Arcane Trickster, Loremaster, Thaumaturgist: the previous spellcasting class can be any spellcasting class.
+Arcane Archer: the previous spellcasting class must be an arcane spellcasting class.
 Eldritch Knight: the previous spellcasting class must be an arcane spellcasting class, and it takes effect from eldritch knight level 2.
 Archmage: the previous spellcasting class must be an arcane spellcasting class in which the character could cast 7th-level spells.
 Mystic Theurge: applied on both a previous arcane spellcasting class and a previous divine spellcasting class.
 Elemental Lord: the previous spellcasting class must be an arcane spellcasting class, and it takes effect only at even-numbered levels before 10th level. After 10th level, it takes effect at each level.]]
+s_bns_scl_zaa		="No bonus spellcasting level for Arcane Archer."
 s_sel_cbt_cls		="Select a combat class"
 s_sel_cst_cls		="Select a spellcasting class"
 s_sel_arcane_cls	="Select an arcane spellcasting class"
@@ -656,18 +659,12 @@ In combat, thaumaturgists often summon creatures from the Outer Planes to fight 
 
 
 -- zaa	魔射手		Arcane Archer		
-
-s_enhance_arrow	="Enhance Arrow"	s_enhance_arrow_d	="At 1st level, every nonmagical arrow an arcane archer nocks and lets fly becomes magical, gaining a +1 enhancement bonus. Unlike magic weapons created by normal means, the archer need not spend experience points or gold pieces to accomplish this task. However, an archer’s magic arrows only function for her. For every two levels the character advances past 1st level in the prestige class, the magic arrows she creates gain +1 greater potency (+1 at 1st level, +2 at 3rd level, +3 at 5th level, +4 at 7th level, and +5 at 9th level)."
-
-s_zaa_imbue_arrow	="Imbue Arrow"	s_zaa_imbue_arrow_d	="At 2nd level, an arcane archer gains the ability to place an area spell upon an arrow. When the arrow is fired, the spell’s area is centered on where the arrow lands, even if the spell could normally be centered only on the caster. This ability allows the archer to use the bow’s range rather than the spell’s range. It takes a standard action to cast the spell and fire the arrow. The arrow must be fired in the round the spell is cast, or the spell is wasted."
-
-s_seeker_arrow	="Seeker Arrow"	s_seeker_arrow_d	="At 4th level, an arcane archer can launch an arrow once per day at a target known to her within range, and the arrow travels to the target, even around corners. Only an unavoidable obstacle or the limit of the arrow’s range prevents the arrow’s flight. This ability negates cover and concealment modifiers, but otherwise the attack is rolled normally. Using this ability is a standard action (and shooting the arrow is part of the action)."
-
-s_phase_arrow	="Phase Arrow"	s_phase_arrow_d	="At 6th level, an arcane archer can launch an arrow once per day at a target known to her within range, and the arrow travels to the target in a straight path, passing through any nonmagical barrier or wall in its way. (Any magical barrier stops the arrow.) This ability negates cover, concealment, and even armor modifiers, but otherwise the attack is rolled normally.\n\nUsing this ability is a standard action (and shooting the arrow is part of the action)."
-
-s_hail_of_arrows	="Hail of Arrows"	s_hail_of_arrows_d	="In lieu of her regular attacks, once per day an arcane archer of 8th level or higher can fire an arrow at each and every target within range, to a maximum of one target for every arcane archer level she has earned. Each attack uses the archer’s primary attack bonus, and each enemy may only be targeted by a single arrow."
-
-s_arrow_of_death	="Arrow of Death"	s_arrow_of_death_d	="At 10th level, an arcane archer can create an arrow of death that forces the target, if damaged by the arrow’s attack, to make a DC 20 Fortitude save or be slain immediately. It takes one day to make an arrow of death, and the arrow only functions for the arcane archer who created it. The arrow of death lasts no longer than one year, and the archer can only have one such arrow in existence at a time."
+s_zaa_ea	="Enhance Arrow"	s_zaa_ea_d	="At 1st level, every nonmagical arrow an arcane archer nocks and lets fly becomes magical, gaining a +1 enhancement bonus.\n\nFor every two levels the character advances past 1st level in the prestige class, the magic arrows she creates gain +1 greater potency (+1 at 1st level, +2 at 3rd level, +3 at 5th level, +4 at 7th level, and +5 at 9th level)."	s_zaa_ea_hr	="The enhancement bonus of Enhance Arrow stacks with the enhancement bonus of magic bows."
+s_zaa_ia	="Imbue Arrow"		s_zaa_ia_d	="At 2nd level, an arcane archer gains the ability to place an area spell upon an arrow. When the arrow is fired, the spell’s area is centered on where the arrow lands, even if the spell could normally be centered only on the caster.\n\nThis ability allows the archer to use the bow’s range rather than the spell’s range."
+s_zaa_sa	="Seeker Arrow"		s_zaa_sa_d	="At 4th level, an arcane archer can launch an arrow once per day at a target known to her within range, and the arrow travels to the target, even around corners. Only an unavoidable obstacle or the limit of the arrow’s range prevents the arrow’s flight.\n\nThis ability negates cover and concealment modifiers, but otherwise the attack is rolled normally."
+s_zaa_pa	="Phase Arrow"		s_zaa_pa_d	="At 6th level, an arcane archer can launch an arrow once per day at a target known to her within range, and the arrow travels to the target in a straight path, passing through any nonmagical barrier or wall in its way. (Any magical barrier stops the arrow.)\n\nThis ability negates cover, concealment, and even armor modifiers, but otherwise the attack is rolled normally."
+s_zaa_ha	="Hail of Arrows"	s_zaa_ha_d	="At 8th level, in lieu of her regular attacks, once per day an arcane archer can fire an arrow at each and every target within range, to a maximum of one target for every arcane archer level she has earned.\n\nEach attack uses the archer’s primary attack bonus, and each enemy may only be targeted by a single arrow."
+s_zaa_da	="Arrow of Death"	s_zaa_da_d	="At 10th level, an arcane archer can create an arrow of death that forces the target, if damaged by the arrow’s attack, to make a Fortitude save (DC = 10 + arcane archer level + max of Int or Cha modifier) or be slain immediately.\n\nIt takes one day to make an arrow of death, and the arrow only functions for the arcane archer who created it. The arrow of death lasts no longer than one year, and the archer can only have one such arrow in existence at a time."
 
 -- zat	诡术师		Arcane Trickster	
 
@@ -683,7 +680,7 @@ s_arcane_fire	="Arcane Fire"	s_arcane_fire_d	="The archmage gains the ability to
 
 s_arcane_reach	="Arcane Reach"	s_arcane_reach_d	="The archmage can use spells with a range of touch on a target up to 30 feet away. The archmage must make a ranged touch attack. Arcane reach can be selected a second time as a special ability, in which case the range increases to 60 feet. This ability costs one 7th-level spell slot."
 
-s_mastery_of_counterspelling	="Mastery of Counterspelling"	s_mastery_of_counterspelling_d	="When the archmage counterspells a spell, it is turned back upon the caster as if it were fully affected by a spell turning spell. If the spell cannot be affected by spell turning, then it is merely counterspelled. This ability costs one 7th-level spell slot."
+s_ctr_spl_bk	="Mastery of Counterspelling"	s_ctr_spl_bk_d	="When the archmage counterspells a spell, it is turned back upon the caster as if it were fully affected by a spell turning spell. If the spell cannot be affected by spell turning, then it is merely counterspelled. This ability costs one 7th-level spell slot."
 
 s_mastery_of_elements	="Mastery of Elements"	s_mastery_of_elements_d	="The archmage can alter an arcane spell when cast so that it utilizes a different element from the one it normally uses. This ability can only alter a spell with the acid, cold, fire, electricity, or sonic descriptor. The spell’s casting time is unaffected. The caster decides whether to alter the spell’s energy type and chooses the new energy type when he begins casting. This ability costs one 8th-level spell slot."
 
@@ -855,7 +852,7 @@ s_zdu_dfl_arw	="Deflect Arrows"		s_zdu_dfl_arw_d	="At 9th level, a duelist gains
 
 s_zdd_ac_bonus	="AC Bonus"	s_zdd_ac_bonus_d	="The dwarven defender receives a dodge bonus to Armor Class that improves as the defender gains levels.\n\nAt 1st level, and every 3 levels thereafter (1, 4, 7...), this bonus increases by 1."
 
-s_defensive_stance	="Defensive Stance"	s_defensive_stance_d	=[[When he adopts a defensive stance, a defender gains phenomenal strength and durability, but he cannot move from the spot he is defending.
+s_zdd_def	="Defensive Stance"	s_zdd_def_d	=[[When he adopts a defensive stance, a defender gains phenomenal strength and durability, but he cannot move from the spot he is defending.
 
 He gains +2 to Strength, +4 to Constitution, a +2 resistance bonus on all saves, and a +4 dodge bonus to AC. (The increase in Constitution increases the defender’s hit points by 2 points per level, but these hit points go away at the end of the defensive stance when the Constitution score drops back 4 points. These extra hit points are not lost first the way temporary hit points are.)
 
@@ -867,11 +864,13 @@ A defender can only use his defensive stance a certain number of times per day a
 
 Using the defensive stance takes no time itself, but a defender can only do so during his action.]]
 
-s_mobile_defense	="Mobile Defense"	s_mobile_defense_d	="At 8th level, a dwarven defender can adjust his position while maintaining a defensive stance. While in a defensive stance, he can take one 5-foot step each round without losing the benefit of the stance."
+s_zdd_def_mov	="Mobile Defense"	s_zdd_def_mov_d	="At 8th level, a dwarven defender can adjust his position while maintaining a defensive stance. While in a defensive stance, he can take one 5-foot step each round without losing the benefit of the stance."
 
 -- zek	奥法骑士	Eldritch Knight		
 
-s_zek_bonus_feat	="Bonus Feat"	s_zek_bonus_feat_d	="At 1st level, an eldritch knight may choose a bonus feat from the list of feats available to fighters. This is in addition to the feats that a character of any class normally gets from advancing levels. The character must still meet any prerequisites for these bonus feats, including levels of fighter for the Weapon Specialization, Greater Weapon Focus, and Greater Weapon Specialization feats."
+s_zek_afc		="Armoured Caster"		s_zek_afc_d		="At 1st level, spell failure chance suffered by an eldritch knight is decreased by 5%. It decreases by %5 every two levels thereafter (1, 3, 5...)."
+s_zek_undr		="Penetrating Strike"	s_zek_undr_d	="At 2nd level, an eldritch knight's weapon attacks ignore 2 points of damage reduction of any type. It increases by 2 points every two levels thereafter (2, 4, 6...)."
+s_zek_sr		="Eldritch Resistance"	s_zek_sr_d		="At 5th level, an eldritch knight gains a +1 bonus on his existing spell resistance. At 10th level, the bonus increases to +2."
 
 -- zhi	大祭司		Hierophant			
 
