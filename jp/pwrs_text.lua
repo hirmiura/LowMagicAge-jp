@@ -187,17 +187,17 @@ pwr_tw_d=[[
 通常：]]..s_tw_d..[[
 
 
-Special: A 2nd-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+特殊: 二刀流の戦闘スタイルを選択した2レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持つものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。
 ]]
 pwr_tw1_n="《二刀流強化》"
 pwr_tw1_d=[[
-In addition to the standard single extra attack you get with an off-hand weapon, you get a second attack with it, albeit at a –5 penalty.
+オフ・ハンド武器で得られる標準的な1回の追加攻撃に加えて、-5ペナルティではあるが、2回目の攻撃を得ることができる。
 
-Special: A 6th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+特殊: 二刀流の戦闘スタイルを選択した6レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持っているものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。
 ]]
-pwr_tw2_n="《上級二刀流》"	pwr_tw2_d=[[You are a master at fighting two-handed.\n\nYou get a third attack with your off-hand weapon, albeit at a –10 penalty.
+pwr_tw2_n="《上級二刀流》"	pwr_tw2_d=[[オフ・ハンド武器で3回目の攻撃を与えるが、ペナルティは-10である。
 
-Special: An 11th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
+特殊: 二刀流の戦闘スタイルを選択した11レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持つものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。]]
 pwr_tw3_n="《二刀流戦闘皆伝》"
 pwr_tw3_d="二つの武器で戦っている場合の攻撃ロールへのペナルティを受けない。オフ・ハンドの武器が軽武器でなくてもペナルティを受けない。"
 pwr_tw_def_n="《二刀の守り》"
@@ -512,7 +512,7 @@ pwr_mass_eagles_splendor_d="複数のクリーチャーに影響を与えるこ�
 
 pwr_true_strike_d="次の攻撃の間に、即座の将来についての一時的で直感的な洞察を得ることができます。あなたの次の攻撃ロールは +20の洞察ボーナスを得る。"
 pwr_divine_favor_d="神の強さと知恵を頼りに、you gain a +1 luck bonus on attack and weapon damage rolls for every three caster levels you have (最低でも +1、最大で +3).\n\nThe attack rolls include attack rolls of weapon attacks, combat maneuvers, and touch attacks of spells."--pwr_divine_favor_d="神の強さと知恵を頼りに、３レベル毎に武器攻撃とダメージロールに +1 のボーナス(最低でも +1、最大で +3)を得る。"	--pwr_divine_favor_d="Calling upon the strength and wisdom of a deity, you gain a +1 luck bonus on attack and weapon damage rolls for every three caster levels you have (at least +1, maximum +3).\n\nThe attack rolls include attack rolls of weapon attacks, combat maneuvers, and touch attacks of spells."
-pwr_divine_power_d="自身の信仰対象から神性な力を呼び寄せ、戦闘に関する力と技を引き込む。 \n\nYour base attack bonus equals your character level (which may give you extra attacks), you gain a +6 enhancement bonus to Strength, and you gain 1 temporary hit point per caster level."
+pwr_divine_power_d="自身の信仰対象から神性な力を呼び寄せ、戦闘に関する力と技を引き込む。 \n\n基本攻撃ボーナスはキャラクター・レベルに等しく（追加攻撃を与える場合もある）、【筋力】に+6の強化ボーナスを得て、キャスター・レベルごとに一時的にヒット・ポイントを1つ得る。"
 pwr_heroism_d="戦場での偉大な勇気と高い士気を与える。ターゲットは攻撃ロール、セーヴに +2 の士気ボーナスを得る。"
 pwr_greater_heroism_d="ヒロイズムと同様だが、与えるボーナスは+4になる。さらに、対象は恐怖に対する完全耐性を得て、あなたの術者レベルに等しい一時的ヒット・ポイントを得る。"
 pwr_shield_of_faith_d="接触したクリーチャーの周りに、攻撃を避ける揺らめく魔法のフィールドを作成します。クリーチャーはACに +2の反発ボーナスを得ます。6レベル毎に+1のボーナス(18レベルで最大+5まで与えられます)。"
@@ -522,9 +522,9 @@ pwr_expeditious_retreat_d="速度を+６スクエア上昇させる。"
 pwr_protection_from_spells_d="対象は呪文に対して、+8の抵抗ボーナスを得る。"
 pwr_death_ward_d="対象は全ての死に関する呪文に対する完全耐性を得る。魔法的な即死効果、あらゆる負のエネルギーに関する効果が該当する。"
 
-s_fear1d	="リムーヴ・フィアー"	s_fear1d_u	="+4 morale bonus against fear effects\nリムーヴ・フィアー 効果"	s_fear1d_d	=[[You instill courage in the subject, granting it a +4 morale bonus against fear effects for 10 minutes.
+s_fear1d	="リムーヴ・フィアー"	s_fear1d_u	="恐怖効果に対して+4士気ボーナス\nリムーヴ・フィアー 効果"	s_fear1d_d	=[[対象者に勇気を与え、10分間、恐怖効果に対して+4の士気ボーナスを付与する。
 
-If the subject is under the influence of a fear effect when receiving the spell, that effect is suppressed for the duration of the spell.]]
+この呪文を受けたとき、対象が恐怖効果の影響下にある場合、その効果は呪文の持続時間中抑制される。]]
 s_fear1		="コーズ・フィアー"	s_fear1_d	=[[The affected creature becomes frightened for 1d4 rounds.
 
 If the subject succeeds on a Will save, it is shaken for 1 round.]]
@@ -604,11 +604,11 @@ Waves of negative energy render all living creatures in the spell's area fatigue
 ]]
 
 pwr_stoneskin_d=[[
-The warded creature gains resistance to blows, cuts, stabs, and slashes. The subject gains damage reduction 10/adamantine per 5 caster levels. Once the spell has prevented a total of 10 points of damage per caster level, it is discharged.
+結界を張ったクリーチャーは打撃、切り傷、刺し傷、斬り傷に対する耐性を得ることができる。対象はキャスター・レベル5につきアダマンティン/10のダメージ軽減を得る。キャスター・レベルあたり合計10ポイントのダメージを防いだら、この呪文は解除される。
 ]]
 
 pwr_good_hope_d=[[
-This spell instills powerful hope in the subjects. Each affected creature gains a +2 morale bonus on saving throws, attack rolls, ability checks, skill checks, and weapon damage rolls.
+この呪文は、対象者に強力な希望を植え付ける。影響を受けた各クリーチャーは、セービング・スロー、攻撃ロール、能力チェック、スキル・チェック、武器ダメージ・ロールに+2士気ボーナスを得る。
 ]]
 
 pwr_crushing_despair_d=[[
@@ -754,7 +754,7 @@ This spell fills a single subject with a feeling of horrible dread that causes i
 ]]
 
 pwr_sound_burst_d=[[
-You blast an area with a tremendous cacophony. Every creature in the area takes 1d8 points of sonic damage per three caster levels and must succeed on a Fortitude save to avoid being stunned for 1 round. 
+You blast an area with a tremendous cacophony. Every creature in the area takes 1d8 points of sonic damage per three caster levels and must succeed on a Fortitude save to avoid being stunned for 1 round.
 Creatures that cannot hear are not stunned but are still damaged.
 ]]
 
@@ -850,7 +850,7 @@ Daylight brought into an area of deeper darkness (or vice versa) is temporarily 
 ]]
 
 pwr_bless_d=[[
-Bless fills your allies with courage. Each ally gains a +1 morale bonus on attack rolls and on saving throws against fear effects.
+Blessはあなたの味方を勇気で満たす。各味方は攻撃ロールと恐怖効果に対するセービングスローに+1士気ボーナスを得る。
 ]]
 
 pwr_bane_d=[[
@@ -858,7 +858,7 @@ Bane fills your enemies with fear and doubt. Each affected creature takes a -1 p
 ]]
 
 pwr_prayer_d=[[
-You bring special favor upon yourself and your allies while bringing disfavor to your enemies. You and your each of your allies gain a +1 luck bonus on attack rolls, weapon damage rolls, saves, and skill checks, while each of your foes takes a -1 penalty on such rolls.
+自分と味方に特別な恩恵をもたらし、敵に不利な状況をもたらす。あなたとあなたの味方は、攻撃ロール、武器ダメージロール、セーブ、スキルチェックに+1の幸運ボーナスを得るが、あなたの敵はそれぞれそれらのロールに-1のペナルティを受ける。
 ]]
 
 pwr_shield_other_d=[[
@@ -918,14 +918,14 @@ An undead creature struck by the ray gains 2d4x5 temporary hit points.
 ]]
 
 pwr_haste_d=[[
-The transmuted creatures move and act more quickly than normal.
+変質されたクリーチャーは、通常よりも素早く動き、行動する。
 
-This extra speed has several effects:
-- Makes one extra attack when making a full attack.
-- The movement speed increase by 30 feet enhancement bonus, to a maximum of twice the normal speed.
-- Gains a +1 bonus on attack rolls and a +1 dodge bonus to AC and Reflex saves.
+この追加スピードにはいくつかの効果がある：
+- 全力攻撃時に1回の追加攻撃を行う。
+- 移動速度が30フィート強化ボーナスで増加し、最大で通常の2倍の速度になる。
+- 攻撃ロールに+1ボーナス、ACと反射セーヴに+1ドッジボーナスを獲得する。
 
-Multiple haste effects don't stack. Haste dispels slow.
+複数のヘイスト効果はスタックしない。ヘイストはスローを払拭する。
 ]]
 
 pwr_slow_d=[[
@@ -1035,25 +1035,25 @@ A banishment spell is a more powerful version of the dismissal spell. It enables
 ]]
 
 pwr_lesser_restoration_d=[[
-Lesser restoration dispels any magical effects reducing one of the subject's ability scores or cures 1d4 points of temporary ability damage to one of the subject's ability scores.
+レッサー・レストレーションは、対象者の能力値1つを低下させる魔法効果を解呪するか、対象者の能力値1つに対する一時的な能力ダメージを1d4点回復させる。
 
-It also eliminates any fatigue suffered by the character, and improves an exhausted condition to fatigued.
+また、キャラクターが受けている疲労を解消し、過労状態を疲労状態に改善することができる。
 ]]
 
 pwr_restoration_d=[[
-This spell functions like lesser restoration, except that it also dispels negative levels.
+この魔法は、負のレベルも解呪することを除けば、レッサー・レストレーションと同様の機能を持つ。
 
-Restoration cures all temporary ability damage, and it restores all points permanently drained from a single ability score.
+レストレーションは一時的な能力ダメージをすべて治し、能力値1つに対する能力値吸収をすべて回復させる。
 
-It also eliminates any fatigue or exhaustion suffered by the target.
+また、対象が受けた疲労や過労も解消される。
 ]]
 
 pwr_greater_restoration_d=[[
-This spell functions like lesser restoration, except that it also dispels negative levels.
+この魔法は、負のレベルも解呪することを除けば、レッサー・レストレーションと同様の機能を持つ。
 
-Greater restoration dispels all magical effects penalizing the creature's abilities, cures all temporary ability damage, and restores all points permanently drained from all ability scores.
+グレーター・レストレーションは、そのクリーチャーの能力にペナルティを与えるすべての魔法効果を払い、すべての一時的な能力ダメージを治し、すべての能力値に対する能力値吸収をすべて回復させる。
 
-It also eliminates fatigue and exhaustion, and removes all forms of insanity, confusion, and similar mental effects.
+また、疲労や過労を取り除き、あらゆる狂気や混乱、それに類する精神的な影響を取り除く。
 ]]
 
 pwr_delay_poison_d=[[
@@ -1217,7 +1217,7 @@ pwr_blink_d=[[
 You \"blink\" back and forth between the Material Plane and the Ethereal Plane. You look as though you're winking in and out of reality very quickly and at random.
 
 Physical attacks against you have a 50% miss chance. Your attacks have a 20% miss chance. You strike as an invisible creature (with a +2 bonus on attack rolls), denying your target any Dexterity bonus to AC.
- 
+
 Individually targeted spells against you has a 50% chance to fail. Your spells have a 20% chance to fail.
 
 You take only half damage from area attacks or falling.
@@ -1437,7 +1437,7 @@ pwrs_text={
 [pwr_atk_m_dmg3				]={n="《破壊的な一撃》"					,d="1回の近接攻撃で、通常の3倍のダメージを与える。攻撃ロールに失敗した時は、半分のダメージを与える。"..use_b},
 [pwr_charge1				]={n="《突撃強化》"							,d="突撃の攻撃ロールとダメージ・ロールに+2ボーナスを得る。\n\n通常:《突撃》のボーナスは+1。"},
 [pwr_charge2				]={n="《上級突撃》"						,d="《突撃強化》の効果に加え、さらに+2ボーナスを得る。"},
-[pwr_ao_dex					]={n="《迎え討ち》"								,d="You may make a number of additional attacks of opportunity equal to your Dexterity bonus.\n\nWith this feat, you may also make attacks of opportunity while flat-footed."},
+[pwr_ao_dex					]={n="《迎え討ち》"								,d="機会攻撃の回数に制限を受けない。\n\n通常:この特技がない場合、機会攻撃は1ラウンドに1回のみしか行えない。"},
 [pwr_dex_wpn				]={n="《武器の妙技》"								,d="軽武器や妙技武器の攻撃ロールに【筋力】ではなく【敏捷力】を使用できる。If you carry a shield, its armor check penalty applies to your attack rolls.\n\n肉体武器は軽武器として扱われる。"},
 -- skl z_skl_bns
 [pwr_s2_athletic			]={n="Athletic			",d="すべての〈Climb〉と〈Swim〉判定に +2 のボーナス。"},
@@ -1542,7 +1542,7 @@ pwrs_text={
 [pwr_no_fixed				]={n="No Fixed Shape"},
 
 [pwr_imm_m					]={n="魔法への完全耐性"			,d="呪文のダメージ（脆弱性を持つダメージ種別を除く）と呪文の効果に対する完全耐性。"},
-[pwr_er_50p					]={n="Energy Resistance"		,d="Takes only half damage of any energy type."},
+[pwr_er_50p					]={n="エレメンタル抵抗"		,d="元素ダメージが半減する。"},
 [pwr_aura5_atk2				]={n="トゥルーアタック・オーラ"			,d="３スクエア以内にいる味方は攻撃ロールで +2 のボーナスを得る。"},
 [pwr_aura5_dmg2				]={n="クルエルティー・オーラ"				,d="３スクエア以内にいる味方はダメージロールで +2 のボーナスを得る。"},
 [pwr_aura5_heal5			]={n="ヒーリング・オーラ"				,d="３スクエア以内の仲間に対し、ターン毎に５ヒットポイントを回復する。"},
@@ -1777,7 +1777,7 @@ pwrs_text={
 [pwr_ray_of_exhaustion				]={n="Ray of Exhaustion					",d=pwr_ray_of_exhaustion_d					},
 [pwr_waves_of_fatigue				]={n="Waves of Fatigue					",d=pwr_waves_of_fatigue_d					},
 [pwr_waves_of_exhaustion			]={n="Waves of Exhaustion				",d=pwr_waves_of_exhaustion_d				},
-[pwr_haste							]={n="Haste								",d=pwr_haste_d								},
+[pwr_haste							]={n="ヘイスト							",d=pwr_haste_d								},
 [pwr_slow							]={n="Slow								",d=pwr_slow_d								},
 [pwr_flesh_to_stone					]={n="Flesh to Stone					",d=pwr_flesh_to_stone_d					},
 [pwr_stone_to_flesh					]={n="Stone to Flesh					",d=pwr_stone_to_flesh_d					},
@@ -1789,9 +1789,9 @@ pwrs_text={
 [pwr_glitterdust					]={n="Glitterdust						",d=pwr_glitterdust_d						},
 [pwr_stinking_cloud					]={n="Stinking Cloud					",d=pwr_stinking_cloud_d					},
 [pwr_sleet_storm					]={n="Sleet Storm						",d=pwr_sleet_storm_d						},
-[pwr_lesser_restoration				]={n="Lesser Restoration				",d=pwr_lesser_restoration_d				},
-[pwr_restoration					]={n="Restoration						",d=pwr_restoration_d						},
-[pwr_greater_restoration			]={n="Greater Restoration				",d=pwr_greater_restoration_d				},
+[pwr_lesser_restoration				]={n="レッサー・レストレーション		",d=pwr_lesser_restoration_d				},
+[pwr_restoration					]={n="レストレーション					",d=pwr_restoration_d						},
+[pwr_greater_restoration			]={n="グレーター・レストレーション		",d=pwr_greater_restoration_d				},
 [pwr_delay_poison					]={n="Delay Poison						",d=pwr_delay_poison_d						},
 [pwr_neutralize_poison				]={n="Neutralize Poison					",d=pwr_neutralize_poison_d					},
 [pwr_remove_paralysis				]={n="Remove Paralysis					",d=pwr_remove_paralysis_d					},
@@ -1800,7 +1800,7 @@ pwrs_text={
 [pwr_remove_curse					]={n="Remove Curse						",d=pwr_remove_curse_d						},
 [pwr_shield_other					]={n="Shield Other						",d=pwr_shield_other_d						},
 [pwr_protection_from_arrows			]={n="Protection from Arrows			",d=pwr_protection_from_arrows_d			},
-[pwr_stoneskin						]={n="Stoneskin							",d=pwr_stoneskin_d							},
+[pwr_stoneskin						]={n="ストーンスキン					",d=pwr_stoneskin_d							},
 [pwr_resist_energy					]={n="Resist Energy						",d=pwr_resist_energy_d						},
 [pwr_protection_from_energy			]={n="Protection from Energy			",d=pwr_protection_from_energy_d			},
 [pwr_spell_resistance				]={n="Spell Resistance					",d=pwr_spell_resistance_d					},
@@ -2042,8 +2042,8 @@ conds_text={
 
 [cond_warm_shield		]={n="Warm Shield			",d=pwr_fire_shield_f},
 [cond_chill_shield		]={n="Chill Shield			",d=pwr_fire_shield_c},
-[cond_prayer_favor		]={n="Prayer: Favor			",d="Special favor is upon you. You gain a +1 luck bonus on attack rolls, weapon damage rolls, saves, and skill checks."},
-[cond_prayer_disfavor	]={n="Prayer: Disfavor		",d="Special disfavor is upon you. You take a -1 penalty on attack rolls, weapon damage rolls, saves, and skill checks."},
+[cond_prayer_favor		]={n="Prayer: Favor			",d="特別な恩恵があなたに与えられる。攻撃ロール、武器ダメージロール、セーブ、スキルチェックに+1幸運ボーナスを得ることができる。"},
+[cond_prayer_disfavor	]={n="Prayer: Disfavor		",d="特別な不運があなたを襲う。攻撃ロール、武器ダメージロール、セーブ、スキルチェックに-1ペナルティを受ける。"},
 [cond_curse_penalty		]={n="Curse: Penalty		",d="-4 penalty on attack rolls, saves, ability checks, and skill checks."},
 [cond_curse_disorder	]={n="Curse: Disorder		",d="Has a 50% chance to act normally; otherwise, takes no action."},
 [cond_comatose			]={n="Comatose				",d="The subject falls into a catatonic coma. During this time, it cannot be awakened by any means short of dispelling the effect. This is not a sleep effect, and thus elves are not immune to it."},-- The subject falls into a catatonic coma for 10 minutes per caster level

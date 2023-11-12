@@ -386,7 +386,7 @@ Many skills can be used only by someone who is trained in them.
 
 The chance of success can be altered in four ways to take into account exceptional circumstances.
 
-1. Give the skill user a +2 circumstance bonus to represent conditions that improve performance, such as having the perfect tool for the job, getting help from another character (see Combining Skill Attempts), or possessing unusually accurate information. 
+1. Give the skill user a +2 circumstance bonus to represent conditions that improve performance, such as having the perfect tool for the job, getting help from another character (see Combining Skill Attempts), or possessing unusually accurate information.
 
 2. Give the skill user a –2 circumstance penalty to represent conditions that hamper performance, such as being forced to use improvised tools or having misleading information.
 
@@ -1090,7 +1090,7 @@ Varies		Bind a character
 
 Failure by 4 or less indicates that the hook fails to catch and falls, allowing you to try again.
 
-Failure by 5 or more indicates that the grappling hook initially holds, but comes loose after 1d4 rounds of supporting weight. 
+Failure by 5 or more indicates that the grappling hook initially holds, but comes loose after 1d4 rounds of supporting weight.
 
 This check is made secretly, so that you don’t know whether the rope will hold your weight.
 
@@ -1491,7 +1491,7 @@ Failing that, it’s possible to plug up the holes from which the projectiles em
 
 <b c=ty7>Melee Attack Traps: </b>These devices can be thwarted by smashing the mechanism or blocking the weapons, as noted above.
 
-Alternatively, if a character studies the trap as it triggers, he might be able to time his dodges just right to avoid damage. 
+Alternatively, if a character studies the trap as it triggers, he might be able to time his dodges just right to avoid damage.
 
 A character who is doing nothing but studying a trap when it first goes off gains a +4 dodge bonus against its attacks if it is triggered again within the next minute.
 
@@ -1894,7 +1894,7 @@ A sleeping character may make Listen checks at a –10 penalty. A successful che
 
 
 [skl_heal	]={n="〈治療〉"	,b="Use this skill to keep a badly wounded friend from dying, to help others recover faster from wounds, to keep your friend from succumbing to a wyvern’s sting, or to treat disease."
-,hr=[[ 
+,hr=[[
 この技能を使って、他の人が傷、［出血］、［毒］からより早く回復できるようにする。
 
 <b>応急手当：</b>DC 15 の〈治療〉判定をする。 成功した場合、ターゲットは最大HPの1/4を回復する。

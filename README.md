@@ -17,5 +17,5 @@ en フォルダは翻訳作業中の対比と、バージョンアップ時の�
 
 ## オリジナルとの差分
 
-[公式v0.91.62との 3-dot diff](https://github.com/hirmiura/LowMagicAge-jp/compare/LMA_v0.91.62...HEAD)  
-[公式v0.91.62との 2-dot diff](https://github.com/hirmiura/LowMagicAge-jp/compare/LMA_v0.91.62..HEAD)  
+[公式v0.91.65との 3-dot diff](https://github.com/hirmiura/LowMagicAge-jp/compare/LMA_v0.91.65...HEAD)  
+[公式v0.91.65との 2-dot diff](https://github.com/hirmiura/LowMagicAge-jp/compare/LMA_v0.91.65..HEAD)  
