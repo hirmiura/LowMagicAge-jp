@@ -43,6 +43,7 @@ s_open				="オープン"-- Open
 s_close				="近距離"
 s_on				="オン"
 s_off				="オフ"
+s_on_off			="オン/オフ"
 s_on_a				="オン"
 s_off_a				="オフ"
 s_small				="小"

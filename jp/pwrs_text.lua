@@ -111,7 +111,7 @@ s_zas_da_2x			="Improved Death Attack"			s_zas_da_2x_d			="Add +2 to the DC of y
 
 s_all_atk_1x		="Epic Prowess"						s_all_atk_1x_d			="You gain great skill in combat.\n\nGain a +1 bonus on all attacks."
 s_wpn_atk_2x2		="Epic Weapon Focus"				s_wpn_atk_2x2_d			="You are especially good at using certain weapons.\n\nAdd a +2 bonus to all attack rolls you make using a proficient weapon."
-s_wpn_dmg_4x2		="Epic Weapon Specialization"		s_wpn_dmg_4x2_d			="You deal extraordinary damage wielding certain weapons..\n\nAdd +4 to all damage you deal using a proficient weapon. If the weapon is a ranged weapon, the damage bonus only applies if the target is within 30 feet."
+s_wpn_dmg_4x2		="Epic Weapon Specialization"		s_wpn_dmg_4x2_d			="You deal extraordinary damage wielding certain weapons.\n\nAdd +4 to all damage you deal using a proficient weapon. If the weapon is a ranged weapon, the damage bonus only applies if the target is within 30 feet."
 s_ch_kill			="Devastating Critical"				s_ch_kill_d				="With certain weapons, you are capable of killing any creature with a single strike.\n\nWhen using a proficient melee weapon, whenever you score a critical hit the target must make a Fortitude save (DC 10 + 1/2 your character level + your Strength modifier) or die instantly. (Creatures immune to critical hits can't be affected by this feat.)"
 s_natk_pen_0		="Improved Multiattack"				s_natk_pen_0_d			="The creature is particularly adept at using all its natural weapons at once.\n\nThe creature’s secondary attacks with natural weapons have no penalty."
 

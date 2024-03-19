@@ -1039,7 +1039,7 @@ s_sel_fav_wpn	="Choose Favored Weapon"
 
 -- zel	元素领主		Elemental Lord
 s_zel	="Elemental Lord"		s_zel_b	="An arcane spellcaster who has a powerful elemental companion and can turn himself into an elemental."
-s_zel_d	=[[For arcane spellcasters, the endless mysteries contained in the Outer Planes have a fatal allure, especially those of the Elemental Planes. Summon elemental spells or rituals known to adventurers, and the overwhelming combat advantage brought by a variety of powerful elemental allies, all attracted many spellcasters to indulge in.
+s_zel_d	=[[For arcane spellcasters, the endless mysteries contained in the Planes have a fatal allure, especially those of the Elemental Planes. Summon elemental spells or rituals known to adventurers, and the overwhelming combat advantage brought by a variety of powerful elemental allies, all attracted many spellcasters to indulge in.
 
 The elemental lord takes it a step further. Years of intense research and even fieldwork have made the elemental lord more knowledgeable about all aspects of elementals than other spellcasters. He has studied the ways, means, origins, and formation of elementals, and instinctively knows an elemental’s strengths and develops an unbreakable bond with a powerful elemental companion.
 
@@ -1048,11 +1048,11 @@ Elemental companions are usually summoned through spells or rituals, and then ba
 Either way, as this bond deepens over time, the elemental lord's kinship with the elemental companion deepens, blurring the line between master and servant. Eventually, the journey of discovery made both stronger, and even the elemental lord himself transformed into an elemental and became part of the elemental forces.
 
 
-<b>Base Classes: </b>The knowledge required to learn the secrets of the Outer Planes is arcane in nature, and thus this prestige class is filled mostly with wizards and sorcerers — though anyone else who meets the requirements may choose to take the journey of an elemental lord.
+<b>Base Classes: </b>The knowledge required to learn the secrets of the Planes is arcane in nature, and thus this prestige class is filled mostly with wizards and sorcerers — though anyone else who meets the requirements may choose to take the journey of an elemental lord.
 
 <b>Role: </b>Although rarely seen in adventure groups, once an elemental lord decided to become part of a group, with his powerful elemental companion, uncanny traits, and impressive spellcasting ability, in the front line or back row of the battlefield can be at ease, he will soon become reliable for other members.
 
-<b>Alignment: </b>Similar to most arcane spellcasters who are addicted to a certain field of study, elemental lords spend their lives in pursuit of the mysteries of the Outer Planes and the way to live in harmony with elementals. They have no time for morals and ethics, which are meaningless to them, so they tend to be neutral, neutral good, or neutral evil.
+<b>Alignment: </b>Similar to most arcane spellcasters who are addicted to a certain field of study, elemental lords spend their lives in pursuit of the mysteries of the Planes and the way to live in harmony with elementals. They have no time for morals and ethics, which are meaningless to them, so they tend to be neutral, neutral good, or neutral evil.
 
 <b>Non-adventurers: </b>With a reliable elemental companion by his side, the elemental lord usually embarks on the journey of discovery alone, no need to group with other adventurers, unless as a last resort. Most adventurer groups certainly welcome the addition of an elemental lord (plus a powerful ally).]]
 s_et_a			="風"
