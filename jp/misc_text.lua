@@ -26,133 +26,133 @@ u_names_f =
 "Amaryllis;Charmaine;Cora;Euphemia;Jillian;Lavinia;Lidda;Merla;Portia;Seraphina;Verna"
 
 
-s_lv_x_spls		="Level-X 呪文"
-local d_act_grp_spl_x	="呪文のレベルは、１から９までの数字で、呪文の相対的な力を表す。\n\n呪文の詠唱者は、一定のレベルの呪文を唱えるのに充分な術者のクラス・レベルと呪文を唱える能力値が必要となる。"
+s_lv_x_spls		="Level-X Spells"
+local d_act_grp_spl_x	="The level of a spell is a number between 1 and 9 that defines the spell’s relative power.\n\nA spellcaster must possess high enough caster class level and spellcasting ability score to cast a certain level of spells."
 
 act_grps_text={-- z_act_grp
-[act_grp_wpn	]={n="武器攻撃"				,d="武器による基本的な攻撃には、近接攻撃と遠隔攻撃がある。\n\n特定の特技は戦闘中に武器を用いてより強力な攻撃を行うことを可能にする。"},
-[act_grp_cm		]={n="戦技"					,d="戦技の特技を習得すると、《足払い》、《組み付き》、《突き飛ばし》、《引き込み》、《蹴散らし》など、敵を妨害したり、場合によっては敵を無力化したりする多くの操作を試みることができる。"},
-[act_grp_skl	]={n="技能アクション"			,d="技能は、キャラクタが持つ最も基礎的かつ基本的な能力の一部を表す。\n\n特定の技能によって、戦闘で特別なアクションを取ることができる。"},
-[act_grp_misc	]={n="雑多なアクション"		,d="武器交換、アイテムの使用、防御など、戦闘で使用できる多数のアクション。"},
-[act_grp_special]={n="特別なアクション"		,d="一部のクラスでは、キャラクタに特別なアクションが追加される。"},
-[act_grp_spl_1	]={n="Level-1 呪文"			,d=d_act_grp_spl_x},
-[act_grp_spl_2	]={n="Level-2 呪文"			,d=d_act_grp_spl_x},
-[act_grp_spl_3	]={n="Level-3 呪文"			,d=d_act_grp_spl_x},
-[act_grp_spl_4	]={n="Level-4 呪文"			,d=d_act_grp_spl_x},
-[act_grp_spl_5	]={n="Level-5 呪文"			,d=d_act_grp_spl_x},
-[act_grp_spl_6	]={n="Level-6 呪文"			,d=d_act_grp_spl_x},
-[act_grp_spl_7	]={n="Level-7 呪文"			,d=d_act_grp_spl_x},
-[act_grp_spl_8	]={n="Level-8 呪文"			,d=d_act_grp_spl_x},
-[act_grp_spl_9	]={n="Level-9 呪文"			,d=d_act_grp_spl_x},
-[act_grp_spl_dmg]={n="ダメージ呪文"			,d="マジック・ミサイルやファイアーボールなど、一部の呪文は直接対象にダメージを与えます。"},
-[act_grp_spl_eff]={n="非ダメージ呪文"			,d="呪文によっては、スリープやサモン・エレメンタルなどの特殊な魔法効果が発生します。"},
-[act_grp_spl_all]={n="すべての呪文"			,d="呪文は一回限りの魔法効果である。\n\n呪文には２つのタイプがある：秘術（ウィザードによるキャスト）と信仰（クレリックによるキャスト）。"},
-[act_grp_non_spl]={n="すべての非呪文アクション"	,d="戦闘中に使用できるすべての非呪文アクション。"},
-[act_grp_all	]={n="すべてのアクション"		,d="現在のレベルでキャラクターが使用できるすべてのアクション。"},
+[act_grp_wpn	]={n="Weapon Attacks"			,d="Basic attack actions with weapons include Melee Attack and Ranged Attack.\n\nCertain feats let you take more powerful attacks with weapons in combat."},
+[act_grp_cm		]={n="Combat Maneuvers"			,d="Once learned Combat Maneuver feats, you can attempt to perform a number of maneuvers that can hinder or even cripple your foe, including Trip, Grapple, Bull Rush, Drag, and Overrun."},
+[act_grp_skl	]={n="Skill Actions"			,d="Skills represent some of the most basic and yet most fundamental abilities a character possesses.\n\nCertain skills let you take special actions in combat."},
+[act_grp_misc	]={n="Misc Actions"				,d="A number of auxiliary actions you can use in combat, including Swap Weapon, Use Item, and Defend, etc."},
+[act_grp_special]={n="Special Actions"			,d="Some classes give the character extra special actions."},
+[act_grp_spl_1	]={n="Level-1 Spells"			,d=d_act_grp_spl_x},
+[act_grp_spl_2	]={n="Level-2 Spells"			,d=d_act_grp_spl_x},
+[act_grp_spl_3	]={n="Level-3 Spells"			,d=d_act_grp_spl_x},
+[act_grp_spl_4	]={n="Level-4 Spells"			,d=d_act_grp_spl_x},
+[act_grp_spl_5	]={n="Level-5 Spells"			,d=d_act_grp_spl_x},
+[act_grp_spl_6	]={n="Level-6 Spells"			,d=d_act_grp_spl_x},
+[act_grp_spl_7	]={n="Level-7 Spells"			,d=d_act_grp_spl_x},
+[act_grp_spl_8	]={n="Level-8 Spells"			,d=d_act_grp_spl_x},
+[act_grp_spl_9	]={n="Level-9 Spells"			,d=d_act_grp_spl_x},
+[act_grp_spl_dmg]={n="Damage Spells"			,d="Some spells deal damage directly to the target, such as Magic Missile and Fireball."},
+[act_grp_spl_eff]={n="Effect Spells"			,d="Some spells cause special magical effects, such as Sleep and Summon Elemental."},
+[act_grp_spl_all]={n="All Spells"				,d="A spell is a one-time magical effect.\n\nSpells come in two types: Arcane (cast by wizards) and Divine (cast by clerics)."},
+[act_grp_non_spl]={n="All Non-spell Actions"	,d="All the non-spell actions you can use during combat."},
+[act_grp_all	]={n="All Actions"				,d="All the actions that the character can use at the current level."},
 }
 
 -- common
-close				="閉じる"
-back				={n="戻る"	,d="戻る"}
+close				="Close"
+back				={n="Back"		,d="Back"}
 ok					="OK"
 cancel				="Cancel"
-msg					="情報"
-cfm					="確認"
-err					="エラー"
-s_new_mk			="新規"
-s_del				="削除"
-del					="削除"-- del
-pls_sel				="選択してください"
-sel_img_dlg_title	="画像選択"
-def_input_dlg_title	="新しいテキストを入力"
-sel_dir				="フォルダーを選択"
-dir_path_err		="無効なフォルダパスです！"
-no_files_in_dir_err	="フォルダに有効なファイルが見つかりません！"
-chk_all				="すべてチェック／なし"
-info_disp			="情報の表示"
+msg					="Information"
+cfm					="Confirm"
+err					="Error"
+s_new_mk			="New"
+s_del				="Delete"
+del					="Delete"-- del
+pls_sel				="Please select"
+sel_img_dlg_title	="Select Image"
+def_input_dlg_title	="Input New Text"
+sel_dir				="Select Folder"
+dir_path_err		="Invalid folder path!"
+no_files_in_dir_err	="No valid files found in the folder!"
+chk_all				="Check All/None"
+info_disp			="Info Display"
 
---move_forward		="前方へ移動"
---move_backward		="後方へ移動"
---move_to_first		="最初へ移動"
---move_to_last		="最後へ移動"
+--move_forward		="Move Forward"
+--move_backward		="Move Backward"
+--move_to_first		="Move to First"
+--move_to_last		="Move to Last"
 
 s_dbg_cmds			="Debug Commands"
-s_dbg_cmds_d		="各種デバッグ機能やチート機能を利用する。"
+s_dbg_cmds_d		="Use various debugging or cheating functions."
 s_run_dbg_code		="Run Debug Codes"
-s_run_scripts		="スクリプトの実行"
+s_run_scripts		="Run Scripts"
 
 
 -- main menu
-btn_arena			={n="アリーナ"		,d="<h3 c=lbl>アリーナ モード</h3>デフォルトのキャラクタやカスタム キャラクターを使用して、様々なモンスターに挑戦しよう！"}
-btn_adv				={n="アドベンチャー"	,d="<h3 c=lbl>アドベンチャー モード</h3>未知のファンタジー世界を探検しよう！"}
-btn_ugc				={n="Workshop"		,d="<h3 c=lbl>Steam Workshop</h3>Steam Workshopにカスタムゲームコンテンツをアップします。"}
-btn_credits			={n="クレジット"		,d="<h3 c=lbl>クレジット</h3>スタッフリストと謝辞を表示します。"}
-btn_exit			={n="終了"			,d="<h3 c=lbl>ゲームの終了</h3>ゲームを終了します。"}
+btn_arena			={n="Arena"		,d="<h3 c=lbl>Arena Mode</h3>Uses default or custom characters to challenge various monsters!"}
+btn_adv				={n="Adventure"	,d="<h3 c=lbl>Adventure Mode</h3>Explores and experiences the unknown fantasy world!"}
+btn_ugc				={n="Workshop"	,d="<h3 c=lbl>Steam Workshop</h3>Submit custom game content to Steam Workshop."}
+btn_credits			={n="Credits"	,d="<h3 c=lbl>Credits</h3>Views staff list and special thanks."}
+btn_exit			={n="Quit"		,d="<h3 c=lbl>Quit Game</h3>Closes the game."}
 
 
 -- arena
-s_enc_list			="チャレンジ"
-enc_info			="チャレンジ情報"
-s_defeated			="打倒"
-s_btl_win			="勝利"
-s_btl_lost			="打倒"
-s_upd_arena			="よくやった！ すべての挑戦に打ち勝ったな。 新たな挑戦に立ち向かう時が来た。\n\nしかし、その前に、お前の強さを証明するために、より難しい挑戦を用意した。\n\n準備はいいか？"
+s_enc_list			="CHALLENGES"
+enc_info			="Challenge Information"
+s_defeated			="DEFEATED"
+s_btl_win			="VICTORY"
+s_btl_lost			="DEFEATED"
+s_upd_arena			="Well done! You've beaten all the challenges. It's time to face new challenges.\n\nBut before that, you need to beat a harder challenge first to prove yourself.\n\nAre you ready?"
 
-s_total_won_encs	="チャレンジ"
-cont_encs			="連続チャレンジ"
-s_total_wins		="勝利"
-s_total_losts		="失敗"
-s_total_kills		="キル"
-s_total_pc_deads	="死亡"
-wave_fmt			="ウェーブ <c=tw>%d</c>"
+s_total_won_encs	="Challenges"
+cont_encs			="Continuous Challenges"
+s_total_wins		="Wins"
+s_total_losts		="Defeats"
+s_total_kills		="Kills"
+s_total_pc_deads	="Deaths"
+wave_fmt			="Wave <c=tw>%d</c>"
 
-msg_arena			={n="アリーナ"					,d="デフォルトのパーティーで戦う！ またはカスタムキャラクターを作成して、ドリーム・チームをビルドしよう。"}
+msg_arena			={n="ARENA"					,d="Use the default party to fight directly! Or create custom characters and build your dream team."}
 
-s_btl_log			="戦闘ログ"
-s_btl_log_d			="前回の戦闘ログを表示する。"
+s_btl_log			="Battle Log"
+s_btl_log_d			="View log of last battle."
 
-s_fight				="戦闘"	s_fight_d	="選択したモンスター軍団に挑戦する。"
-btn_shop			="<h3 c=lbl>ショップ</h3>購入/売却やアイテムの製作"
-btn_pty				="<h3 c=lbl>キャラクターとパーティーを作る</h3>さまざまなキャラクターをカスタマイズし、新しいパーティーを作成したり、別のパーティーに切り替えることができます。"
-btn_upd_encs		="<h3 c=lbl>ボスにチャレンジ！</h3>すべてのチャレンジで敵を打ち負かしたらボスに挑戦だ。"
-s_arn_rst			="チャレンジのリフレッシュ"	s_arn_rst_d	="指定した難易度でチャレンジをリフレッシュします(有料)。"
-s_clr_all_win		="すべてのチャレンジを undefeated に設定します。"
-s_set_all_win		="すべてのチャレンジを defeated に設定します。"
-s_set_most_win		="すべてのチャレンジを defeated に設定します（最後のチャレンジを除く）。"
+s_fight				="Fight"	s_fight_d	="Challenges the selected pack of monsters."
+btn_shop			="<h3 c=lbl>Shop</h3>Buys, sells or crafts items."
+btn_pty				="<h3 c=lbl>Create Character and Party</h3>Customizes various characters and builds new party, or switch to another party."
+btn_upd_encs		="<h3 c=lbl>Challenge BOSS!</h3>Fight a BOSS challenge once all the current challenges defeated."
+s_arn_rst			="Refresh Challenges"	s_arn_rst_d	="Refresh a batch of challenges of designated difficulty for a fee."
+s_clr_all_win		="Set all challenges undefeated"
+s_set_all_win		="Set all challenges defeated"
+s_set_most_win		="Set all challenges defeated (except the last one)"
 
 
-glory_pts			={n="グローリーポイント"			,d="新たなチャレンジに勝利することにより、利益を得ます、さまざまなアリーナ特権を得るために使用できます。"}
-arn_upd				={n="チャンピオン特権"				,d="グローリーポイントを消費しアリーナ特権を得る。"}
+glory_pts			={n="Glory Points"				,d="Gained by winning new challenges, can be used to obtain various arena privileges."}
+arn_upd				={n="Champion Privileges"		,d="Spend glory points to obtain arena privileges."}
 s_rst_arn_upds		="Reset Champion Privileges"	s_rst_arn_upds_d	="Cancel all selected champion privileges and refund 80% of glory points."
 s_req_arn_sub		="Require corresponding champion privilege."
 s_arn_cfg			="Champion Privilege Options"	s_arn_cfg_d	="Championship-exclusive privilege options give you more control over the battle at your fingertips!"
-not_enough_glory	="グローリーポイントが足りません"
+not_enough_glory	="Not enough glory points"
 
-cfg_map				={n="マップの設定", d="バトルマップの設定を調整します。"}
-min_sz				="最小サイズ"
-max_sz				="最大サイズ"
-sq_map				="常に正方形のマップ"
+cfg_map				={n="Map Settings", d="Adjust settings of battle maps."}
+min_sz				="Min Size"
+max_sz				="Max Size"
+sq_map				="Always square maps"
 
-cfg_minion			={n="ミニオンの設定", d="チャレンジのミニオンモンスターの最大数を調整する。"}
-minion_max			="ミニオンモンスターの最大数"
+cfg_minion			={n="Minions Settings", d="Adjust the maximum quantity of minion monsters of challenges."}
+minion_max			="Maximum quantity of minion monsters"
 
-cfg_enc_lv			={n="チャレンジレベルの設定", d="チャレンジレベルのランダム フローティング範囲を調整します。"}
-lwr_lmt				="フローティングの下限"
-upr_lmt				="フローティングの上限"
-apply_to_boss		="ボス戦にも適用"
+cfg_enc_lv			={n="Challenge Level Settings", d="Adjust the random float range of challenge levels."}
+lwr_lmt				="Floating lower limit"
+upr_lmt				="Floating upper limit"
+apply_to_boss		="Apply to BOSS battles too"
 
-s_cfg_mob_pty_sz	="モンスター・パーティーサイズ"
-s_cfg_mob_pty_sz_d	="デフォルトでは、最高の戦闘体験を実現するために、エンカウントごとのモンスターの数はプレイヤー キャラクターの数に基づいて自動的に設定されます。\n\n指定したプレイヤーキャラクター数に応じてモンスターの数を設定し、1対10などの特殊な戦闘体験を行うことができます。\n\nただし、これにより戦闘が難しすぎたり、簡単すぎたりする可能性があるため、経験豊富なプレイヤーのみに限定してください。"
-s_base_on_my_pty	="プレイヤーパーティに基づく"
+s_cfg_mob_pty_sz	="Monster Party Size"
+s_cfg_mob_pty_sz_d	="By default, the number of monsters per encounter is automatically configured based on the number of player characters for the best battle experience.\n\nThis option can configure the number of monsters according to the specified number of player characters for special battle experience such as 1 vs. 10.\n\nHowever, this may cause the battle too difficult or too easy, so only for experienced players."
+s_base_on_my_pty	="Base on player party"
 
 -- z_arn_upd
-s_arn_upd_glory		="コンバット・パフォーマンス"	s_arn_upd_glory_d	="優れたパフォーマンスはより多くのグローリーポイントと報酬を得られます！"	s_arn_upd_glory_b	="グローリーポイントとゴールドの報酬が +%d%% 増加"
-s_arn_upd_cft		="製作の優遇"					s_arn_upd_cft_d		="低価格で製作"													s_arn_upd_cft_b		="%d%% 引きで製作できる"
-s_arn_upd_buy		="低額で購入"					s_arn_upd_buy_d		="低い価格でアイテムを購入すします"									s_arn_upd_buy_b		="%d%% 引きで購入"
-s_arn_upd_sell		="高額で売却"					s_arn_upd_sell_d	="高い価格でアイテムを売却します"									s_arn_upd_sell_b	="%d%% 高い価格で販売"
+s_arn_upd_glory		="Performance Combat"	s_arn_upd_glory_b	="+%d%% glory points and gold pieces rewards of new challenges"	s_arn_upd_glory_d	="More glories and rewards for great performances!"-- z_new2 b
+s_arn_upd_cft		="Crafting"				s_arn_upd_cft_b		="Crafting cost %d%% lower"										s_arn_upd_cft_d		="Lower crafting cost and more options."
+s_arn_upd_buy		="Buy Low"				s_arn_upd_buy_b		="Store price %d%% lower"										s_arn_upd_buy_d		="Purchasing shop items at lower prices, and a wider variety of store items."
+s_arn_upd_sell		="Sell High"			s_arn_upd_sell_b	="Selling price %d%% higher"									s_arn_upd_sell_d	="Selling items at higher prices, as well as more options."-- z_new2 e
 -- z_arn_sub
-s_arn_sub_no_easy	="簡単なチャレンジを禁止する"
-s_arn_sub_remons	="半分の報酬でチャレンジをサクサク進める"
+s_arn_sub_no_easy	="Prohibit easy challenges"
+s_arn_sub_remons	="Refreshing challenges at half price"
 s_arn_sub_lit_2_1	="+10% battlefields of shadowy illumination"
 s_arn_sub_lit_2_2	="+10% battlefields of shadowy illumination"
 s_arn_sub_lit_2_3	="+10% battlefields of shadowy illumination"
@@ -161,485 +161,485 @@ s_arn_sub_lit_1_1	="+10% battlefields of bright illumination"
 s_arn_sub_lit_1_2	="+10% battlefields of bright illumination"
 s_arn_sub_lit_1_3	="+10% battlefields of bright illumination"
 s_arn_sub_lit_1_4	="+10% battlefields of bright illumination"
-s_arn_sub_lock1		="ショップのアイテムロック機能を有効にする"
-s_arn_sub_lock2		="アイテムロック +1"
-s_arn_sub_lock3		="アイテムロック +1"
-s_arn_sub_lock4		="アイテムロック +1"
-s_arn_sub_lock5		="アイテムロック +1"
-s_arn_sub_restock1	="BOSSチャレンジに勝利した時、ショップに補給物資をひとつ補充する。"
-s_arn_sub_restock2	="補給物資 +1"
-s_arn_sub_restock3	="補給物資 +1"
-s_arn_sub_restock4	="補給物資 +1"
-s_arn_sub_restock5	="補給物資 +1"
+s_arn_sub_lock1		="Enable the Item Lock feature of shop"
+s_arn_sub_lock2		="+1 Item Lock"
+s_arn_sub_lock3		="+1 Item Lock"
+s_arn_sub_lock4		="+1 Item Lock"
+s_arn_sub_lock5		="+1 Item Lock"
+s_arn_sub_restock1	="Shop provides 1 Extra Supply when defeated a BOSS challenge"
+s_arn_sub_restock2	="+1 Extra Supply"
+s_arn_sub_restock3	="+1 Extra Supply"
+s_arn_sub_restock4	="+1 Extra Supply"
+s_arn_sub_restock5	="+1 Extra Supply"
 
 -- cfg
-s_cfg				="オプション"
-s_cfg_d				="グラフィック、オーディオ、戦場の詳細、その他の設定を変更。"
+s_cfg				= "Options"
+s_cfg_d				= "Changes graphics, audio, battlefield details and other settings."
 
-cfg_gfx				="グラフィックス"
-cfg_sfx				="オーディオ"
-cfg_btl				="戦闘"
-cfg_adv				= "アドベンチャー"
-cfg_misc			="その他"
+cfg_gfx				= "Graphics"
+cfg_sfx				= "Audio"
+cfg_btl				= "Battle"
+cfg_adv				= "Adventure"
+cfg_misc			= "Misc"
 
-full_screen			="全画面表示"
-wnd_wxh				="ウィンドウモードの解像度"
-cust				="カスタマイズ..."
-cust_wxh			="解像度のカスタマイズ"
-err_wxh				="無効な解像度です！"
-ui_scale			="ＵＩスケール"
-brightness			="明るさ"
-lang_s				="言語"
-restart_prompt		="* 言語や画面の解像度を変更した場合はゲームを再起動してください。"
-fps_lmt				="FPSを60に制限<c=twa>（デスクトップのリフレッシュレート＞６０の場合）</c>"
-show_fps			="FPSを表示"
-music				="音楽"
-sound				="サウンド"
-music_in_bg			="バックグラウンドでも音楽を再生する。"
-shuffle_music		="シャッフルモードで音楽を再生<c=twa> (デフォルトはトラック順)</c>"
-boss_music			="BOSS戦で専用の音楽を使用する"
-btl_music			="通常の戦闘時に専用の音楽を使用する"
-show_tip_at_rb		="右下に戦闘ツールチップを表示する"
-show_u_bf_ex		="戦闘ツールチップの状態を表示する"
-show_simple_act_tip	="移動と防衛アクションのツールチップを表示する"
-s_low_fps			="Enable this feature may significantly reduce FPS in ranged characters' turns."
-show_all_hits_in_rng="攻撃範囲内のヒット率を表示する<c=twa> (またはALT/Middle Button長押し)</c> <ico=ico/_s_warn t=$s_low_fps>"
-bf_ani_text			="Show floating text"
-ani_u_idle			="アイドル時にアニメーションを表示する"
-edge_vp_scroll		="画面のエッジ・スクロールを有効にする"
-auto_vp				="ビューポートアニメーションを有効にする"
-vp_out_only			="キャラクターがビューポート外にいる場合のみ"
-ani_vp				="移動時に視点を移動する"
-ani_cur_u_mark		="キャラクター切り替えアニメーションを表示する"
-hp_bar_ani			="HPバーアニメーションを表示する"
-mov_ani				="移動時のアニメーション速度"-- todo Movement and viewport animation speed
-startup_arena		="ゲーム開始時に自動的にアリーナに入場する"
-startup_adventure	="ゲーム開始時にアドベンチャーの最新データで始める"
-act_desc_final_dmg	="呪文の説明に最終ダメージを表示（チェックを外す：ダメージダイス/キャスターレベルを表示）"
-disp_dice			="武器/アクションの説明にダメージダイスを表示する、例：2d6<c=twa> (チェックなし: ダメージの範囲、2-12)</c>"-- ダメージダイスを表示する、例：2d6<c=twa> (2-12 by default)</c>
-disp_sum_dice		="攻撃のヒント/キャラクターパネルにダメージダイスを表示する"
-show_dnd_ch			="武器の威力の範囲を表示する、例えば： 19-20/x2<c=twa> (チェックなし: 10%/x2)</c>"
-adv_auto_save		="オートセーブ"
+full_screen			= "Full screen"
+wnd_wxh				= "Windowed mode resolution"
+cust				= "Custom..."
+cust_wxh			= "Customize Resolution"
+err_wxh				= "Invalid resolution!"
+ui_scale			= "UI scale"
+brightness			= "Brightness"
+lang_s				= "Language"
+restart_prompt		= "* Restart game to take effect after changing resolution or language"
+fps_lmt				= "Limit FPS 60<c=twa> (for desktop refresh rates > 60)</c>"
+show_fps			= "Show FPS"
+music				= "Music"
+sound				= "Sound"
+music_in_bg			= "Music on in background"
+shuffle_music		= "Play music in shuffle mode<c=twa> (in track order by default)</c>"
+boss_music			= "Special music for BOSS battles"
+btl_music			= "Special music for normal battles"
+show_tip_at_rb		= "Show combat tooltips at right-bottom of view"
+show_u_bf_ex		= "Show conditions in combat tooltips"
+show_simple_act_tip	= "Show tooltips of Move and Defend actions"
+s_low_fps			= "Enable this feature may significantly reduce FPS in ranged characters' turns."
+show_all_hits_in_rng= "Show all hit rates in attack range<c=twa> (or hold ALT/Middle Button)</c> <ico=ico/_s_warn t=$s_low_fps>"
+bf_ani_text			= "Show floating text"
+ani_u_idle			= "Show idle animations"
+edge_vp_scroll		= "Enable map edge scrolling"
+auto_vp				= "Viewport auto-follow current character"
+vp_out_only			= "Only when character out of viewport"
+ani_vp				= "Show viewport animations"
+ani_cur_u_mark		= "Show character switching animations"
+hp_bar_ani			= "Show HP bar animations"
+mov_ani				= "Movement and viewport animation speed"
+startup_arena		= "Enter arena on startup"
+startup_adventure	= "Continue last adventure on startup"
+act_desc_final_dmg	= "Show final damage in spell description<c=twa> (unchecked: show damage dice/caster level)</c>"
+disp_dice			= "Show damage dice in weapon/action description, e.g. 2d6<c=twa> (unchecked: damage range, 2-12)</c>"
+disp_sum_dice		= "Show damage dice in attack tip/character panel"
+show_dnd_ch			= "Show weapon threat range, e.g. 19-20/x2<c=twa> (10%/x2 by default)</c>"
+adv_auto_save		= "Auto Save"
 
-tuts_on				="チュートリアルを有効にする"
-tuts_rst			="チュートリアルのリセット"	tuts_rst_d	="チュートリアルを初期状態にリセットする。"
-tuts_no_show		="チュートリアルを再表示しない。\n<c=twa>（オプションで有効にできます）</c>"
+tuts_on				= "Enable tutorials"
+tuts_rst			= "Reset Tutorials"	tuts_rst_d	="Reset tutorials to the initial state."
+tuts_no_show		= "Don't show tutorials again.\n<c=twa>(Can be enabled in Options)</c>"
 
 -- shop
 s_shop				="SHOP"
 s_dbg_shop			="Free Shop"
-cbo_num				="個数"
+cbo_num				="Quantity"
 cbo_num_all			="xAll"
-sum_cost			="合計金額"
-req_pty_lv			="パーティーのレベルは%d以上必要です"
-pre_buy				={n="ロック / ロック解除", d="選択したアイテムを将来の購入のために、価格の 5%の料金でロックできる。\n\n<c=fc_o>•ロックされていないアイテムは消滅します！\n•ロック料金は返金されません。"}
-supply_free			={n="補給物資", d="補給物資ポイントを1ポイント消費し、ショップにマジックアイテムを補充する。"}
-supply_glory		={n="補給物資", d="グローリーポイントを１ポイント消費し、マジックアイテムを補充する。"}
-supply_gold			={n="補給物資", d="ゴールドピースを使って、ショップに魔法のアイテムを補充する。"}
+sum_cost			="Total Amount"
+req_pty_lv			="Requires the party level above %d"
+pre_buy				={n="Lock/Unlock"	,d="Lock the selected item at the 5% price for future purchase.\n\n<c=fc_o>• Unlocked items will disappear!\n• The lock fee is not refundable."}
+supply_free			={n="Extra Supply"	,d="Spend 1 extra supply point to make Shop to restock magic items."}
+supply_glory		={n="Extra Supply"	,d="Spend 1 glory point to make Shop to restock magic items."}
+supply_gold			={n="Extra Supply"	,d="Spend some gold pieces to make Shop to restock magic items."}
 
-pty_bag				="パーティー・バックパック"
-pty_box				="パーティー・ストレージ"
-s_bag				="キャラクターのステータス / インベントリ"
-s_bag_d				="パーティーメンバーのステータスの表示、装備の交換、パーティーバックパックの管理など。"
+pty_bag				= "Party Backpack"
+pty_box				= "Party Storage"
+s_bag				= "Character Status/Inventory"
+s_bag_d				= "View status of party members, replace equipment, or manage party backpack, etc.."
 
-s_bank				= {n="銀行", d="銀行はゴールドとストレージ・ボックスの入出金サービスを提供する。"}
-s_storage			= {n="ストレージ・ボックス", d="パーティー・バックパックとは独立した、より多くの収納スペース。"}-- Safe Deposit Box
-s_buy_storage		="ストレージ・ボックスを購入"
-s_buy_storage_arn	="ストレージ・ボックスを購入しますか？\n\n<c=ty>コスト：</c>%s  %s"
-s_buy_storage_adv	="ストレージ・ボックスを購入しますか？\n\n<c=ty>コスト：</c>%s\n\n<c=ty>最小評判値：</c>%s"-- Minimum reputation required
-s_deposit			= "格納する"
-s_withdraw			= "取り出す"
-deposit_gp			= {n="預金", d="指定した額のゴールドピースを銀行に預けます。"}
-withdraw_gp			= {n="引き出し", d="銀行から指定されたゴールドピースを引き出します。"}
+s_bank				= {n="Bank", d="Banks provide services of deposit and withdraw gold and storage box."}
+s_storage			= {n="Storage Box", d="More storage space that independent of the party backpack."}-- Safe Deposit Box
+s_buy_storage		= "Buy Storage Box"
+s_buy_storage_arn	= "Purchase a storage box?\n\n<c=ty>Cost: </c>%s  %s"
+s_buy_storage_adv	= "Purchase a storage box?\n\n<c=ty>Cost: </c>%s\n\n<c=ty>Minimum Reputation: </c>%s"-- Minimum reputation required
+s_deposit			= "Deposit"
+s_withdraw			= "Withdraw"
+deposit_gp			= {n="Deposit", d="Deposit a specified amount of gold pieces in the bank."}
+withdraw_gp			= {n="Withdraw", d="Withdraw a specified amount of gold pieces from your bank balance."}
 s_whole_row			= "Whole Row"
 s_whole_bag			= "Whole Bag"
 s_all				= "All"
 s_mov_no_ammo		= "Ignore Ammo when Deposit/Withdraw All"
 s_mov_to_post		= "Move to Slots After Current Page Only"
 s_tp_op_page		= "Deposit/Withdraw by Type: Current Page Only"
-s_auto_mat_to_bank	="都市に入る際にマテリアルをストレージ・ボックスに格納する"--Auto-store materials when enter city
-s_mat_to_bank_f		="ストレージ・ボックスに格納された%d個のマテリアル"
+s_auto_mat_to_bank	= "Auto-store materials when enter city"
+s_mat_to_bank_f		= "%d material(s) stored into Storage Box"
 
-list_b				="リスト(大)"
-list_s				="リスト(小)"
+list_b				= "Large List"
+list_s				= "Small List"
 
 
 -- pty & pc
-mi_grp_pty_list		="パーティーリスト"
+mi_grp_pty_list		= "PARTY LIST"
 mi_grp_pty_cmds		= "PARTY COMMANDS"
-pty_ren				="パーティーの名前を変更"
-s_del_pty			="このパーティーを削除"
-s_del_pty_cfm		="選択したパーティーを削除しますか？：%s"
+pty_ren				= "Party Rename"
+s_del_pty			= "Delete This Party"
+s_del_pty_cfm		= "Deletes the selected party: %s?"
 
-mk_pty				= {n="パーティーの作成" ,d="作成した、または選択したキャラクターでパーティーを編成します。"}
-s_add_pc_arn		="キャラクターを追加"	s_add_pc_arn_d	="キャラクターを選択または作成して、パーティーに追加する。"
-s_add_pc_adv		="冒険者の採用"		s_add_pc_adv_d	="ギルドではリソースを使用し、より適した仲間を探すことができるが、当然コストは高額になる。"
-dismiss				="解雇"
-bury				="埋葬する"
-pc_list				="キャラクター リスト"
-new_pc				="新しいキャラクター"
-mod_pc				="選択したキャラクターの変更"
-del_pc				="チェックしたキャラクターの削除"
-cfm_del_sel_item	="チェックした全てのキャラクターを削除しますか？"
-pty_name			="パーティーの名前"
-s_rst_pre_pcs		="既存キャラクターのリセット"
-s_rst_pre_pcs_cfm	="すべての既存のキャラクターをリセットします。よろしいですか？\n<c=twa>（プレイヤーのカスタムキャラクターには影響ありません）</c>"
+mk_pty				= {n="Create Party" ,d="Choose or create characters and build your party."}
+s_add_pc_arn		= "Add Character"		s_add_pc_arn_d	="Choose or create characters and add into your party."
+s_add_pc_adv		= "Recruit Adventurer"	s_add_pc_adv_d	="The guild can use resources to help you find more suitable companions, of course, the cost is expensive."
+dismiss				= "Dismiss"
+bury				= "Bury"
+pc_list				= "Character List"
+new_pc				= "New Character"
+mod_pc				= "Modify Selected Character"
+del_pc				= "Delete Checked Character"
+cfm_del_sel_item	= "Deletes all checked character?"
+pty_name			= "Party Name"
+s_rst_pre_pcs		= "Resets premade characters"
+s_rst_pre_pcs_cfm	= "Resets all premade characters. Are you sure?\n<c=twa>(No effect on player custom characters)</c>"
 
-chg_name_look		="名前とポートレートの変更"
-chg_portait			="ポートレートの変更"
-chg_avatar			="アバターと関連付けられたポートレートの変更"-- Change Avatar and Associated Portait	アバターの変更
-s_rd_sprt			="Random avatar by race and class"
-s_sync_face			="Set portait associated with avatar"
-chg_u_bld			="ビルドを変更"-- Change Build	キャラクターのビルドを変更
+chg_name_look		= "Change Name & Images"
+chg_portait			= "Change Portait"
+chg_avatar			= "Change avatar and associated portait"
+s_rd_sprt			= "Random avatar by race and class"
+s_sync_face			= "Set portait associated with avatar"
+chg_u_bld			= "Change Build"
 
-mk_pty_from_cur		="Clone Current Party"
-mk_pty_from_tpl		="Party Templates"
-submit_arena_pty	="Submit Current Party"
+mk_pty_from_cur		= "Clone Current Party"
+mk_pty_from_tpl		= "Party Templates"
+submit_arena_pty	= "Submit Current Party"
 
-cpy_pty_txt			="クリップボードにパーティの詳細をコピー(TXT)"
-cpy_pty_ubb			="クリップボードにパーティの詳細をコピー(BBコード)"
-cpy_u_txt			="クリップボードにキャラクターの詳細をコピー(TXT)"
-cpy_u_ubb			="クリップボードにキャラクターの詳細をコピー(BBコード)"
+cpy_pty_txt			= "Copy Party Details to Clipboard (TXT)"
+cpy_pty_ubb			= "Copy Party Details to Clipboard (UBB)"
+cpy_u_txt			= "Copy Character Details to Clipboard (TXT)"
+cpy_u_ubb			= "Copy Character Details to Clipboard (UBB)"
 
 
 -- new pc/lv up
-s_unnamed			="無名"
-pc_name				="キャラクター名"
-rd_name				="ランダムな名前"
-portait				="ポートレート"
-btl_ico				="アバター"
---s_start_over		="やり直し"
-mk_pc				= {n="キャラクターの作成"	,d="ステップバイステップでキャラクターを作成するか、プリビルドを選択します。"}
-s_relv_a			="再訓練"
-s_relv				="キャラクターを再訓練する"
-s_relv_d			="有料でレベルを元の状態に戻し、レベル１からクラスや特技、呪文などを選択することがでる。\n\nキャラクターの経験値や技能の習熟ポイントは保持される。\n\n注意：キャラクターの戦闘アクション・バーは初期状態にリセットされる。"
-s_relv_cfm			="キャラクターを再訓練しますか？\n\n<c=ty>コスト：</c>%s"
-s_lvup				= "レベルアップ"	s_lvup_d	="レベルを上げると、さまざまな方法でキャラクターの能力を強化できる：基本攻撃ボーナス、防御、追加の能力値、新しい特技、さらには新しい呪文が含まれる。"
---finish			="完了"
---next_step			="次へ"
-creation_mode		="クリエーション モード"
-sel_race			="種族"
-sel_race_bns		="ボーナス能力値"
-sel_cls				="クラス"
-sel_cls_wps			="武器の習熟"
-decide_abi			="能力値"
-pts_left			="残りポイント"
-li_spl_ring			= {n="リング %d 呪文" ,d="レベル%d以上のスペルキャスターが利用可能です。"}
-sel_feat			="特技"
-sel_spl				="呪文"
-show_all_pwrs		="全てのアイテムを表示"
+s_unnamed			= "Unnamed"
+pc_name				= "Character Name"
+rd_name				= "Random Name"
+portait				= "Portrait"
+btl_ico				= "Avatar"
+--s_start_over		= "Start Over"
+mk_pc				= {n="Create Character"	,d="Create a character step by step or select a preset build directly."}
+s_relv_a			= "Retrain"
+s_relv				= "Retrain Character"
+s_relv_d			= "For a fee, restore the level of a character to its original state, and choose a class, feats, spells, etc. from level 1.\n\nThe existing experience points and skill proficiency points of the character will be kept.\n\nNote: The character's combat action bars will be reset to the default state."
+s_relv_cfm			= "Retrain the character(s)?\n\n<c=ty>Cost: </c>%s"
+s_lvup				= "Level Up"	s_lvup_d	="Levelling up improves your characters in many ways: more hit points, higher basic attack bonus and saves, extra ability scores, new feats, and even new spells, etc."
+--finish			= "Finish"
+--next_step			= "Next"
+creation_mode		= "Creation Mode"
+sel_race			= "Race"
+sel_race_bns		= "Bonus Ability Scores"
+sel_cls				= "Class"
+sel_cls_wps			= "Weapon Proficiencies"
+decide_abi			= "Ability Scores"
+pts_left			= "Points Left"
+li_spl_ring			= {n="Ring %d Spells" ,d="Available for level %d+ spellcaters."}
+sel_feat			= "Feats"
+sel_spl				= "Spells"
+show_all_pwrs		= "Show All Items"
 
 
 -- inv/bag
-pc_info				="キャラクターのステータス"
-wpn_set				="ウェポンセット"
-cur_next_xp			="XP（現在/次のレベル）"
-cur_max_load		="現在重量／最大重量（ペナルティなし時）"
-equipped			="装備済み"
-eqpt_stats			="装備の修正値"
+pc_info				= "Character Stats"
+wpn_set				= "Weapon Set"
+cur_next_xp			= "XP (Current / Next Level)"
+cur_max_load		= "Current Load / Max No Penalty Load"
+equipped			= "Equipped"
+eqpt_stats			= "Equipment Modifiers Stats"
 
-merge_same_itms		="同一アイテムをマージする"
-auto_sort			="自動ソート"
-auto_sort_cfg		="自動ソートオプション"
+merge_same_itms		= "Merge Same Items"
+auto_sort			= "Auto Sort"
+auto_sort_cfg		= "Auto Sort Options"
 sort_itms={-- z_sort_itm
-{n="タイプ別"},
-{n="マジックボーナス別"},
-{n="レアリティ別"},
-{n="価格別"},
-{n="重量別"},
+{n="By Type"},
+{n="By Magic Bonus"},
+{n="By Rarity"},
+{n="By Price"},
+{n="By Weight"},
 {n="-"},
-{n="降順"},
-{n="下に"},
-{n="総価格または重量"},
-{n="すべてのバッグをソート"},
+{n="Descending"},
+{n="On Bottom"},
+{n="Total Price or Weight"},
+{n="Sort All Bags"},
 {n="-"},
-{n="ソート時の自動マージ"},
-{n="取得時に自動マージ"},
+{n="Auto-merge when Sort"},
+{n="Auto-merge when Obtain"},
 }
 
-u_dlg_tip			= {n="装備とインベントリーのヒント" ,d=[[
-- アイテムを右クリック：クイック装備/解除
-- ShiftまたはCtrl+クリック：アイテムの分割
-- 投擲武器 ->　弾薬スロット
+u_dlg_tip			= {n="Equipment/Inventory Tips" ,d=[[
+- R-click item: quick equipt/unequipt
+- Shift or Ctrl + click: split items
+- Thrown weapon -> ammo slot
 - Different ammos in ammo slots for partly auto-reload]]}
 
 
 -- sys
-scroll_top			="一番上までスクロール"
-scroll_bottom		="一番下までスクロール"
-page_up				="前ページ"
-page_down			="次ページ"
-view_log			="ログの参照"
-copy_log			="ログをクリップボードにコピーする"
-show_log			="ログの表示/非表示"
-clr_log				="ログのクリア"
-s_sys_menu			="システムメニュー"
-s_sys_menu_d		="各種システム機能の設定。"
-s_hlp				="ヘルプ"
-s_wiki				="Low Magic Age Encyclopedia"	s_wiki_a	="Encyclopedia"	s_wiki_d	="ゲームの詳細や仕組みなどを表示します。"
-s_back_main			="メインメニュー"
-s_back_main_d		="メインメニューに戻る"
-s_save				="セーブ"
-s_load				="ロード"
-quick_save			="クイックセーブ"
-quick_load			="クイックロード"
-quick_save_cfm		="現在のゲームを保存しますか？"
-quick_load_cfm		="最後に保存したゲームをロードしますか？\n（現在のゲームの進行状況は失われます）"
-save_quit			="保存して終了"
-game_saved			="ゲームが保存されました。"
-save_lost_cfm		="未保存のゲームの進行状況は失われます。\n続行してよろしいですか？"
-save_quit_cfm		="現在の進行状況を保存し、ゲームを終了しますか？"
-can_load_save		="セーブファイルをロードできません！"
-can_load_arn_save	="セーブファイルをロードできません！デフォルトのパーティを使用します。"
+scroll_top			= "Scroll to Top"
+scroll_bottom		= "Scroll to Bottom"
+page_up				= "Page Up"
+page_down			= "Page Down"
+view_log			= "View Logs"
+copy_log			= "Copy Logs to Clipboard"
+show_log			= "Show/Hide Logs"
+clr_log				= "Clear Logs"
+s_sys_menu			= "System Menu"
+s_sys_menu_d		= "Use various system functions."
+s_hlp				= "Help"
+s_wiki				= "Low Magic Age Encyclopedia"	s_wiki_a	="Encyclopedia"	s_wiki_d	="Browses and learns all the details and mechanisms of this game."
+s_back_main			= "Main Menu"
+s_back_main_d		= "Back to Main Menu."
+s_save				= "Save"
+s_load				= "Load"
+quick_save			= "Quick Save"
+quick_load			= "Quick Load"
+quick_save_cfm		= "Save the current game progress?"
+quick_load_cfm		= "Load the last saved game progress?\n(The current game progress will be lost)"
+save_quit			= "Save and Quit"
+game_saved			= "Game saved."
+save_lost_cfm		= "The unsaved current game progress will be lost. Continue?"
+save_quit_cfm		= "Save the current game progress and exit to desktop?"
+can_load_save		= "Can not load the save!"
+can_load_arn_save	= "Can not load the save! Created and use the default party."
 
 
 -- workshop
-ugc_submit_pc				= {n="アップする"	,d="<h3 c=lbl>Steam Workshopへのコンテンツのアップロード</h3>チェックしたキャラクターをSteam Workshopにアップロードします。"}
+ugc_submit_pc				= {n="Submit"	,d="<h3 c=lbl>Submit Steam Workshop Content</h3>Submit checked characters to Steam Workshop."}
 
-smod_menu_pc				="カスタム スターティング キャラクターをアップ"
-smod_menu_gfx_pc_face		="カスタム キャラクター ポートレートをアップ"
-smod_menu_gfx_pc_img		="カスタム キャラクター アバターをアップ"
-smod_menu_gfx_mo_img		="カスタム モンスター アバターをアップ"
-smod_menu_gfx_all			="総合グラフィックMODをアップ"
-smod_menu_arena_pty			="アリーナ パーティーをアップ"
-smod_menu_arena_enc			="アリーナ チャレンジをアップ"
-smod_menu_arena_map			="アリーナ バトル マップをアップ"
-smod_menu_adv_pty			="アドベンチャー パーティーをアップ"
-smod_menu_adv_module		="アドベンチャー モジュールをアップ"
-smod_menu_gameplay			="ゲームプレイMODをアップ"
-smod_menu_lang				="言語MODをアップ"
-smod_menu_all				="総合MODをアップ"
+smod_menu_pc				= "Submit Custom Starting Characters"
+smod_menu_gfx_pc_face		= "Submit Custom Character Portraits"
+smod_menu_gfx_pc_img		= "Submit Custom Character Avatars"
+smod_menu_gfx_mo_img		= "Submit Custom Monster Avatars"
+smod_menu_gfx_all			= "Submit Comprehensive Graphics MOD"
+smod_menu_arena_pty			= "Submit Arena Party"
+smod_menu_arena_enc			= "Submit Arena Challenges"
+smod_menu_arena_map			= "Submit Arena Battle Maps"
+smod_menu_adv_pty			= "Submit Adventure Party"
+smod_menu_adv_module		= "Submit Adventure Module"
+smod_menu_gameplay			= "Submit Gameplay MOD"
+smod_menu_lang				= "Submit Language MOD"
+smod_menu_all				= "Submit Comprehensive MOD"
 
-smod_def_title_pc			="マイ カスタム スターティング キャラクター"
-smod_def_title_gfx_pc_face	="マイ スタム キャラクター ポートレート"
-smod_def_title_gfx_pc_img	="マイ カスタム キャラクター アバター"
-smod_def_title_gfx_mo_img	="マイ カスタム モンスター アバター"
-smod_def_title_gfx_all		="マイ 総合グラフィックMOD"
-smod_def_title_arena_pty	="マイ アリーナ パーティー"
-smod_def_title_arena_enc	="マイ アリーナ チャレンジ"
-smod_def_title_arena_map	="マイ アリーナ バトル マップ"
-smod_def_title_adv_pty		="マイ アドベンチャー パーティー"
-smod_def_title_adv_module	="マイ アドベンチャー モジュール"
-smod_def_title_gameplay		="マイ ゲームプレイMOD"
-smod_def_title_lang			="マイ 言語MOD"
-smod_def_title_all			="マイ 総合MOD"
+smod_def_title_pc			= "My Custom Starting Characters"
+smod_def_title_gfx_pc_face	= "My Custom Character Portraits"
+smod_def_title_gfx_pc_img	= "My Custom Character Avatars"
+smod_def_title_gfx_mo_img	= "My Custom Monster Avatars"
+smod_def_title_gfx_all		= "My Comprehensive Graphics MOD"
+smod_def_title_arena_pty	= "My Arena Party"
+smod_def_title_arena_enc	= "My Arena Challenges"
+smod_def_title_arena_map	= "My Arena Battle Maps"
+smod_def_title_adv_pty		= "My Adventure Party"
+smod_def_title_adv_module	= "My Adventure Module"
+smod_def_title_gameplay		= "My Gameplay MOD"
+smod_def_title_lang			= "My Language MOD"
+smod_def_title_all			= "My Comprehensive MOD"
 
-smod_dir_lbl_pc				="コンテンツフォルダ："
-smod_dir_lbl_gfx_pc_face	="画像フォルダ（JPGまたはPNG、最適なサイズは72x72)："
-smod_dir_lbl_gfx_pc_img		="画像フォルダ（PNG、最適なサイズは96x96)："
-smod_dir_lbl_gfx_mo_img		="画像フォルダ（PNG、最適なサイズは96x96)："
-smod_dir_lbl_gfx_all		="コンテンツフォルダ： (ゲームフォルダー <url=./gfx>gfx</url> と同様):"
-smod_dir_lbl_arena_pty		="コンテンツフォルダ："
-smod_dir_lbl_arena_enc		="コンテンツフォルダ："
-smod_dir_lbl_arena_map		="コンテンツフォルダ："
-smod_dir_lbl_adv_pty		="コンテンツフォルダ："
-smod_dir_lbl_adv_module		="コンテンツフォルダ："
-smod_dir_lbl_gameplay		="コンテンツフォルダ："
-smod_dir_lbl_lang			="コンテンツフォルダ："
-smod_dir_lbl_all			="コンテンツフォルダ："
+smod_dir_lbl_pc				= "Content Folder:"
+smod_dir_lbl_gfx_pc_face	= "Content Images Folder (JPG or PNG, optimum size 72x72):"
+smod_dir_lbl_gfx_pc_img		= "Content Images Folder (PNG, optimum size 96x96):"
+smod_dir_lbl_gfx_mo_img		= "Content Images Folder (PNG, optimum size 96x96):"
+smod_dir_lbl_gfx_all		= "Content Folder (similar with <url=./gfx>gfx</url> folder in game folder):"
+smod_dir_lbl_arena_pty		= "Content Folder:"
+smod_dir_lbl_arena_enc		= "Content Folder:"
+smod_dir_lbl_arena_map		= "Content Folder:"
+smod_dir_lbl_adv_pty		= "Content Folder:"
+smod_dir_lbl_adv_module		= "Content Folder:"
+smod_dir_lbl_gameplay		= "Content Folder:"
+smod_dir_lbl_lang			= "Content Folder:"
+smod_dir_lbl_all			= "Content Folder:"
 
-smod_menu_lma_ugc			="Low Magic Age のワークショップを参照"
+smod_menu_lma_ugc			= "Browse Low Magic Age Workshop"
 
-smod_new					="新しいワークショップアイテム"
-smod_dlg_title				="スチームワークショップにコンテンツをアップ"
-smod_new_or_upd_lbl			="ワークショップアイテムを新規作成または更新します。"
-smod_title_lbl				="タイトル（最大128文字)："
-smod_preview_lbl			="プレビュー画像（JPGまたはPNG）\n1MB未満である必要があります\n\n更新時：\n空白のままにしておく"
-ugc_preview_sz_err			="プレビュー画像のファイルサイズは1MB未満でなければなりません！"
-smod_tip					="<c=lbl f=b5>情報を入力しOKを押すと、アイテムが\nSteam Workshopに送られます！</c>\n\n<c=twa>その後、説明や画像を追加するなど、自由に編集することができます。</c>\n\n*このアイテムを送信すると、<url=%s>Steam Workshopの利用規約</url>に同意したことになります。"
-smod_submit_busy			="Steam ワークショップへアップ..."
-smod_submit_ok				="<c=lbl f=b5>アップロード成功！</c>\n\n下のリンクをクリックするとアイテムの説明や画像の追加を行うことができます。\n\n<url=%s>説明と画像を追加する</url> (デフォルトのブラウザー)\n<url=%s>説明と画像を追加する</url> (Steamクライアント)"
-smod_submit_err				="<c=r f=b5>アップロードに失敗！(error code: %d)</c>\n\n後でもう一度試してみてください。"
+smod_new					= "New Workshop Item"
+smod_dlg_title				= "Submit Steam Workshop Content"
+smod_new_or_upd_lbl			= "Create New or Update Workshop Item:"
+smod_title_lbl				= "Title (max 128 chars):"
+smod_preview_lbl			= "Preview Image (JPG or PNG)\nMust less than 1MB\n\nWhen Update:\nLeave blank to remain unchanged"
+ugc_preview_sz_err			= "The file size of the preview image must be less than 1MB!"
+smod_tip					= "<c=lbl f=b5>Input information and press OK, your content item will be \nsumbitted to Steam Workshop!</c>\n\n<c=twa>After that, you can edit it freely, such as adding description and images.</c>\n\n* By submitting this item, you agree to the <url=%s>Workshop Terms of Service</url>"
+smod_submit_busy			= "Submitting to Steam Workshop..."
+smod_submit_ok				= "<c=lbl f=b5>Submitted successfully!</c>\n\Click the link below to edit and improve your item \nfurther, such as adding description and images.\n\n<url=%s>Add description and images</url> (default browser)\n<url=%s>Add description and images</url> (Steam client)"
+smod_submit_err				= "<c=r f=b5>Submission failed! (error code: %d)</c>\n\nPlease try again later."
 
 obj_szs={-- z_obj_sz
-{n="予約１"	},
-{n="予約２"	},
-{n="極小"	},
-{n="小"		},
-{n="中"		},
-{n="大"		},
-{n="特大"	},
-{n="超特大"	},
-{n="予約９"	},
+{n="Reserved1"	},
+{n="Reserved2"	},
+{n="Tiny"		},
+{n="Small"		},
+{n="Medium"		},
+{n="Large"		},
+{n="Huge"		},
+{n="Gargantuan"	},
+{n="Reserved9"	},
 }
 
 lmhs={-- z_lmh
-{n="なし"		},
-{n="とても低い"	},
-{n="低い"		},
-{n="中"			},
-{n="高い"		},
-{n="とても高い"	},
-{n="Full"		},
+{n="None"	},
+{n="Lowest"	},
+{n="Low"	},
+{n="Medium"	},
+{n="High"	},
+{n="Highest"},
+{n="Full"	},
 }
 
 spds={-- z_spd
-{n="とても遅い"	},
-{n="遅い"		},
-{n="標準"		},
-{n="速い"		},
+{n="Slowest"	},
+{n="Slow"		},
+{n="Normal"		},
+{n="Fast"		},
 {n="Faster"		},
 {n="Ultrafast"	},
-{n="とても速い"	},
+{n="Fastest"	},
 }
 
 
 -- game terms
-gold_piece		= {n="ゴールドピース"	,d="冒険家が使う最も一般的なコインはゴールドピースです。"}
-item			= {n="アイテム", p="アイテム"}
-total_value		="総価格"
-s_equipped		="装備済"
+gold_piece		= {n="Gold Pieces"	,d="The most common coin that adventurers use is the gold piece."}
+item			= {n="Item", p="Items"}
+total_value		= "Total Value"
+s_equipped		= "Equipped"
 
-s_pty			="パーティー"
-pty_lv			="パーティーレベル"
-pty_funds		="パーティーファンド"
-pty_asset		="パーティー資産"
-pty_members		="パーティーメンバー"
-xx_joined_pty_	="%s がパーティーに参加しました。"
-xx_left_pty_	="%s がパーティーから離脱しました。"
+s_pty			= "Party"
+pty_lv			= "Party Level"
+pty_funds		= "Party Funds"
+pty_asset		= "Party Asset"
+pty_members		= "Party Members"
+xx_joined_pty_	= "%s joined your party."
+xx_left_pty_	= "%s was separated from your party."
 
-s_u_based		="Character-based"
-s_u_free		="空のキャラクター スロット"
-s_u_lock		="ロックされたキャラクター スロット"
-s_u_na			="利用できないキャラクター スロット"
-s_u_null		="無効なキャラクター スロット"
-s_sel_pcs		="キャラクターを選択"
-s_no_ok_pcs		="使用できるキャラクターが居ません！"
-s_bk_pcs		="代替キャラクター"
-s_bk_pcs_d		="一時的に不要なパーティーメンバーは、ここに預けることができる。"
-s_bk_pcs_max	="最大代替スロット"
-s_bk_pcs_lmt	="代替スロットが制限に達した！"
-s_bk_pcs_buy	="代替スロットを購入"
-s_bk_pcs_buy_s	="代替スロットを購入しますか？\n\n<c=ty>コスト：</c>%s"
+s_u_based		= "Character-based"
+s_u_free		= "Empty Character Slot"
+s_u_lock		= "Locked Character Slot"
+s_u_na			= "Not Available Character Slot"
+s_u_null		= "Invalid Character Slot"
+s_sel_pcs		= "Select Characters"
+s_no_ok_pcs		= "No eligible characters!"
+s_bk_pcs		= "Substitute Characters"
+s_bk_pcs_d		= "Party members who are temporarily not needed can be placed here."
+s_bk_pcs_max	= "Maximum substitute slots"
+s_bk_pcs_lmt	= "Substitute slots have reached the limit!"
+s_bk_pcs_buy	= "Buy Substitute Slot"
+s_bk_pcs_buy_s	= "Buy a substitute slot?\n\n<c=ty>Cost: </c>%s"
 
-s_bg_face_f		="全身像"
-s_bg_sprt_f		="ラージアバター"
-s_bg_face_b		="ラージポートレート（PNG形式）"
-s_bg_sprt		="アバター"
-s_bg_alpha		="背景の透明度を設定する"
+s_bg_face_f		= "Full-length Portrait"
+s_bg_sprt_f		= "Large Avatar"
+s_bg_face_b		= "Large Portrait (PNG Format)"
+s_bg_sprt		= "Avatar"
+s_bg_alpha		= "Set Background Transparency"
 
-objective		="目的"
-deadline		="期限"
-s_date_f		="%d 日"
-s_date2_f		="%d <c=ta>日</c>"
-days_fmt		="%d 日後"
-per_x_days_fmt	="%d 日ごと"
-rewards			="報酬"
+objective		= "Objective"
+deadline		= "Deadline"
+s_date_f		= "Day %d"
+s_date2_f		= "<c=ta>Day</c> %d"
+days_fmt		= "%d Days"
+per_x_days_fmt	= "Per %d days"
+rewards			= "Rewards"
 
-pre_req			="前提条件"
-reqs			="必要条件"
-cost			="コスト"
-fee				="費用"
+pre_req			= "Prerequisites"
+reqs			= "Requirements"
+cost			= "Cost"
+fee				= "Fee"
 s_act_pwr		= "Active use"
 s_swt_pwr		= "On-off type"
-auto_gained		="自動取得"
+auto_gained		= "Auto Gained"
 
-s_provoke_ao	="機会攻撃を誘発"
-s_provoke_ao2	="機会攻撃の誘発と〈精神集中〉判定"
-atk_pnl2		="攻撃ペナルティ -2"
+s_provoke_ao	= "Provoke Attacks of Opportunity"
+s_provoke_ao2	= "Provoke AO & Concentration Check"
+atk_pnl2		= "Attack Penalty -2"
 --atk_pnl4		= "Attack Penalty -4"
-has_full_bns	="攻撃ボーナス(完全)"
---not_spl		="呪文ではない"
---cd_turns		="ターンのクールダウン" -- e.g. 3 Turns CD
-true_hit		="自動成功"
-s_tgt			="対象"
-rng				="射程"
-aoe				="対象範囲"
-s_dur			="期間"
+has_full_bns	= "Full Attack Bonus"
+--not_spl		= "Non-spell"
+--cd_turns		= "Turns CD" -- e.g. 3 Turns CD
+true_hit		= "True-hit"
+s_tgt			= "Target"
+rng				= "Range"
+aoe				= "Area"
+s_dur			= "Duration"
 
-basic			="基本"	-- level up result group name
-roll			="ロール"	-- attack roll: ...
-resist			="抵抗成功"	-- floating text on target, e.g. Resist Sleep
-s_dc_a			="DC"
-s_dc			="難易度"
-dmg				="ダメージ"
-base_dmg		="基本ダメージ"
-wpn_dmg			="武器ダメージ"
-s_miss_dmg_eff	="ミスダメージ/効果"
-instant_death	="即死"
-s_heal_25_mhp	="最大HPの1/4を回復"
+basic			= "Basic"	-- level up result group name
+roll			= "roll"	-- attack roll: ...
+resist			= "Resist"	-- floating text on target, e.g. Resist Sleep
+s_dc_a			= "DC"
+s_dc			= "Difficulty Class"
+dmg				= "Damage"
+base_dmg		= "Base Damage"
+wpn_dmg			= "Weapon Damage"
+s_miss_dmg_eff	= "Miss damage/effects"
+instant_death	= "Instant Kill"
+s_heal_25_mhp	= "Heal 1/4 of Max HP"
 s_self_sel		= "Self-selection"
-avg				="平均"
-avg_atk			="コンサヴァティヴ・アタック"
+avg				= "Average"
+avg_atk			= "Conservative Attack"
 
-s_atks_num		="攻撃次數"
-s_crit			="クリティカルヒット"
-s_crit_cfm		="クリティカル確認"
-s_undr			="Overcome Damage Reduction"
-rate			="クリティカル領域"
-s_bns			="ボーナス"
-s_pnt			="ペナルティ"
-mod				= {n="修正値", a="修正"}
-amr_chk_pnl		= {n="鎧の未習熟ペナルティ"}
-spl_fail_rate	= {n="秘術呪文失敗率", a="秘術呪文失敗"}
-infinity_c		="∞"
-used_by			="使用"
+s_atks_num		= "Attacks"
+s_crit			= "Critical Hit"
+s_crit_cfm		= "Crit Confirm"
+s_undr			= "Overcome Damage Reduction"
+rate			= "Rate"
+s_bns			= "Bonus"
+s_pnt			= "Penalty"
+mod				= {n="Modifier", a="Mod"}
+amr_chk_pnl		= {n="Armor Check Penalty"}
+spl_fail_rate	= {n="Arcane Spell Failure Chance", a="Arcane Spell Failure"}
+infinity_c		= "∞"
+used_by			= "Used by"
 
-spd_pnl			="速度ペナルティ"
-no_move			="移動不能"
-max_dex_bns		= {n="最大【敏捷力】ボーナス", a="最大Dexボーナス"}
-lb				="ポンド"
+spd_pnl			= "Speed Penalty"
+no_move			= "Immobile"
+max_dex_bns		= {n="Maximum Dexterity Bonus", a="Max Dex Bonus"}
+lb				= "lb."
 
-square			="スクエア"
-mov_spd			="移動速度"
-wpn_rng			="武器射程"
-s_self			="自分"
-touch			="接触"
-close_rng		="近距離"
-medium_rng		= "中"
-long_rng		="長距離"
-single_tgt		="対象の１体"
-burst			="爆発"
-spray			="すり鉢形に爆発"-- Spray	Blast
-line			="直線"
-s_whole_bf		="戦場全体"
-tgts2			="2体の隣接する対象"
-tgts3			="3対の隣接する対象"
-s_link_cl_3		="３レベル毎に自身および接触した仲間ひとり"
+square			= "Square"
+mov_spd			= "Movement speed"
+wpn_rng			= "Weapon range"
+s_self			= "Self"
+touch			= "Touch"
+close_rng		= "Close"
+medium_rng		= "Medium"
+long_rng		= "Long"
+single_tgt		= "Single target"
+burst			= "Burst"
+spray			= "Cone-shaped burst"-- Spray	Blast
+line			= "Line"
+s_whole_bf		= "Whole battlefield"
+tgts2			= "2 adjacent targets"
+tgts3			= "3 adjacent targets"
+s_link_cl_3		= "Self + 1 touched ally/3 levels"
 
-s_rounds		="ラウンド"
-turn			="ターン"
-s_set_rounds_	="期間（ラウンド）の設定："
+s_rounds		= "round(s)"
+turn			= "Turn"
+s_set_rounds_	= "Set duration (rounds): "
 
-s_dur_btl		="戦闘中永続"-- z_dur
-s_dur_m			="１分"
-s_dur_ma		="１０分"
-s_dur_h			="１時間"
-s_dur_2h		="２時間"
-s_dur_d			="１日"
-s_dur_perm		="永続"
-s_dur_cl		="１ラウンド/レベル"
-s_dur_cl_m		="１分/レベル"-- 1 min./level
-s_dur_cl_ma		="１０分/レベル"
-s_dur_cl_h		="１時間/レベル"
-s_dur_cl_2h		="２時間/レベル"
-s_dur_cl_d		="１日/レベル"
-s_dur_co_cl		="〈精神集中〉（最大１ラウンド/レベル）"
-s_dur_co_10		="〈精神集中〉（最大１０ラウンド）"
-s_dur_rage		="3 + Con 修正値（newly improved）"
-s_dur_area		="領域内"
+s_dur_btl		= "Entire battle"-- z_dur
+s_dur_m			= "1 min."
+s_dur_ma		= "10 min."
+s_dur_h			= "1 hour"
+s_dur_2h		= "2 hours"
+s_dur_d			= "1 day"
+s_dur_perm		= "Permanent"
+s_dur_cl		= "1 round/level"
+s_dur_cl_m		= "10 rounds/level"-- 1 min./level
+s_dur_cl_ma		= "10 min./level"
+s_dur_cl_h		= "1 hour/level"
+s_dur_cl_2h		= "2 hours/level"
+s_dur_cl_d		= "1 day/level"
+s_dur_co_cl		= "Concentration (up to 1 round/level)"
+s_dur_co_10		= "Concentration (maximum 10 rounds)"
+s_dur_rage		= "3 + Con modifier (newly improved)"
+s_dur_area		= "In the area"
 
-dmg_spls		="ダメージ呪文"
-eff_spls		="非ダメージ呪文"
-s_skl_acts		="技能アクション"
-s_misc_acts		="雑多なアクション"
+dmg_spls		= "Damage Spells"
+eff_spls		= "Effect Spells"
+s_skl_acts		= "Skill Actions"
+s_misc_acts		= "Misc Actions"
 
 unknown			= "Unknown"
---misc			="その他"
---done			="完了"
+--misc			= "Misc"
+--done			= "Finish"
 
-hp				= {n="ヒット・ポイント", a="HP", d="ヒット・ポイントは、あなたを倒すのがどれほど難しいかを示す値。ヒット・ポイントがゼロになると死亡します。"}
-tmp_hp			="一時的HP"
-cur_hp			="現在のHP"
-max_hp			="最大HP"
-s_tgt_chp		="対象の現在のHP"
-s_tgt_mhp		="対象の最大HP"
-s_heal_hp		="HP回復"
-s_heal_pts_left	="残りHP"
+hp				= {n="Hit Points", a="HP", d="Your hit points measure how hard you are to kill. When your hit points reaches 0, you’re dead."}
+tmp_hp			= "Temporary HP"
+cur_hp			= "Current HP"
+max_hp			= "Maximum HP"
+s_tgt_chp		= "Target’s Current HP"
+s_tgt_mhp		= "Target’s Max HP"
+s_heal_hp		= "Heal HP"
+s_heal_pts_left	= "Healing points left"
 
-spd				= {n="速度", d="速度はラウンド中にどれくらいの速度で移動できるかを示します。これは種族と装備している鎧に依存します。"}
-init			= {n="イニシアチブ", a="INIT", d="戦闘の開始時に、参加者はイニシアティブ判定をロールします：基本イニシアチブ + d20。 ベースイニシアチブ ＝ 【敏捷力】修正値 ＋ 他の修正値。\n\n続く各ラウンドでは、キャラクターがイニシアティブを変更するアクションを取らない限り、同じ順序で行動します。"}
-can_ao			="機会攻撃可能"
+spd				= {n="Speed", a="SPD", d="Your speed tells you how far you can move in a round. It depends mostly on your race and what armor you’re wearing."}
+init			= {n="Initiative", a="INIT", d="At the start of a battle, each combatant makes an initiative roll: base initiative + d20. Base initiative = Dexterity modifier + other modifiers.\n\nAfter initiative rolls, characters act in order, counting down from highest result to lowest. In every round that follows, the characters act in the same order (unless a character takes an action that results in his or her initiative changing)."}
+can_ao			= "Can make opportunity attacks"
 
 
 -- z_cir_bns	circumstance bonuses
@@ -659,71 +659,71 @@ cirs={
 
 
 -- btl
-to_btl			="敵襲！"
-set_tile_sz		="タイルサイズの設定"
-show_grid		="グリッド"
-show_bf_pnl_r	="情報パネル"
-show_bf_us_bar	="イニシアティブバー"
+to_btl			= "Engage!"
+set_tile_sz		= "Set Tile Size"
+show_grid		= "Grid"
+show_bf_pnl_r	= "Info Panel"
+show_bf_us_bar	= "Initiative Bar"
 
-s_flee			="退却"
-s_flee_d		="全員戦闘から離脱します。"
-flee_cfm		="パーティーは戦闘から離脱しようとしています。\nよろしいですか？"
-flee_cfm_lose	="戦闘結果は敗北に等しいです。"
+s_flee			= "Flee"
+s_flee_d		= "Entire party escapes the battle."
+flee_cfm		= "Your party is about to escape the battle.\nAre you sure?"
+flee_cfm_lose	= "The battle result is equal to defeated."
 --flee_cfm_rep	= "Your reputation will be affected."
-flee_cfm_safe	="すべてのキャラクターは安全に離脱することができます。"
-flee_cfm_chase	="追撃範囲内"
-flee_msg_ok		="パーティーは戦闘から離脱しました。"
-flee_msg_lose	="パーティーは退却中に\n全滅しました。"
+flee_cfm_safe	= "Now all characters can escape safely."
+flee_cfm_chase	= "In Chasing Range"
+flee_msg_ok		= "Your party escaped the battle."
+flee_msg_lose	= "Your party has been wiped out\nduring the escape."
 --flee_msg_rep	= "Reputation -1."
-flee_msg_chase	="追撃による被害状況"
+flee_msg_chase	= "Chasing Casualty Statistics"
 
-btl_beg_log			="---- 戦闘開始 ----"
-round_log			="---- ターン %s ----"
-s_turn_beg			="ターン開始"
-unseen_act_log		="%sは視界外で行動を取っています..."
-into_fov_log		="%sが視界に入って来ました"
-area				="対象範囲"
-area_gone_log		="%s の範囲は消滅した"
-s_detect_area		="Detect the area"
-s_no_anomaly		="No anomaly found"
-chk					="判定"
-hit					="ヒット"
-miss				="ミス"
-s_miss_chance		="ミス・チャンス"
-succeeded			="成功"
-failed				="失敗"
-s_chk_f				="%s 判定：%s %s。"
-s_u_chk_f			="%s は <c=ty>%s</c> 判定を行う： %s %s。"
-s_u_aid_chk_f		="%s は <c=ty>援護</c> 判定を行う： %s %s。"
-heal_log			="<c=r>%d</c> ポイント回復した。"
-dmg_log				="<c=r>%d</c> %s ポイントのダメージを与えた。"
-dmg_log2			="<c=r>%d</c> ポイントのダメージを受けた。"
-s_dead_				="死亡！"
-unhr_log			="再生は1ターンの間抑止されている。"
-done_log			="Successfully."
-continued_log		="Continued"
-take_effect			="takes effect"
-transed_to			="is transformed to"
-blocked				="is blocked"
-s_performs			="performs"
-cast				="呪文発動"
-use					="使用"
-use_lbl				="使用"
-tgr_ko				="Trigger Knockdown check"
-no_tgr_ko			="No Knockdown check triggered"
-break_grap			="組み付かれた状態からの脱出"
+btl_beg_log			= "---- Battle Started ----"
+round_log			= "---- Turn %s ----"
+s_turn_beg			= "Turn Started"
+unseen_act_log		= "%s is taking action out of view..."
+into_fov_log		= "%s came into view"
+area				= "Area"
+area_gone_log		= "%s area disappeared."
+s_detect_area		= "Detect the area"
+s_no_anomaly		= "No anomaly found"
+chk					= "Check"
+hit					= "Hit"
+miss				= "Miss"
+s_miss_chance		= "Miss chance"
+succeeded			= "Succeeded"
+failed				= "Failed"
+s_chk_f				= "%s Check: %s %s."
+s_u_chk_f			= "%s makes a <c=ty>%s</c> Check: %s %s."
+s_u_aid_chk_f		= "%s makes an <c=ty>Aid</c> Check: %s %s."
+heal_log			= "Recovers <c=r>%d</c> hit points."
+dmg_log				= "Deals <c=r>%d</c>%s points of damage."
+dmg_log2			= "Taken <c=r>%d</c> points of damage."
+s_dead_				= "Dead!"
+unhr_log			= "Regenerating is suppressed for 1 turn."
+done_log			= "Successfully."
+continued_log		= "Continued"
+take_effect			= "takes effect"
+transed_to			= "is transformed to"
+blocked				= "is blocked"
+s_performs			= "performs"
+cast				= "casts"
+use					= "uses"
+use_lbl				= "Use"
+tgr_ko				= "Trigger Knockdown check"
+no_tgr_ko			= "No Knockdown check triggered"
+break_grap			= "Escape from Grapple"
 unknown_res			= "Unknown result"
-invalid_tgt			="無効なターゲット"
-unknown_creature	="未知のクリーチャー"
-s_inv_unk_tgt		="無効/対象が不明"
+invalid_tgt			= "Invalid target"
+unknown_creature	= "Unknown creature"
+s_inv_unk_tgt		= "Invalid/unknown target"
 
-reflect_dmg		="ボーナスダメージ"
-ca				="カウンターアタック"
+reflect_dmg		= "Bounce damage"
+ca				= "Counterattack"
 tgr_ca			= "Trigger counterattack"
 no_tgr_ca		= "No counterattack triggered"
---rend			="レンド"
+--rend			= "Rend"
 
-summon			="召喚"
+summon			= "Summon"
 tip_to_ud		= "Transform to Undead"
 banished		= "banished"
 ignite			= "Ignite"
@@ -735,291 +735,291 @@ s_heal			= "Heal"
 s_cure			= "Cure"
 resurrect		= "Resurrect"
 resurrected		= "resurrected"
-teleport		="テレポート"
-removed			="は解除された"
-s_ent_eth_plane	="エーテル界に入った。"
-s_ret_mat_plane	="物質界に戻る。"
-s_squeezed		="無理矢理入り込むに成功した！"
-s_squeezed_dead	="ここでは利用できない。無理矢理入り込むで死亡！"
-s_detected_aura	="Aura of %s detected!"
+teleport		= "Teleport"
+removed			= "removed"
+s_ent_eth_plane	= "Entered the Ethereal Plane."
+s_ret_mat_plane	= "Returned to the Material Plane."
+s_squeezed		= "Squeezed!"
+s_squeezed_dead	= "No place available. Squeezed to death!"
+s_detected_aura	= "Aura of %s detected!"
 
-cur_wpn			="現在の武器"
+cur_wpn			= "Current weapon"
 do_wait			= "waits"
-do_def_0		="ターン終了"
-do_def			="防御"
-do_def_full		="全力で防御する"
-swp_wpn			="武器の切り替え"
-s_end			="終了"
-s_ends			="終了"
-s_dismiss		="解除"
-s_dismisses		="解除"
+do_def_0		= "turn ends"
+do_def			= "defends"
+do_def_full		= "defends at full strength"
+swp_wpn			= "switchs weapons"
+s_end			= "End"
+s_ends			= "ends"
+s_dismiss		= "Dismiss"
+s_dismisses		= "dismisses"
 
-u_sz			="サイズ"
-pnl_v			="ペナルティ"
---prof			="習熟"
-not_prof		= {n="未習熟",d="–4 penalty on attack rolls when use nonproficient weapons. 未熟練の鎧や盾を身に着けた場合、攻撃ロールと反応にペナルティがかかります。"}-- 未習熟武器の攻撃ロールには習熟ボーナスはありません。
-magic_bns		="マジックボーナス"
-masterwork		="高品質"
-s_mw			="高品質"
-base_v			="基本値"
-th				="両手"
-tw				="二刀流装備中"
-off_light		="オフ・ハンドに軽武器"
+u_sz			= "Size"
+pnl_v			= "Penalty"
+--prof			= "Proficiency"
+not_prof		= {n="Nonproficient",d="–4 penalty on attack rolls when use nonproficient weapons. Wearing nonproficient armors or shields takes penalty on attack rolls and Reflex."}
+magic_bns		= "Magic Bonus"
+masterwork		= "Masterwork"
+s_mw			= "Masterwork"
+base_v			= "Basic Value"
+th				= "Two-handed"
+tw				= "Dual-wielding"
+off_light		= "Light in off-hand"
 
-hfl_luck		="ハーフリングの幸運"
-not_prof_amr_pnl="未習熟。鎧/荷重 ペナルティ"
-nac				="外皮"
-burden			="エンカンブランス"
-racial_trait	="種族特徴"
-slow_n_steady	="ゆっくり着実"
-half_spd		="移動速度半減"
-slow			= "遅い"
+hfl_luck		= "Halfling Luck"
+not_prof_amr_pnl= "Nonproficient Armor/Load Penalty"
+nac				= "Natural Armor"
+burden			= "Encumbrance"
+racial_trait	= "Racial Trait"
+slow_n_steady	= "Slow and Steady"
+half_spd		= "Half Speed"
+slow			= "Slow"
 
-immed			="完全耐性"
-sel_wpn_grp		="武器と矢弾"
-sel_rng_wpn		="遠隔武器"
-sel_amm			="矢弾"
+immed			= "Immune"
+sel_wpn_grp		= "Weapons and Ammunition"
+sel_rng_wpn		= "Ranged Weapons"
+sel_amm			= "Ammunition"
 
-s_set_act_tip		="<ico=kb/m_l>左クリックで既存のアクションをドラッグ＆ドロップする\n<ico=kb/m_r>右クリックで新しいアクションを登録する"
-s_act_bar_pg_tip	="<h3 c=lbl>現在のアクションバーのページ</h3>サイドボタンまたはホットキーでページ間を移動する。\n\nアクションバー：\n"..s_set_act_tip
-set_act				="アクションの登録"
-s_del_act			="選択したアクションの削除"
-s_del_act_r			="選択したアクションと右側にあるアクションを削除"
-s_del_act_all		="すべてのアクションを削除"
-s_del_act_r_cfm		="選択したアクションと右側にあるアクションを削除しますか?\n（他のページのアクションには影響しません）"
-s_del_act_all_cfm	="全ページの全アクションを削除しますか？"
-s_add_act_grps		="アクション・グループを追加"
-s_add_all_act_grps	="すべてのアクション・グループを追加"
-s_unpack_act_grp	="選択したアクショングループをアンパックする"
+s_set_act_tip		= "<ico=kb/m_l>Left-click to drag & drop existing actions\n<ico=kb/m_r>Right-click to set new actions"
+s_act_bar_pg_tip	= "<h3 c=lbl>Current Action Bar Page</h3>Navigate between pages by side buttons or hotkeys.\n\nAction Bar:\n"..s_set_act_tip
+set_act				= "Set Action"
+s_del_act			= "Delete Selected Action"
+s_del_act_r			= "Delete Selected and Right Actions"
+s_del_act_all		= "Delete All Actions"
+s_del_act_r_cfm		= "Delete the selected action and actions on the right?\n(Will not affect actions of other pages)"
+s_del_act_all_cfm	= "Delete all the actions of all pages?"
+s_add_act_grps		= "Add Action Groups"
+s_add_all_act_grps	= "Add All Action Groups"
+s_unpack_act_grp	= "Unpack Selected Action Group"
 
-loot_s			="戦利品"
+loot_s			= "LOOT"
 per_u			= "per PC"
-defeated_foes	="倒した敵"
-no_dead_bns		="死者ゼロのボーナス"
+defeated_foes	= "DEFEATED ENEMIES"
+no_dead_bns		= "Zero Fall Bonus"
 
 -- z_pre_pc z_cls
-pc_name_01		="ホルグ"
-pc_name_02		="トルク"
-pc_name_03		="リア"
-pc_name_04		="アリウィック"
-pc_name_05		="クリス"
-pc_name_06		="ショーン"
-pc_name_07		="オースト"
-pc_name_08		="ハサウェイ"
-pc_name_09		="アラミリ"
-pc_name_10		="キャサリン"
-pc_name_11		="クルスク"
-pc_name_12		="コラ"
-pc_name_13		="イライザ"
-pc_name_14		="リ・ロン"
-pc_name_15		="イエレニア"
-pc_name_16		="Hlin"
-pc_name_17		="Loderr"
-pc_name_18		="Variel"
-pc_name_19		="Yalandlara"
-pc_name_20		="Kieyanna"
-pc_name_21		="Trig"
+pc_name_01		= "Holg"
+pc_name_02		= "Tork"
+pc_name_03		= "Lia"
+pc_name_04		= "Ellywick"
+pc_name_05		= "Chris"
+pc_name_06		= "Sean"
+pc_name_07		= "Aust"
+pc_name_08		= "Hathaway"
+pc_name_09		= "Aramil"
+pc_name_10		= "Catherine"
+pc_name_11		= "Krusk"
+pc_name_12		= "Cora"
+pc_name_13		= "Eliza"
+pc_name_14		= "Li Long"
+pc_name_15		= "Ielenia"
+pc_name_16		= "Hlin"
+pc_name_17		= "Loderr"
+pc_name_18		= "Variel"
+pc_name_19		= "Yalandlara"
+pc_name_20		= "Kieyanna"
+pc_name_21		= "Trig"
 
-def_pty_name	="アウトランダー"
+def_pty_name	= "Outlanders"
 
-enter_lmap_lv	="%s %d 階に入った"
-s_lyr_d			="%d 階"
+enter_lmap_lv	= "Entered %s floor %d."
+s_lyr_d			= "Floor %d"
 
-rd20			= {n="D20 ダイスロール シミュレーション アルゴリズム"	,d=
-[[D20（二十面ダイス）ダイスロールは、攻撃のヒット率や罠の解除などの成功率を含むほとんどの判定で広く使用される。
-
-
-D20ダイスロールには4つの代替実装がある：
-
-<c=ty b>1. シャッフル リスト：</c>
-- 1〜20の数字のリストを生成する。
-- リストをシャッフルする。
-- リストの先頭の番号を結果として選択する。
-
-<c=ty b>2. シャッフル ランダム：</c>
-- 1〜20の数字のリストを生成する。
-- リストをシャッフルする。
-- リストからランダムに番号を選択する。
-
-<c=ty b>3. リスト ランダム：</c>
-- 1〜20の数字のリストを生成する。
-- リストからランダムに番号を選択する。
-
-<c=ty b>4. 標準的な乱数生成：</c>
-- 標準乱数（0〜32767）を生成する。
-- 乗除演算を行う： number % 20 + 1 = 1~20
-- 最後の数字を結果とする。
+rd20			= {n="D20 dice-rolling simulation algorithm"	,d=
+[[D20 (twenty-sided die) dice-rolling is widely used in most checks involving hit or success rates, such as attacks or disarm traps.
 
 
-上記のすべてのアルゴリズムは、目的を達することができる。 しかし、小さなサンプル領域では、アルゴリズム１とアルゴリズム２は、ほとんどのコンピュータシステムでより均等に分散される。]]}
+There are 4 alternative implementations of D20 dice-rolling:
+
+<c=ty b>1. Shuffle List:</c>
+- Generate a list of numbers 1~20.
+- Shuffle the list.
+- Pick the first number of the list as the result.
+
+<c=ty b>2. Shuffle Random:</c>
+- Generate a list of numbers 1~20.
+- Shuffle the list.
+- Pick a number randomly from the list as the result.
+
+<c=ty b>3. List Random:</c>
+- Generate a list of numbers 1~20.
+- Pick a number randomly from the list as the result.
+
+<c=ty b>4. Standard RNG (Random Number Generation):</c>
+- Generate a standard random number (0~32767).
+- Perform a modulus on the number: number % 20 + 1 = 1~20
+- The final number is the result.
+
+
+All the above algorithms can do the job well. However, for a small-sample space, algorithm 1 and 2 are more equally distributed on most computer systems.]]}
 
 rd20s={-- z_rd20
-{n="シャッフル リスト"	},
-{n="シャッフル ランダム"	},
-{n="リスト ランダム"	},
-{n="標準的な乱数生成"	},
+{n="Shuffle List"	},
+{n="Shuffle Random"	},
+{n="List Random"	},
+{n="Standard RNG"	},
 }
 
 passs={-- z_pass_type
-{n="道路"},
-{n="平地"},
-{n="困難"},
-{n="非常に困難"},
-{n="極めて困難"},
-{n="障害物"},
+{n="Road"},
+{n="Plain"},
+{n="Difficult"},
+{n="Very Difficult"},
+{n="Extremely Difficult"},
+{n="Obstacle"},
 }
 
 -- z_tile
 tiles={
-{n="平地"},
-{n="壁"},
-{n="困難"},
-{n="障害物"},
-{n="木"},
+{n="Plain"},
+{n="Wall"},
+{n="Difficult"},
+{n="Obstacle"},
+{n="Tree"},
 }
 
 -- z_map_env
 map_envs={
-{n="平地"},
-{n="草原"},
-{n="森林"},
-{n="洞窟"},
-{n="遺跡"},
-{n="洞窟"},
-{n="遺跡"},
+{n="Plain"},
+{n="Grassland"},
+{n="Forest"},
+{n="Cave"},
+{n="Ruin"},
+{n="Cave"},
+{n="Ruin"},
 }
 
 -- z_imxs
 imxs={
-{n="魔法"				,d="すべての呪文に対する完全耐性"},
-{n="精神作用"				,d="精神に作用する効果に対する完全耐性(スリープ、フィアー、チャームなど)"},
-{n="Phantasm"			,d="Immune to phantasms or similar effects"},
-{n="即死"				,d="即死効果に対する完全耐性"},
-{n="クリティカル"			,d="クリティカル・ヒットや《急所攻撃》に完全耐性"},
-{n="挟撃"				,d="挟撃への完全耐性"},
-{n="吸血"				,d="吸血に対する完全耐性"},
-{n="能力値ダメージ"		,d="能力値ダメージに対する完全耐性"},
-{n="身体能力値ダメージ"	,d="身体能力値ダメージに対する完全耐性(【筋力】【敏捷力】【耐久力】)"},
-{n="病気"				,d="超自然的な病気や魔法の病気を除いて、すべての病気に対する完全耐性。"},
-{n="蜘蛛の巣"				,d="蜘蛛の糸 への 完全耐性"},
-{n="移動困難な地形"		,d="移動困難な地形を無視する。"},
+{n="Magic"					,d="Immune to all spells"},
+{n="Mind-Affecting"			,d="Immune to mind-affecting effects (sleep, fear, and charm, etc.)"},
+{n="Phantasm"				,d="Immune to phantasms or similar effects"},
+{n="Instant Kill"			,d="Immune to instant kills"},
+{n="Critical"				,d="Immune to critical hits or sneak attacks"},
+{n="Flanking"				,d="Immune to flanking"},
+{n="Blood Drain"			,d="Immune to blood drain"},
+{n="Ability Damage"			,d="Immune to ability damage"},
+{n="Physical Ability Damage",d="Immune to physical ability damage (Str, Dex, Con)"},
+{n="Disease"				,d="Immune to all diseases except for supernatural and magical diseases."},
+{n="Web"					,d="Immune to spiderwebs"},
+{n="Difficult Terrain"		,d="Ignore difficult terrain"},
 }
 
 -- z_pwr_cat
 pwr_cats={
-{n="一般特技"		},
-{n="クラス特技"	},
-{n="呪文特技"		},
-{n="武器訓練"		},
-{n="盾と鎧訓練"	},
-{n="近接戦闘訓練"	},
-{n="二刀流戦闘"	},
-{n="両手戦闘"		},
-{n="遠隔攻撃訓練"	},
-{n="戦技訓練"		},
-{n="技能開眼"		},
+{n="General Feats"				},
+{n="Class Feats"				},
+{n="Spell Feats"				},
+{n="Weapon Training"			},
+{n="Shield and Armor Training"	},
+{n="Melee Combat Training"		},
+{n="Two-Weapon Fighting"		},
+{n="Two-Handed Fighting"		},
+{n="Ranged Combat Training"		},
+{n="Combat Maneuvers Training"	},
+{n="Skill Specialization"		},
 }
 
 --[[ z_defs
 defs={
-{n="アーマー・クラス"					,a="AC"		},
-{n="頑健"										,d="頑健は、［毒］、病気、石化などの活力と健康に対する肉体的攻撃や効果に立ち向かう能力の指標となります。\n\nこれは【耐久力】の能力に関係します。"},
-{n="反応"										,d="反応は、ファイアーボール、蜘蛛の巣、ブレス攻撃などのは範囲攻撃や効果をかわす能力を示す。\n\nこれは【敏捷力】能力に関係します。"},
-{n="意志"										,d="意志は精神的影響への抵抗や、［催眠］や［魅了］などの多くの魔法の影響が反映されます。\n\nこれは【判断力】能力に関係します。"},
-{n="戦技防御"										},
-{n="レベル判定"									},
-{n="〈真意看破〉判定"								},
-{n="アーマー・クラス（接触）"			,a="TAC"	},
-{n="アーマー・クラス（立ちすくみ状態）"	,a="FAC"	},
+{n="Armor Class"				,a="AC"		},
+{n="Fortitude"					,a="Fort"	,d="Fortitude measures your ability to stand up to physical punishment or effects against your vitality and health, such as poison, disease, and petrification.\n\nIt's related to your Constitution ability."},
+{n="Reflex"						,a="Ref"	,d="Reflex tests your ability to dodge area attacks or effects, such as fireball, web, and breath attacks.\n\nIt's related to your Dexterity ability."},
+{n="Will"						,a="Will"	,d="Will reflects your resistance to mental influence as well as many magical effects, such as Sleep and Charm.\n\nIt's related to your Wisdom ability."},
+{n="Combat Maneuver Defense"	,a="CMD"	},
+{n="Level Check"				},
+{n="Sense Motive Check"			},
+{n="Armor Class (Touch)"		,a="TAC"	},
+{n="Armor Class (Flat-Footed)"	,a="FAC"	},
 }]]
 
 -- z_atks
 atks={
-{n="近接攻撃"			},
-{n="遠隔攻撃"			},
-{n="近接接触攻撃"		},
-{n="遠隔接触攻撃"		},
-{n="魔法攻撃"			},
-{n="戦技攻撃"			},
-{n="退散判定"			},
-{n="〈威圧〉判定"		},
-{n="〈はったり〉判定"	},
-{n="〈治療〉判定"		},
-{n="特殊攻撃"			},
+{n="Melee Attack"			},
+{n="Ranged Attack"			},
+{n="Melee Touch Attack"		},
+{n="Ranged Touch Attack"	},
+{n="Magic Attack"			},
+{n="Combat Maneuver Attack"	,a="CMA"},
+{n="Turn Check"				},
+{n="Intimidate Check"		},
+{n="Bluff Check"			},
+{n="Heal Check"				},
+{n="Special Attack"			},
 }
 
 -- z_urk
 uranks={
 
-{n="スタンダード"	,d=[[標準モンスターは標準的な強さを持つ。]]},
+{n="Standard"	,d=[[Standard monsters have standard strength.]]},
 
 
-{n="エリート"		,d=[[エリートモンスターは、同じレベルと役割の標準的なモンスターよりも頑強である。
+{n="Elite"		,d=[[Elite monsters are tougher than standard monsters of the same role and level.
 
-エリートモンスターは同一レベルの二体の標準モンスターとしてカウントされ、XPが2倍で、2倍の脅威がある。
+An elite monster counts as two standard monsters of its level, worth twice as many XP and are twice as dangerous.
 
-エリートモンスターは"ミニボス"を生み出す。例えば、エリートオーガがオーガの群れを従えたり、二体のエリートノールがノールの一群を導いたりする。]]},
+Elite monsters make great "mini-bosses", e.g. a group of ogres led by an elite ogre, or two elite gnoll huntermasters lead a pack of gnolls.]]},
+
+ 
+{n="Solo"		,d=[[Solo monsters are single opponents against a group of PCs of the same level.
+
+They function, in effect, as a group of monsters. They have more hit points and deal more damage.
+
+A solo monster is worth the same amount of XP as five monsters of its level. It provides the same level of challenge as five monsters, but it has the ability to stand and fight on its own.]]},
 
 
-{n="ソロ"		,d=[[ソロモンスターは、同一レベルのPCグループとの1対1の対戦相手です。
+{n="Minion"		,d=[[Minions are serve as shock troops and cannon fodder for other monsters (standard, elite, or solo).
 
-それらは実際にはモンスター群として機能し、より多くのヒットポイントを持ち、より多くのダメージを与える。
+A fight against thirty minions is a grand cinematic battle. The players get to enjoy carving through the mob like a knife through butter, feeling confident and powerful.
 
-ソロモンスターは、そのレベルの５体のモンスターと同じXPに値し、同じレベルの５体のモンスターと同様に行動するが、単独で戦う能力を持っている。]]},
-
-
-{n="ミニオン"		,d=[[ミニオンは、他のモンスター（スタンダード、エリート、またはソロ）のための突撃隊や使い捨ての兵士として役立ちます。
-
-30体のミニオンとの戦いは映画ような壮大な戦いです。 プレイヤーは、バターナイフでバターを切るように敵を切り刻むことを楽むことができる。
-
-4体のミニオンは、同一レベルの標準的なモンスターとほぼ同じとみなされるが、ミニオンは、ダメージを受けると破壊される。]]},
+Four minions are considered to be about the same as a standard monster of their level, but a minion is destroyed when it takes any amount of damage.]]},
 
 }
 
 load_types={
-{n="荷重(低)"},
-{n="荷重(中)"},
-{n="荷重(高)"},
-{n="荷重超過"	},
+{n="Light load"	},
+{n="Medium load"},
+{n="Heavy load"	},
+{n="Overload"	},
 }
 
 spl_cats={-- z_school
 {n="Abjuration"		},
-{n="召喚術"			},
+{n="Conjuration"	},
 {n="Divination"		},
-{n="強化"			},
-{n="力術"			},
+{n="Enchantment"	},
+{n="Evocation"		},
 {n="Illusion"		},
-{n="死霊術"			},
+{n="Necromancy"		},
 {n="Transmutation"	},
 {n="Universal"		},
 }
 
 act_costs={
-{n="フリー・アクション"	},
-{n="移動アクション"		},
-{n="標準アクション"		},
-{n="全ラウンド・アクション"	},
+{n="Free Action"		},
+{n="Move Action"		},
+{n="Standard Action"	},
+{n="Full-Round Action"	},
 }
 
 -- z_dmg_types
 dmg_types={
-{n="斬撃"		,d="斬撃"		},
-{n="刺突"		,d="刺突"		},
-{n="殴打"	,d="殴打"	},
+{n="Slashing"		,d="Slashing"		},
+{n="Piercing"		,d="Piercing"		},
+{n="Bludgeoning"	,d="Bludgeoning"	},
 
-{n="［火］"			,d="［火］"			},-- z_energy_type
-{n="［冷気］"			,d="［冷気］"			},
-{n="［電気］"	,d="［電気］"	},
-{n="［酸］"			,d="［酸］"			},
-{n="[音波]"			,d="[音波]"			},
+{n="Fire"			,d="Fire"			},-- z_energy_type
+{n="Cold"			,d="Cold"			},
+{n="Electricity"	,d="Electricity"	},
+{n="Acid"			,d="Acid"			},
+{n="Sonic"			,d="Sonic"			},
 
-{n="力場"			,d="力場"			},
-{n="［毒］"			,d="［毒］"			},
-{n="修理"			,d="修理"			},
-{n="正のエネルギー",d="正のエネルギー"},
-{n="負のエネルギー",d="負のエネルギー"},
-{n="ダメージ種別なし"		,d="ダメージ種別なし"		},
+{n="Force"			,d="Force"			},
+{n="Poison"			,d="Poison"			},
+{n="Repair"			,d="Repair"			},
+{n="Positive Energy",d="Positive Energy"},
+{n="Negative Energy",d="Negative Energy"},
+{n="Untyped"		,d="Untyped"		},
 
 {n="dt_15"	},
 {n="dt_16"	},
@@ -1028,17 +1028,17 @@ dmg_types={
 {n="dt_19"	},
 {n="dt_20"	},
 
-{n="武器"	},
+{n="Weapon"	},
 
-{n="錬金術銀"	},
-{n="冷たい鉄"	},
-{n="アダマンティン"	},
-{n="魔法"	},
-{n="エピック"	},
-{n="秩序"	},
-{n="混沌"	},
-{n="善"	},
-{n="悪"	},
+{n="Alchemical Silver"	},
+{n="Cold Iron"	},
+{n="Adamantine"	},
+{n="Magic"	},
+{n="Epic"	},
+{n="Lawful"	},
+{n="Chaos"	},
+{n="Good"	},
+{n="Evil"	},
 }
 
 --s_diff	= "Difficulty"
@@ -1047,153 +1047,156 @@ dmg_types={
 frc_comp	= "Composition"
 
 enc_diffs={
-{n="イージー"	},
-{n="標準"	},
-{n="ハード"	},
+{n="Easy"	},
+{n="Normal"	},
+{n="Hard"	},
 }
 
 --[[ z_thrt
 thrts={
-{n="低い"},
-{n="モデレート"},
-{n="高い"},
+{n="Low"},
+{n="Moderate"},
+{n="High"},
 }]]
 
 enc_tpls={-- z_enc_tpl
-{n="戦場の制御"		},
-{n="司令官と軍"		},
-{n="ドラゴンの巣"		},
-{n="ダブルライン"		},
-{n="オオカミの群れ"	},
-{n="オオカミの群れ"	},
-{n="エリート戦隊"		},
-{n="エリート戦隊"		},
+{n="Battlefield control"	},
+{n="Commander and troops"	},
+{n="Dragon's den"			},
+{n="Double lines"			},
+{n="Wolf pack"				},
+{n="Wolf pack"				},
+{n="Elite squad"			},
+{n="Elite squad"			},
 }
 
 ai_types={-- z_ai_type
-{n="直観的"		,d="動物のような知能の低いクリーチャーは無戦略で直感的に近くの敵を攻撃します。"},
-{n="戦術的"		,d="通常レベルの知性を持つ人型生物のクリーチャーは、戦闘において より有利なポジションを選ぶことができ、防御力の低い相手を攻撃する、そして相互に協力する事ができます。"},
-{n="高度な戦術"	,d="これらのクリーチャーは、さらに狡猾です。 戦術的には、ダメージ量の最大化が重要な指標であり、ターゲットの残りHPを考慮しながら戦います。"},
+{n="Instinctual"		,d="Creatures with low intelligence like animals attack nearby enemies instinctively without any strategy."},
+{n="Tactical"			,d="Humanoid creatures at a normal level of intelligence can choose more favorable positions in combat, attack opponents with lower defense first, and know how to cooperate with each other."},
+{n="Advanced Tactical"	,d="These creatures are more cunning. On the tactical basis, they also consider the target's remaining HP since killing is a key indicator of damage output maximization."},
 }
 
-num_desc_one	="一体"
-num_desc_few	="少数"
-num_desc_some	="多数"
-num_desc_pack	="集団"
+num_desc_one	= "One"
+num_desc_few	= "Few"
+num_desc_some	= "Some"
+num_desc_pack	= "A pack of"
 
 btl_diffs={-- z_btl_diff
-{n="カスタム"		,d="カスタマイズされた戦闘の難易度"},
-{n="リラックス"	,d="プレイヤーキャラクターの受けるダメージは 20% で、連続的なミスもかなり少なくなります。\n\n敵は攻撃ロールと防御に対して -4 のペナルティを受け、クリティカルヒットによるダメージの増加はありません。"},
-{n="イージー"		,d="プレイヤーキャラクターの受けるダメージは 40% で、連続的なミスも少なくなります。\n\n敵は攻撃ロールと防御に対して -2 のペナルティを受け、クリティカルヒットによるダメージの増加はありません。"},
-{n="モデレート"	,d="プレイヤーキャラクターの受けるダメージは 80% で、連続的なミスも少なくなります。"},
-{n="コア"		,d="すべての値とメカニズムに調整はありません。"},
-{n="ハード"		,d="プレイヤーキャラクターの受けるダメージは 120%。\n\n敵は攻撃ロールと防御に対して +2 のボーナスを受けます。"},
-{n="ナイトメア"	,d="プレイヤーキャラクターの受けるダメージは 200％。\n\n敵は自分の攻撃ロールと防御に +4 のボーナスを得て、常に最高の戦術を適用します。"},
+{n="Custom"		,d="Customized combat difficulty."},
+{n="Relaxed"	,d="Player characters only suffer 20% damage, and make significantly less continuous misses.\n\nMonsters have a -4 penalty on their attack rolls and defences, and doesn't multiply damage on critical hits."},
+{n="Easy"		,d="Player characters only suffer 40% damage, and make less continuous misses.\n\nMonsters have a -2 penalty on their attack rolls and defences, and doesn't multiply damage on critical hits."},
+{n="Moderate"	,d="Player characters only suffer 80% damage, and make less continuous misses."},
+{n="Core"		,d="There are no adjustments to all values and mechanisms."},
+{n="Hard"		,d="Player characters suffer 120% damage.\n\nMonsters have a +2 bonus on their attack rolls and defences."},
+{n="Nightmare"	,d="Player characters suffer 200% damage.\n\nMonsters have a +4 bonus on their attack rolls and defences, and always use the best tactics."},
 }
 
-btl_diff			={n="戦闘難易度", d="より良い戦闘体験を得るためにプレイヤーキャラクターと敵の設定値と技巧を調整してください。"}-- z_btl_diff_cfg
---plyr_settings		="プレイヤーの設定"
---enmy_settings		="敵の設定"
-plyr_take_dmg		="プレイヤーの受けるダメージ"
-plyr_miss_bns		= {n="プレイヤーラッキーダイス", d="自分が攻撃ロールで失敗した時、この値が次の攻撃ロールに加算されます。 もう一度失敗した場合は、値が2倍になり、ヒットするまで続きます。"}
-plyr_atk_mod		="プレイヤーの攻撃ロールの修正値"
-plyr_def_mod		="プレイヤーの防御修正値"
-enmy_atk_mod		="敵の攻撃ロールの修正値"
-enmy_def_mod		="敵の防御修正値"
-plyr_no_ch			="プレイヤーのクリティカルヒット時、ダメージを増加しない"
-enmy_no_ch			="敵のクリティカルヒット時、ダメージを増加しない"
-s_elit_imm_seckill	="エリートモンスターは即死の効果を受けない"
-s_solo_imm_seckill	="ソロのモンスターは即死の効果を受けない"
-enmy_ai				="敵ＡＩ"
+btl_diff			={n="Combat Difficulty", d="Adjust various values and mechanics of player characters and monsters for better combat experience."}-- z_btl_diff_cfg
+--plyr_settings		="Player Settings"
+--enmy_settings		="Monster Settings"
+plyr_take_dmg		="Player suffer damage"
+plyr_miss_bns		={n="Player lucky dice", d="When you make an attack roll and miss, this value will be added on your next attack roll. If you miss again, the value doubles, and so on, until you score a hit."}
+plyr_atk_mod		="Player attack rolls modifier"
+plyr_def_mod		="Player defences modifier"
+enmy_atk_mod		="Monster attack rolls modifier"
+enmy_def_mod		="Monster defences modifier"
+plyr_no_ch			="Player doesn't multiply damage on critical hits"
+enmy_no_ch			="Monster doesn't multiply damage on critical hits"
+s_elit_imm_seckill	="Elite monsters are immune to instant kill effects"
+s_solo_imm_seckill	="Solo monsters are immune to instant kill effects"
+s_mon_adv_wpns		="Monsters have enchanted weapons"
+s_mon_adv_amrs		="Monsters have enchanted armor"
+s_mon_adv_wonds		="Monsters have more wondrous items"
+enmy_ai				="Monster AI"
 
-s_fmt				="フォーメーション"
-s_fmt_d				="戦闘フォーメーションをプリセットまたはカスタムから選んでください。"
-fmt_pre				="プリセット・フォーメーション"
-fmt_cust			="カスタム・フォーメーション"
+s_fmt				="Formations"
+s_fmt_d				="Choose a preset or customize battle formation."
+fmt_pre				="Preset Formation"
+fmt_cust			="Custom Formation"
 
 -- arena
-s_arn_rest			="休息"	s_arn_rest_d	="完全休息を取って、様々な能力の日常的な使用量を回復させよう。\n\nあなたのパーティーは、BOSSチャレンジの前後に無料で自動的に休息します。"
-s_arn_rest_ok		="パーティーは十分な休息を取った。"
-s_boss_on			="BOSSチャレンジがオープン！"
+s_arn_rest			="Rest"	s_arn_rest_d	="Take a complete rest to restore daily uses of various abilities.\n\nYour party will automatically rest for free before and after the BOSS challenge."
+s_arn_rest_ok		="Your party is well-rested."
+s_boss_on			="The BOSS challenge is opened!"
 
-s_act_grp_now		="利用可能なアクションとオプション"
-s_act_grp_now_d		="キャラクターの現在使用可能なアクションとオプションを一覧表示します。\n\nリストは戦場で右クリックしても表示されます。"
-s_throw_back		="投げ返す"
+s_act_grp_now		="Available Actions and Options"
+s_act_grp_now_d		="List the currently available actions and options for the character. \n\nThe list can be accessed by right-clicking on the battlefield, too."
+s_throw_back		="Throw back"
 
-s_prep_spls			="呪文を準備する"
-s_prep_spls_b		="ほとんどのスペルキャスターは、呪文書からであれ、熱心な祈りと瞑想であれ、事前に呪文を準備を行う。準備したい呪文を選択し、休憩後に唱える。"
-s_prep_spls_d		=s_prep_spls_b.."\n\nレベルによって、準備してキャストできる呪文の数が制限される。 高い呪文発動能力値により、いくつかの追加の呪文を準備できる場合がある。\n\n同じ呪文を複数回準備することができるが、それぞれの準備は1日の上限に対して1つの呪文としてカウントされる。\n\n呪文を準備するには、少なくとも 10 + 呪文のレベルの呪文発動能力値が必要。"
-s_spl_slots			="呪文スロット"
-s_clr_sel_slots		="選択した呪文スロットをクリア"
-s_clr_all_slots		="すべての呪文スロットをクリア"
-s_learned_spls		="学んだ呪文"
-s_no_slots_pc		="キャラクターは呪文の準備を必要としない。"
-s_auto_slots		="呪文スロットの自動入力と補完"
+s_prep_spls			="Prepare Spells"
+s_prep_spls_b		="Most spellcasters prepare their spells in advance, whether from a spellbook or through devout prayers and meditation. Select the spells you want to prepare, and cast them after a rest."
+s_prep_spls_d		=s_prep_spls_b.."\n\nYour level limits the number of spells you can prepare and cast. Your high spellcasting ability score might allow you to prepare a few extra spells.\n\nYou can prepare the same spell more than once, but each preparation counts as one spell toward your daily limit.\n\nTo prepare a spell you must have a spellcasting ability score of at least 10 + the spell's level."
+s_spl_slots			="Spell Slots"
+s_clr_sel_slots		="Clear selected spell slots"
+s_clr_all_slots		="Clear all spell slots"
+s_learned_spls		="Learned Spells"
+s_no_slots_pc		="No characters need spell preparation."
+s_auto_slots		="Auto-fill & complement spell slots"
 s_mods_left			="Modifications left"
 
 
-s_fami				="使い魔"
-s_fami_d			=[[使い魔は、小動物に似た魔獣で、異常なほど丈夫で賢い。
+s_fami				="Familiar"
+s_fami_d			=[[A familiar is a magical beast that resembles a small animal and is unusually tough and intelligent.
 
-使い魔は随伴者や従者としての役割を果たす。使い魔によって、主人に与えられる特殊能力が異なる。
+A familiar serves as a companion and servant. Different familiars grant different special abilities to its master:
 
-- トード：主人は、最初に＋３のヒットポイントを獲得し、３を超えるとレベルごとに＋１の追加ヒットポイントを獲得する。
-- ラット：主人は、頑健セーヴに＋２のボーナスを得る。
-- ウィーゼル：主人は、反応セーブで＋２のボーナスを得る。
-- スネーク：主人は、〈はったり〉判定で＋３のボーナスを得る。
-- バット：主人は、〈聞き耳〉判定で＋３のボーナスを得る。
-- アウル：主人は、〈捜索〉判定で＋３のボーナスを得る。
-- キツツキ：主人は、木こり判定で＋３のボーナスを得る。
-- アルマジロ：主人は、鉱夫判定で＋３のボーナスを得る。
+- Toad: Master gains +3 hit points initially and +1 additional hit point for each level beyond 3
+- Rat: Master gains a +2 bonus on Fortitude saves
+- Weasel: Master gains a +2 bonus on Reflex saves
+- Snake: Master gains a +3 bonus on Bluff checks
+- Bat: Master gains a +3 bonus on Listen checks
+- Owl: Master gains a +3 bonus on Search checks
+- Woodpecker: Master gains a +3 bonus on Woodcutter checks
+- Armadillo: Master gains a +3 bonus on Miner checks
 
-使い魔を付与するクラスが２つ以上あるキャラクターは、使い魔を１つしか持たない場合がある。]]
+A character with more than one class that grants a familiar may have only one familiar.]]
 
 famis={-- z_familiar
-{n="トード"		,d="主人は、最初に＋３のヒットポイントを獲得し、３を超えるとレベルごとに＋１の追加ヒットポイントを獲得する。"},
-{n="ラット"		,d="主人は、頑健セーヴに＋２のボーナスを得る。"},
-{n="ウィーゼル"		,d="主人は、反応セーブで＋２のボーナスを得る。"},
-{n="スネーク"		,d="主人は、〈はったり〉判定で＋３のボーナスを得る。"},
-{n="バット"		,d="主人は、〈聞き耳〉判定で＋３のボーナスを得る。"},
-{n="アウル"		,d="主人は、〈捜索〉判定で＋３のボーナスを得る。"},
-{n="キツツキ"	,d="主人は、木こり判定で＋３のボーナスを得る。"},
-{n="アルマジロ"	,d="主人は、鉱夫判定で＋３のボーナスを得る。"},
+{n="Toad"		,d="Master gains +3 hit points initially and +1 additional hit point for each level beyond 3"},
+{n="Rat"		,d="Master gains a +2 bonus on Fortitude saves"},
+{n="Weasel"		,d="Master gains a +2 bonus on Reflex saves"},
+{n="Snake"		,d="Master gains a +3 bonus on Bluff checks"},
+{n="Bat"		,d="Master gains a +3 bonus on Listen checks"},
+{n="Owl"		,d="Master gains a +3 bonus on Search checks"},
+{n="Woodpecker"	,d="Master gains a +3 bonus on Woodcutter checks"},
+{n="Armadillo"	,d="Master gains a +3 bonus on Miner checks"},
 }
 
 
-s_specific_to		="固有："
+s_specific_to		="Specific to"
 
-s_uf_live			="生けるクリーチャー"-- z_u_flags
-s_uf_ud				="アンデッド クリーチャー"
-s_uf_cons			="人造クリーチャー"
-s_uf_elm			="エレメンタルクリーチャー"
-s_uf_int			="知性クリーチャー"
-s_uf_non_int		="非知性クリーチャー"
-s_uf_dry_harm		="脱水症状を嫌うクリーチャー"-- Water loss
-s_uf_sun_harm		="日光を嫌うクリーチャー"
-s_uf_sun_kill		="特に日光を嫌うアンデッド クリーチャー"
-s_uf_bns_feat		="１レベルのクリーチャーに特技を１追加"
-s_uf_ally			="協力者"
-s_uf_foe			="敵対者"
-s_uf_non_live		="生き物でないクリーチャー"
-s_uf_non_ud			="アンデッドでないクリーチャー"
-s_uf_non_cons		="人造でないクリーチャー"
-s_uf_non_elm		="エレメンタルでないクリーチャー"
+s_uf_live			="Live creatures"-- z_u_flags
+s_uf_ud				="Undead creatures"
+s_uf_cons			="Construct creatures"
+s_uf_elm			="Elemental creatures"
+s_uf_int			="Intelligent creatures"
+s_uf_non_int		="Non-intelligent creatures"
+s_uf_dry_harm		="Dehydration-averse creatures"-- Water loss
+s_uf_sun_harm		="Sunlight-averse creatures"
+s_uf_sun_kill		="Specifically sunlight-averse undead creatures"
+s_uf_bns_feat		="One extra feat at 1st level creatures"
+s_uf_ally			="Allies"
+s_uf_foe			="Foes"
+s_uf_non_live		="Non-live creatures"
+s_uf_non_ud			="Non-undead creatures"
+s_uf_non_cons		="Non-construct creatures"
+s_uf_non_elm		="Non-elemental creatures"
 
 s_rmv				="Remove"
 s_lost_spl_f		="Lost spells: %s."
 s_per_cl			="/CL"
 s_per_cl_f			="/%d CL"
-s_epic_dmg_bns		= "Epic damage bonus"
-s_too_high_lv		="レベルが高すぎる"
-s_wpn_dropped		="武器を落とした！"
-s_wpn_picked		="武器を拾った。"
+s_epic_dmg_bns		="Epic damage bonus"
+s_too_high_lv		="Too high level"
+s_wpn_dropped		="Dropped weapons!"
+s_wpn_picked		="Picked weapons up."
 s_destroyed			="Destroyed"
 s_banished_h		="Banished (home plane)"
 s_banished_o		="Banished (other plane)"
 s_conductive		="Conductive"
 
-s_spl_kw_mind		="精神作用"
-s_spl_kw_fear		="恐怖"
+s_spl_kw_mind		="Mind-Affecting"
+s_spl_kw_fear		="Fear"
 
 s_spe_abi			="Special Ability"
 s_spe_abi_d			="A special ability is either extraordinary, spell-like, or supernatural in nature.\n\nUsing a special ability is usually a standard action, but whether it is a standard action, a full-round action, or not an action at all is defined by the ability."
@@ -1207,7 +1210,7 @@ s_pt2_ex_d			="Extraordinary abilities are nonmagical. They are, however, not so
 
 --require "u_alns_h"
 
-s_u_aln		= "アライメント"-- Alignment
+s_u_aln		= "Alignment"
 s_u_aln_b	= [[A creature’s general moral and personal attitudes are represented by its alignment: lawful good, neutral good, chaotic good, lawful neutral, neutral, chaotic neutral, lawful evil, neutral evil, or chaotic evil.
 
 Each alignment represents a broad range of personality types or personal philosophies, so two characters of the same alignment can still be quite different from each other. In addition, few people are completely consistent.]]
@@ -1263,49 +1266,49 @@ u_alns_text={-- z_ua
 
 
 -- z_tut
-s_tuts		="チュートリアル"
-tut_arena	="アリーナへようこそ"
-tut_arena_d	=[[最初の一歩は、デフォルトのパーティーを使って直接戦うのが最も早い方法です！
+s_tuts		="Tutorials"
+tut_arena	= "Welcome to the Arena"
+tut_arena_d	= [[As a newcomer, the quickest way to get started is using the default party to fight directly!
 
-もちろん、時間をかけてキャラクターを選んだり作成したりして、自分の夢のパーティーを作ることもできます。]]
+Of course, you can take your time to choose or create some characters and build your own dream party first.]]
 
-tut_glory	="チャンピオン特権"
-tut_glory_d	=[[厳しい戦いを通してアリーナで十分なグローリーポイントを得ると、様々なチャンピオン特権を得るためにこれらのポイントを使うことができます。]]
-
-
-wld_mov		="ワールドトラベルとタイムラプス"
-wld_mov_d	=[[デフォルトでは、世界が一時停止しています。 自分のパーティーを含め、すべてが停止しています。
-
-マップ上の任意の到達可能な場所をクリックすると、時間が経過し始め、世界が動き出しパーティーは自動的に目的の場所に移動します。
-
-移動が終了すると、世界は再び停止します。]]
+tut_glory	= "Champion Privileges"
+tut_glory_d	= [[When you gained enough arena Glory Points through tough battles, you can spend these points to obtain various Champion Privileges.]]
 
 
-combat_hlp		="戦闘のしくみ"
-combat_hlp_d	=[[戦闘はターン制です。 誰もが順番に行動します。
+wld_mov		= "World Travel and Time Lapse"
+wld_mov_d	= [[By default, the world is paused. Everything, including your party, is at rest.
 
-各ラウンドの活動は、最高のイニシアチブを持つキャラクターから始まり、そこから順番に進みます。
+When you click on any reachable location on the map, time starts to pass, the world goes round, and your party moves to the target location automatically.
 
-すべてのキャラクターは1ターンに2つの行動をとることができます：移動と攻撃です。 最も一般的な戦術は敵へ移動して攻撃することです。
+Until the end of the move, the world is still again.]]
 
-敵がすでに攻撃範囲内にいる場合、直接攻撃することができ、攻撃はより強力になります！]]
 
-cast_spl	="呪文の詠唱"
-cast_spl_d	=[[武器の攻撃に加えて、クレリックやウィザードは呪文を唱えることができます。
+combat_hlp		= "How Combat Works"
+combat_hlp_d	= [[Combat is turn-based; everybody acts in turn in a regular cycle of rounds.
 
-スペルキャスターのターンが始まると、詠唱する呪文を画面の下部にあるアクションバーで選ぶことができます。
+Each round’s activity begins with the character with the highest initiative result and then proceeds, in order, from there. 
 
-注：スリープのようないくつかの強力な呪文は、移動せずに詠唱することができます。]]
+Every character can perform two actions per turn: move and attack. The most common tactic is to move to an enemy and attack!
 
-tut_hard_terr	="移動困難な地形"
-tut_hard_terr_d	=[[小さな障害物や呪文の効果(蜘蛛の巣やグリースなど)がある地形、味方や拘束された敵が占有するスクエアは移動困難な地形とみなす。
+If the enemy is already in your attack range, you can attack it directly, and the attack will be more powerful!]]
 
-これらの地形は通り抜けるのに2倍の努力を必要とし、<c=g>シフト</c>することもできない。]]
+cast_spl	= "Cast a Spell"
+cast_spl_d	= [[In addition to weapon attacks, clerics and wizards can cast spells.
+
+When a spellcaster’s turn begins, you can pick a spell in the action bar at the bottom of the screen to cast.
+
+Note: Some powerful spells such as Sleep can only be casted without moving.]]
+
+tut_hard_terr	= "Difficult Terrain"
+tut_hard_terr_d	= [[Terrain with minor obstacles or some spell effects (Web, Grease, etc.), and squares occupied by your allies or restrained enemies are all considered as difficult terrain.
+
+These terrain take double efforts to pass through, and <c=g>Shift</c> is not allowed on them.]]
 
 
 -- z_effs
 effs={
-{n="ノックバック"			,d="対象を１スクエア ノックバックする。"},
-{n="ストライクダウン"		,d="対象を１スクエア ノックバックし伏せ状態にする(Fall)。"},
-{n="パワーストライクダウン"	,d="対象を２スクエア ノックバックし伏せ状態にする(Fall)。"},
+{n="Knockback"			,d="Knock back the target by 1 square."},
+{n="Strike Down"		,d="Knock back the target by 1 square and fall."},
+{n="Power Strike Down"	,d="Knock back the target by 2 square and fall."},
 }

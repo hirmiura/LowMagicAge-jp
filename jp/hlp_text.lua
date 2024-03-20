@@ -1,227 +1,227 @@
 s_lma_bg		="背景"
-s_cmt_101		="基本的な戦闘のテクニック"
+s_cmt_101		="基本的な戦闘技術"
 s_arn_rule		="アリーナのルール"
-s_lv_up			="レベルアップとレベルアップ"-- Level and Levelling Up
+s_lv_up			="レベルとレベルアップ"
 s_faq			="よくある質問"
-s_credits		="クレジット＆謝辞"
-s_ogl			="オープンゲームライセンス（OGL）"
+s_credits		="クレジットと謝辞"
+s_ogl			="オープンゲーミングライセンス (OGL)"
 s_ogl_diffs		="OGLとの違い"
-s_other_content	="Other content."
+s_other_content	="その他のコンテンツ。"
 
 
-lma_bg=[[古き深淵の帝国の崩壊により、魔法の黄金時代が終わりを告げ、呪文や関連する知識のほとんどは失われ、強化されたアイテムでさえも希少で貴重なものになっている。
+lma_bg=[[古代魔術帝国の滅亡後、魔術の黄金時代は終焉を迎えた。呪文やそれに関連する知識はほとんど失われ、エンチャントされたアイテムさえも希少で貴重なものとなった。
 
-いかに、辛いことがあろうとも何れは幸福がやってくる。魔法の衰退は伝統的な戦闘技術に前例のない発展をもたらし、ますます多くの冒険家、傭兵や賞金稼ぎがこの奔流に加わった。もともとスパイラルタワーに潜んでいた魔法使いでさえ、呪文書とダガーを携え戦場へ向かった。
+しかし、不幸中の幸いは常にある。魔術の下火は、伝統的な戦闘技術にもかつてない発展をもたらし、あらゆる戦闘術や戦術が大きな進歩を遂げた。冒険者、傭兵、賞金稼ぎがますます増え、変化の奔流に加わった。もともと螺旋の塔に隠れていた魔道士でさえ、呪文書と短剣を手に戦場に加わっている。
 
-そのような時代に、あなたのパーティーは失われつつある呪文と家宝のロングソードを手に冒険の旅を始めたのであった……]]
+そんな時代に、あなたとあなたの仲間は、家宝のロングソードを手に取り、絶滅寸前の呪文を呟き、冒険の旅を始める...。]]
 
 
 cmt_101=[[<b> </b>
 
-<h3 c=ty>１．ターンベースの戦闘</h3>
-戦闘が開始されると、すべてのキャラクターはイニシアチブ判定の手順に従ってターンを開始します。キャラクターがすべての行動を終えるとターンは終了し、次のキャラクターに切り替わります。全てのキャラクターがターンを終了すると、１ラウンドが終了し、最速のキャラクターが再びターンを開始します。戦闘が終了するまで、このような手順を繰り返します。これは、キャラクターの1つのグループがすべて能力を使い切ったことを意味します。
+<h3 c=ty>1. ターン制戦闘</h3>
+戦闘が開始されると、すべてのキャラクターはイニシアティブチェックの順番に従ってターンを開始する。キャラクターがすべての行動を終えると、そのターン は終了し、次のターンに切り替わる。すべての戦闘員がターンを終えたら、1 ラウンドが終了し、最速の戦闘員が再びターンを開始する。このような手順を、戦闘が終了するまで、つまり戦闘員の一団がすべて戦闘能力を失うまで繰り返す。
 
 
-<h3 c=ty>２．戦略とアクション</h3>
-キャラクターは１ターンに２つのアクション（<c=y>標準アクション</c>と<c=g>移動アクション</c>）を行うことができます。攻撃の呪文やキャストは「標準アクション」ですが、移動や武器の切り替えなどの簡単なアクションは「移動アクション」です。
+<h3 c=ty>2. 戦略をもって行動する</h3>
+キャラクターは1ターンに2つのアクションを取ることができます。<c=y>標準アクション</c> そして <c=g>移動アクション</c>. 通常、攻撃や呪文を唱えることは標準アクションであり、移動や武器の切り替えといった単純な行動は移動アクションである。
 
-典型的な戦闘技術は、隣接する敵のスクエアに移動し攻撃することです。既に敵に隣接している場合は、自分のいる場所（またはシフト、下記参照）に留まり、<c=y>全力攻撃</c>を行うことができます。これはより強力な攻撃で自動的に「標準アクション」と「移動アクション」の両方を消費します！
-
-
-<h3 c=ty>３．敵からの<c=r>機会攻撃</c>に注意！</h3>
-激しい戦いの最中に混乱してガードを怠るのは危険です。近くの敵はあなたの弱点を狙い、打撃を与えます！このようなフリー・アタックは、<c=r>機会攻撃</c>と呼ばれています。
-
-一部のアクションは、移動、遠隔攻撃、呪文の詠唱などの機会攻撃を引き起こします。
-
-隣接する敵を撃ったり、逃げたりする前に、もう一度考え直しましょう。<c=g>シフト</c>を使用すると、安全に後退することができます。
+典型的な戦闘技術は、敵の隣接マスに移動して攻撃することである。すでに敵に隣接している場合は、その場にとどまり（あるいは交代し、後述する）、敵に攻撃することができる。<c=y>フルターン攻撃</c>。このような攻撃は自動的に標準アクションと移動アクションの両方を消費し、より強力になる！
 
 
-さあ、行け、血と鋼の間で多くの戦闘技術を追求するのだ... ]]
+<h3 c=ty>3. 注意 <c=r>機会攻撃</c> 敵から！</h3>
+激しい戦いの最中、他のことに気を取られて油断するのは危険だ。近くにいる相手は、あなたの弱点を狙って一撃を加えてくる！このようなトリガーによるフリー攻撃は <c=r>機会攻撃</c>.
+
+移動、範囲攻撃、呪文の詠唱など、機会攻撃を誘発する行動もある。
+
+隣接する敵を撃つ前に、あるいは敵から退避する前に、よく考えよう。使用方法 <c=g>交代</c> 安全な撤退に役立つだろう。
 
 
-arena=[[新入生諸君、アリーナへようこそ！
+どうぞ、血と鋼の中で、より多くの戦闘テクニックを自ら求めてください......。]]
 
 
-初心者の方は、既定のパーティで簡単にチャレンジを開始することができます。もしくは、自分自身でのキャラクターを作成してください。 
-
-<b c=lbl>戦闘の準備：</b>戦闘中はバックパックを使用することはできません。バックアップ武器のみが利用可能です。つまり戦う前に慎重に準備をしてください。
-
-<b c=lbl>オートリカバリー：</b>倒されたキャラクターは戦闘後自動的に復活します。そしてパーティー全体が最高の状態に復元されます。
-
-<b c=lbl>装備の調達：</b>戦闘に勝利するたびに商品が更新されます。ショップを頻繁にチェックしましょう。
-
-<b c=lbl>エンドレス・チャレンジ：</b>チャレンジを達成したときはアリーナをリフレッシュしてください。パーティーがレベルアップするにつれて、より強力な相手があなたを待ち受けています！
+arena=[[アリーナへようこそ、1年生！
 
 
-以上だ。健闘を祈る！]]
+初心者のうちは、単純にデフォルトのパーティでチャレンジを始めることもできる。あるいは、最初に自分のキャラクターを作るのもいい。
+
+<b c=lbl>戦いの準備： </b>戦闘中にバックパックを使用することは禁止されている。使用できるのは予備の武器だけだ。だから、戦う前に入念に準備すること。
+
+<b c=lbl>自動回復:</b>倒れたキャラクターは戦闘後に自動的に復活する。そして、パーティ全体もベストコンディションに回復する。
+
+<b c=lbl>備品の購入：</b>ショップをこまめにチェックしよう。バトルに勝利するたびに商品が更新されます。
+
+<b c=lbl>果てしない挑戦： </b>1つのチャレンジを達成すると、アリーナがリフレッシュされます。パーティーのレベルが上がると、より多くの強敵が待ち受けています！
 
 
-phb={n="アドベンチャー ハンドブック",d=[[ここは、英雄的な戦士、機敏な射手、強力な魔術師、恐ろしいモンスターで構成された素晴らしい世界です。
-
-勇敢な英雄だけが踏み入る事が許された古代の遺跡と広大な洞窟に満ちた神秘的な世界です。
-
-剣と魔法の世界であり、エルフとゴブリン、ドラウと財宝があります。
-
-あなたは、無敵の戦士、不屈のクレリック、神秘的なウィザードなど伝説の英雄になることを夢見る冒険家として、この世界に参加する準備が整いました。神聖な要求と伝説的な使命のために戦い、厳しいチャレンジと血に飢えたモンスターの前で強さを試されます。
-
-さあ、無限の可能性を秘めた新たな冒険への準備をしましょう。 このハンドブックには、あなたをヒーローにするために必要なものがすべて含まれています。 これを注意深く読み、壮大な一代記にチャレンジしましょう！]]}
+そうだ。戦いを始めよう！]]
 
 
-s_hlp_basics="The Basics"
+phb={n="冒険手帳",d=[[英雄的な戦士、俊敏なシューター、強力なメイジ、恐ろしいモンスターで構成されたファンタスティックな世界だ。
+
+ここは古代遺跡と広大な洞窟に満ちた神秘的な世界で、勇敢な英雄だけが足を踏み入れる勇気がある。
+
+ここは剣と魔法の世界であり、エルフやゴブリン、ドラウやリッチがいる。
+
+無敵のウォーリアー、不屈のクレリック、ミステリアスなウィザードなど、伝説のヒーローになることを夢見る冒険者として、あなたはこのような世界に参加する準備ができている。神聖な依頼や伝説的な使命のために戦い、過酷な試練や血に飢えたモンスターを前に自分の力を測るのだ。
+
+備えよ、無限の可能性を秘めたフレッシュな冒険者。このハンドブックには、あなたがヒーローになるために必要なことがすべて書かれている。よく読めば、すぐに壮大な人生の最初の挑戦に立ち向かうことができるだろう！]]}
+
+
+s_hlp_basics="基本"
 s_hlp_basics_d=[[
-<s b=c:ty><b>The Core Mechanic:</b> Whenever you attempt an action that has some chance of failure, you roll a twenty-sided die (d20).
+<s b=c:ty><b>コアメカニック：</b> 失敗する可能性のあるアクションを試すときは、必ず20面ダイス（d20）を振る。
 
-To determine if your character succeeds at a task you do this:
-• Roll a d20.
-• Add any relevant modifiers.
-• Compare the result to a target number.
+キャラクターがタスクに成功したかどうかを判断するには、次のようにする：
+• d20を振る。
+• 関連する修正を加える。
+• 結果を目標数値と比較する。
 
-If the result equals or exceeds the target number, your character succeeds.
+その結果が目標数値以上であれば、あなたのキャラクターは成功する。
 
-If the result is lower than the target number, you fail.
-
-
-<b>Dice:</b> Dice rolls are described with expressions such as “3d4+3,” which means “roll three four-sided dice and add 3” (resulting in a number between 6 and 15).
-
-The first number tells you how many dice to roll (adding the results together).
-
-The number immediately after the “d” tells you the type of die to use.
-
-Any number after that indicates a quantity that is added or subtracted from the result.
+結果が目標数値より低ければ失敗。
 
 
-<b>d%:</b> Percentile dice work a little differently.
+<b>ダイス：</b>ダイスの出目は「3d4+3」などの表現で表されるが、これは「4面体のダイスを3つ振って3を足す」（6から15の間の数字が出る）という意味である。
 
-You generate a number between 1 and 100 by rolling two different ten-sided dice.
+最初の数字は、サイコロを何個振るか（出た目を足す）を示す。
 
-One (designated before you roll) is the tens digit. The other is the ones digit.
+"d"の直後の数字は、使用するダイスの種類を示す。
 
-Two 0s represent 100.
-
-
-<b>Rounding Ractions:</b> In general, if you wind up with a fraction, round down, even if the fraction is one-half or larger.
-
-<b c=tw>Exception:</b> Certain rolls, such as damage and hit points, have a minimum of 1.
+それ以降の数字は、結果から加減される量を示す。
 
 
-<b>Multiplying:</b> Sometimes a rule makes you multiply a number or a die roll.
+<b>d%:</b>百面体ダイスは少し違った働きをする。
+
+10面体のサイコロを2つ振り、1から100までの数字を出す。
+
+ひとつは（ロールする前に指定する）十の桁。もう一つは1桁の数字。
+
+2つの0は100を表す。
 
 
-As long as you’re applying a single multiplier, multiply the number normally.
+<b>四捨五入：</b> 一般に、端数が出た場合は、2分の1以上であっても切り捨てます。
+
+<b c=tw>例外：</b> ダメージやヒットポイントなど、特定のロールには最低1が設定されている。
 
 
-When two or more multipliers apply to any abstract value (such as a modifier or a die roll), however, combine them into a single multiple, with each extra multiple adding 1 less than its value to the first multiple.
-
-Thus, a double (×2) and a double (×2) applied to the same number results in a triple (×3, because 2 + 1 = 3).
+<b>乗算：</b> ルールで数字やダイスを掛け合わせることがある。
 
 
-When applying multipliers to real-world values (such as weight or distance), normal rules of math apply instead.
+単一の倍率を適用している限り、普通に数字を掛けてください。
 
-A creature whose size doubles (thus multiplying its weight by 8) and then is turned to stone (which would multiply its weight by a factor of roughly 3) now weighs about 24 times normal, not 10 times normal.
 
-Similarly, a blinded creature attempting to negotiate difficult terrain would count each square as 4 squares (doubling the cost twice, for a total multiplier of ×4), rather than as 3 squares (adding 100% twice).
+しかし、(修正やダイスの出目など)抽象的な値に対して 2 つ以上の倍率が適用される場合、それらを 1 つの倍率にまとめ、各倍率はその値より 1 小さく最初の倍率に加算される。
+
+したがって、2倍（×2）と2倍（×2）を同じ数に適用すると、3倍（×3、2＋1＝3だから）になる。
+
+
+実世界の値（重さや距離など）に乗数を適用する場合は、代わりに通常の数学のルールが適用される。
+
+大きさが2倍になり（体重が8倍になる）、石になった（体重がおよそ3倍になる）クリーチャーの体重は、通常の10倍ではなく、約24倍になる。
+
+同様に、盲目のクリーチャーが困難な地形を移動しようとする場合、各マスを3マス（100％を2回足す）ではなく、4マス（コストを2倍にして合計倍率×4）として数えることになる。
 ]]
 
 
-poorlunch_tips={n="付録1:お宝ハンターからの引用",d=[[Poorlunch（彼は今まだ活動中の伝説的な冒険者）は若い多くの冒険者にとってあこがれの存在である。彼の素晴らしい戦闘技術と英雄的な人生経験に加え、若者と共有し支援しようとする意欲もまた、彼が尊敬と崇拝を受ける理由となっている。
+poorlunch_tips={n="付録1：略奪ハンターの名言",d=[[今も現役で活躍する伝説の冒険家プアランチは、多くの若手冒険者のアイドルだ。その卓越した戦闘技術や壮絶な人生経験に加え、若者を助け、分かち合おうとする彼の姿勢もまた、尊敬と崇拝を集める重要な理由のひとつだ。
 
-不思議なことに、他の冒険者から質問を受けた際はいつもとても短く回答をする。しばしば、1つの文で回答できるにもかかわらず、2つに分けて回答する。そのため、彼に2回質問しなければならないことも…。
+不思議なことに、彼は他の冒険者から質問されると、いつも短く答える。時には、一段落のはずの答えを二段落に分けて答えることもあり、二度手間になることも......。
 
-その理由はわかっていないが、物見高い冒険者たちは自身の憶測を述べている。
-曰く、過去のデミリッチとの戦闘で、長く支配されていた後遺症である。
-曰く、世界に編みこまれた魔法の減衰は伝説級の冒険者に多大なる影響を与えた。
-しかしながら、最近急速に広がっている推論は信頼できそうである。Poorlunchは多くの言葉が単純に宝探しを遅らせていると考えているからだというものである。
+その理由はいまだ不明で、好奇心旺盛な冒険家たちは自分たちで推測するしかない：
+デミリッチとの最後の戦いで長く支配された後遺症だと言う人もいる;
+魔法織物の衰退は、壮大な冒険家たちに大きな影響を与えたと言う人もいる;
+しかし最近、急速に広まりつつある推測によれば、プアランチは言葉が多すぎると戦利品探しが遅れるだけだということだ！
 
-とにかく、彼の奇妙な癖のことは忘れて、簡潔で利益がある彼の引用を聞くとしよう。
+とにかく、彼の奇妙な個人的習慣は無視して、彼の簡潔で有益な名言に耳を傾けよう：
 
 
-* 遠隔特技は投擲武器にも適用される。
+* 射撃特技は投擲武器に適用される。
 
 * 魔法の投擲武器は戻ってくる。
 
-* クレリックよ、クラブを投げろ。
+* クレリックはクラブを投げろ。
 
-* ハンドクロスボウ二刀流。
+* ハンドクロスボウの二刀流。
 
-* レベルアップしてもたくさん攻撃できるわけじゃない。ただ強くなるだけだ。
+* レベルアップしても攻撃力は上がらない。ただ強くなるだけだ。
 
-* 10レベルで一つの級(tier)だ。武器や呪文の基本ダメージは乗算される。《武器開眼》の特技もだ。
+* 10レベルが1ティアとなる。武器/呪文の基本ダメージは倍増する。武器特化の特技もある。
 
-* 全力攻撃: 攻撃とダメージに+2ボーナスだ。ダメージは級(tier)）と掛け算で増えるぞ。
+* フルターンアタック： 攻撃力とダメージに+2ボーナス。
 
-* シフト: アクションではない。全力攻撃が適用できる。移動できない。
+* 交代： アクションではない。全ターンの攻撃が可能。移動はできない。
 
-* 突撃: 真っ直ぐか斜め、２スクエア、平坦な通り道、近接攻撃。
+* チャージ： 直線または斜め、2マス、平坦な進路、近接攻撃。
 
-* 呪文発動: 呪文の主能力値と対象の防御とで対決だ。失敗したらダメージ半減。]]}
+* 呪文を唱える： メイン呪文能力対象の防御力、失敗時ダメージ半減。]]}
 
 
-zero_tips={n="付録2：高度な戦闘ガイド",d=[["このハンドブックを閉じて私の話を聞いて下さい。
+zero_tips={n="付録 2： 上級戦闘ガイド",d=[["このハンドブックを閉じて、私の話を聞いてください。
 
-あなたの素人的な姿勢から察するに、どの引用があなたによりいいか賭けることができますよ。このハンドブックを読む前に、まずこれを読んでいくつかの戦闘訓練をしたほうがよいでしょう。
+アマチュアの立ちポーズを見ただけで、誰かの名言の方がよっぽどあなたに似合っていることに間違いない。このハンドブックを読む前に、まずそれを読み、戦う練習をするべきだ。
 
-読むことを禁止しようとしているんじゃない、精神能力値にダメージを受けて泣くんじゃないぞ。"
-	<r>- pre-good cleric, Xvim</r>
+いや、読むことを禁止はしないが、精神的なダメージを受けても泣くなよ。"
+	<r>- プレグッドクレリック、エクスヴィム</r>
 
 <s h3=c:lbl>
-<h3>二刀流戦闘や二刀流装備についての詳細</h3>
-標準的な修正値 (利き手/オフ・ハンド): <c=r>-6/-10</c>
+<h3>二刀流/二刀流の詳細</h3>
+標準調整（メインハンド/オフハンド）：<c=r>-6/-10</c>
 
-《二刀流》の特技がある場合: <c=g>+2/+6</c> (現在の修正値: <c=r>-4/-4</c>)
+"二刀流戦闘"の特技:<c=g>+2/+6</c> (現在調整中： <c=r>-4/-4</c>)
 
-オフ・ハンドが軽武器の場合: <c=g>+2/+2</c> (現在の修正値: <c=r>-2/-2</c>)
+オフハンドの軽武器: <c=g>+2/+2</c> (現在調整中: <c=r>-2/-2</c>)
 
-《二刀流戦闘皆伝》の特技がある場合:ペナルティはなし。オフ・ハンドが軽い武器じゃない場合でもね。 (現在の修正値: <c=r>0/0</c>).
-
-
-<h3>《二刀のかきむしり》の特技は、ハンドクロスボウの二刀流でも機能する?</h3>
-機能しません。《二刀の守り》 《二刀の守り強化》 《二刀の切り裂き》 《二刀のかきむしり》 は近接武器の二刀流でのみ機能します。
+"完璧な二刀流戦闘"特技:オフハンドに非軽量武器を持っていてもペナルティは一切ない(現在調整中): <c=r>0/0</c>)。
 
 
-<h3>《突撃》ってどうやるの?</h3>
-突撃は前提条件が満たされると自動的に発動する。近接攻撃の前に、真っ直ぐもしくは斜めに２スクエア以上移動し、その通り道が全てにおいて障害物や移動困難な地形がない場合。
+<h3>両手クロスボウで "二刀流レンディング"の特技は使えますか？</h3>
+そんなことはない。"二刀流ディフェンス"、"二刀流ディフェンス強化"、"ダブルスライス"、"二刀流レンド"は近接二刀流でのみ有効だ。
 
 
-<h3>強化：ディフェンディング(武器限定)</h3>
-近接武器には特殊な強化が行える：ディフェンディング - あたかも盾を装備しているかのようにACに+xの盾ボーナスを与える。
-
-このボーナスは実際の盾が与えるACへの盾ボーナスとは累積しない。つまり、盾を持たない両手武器や二刀流のキャラクターに適している。
-
-ちょっと複雑だけど、ディフェンディングの強化はジャベリンのような近接と投擲の両方に使用できる武器にも付与できる。:この強化は近接武器として使用した際にのみ通常通り機能する。;武器を投擲に使用した場合は何の効果ももたらさない。
+<h3>チャージの方法は？</h3>
+チャージは、近接攻撃の前に、2マス以上離れた地点から、障害物や困難な地形がない直線上を移動する、という前提条件をすべて満たしたときに自動的に発動する。
 
 
-<h3>クレリックのアンデッド退散:</h3>
-退散判定:キャラクター・レベル + 【魅力】修正値 + 特技ボーナス 対 相手の意志防御値 + 退散抵抗
+<h3>エンチャント: 防御（武器のみ）</h3>
+近接武器に特別なエンチャントをつけることができる： 防御-ACに＋xシールドボーナス。
+
+このボーナスは本物のシールドのACボーナスと重複しないので、両手武器を持つキャラクターや二刀流でシールドを持たないキャラクターに適している。
+
+ジャベリンのように、近接武器と投擲武器の両方に防御エンチャントが施されている場合は少し複雑で、近接武器として使用する場合は通常通りエンチャントが効くが、投擲武器として使用する場合はエンチャントが効かない。
 
 
-<h3>視界外を対象する呪文を発動したとき、効果がないことがある</h3>
-呪文の発動には効果線が通っている必要がある。見えない障害物が効果線をブロックしている場合、呪文は失敗する。
+<h3>クレリックのターンアンデッド:</h3>
+ターンチェック：キャラクターレベル＋CHA修正値＋特技ボーナス vs 対象の意志による防御力＋ターン抵抗
 
 
-<h3>障害物、敵、味方は戦場においてどう影響を与えるのか?</h3>
-
-移動における影響:
-
-障害物と拘束されていない敵は移動を阻害する。通り抜けできない。
-
-拘束されていない敵に隣接するスクエアはその敵の支配領域（ZoC）であり、通り抜けできない。最初にそのスクエアに移動して入り停止する。次のターンを待って移動を続ける。
-
-近接武器を持った拘束されていない敵はZoCを出ようとする対象に対して攻撃を行うことができ、これを<c=r>機会攻撃(OA)</c>という。<c=g>シフト</c>(１スクエア・ステップ)を使って位置取りを変える場合は機会攻撃されない。
-
-移動困難な地形:小さな障害物や呪文の効果(ウェブやグリースなど)がある地形、味方や拘束された敵が占有するスクエアは移動困難な地形とみなす。これらの地形は通り抜けるのに２倍の努力を必要とし、<c=g>シフト</c>することもできない。
+<h3>視界の外を対象に呪文を唱えても効果がないことがある。</h3>
+呪文を唱えるには効果線が必要である。効果線を遮る目に見えない障害物があれば、呪文は失敗するだけである。
 
 
-攻撃における影響:
+<h3>障害物、敵、味方は戦場にどのような影響を与えるのか？</h3>
 
-障害物や拘束されていない敵は、攻撃の際に<c=r>遮蔽</c> (攻撃ロール<c=r>-2</c>)か<c=r>優れた遮蔽</c> (攻撃ロール<c=r>-4</c>)であるかのように扱う。;遠隔攻撃や呪文を含む範囲攻撃も同様にブロックする。
+運動への影響:
 
-味方と拘束されている敵は攻撃範囲とボーナスに影響を与えない。</s>]]}
+障害物や拘束されていない敵は、あなたの動きを妨げます。通り抜けることはできません。
+
+拘束されていない敵に隣接しているマスは、その敵の<c=r>ゾーンオブコントロール(ZoC)</c>であり、通り抜けることはできない。まずそのようなマスに移動して止まり、次のターンを待って移動を続けること。
+
+近接武器を装備している非拘束の敵は、ZoCから離れようとする相手を攻撃する。このような攻撃は<c=r>機会攻撃OA)</c>と呼ばれる。<c=g>交代</c>(1マスステップ)を使って位置を変えることで、OAを防ぐことができる。
+
+困難な地形：小さな障害物や呪文効果（網、グリースなど）のある地形、味方や拘束されている敵がいるマスはすべて困難な地形とみなされる。これらの地形は通過するのに2倍の努力を要し、<c=g>交代</c>は許可されない。
+
+
+攻撃への影響:
+
+障害物や拘束されていない敵は、対象が以下の状況下にある場合、攻撃に影響を与える可能性がある。<c=r>カバー</c> (攻撃<c=r>-2</c>）または <c=r>優れたカバー</c> (攻撃 <c=r>-4</c>); また、範囲攻撃や呪文を含む攻撃範囲を封じることもできる。
+
+味方や拘束された敵は、攻撃範囲やボーナスに影響しない。</s>]]}
 
 
 hlp_cmbt={n="戦闘", d=
-[[Mighty swords clash, arrows hiss through the air, claws rip and tear and rend; these are the thrilling sounds of battle. Adventurers constantly find themselves embroiled in combat situations - and they wouldn't have it any other way!
+[[激しい剣のぶつかり合い、矢が宙を舞い、爪が裂け、引き裂かれる。冒険者たちは常に戦闘に巻き込まれている！
 
-Whether the adventurers must fend off a bandit ambush on a deserted road or fight their way out of a bugbear lair in the deepest part of a dungeon, the rules in this chapter provides an exciting way to solve any combat situation.]]}
+荒れ果てた道で盗賊の待ち伏せをかわしたり、ダンジョンの最深部にあるバグベアーの隠れ家から脱出するために戦ったりと、この章のルールはあらゆる戦闘状況を解決するエキサイティングな方法を提供します。]]}
 
 hlp_cmbt_flow={n="", d=[[]]}
 
@@ -234,98 +234,98 @@ hlp_saves={n="", d=[[]]}
 hlp_cmbt_mods_ex=[[]]
 
 
-faq=[[<c=twa>よくある質問（FAQ）
+faq=[[<c=twa>よくある質問
 
 <s h3=c:tw>
-<h3>Q: オプションの解像度を変更したのに何も起こりませんが?</h3>
+<h3>Q: ビデオ解像度を変更しても何も起こらないのですが？</h3>
 A: ゲームを再起動してください。
 
 
-<h3>Q: レベルアップしたときに能力や特技を選択できますか?</h3>
-A: 自分で選択したい場合は、キャラクターを作成する時点で「カスタム・キャラクター」を選択してください。「プリビルド・キャラクター」は初心者プレイヤー向けに作られています。
+<h3>Q: レベルアップ時に能力や技を選ぶことはできますか？</h3>
+A: キャラクターを作成する際に "カスタム "を選択すれば、あとは自分でキャラクターを作成できます。プレメイドキャラクターは初心者向けです。
 
 
-<h3>Q: 最大レベルはいくつですか?</h3>
-A: 現時点では、アリーナ・モードでレベル上限はありません。アリーナ・レベルも同様に上限がありません。
+<h3>Q：最高レベルはいくらですか？</h3>
+A: 現在のところ、アリーナ・モードのレベルアップに上限はありません。また、アリーナのレベルもありません。
 
 
-<h3>Q: 技能バーがいっぱいで新しい技能を選択できません。</h3>
-A: 技能バーを右クリックして、新しい技能と置き換えたり追加したりできます。
-   キャラクターを右クリックして、使用可能な全ての技能を選ぶことができます。
+<h3>Q: スキルバーが埋まってしまい、新しいスキルが見えません。</h3>
+A: スキルバーを右クリックすると、スキルの入れ替えや追加ができます。
+キャラクターを右クリックして、使用可能なすべてのスキルを選択します。
 
 
-<h3>Q: 行動順やその他の情報はどうやって見ることができますか?</h3>
-A: <b>Alt</b> キーを押すと "<b>行動順</b>" やその他情報を見ることができます。
+<h3>Q: 戦闘員の行動順番やその他の情報を確認するにはどうすればいいですか？</h3>
+A：<b>Alt</b> キーを押すと、"<b>行動順番</b>"やその他の情報が表示されます。
 
 
-<h3>Q: ポートレートやその他のデータをカスタマイズできますか?</h3>
-A: ゲームのデータ類は公開されており、編集したり置き換えたり自由にできます。
-   gfx フォルダ: グラフィック
-   sfx フォルダ: 音楽や効果音
-   text フォルダ: テキスト。 enは英語、csは中国語といったように
+<h3>Q: カスタマイズしたポートレートやその他のリソースを使うことはできますか？</h3>
+A: ゲームリソースはすべてオープンになっており、自由に編集・入れ替えができます。
+   gfx フォルダー: グラフィックス
+   sfx フォルダー: 音楽と効果音
+   テキストフォルダー：テキスト。 英語の場合は en、中国語の場合は cs など。
 
-もっと多くのデータ類は<url=http://steamcommunity.com/app/576770/workshop/>Steam Workshop</url>から直接ダウンロードできます。
-
-
-<h3>Q: クロスボウは装填の必要がないのか? これではへヴィ・クロスボウがロングボウよりも射程、ダメージともに優れていてバランスが悪いのではないか。</h3>
-A: 良いご指摘ですね。装填のためにクリックするのはわずらわしくて、その都度「機会攻撃を誘発する」とポップアップ警告が出るのはよくないという点が理由に挙げられます。そのため、装填という行動は《高速装填》の特技とともに削除しました。
-
-ボウとクロスボウは、今後のバージョンにおいて、追加する特技によって差別化する予定です。ボウは攻撃回数と複数を対象とする攻撃に優れ、クロスボウはダメージと貫通攻撃に優れているといったように。
+より多くのリソースを直接ダウンロードすることもできます。<url=http://steamcommunity.com/app/576770/workshop/>Steamワークショップ</url>.
 
 
-<h3>Q: スリングはどうして両手武器にされたんですか? スリングは伝統的に片手武器だったのですが。</h3>
-A: その通りです。スリングは片手武器ですが、装填には両手を必要とします。ハンドクロスボウを典型的な片手遠隔武器とするだけで十分です。
+<h3>Q: クロスボウにリロードは必要ないのですか？ヘビークロスボウがロングボウよりも射程距離、ダメージともに優れているのはアンバランスです。</h3>
+A: いい提案だ。ポイントは、リロードのためのクリックが煩わしく、飛び出すポップアウトの機会攻撃警告はもっと悪いということです。したがって、リロードアクションはラピッドリロードの特技とともに削除される。
+
+将来のバージョンでは、弓とクロスボウを区別する特技が追加される予定だ。弓は早射ちや複数の標的を狙うのに適しており、クロスボウは高いダメージやつなぎ攻撃に向いている。
 
 
-<h3>Q: 全力移動、フェイント、援護、その他いろいろは何でなくなってしまったの? ゲームがもっと面白くなるのに!</h3>
-A: 確かにそうなるでしょう。ですが、現在一番重視しているのは単純でわかりやすい戦闘です。私たちはPathfinderの戦技(Combat Maneuvers)のシステムのような複雑な行動に取り掛かっています、そしてその他のオプションも慎重に追加しなければならないと考えています。
+<h3>Q: なぜスリングは両手武器なのですか？伝統的な片手武器です。</h3>
+A: はい、片手武器ですが、リロードには両手が必要です。典型的な片手射撃武器として、ハンドクロスボウがあれば十分です。
 
-最適な行動を見つけるためにとても多くの時間を必要とする際、選択肢が多いことは必ずしも歓迎されるものではありません。これにより戦闘の流れは減速するでしょう。AD&DのTRPGにおいて、とても多くの選択肢のためそういったことがよく起きました。実際の例を見てみましょう:
 
-   ファイター: "あいつをノックダウンさせるべきか？押しやった方がいいか?"
-   ローグ: "押し出しちゃダメ, 俺は挟撃したいんだけど"
-   クレリック: "とてもリスキーだね。１スクエア動くと、僕ら全員があいつのオーラの範囲内に入っちゃうよ!"
-   ローグ: "後ろに一歩下がってよ。そうすれば俺が位置交換の攻撃を使えるからさ"
-   ウィザード: "もしくは、私が彼を近くに引き寄せますか。"
-   ファイター: "それはできない。そこに物体の角があるから。"
-   ウィザード: "ここまで移動して引き寄せられますよ。ただ、それにはクレリックが直線上からどいてくれないと。"
-   クレリック: "僕が一歩下がればローグも殴れるかな。"
+<h3>Q: なぜ走ったり、フェイントをかけたり、助走をつけたりしないのですか？ゲームはもっと面白くなる！</h3>
+A：そうですね。とはいえ、現在の主な焦点はシンプルでわかりやすい戦闘です。我々は『パスファインダー』の戦闘機動システムのような複雑なアクションシリーズに取り組んでおり、他のオプションは慎重に測りながら徐々に追加していかなければならない。
+
+最適な解決策を見つけるのに時間がかかりすぎる場合、選択肢が増えることは必ずしも歓迎されない。戦闘の流れが遅くなるかもしれない。AD&D TRPGでは、選択肢がそれほど多くなくても、そのようなケースは起こる。実際の例を挙げよう：
+
+   ファイター: "倒すべきか、突き放すべきか？"
+   ローグ :"押さない、側面から行く。"
+   クレリック："それは危険だ。一マスずれるだけで、全員が彼のオーラに包まれるんだ！"
+   ローグ:"下がれ。体勢を入れ替えて一撃入れるぞ。"
+   ウィザード："あるいは、彼を引き寄せることもできる。"
+   ファイター:"ダメだ。そこはしっかり追い込む。"
+   ウィザード："ここに移動して引くことはできる。でも、クレリックはラインから外れた方がいい。"
+   クレリック："私が下がれば、悪党は叩き潰される。"
    
-   数分後、彼らは最適な移動を見つけ出した。ファイターは自信を持ってダイスを振った。判定結果は“失敗”だ。
+   10分後、彼らは最善手を見つける。ファイターは自信を持ってダイスを振る。結果はミス。
 
-   "再検討の時間だ…"
+   "再考の時だ..."
    
-     - From Sheepy, administrator of TRPG forum www.goddessfantasy.net.
+     - TRPGフォーラムwww.goddessfantasy.net の管理人Sheepyさんより。
 </s></c>]]
 
 
-credits=[[<f=b6 c=lbl>Main Creator & Programming</f>
+credits=[[<f=b6 c=lbl>メインクリエイター＆プログラミング</f>
 
 <url=http://www.lowmagicage.com>Thomas Lee (AM)</url>
 
 
-<f=b6 c=lbl>Item Descriptions Writing & English Text Polishing</f>
+<f=b6 c=lbl>アイテムの説明執筆と英語のテキストの校正</f>
 
 <url=https://discord.gg/zMPgh8r>Roy Riley</url>
 
 
-<f=b6 c=lbl>Art</f>
+<f=b6 c=lbl>アート</f>
 
-<url=http://www.rpgartkits.com>Raymond E. Gaustadnes</url> - Thanks to Norwegian artist Raymond E. Gaustadnes (<url=http://shockbolt.deviantart.com/gallery>Shockbolt</url>) who provides the non-exclusive commercial license of a full set of monsters/items/portraits images.
+<url=http://www.rpgartkits.com>Raymond E. Gaustadnes</url> - ノルウェーのアーティストに感謝 Raymond E. Gaustadnes (<url=http://shockbolt.deviantart.com/gallery>Shockbolt</url>) モンスター/アイテム/ポートレート画像のフルセットの非独占的商業ライセンスを提供する。
 
-<c=twa>Raymond made another tileset for ToME4. So, both tilesets share the similar style and a few same tiles.</c>
+<c=twa>RaymondはToME4のために別のタイルセットを作った。つまり、どちらのタイルセットも似たようなスタイルで、同じタイルもいくつかある。</c>
 
-<url=https://www.deviantart.com/joakimolofsson>Joakim Olofsson</url> - Some illustrations
-<url=http://opengameart.org>OpenGameArt</url> - Various resources
-<url=http://ramah-palmer.deviantart.com>Andy (Ramah-Palmer)</url> - Some hand-drawn map elements
-<url=http://game-icons.net>Game-Icons.net</url> - Most icons<c=twa> (see the appendix for detailed information)</c>
-<url=http://p.yusukekamiyamane.com>Yusuke Kamiyamane</url> - Some icons
-<url=https://www.patreon.com/justinnichol>Justin Nichol</url> - Some portraits
-<url=http://www.cbigame.com>cbigame</url> - Some scenes
-<url=https://github.com/adobe-fonts/source-han-sans/>Source Han Sans</url> - Chinese fonts<c=twa> (Simplified & Traditional)</c>
-<url=http://www.latofonts.com>Lato Fonts</url> - English fonts
-<url=http://www.drivethrurpg.com>DriveThruRPG.com</url> - The Largest RPG Download Store
-<url=http://www.drivethrurpg.com/browse/pub/3482/Sine-Nomine-Publishing.com>Sine Nomine Publishing</url> - Some illustrations
+<url=https://www.deviantart.com/joakimolofsson>Joakim Olofsson</url> - いくつかのイラスト
+<url=http://opengameart.org>OpenGameArt</url> - 各種リソース
+<url=http://ramah-palmer.deviantart.com>Andy (Ramah-Palmer)</url> - いくつかの手描き地図要素
+<url=http://game-icons.net>Game-Icons.net</url> - ほとんどのアイコン<c=twa> (詳細は付録を参照）</c>
+<url=http://p.yusukekamiyamane.com>Yusuke Kamiyamane</url> - いくつかのアイコン
+<url=https://www.patreon.com/justinnichol>Justin Nichol</url> - いくつかのポートレート
+<url=http://www.cbigame.com>cbigame</url> - いくつかのシーン
+<url=https://github.com/adobe-fonts/source-han-sans/>Source Han Sans</url> - 中国語フォント<c=twa> (簡体字・繁体字)</c>
+<url=http://www.latofonts.com>Lato Fonts</url> - 英語フォント
+<url=http://www.drivethrurpg.com>DriveThruRPG.com</url> - 最大のRPGダウンロードストア
+<url=http://www.drivethrurpg.com/browse/pub/3482/Sine-Nomine-Publishing.com>Sine Nomine Publishing</url> - いくつかのイラスト
 Aaron Lee
 Christ of Grobelski
 Jeff Brown
@@ -334,23 +334,23 @@ Mohammed Agbadi
 Tan Ho Sim
 
 
-<f=b6 c=lbl>Music & Sound Effects</f>
+<f=b6 c=lbl>音楽と効果音</f>
 
-<url=http://www.matthewpablo.com>Matthew Pablo - MP Audio Solutions</url>
+<url=http://www.matthewpablo.com>Matthew Pablo - MPオーディオソリューションズ</url>
 <url=http://egoboo.sourceforge.net>Zefz</url>
 <url=https://opengameart.org/users/horrorpen>Horror Pen</url>
 <url=http://www.cynicmusic.com>The Cynic Project</url>
 <url=http://www.littlerobotsoundfactory.com>Little Robot Sound Factory</url>
 
 
-<f=b6 c=lbl>Web Designing & Document Writing</f>
+<f=b6 c=lbl>WEBデザイン＆文書作成</f>
 
 <url=http://www.shinegame.com>Diana Keller</url>
 
 
-<f=b6 c=lbl>Translating</f>
+<f=b6 c=lbl>翻訳</f>
 
-English:
+英語:
 Diana Keller
 poorlunch
 xvim
@@ -362,34 +362,34 @@ SisseL
 <url=mailto:willsama974@gmail.com>Willsama974</url>
 Manny / Eisenwulf
 
-Italiano:
+イタリア語:
 <url=https://business.facebook.com/TigerTraduzioni/>Gruppo T.i.g.e.r.</url>
 Dark Legend
 Chantalion
 The Ripper
 
-French:
+フランス語:
 KillPower
 Targus
 JpDonald
 Soifran
 of http://rpgjeuxvideo.eklablog.fr/low-magic-age-a166591452
 
-Japanese:
+日本語:
 <url=https://synctam.blogspot.com/2017/05/low-magic-age.html>Synctam</url>
 
 
-<f=b6 c=lbl>Reference Rules & Games</f>
+<f=b6 c=lbl>参考ルール＆ゲーム</f>
 
-<url=http://www.wizards.com/default.asp?x=d20/article/srd35>Wizards of the Coast</url> - Open Gaming License of official rules, see section OGL.
-<url=http://www.paizo.com>Paizo</url> - Pathfinder, a set of wonderful third-party rules evolved from the official rules.
-<url=http://www.goddessfantasy.net>Goddess Fantasy</url> - Thanks to the Goddess Fantasy community, one of the most famous TRPG sites of China.
-<url=http://www.wesnoth.org>The Battle for Wesnoth</url> & <url=http://www.ubisoft.com.cn>Heroes of Might and Magic</url> - Some rules and UI.
+<url=http://www.wizards.com/default.asp?x=d20/article/srd35>ウィザーズオブザコースト</url> - 公式ルールのオープンゲーミングライセンスはOGLの項を参照。
+<url=http://www.paizo.com>Paizo</url> - パスファインダーは、公式ルールから発展した素晴らしいサードパーティルールのセットである。
+<url=http://www.goddessfantasy.net>ゴッデスファンタジー</url> - 中国で最も有名な TRPG サイトの 1 つである ゴッデスファンタジー コミュニティに感謝します。
+<url=http://www.wesnoth.org>ザバトルフォーウェスノス</url> & <url=http://www.ubisoft.com.cn>ヒーローズオブマイト＆マジック</url> - いくつかのルールとUI。
 
 
-<f=b6 c=lbl>Others Involved in Making and Testing</f>
+<f=b6 c=lbl>製作とテストに携わったその他の人々</f>
 <c=twa>
-<h3>Game Commentary & Video Production</h3>
+<h3>ゲーム解説＆ビデオ制作</h3>
 <url=http://space.bilibili.com/6917320>kevinjones</url>
 <url=http://space.bilibili.com/504942>SCP166</url>
 <url=http://space.bilibili.com/1445474>Computer_NPC</url>
@@ -398,14 +398,14 @@ Japanese:
 <url=http://space.bilibili.com/14465526>Tang GAME</url>
 
 
-The last but not least, the long-term support and suggestions from our players is the greatest impetus that help us to improve the game. The suggestions and discussions can be browsed in the <url=http://steamcommunity.com/app/576770/discussions/>Steam community</url>.
+最後になりましたが、プレイヤーからの長期的なサポートと提案は、ゲームを改善するための最大の原動力です。ご提案やディスカッションは <url=http://steamcommunity.com/app/576770/discussions/>Steamコミュニティ</url>.
 
 
-<f=b6 c=lbl>Appendix</f>
+<f=b6 c=lbl>付録</f>
 
-<c=twa>Game-Icons.net Icons provided under the Creative Commons 3.0 BY or CC0 if mentioned below.</c>
+<c=twa>Game-Icons.net アイコンはクリエイティブ・コモンズ3.0 BYまたはCC0の下で提供されています。</c>
 
-Icons made by:
+アイコン制作:
 <url=http://lorcblog.blogspot.com>Lorc</url>
 <url=http://delapouite.com>Delapouite</url>
 <url=http://ninmunanmu.com>John Colburn</url>
@@ -428,24 +428,24 @@ Kier Heyl
 Aussiesim]]
 
 
-ogl_diffs=[[<c=twa>このゲームの実際の内容は、多くの点で標準の3.5版のルールから逸脱しています。主な違いは次のとおりです：</c>
+ogl_diffs=[[<c=twa>このゲームの実際の内容は、標準的な3.5ルールから多くの点で逸脱している。主な相違点は以下の通りである。:</c>
 
 
-多くの特技と呪文は削除され、さらに修正と追加があります。
+多くの特技や呪文が削除され、いくつかは修正され、いくつかは追加された。
 
-全てのクリーチャーはHPがゼロになると死亡する。
+すべてのクリーチャーはHPが0で死亡する。
 
-ほとんどの遠隔武器や呪文の最大射程は大幅に減少しています。
+ほとんどの射撃武器や呪文の最大射程距離が大幅に短くなった。
 
-《強打》と突撃はパッシブとなり、選択や実行は必要はありません。
+パワーアタックとチャージはパッシブになった。
 
-大型のクリーチャーは広い間合いを持つことはなく、１スクエアしか占有しません。
+大型クリーチャーは特別な範囲を得ず、1マスしか占有しない。
 
-より多くのクラスとコンテンツが開発中であり、さらに改善されています…
+現在、より多くのクラスやその他のコンテンツが開発・改良されている。
 
 
-<b>次の機能は破棄されたか、まだ実装されていません：</b>
-スクロール、ロッド、ワンド
-《武器落とし》、《武器破壊》
-領域特典、領域呪文
-騎乗]]
+<b>以下の機能は破棄されたか、まだ実装されていない。:</b>
+巻物、魔法のロッド、杖
+武装解除、サンダー
+ドメインパワー、ドメインスペル
+乗馬]]

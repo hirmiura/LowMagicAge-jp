@@ -1,22 +1,22 @@
 -- z_race_pwr
-local s_race_fey		= "<b>エルフの免疫：</b>魔法的なスリープに対する完全耐性を持ち、精神に作用する呪文および効果に対するセーヴに＋2の種族ボーナスを得る。\n<c=twc>Elves have special resistance to enchantment spells or effects.</c>"--Elven Immunities	フェイの血筋
-local s_elf_blood		= "<b>エルフの血筋：</b>For all effects related to race, a half-elf is considered an elf.\n<c=twc>Half-elves, for example, are just as vulnerable to special effects that affect elves as their elf ancestors are, and they can use magic items that are only usable by elves.</c>"
-local s_orc_blood		= "<b>ハーフオークの血筋：</b>For all effects related to race, a half-orc is considered an orc.\n<c=twc>Half-orcs, for example, are just as vulnerable to special effects that affect orcs as their orc ancestors are, and they can use magic items that are only usable by orcs.</c>"
+local s_race_fey		= "<b>Elven Immunities: </b>Immunity to magic sleep effects, and a +2 racial saving throw bonus against enchantment spells or effects.\n<c=twc>Elves have special resistance to enchantment spells or effects.</c>"
+local s_elf_blood		= "<b>Elven Blood: </b>For all effects related to race, a half-elf is considered an elf.\n<c=twc>Half-elves, for example, are just as vulnerable to special effects that affect elves as their elf ancestors are, and they can use magic items that are only usable by elves.</c>"
+local s_orc_blood		= "<b>Orc Blood: </b>For all effects related to race, a half-orc is considered an orc.\n<c=twc>Half-orcs, for example, are just as vulnerable to special effects that affect orcs as their orc ancestors are, and they can use magic items that are only usable by orcs.</c>"
 
 -- z_race
 races_text={
-[race_0			]={n="保留中の種族"	,d="種族はまだ選択されていません。"},
+[race_0			]={n="Pending Race"	,d="No race has been chosen yet."},
 
 [race_hum		]={n=s_hum	,d=s_hum_d
 ,d_fav_cls=[[
-人間は最も順応性が高く、柔軟な種族である。彼らはどんなクラスにも対応できる。
+Humans are the most adaptable and flexible race. They are capable of any class.
 ]]
 ,d_traits=[[
-<b>ボーナス特技：</b> 1レベルで特技を1つ追加。
-<c=twc>人間は専門的な仕事を素早くこなし、その才能も多様である。</c>
+<b>Bonus Feat: </b>One extra feat at 1st level.
+<c=twc>Humans are quick to master specialized tasks and varied in their talents.</c>
 
-<b>ボーナス技能：</b>1レベルで4点の追加技能ポイント、さらに各レベルで1点の追加技能ポイント。
-<c=twc>人間は多才で有能である。
+<b>Bonus Skills: </b>4 extra skill points at 1st level and 1 extra skill point at each additional level.
+<c=twc>Humans are versatile and capable.</c>
 ]]
 ,d_langs=[[
 <b>Automatic Language: </b>Common.
@@ -29,22 +29,22 @@ Humans speak Common. They typically learn other languages as well, including obs
 
 They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elven musical expressions, Dwarven military phrases, and so on.
 ]]
-},--ボーナス技能 Bonus Skills
+},
 
 [race_elf		]={n=s_elf	,d=s_elf_d
 ,n_sub="High Elf"
 ,d_sub="The above information describes the high elf, the most common variety. There are some other major subraces of elf, in addition to half-elves, who share enough elven characteristics to be mentioned here."
 ,d_fav_cls="Wizardry comes naturally to elves — indeed, they sometimes claim to have invented it, and fighter/wizards are especially common among them."
 ,d_traits=[[
-<b c=tg>+2 Dex, <c=tr>–2 Con: </c></b>エルフは、心身共に鋭敏だが、その姿は華奢だ。
+<b c=tg>+2 Dex, <c=tr>–2 Con: </c></b>Elves are graceful but frail. An elf’s grace makes her naturally better at stealth and archery.
 
 ]]..s_race_fey.."\n"..[[
 
-<b>エルフの魔法：</b>呪文抵抗を打ち破る為の術者レベル判定に +2 の種族ボーナスを得る。
+<b>Elven Magic: </b>+2 racial bonus on spell penetration.
 <c=twc>Elves have an innate mastery of magic.</c>]]
 .."\n\n"..xs_lbl_2("s_keen_senses_door"	,"An elf’s senses are so keen that she practically has a sixth sense about hidden portals.")
-.."\n\n"..[[<b>武器精通：</b>エルフはロングソード、レイピア、ロングボウ、ショートボウに精通している。
-<c=twc>エルフは剣舞とアーチェリーの武術を尊重しているため、すべてのエルフはこれらの武器に精通している。</c>
+.."\n\n"..[[<b>Weapon Proficiency: </b>Elves are proficient in longsword, rapier, longbow, and shortbow.
+<c=twc>Elves esteem the arts of swordplay and archery, so all elves are familiar with these weapons.</c>
 ]]
 ,d_langs=[[
 <b>Automatic Languages: </b>Common and Elven.
@@ -59,7 +59,7 @@ Many bards learn Elven so they can add Elven ballads to their repertoires. Other
 
 The Elven script, as flowing as the spoken word, also serves as the script for Sylvan, the language of dryads and pixies, for Aquan, the language of water-based creatures, and for Undercommon, the language of the drow and other subterranean creatures.
 ]]
-},--<b c=tg>+2 Dex, <c=tr>–2 Con: </c></b>Elves are graceful but frail. An elf’s grace makes her naturally better at stealth and archery.
+},
 
 [race_elf_g		]={n="Gray Elf"		,d=[[
 Gray elves are the most noble and regal of all elves. Taller and grander in physical appearance than others of their race, gray elves have a reputation for being aloof and arrogant (even by elven standards).
@@ -210,9 +210,9 @@ Half-drows are not very different from other half-elves. Half-drows usually have
 ,d_sub="The information above is for hill dwarves, the most common variety, also known as shield dwarves in some realms. There are some other major dwarven subraces."
 ,d_fav_cls="Dwarven culture extols the virtues of battle, and the vocation comes easily to dwarves."
 ,d_traits=[[
-<b c=tg>+2 Con, <c=tr>–2 Cha: </c></b>ドワーフは、タフで賢いが、ちょっと無愛想でもある。
+<b c=tg>+2 Con, <c=tr>–2 Cha: </c></b>Dwarves are stout and tough but tend to be gruff and reserved.
 
-<b>ゆっくり着実：</b>ドワーフの基本移動速度は ５スクエアだが、鎧または荷重によって速度が修正されることはない。 《突き飛ばし》や《足払い》攻撃に対し抵抗する場合、+4の種族ボーナスを得る。
+<b>Slow and Steady: </b>Slow speed but never modified by armor or encumbrance. +4 racial bonus against bull rush, drag or trip when standing on the ground.
 <c=twc>Dwarves are exceptionally stable on their feet.</c>]]
 .."\n\n"..xs_lbl_2("s_race_res_spl_2"	,"Dwarves have an innate resistance to magic spells.")
 .."\n\n"..xs_lbl_2("s_race_res_tox_2"	,"Dwarves are hardy and resistant to toxins.")
@@ -220,7 +220,7 @@ Half-drows are not very different from other half-elves. Half-drows usually have
 .."\n\n"..xs_lbl_2("s_race_def_gnt"		,"This bonus represents special training that dwarves undergo, during which they learn tricks that previous generations developed in their battles with giants.")
 .."\n\n"..xs_lbl_2("s_stonecunning"		,"Dwarves have a sixth sense about stonework, an innate ability that they get plenty of opportunity to practice and hone in their underground homes.")
 .."\n\n"..xs_lbl_2("s_craftsman"		,"Dwarves are familiar with valuable items of all kinds, especially those made of stone or metal. Besides, dwarves are especially capable with stonework and metalwork.")
-.."\n\n".."<b>武器精通：</b>ドワーフは、ドワーヴン・ウォーアックスやドワーヴン・アーグロシュを、特殊武器ではなく、軍用武器として扱うことができる。"
+.."\n\n".."<b>Weapon Familiarity: </b>Dwarves may treat dwarven waraxes and dwarven urgroshes as martial weapons, rather than exotic weapons."
 ,d_langs=[[
 <b>Automatic Languages: </b>Common and Dwarven.
 <b>Bonus Languages: </b>Giant, Gnome, Goblin, Orc, Terran, and Undercommon.
@@ -234,7 +234,7 @@ The Dwarven alphabet is also used (with minor variations) for the Gnome, Giant, 
 
 Dwarves often speak the languages of their friends (humans and gnomes) and enemies. Some also learn Terran, the strange language of earth-based creatures such as xorn.
 ]]
-},--<b c=tg>+2 Con, <c=tr>–2 Cha: </c></b>Dwarves are stout and tough but tend to be gruff and reserved.
+},
 
 [race_dwf_m		]={n="Mountain Dwarf"		,d=[[
 Mountain dwarves live deeper under the mountains than hill dwarves but generally not as far underground as deep dwarves.
@@ -283,12 +283,12 @@ Haughty and proud, the gold dwarves have a civilization approaching the peak of 
 ,d_sub="The information above is for rock gnomes, the most common variety. There are some other major gnome subraces."
 ,d_fav_cls="Gnomes are curious and impulsive. They may take up adventuring as a way to see the world or for the love of exploring, and with their natural talent for illusions, many gnomes favor the bard class."--..add_hr("Changed gnomes' favored class from Bard to Sorcerer temporarily.")
 ,d_traits=[[
-<b c=tg>+2 Con, <c=tr>–2 Str: </c></b>ノームは物理的に弱いが驚くほど頑丈であり、彼らの態度は自然で快い。
+<b c=tg>+2 Con, <c=tr>–2 Str: </c></b>Like dwarves, gnomes are tough, but they are small and therefore not as strong as larger humanoids.
 
-<b>幻術の耐性：</b>幻術呪文および幻術効果に対するセーヴに ＋2 の種族ボーナスを得る。
+<b>Illusion Resistance: </b>+2 racial bonus on saving throws against illusions.
 <c=twc>Gnomes are innately familiar with illusions of all kinds.</c>
 
-<b>ノームの魔法：</b>幻術呪文の攻撃ロールに +1 の種族的ボーナスを与える。
+<b>Gnome Magic: </b>+1 DC for all saving throws against illusion spells cast by gnomes.
 <c=twc>Gnomes' innate familiarity with these effects make their illusions more difficult to see through.</c>]]
 .."\n\n"..xs_lbl_2("s_race_atk_gob_kob"	,"Gnomes battle these creatures frequently and practice special techniques for fighting them.")
 .."\n\n"..xs_lbl_2("s_race_def_gnt"		,"This bonus represents special training that gnomes undergo, during which they learn tricks that previous generations developed in their battles with giants.")
@@ -298,7 +298,7 @@ Haughty and proud, the gold dwarves have a civilization approaching the peak of 
 <b>Sharp-Nosed: </b>+2 racial bonus on Craft (alchemy) checks.
 <c=twc>A gnome’s sensitive nose allows him to monitor alchemical processes by smell.</c>
 
-<b>武器精通：</b>ノームは、ノーム・フックト・ハンマーを軍用武器ではなく、特殊武器として扱うことがある。
+<b>Weapon Familiarity: </b>Gnomes may treat gnome hooked hammers as martial weapons rather than exotic weapons.
 ]]
 ,d_langs=[[
 <b>Automatic Languages: </b>Common and Gnome.
@@ -313,7 +313,7 @@ The Gnome language, which uses the Dwarven script, is renowned for its technical
 
 In addition, a gnome can use speak with a burrowing mammal (a badger, fox, rabbit, or the like). This ability is innate to gnomes.
 ]]
-},--<b c=tg>+2 Con, <c=tr>–2 Str: </c></b>Like dwarves, gnomes are tough, but they are small and therefore not as strong as larger humanoids.	Illusion Resistance 幻術の耐性
+},
 
 [race_gnm_f		]={n="Forest Gnome"		,d=[[
 Shy and elusive, forest gnomes shun contact with other races except when dire emergencies threaten their beloved homes.
@@ -339,15 +339,15 @@ They are the smallest of all the gnomes, averaging 2 to 2-1/2 feet in height, bu
 ,d_sub="The information above is for lightfoot halflings, the most common variety. There are some other major halfling subraces."
 ,d_fav_cls="Halflings have long had to rely on stealth, wit, and skill, and the vocation of rogue comes naturally to them."
 ,d_traits=[[
-<b c=tg>+2 Dex, <c=tr>–2 Str: </c></b>ハーフリングは、機敏で強い意志を持つが、彼らの小さな身長故に、他の種族よりも脆弱だ。]]
+<b c=tg>+2 Dex, <c=tr>–2 Str: </c></b>Halflings are quick, agile, and good with ranged weapons, but they are small and therefore not as strong as other humanoids.]]
 
 .."\n\n"..xs_lbl_2("s_hfl_luck"	,"Halflings are surprisingly capable of avoiding mishaps.")
 
-.."\n\n"..[[<b>大胆不敵：</b>ハーフリングは、［恐怖］に対する全てのセーヴに ＋2 の種族ボーナスを得る。このボーナスは、ハーフリングの幸運と累積する。
+.."\n\n"..[[<b>Fearless: </b>+2 morale bonus on saving throws against fear. This bonus stacks with the bonus granted by halfling luck in general.
 <c=twc>Halflings make up for their short stature with an abundance of bravado and curiosity.</c>
 
-<b>ウォースリンガー：</b>投擲武器とスリングの攻撃ロールに＋１の種族ボーナス。
-<c=twc>投擲とスリングはハーフリングの間では普遍的な競技であり、特に優れた射撃能力を身に付けている。</c>
+<b>Warslinger: </b>+1 racial bonus on attack rolls with thrown weapons and slings.
+<c=twc>Throwing and slinging stones is a universal sport among halflings, and they develop especially good aim.</c>
 
 <b>Sure-Footed: </b>+2 racial bonus on Climb, Jump, and Move Silently checks.
 <c=twc>Halflings are agile, surefooted, and athletic.</c>
@@ -366,7 +366,7 @@ Halflings speak their own language, which uses the Common script. They write ver
 
 The halfling oral tradition, however, is very strong. While the Halfling language isn’t secret, halflings are loath to share it with others. Almost all halflings speak Common, since they use it to deal with the people in whose land they are living or through which they are traveling.
 ]]
-},--<b c=tg>+2 Dex, <c=tr>–2 Str: </c></b>Halflings are quick, agile, and good with ranged weapons, but they are small and therefore not as strong as other humanoids.		大胆不敵 +2 morale bonus		Warslinger ウォースリンガー
+},
 
 [race_hfl_t		]={n="Tallfellow"		,d=[[
 Tallfellows are somewhat rare among halfling folk. Tallfellows are 4 feet tall or more, a little more than half as high as a human, and weigh between 30 and 35 pounds.
@@ -446,7 +446,7 @@ Syl halflings are stronger and rougher. They prefer frontal combat to playing tr
 Ferocity runs in a half-orc’s veins.
 ]]
 ,d_traits=[[
-<b c=tg>+2 Str, <c=tr>–2 Int, –2 Cha: </c></b>ハーフオークは強いが、緩慢で粗雑だ。
+<b c=tg>+2 Str, <c=tr>–2 Int, –2 Cha: </c></b>Half-orcs are strong, but their orc lineage makes them dull and crude.
 
 ]]..s_orc_blood
 ,d_langs=[[
@@ -478,7 +478,7 @@ Orc, which has no alphabet of its own, uses Dwarven script on the rare occasions
 ]]
 },
 
-[race_orog		]={n="オログ"					},
+[race_orog		]={n="Orog"				},
 
 [race_gob		]={n=s_gob	,d=s_gob_d
 ,d_fav_cls=[[
@@ -537,8 +537,8 @@ Kobolds fervently worship true dragons and claim that they are scions or distant
 ]]
 },
 
-[race_liz_man	]={n="リザードマン"				},
-[race_gnoll		]={n="ノール"					},
+[race_liz_man	]={n="Lizardfolk"	},
+[race_gnoll		]={n="Gnoll"		},
 
 [race_catfolk	]={n=s_catfolk	,d=s_catfolk_d
 ,d_fav_cls=[[
@@ -563,37 +563,37 @@ Brighter catfolk often learn the languages of gnolls and halflings, who also liv
 ]]
 },
 
-[race_ogre		]={n="オーガ"					},
-[race_troll		]={n="トロール"					},
+[race_ogre		]={n="Ogre"				},
+[race_troll		]={n="Troll"			},
 
-[race_minotaur	]={n="ミノタウロス"				},
-[race_medusa	]={n="メデューサ"					},
+[race_minotaur	]={n="Minotaur"			},
+[race_medusa	]={n="Medusa"			},
 
-[race_ly_wolf	]={n="ワーウルフ"					},
-[race_ly_rat	]={n="ワーラット"					},
+[race_ly_wolf	]={n="Werewolf"			},
+[race_ly_rat	]={n="Wererat"			},
 
-[race_skeleton	]={n="スケルトン"					},
-[race_zombie	]={n="ゾンビ"					},
-[race_ghoul		]={n="グール"					},
-[race_vampire	]={n="ヴァンパイア"				},
-[race_lich		]={n="リッチ"					},
+[race_skeleton	]={n="Skeleton"			},
+[race_zombie	]={n="Zombie"			},
+[race_ghoul		]={n="Ghoul"			},
+[race_vampire	]={n="Vampire"			},
+[race_lich		]={n="Lich"				},
 
-[race_golem		]={n="ゴーレム"					},
-[race_clockwork	]={n="クロックワーク"				},
+[race_golem		]={n="Golem"			},
+[race_clockwork	]={n="Clockwork"		},
 
-[race_elm_a		]={n="エア・エレメンタル"			},
-[race_elm_f		]={n="ファイアー・エレメンタル"		},
-[race_elm_w		]={n="ウォーター・エレメンタル"		},
-[race_elm_e		]={n="アース・エレメンタル"		},
+[race_elm_a		]={n="Air Elemental"	},
+[race_elm_f		]={n="Fire Elemental"	},
+[race_elm_w		]={n="Water Elemental"	},
+[race_elm_e		]={n="Earth Elemental"	},
 
-[race_ant		]={n="ジャイアントアント"			},
-[race_spider	]={n="ジャイアントスパイダー"		},
+[race_ant		]={n="Giant Ant"		},
+[race_spider	]={n="Giant Spider"		},
 
-[race_rat		]={n="ジャイアントラット"			},
-[race_wolf		]={n="ウルフ"					},
-[race_boar		]={n="ボア"						},
-[race_bear		]={n="ベア"						},
+[race_rat		]={n="Giant Rat"		},
+[race_wolf		]={n="Wolf"				},
+[race_boar		]={n="Boar"				},
+[race_bear		]={n="Bear"				},
 
-[race_liz		]={n="リザード"					},
-[race_basilisk	]={n="バジリスク"					},
+[race_liz		]={n="Lizard"			},
+[race_basilisk	]={n="Basilisk"			},
 }

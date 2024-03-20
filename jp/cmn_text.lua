@@ -1,30 +1,30 @@
 -- Settings: default values are ok for most languanges. However, some languanges need modifications. e.g. French needs wider UI for item description.
 --_itm_desc_w	= 320	-- width of description of items. Too wider cause town ui bug when low resolution.
 --_hlp_tree_w	= 400	-- width of tree control of help
-_text_lang		= "jp"	-- 语言标志 用于日文 text language id for jp text
+--_text_lang	= "en"	-- 语言标志 用于日文 text language id for jp text
 
 
--- Punctuation marks with pre/post space depends on language	z_punctuation
-_pm_wsp		=""		-- word space		English words are separated by spaces, e.g. "Low Magic Age"; No spaces between Chinese words, e.g. "低魔时代"
-_pm_cma		="、"	-- comma			or ，
-_pm_dot		="。 "	-- period			need post space for current jp font
-_pm_qm		="？ "	-- question mark	ditto & when used in the middle of a sentence
-_pm_em		="！ "	-- exclamation mark	ditto
-_pm_col		="： "	-- colon			ditto
-_pm_par_b	= "（"	-- parenthesis/parentheses
-_pm_par_e	= "）"
-_pm_bk_b	= "《"	-- 书名号 用于日文 book title mark for jp text
-_pm_bk_e	= "》"
-_pm_dqm_b	="\""	-- double quotation mark begin	todo 「 」 in story_text.lua
-_pm_dqm_e	="\""	-- end
+-- Punctuation marks with pre/post spaces depends on language	z_punctuation
+_pm_wsp		= " "	-- word space	English words are separated by spaces, e.g. "Low Magic Age"; No spaces between Chinese words, e.g. "低魔时代"
+_pm_cma		= ", "	-- comma
+_pm_dot		= ". "	-- period
+_pm_qm		= "? "	-- question mark
+_pm_em		= "! "	-- exclamation mark
+_pm_col		= ": "	-- colon
+_pm_par_b	= " ("	-- parenthesis/parentheses
+_pm_par_e	= ")"
+_pm_bk_b	= "\""	-- 书名号 用于日文 book title mark for jp text
+_pm_bk_e	= "\""
+_pm_dqm_b	= "\""	-- double quotation mark begin
+_pm_dqm_e	= "\""	-- end
 
-_pm_cma_len_u8	= 3	-- utf8 len of _pm_cma
+_pm_cma_len_u8	= 2	-- utf8 len of _pm_cma
 
 
 -- Common Text
-s_none				="なし" s_none_d="This entry is not available."
-s_any				="任意"-- Any
-all					="すべて"
+s_none				="なし" s_none_d="このエントリは利用できません。"
+s_any				="任意"
+all					="全て"
 default_s			="デフォルト"-- del
 s_rd				="ランダム"
 s_found				="発見"
@@ -34,24 +34,24 @@ s_others			="その他"
 s_continue			="続行"
 s_prev_pg			="前のページ"
 s_next_pg			="次のページ"
-more_acts			="その他のアクション..."
-set_qty				="数量の設定"
-total_qty			="総数"
-s_qty_init			="Initial Quantity"
-s_qty_buy			="Purchase Quantity"
-s_open				="オープン"-- Open
-s_close				="近距離"
+more_acts			="その他の行動..."
+set_qty				="数量設定"
+total_qty			="総量"
+s_qty_init			="初期数量"
+s_qty_buy			="購入数量"
+s_open				="開く"
+s_close				="閉じる"
 s_on				="オン"
 s_off				="オフ"
 s_on_off			="オン/オフ"
 s_on_a				="オン"
 s_off_a				="オフ"
-s_small				="小"
-s_large				="大"
+s_small				="小さい"
+s_large				="大きい"
 s_map				="マップ"
-s_uses				="用途"
-s_day_uses			="一日あたりの使用数"
-s_week_uses			="一週あたりの使用数"
+s_uses				="使用量"
+s_day_uses			="1日あたりの使用量"
+s_week_uses			="週あたりの使用量"
 s_day_heal_pts		="1日あたりの回復ポイント"
 s_day_rounds		="1日あたりのラウンド数"
 s_x_per_day			="%d/日"
@@ -59,1986 +59,1990 @@ s_x_per_week		="%d/週"
 s_no_do_now			="今はできません。"
 s_succ_rate			="成功率"
 s_cur				="現在"
-s_ft_a				="ft."
-s_wt_lb				="重量 (lb.)"
-s_overload			="荷重超過"
-s_time_consume		="時間を消費"
-s_time_consume_h	="時間を消費（時）"
+s_ft_a				="フィート"
+s_wt_lb				="重量 (ポンド)"
+s_overload			="過負荷"
+s_time_consume		="消費時間"
+s_time_consume_h	="消費時間 (時間)"
 s_hours				="時間"
-s_spent_x_hours		="%d 時間かかった"
-s_inc_v				="増加"
+s_spent_x_hours		="%d 時間を費やしました。"
+s_inc_v				="増加数"
 s_end_res			="最終結果"
 s_def				="デフォルト"
-s_face_signs		="Show Portrait/Avatar/Signs"
-s_match_face		="Matching Version with Avatars"
+s_face_signs		="ポートレート/アバター/サインを表示"
+s_match_face		="アバターとのマッチング"
 s_old				="旧バージョン"
-s_mod				="ローカルMOD／ワークショップ"
+s_mod				="ローカルMOD/ワークショップ"
 s_scene_cfg			="設定"
-s_scene_cfg_d		="現在のシーンの各種設定。"
-s_see_text			="テキストを見る"
-s_see_in_hlp		= "View in Help..."
-s_secret_rolls_2	="(secret rolls)"-- rolls in secret		hidden rolls
-s_show_menus		="Show Menus"
-s_expand_menus		="Expand Menus"
+s_scene_cfg_d		="現在のシーンのさまざまな設定。"
+s_see_text			="本文を参照"
+s_see_in_hlp		="ヘルプで表示..."
+s_secret_rolls_2	="(シークレットロール)"-- rolls in secret	hidden rolls
+s_show_menus		="メニューを表示"
+s_expand_menus		="メニューを展開する"
 s_act				="アクション"
 s_cust				="カスタム"
-s_adv				="高度"
+s_adv				="上級"
 s_misc				="その他"
-s_more				="More"
-s_get_more			="Get More"
-s_more_opts			="More Options"
-s_cbt_opts			="Combat Options"
-s_act_opts			="Action Options"
-s_def_act			="Default Action"
-s_def_acts			="Default Actions"
-s_start_over		="やり直し"	s_start_over_d	="Back to the first step to restart."
-s_prev_step			="Prev"		s_prev_step_d	="Back to the previous step."
-s_next_step			="次へ"		s_next_step_d	="Go on to the next step."
-s_done				="完了"		s_done_d		="All steps completed and view final results."
-s_lvup_misc			="その他"	s_lvup_misc_d	="Set character name, appearance and alignment, etc."
+s_more				="詳細"
+s_get_more			="詳細はこちら"
+s_more_opts			="その他のオプション"
+s_cbt_opts			="戦闘オプション"
+s_act_opts			="アクションオプション"
+s_def_act			="デフォルトアクション"
+s_def_acts			="デフォルトアクション"
+s_start_over		="最初からやり直す"	s_start_over_d	="最初のステップに戻って再スタートします。"
+s_prev_step			="前へ"			s_prev_step_d	="前のステップに戻ります。"
+s_next_step			="次へ"			s_next_step_d	="次のステップに進みます。"
+s_done				="完了"		s_done_d		="すべてのステップが完了し、最終結果が表示されます。"
+s_lvup_misc			="その他"			s_lvup_misc_d	="キャラクター名や見た目、配置などを設定します。"
 s_pending			="保留中"
 s_rst				="リセット"
-s_rst_arn_stats		="Reset Arena Stats"
-s_powerful			="Powerful"
-s_balanced			="Balanced"
-s_or_				=" or "
-s_text_too			="This text also applies to: "
-s_inc				="Include"
+s_rst_arn_stats		="アリーナ統計をリセット"
+s_powerful			="パワフル"
+s_balanced			="バランス"
+s_or_				=" または "
+s_text_too			="このテキストは以下にも適用されます: "
+s_inc				="含む"
 s_epic				="エピック"
-s_out_rng			="Out of range"
+s_out_rng			="範囲外"
 
-s_lack_gp_			="ゴールドが足りない！"
-s_got_itms_c		="入手した商品"
-s_got_itm_f_		="%sを入手した。"
+s_lack_gp_			="金貨が足りない！"
+s_got_itms_c		="入手アイテム"
+s_got_itm_f_		="%sを取得しました。"
 
-s_act_bar_compact	="Fill Empty Slots"
-s_act_bar_compact_d	="Move actions to front empty slots (if any)."
-s_act_bar_preps		="Auto-update action bar by prepared spells"
-s_show_unpreps		="Show Unprepared Spells"
-s_auto_btl			="Auto-Combat"
-s_auto_btl_d		="No manual control is required, the character fights automatically using its common attack (without using limited resources such as spells, potions, etc.)."
-s_auto_btls			="Auto-Combat"
-s_auto_btls_d		="All characters fight automatically using their common attack (without using limited resources such as spells, potions, etc.).\n\nPress any button or space to abort."
-s_auto_btl_cfg		="Party Auto-Combat Settings"
-s_auto_btl_cfg_d	="Set auto-combat settings of party members."
-s_bounce			="ボーナス"
-s_cd				="Cool-down"
-s_cfm_post			="Are you sure?"
-s_chars				="キャラクター"-- Characters
-s_x_chars			="%d キャラクター"-- Character(s)
-s_novice			="Novice"
-s_veteran			="Veteran"
-s_create			="Create"
-s_details			="Details"
-s_enchantment		="強化"
-s_enemies			="Enemies"
-s_note				="注"
-s_owner				="Owner"
-s_related			="Related"
-s_related_refs		="Related References"
-s_resisted			="Resisted"
-s_special			="Special"
-s_summoner			="召喚者"
-s_summoned			="召喚物"
-s_no_ch				="No Critical Hits"
+s_act_bar_compact	="空きスロットを埋める"
+s_act_bar_compact_d	="アクションを（もしあれば）前の空きスロットに移動する。"
+s_act_bar_preps		="準備された呪文によるアクションバーの自動更新"
+s_show_unpreps		="準備されていない呪文を表示"
+s_auto_btl			="自動戦闘"
+s_auto_btl_d		="手動制御は必要なく、キャラクターは一般的な攻撃を使用して自動的に戦います（呪文やポーションなどの限られたリソースは使用しません）。"
+s_auto_btls			="自動戦闘"
+s_auto_btls_d		="すべてのキャラクターは、共通の攻撃を使用して自動的に戦います (呪文やポーションなどの限られたリソースは使用しません)。\n\n中止するには任意のボタンまたはスペースを押します。"
+s_auto_btl_cfg		="パーティーの自動戦闘設定"
+s_auto_btl_cfg_d	="パーティメンバーの自動戦闘設定を行います。"
+s_bounce			="バウンス"
+s_cd				="クールダウン"
+s_cfm_post			="本当ですか？"
+s_chars				="キャラクター"
+s_x_chars			="%d キャラクター"
+s_novice			="初心者"
+s_veteran			="ベテラン"
+s_create			="作成する"
+s_details			="詳細"
+s_enchantment		="エンチャント"
+s_enemies			="敵"
+s_note				="注記"
+s_owner				="所有者"
+s_related			="関連"
+s_related_refs		="関連資料"
+s_resisted			="レジスト"
+s_special			="特別"
+s_summoner			="召喚"
+s_summoned			="召喚された"
+s_no_ch				="クリティカルヒットなし"
 s_amm_out			="弾切れ"
-s_amm_few			="Short of Ammunition"
-s_amm_few_pty		="Your party is short of ammunition!"
-s_auto_amm			="弾薬のオート・リロード"
-auto_load_ammos		="弾薬のオート・リロード<c=twa> (バックパックに弾薬が含まれている場合)</c>"
-s_bag_full			="Backpack is full!"
-s_cant_fly_to		="Can't fly to the target location!"
-s_show_xp_bar		="Show XP bar"
-s_show_itm_desc		="アイテムの詳細情報を表示する"
-show_itm_desc		="アイテムの詳細情報を表示する <c=twa>(またはALT長押し)</c>"
-s_show_cft_done		="Show craft result prompt"
-s_arn_buy_mat_ex	="Buy special material magic equipment"
-s_arn_cft_max		="Craft to max magic bonus"
-s_arn_cft_amm		="Craft special ammunition"
-s_arn_cft_ovr		="Enchant on rarer equipment"
-s_arn_cft_pc		="Crafting list: equipped items"
-s_arn_cft_bag		="Crafting list: backpack items"
-s_arn_ex			="Expanded Shop"	s_arn_ex_d	="Can purchase and craft more powerful magic items."
+s_amm_few			="弾が不足しています"
+s_amm_few_pty		="パーティーの弾が足りません!"
+s_auto_amm			="弾の自動補充"
+auto_load_ammos		="戦闘後に弾を自動補充<c=twa> (バックパックに弾が入っている場合)</c>"
+s_bag_full			="バックパックがいっぱいです！"
+s_cant_fly_to		="目標地点まで飛べない！"
+s_show_xp_bar		="XPバーを表示"
+s_show_itm_desc		="詳細な商品説明を表示"
+show_itm_desc		="詳細な商品説明を表示 <c=twa>(または Alt キーを押したまま)</c>"
+s_show_cft_done		="クラフト結果のプロンプトを表示"
+s_arn_buy_mat_ex	="特殊な素材の魔法装備を購入する"
+s_arn_cft_max		="クラフトで魔法ボーナスを最大にする"
+s_arn_cft_amm		="特別な弾をクラフトする"
+s_arn_cft_ovr		="よりレアな装備にエンチャントを付ける"
+s_arn_cft_pc		="製作リスト：装備アイテム"
+s_arn_cft_bag		="製作リスト：バックパックアイテム"
+s_arn_ex			="ショップ拡張"	s_arn_ex_d	="より強力な魔法のアイテムを購入して作成できます。"
 
 
 -- z_abi
-s_abis_n="能力値"	s_abis_a="ABIS"	s_abis_d=[[Your character has six abilities: Strength (abbreviated Str), Dexterity (Dex), Constitution (Con), Intelligence (Int), Wisdom (Wis), and Charisma (Cha).
+s_abis_n="アビリティー"	s_abis_a="アビス"	s_abis_d=[[あなたのキャラクターには6つの能力がある： ストレングス（略称STR）、デクスタリティ（DEX）、コンスティテューション（CON）、インテリジェンス（INT）、ウィズダム（WIS）、カリスマ（CHA）である。
 
-Each ability partially describes your character and affects some of his or her actions.
+各能力はあなたのキャラクターを部分的に説明し、その行動の一部に影響を与えます。
 
-Almost every die roll you make is going to be modified based on your character’s abilities.
+ほとんどすべてのダイスは、キャラクターの能力に基づいて修正される。
 
-Each of your character’s above-average abilities gives you a benefit on certain die rolls, and each below-average ability gives you a disadvantage on other die rolls.]]
+キャラクターの平均以上の能力は特定のダイスロールで有利になり、平均を下回る能力は他のダイスロールで不利になります。]]
 
-s_abis_h=s_abis_d.."\n\n\n"..[[<h3 c=ty>Ability Modifiers</h3>
-Each ability, after changes made because of race, has a modifier ranging from –5 to +5.
+s_abis_h=s_abis_d.."\n\n\n"..[[<h3 c=ty>アビリティ修正</h3>
+種族による変更後の各能力には、-5から＋5までの修正が加えられる。
 
-The modifier is the number you apply to the die roll when your character tries to do something related to that ability.
+修正値は、キャラクターがその能力に関連する何かをしようとしたときにダイスロールに適用する数字です。
 
-You also use the modifier with some numbers that aren’t die rolls.
+この修正値は、ダイスの目以外の数字にも使用します。
 
-A positive modifier is called a bonus, and a negative modifier is called a penalty.
-
-
-<h3 c=ty>Abilities and Spellcasters</h3>
-The ability that governs bonus spells depends on what type of spellcaster your character is:
-
-Intelligence for wizards;
-
-Wisdom for clerics, druids, paladins, and rangers;
-
-or Charisma for sorcerers and bards.
-
-In addition to having a high ability score, a spellcaster must be of high enough class level to be able to cast spells of a given spell level. (See the class descriptions for details.)
+正の修正値はボーナスと呼ばれ、負の修正値はペナルティと呼ばれます。
 
 
-<h3 c=ty>Ability Score Changing</h3>
-When an ability score changes, all attributes associated with that score change accordingly.
+<h3 c=ty>アビリティとスペルキャスター</h3>
+ボーナス呪文を司る能力は、あなたのキャラクターがどのタイプのスペルキャスターであるかによって異なります。:
 
-A character does not retroactively get additional skill points for previous levels if she increases her intelligence.]]
+ウィザードのINT;
+
+クレリック、ドルイド、パラディン、レンジャーのWIS;
+
+またはソーサラーやバードのCHA。
+
+高い能力値を持っていることに加えて、スペルキャスターは与えられた呪文レベルの呪文を唱えられるだけの高いクラスレベルを持っていなければならない。(詳細はクラスの説明を参照）。
+
+
+<h3 c=ty>アビリティ値の変更</h3>
+能力値が変化すると、その値に関連するすべての属性もそれに応じて変化する。
+
+INTが上昇しても、そのキャラクターは以前のレベル分のスキルポイントをさかのぼって追加されることはない。]]
 
 s_abis={n=s_abis_n, a=s_abis_a, d=s_abis_d}
 abi=s_abis
 
-str={n="【筋力】", a="STR", d=[[<c=desc>【筋力】はキャラクターの筋力や体の力を表す。 この能力はファイターのような至近距離で戦うクラスにとって特に重要である。 Strength also limits the amount of equipment your character can carry.</c>
+str={n="ストレングス", a="Str", d=[[<c=desc>ストレングスは、キャラクターの筋肉と身体的な力を測定します。この能力は、ファイター、バーバリアン、パラディン、レンジャー、モンクにとって、戦闘で勝利するのに役立つため、特に重要です。ストレングスは、キャラクターが持ち運べる装備の量も制限します。</c>
 
-<h3 c=lbl>【筋力】による修正値は以下のものに適用される:</h3>
+<hb c=ty>キャラクターのSTR修正を適用する:</hb>
 • 近接攻撃ロール。
 
-• Damage rolls when using a melee weapon or a thrown weapon (including a sling). (Exceptions: Off-hand attacks receive only one-half the character’s Strength bonus, while two-handed attacks receive one and a half times the Strength bonus. A Strength penalty, but not a bonus, applies to attacks made with a bow that is not a composite bow.)
+• 近接武器または投擲武器 (スリングを含む) を使用すると、ダメージ ロールが発生します (例外: オフハンド攻撃はキャラクターの STR ボーナスの 2 分の 1 しか受け取りませんが、両手攻撃は 1.5 倍の STR ボーナスを受け取ります。)強化ペナルティは、コンポジットボウではない弓で行われた攻撃に適用されますが、ボーナスではありません。)
 
-• Climb, Jump, and Swim checks. These are the skills that have Strength as their key ability.
+• 登る、ジャンプ、泳ぐチェックは、主な能力としてSTRを持つスキルです。
 
-• Strength checks<z> (for breaking down doors and the like)</z>.]]}
+• STRチェック<z> （ドアなどの破壊に）</z>.]]}
 
-dex={n="【敏捷力】", a="DEX", d=[[<c=desc>【敏捷力】は素早さや反応性、バランスを規定する。 この能力は、アーチャーや機敏なファイターにとって最も重要なものであるが、一般的にライトまたはミディアム・アーマーを着用しているキャラクターや鎧を着用していないキャラクター、そして熟練したアーチャーにとっても有用なものだ。</c>
+dex={n="デクスタリティ", a="Dex", d=[[<c=desc>DEXは手と目の協調性、敏捷性、反射神経、バランス感覚を測定する。この能力はローグにとって最も重要なものだが、軽鎧や中鎧を着用するキャラクター（レンジャーやバーバリアン）、あるいは鎧をまったく着用しないキャラクター（モンク、ウィザード、ソーサラー）、そして熟練したアーチャーになりたい者にとってもリストの上位に入る。</c>
 
-<h3 c=lbl>【敏捷力】による修正値は以下のものに適用される:</h3>
-• 遠隔攻撃ロール。これにはボウやクロスボウ、投擲武器や遠隔呪文も含まれる。
+<hb c=ty>キャラクターのDEX修正を適用する:</hb>
+• 遠距離攻撃ロールには、弓、クロスボウ、投げ斧、その他の遠距離武器による攻撃のロールが含まれます。
 
-• アーマー・クラス（AC)。ただしキャラクターが攻撃に対応できる場合に限る。
+• アーマークラス (AC)、ただし、そのキャラクターがその攻撃に反応できる場合に限る。
 
-• 反応セーヴ。ファイアーボールのような攻撃は素早く動けることで避けることが可能となる。
+• 反射セービングスロー。ファイアボールやその他の攻撃を回避するためのもので、素早く移動することで回避できます。
 
-• Balance, Escape Artist, Hide, Move Silently, Open Lock, Ride, Sleight of Hand, Tumble, and Use Rope checks. These are the skills that have Dexterity as their key ability.]]}
+• バランス、縄抜け、隠れる、静かに移動、開錠、騎乗、手先の巧みさ、転倒、およびロープの使用チェックこれらは、DEXを主要な能力とするスキルです。]]}
 
-con={n="【耐久力】", a="CON", d=[[<c=desc>【耐久力】はキャラクターの健康状態やスタミナを表している。 【耐久力】ボーナスはキャラクターのヒット・ポイントを増加するので、この能力値は全てのクラスにとって重要である。</c>
+con={n="コンスティテューション", a="Con", d=[[<c=desc>CONはキャラクターの健康とスタミナを表します。CONボーナスはキャラクターのヒットポイントを増加させるため、この能力はすべてのクラスにとって重要です。</c>
 
-<h3 c=lbl>【耐久力】による修正値は以下のものに適用される:</h3>
-• レベル毎にヒット・ポイントが増加する (though a penalty can never drop a result below 1—that is, a character always gains at least 1 hit point each time he or she advances in level)。
+<hb c=ty>キャラクターのCON修正を適用すると、:</hb>
+• ヒットダイスを振るたびに（ただし、ペナルティによって結果が1以下になることはない-つまり、キャラクターはレベルが上がるたびに必ず最低1ヒット・ポイントを獲得する）。
 
-• 頑健セーヴ。毒や病気といった危険に耐える。
+• 毒や同様の脅威に抵抗するための、不屈の精神セービングスロー。
 
-• Concentration checks. Concentration is a skill, important to spellcasters, that has Constitution as its key ability.
-
-
-If a character’s Constitution score changes enough to alter his or her Constitution modifier, the character’s hit points also increase or decrease accordingly.]]}
-
-int={n="【知力】", a="INT", d=[[<c=desc>【知力】はキャラクターの学習能力と論理的思考力を表す。 この能力値は呪文使用能力に関わるため、ウィザードにとって重要である。 It’s also important for any character who wants to have a wide assortment of skills.</c>
-
-<h3 c=lbl>【知力】による修正値は以下のものに適用される:</h3>
-• The number of languages your character knows at the start of the game.
-
-• The number of skill points gained each level. (But your character always gets at least 1 skill point per level.)
-
-• Appraise, Craft, Decipher Script, Disable Device, Forgery, Knowledge, Search, and Spellcraft checks. These are the skills that have Intelligence as their key ability.
+• 集中力チェック。集中力は術者にとって重要なスキルであり、その主要な能力としてCONがあります。
 
 
-A wizard gains bonus spells based on her Intelligence score. ウィザードが呪文を発動するには少なくとも 10+呪文レベル以上の【知力】の値を有していなければならない。
+キャラクターのCON値が変化してCON修正値が変更されると、それに応じてキャラクターのヒット ポイントも増減します。]]}
 
-An animal has an Intelligence score of 1 or 2. A creature of humanlike intelligence has a score of at least 3. 戦闘中のクリーチャーの行動パターンと戦略は、【知力】の natural レベルに大きく依存します。【知力】の低いクリーチャーは直感的にしか攻撃しない。 【知力】の高いクリーチャーは戦術的です。]]}
+int={n="インテリジェンス", a="Int", d=[[<c=desc>INTは、キャラクターがどの程度学習し、論理的に理解できるかを決定します。この能力は、呪文を唱えることができる数、呪文に抵抗するのがどれほど難しいか、呪文の威力に影響するため、魔法使いにとって重要です。また、それを望むすべてのキャラクターにとっても重要です。幅広いスキルを身につけられること。</c>
 
-wis={n="【判断力】", a="WIS", d=[[<c=desc>【判断力】は意志力、常識力、思慮分別、直感力を表す。 【判断力】は情報の分析と協調性に関する能力である。Wisdom is the most important ability for clerics and druids, and it is also important for paladins and rangers. If you want your character to have acute senses, put a high score in Wisdom. Every creature has a Wisdom score.</c>
+<hb c=ty>キャラクターのINT修正を適用する:</hb>
+• ゲーム開始時にキャラクターが知っている言語の数。
 
-<h3 c=lbl>【判断力】の修正値は以下のものに適用される:</h3>
-• 意志セーヴ。（チャーム・パーソンなどの呪文の効果を免れるための判定）。
+• レベルごとに得られるスキルポイントの数。(ただし、キャラクターは1レベルにつき少なくとも1スキルポイントを獲得します)。
 
-• Heal, Listen, Profession, Sense Motive, Spot, and Survival checks. These are the skills that have Wisdom as their key ability.
-
-
-Clerics, druids, paladins, and rangers get bonus spells based on their Wisdom scores. The minimum Wisdom score needed to cast a cleric, druid, paladin, or ranger spell is 10 + the spell’s level.]]}
-
-cha={n="【魅力】", a="CHA", d=[[<c=desc>【魅力】はキャラクターの個性の強さ、人を惹きつける力、統率力、そして外見の美しさを表す。 この能力は人格の実際の強さを表しているのであって、単に社会的環境の中で他人がその人をどのように認識しているかということではない。Charisma is most important for paladins, sorcerers, and bards. クレリックにとってもターン・アンデッドの能力に影響するため重要である。 Every creature has a Charisma score.</c>
-
-<h3 c=lbl>【魅力】による修正値は以下のものに適用される:</h3>
-• Bluff, Diplomacy, Disguise, Gather Information, Handle Animal, Intimidate, Perform, and Use Magic Device checks. These are the skills that have Charisma as their key ability.
-
-• Checks that represent attempts to influence others.
-
-• Turning checks for clerics and paladins attempting to turn zombies, vampires, and other undead.
+• 鑑定、工芸、文字の解読、仕掛けの無効化、偽造、知識、探索、呪文チェック。これらはINTを主要能力とする技能である。
 
 
-Sorcerers and bards get bonus spells based on their Charisma scores. ソーサラー or bardの呪文発動に必要な最低の【魅力】は１０＋呪文のレベルである。]]}
+ウィザードはINT値に基づいてボーナス呪文を得る。ウィザードの呪文を唱えるのに必要な最低INTは10＋その呪文のレベルである。
 
-s_ag_phy		="身体"
-s_ag_psy		="精神"
-s_ag_all		="すべて"
-phy_abis		={n="身体能力"}
-psy_abis		={n="精神的能力"}
-all_abis		={n="すべての能力"}
-s_abis_base		="基本能力"-- Base Abilities
-s_abis_preset	="Preset Abilities"
+動物のINT値は1か2である。戦闘におけるクリーチャーの行動パターンや戦略は、その生来のINTのレベルに大きく依存する。INTの低いクリーチャーは本能的に攻撃するだけである。高いINTを持つクリーチャーはより戦術的である。]]}
 
-s_abi_dmg		={n="能力ダメージ", d="攻撃の中には、対戦相手の能力値を一時的に減少させるものがある。能力ダメージで失われたポイントは、戦闘後に自動的に回復します、また治癒呪文で能力ダメージを回復することもできます。"}
-s_drain			="吸収"
+wis={n="ウィズダム", a="Wis", d=[[<c=desc>WISは、キャラクターの意志の強さ、常識、知覚、直感を表す。INTが情報を分析する能力を表すのに対して、WISは周囲の環境に同調し、認識する能力を表す。WISはクレリックやドルイドにとって最も重要な能力であり、パラディンやレンジャーにとっても重要である。キャラクターに鋭敏な感覚を持たせたいのであれば、WISに高得点を入れよう。すべてのクリーチャーはWIS値を持っている。</c>
 
-s_most_drop_to	="少なくても %d に下がる"
+<hb c=ty>キャラクターのWIS修正を適用する:</hb>
+• 意志のセーヴィングスロー(チャームパーソンや他の呪文の効果を打ち消すため)。
+
+• 治癒、聞き耳、専門職、動機の感知、見破る、生存チェックこれらは、重要な能力としてWISを持つスキルです。
 
 
-xp					={n="経験値"	,d="経験値(XP)は、どれだけの経験を積み、どのくらい成長したのかを示す値です。\n\n通常、様々な敵を倒すことによってXPを得ます。冒険を繰り返すことによりXPが蓄積されます。一定の量のXPを獲得すると、キャラクターはレベルアップします。"}
-s_get_xp_ppc_d		="キャラクターごとに <c=y>%d</c> のXPを得た。"
-s_pc_lv				="キャラクター・レベル"
-s_pc_lv_d2			="キャラクター・レベル/2"
-s_pc_lv_d			= [[キャラクター・レベルは、キャラクターの総合的な強さを測定する最も直感的な値です。
+クレリック、ドルイド、パラディン、レンジャーは、WIS値に基づいてボーナス呪文を取得します。クレリック、ドルイド、パラディン、レンジャーの呪文を唱えるために必要なWIS値の最小値は、10 + 呪文のレベルです。]]}
 
-レベルの獲得は、最も大きな報酬の1つです。 レベルを上げると、キャラクターは様々な項目が強化されます。能力値が上昇し、場合によっては新しい特技や呪文を覚えることができます。
+cha={n="カリスマ", a="Cha", d=[[<c=desc>CHAとは、キャラクターの個性の強さ、説得力、個人的な魅力、指導力、身体的な魅力などを測るものである。この能力は、単に社会的な場において他者からどのように認識されるかではなく、実際の人格の強さを表す。カリスマはパラディン、ソーサラー、バードにとって最も重要である。また、ターンアンデッド能力に影響するため、クレリックにとっても重要である。すべてのクリーチャーはカリスマ値を持っている。</c>
 
-<b c=ty>レベル毎：</b>ヒット・ポイントが上昇（base on class, Con score, etc.）。
+<hb c=ty>キャラクターのCHA修正を適用する:</hb>
+• はったり、外交、変装、情報収集、動物の扱い、威嚇、魔法の装置チェックの実行、および使用 これらは、主要な能力としてCHAを持つスキルです。
 
-<b c=ty>3レベル毎：</b>特技が +1（other than class bonus feats）。
+• 他人に影響を与えようとする試みを表すチェック。
 
-<b c=ty>4レベル毎：</b>能力値が +1。
+• ゾンビ、ヴァンパイア、その他のアンデッドを倒そうとするクレリックやパラディンのターンチェック。
 
-<b c=ty>10レベル毎(a tier)：</b>ダメージ、ダメージ軽減、耐性の様々な一定値（武器、《武器開眼》ボーナスなど）が 1倍ずつ増加する。]]
+
+ソーサラーとバードはカリスマ値に基づいてボーナス呪文を取得します。ソーサラーまたはバードの呪文を唱えるために必要な最小カリスマ値は 10 + 呪文のレベルです。]]}
+
+s_ag_phy		="フィジカル"
+s_ag_psy		="メンタル"
+s_ag_all		="オールマイティー"
+phy_abis		={n="フィジカルアビリティ"}
+psy_abis		={n="メンタルアビリティ"}
+all_abis		={n="オールアビリティ"}
+s_abis_base		="ベースアビリティ"
+s_abis_preset	="プリセットアビリティ"
+
+s_abi_dmg		={n="アビリティダメージ", d="一部の攻撃は、相手の 1 つ以上の能力の値を一時的に減少させます。能力ダメージによって失われたポイントは戦闘後に自動的に回復され、回復呪文も能力ダメージを相殺します。"}
+s_drain			="ドレイン"
+
+s_most_drop_to	= "最大 %d まで低下します"
+
+
+xp					={n="経験値"	,d="経験値 (XP) は、どれだけ学んだか、そして個人の力がどれだけ成長したかを測定します。\n\n通常、モンスターや他の敵を倒すことで XP を獲得します。冒険ごとに XP が蓄積されます。十分な XP を獲得すると、新しいキャラクターレベルに到達します。"}
+s_get_xp_ppc_d		="キャラクターごとに <c=y>%d</c> XP を獲得しました。"
+s_pc_lv				="キャラクターレベル"
+s_pc_lv_d2			="キャラクターレベル/2"
+s_pc_lv_d			=[[キャラクターレベルは、キャラクターの総合的な強さを測る最も直感的な値です。
+
+レベルを獲得することは、あなたが受け取る最も大きな報酬の1つです。レベルが上がると、キャラクターは様々な面で向上します。能力値が上がることもありますし、新しい特技や新しい呪文などを得ることもよくあります。
+
+<b c=ty>レベルごと:</b>より多くのヒットポイントを獲得します (クラス、CON値などに基づいて)。
+
+<b c=ty>3 レベルごと:</b>1 つの特技を獲得します (クラスボーナス特技を除く)。
+
+<b c=ty>4 レベルごと:</b>能力値の 1 つに +1。
+
+<b c=ty>10 レベル (ティア) ごと: </b>ダメージ、ダメージ軽減または耐性(武器ベースダメージ、武器特化などのダメージボーナスを含む)の各種定数値が1回増加します。]]
 s_lv				="レベル"
-s_tier				="Tier"
-	lv={n=s_lv, a="Lv", d="<h1 c=ty>キャラクター・レベル</h1>"..s_pc_lv_d}
-s_cls_lv			="クラス・レベル"
+s_tier				="ティア"
+	lv={n=s_lv, a="Lv", d="<h1 c=ty>キャラクターレベル</h1>"..s_pc_lv_d}
+s_cls_lv			="クラスレベル"
 avg_lv				="平均レベル"
 chlg_lv				="チャレンジレベル"-- This shows the average level of the player party for which the creatures would make an encounter of moderate difficulty.
-s_need_pc_lv		="冒険者の推奨レベル"
-pc_lv_max			="キャラクターのレベルの上限"
-lv_maxed			="最大レベル"
+s_need_pc_lv		="冒険者の望ましいレベル"
+pc_lv_max			="キャラクターレベルキャップ"
+lv_maxed			="レベルマックス"
 lv_fmt				="レベル %d"
 s_per_lv_a			="/lv"
-s_tgt_lv_le			="対象のレベル ≦ 術者のレベル %+d"
-s_lv_chk			="レベル判定"			s_lv_chk_d	=""
-s_lv_up_x			="Batch Level Up"	s_lv_up_x_d	="Select characters with a pre-build and level up to a specified level automatically."
-pc_lv_post_std		=" (Standard)"
-pc_lv_post_epic		=" (Epic)"
+s_tgt_lv_le			="対象のレベル ≤ 術者のレベル %+d"
+s_lv_chk			="レベルチェック"	s_lv_chk_d	=""
+s_lv_up_x			="一括レベルアップ" s_lv_up_x_d="プリビルドでキャラクターを選択すると、指定したレベルまで自動的にレベルアップします。"
+pc_lv_post_std		="(スタンダード)"
+pc_lv_post_epic		=" (エピック)"
 
 
-s_bank_balance		="Bank Balance"
-s_itms_sum_g		="Total Value of Items"
-s_total_assets		="Total Assets"
+s_bank_balance		="銀行預金残高"
+s_itms_sum_g		="アイテムの合計金額"
+s_total_assets		="総資産"
 
-s_bar				="Toolbar"
-s_top				="Top"
-s_show_all_btns		="Show All Buttons"
-s_expand_all		="Expand All"
-s_collapse_all		="Collapse All"
-s_exp_clp_all		="Expand/Collapse All\n\nHold Alt to expand to view other information temporarily."
-s_show_all			="Show All"
-s_hide_all			="Hide All"
-s_hide_0s			="Hide Empty Items"
-s_u_xs_wip_pwrs		="Show WIP 特技/特徴"
-s_sacts				="Special Actions"	s_sacts_d	="In addition to basic attacks and other common actions, some characters have unusual abilities, such as special attacks and spells."
-s_traits			="特徴"	s_traits_d	="特徴とは、他のクリーチャーにはない特別な能力やボーナスです。"
-s_conds				="状態"	s_conds_d	="状態には、一時的なボーナス、ペナルティ、継続的なダメージや複数の効果の組み合わせがあります。"
-s_dtls				="詳細"	s_dtls_d	="More detailed information."
-s_feats				="特技"	s_feats_d	="特技は新しい能力を取得したり、取得済の能力を強化させる事ができる。"
-s_spls				="呪文"	s_spls_d	="呪文は、魔法（ウィザードによるキャスト）と信仰（クレリックによるキャスト）の2種類ある。"
-s_spl_list			="呪文一覧"
-s_spellcasting		="呪文発動"-- Spellcasting
-s_bg_img			="Background Image"
-s_atks_info			="Attacks Information"
+s_bar				="ツールバー"
+s_top				="トップ"
+s_show_all_btns		="すべてのボタンを表示"
+s_expand_all		="すべて展開"
+s_collapse_all		="すべて折りたたむ"
+s_exp_clp_all		="すべて展開/折りたたむ\n\nAlt キーを押しながら展開すると、他の情報が一時的に表示されます。"
+s_show_all			="すべて表示する"
+s_hide_all			="すべて隠す"
+s_hide_0s			="空のアイテムを非表示にする"
+s_u_xs_wip_pwrs		="WIPの特徴/特性を表示する"
+s_sacts				="特別なアクション"	s_sacts_d	="基本的な攻撃やその他の一般的なアクションに加えて、一部のキャラクターは特別な攻撃や呪文などの珍しい能力を持っています。"
+s_traits			="特性"		s_traits_d	="特性とは、他の生き物が持っていない特別な能力またはボーナスです。"
+s_conds				="状態"	s_conds_d	="状態は、一時的なボーナスやペナルティ、継続的なダメージ、またはその組み合わせの効果を課す。"
+s_dtls				="詳細"		s_dtls_d	="さらに詳しい情報。"
+s_feats				="特技"		s_feats_d	="特技は、新しい能力を与えたり、すでに持っている能力を向上させたりする特別な機能である。"
+s_spls				="呪文"		s_spls_d	="呪文は 1 回限りの魔法の効果で、アーケイン (ウィザードが唱える) と神聖 (クレリックが唱える) の 2 種類があります。"
+s_spl_list			="呪文リスト"
+s_spellcasting		="呪文の詠唱"
+s_bg_img			="背景画像"
+s_atks_info			="攻撃情報"
 
-s_combine_atks		="Combine Same Type Attacks"
-s_show_wpn_bns		="Show Weapon Magic Bonus"
-s_show_wpn_ico		="Show Weapon Icon"
-s_show_wpn_name		="Show Weapon Name"
+s_combine_atks		="同じタイプの攻撃を組み合わせる"
+s_show_wpn_bns		="武器魔法ボーナスを表示"
+s_show_wpn_ico		="武器アイコンを表示"
+s_show_wpn_name		="武器名を表示"
 
-s_max_atk_m			="Max Melee Attack"		s_max_atk_m_d	="Theoretical maximum melee attack bonus when you use the most suitable weapon."
-s_max_atk_r			="Max Ranged Attack"	s_max_atk_r_d	="Theoretical maximum ranged attack bonus when you use the most suitable weapon."
-s_tatk				="Touch Attack"	s_tatk_d	=[[Some attacks disregard armor, including shields and natural armor. In these cases, the attacker makes a touch attack roll (either ranged or melee).
+s_max_atk_m			="最大近接攻撃力"		s_max_atk_m_d	="最適な武器を使用した場合の理論上の最大近接攻撃ボーナス。"
+s_max_atk_r			="最大遠距離攻撃力"	s_max_atk_r_d	="最適な武器を使用した場合の理論上の最大遠距離攻撃ボーナス。"
+s_tatk				="接触攻撃"	s_tatk_d	=[[一部の攻撃では、盾や肉体鎧などの鎧が無視され、その場合、攻撃者は接触攻撃ロール (遠距離攻撃または近接攻撃のいずれか) を行います。
 
-The opponent’s AC against a touch attack doesn’t include any armor bonus, shield bonus, or natural armor bonus. All other modifiers, such as its size modifier, Dexterity modifier, and deflection bonus (if any) all apply normally.]]
-s_tatk_m			="Melee Touch Attack"
-s_tatk_r			="Ranged Touch Attack"
-s_ac				="アーマー・クラス"	s_ac_a	="AC"	s_ac_d	=[[Your Armor Class (AC) represents how hard it is for opponents to land a solid, damaging blow on you. It’s the attack roll result that an opponent needs to achieve to hit you.
+接触攻撃に対する相手のACには、アーマーボーナス、シールドボーナス、肉体鎧ボーナスは含まれない。サイズ修正値、DEX修正値、（もしあれば）偏向ボーナスなど、他の修正値はすべて通常通り適用される。]]
+s_tatk_m			="近接接触攻撃"
+s_tatk_r			="遠距離接触攻撃"
+s_ac				="アーマークラス"	s_ac_a	="AC"	s_ac_d	=[[あなたのアーマークラス（AC）は、対戦相手があなたにダメージを与える一撃を加えるのがどれだけ難しいかを表している。これは、対戦相手があなたに打撃を与えるために必要な攻撃ロールの結果である。
 
-Your AC is equal to the following: 10 + armor bonus + shield bonus + Dexterity modifier + size modifier + other modifiers.
+あなたのACは以下の値に等しい： 10＋アーマーボーナス＋シールドボーナス＋DEX修正＋サイズ修正＋その他の修正。
 
-Note that armor limits your Dexterity bonus, so if you’re wearing armor, you might not be able to apply your whole Dexterity bonus to your AC.
+アーマーはDEXのボーナスを制限するので、アーマーを着ている場合、DEXのボーナスのすべてをACに適用できないことがある。
 
-Sometimes you can’t use your Dexterity bonus (if you have one). If you can’t react to a blow, you can’t use your Dexterity bonus to AC. (If you don’t have a Dexterity bonus, nothing happens.)
+場合によっては、DEXボーナス (持っている場合) を使用できないことがあります。 打撃に反応できない場合、AC にDEXボーナスを使用することはできません。 (DEXボーナスがない場合は何も起こりません。)
 
 
-<c=ty b>Other Modifiers: </c>Many other factors modify your AC.
+<c=ty b>その他の修正: </c>他にも多くの要因がACを変化させる。
 
-<c=ty>Enhancement Bonuses: </c>Enhancement effects make your armor better.
+<c=ty>エンハンスメントボーナス: </c>エンハンスメント効果により防具が強化されます。
 
-<c=ty>Deflection Bonus: </c>Magical deflection effects ward off attacks and improve your AC.
+<c=ty>ディフレクションボーナス: </c>魔法のディフレクション効果で攻撃を防ぎ、AC を向上させます。
 
-<c=ty>Natural Armor: </c>Natural armor improves your AC.
+<c=ty>肉体鎧: </c>肉体鎧はACを向上させます。
 
-<c=ty>Dodge Bonuses: </c>Some other AC bonuses represent actively avoiding blows. These bonuses are called dodge bonuses. Any situation that denies you your Dexterity bonus also denies you dodge bonuses. (Wearing armor, however, does not limit these bonuses the way it limits a Dexterity bonus to AC.) Unlike most sorts of bonuses, dodge bonuses stack with each other.]]
-s_tc				="アーマー・クラス (Touch)"	s_tc_d	=s_tatk_d
-s_fc				="アーマー・クラス (Flat-Footed)"	s_fc_d	="While flat-footed, you can’t use your Dexterity bonus to AC (if any) and can’t make attacks of opportunity.\n\nSpecial: Barbarians and rogues have the uncanny dodge extraordinary ability, which allows them to avoid losing their Dexterity bonus to AC due to being flat-footed."
-s_atks				="攻撃"	s_atks_d	=[[攻撃ロールには攻撃ボーナスが使用される。
+<c=ty>ドッジボーナス: </c>その他のACボーナスの中には、積極的に打撃を避けることを表すものがある。これらのボーナスはドッジボーナスと呼ばれる。DEXのボーナスを否定するような状況では、ドッジボーナスも否定される。(ただし、アーマーを着用していても、ACへのDEXボーナスが制限されるように、これらのボーナスが制限されることはない)。他の種類のボーナスと異なり、ドッジボーナスは互いにスタックする。]]
+s_tc				="アーマークラス（接触）"			s_tc_d	=s_tatk_d
+s_fc				="アーマークラス（立ちすくみ）"	s_fc_d	="立ちすくみの間、AC へのDEXボーナス (ある場合) を使用することはできず、機会攻撃を行うこともできません。\n\n特別: バーバリアンやローグは驚異的な回避能力を持っており、これにより彼らは体力を失うことを避けることができます。 立ちすくみであるためACにDEXボーナス。"
+s_atks				="攻撃"	s_atks_d	=[[攻撃ボーナスは攻撃ロールに使用されます。
 
-攻撃のロールは、相手を攻撃しようとする時に相当する：
-d20ロール + 攻撃ボーナス + その他の修正値。
-結果がターゲットのアーマー・クラスより大きければ、 攻撃が成功しダメージを与える。
+攻撃ロールは、対戦相手を攻撃しようとする試みを表します。:
+d20 + 攻撃ボーナス + その他の修正をロールします。
+結果>=ターゲットのアーマークラスの場合、ヒットしてダメージを与えます。
 
-自動失敗と自動成功：
-ダイスの目が1（d20で出目が1）の場合は必ず失敗となる。
-ダイスの目が20（d20 で出目が20）の場合は必ず成功となる。]]
-s_defs				="防御"	s_defs_d	=[[アーマー・クラス（AC）は、敵がプレーヤーに有効な打撃を加えるのがどれくらい難しいのかを表している。
+自動ミスとヒット:
+ファンブル (d20 が 1 になる) は常にミスです。
+クリティカル (d20 は 20 になります) は常にヒットします。]]
+s_defs				=s_ac	s_defs_a	=s_ac_a	s_defs_d	=[[あなたのアーマー クラス (AC) は、敵があなたを武器で攻撃するのがどれだけ難しいかを表します。
 
-これは複数の要因で構成される包括的な値である：
+複数の修正から構成される総合的な値です:
 
-- 鎧と盾のボーナス：鎧と盾はACにボーナスを与える。 このボーナスは攻撃から守る能力を表している。
+- アーマーとシールドのボーナス: アーマーとシールドはそれぞれ、AC にボーナスを提供します。 このボーナスは、打撃からあなたを守る彼らの能力を表します。
 
-- 【敏捷力】による修正値：【敏捷力】が高ければ、攻撃を回避することに精通している。【敏捷力】が低ければ、回避は望めない。それが【敏捷力】による修正値をACに適用する理由である。
+- DEXの修正： DEXが高ければ打撃をかわすのに長けている。もしDEXが低ければ、あなたはそれが不得手である。そのため、DEXの修正をACに適用する。
 
-- その他の修正値：特技やワンダラス・アイテムからの他の多くの要因がACを修正する。例えば、回避ボーナス、反発ボーナス、外皮など。]]
+- その他の修正: 特技や素晴らしいアイテムによる他の多くの要素 (回避ボーナス、ディフレクションボーナス、肉体鎧など) が AC を修正します。]]
 
-s_hp				="ヒット・ポイント"			s_hp_d		="ヒット・ポイントは、あなたを倒すのがどれほど難しいかを示す値。ヒット・ポイントがゼロになると死亡します。"
-s_init				="イニシアチブ"				s_init_d	="戦闘の開始時に、参加者はイニシアティブ判定をロールします：基本イニシアチブ + d20。 ベースイニシアチブ ＝ 【敏捷力】修正値 ＋ 他の修正値。\n\n続く各ラウンドでは、キャラクターがイニシアティブを変更するアクションを取らない限り、同じ順序で行動します。"
-s_save_ft			="頑健"						s_save_ft_d	="頑健は、［毒］、病気、石化などの活力と健康に対する肉体的攻撃や効果に立ち向かう能力の指標となります。\n\nこれは【耐久力】の能力に関係します。"
-s_save_rf			="反応"						s_save_rf_d	="反応は、ファイアーボール、蜘蛛の巣、ブレス攻撃などのは範囲攻撃や効果をかわす能力を示す。\n\nこれは【敏捷力】能力に関係します。"
-s_save_wl			="意志"						s_save_wl_d	="意志は精神的影響への抵抗や、［催眠］や［魅了］などの多くの魔法の影響が反映されます。\n\nこれは【判断力】能力に関係します。"
-s_bab				="Base Attack Bonus"		s_bab_d		="An attack roll bonus derived from character class and level. Base attack bonuses (BAB) increase at different rates for different character classes.\n\nBase attack bonuses gained from different classes, such as when a character is a multiclass character, stack.\n\nA character gains extra attacks when his base attack bonus reaches +6, +11 and +16."
-s_bsb				="Base Save Bonus"			s_bsb_d		="A saving throw modifier derived from character class and level. Base save bonuses increase at different rates for different character classes.\n\nBase save bonuses gained from different classes, such as when a character is a multiclass character, stack."
-s_bab_ex			="Base Attack Bonus (Epic)"	s_bab_ex_d	="Before 20th level (including 20th), this value is equal to your base attack bonus.\n\nAfter 20th level, this value is equal to the sum of your base attack bonus and epic attack bonus.\n\nAny time feat, prestige class, or other rule refers to your base attack bonus (except for gaining additional attacks), use this value instead."
-s_epic_bns			="Epic Bonus"
-s_bab_atk			="Extra Attack"
-s_bab_good			="Good"
-s_bab_avrg			="Average"
-s_bab_poor			="Poor"
-s_save_good			="Good"
-s_save_poor			="Poor"
-s_good_bab			="Good BAB"
-s_avrg_bab			="Average BAB"
-s_poor_bab			="Poor BAB"
-s_good_saves		="Good Saves"
-s_poor_saves		="Poor Saves"
-s_save_throw_f		="%sロール："
-s_sm_chk			="〈真意看破〉判定"	s_sm_chk_d	=""
-s_bab_bsb_tbl		="Table: Attack Bonus and Save Bonus Increases"
-s_atk_bns_inc		="Attack Bonus Increases"
-s_atk_bns_inc_d		=[[A character's attack bonus increases in different ways before and after 20th character level.
+s_hp				="ヒットポイント"				s_hp_d		="ヒットポイントは、あなたがどれだけ殺されにくいかを示す。ヒットポイントが0になると死ぬ。"
+s_init				="イニシアチブ"				s_init_d	="戦闘の開始時に、各戦闘員は基本イニシアチブ + d20 というイニシアチブロールを行います。 基本イニシアチブ = DEX修正値 + その他の修正値。\n\nイニシアティブのロール後、キャラクターは順番に行動し、最高の結果から最低の結果までカウントダウンします。 その後のすべてのラウンドで、キャラクターは同じ順序で行動します (キャラクターがイニシアチブを変える行動をとらない限り)。"
+s_save_ft			="忍耐力"				s_save_ft_d	="忍耐力は、体罰や、毒、病気、石化などの活力や健康に対する影響に耐える能力を測定します。\n\nこれは、CONの能力に関連しています。"
+s_save_rf			="反射神経"					s_save_rf_d	="反射神経は、火の玉、ウェブ、ブレス攻撃などの範囲攻撃や効果を回避する能力をテストします。\n\nこれはDEXの能力に関連しています。"
+s_save_wl			="意志"						s_save_wl_d	="意志は、精神的な影響や、睡眠や魅了などの多くの魔法の効果に対するあなたの抵抗力を反映します。\n\nそれはあなたのWISの能力に関連しています。"
+s_bab				="基本攻撃ボーナス"		s_bab_d		="キャラクターのクラスとレベルから派生する攻撃ロールボーナス。 基本攻撃ボーナス (BAB) は、キャラクタークラスごとに異なる割合で増加します。\n\nキャラクターがマルチクラスキャラクターである場合など、さまざまなクラスから得られる基本攻撃ボーナスは重複されます。\n\nキャラクターは基本攻撃時に追加の攻撃を獲得します。 ボーナスは+6、+11、+16に達します。"
+s_bsb				="基本セーブボーナス"			s_bsb_d		="キャラクターのクラスとレベルから派生したセーヴィングスロー修正。 基本セーブボーナスは、キャラクタークラスごとに異なる割合で増加します。\n\nキャラクターがマルチクラスキャラクターである場合など、さまざまなクラスから得られる基本セーブボーナスは重複されます。"
+s_bab_ex			="基本攻撃ボーナス (エピック)"	s_bab_ex_d	="レベル 20 より前 (20 レベルを含む)、この値は基本攻撃ボーナスと等しくなります。\n\nレベル 20 以降、この値は基本攻撃ボーナスとエピック攻撃ボーナスの合計に等しくなります。\n\nいつでも特技、名声 クラス、または他のルールが基本攻撃ボーナス (追加攻撃の獲得を除く) を参照している場合は、代わりにこの値を使用してください。"
+s_epic_bns			="エピックボーナス"
+s_bab_atk			="エクストラ攻撃"
+s_bab_good			="良好"
+s_bab_avrg			="平均"
+s_bab_poor			="悪い"
+s_save_good			="良好"
+s_save_poor			="悪い"
+s_good_bab			="良好基本攻撃ボーナス"
+s_avrg_bab			="平均基本攻撃ボーナス"
+s_poor_bab			="悪い基本攻撃ボーナス"
+s_good_saves		="良好セーブ"
+s_poor_saves		="悪いセーブ"
+s_save_throw_f		="%s %s をセーブ: "
+s_sm_chk			="看破チェック"	s_sm_chk_d	=""
+s_bab_bsb_tbl		="表: 攻撃ボーナスとセーブボーナスの増加"
+s_atk_bns_inc		="攻撃ボーナス増加"
+s_atk_bns_inc_d		=[[キャラクターの攻撃ボーナスは、キャラクターレベルが 20 になる前後でさまざまな方法で増加します。
 
-<b c=ty>Base Attack Bonus (BAB):</b>
-Before 20th level (including 20th), based on class or creature type, a character’s BAB is equal to his level (good as fighter), or 3/4 (average as cleric), or 1/2 (poor as wizard).
+<b c=ty>基本攻撃ボーナス (BAB):</b>
+20レベル（20レベルを含む）より前は、クラスまたはクリーチャータイプに基づいて、キャラクターの基本攻撃ボーナスはそのレベル（ファイターとして優れている）、または3/4（クレリックとして平均）、または1/2（ウィザードとして劣っている）に等しい。
 
-At 20th level, good BAB is equal to +20, average BAB is equal to +15,  and poor BAB is equal to +10.
-For a multiclass character, the BAB for each class are cumulative.
+20 レベルでは、良好な基本攻撃ボーナスは +20、平均基本攻撃ボーナスは +15、悪い基本攻撃ボーナスは +10 になります。
+マルチクラスキャラクターの場合、各クラスの基本攻撃ボーナスは累積されます。
 
-At BAB +6, +11 and +16, the character gains an extra attack each, but each extra attack has a BAB 5 lower than the previous one, and extra attacks are only for full attack actions.
+基本攻撃ボーナス +6、+11、+16 では、キャラクターはそれぞれ追加攻撃を獲得しますが、各追加攻撃の基本攻撃ボーナスは前の攻撃よりも 5 低くなり、追加攻撃はフル攻撃アクションのみに適用されます。
 
-At 20th level:
-Good BAB: 4 attacks with BAB +20/+15/+10/+5;
-Average BAB: 3 attacks with BAB +15/+10/+5;
-Poor BAB: 2 attacks with BAB +10/+5;
+20 レベルの場合:
+優れた基本攻撃ボーナス:基本攻撃ボーナス +20/+15/+10/+5 で 4 回の攻撃;
+平均基本攻撃ボーナス:基本攻撃ボーナス +15/+10/+5で3回の攻撃;
+悪い基本攻撃ボーナス:基本攻撃ボーナス +10/+5 で 2 回の攻撃;
 
-<b c=ty>Epic Attack Bonus:</b>
-After 20th level, a character’s BAB and attacks do not increase. However, he does receive a cumulative +1 epic bonus on all attack rolls every odd-numbered level after 20th (+1 at 21th, +2 at 23th, ...).]]
-s_save_bns_inc		="Save Bonus Increases"
-s_save_bns_inc_d	=[[A character's save bonus increases in different ways before and after 20th character level.
+<b c=ty>エピック攻撃ボーナス:</b>
+20レベルを超えると、キャラクターの基本攻撃ボーナスと攻撃力は増加しません。ただし、20 番目以降は奇数レベルごとに、すべての攻撃ロールで累積 +1 エピックボーナスを受け取ります(21 番目で +1、23 番目で +2、...)。]]
+s_save_bns_inc		="セーブボーナスの増加"
+s_save_bns_inc_d	=[[キャラクターのセーブボーナスは、キャラクターレベルが20になる前後でさまざまな方法で増加します。
 
-<b c=ty>Base Save Bonus:</b>
-Before 20th level (including 20th), different classes or creature types have different good saves: one or more saves are higher than others. A few classes or creature types are good at all saves.
+<b c=ty>基本セーブボーナス:</b>
+20 レベル (20 レベルを含む) より前では、クラスまたはクリーチャータイプごとに異なる優れたセーブがあり、1 つまたは複数のセーブが他のセーブよりも高くなります。 いくつかのクラスまたはクリーチャータイプは、すべてのセーブに優れています。
 
-Good save bonus = class level / 2 + 2;
-Poor save bonus = class level / 3;
-At 20th level, good save bonus is equal to +12 and poor save bonus is equal to +6.
-For a multiclass character, the base save bonuses for each class are cumulative.
+良好セーブボーナス = クラスレベル / 2 + 2;
+悪いセーブボーナス = クラスレベル / 3;
+20 レベルでは、良好セーブ ボーナスは +12 に等しく、悪いセーブ ボーナスは +6 に等しくなります。
+マルチクラスキャラクターの場合、各クラスの基本セーブボーナスは累積されます。
 
-<b c=ty>Epic Save Bonus:</b>
-After 20th level, a character’s base save bonus does not increase. However, he does receive a cumulative +1 epic bonus on all saving throws every even-numbered level after 20th (+1 at 22th, +2 at 24th, ...).]]
-s_lv_bns			="Level Bonus"
-s_ac_inc			="Armor Class Increases"
-s_ac_inc_d			=[[As a character's level increases, the character's Armor Class gains a corresponding level bonus.
+<b c=ty>エピックセーブボーナス:</b>
+20レベル以降、キャラクターの基本セーブボーナスは増加しません。 ただし、20 番目以降は偶数レベルごとに、すべてのセーヴィング スローで累積 +1 エピック ボーナスを受け取ります (22 番目で +1、24 番目で +2、...)。]]
+s_lv_bns			="レベルボーナス"
+s_ac_inc			="アーマークラスの増加"
+s_ac_inc_d			=[[キャラクターのレベルが上昇すると、キャラクターのアーマークラスは対応するレベルボーナスを獲得します。
 
-Similar to average BAB, before 20th level, this level bonus is equal to 3/4 character level; after 20th level, +1 level bonus every odd-numbered level.
+平均的な基本攻撃ボーナスと同様、20 レベル以前では、このレベルボーナスはキャラクターレベルの 3/4 に等しくなります。 20レベル以降、奇数レベルごとに+1レベルボーナス。
 
-When Attack Bonus Increases is changed to character level / 2, this level bonus also changes to character level / 2.]]
+攻撃ボーナス増加がキャラクターレベル/2に変更されると、このレベルボーナスもキャラクターレベル/2に変更されます。]]
 
 
 -- z_btl_stats
-s_btl_stats			="Battle Statistics"
-s_btl_stats_b		="View battle statistics."
-s_btl_stats_d		=[[In this window, you can view various battle stats of your characters, party, and enemies.
+s_btl_stats			="戦闘統計"
+s_btl_stats_b		="戦闘統計を表示します。"
+s_btl_stats_d		=[[このウィンドウでは、キャラクター、パーティー、敵のさまざまな戦闘統計を表示できます。
 
-The overall stats of all battles are displayed by default. You can choose to view the last battle, average stats per battle or per round.
+デフォルトでは、すべての戦闘の全体的な統計が表示されます。 最後の戦闘、戦闘ごとまたはラウンドごとの平均統計を表示することを選択できます。
 
-If you don't want to see too much detailed data, you can also choose the simple mode, or customize via the options menu.
+あまり詳細なデータを表示したくない場合は、シンプルモードを選択するか、オプションメニューからカスタマイズすることもできます。
 
-Note: Spell entries include spell-like abilities.]]
-s_bs_mnn_dmg		="Count Player Summons Damage"
-s_bs_mnn_dmg_d		=[[When this option is enabled, the damage and kills dealt by non-player creatures of player party (summoned creatures and animal companions, etc.) are also counted in the master and party stats.
+注: 呪文のエントリには、呪文に似た能力が含まれます。]]
+s_bs_mnn_dmg		="プレイヤーの召喚によるダメージをカウントする"
+s_bs_mnn_dmg_d		=[[このオプションを有効にすると、プレイヤーパーティーの非プレイヤーのクリーチャー (召喚されたクリーチャーや動物の仲間など) によって与えられたダメージとキルもマスターとパーティーの統計にカウントされます。
 
-Enemy summoned creatures are always counted and are not affected by this option.
+敵の召喚クリーチャーは常にカウントされ、このオプションの影響を受けません。
 
-Note: Changing this option only takes effect on new stats, and does not affect existing stats.]]
-s_bs_mnn_othr		="Count Player Summons Other Stats"
-s_bs_mnn_othr_d		=[[When this option is enabled, other stats of non-player creatures of player party (summoned creatures and animal companions, etc.) are also counted in party stats, including damage taken, deaths, and attacks, etc.
+注: このオプションの変更は新しい統計にのみ有効であり、既存の統計には影響しません。]]
+s_bs_mnn_othr		="プレイヤーの召喚数のその他の統計"
+s_bs_mnn_othr_d		=[[このオプションが有効な場合、プレイヤー パーティーの非プレイヤー クリーチャー (召喚されたクリーチャーや動物の仲間など) の他の統計 (被ダメージ、死亡数、攻撃などを含む) もパーティー統計にカウントされます。
 
-Enemy summoned creatures are always counted and are not affected by this option.
+敵の召喚クリーチャーは常にカウントされ、このオプションの影響を受けません。
 
-Note: Changing this option only takes effect on new stats, and does not affect existing stats.]]
-s_bs_grs_dmg		="Count Gross Damage"
-s_bs_grs_dmg_d		=[[When counting the damage dealt by a character, use the damage dice result directly, without taking into account factors such as damage reduction and damage overflow.
+注: このオプションの変更は新しい統計にのみ有効であり、既存の統計には影響しません。]]
+s_bs_grs_dmg		="総ダメージをカウントする"
+s_bs_grs_dmg_d		=[[キャラクターが与えるダメージをカウントするときは、ダメージ軽減やダメージ オーバーフローなどの要素を考慮せず、ダメージダイスの結果を直接使用します。
 
-This option is unchecked by default, i.e. only count the actual damage dealt.
+このオプションはデフォルトではチェックされていません。つまり、実際に与えられたダメージのみをカウントします。
 
-Note: Changing this option only takes effect on new stats, and does not affect existing stats.]]
-s_bs_all_btls		="All Battles"
-s_bs_last_btl		="Last Battle"
-s_bs_overall		="Overall Stats"
-s_bs_avg_btl		="Average Stats per Battle"
-s_bs_avg_turn		="Average Stats per Round"
-s_bs_simple			="Simple Mode"
-s_bs_details		="Show Detailed Stats"
-s_bs_clr			="Clear Stats"
-s_bs_upd_pty		="Update Party Stats"
-s_bs_upd_pty_d		="Update party stats by current party members."
+注: このオプションの変更は新しい統計にのみ有効であり、既存の統計には影響しません。]]
+s_bs_all_btls		="全ての戦闘"
+s_bs_last_btl		="最後の戦闘"
+s_bs_overall		="全体的な統計"
+s_bs_avg_btl		="戦闘ごとの平均ステータス"
+s_bs_avg_turn		="ラウンドごとの平均統計"
+s_bs_simple			="シンプルモード"
+s_bs_details		="詳細な統計を表示"
+s_bs_clr			="統計をクリアする"
+s_bs_upd_pty		="パーティー統計を更新する"
+s_bs_upd_pty_d		="現在のパーティーメンバーによるパーティー統計を更新します。"
 
-s_bs_smry			="Summary"
-s_bs_btls			="Battles"
-s_bs_turns			="Rounds"
-s_bs_wins			="Wins"
-s_bs_loses			="Loses"
-s_bs_flees			="Flees"
-s_bs_win_rate		="Win Rate"
-s_bs_kills			="Kills"
-s_bs_kills_n		="Kills (Standard)"
-s_bs_kills_e		="Kills (Elite)"
-s_bs_kills_s		="Kills (Solo)"
-s_bs_kills_m		="Kills (Minion)"
-s_bs_deaths			="Deaths"
+s_bs_smry			="概要"
+s_bs_btls			="戦闘"
+s_bs_turns			="ラウンド"
+s_bs_wins			="勝利"
+s_bs_loses			="敗北"
+s_bs_flees			="逃亡"
+s_bs_win_rate		="勝率"
+s_bs_kills			="キル"
+s_bs_kills_n		="キル数（標準）"
+s_bs_kills_e		="キル数（エリート）"
+s_bs_kills_s		="キル数（ソロ）"
+s_bs_kills_m		="キル数（ミニオン）"
+s_bs_deaths			="死亡者数"
 
-s_bs_dmgs			="Total Damage"
-s_bs_maxs			="Highest Damage"
-s_bs_dot			="Damage Over Time"
-s_bs_acts			="Actions"
-s_bs_atks			="Attacks"
-s_bs_hits			="Hits"
-s_bs_pcts			="Hit Rate"
-s_bs_tgrs			="Other Numbers"
+s_bs_dmgs			="総ダメージ"
+s_bs_maxs			="最高ダメージ"
+s_bs_dot			="時間経過ダメージ"
+s_bs_acts			="行動"
+s_bs_atks			="攻撃"
+s_bs_hits			="命中"
+s_bs_pcts			="命中率"
+s_bs_tgrs			="他の数字"
 
-s_bs_wpn			="Weapon Attack"
-s_bs_ratk			="Regular Attack"
-s_bs_spl			="Spell"
-s_bs_spl_bad		="Offensive Spell"
-s_bs_spl_good		="Beneficial Spell"
-s_bs_ea				="Effect Area"
-s_bs_drug			="Use Potion"
-s_bs_sum			="Summoned Creatures"
-s_bs_cmp			="仲間"-- Companions
-s_bs_heal			="Healing"
-s_bs_healed			="Healed"
-s_bs_dmged			="Damage Taken"
-s_bs_atked			="Attacked"
-s_bs_all_srcs		="All Sources"
-s_bs_othr_srcs		="Other Sources"
-s_bs_othr_wpn		="Other Weapon Attacks"
-s_bs_othr_atk		="Other Attack Actions"
-s_bs_othr_act		="Other Actions"
-s_bs_fail			="Interrupted/Failed"
+s_bs_wpn			="武器攻撃"
+s_bs_ratk			="通常攻撃"
+s_bs_spl			="呪文"
+s_bs_spl_bad		="攻撃呪文"
+s_bs_spl_good		="恩恵的な呪文"
+s_bs_ea				="効果範囲"
+s_bs_drug			="ポーション使用"
+s_bs_sum			="召喚クリーチャー"
+s_bs_cmp			="仲間"
+s_bs_heal			="治癒"
+s_bs_healed			="治癒した"
+s_bs_dmged			="被ダメージ"
+s_bs_atked			="攻撃された"
+s_bs_all_srcs		="全てのソース"
+s_bs_othr_srcs		="その他のソース"
+s_bs_othr_wpn		="その他武器の攻撃"
+s_bs_othr_atk		="その他攻撃アクション"
+s_bs_othr_act		="その他アクション"
+s_bs_fail			="中断/失敗"
 
-s_bs_roll_20		="Roll 20"
-s_bs_roll_1			="Roll 1"
-s_bs_step			="Step"
-s_bs_be_ao			="Attacks of Opportunity Taken"
-s_bs_be_crit		="Critical Hits Taken"
-s_bs_be_snk			="Sneak Attacks Taken"
-s_bs_be_ko			="Knockdowns Taken"
+s_bs_roll_20		="クリティカル"
+s_bs_roll_1			="ファンブル"
+s_bs_step			="ステップ"
+s_bs_be_ao			="機会攻撃"
+s_bs_be_crit		="クリティカルヒットの発生"
+s_bs_be_snk			="奇襲攻撃を受ける"
+s_bs_be_ko			="ノックダウン数"
 
-s_mov_pos_dist		="Movement, Position, and Distance"	s_mov_pos_dist_d	=[[A square on the battle grid represents a 5-foot-by-5-foot area. When you move or use an action, your speed or the range of the action determines the farthest square that can be reached.
+s_mov_pos_dist		="移動、位置、距離"	s_mov_pos_dist_d	=[[バトル・グリッド上の1マスは5フィート×5フィートの範囲を表す。君が移動したりアクションを使ったりする場合、君のスピードかアクションの範囲によって、到達可能な最も遠いマスが決まる。
 
-<h2 c=ty>Measuring Distance</h2>
-<b c=ty>Horizontals and Verticals: </b>When measuring distance, each horizontal or vertical counts as 1 square.
+<h2 c=ty>測定距離</h2>
+<b c=ty>水平方向と垂直方向: </b>距離を計測する場合は、水平方向または垂直方向をそれぞれ 1 マスとして数えます。
 
-<b c=ty>Diagonals: </b>When measuring distance, the first diagonal counts as 1 square, the second counts as 2 squares, the third counts as 1, the fourth as 2, and so on.
+<b c=ty>対角線: </b>距離を測る場合、対角線の1本目は1マス、2本目は2マス、3本目は1マス、4本目は2マス......と数える。
 
-<b>Exception: </b>When measuring threatened squares of reach weapons, 2 squares of diagonal distance is measured as 2 squares.
+<b>例外: </b>リーチ武器の威嚇マスを計測する場合、対角距離の2マスを2マスとして計測する。
 
-<b c=ty>Difficult Terrain: </b>Difficult terrain hampers movement. Each square of difficult terrain counts as 2 squares of movement. Each diagonal move into a difficult terrain square counts as 3 squares.]]
+<b c=ty>困難な地形: </b>困難な地形は移動を妨げます。 困難な地形の各正方形は 2 正方形の移動としてカウントされます。 困難な地形の正方形に対角線で移動するたびに、3 つの正方形としてカウントされます。]]
 
 
 -- z_ao
-s_ao			="機会攻撃"
-s_aos			="機会攻撃"
-s_ao_cfm		="このアクションは、敵からの<t=$s_ao_nd c=fc_b>機会攻撃</t>を誘発します！\n\n本当に実行しますか？"
-ao_prompt		="機会攻撃を誘発するアクションの実行を確認する"
+s_ao			= "機会攻撃"
+s_aos			= "機会攻撃"
+s_ao_cfm		= "このアクションは敵からの<t=$s_ao_nd c=fc_b>機会攻撃</t>を引き起こします!\n\n実行してもよろしいですか?"
+ao_prompt		= "機会攻撃を引き起こすアクションの実行を確認する"
 
-s_ao_d			=[[時には、近接戦闘中の者もガードが下がり普段より防御が甘くなることがあります。 このような場合、近くにいる者は防御の隙を突いて、自由に攻撃することができます。 これを機会攻撃と呼びます。
+s_ao_d			= [[時々、乱戦中の戦闘員がガードを緩めることがある。この場合、彼女の近くにいる戦闘員は、彼女の防御の遅れを利用して、彼女を自由に攻撃することができる。このような自由な攻撃は機会攻撃と呼ばれる。
 
-<b c=ty>機会攻撃の範囲：</b>
-たとえそれが自分のアクションではない場合でも、自分が近接攻撃を行うことができるすべてのスクエアは機会攻撃の範囲となります。 原則として、隣接するすべてのスクエアが該当します（対角線を含む）。自分が機会攻撃の範囲にいるときに特定のアクションをとる敵に対して、機会攻撃を行うことができます。 素手の場合は、普通はいずれのスクエアも機会攻撃の範囲に収めないため、機会攻撃を行うことはできません。
+<b c=ty>機会攻撃の範囲:</b>
+自分のアクションでない場合でも、近接攻撃が可能なすべてのマスを威嚇する。一般にそれは、あなたのスペースに隣接するすべてのマス（斜め を含む）のすべてを意味する。機会攻撃の範囲にいる間に特定のアクションをとった敵は、あなたからの機会攻撃を誘発する。あなたが丸腰である場合、通常はどのマスにも脅威を与えないので、 機会攻撃を行うことはできない。
 
-<b c=ty>機会攻撃の誘発：</b>
-機会攻撃を誘発しうるアクションには２種類あります：ひとつは機会攻撃の範囲にあるスクエアから移動して出ること。 もうひとつは機会攻撃の範囲にあるスクエアで特定のアクションを行うことです。
+<b c=ty>機会攻撃を誘発する:</b>
+機会攻撃を引き起こす可能性があるアクションは 2 種類あります。機会攻撃の範囲から外に移動することと、機会攻撃の範囲内でアクションを実行することです。
 
-<b>移動：</b> 機会攻撃の範囲にあるスクエアから移動して出ると、通常、そこを機会攻撃の範囲に収めている敵からの機会攻撃を誘発します。
+<b>移動:</b>機会攻撃の範囲から出ることは、通常、威嚇している相手からの機会攻撃を誘発する。
 
-<b>注意がそれるようなアクションをとる：</b> 遠隔攻撃や呪文詠唱などアクションの中には、機会攻撃の範囲にあるスクエアにいるときに行うと戦闘から注意をそらしてしまうために、機会攻撃を誘発することがあります。
+<b>気を散らす行為をする:</b>範囲攻撃や呪文の詠唱など、いくつかのアクションを機会攻撃の範囲で行なうと、戦闘から注意をそらすために機会攻撃を誘発する。
 
-<b c=ty>機会攻撃を回避：</b>
-機会攻撃を回避するには、一般的にふたつの方法がある：
+<b c=ty>機会攻撃を避ける:</b>
+機会攻撃を回避するには 2 つの一般的な方法があります:
 
-<b>シフト：</b> １スクエアだけ移動するステップ移動。
+<b>移動:</b>わずか1マスの素早いステップ。
 
-<b>遮蔽：</b> 敵から遮蔽を得ている場合は、機会攻撃は誘発しない。]]
+<b>遮蔽物:</b>敵は、あなたに対して遮蔽物を持って機会攻撃を実行することはできません。]]
 
 s_ao_b			= s_ao_d
 
 
 -- z_spl z_sr
-s_cl			="Caster Level"	s_cl_d	="A spell’s power often depends on its caster level, which for most spellcasting characters is equal to your class level in the class you’re using to cast the spell."
-s_spl_dc		="Spell DC"	s_spl_dc_d	=[[Usually a harmful spell allows a target to make a saving throw to avoid some or all of the effect.
+s_cl			="術者レベル"	s_cl_d	="呪文の威力は多くの場合、術者レベルに依存します。ほとんどの呪文を唱えるキャラクターの場合、呪文を唱えるために使用しているクラスのレベルと同じです。"
+s_spl_dc		="呪文難易度"	s_spl_dc_d	=[[通常、有害な呪文は、対象がセーヴィングスローを行なうことで、効果の一部または全部を回避することができる。
 
-A saving throw against your spell has a DC of 10 + bonus of your casting ability + the level of the spell (1~9).
-
-
-<c=ty>Casting Ability: </c>Intelligence for a wizard, Charisma for a sorcerer or bard, or Wisdom for a cleric, druid, paladin, or ranger.
-
-<c=ty>Spell Level: </c>A spell’s level is a number between 1 and 9 that defines the spell’s relative power and affects the DC for any save allowed against the effect. A spell’s level can vary depending on your class. Always use the spell level applicable to your class.]]
-s_sr			="呪文抵抗"	s_sr_d	=[[Spell resistance is a special defensive ability to avoid being affected by spells. If your spell is being resisted by a creature with spell resistance, you must make a caster level check (1d20 + caster level + Spell Penetration and other modifiers) at least equal to the creature’s spell resistance for the spell to affect that creature. The defender’s spell resistance is like an Armor Class against magical attacks.
-
-Most spells and spell-like abilities are subject to spell resistance (extraordinary and supernatural abilities are not). The Spell Resistance entry of a spell description tell you whether spell resistance protects creatures from the spell.
-
-Spells that target only yourself are usually beneficial, not harmful, and spell resistance does not apply. The same is true for spells that are noted as “harmless” in the Spell Resistance entry.
-
-Additionally, in many cases, spell resistance applies only when a resistant creature is targeted by the spell, not when a resistant creature encounters a spell that is already in place.
-
-Some spells also grant spell resistance. Spell resistance does not stack. It overlaps.]]
-s_unsr			="抵抗破り"					s_unsr_d		="You get this Spell Penetration bonus on caster level checks (1d20 + caster level) to beat a creature’s spell resistance."
-s_sr_yes		="Yes"
-s_sr_no			="No"
-s_sr_harmless	=" (harmless)"
-
-s_cst_def		="Casting on the Defensive"	s_cst_def_d	="Casting a spell while on the defensive does not provoke an attack of opportunity. It does, however, require a Concentration check (DC 15 + spell level) to pull off. Failure means that you lose the spell.\n\nThis also applies to using a spell-like ability or using a skill."
-s_cbt_cst		="《戦闘発動》"				s_cbt_cst_d	="You get a +4 bonus on Concentration checks made to cast a spell or use a spell-like ability while on the defensive."
-s_lost_spl		="Lost the spell"
-s_hr_conc_t		=[[You must make a Concentration check whenever you provoke an attack of opportunity while casting a spell, using a spell-like ability, or using a skill.
-
-In original rules:
-DC = 10 + damage + spell level.
-
-With the house rule on:
-DC = 10 + attacker's level + attacker's highest ability modifier + spell level.
+あなたの呪文に対するセーヴィングスローの難易度は 10 + あなたの詠唱能力のボーナス + 呪文のレベル (1 ～ 9) です。
 
 
-<b c=ty>Casting on the Defensive:</b>
-Casting a spell while on the defensive does not provoke an attack of opportunity. It does, however, require a Concentration check to pull off.
+<c=ty>詠唱能力: </c>ウィザードの場合はINT、ソーサラーまたはバードの場合はCHA、またはクレリック、ドルイド、パラディン、またはレンジャーの場合はWISです。
 
-In original rules:
-DC = 15 + spell level.
+<c=ty>呪文レベル: </c>呪文のレベルは1から9までの数字で、その呪文の相対的なパワーを定義し、その効果に対して許されるセーヴの難易度に影響する。呪文のレベルはあなたのクラスによって異なります。呪文のレベルはクラスによって異なることがあります。]]
+s_sr			="呪文耐性"	s_sr_d	=[[呪文抵抗は呪文の影響を受けないための特別な防御能力である。君の呪文が呪文耐性を持つクリーチャーによって抵抗されている場合、その呪文がそのクリーチャーに影響を及ぼすためには、少なくともそのクリーチャーの呪文耐性に等しいキャスターレベルチェック（1d20＋キャスターレベル＋呪文貫通およびその他の修正値）を行なわなければならない。防御側の呪文耐性は魔法攻撃に対するアーマークラスのようなものである。
 
-With the house rule on:
-DC = 10 + potential attacker's level + potential attacker's highest ability modifier + spell level.]]
+ほとんどの呪文および呪文に似た能力は呪文耐性の対象となります (並外れた能力や超自然的な能力はそうではありません)。 呪文の説明の「呪文耐性」エントリは、呪文耐性がクリーチャーを呪文から守るかどうかを示します。
 
-s_fgt_def		="Fighting Defensively"		s_fgt_def_d	="You can choose to fight defensively when attacking. If you do so, you take a –4 penalty on all attacks in a round to gain a +2 dodge bonus to AC for the same round."
-s_cbt_exp		="《攻防一体》"			s_cbt_exp_d	=[[近接攻撃において攻撃アクションまたは全力攻撃アクションを使用するとき、攻撃ロールにペナルティを受け、同じ数値を自分のアーマークラスに回避ボーナスとして加算することができる。
+自分自身のみを対象とする呪文は通常、有益ではありますが有害ではなく、呪文耐性は適用されません。 呪文耐性の項目で「無害」と記載されている呪文についても同様です。
 
-この数値は最大5までで、基本攻撃ボーナスを超えることはできない。
+さらに、多くの場合、呪文抵抗は抵抗クリーチャーが呪文の対象になったときにのみ適用され、抵抗クリーチャーがすでにある呪文に遭遇したときには適用されない。
 
-攻撃ロールとアーマークラスの変化は、次のアクションまで続く。
+呪文の中には、呪文の抵抗を与えるものもあります。呪文の抵抗は積み重ねられません。重なり合います。]]
+s_unsr			="呪文貫通"			s_unsr_d		="クリーチャーの呪文耐性を打ち破るために、術者レベルチェック（1d20 + 術者レベル）でこの呪文貫通ボーナスを獲得します。"
+s_sr_yes		="はい"
+s_sr_no			="いいえ"
+s_sr_harmless	="(無害)"
 
-<b>通常: </b>《攻防一体》の特技を持たないキャラクターは、攻撃アクションまたは全力攻撃アクションを使用しながら防御的に戦うことで、攻撃ロールに-4のペナルティを受け、アーマークラスに+2の回避ボーナスを獲得することができる。]]
+s_cst_def		="防御中の詠唱"	s_cst_def_d	="防御中に呪文を唱えても、機会攻撃は引き起こされません。 ただし、それを実行するには集中チェック（難易度15 + スペルレベル）が必要です。 失敗とは、呪文を失うことを意味します。\n\nこれは、呪文に似た能力の使用やスキルの使用にも当てはまります。"
+s_cbt_cst		="戦闘中の詠唱"			s_cbt_cst_d	="守備中に呪文を唱えたり呪文のような能力を使ったりするための集中チェックに＋4のボーナスを得る。"
+s_lost_spl		="呪文を失う"
+s_hr_conc_t		=[[呪文を唱えたり、呪文に似た能力を使用したり、スキルを使用したりしているときに機会攻撃を誘発するたびに、集中チェックを行わなければなりません。
+
+本来のルール:
+難易度 = 10 + ダメージ + 呪文レベル。
+
+ハウスルールがオンの状態:
+難易度 = 10 + 攻撃者のレベル + 攻撃者の最高能力修正値 + 呪文レベル。
+
+
+<b c=ty>防御中の詠唱:</b>
+防御中に呪文を唱えても、機会攻撃は引き起こされません。 ただし、それを実行するには集中チェックが必要です。
+
+本来のルール:
+難易度 = 15 + 呪文レベル。
+
+ハウスルールがオンの状態:
+難易度 = 10 + 潜在的な攻撃者のレベル + 潜在的な攻撃者の最高能力修正値 + 呪文レベル。]]
+
+s_fgt_def		="防御的に戦う"		s_fgt_def_d	="攻撃するときに防御的に戦うことを選択できます。 そうする場合、ラウンド内のすべての攻撃に対して -4 のペナルティを受け、同じラウンドの AC に +2 の回避ボーナスを獲得します。"
+s_cbt_exp		="戦闘の専門知識"			s_cbt_exp_d	=[[近接攻撃で攻撃アクションまたはフル攻撃アクションを使用すると、攻撃ロールにペナルティを課し、回避ボーナスと同じ数値をアーマー クラスに追加できます。
+
+この数は最大 5 で、基本攻撃ボーナスを超えることはできません。
+
+攻撃ロールとアーマークラスの変更は、次のアクションまで持続します。
+
+<b>ノーマル: </b>戦闘の専門知識特技を持たないキャラクターは、攻撃またはフル攻撃アクションを使用しながら防御的に戦うことができ、攻撃ロールに-4のペナルティを受け、アーマークラスに+2の回避ボーナスを得ることができます。]]
 
 
 -- z_cir_bns	circumstance bonuses
-s_atk_roll_mods	="Attack Roll Modifiers"
-s_dmg_roll_mods	="Damage Roll Modifiers"
-cir				={n="戦闘修正",d="時には1対1で向かい合っての対等な戦いを強いられることもあるだろうが、普通は攻撃と防御両方において、より良い場所を探すことでアドバンテージを得ることもできる。状況に応じて、攻撃ロールにボーナスを得たりペナルティを被ったりする。"}
-cir_full_atk	="全力攻撃"		cir_full_atk_d		="ターン開始時から、（シフト以外の）攻撃か呪文以外のアクションをとらなかった場合、攻撃ロールとダメージ・ロールに<c=g>+2</c>のボーナスを得る。"
-cir_charge		="《突撃》"		cir_charge_d		="２スクエア以上直線で移動し、経路上に移動困難な地形がない場合、近接攻撃とダメージ・ロールに<c=g>＋１</c>のボーナスを得る。"
-cir_flanking	="挟撃"			cir_flanking_d		="近接攻撃を行う際、攻撃対象が自分の仲間によって機会攻撃の範囲に収められており、その仲間が自分から見て攻撃対象の反対側の辺もしくは対角にいた場合、攻撃に＋2の挟撃ボーナスを得る。"
-cir_cover		="遮蔽"			cir_cover_d			="遮蔽によって対象の一部が隠れている場合、攻撃ロールに<c=r>-4</c>ペナルティを受ける。"
-cir_cover2		="優れた遮蔽"		cir_cover2_d		="遮蔽によって対象が大幅に隠れている場合、攻撃ロールに<c=r>-8</c>ペナルティを受ける。遠隔攻撃のみ。"
-cir_melee		="近接"			cir_melee_d			="仲間のキャラクターと近接戦闘を行っている対象に対して遠隔武器を使用する場合、攻撃ロールに<c=r>-4</c>のペナルティを受ける。"
-cir_distracted	="妨害"			cir_distracted_d	="自分が敵と隣接している場合、遠隔攻撃ロールに<c=r>-4</c>ペナルティを受ける。"
-cir_helpless	="無防備状態"		cir_helpless_d		="意識不明状態、睡眠状態などにより対象が無防備状態ならば、近接攻撃に<c=g>+4</c>ボーナスを得る。"
-cir_matk_prone	="伏せ状態"		cir_matk_prone_d	="伏せ状態の対象に対する近接攻撃ロールに<c=g>+4</c>のボーナスを得る。"
-cir_ratk_prone	="伏せ状態"		cir_ratk_prone_d	="隣接していない伏せ状態の対象に対する遠隔攻撃ロールに<c=r>-4</c>ペナルティを受ける。"
-cir_prone_atk	="伏せ攻撃"		cir_prone_atk_d		="自分が伏せ状態の間、近接攻撃ロールに<c=r>-4</c>のペナルティを受ける。"
+s_atk_roll_mods	="攻撃ロール修正"
+s_dmg_roll_mods	="ダメージロール修正"
+cir				={n="戦闘修正",d="時には直接対決しなければならないこともあるが、通常、攻撃面でも防御面でも、より有利なポジションを求めることで、何らかのアドバンテージを得ることができる。状況によっては、攻撃ロールにボーナスを得たり、ペナルティを受けたりすることもある。"}
+cir_full_atk	="フルアタック"		cir_full_atk_d		="<c=g>+2</c>ターン開始時に他のアクション（移動を除く）なしで直接攻撃または呪文を実行した場合、攻撃とダメージロールにボーナス。"
+cir_charge		="チャージ"			cir_charge_d		="<c=g>+1</c>道に困難な地形がない状態で少なくとも 2 マス直線で移動すると、近接攻撃とダメージ ロールにボーナスが与えられます。"
+cir_flanking	="側面攻撃"			cir_flanking_d		="近接攻撃を行う際、相手の反対側の境界線または反対側の角にいる自分に味方のキャラクターやクリーチャーの脅威にさらされている場合、側面攻撃ボーナス <c=g>+2</c> を獲得します。"
+cir_cover		="遮蔽物"			cir_cover_d			="<c=r>-4</c>遮蔽物で部分的に覆われているターゲットに対する攻撃ロールに対するペナルティ。"
+cir_cover2		="優れた遮蔽物"	cir_cover2_d		="<c=r>-8</c>遮蔽物で大きく覆われたターゲットに対する攻撃ロールに対するペナルティ。 遠距離攻撃専用。"
+cir_melee		="近接攻撃"			cir_melee_d			="<c=r>-4</c>味方に隣接する隣接していない敵に対する遠距離攻撃ロールに対するペナルティ。"
+cir_distracted	="気を散らす"		cir_distracted_d	="<c=r>-4</c>敵に隣接すると遠距離攻撃ロールにペナルティがかかります。"
+cir_helpless	="無力"			cir_helpless_d		="<c=g>+4</c>意識を失っている、眠っている、またはその他の方法であなたのなすがままになっている無力なターゲットに対する近接攻撃ロールにボーナスを与えます。"
+cir_matk_prone	="伏せ"			cir_matk_prone_d	="<c=r>+4</c>伏せたターゲットに対する近接攻撃ロールにボーナス。"
+cir_ratk_prone	="伏せ"			cir_ratk_prone_d	="<c=r>-4</c>隣接していない伏せターゲットに対する遠距離攻撃ロールに対するペナルティ。"
+cir_prone_atk	="伏せ攻撃"		cir_prone_atk_d		="<c=r>-4</c>伏せ時の近接攻撃ロールに対するペナルティ。"
 
 
 -- race
-s_race			="種族"	s_race_d=[[種族は、キャラクターの作成においてとても重用な要素です。 よく知られているように、ドワーフは小さく、エルフは長生きし、ノームは危険なほど好奇心旺盛です。ハーフオークは醜く、そして人間は・・・そう、人間です。
+s_race			="種族"	s_race_d=[[種族は、キャラクターをその人たらしめる重要な部分です。 ほとんどの人は基本的なことを知っています。ドワーフは背が低く、エルフは長生きで、ノームは危険なほど好奇心旺盛です。 ハーフオークは醜い。 人間は――まあ、人間だ。
 
-いくばくかの冒険者にとって、種族はせいぜい自分のクラスにとってどの種族修正値が適しているのか程度のものです。しかしもっと多くの種族には更に多くのものがあります。
+一部の冒険者にとって、種族とは単に自分のクラスに最も適した種族修正を見つけるためのものだ。しかし、種族はそれだけではありません。
 
-種族の文化や伝統を探究することで、私たちがどこからきてどのように行動するかをより理解することができ、さらに冒険の世界により深く没頭させるでしょう。]]
-s_races			=s_race	s_races_d	=s_race_d
-s_subrace		="亜種"
-s_subraces		="亜種"
-s_subrace_diff	="This subrace has all racial traits of the major race, with the following exceptions:"
+ある種族の文化や伝統を探求することで、私たちは自分たちがどこから来たのか、何が私たちを興奮させるのかをより深く理解できるようになり、冒険の世界にさらに深く没頭することができます。]]
+s_races			="種族"	s_races_d	=s_race_d
+s_subrace		="亜人種"
+s_subraces		="亜人種"
+s_subrace_diff	="この亜人種は、次の例外を除いて、主要な人種のすべての人種的特徴を備えています。:"
 
 -- z_langs
-s_langs				="言語"	s_langs_d	=[[In a big city, visitors can hear all manner of languages being spoken. Dwarves haggle over gems in Dwarven, elf sages engage in learned debates in Elven, and preachers call out prayers in Celestial. The language heard most, however, is Common, a tongue shared by all who take part in the culture at large. With all these languages in use, it is easy for people to learn other languages, and adventurers often speak several tongues.
+s_langs				="言語"	s_langs_d	=[[大都市では、あらゆる言語が飛び交っている。ドワーフはドワーフ語で宝石をめぐって交渉し、エルフの賢者はエルフ語で学問的な議論を交わし、説教者はセレスティアル語で祈りを呼びかける。しかし、最もよく耳にする言語はコモンであり、文化に参加するすべての人々が共有する言語である。このように多くの言語が使われているため、他の言語を学ぶことは容易であり、冒険者は複数の言語を話すことが多い。
 
-Most characters know how to speak Common and a racial language, as appropriate. A character who has an Intelligence bonus at 1st level speaks other languages as well, one extra language per point of Intelligence bonus as a starting character.
+ほとんどのキャラクターは、必要に応じて共通言語と人種言語を話す方法を知っています。 第 1 レベルでINTボーナスを持つキャラクターは他の言語も話します。開始キャラクターとしてINTボーナス 1 ポイントにつき 1 言語が追加されます。
 
-<b>Class-Related Languages: </b>Clerics, druids, and wizards can choose certain languages as bonus languages even if they’re not on the lists found in the race descriptions.
+<b>クラス関連言語: </b>クレリック、ドルイド、ウィザードは、種族説明のリストになくても、特定の言語をボーナス言語として選ぶことができる。
 
-<b>Speak Language Skill: </b>Characters can also purchase Speak Language to acquire more languages.
+<b>言語スキルを話す: </b>キャラクターは、言語を話す を購入して、さらに多くの言語を習得することもできます。
 
-<b>Literacy: </b>A literate character (anyone but a barbarian who has not spent skill points to become literate) can read and write any language he speaks. Each language has an alphabet, though sometimes several spoken languages share a single alphabet.]]
-s_x_langs			="%d言語"
-s_lang_f			="A language whose text is based on the %s alphabet.\n\nTypical speakers: %s."
-s_lang_abyssal		="Abyssal					"	s_lang_abyssal_t		="Infernal	"	s_lang_abyssal_d		="Demons, chaotic evil outsiders			"
-s_lang_aquan		="Aquan						"	s_lang_aquan_t			="Elven		"	s_lang_aquan_d			="Water-based creatures						"
-s_lang_auran		="Auran						"	s_lang_auran_t			="Draconic	"	s_lang_auran_d			="Air-based creatures						"
-s_lang_celestial	="Celestial					"	s_lang_celestial_t		="Celestial	"	s_lang_celestial_d		="Good outsiders							"
-s_lang_common		="Common					"	s_lang_common_t			="Common	"	s_lang_common_d			="Humans, halflings, half-elves, half-orcs	"
-s_lang_draconic		="Draconic					"	s_lang_draconic_t		="Draconic	"	s_lang_draconic_d		="Kobolds, troglodytes, lizardfolk, dragons	"
-s_lang_druidic		="Druidic					"	s_lang_druidic_t		="Druidic	"	s_lang_druidic_d		="Druids (only)								"
-s_lang_dwarven		="Dwarven					"	s_lang_dwarven_t		="Dwarven	"	s_lang_dwarven_d		="Dwarves									"
-s_lang_elven		="Elven						"	s_lang_elven_t			="Elven		"	s_lang_elven_d			="Elves										"
-s_lang_giant		="Giant						"	s_lang_giant_t			="Dwarven	"	s_lang_giant_d			="Ogres, giants								"
-s_lang_gnome		="Gnome						"	s_lang_gnome_t			="Dwarven	"	s_lang_gnome_d			="Gnomes									"
-s_lang_goblin		="Goblin					"	s_lang_goblin_t			="Dwarven	"	s_lang_goblin_d			="Goblins, hobgoblins, bugbears				"
-s_lang_gnoll		="Gnoll						"	s_lang_gnoll_t			="Common	"	s_lang_gnoll_d			="Gnolls									"
-s_lang_halfling		="Halfling					"	s_lang_halfling_t		="Common	"	s_lang_halfling_d		="Halflings									"
-s_lang_ignan		="Ignan						"	s_lang_ignan_t			="Draconic	"	s_lang_ignan_d			="Fire-based creatures						"
-s_lang_infernal		="Infernal					"	s_lang_infernal_t		="Infernal	"	s_lang_infernal_d		="Devils, lawful evil outsiders				"
-s_lang_orc			="Orc						"	s_lang_orc_t			="Dwarven	"	s_lang_orc_d			="Orcs										"
-s_lang_sylvan		="Sylvan					"	s_lang_sylvan_t			="Elven		"	s_lang_sylvan_d			="Dryads, brownies, leprechauns				"
-s_lang_terran		="Terran					"	s_lang_terran_t			="Dwarven	"	s_lang_terran_d			="Xorns and other earth-based creatures		"
-s_lang_undercommon	="Undercommon				"	s_lang_undercommon_t	="Elven		"	s_lang_undercommon_d	="Drow										"
+<b>識字: </b>識字能力のあるキャラクター（スキルポイントを消費して識字能力を獲得していないバーバリアン以外のキャラクター）は、そのキャラクターが話すあらゆる言語の読み書きができる。各言語にはアルファベットがあるが、複数の言語が1つのアルファベットを共有することもある。]]
+s_x_langs			="%d 言語"
+s_lang_f			="テキストが %s アルファベットに基づいている言語。\n\n一般的な話者: %s。"
+s_lang_abyssal		="アビサル					"	s_lang_abyssal_t		="インファーナル	"	s_lang_abyssal_d		="デーモン、カオティックエビルアウトサイダー			"
+s_lang_aquan		="アクアン						"	s_lang_aquan_t			="エルフ		"	s_lang_aquan_d			="水棲生物						"
+s_lang_auran		="オーラン						"	s_lang_auran_t			="ドラコニック	"	s_lang_auran_d			="空中のクリーチャー						"
+s_lang_celestial	="セレスティアル					"	s_lang_celestial_t		="セレスティアル	"	s_lang_celestial_d		="グッドアウトサイダー							"
+s_lang_common		="コモン					"	s_lang_common_t			="コモン	"	s_lang_common_d			="ヒューマン、ハーフリング、ハーフエルフ、ハーフオーク	"
+s_lang_draconic		="ドラコニック					"	s_lang_draconic_t		="ドラコニック	"	s_lang_draconic_d		="コボルド、トログロダイト、リザードフォーク、ドラゴン	"
+s_lang_druidic		="ドルイド					"	s_lang_druidic_t		="ドルイド	"	s_lang_druidic_d		="ドルイド（のみ）								"
+s_lang_dwarven		="ドワーフ					"	s_lang_dwarven_t		="ドワーフ	"	s_lang_dwarven_d		="ドワーフ									"
+s_lang_elven		="エルフ						"	s_lang_elven_t			="エルフ		"	s_lang_elven_d			="エルフ										"
+s_lang_giant		="ジャイアント						"	s_lang_giant_t			="ドワーフ	"	s_lang_giant_d			="オーガ、ジャイアント								"
+s_lang_gnome		="ノーム						"	s_lang_gnome_t			="ドワーフ	"	s_lang_gnome_d			="ノーム									"
+s_lang_goblin		="ゴブリン					"	s_lang_goblin_t			="ドワーフ	"	s_lang_goblin_d			="ゴブリン、ホブゴブリン、バグベア				"
+s_lang_gnoll		="ノール						"	s_lang_gnoll_t			="コモン	"	s_lang_gnoll_d			="ノール									"
+s_lang_halfling		="ハーフリング					"	s_lang_halfling_t		="コモン	"	s_lang_halfling_d		="ハーフリング									"
+s_lang_ignan		="イグナン						"	s_lang_ignan_t			="ドラコニック	"	s_lang_ignan_d			="火属性クリーチャー						"
+s_lang_infernal		="インファーナル					"	s_lang_infernal_t		="インファーナル	"	s_lang_infernal_d		="デビル、ロウフルエビルアウトサイダー				"
+s_lang_orc			="オーク						"	s_lang_orc_t			="ドワーフ	"	s_lang_orc_d			="オーク										"
+s_lang_sylvan		="シルバン					"	s_lang_sylvan_t			="エルフ		"	s_lang_sylvan_d			="ドライアド、ブラウニー、レプラコーン				"
+s_lang_terran		="テラン					"	s_lang_terran_t			="ドワーフ	"	s_lang_terran_d			="ゾーンと他の地球ベースのクリーチャー		"
+s_lang_undercommon	="アンダーコモン				"	s_lang_undercommon_t	="エルフ		"	s_lang_undercommon_d	="ドラウ										"
 
-s_lang_drow_sign	="Drow Sign Language		"	s_lang_drow_sign_t		="Common	"	s_lang_drow_sign_d		="Drow										"
-s_lang_feline		="Feline					"	s_lang_feline_t			="Common	"	s_lang_feline_d			="Catfolk (each tribe speaking a dialect)	"
-s_lang_frst_anm		="Forest Animals Language	"	s_lang_frst_anm_t		="Common	"	s_lang_frst_anm_d		="Forest Gnome								"
-s_lang_local		="Local Language			"	s_lang_local_t			="Common	"	s_lang_local_d			="Strongmind Halfling, Syl Halfling			"
+s_lang_drow_sign	="ドラウ手話		"	s_lang_drow_sign_t		="コモン	"	s_lang_drow_sign_d		="ドラウ										"
+s_lang_feline		="フィーライン					"	s_lang_feline_t			="コモン	"	s_lang_feline_d			="キャットフォーク（各部族の方言）	"
+s_lang_frst_anm		="森の動物たちの言語	"	s_lang_frst_anm_t		="コモン	"	s_lang_frst_anm_d		="フォレストノーム								"
+s_lang_local		="方言			"	s_lang_local_t			="コモン	"	s_lang_local_d			="ストロングマインドハーフリング、シルハーフリング			"
 
-s_race_ed_dd1	= "Detailed Description"-- z_race_ed
-s_race_ed_dd2	= "Extension Description"
-s_race_ed_dd3	= "Extension Description 2"
-s_race_ed_dd4	= "Extension Description 3"
-s_race_ed_dd5	= "Extension Description 4"
-s_race_ed_dd6	= "Extension Description 5"
-s_race_ed_dd7	= "Extension Description 6"
-s_race_ed_dd8	= "Extension Description 7"
-s_race_ed_phy	= "Physical Description"
-s_race_ed_btl	= "Combat"
-s_race_ed_soc	= "Society"
-s_race_ed_rel	= "Relations"
-s_race_ed_aln	= "Alignment and Religion"
-s_race_ed_adv	= "Adventurers"
-s_race_ed_nam	= "Names"
+s_race_ed_dd1	= "詳細な説明"-- z_race_ed
+s_race_ed_dd2	= "拡張機能の説明"
+s_race_ed_dd3	= "拡張機能の説明 2"
+s_race_ed_dd4	= "拡張機能の説明 3"
+s_race_ed_dd5	= "拡張機能の説明 4"
+s_race_ed_dd6	= "拡張機能の説明 5"
+s_race_ed_dd7	= "拡張機能の説明 6"
+s_race_ed_dd8	= "拡張機能の説明 7"
+s_race_ed_phy	= "身体的特徴"
+s_race_ed_btl	= "戦闘"
+s_race_ed_soc	= "社会"
+s_race_ed_rel	= "関係"
+s_race_ed_aln	= "アライメントと宗教"
+s_race_ed_adv	= "冒険者"
+s_race_ed_nam	= "名前"
 
-s_lv_adj		= "Level Adjustment"
-s_lv_adj_c		= "Powerful race characters level up slowly and can only join high level parties."
-s_lv_adj_d		= [[Some races are more powerful than normal races. These races have a racial trait called level adjustment.
+s_lv_adj		= "レベル調整"
+s_lv_adj_c		= "強力な種族キャラクターはレベルアップが遅く、高レベルのパーティーにのみ参加できます。"
+s_lv_adj_d		= [[一部の種族は通常の種族よりも強力です。 これらの種族にはレベル調整と呼ばれる種族特性があります。
 
-When create a powerful race character, add the level adjustment to the character level to get the effective character level, i.e. character level + level adjustment = effective character level.
+強力な種族キャラクターを作成する場合は、キャラクターレベルにレベル調整を加えて有効キャラクターレベルを取得します。つまり、キャラクターレベル + レベル調整 = 有効キャラクターレベル。
 
-When level up the character, use the effective character level to determine the experience points needed. Therefore, the character requires more experience points to level up than a normal character. In other words, powerful race characters level up more slowly than normal characters.
+キャラクターをレベルアップするときは、有効キャラクターレベルを使用して必要な経験値を決定します。 そのため、キャラクターのレベルアップには通常のキャラクターよりも多くの経験値が必要になります。 つまり、強力な種族キャラクターは通常のキャラクターよりもレベルアップが遅くなります。
 
-Powerful race characters still use the actual character level to determine other stats, such as hit points, skill points, gaining feats, etc.
+強力な種族キャラクターは、ヒットポイント、スキルポイント、獲得特技などの他のステータスを決定するために実際のキャラクターレベルを使用します。
 
-Generally speaking, a powerful race character cannot be added to an adventure party as an initial character. Only a high enough level adventure party can recruit powerful race characters.]]
+一般的に、強力な種族キャラクターを初期キャラクターとして冒険パーティーに加えることができません。 十分なレベルの冒険パーティーのみが強力な種族キャラクターを仲間にできます。]]
 
-s_race_hd		= "Racial Hit Dice"
-s_race_hd_c		= "Powerful races with racial Hit Dice are more special."
-s_race_hd_d		= [[Some powerful races are more special. These races have 2 or more racial Hit Dice.
+s_race_hd		= "種族ヒットダイス"
+s_race_hd_c		= "種族ヒットダイスを備えた強力な種族はさらに特別です。"
+s_race_hd_d		= [[一部の強力な種族はより特別です。 これらの種族は 2 つ以上の種族のヒットダイスを持っています。
 
-The effective character level of a character of these races = racial Hit Dice + class levels + level adjustment.
+これらの種族のキャラクターの有効キャラクターレベル = 種族ヒットダイス + クラスレベル + レベル調整。
 
-The racial Hit Dice can be considered a “monster class” similar to normal player classes. Effectively, the character will become a multiclass character when he takes class levels. A character's “monster class” is always a favored class, and he never takes XP penalties for having it.
+種族のヒットダイスは、通常のプレイヤークラスと同様の「モンスタークラス」と考えることができます。 事実上、キャラクターはクラスレベルを取るとマルチクラスキャラクターになります。 キャラクターの「モンスタークラス」は常に有利なクラスであり、それを持っていることで XP ペナルティを受けることはありません。
 
-So his actual character level = racial Hit Dice + class levels, which determines other stats, such as hit points, skill points, gaining feats, etc.
+つまり、彼の実際のキャラクターレベル = 種族ヒットダイス + クラスレベルであり、これによってヒットポイント、スキルポイント、獲得特技などの他のステータスが決まります。
 
-Furthermore, he does not get a feat and four times skill points for his first class level as members of the common races do. Instead, he has already received the equivalent bonuses for his first racial Hit Die.
+さらに、彼は、一般的な種族のメンバーのように、第一クラスレベルの特技と 4 倍のスキルポイントを獲得しません。 代わりに、彼はすでに最初の種族ヒットダイスに対して同等のボーナスを受け取りました。
 
-He can start with no class levels, i.e. choosing no class for a lower starting level. He can gain them later.]]
-s_no_cls_d		= [[Some powerful races are more special. These races have 2 or more racial Hit Dice.
+彼はクラスレベルなしで開始することもできます。つまり、より低い開始レベルではクラスを選択しません。 彼は後でそれらを得ることができます。]]
+s_no_cls_d		= [[一部の強力な種族はより特別です。 これらの種族は 2 つ以上の種族ヒットダイスを持っています。
 
-When create a character of these races, you may choose no class for a lower starting level.
+これらの種族のキャラクターを作成する場合、開始レベルが低い場合はクラスを選択しなくても構いません。
 
-You can choose classes later when the character levels up.]]
+後でキャラクターがレベルアップしたときにクラスを選択できます。]]
 
-s_ecl			= "Effective Character Level"
-s_add_high_lv	= "The high level character cannot be added now.\n\nPlease level up your party in-game first before doing so."
-
-
-u_size_small	=[[小型のクリーチャーは、中型のクリーチャーと比較して以下の特性を持つ：
+s_ecl			= "有効キャラクターレベル"
+s_add_high_lv	= "現在、高レベルのキャラクターを追加することはできません。\n\n追加する前に、まずゲーム内でパーティーのレベルを上げてください。"
 
 
-- +1 size bonus on attack rolls and AC.
-
-- -1 size penalty on combat maneuver attack rolls and combat maneuver defense.
-
-- -4 size penalty on Intimidate and Grap checks.
-
-- +4 size bonus on Hide checks.
-
-- 移動速度は中型のクリーチャーよりも遅い（例外あり）。
-
-- Lifting and carrying limits are three-quarters of those of Medium characters.
-
-- 小型武器を使用する： 武器ダメージが小さくなり、重量と価格が半分になる。]]-- - 攻撃/防御ロールに +1 サイズボーナス、戦技ロールに -1 サイズボーナス。	- 運搬能力は中型のクリーチャーの 3/4 です。
-
-u_size_large	=[[大型のクリーチャーは、中型のクリーチャーと比較して以下の特性を有する。
+u_size_small	= [[小型クリーチャーは中型クリーチャーと比較して次の特徴を持っています:
 
 
-- -1 size penalty on attack rolls and AC.
+- 攻撃ロールとACに+1サイズボーナス。
 
-- +1 size bonus on combat maneuver attack rolls and combat maneuver defense.
+- 戦闘機動攻撃ロールと戦闘機動防御に-1サイズのペナルティ。
 
-- +4 size bonus on Intimidate and Grap checks.
+- 威圧と掴み判定に-4サイズのペナルティ。
 
-- -4 size penalty on Hide checks.
+- 隠れ身チェックに +4 サイズボーナス。
 
-- 移動速度は中型のクリーチャーよりも速い（例外あり）。
+- 中型のクリーチャーよりも動きが遅い（例外あり）。
 
-- Lifting and carrying limits are doubled of those of Medium characters.
+- 持ち上げたり運んだりできる限界は中型キャラクターの 4 分の 3 です。
 
-- 大型武器を使用する： 武器ダメージが大きくなり、重量と価格が 2 倍になる。
+- 小型の武器を使用します。ダメージは低く、重量は半分で、価格は同じです。]]
 
-- Occupies space and reach are 10 feet. <c=to>(House Rule: currently 5 feet, same as Medium creatures.)</c>]]-- - 攻撃/防御ロールに -1 のサイズ ボーナス、戦技ロールに +1 のサイズ ボーナス。	- 運搬能力は、中型クリーチャーの 2 倍です。
+u_size_large	= [[大型クリーチャーは中型クリーチャーと比較して次の特徴を持っています。:
+
+
+- 攻撃ロールとACに-1サイズのペナルティ。
+
+- 戦闘機動攻撃ロールと戦闘機動防御に+1サイズボーナス。
+
+- 威圧と掴み判定に +4 サイズボーナス。
+
+- 隠れ身チェックで -4 サイズペナルティ。
+
+- 中型のクリーチャーよりも速く移動します（例外を除きます）。
+
+- 持ち上げと持ち運びの制限は中型キャラクターの 2 倍です。
+
+- 大型の武器を使用すると、ダメージが増加し、重量が 2 倍になり、価格は同じになります。
+
+- 占有スペースと到達距離は 10 フィートです。<c=to>(ハウスルール: 現在は中型クリーチャーと同じ5フィート)。</c>]]
 
 -- z_u_sz
 usizes={
-{n="Fine"		,d="小型に似ているがさらにもっと小さい。"},
-{n="Diminutive"	,d="小型に似ているがさらにもっと小さい。"},
-{n="極小"		,d="小型に似ているがさらにもっと小さい。"},
-{n="小型"		,d=u_size_small},
-{n="中型"		,d="標準サイズのクリーチャー。サイズによる特別のボーナスもペナルティもない。"},
-{n="大型"		,d=u_size_large},
-{n="特大"		,d="大型に似ているがさらにもっと大きい。"},
-{n="超特大"		,d="大型に似ているがさらにもっと大きい。"},
-{n="Colossal"	,d="大型に似ているがさらにもっと大きい。"},
+{n="細かい"		,d="小さいと似ていますが、さらに小さくなります。"},
+{n="小柄な"	,d="小さいと似ていますが、さらに小さくなります。"},
+{n="小型"		,d="小さいと似ていますが、さらに小さくなります。"},
+{n="小さい"		,d=u_size_small},
+{n="中型"		,d="中型のクリーチャーとして、そのサイズによる特別なボーナスやペナルティはありません。"},
+{n="大きい"		,d=u_size_large},
+{n="巨大な"		,d="大きいと似ていますが、より大きいです。"},
+{n="ガルガンチュアン"	,d="大きいと似ていますが、より大きいです。"},
+{n="コロッサル"	,d="大きいと似ていますが、より大きいです。"},
 }
 
-s_eqpt_sz		= "The weight of an equipment varies by size."
+s_eqpt_sz		= "装備の重量はサイズによって異なります。"
 
 
 -- z_hp
-s_hd			= "Hit Dice"	s_hd_d	= "A die rolled to generate hit points. Although there are also factors such as the Con score, Hit Dice can be used as an important reference to measure a creature's hit points."
-s_hds			= "Hit Dice"	s_hds_d	= "A measure of relative power that is synonymous with character level. However, creatures with no class (or certain complications) need to replace the measure with the number of Hit Dice."
-s_hd_max		= "%s HD (d%d) Max"
-s_hd_x_lv		= "%s HD (d%d) Expected Value x Level"
-s_hd_x_clv		= "%s HD (d%d) Expected Value x Class Level"
-s_hd_x_clv2		= "%s HD (d%d) Expected Value x (Class Level - 1)"
-s_hp_1_x_lv		= "Even if has a Con penalty, add at least 1 HP per level."
+s_hd			= "ヒットダイス"	s_hd_d	= "ダイスを振ってヒットポイントを生成します。 CON値などの要素もありますが、ヒットダイスはクリーチャーのヒットポイントを測る重要な基準として使用できます。"
+s_hds			= "ヒットダイス"	s_hds_d	= "キャラクターレベルと同義である相対的なパワーの尺度。ただし、クラスを持たない（あるいは特定の複雑な）クリーチャーは、この尺度をヒットダイスの数に置き換える必要がある。"
+s_hd_max		= "%s ヒットダイス (d%d) 最大"
+s_hd_x_lv		= "%s ヒットダイス (d%d) 期待値×レベル"
+s_hd_x_clv		= "%s ヒットダイス (d%d) 期待値×クラスレベル"
+s_hd_x_clv2		= "%s ヒットダイス (d%d) 期待値 x (クラス レベル - 1)"
+s_hp_1_x_lv		= "CONペナルティがある場合でも、レベルごとに少なくとも 1 の HP を追加します。"
 
 
 -- z_unarm z_nwpn z_mnk
 s_nwpn			= "肉体武器"
-s_nwpns			= "肉体武器"-- Natural Weapons
-s_nwpn_pri		= "主な肉体武器"-- Primary Natural Weapon
-s_nwpn_sec		= "第二の肉体武器"--Secondary Natural Weapon
-s_primary		= "メイン"--Primary
-s_secondary		= "セカンダリ"--Secondary
-s_nwpn_1_p		= "唯一の肉体武器"-- Sole Natural Weapon
-s_full_atk		= "Full Attack"
-s_full_atk_d	= "Extra attacks can be made when use a full-round action to attack. These extra attacks come from using two weapons, a double weapon, natural weapons, or other reasons."
-s_mon_adv		= "Advancement"
-s_nwpn_hr		= "The magic bonus of natural weapons increases with level."
+s_nwpns			= "肉体武器"
+s_nwpn_pri		= "メイン肉体武器"
+s_nwpn_sec		= "サブ肉体武器"
+s_primary		= "メイン"
+s_secondary		= "サブ"
+s_nwpn_1_p		= "唯一の肉体武器"
+s_full_atk		= "フルアタック"
+s_full_atk_d	= "全ラウンドアクションで攻撃を行なう場合、追加攻撃を行なうことができる。これらの追加攻撃は、2つの武器、ダブルウェポン、肉体武器、その他の理由によるものである。"
+s_mon_adv		= "アドバンスメント"
+s_nwpn_hr		= "肉体武器の魔法ボーナスはレベルに応じて増加します。"
 
-s_nwpn_d		= [[Natural weapons are weapons that are physically a part of a creature.
+s_nwpn_d		= [[肉体武器とは、物理的に生物の一部である兵器です。
 
-Making a melee attack with a natural weapon is considered armed and does not provoke attacks of opportunity.
+肉体武器による近接攻撃は武装とみなされ、機会攻撃を誘発するものではありません。
 
-When a creature has multiple natural weapons, one of them is the primary weapon and all the others are secondary (–5 penalty on attack rolls).
+クリーチャーが複数の自然武器を持っている場合、そのうちの 1 つが主武器となり、残りはすべて副武器となります (攻撃ロールに -5 のペナルティ)。
 
-When unarmed, the melee primary natural weapon automatically replaces the unarmed attack.
+非武装の場合、近接メイン肉体武器が自動的に非武装攻撃に置き換わります。
 
-Natural weapons may provide additional attacks on full attacks or in certain special situations. For example, even holding a longbow, a lizardfolk can still make melee attacks with its bite.]]
+肉体武器はフルアタックや特定の特殊な状況において追加攻撃を与えることがある。たとえば、ロングボウを持っていても、リザードフォークはその噛みつきで近接攻撃を行なうことができる。]]
 
-s_nwpn_h		= [[Natural weapons are weapons that are physically a part of a creature.
+s_nwpn_h		= [[肉体武器とは、物理的に生物の一部である兵器です。
 
-A creature making a melee attack with a natural weapon is considered armed and does not provoke attacks of opportunity. Likewise, it threatens any space it can reach.
+肉体武器を用いて近接攻撃を行なうクリーチャーは武装しているとみなされ、機会攻撃を誘発しない。同様に、到達可能なあらゆる空間を威嚇する。
 
-Creatures do not receive additional attacks from a high base attack bonus when using natural weapons.
+クリーチャーは、自然の武器を使用する場合、高い基本攻撃ボーナスによる追加攻撃を受けません。
 
-The number of attacks a creature can make with its natural weapons depends on the type of the attack — generally, a creature can make one bite attack, one attack per claw or tentacle, one gore attack, one sting attack, or one slam attack (although Large creatures with arms or arm-like limbs can make a slam attack with each arm).
+通常、クリーチャーは噛みつき攻撃を1回、爪や触手による攻撃を1回、ゴア攻撃を1回、刺突攻撃を1回、叩き付け攻撃を1回行える（ただし、腕や腕のような手足を持つ大型クリーチャーは、それぞれの腕で叩き付け攻撃を行える）。
 
-Unless otherwise noted, a natural weapon threatens a critical hit on a natural attack roll of 20.
-
-
-<h2 c=ty>Primary and Secondary Natural Weapons</h2>
-When a creature has more than one natural weapon, one of them (or sometimes a pair or set of them) is the primary weapon. All the creature’s remaining natural weapons are secondary.
-
-A creature’s primary natural weapon is its most effective natural attack, usually by virtue of the creature’s physiology, training, or innate talent with the weapon. Primary natural weapons use a creature’s full attack bonus, no matter how many primary weapons it has. The creature applies its full Strength bonus on damage rolls with its primary natural weapons, or 1-1/2 times its Strength bonus if the creature has only one primary natural weapon (for example, a wolf’s bite).
-
-Attacks with secondary natural weapons are less effective and are made with a –5 penalty on the attack roll, no matter how many there are. (Creatures with the Multiattack feat take only a –2 penalty on secondary attacks.) This penalty applies even when the creature makes a single attack with the secondary weapon as part of the attack action or as an attack of opportunity. A creature applies 1/2 its Strength bonus on damage rolls with its secondary natural weapons.
-
-Some creatures combine attacks with natural and manufactured weapons when they make a full attack. When they do so, the manufactured weapon attack is considered the primary attack unless the creature’s description indicates otherwise and any natural weapons the creature also uses are considered secondary natural attacks. These secondary attacks do not interfere with the primary attack as attacking with an off-hand weapon does, but they take the usual –5 penalty (or –2 with the Multiattack feat) for such attacks, even if the natural weapon used is normally the creature’s primary natural weapon.
+特に明記されていない限り、肉体武器は自然攻撃ロール 20 でクリティカルヒットの脅威を与えます。
 
 
-<h2 c=ty>Types of Natural Weapons</h2>
-Natural weapons have types just as other weapons do. The most common are summarized below.
+<h2 c=ty>メインおよびサブの肉体武器</h2>
+クリーチャーが複数の肉体武器を持つ場合、そのうちの1つ（場合によっては1対または1組）が主武器となる。そのクリーチャーの残りの肉体武器はすべて副次的なものである。
 
-<b>Bite:</b> The creature attacks with its mouth, dealing piercing, slashing, and bludgeoning damage.
+クリーチャーのメイン肉体武器とは、そのクリーチャーの最も効果的な自然攻撃であり、通常、そのクリーチャーの生理学、訓練、またはその武器に関する生得的な才能によるものである。メイン肉体武器は、そのクリーチャーがいくつメイン武器を持っていようと、その攻撃ボーナスのすべてを使用する。そのクリーチャーは、そのメイン肉体武器によるダメージロールにその体力ボーナスのすべてを適用し、そのクリーチャーがメイン肉体武器を1つしか持っていない場合（たとえば狼の噛みつき）にはその体力ボーナスの1～1/2倍を適用する。
 
-<b>Claw or Talon:</b> The creature rips with a sharp appendage, dealing piercing and slashing damage.
+サブ肉体武器による攻撃は効果が低く、その数に関係なく攻撃ロールに-5のペナルティを受ける。(マルチアタックの特技を持つクリーチャーは、サブ攻撃に-2のペナルティしか受けない）。このペナルティは、クリーチャーが攻撃アクションの一部として、あるいは機会攻撃としてサブ武器による攻撃を1回行なった場合にも適用される。クリーチャーはサブ肉体武器によるダメージロールにその戦力ボーナスの1/2を適用する。
 
-<b>Gore:</b> The creature spears the opponent with an antler, horn, or similar appendage, dealing piercing damage.
+クリーチャーの中には、全体攻撃を行なう際に肉体武器と製造武器による攻撃を組み合わせるものがいる。そうする場合、そのクリーチャーの説明文に別段の記載がない限り、製造武器による攻撃がメイン攻撃とみなされ、そのクリーチャーも使用する肉体武器はサブ肉体攻撃とみなされる。これらのサブ攻撃は、オフハンドウェポンによる攻撃のようにメイン攻撃の妨げにはならないが、使用される肉体武器が通常そのクリーチャーのメイン肉体武器であったとしても、そのような攻撃には通常の-5ペナルティ（マルチアタック特技の場合は-2）を受ける。
 
-<b>Slap or Slam:</b> The creature batters opponents with an appendage, dealing bludgeoning damage.
 
-<b>Sting:</b> The creature stabs with a stinger, dealing piercing damage. Sting attacks usually deal damage from poison in addition to hit point damage.
+<h2 c=ty>肉体武器の種類</h2>
+肉体武器には他の武器と同様に種類があります。 最も一般的なものを以下にまとめます。
 
-<b>Tentacle:</b> The creature flails at opponents with a powerful tentacle, dealing bludgeoning (and sometimes slashing) damage.]]
+<b>噛む:</b>このクリーチャーは口で攻撃し、刺し、斬り、殴りつけるダメージを与えます。
 
-s_natk_x		="Multiattack"
-s_natk_x_d		=[[The creature’s secondary attacks with natural weapons take only a –2 penalty.
+<b>爪または鉤爪:</b>この生き物は鋭い付属肢で引き裂き、刺し傷や斬撃のダメージを与えます。
 
-Normal: Without this feat, the creature’s secondary attacks with natural weapons take a –5 penalty.]]
+<b>ゴア:</b>このクリーチャーは枝角、角、または同様の付属肢で相手を槍で突き刺し、貫通ダメージを与えます。
 
-s_natk_2		="Improved Natural Attack"
-s_natk_2_d		=[[Choose one of the creature’s natural attack forms. The damage for this natural weapon increases by one step, as if the creature’s size had increased by one category: 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 3d6, 4d6, 6d6, 8d6, 12d6.
+<b>平手打ちか叩きつけ:</b>このクリーチャーは付属肢で敵を攻撃し、殴打的なダメージを与えます。
 
-A weapon or attack that deals 1d10 points of damage increases as follows: 1d10, 2d8, 3d8, 4d8, 6d8, 8d8, 12d8.
+<b>刺す:</b>クリーチャーは針で刺し、貫通ダメージを与えます。 刺し攻撃は通常、ヒットポイントダメージに加えて毒によるダメージを与えます。
 
-Special: You can take this feat multiple times, but each time it applies to a different natural attack.]]
+<b>触手:</b>このクリーチャーは強力な触手で敵を振り回し、殴打（場合によっては斬撃）のダメージを与えます。]]
 
-s_nac_2			="Improved Natural Armor"
-s_nac_2_d		=[[The creature’s natural armor bonus increases by 1.
+s_natk_x		="マルチアタック"
+s_natk_x_d		=[[肉体武器によるクリーチャーのサブ攻撃には、-2 のペナルティのみがかかります。
 
-Special: A creature can gain this feat multiple times. Each time the creature takes the feat its natural armor bonus increases by another point.]]
+通常: この特技がないと、クリーチャーの肉体武器によるサブ攻撃は -5 のペナルティを受けます。]]
+
+s_natk_2		="肉体攻撃力の向上"
+s_natk_2_d		=[[クリーチャーの肉体攻撃形式の 1 つを選択します。 この肉体武器のダメージは、あたかもクリーチャーのサイズが 1 つのカテゴリーずつ増加したかのように、1 段階ずつ増加します: 1d2、1d3、1d4、1d6、1d8、2d6、3d6、4d6、6d6、8d6、12d6。
+
+1d10 ポイントのダメージを与える武器または攻撃は、1d10、2d8、3d8、4d8、6d8、8d8、12d8 のように増加します。
+
+特殊：この特技は複数回実行できますが、毎回異なる肉体攻撃に適用されます。]]
+
+s_nac_2			="改良された肉体鎧"
+s_nac_2_d		=[[クリーチャーの肉体鎧ボーナスは 1 増加します。
+
+特殊： クリーチャーはこの特技を複数回得ることができる。クリーチャーがこの特技を得るたびに、その肉体鎧ボーナスはさらに1点増加する。]]
 
 
 -- misc
-s_dc_con		="DC = 10 + キャラクター・レベル / 2 + Con修正値"
-s_dc_int		="DC = 10 + キャラクター・レベル / 2 + Int修正値"
-s_dc_mus_uncst	="DC = 10 + your class level + your Con modifier + spell level"
-s_terr_unkn		="未知の地形"-- Unknown Terrain
-s_x_moved		="%s moved."
-s_x_disappeared	="%s disappeared."
-s_tgr_lmt		="Improve Triggered Attacks"	s_tgr_lmt_d ="When making non-active attacks such as Attack of Opportunity and Cleave, also use abilities that have daily limit such as Smite Evil, Extreme Strike, and Infinite Strike."
-s_web_mov		="ウェブウォーキング"	s_web_mov_ench_d	="蜘蛛の糸 への 完全耐性"	s_web_mov_d	=s_web_mov_ench_d.._pm_dot
+s_dc_con		="難易度 = 10 + キャラクターレベル / 2 + CON 修正"
+s_dc_int		="難易度 = 10 + キャラクターレベル / 2 + INT 修正"
+s_dc_mus_uncst	="難易度 = 10 + クラスレベル + CON修正値 + 呪文レベル"
+s_terr_unkn		="未知の地形"
+s_x_moved		="%s 移動しました。"
+s_x_disappeared	="%s は消えた。"
+s_tgr_lmt		="トリガー攻撃の改善"	s_tgr_lmt_d ="機会攻撃や薙ぎ払いなどの非アクティブな攻撃を行う際には、スマイト・イービル、エクストリーム・ストライク、インフィニット・ストライクなどの日数制限のあるアビリティも使用する。"
+s_web_mov		="ウェブウォーキング"	s_web_mov_ench_d	="クモの巣に対する耐性"	s_web_mov_d	=s_web_mov_ench_d.._pm_dot
 
 
 -- z_hr_add
-s_hr				="ハウスルール"-- House Rules
-s_hr_d				="ハウスルールは、基本ルールの修正または拡張です。\n\n特に明記しない限り、ハウスルールは、プレイヤーキャラクターやモンスターを含む、ゲーム内のすべてのクリーチャーに適用されます。"
-s_hro				="オプションハウスルール"-- Optional House Rule
-s_hr_				="ハウスルール： "-- House Rule:
-s_hr_opt			="オプションハウスルール： "-- Optional House Rule:
-s_hr_plyr_atk_mod	="When certain house rules are on (or when your party has characters created based on these house rules), a bonus or penalty will be applied to player characters' attack rolls."
-s_hr_plyr_def_mod	="When certain house rules are on (or when your party has characters created based on these house rules), a bonus or penalty will be applied to player characters' multiple defense abilities."
-s_hr_enmy_atk_mod	="Some house rules are more favorable to player characters. For balance, when such rules are enabled, enemies gain a bonus to attack rolls.\n\nWhen multiple rules are enabled, the total bonus is the maximum bonus, plus +1 bonus from each additional rule."
-s_hr_pc				="When using characters created or leveled up based on this house rule, enemies always gain a bonus to attack rolls even if the house rule is currently unchecked."
-s_hr_enmy_def_mod	="When certain house rules are on (or when your party has characters created based on these house rules), a bonus or penalty will be applied to enemies' multiple defense abilities."
-s_hr_based			="The character is created based on following house rule(s):"
-s_hr_rst			="Discard current modifications."
-s_hr_lma			="Set house rules based on default rules of Low Magic Age."
-s_hr_ogl			="Set house rules based on OGL/SRD 3.5 rules (i.e. uncheck all)."
+s_hr				="ハウスルール"
+s_hr_d				="ハウスルールは、基本ルールの変更または拡張です。\n\n特に指定がない限り、ハウスルールは、プレイヤーキャラクターやモンスターを含む、ゲーム内のすべてのクリーチャーに適用されます。"
+s_hro				="任意のハウスルール"
+s_hr_				="ハウスルール: "
+s_hr_opt			="任意のハウスルール: "
+s_hr_plyr_atk_mod	="特定のハウスルールがオンになっている場合（またはパーティーにこれらのハウスルールに基づいて作成されたキャラクターがいる場合）、プレイヤーキャラクターの攻撃ロールにボーナスまたはペナルティが適用されます。"
+s_hr_plyr_def_mod	="特定のハウスルールがオンになっている場合（または、パーティーにこれらのハウスルールに基づいて作成されたキャラクターがいる場合）、プレイヤーキャラクターの複数の防御能力にボーナスまたはペナルティが適用されます。"
+s_hr_enmy_atk_mod	="一部のハウスルールはプレイヤーキャラクターにとって有利です。 バランスを保つため、このようなルールが有効な場合、敵は攻撃ロールにボーナスを獲得します。\n\n複数のルールが有効な場合、ボーナスの合計は最大ボーナスに、追加のルールごとに +1 ボーナスを加えたものになります。"
+s_hr_pc				="このハウスルールに基づいて作成またはレベルアップされたキャラクターを使用する場合、ハウスルールが現在チェックされていない場合でも、敵は常に攻撃ロールにボーナスを獲得します。"
+s_hr_enmy_def_mod	="特定のハウスルールがオンになっている場合（またはパーティーにこれらのハウスルールに基づいて作成されたキャラクターがいる場合）、敵の複数の防御能力にボーナスまたはペナルティが適用されます。"
+s_hr_based			="キャラクターは以下のハウスルールに基づいて作成されます:"
+s_hr_rst			="現在の変更を破棄します。"
+s_hr_lma			="Low Magic Ageのデフォルトルールに基づいてハウスルールを設定します。"
+s_hr_ogl			="D&DのTRPGルールを一般利用可能にしたオープンゲーミングライセンスのルールセット 3.5 ルールに基づいてハウスルールを設定します(つまり、すべてのチェックを外します)。"
 
-s_hr_low_abi		="下位アビリティ補償"	s_hr_low_abi_d	="キャラクターの最高能力以外の能力関連のロールや値（攻撃ロール、セービングスロー、ACや呪文のDCなど）に8レベルにつき+1ハウスルール・ボーナスを与えるが、同等の能力修正は最高能力修正値を超えない。\n\n特殊: 最も高い能力が耐久力である場合、ボーナスは5減少する。キャラクターのACが最大敏捷力ボーナスによって制限されている場合、そのACのハウスルール・ボーナスは5減少する。"
-s_hr_no_bsb			="change to + character level / 2"
-s_hr_no_bab			="change to + character level / 2"
-s_hr_no_bab_atks	="no extra attacks"
-s_hr_no_bab_low		="poor -> average"
-s_hr_ac_lv_bns		="+ level bonus"
-s_hr_spl_dc			="+ character level / 2"
-s_hr_init_lv_bns	="+ character level / 2"
-s_hr_dmg_10			="Weapon base damage increases by one time per 10 character levels"
-s_hr_fix_dmg_10		="Invariable damage increases by one time per 10 character levels"
-s_hr_abis_10		="10キャラクターレベルごとにすべての能力に+1ボーナス"
-s_hr_dmg_ench_1		="A weapon has up to one extra damage dice enchantment"
-s_hr_aln_ench_0		="Remove alignment enchantments"
-s_hr_hp_con_10		="When calculate HP, Con modifier up to 10"
-s_hr_hp_add_con		="Add Con score to total HP"
-s_hr_def			="Defense/Total Defense: bonus on AC/saving throws/Combat Maneuvers Defense <c=twa>(unchecked: AC only)</c>"
-s_hr_ao_clv_xatks	="<t=$s_ao_nd c=fc_b>Attack of Opportunity</t>/<t=@pwr_cleave c=fc_b>Cleave</t>: can make multiple attacks <c=twa>(unchecked: one single attack only)</c>"
-s_hr_wx2_no_ch		="no critical hits"
-s_hr_nwpn_adv		="damage dice advance and increase with level <c=twa>(similar to monk's unarmed attack)</c>"
-s_hr_mon_rd_feats	="Monsters gain feats randomly <c=twa>(unchecked: optimized feats selection)</c>"
+s_hr_low_abi		="能力低下の補償"	s_hr_low_abi_d	="キャラクターの最高能力以外の能力に関するロールと値(攻撃ロール、セーヴィングスロー、ACと呪文の難易度など)に8レベルにつき+1のハウスルールボーナスを与えるが、同等の能力修正は最高能力修正値を超えない： ボーナスは、最も高い能力がCONである場合、5減少する。キャラクターのACが最大DEXボーナスによって制限されている場合、そのACのハウスルールボーナスは5減少する。"
+s_hr_no_bsb			="+キャラクターレベル/2に変更"
+s_hr_no_bab			="+キャラクターレベル/2に変更"
+s_hr_no_bab_atks	="追加の攻撃はありません"
+s_hr_no_bab_low		="悪い -> 平均"
+s_hr_ac_lv_bns		="+レベルボーナス"
+s_hr_spl_dc			="+キャラクターレベル/2"
+s_hr_init_lv_bns	="+キャラクターレベル/2"
+s_hr_dmg_10			="武器の基本ダメージはキャラクターレベル10ごとに1回増加します"
+s_hr_fix_dmg_10		="不変ダメージがキャラクターレベル10ごとに1回増加します"
+s_hr_abis_10		="キャラクターレベル 10 ごとにすべての能力に +1 ボーナス"
+s_hr_dmg_ench_1		="武器には最大 1 つの追加ダメージダイスのエンチャントがあります"
+s_hr_aln_ench_0		="アライメントエンチャントを削除する"
+s_hr_hp_con_10		="HP、CON修正を計算すると最大10"
+s_hr_hp_add_con		="総HPにCONスコアを加算"
+s_hr_def			="防御/総合防御: AC/セービングスロー/戦闘機動防御のボーナス<c=twa>（チェックなし：ACのみ）</c>"
+s_hr_ao_clv_xatks	="<t=$s_ao_nd c=fc_b>機会攻撃</t>/<t=@pwr_cleave c=fc_b>薙ぎ払い</t>: can make multiple attacks <c=twa>(チェックなし: 単一攻撃のみ)</c>"
+s_hr_wx2_no_ch		="クリティカルヒットなし"
+s_hr_nwpn_adv		="ダメージダイスはレベルに応じて増加する<c=twa>(モンクの素手攻撃に似ています)</c>"
+s_hr_mon_rd_feats	="モンスターはランダムに特技を獲得します<c=twa>(チェックなし：最適化された特技の選択）</c>"
 
-s_hr_dc				="DC increases with character level (actual DC = base DC + character level / 2 + Wis modifier)."
-s_hr_mod_			="Compared with the original rules, this entry has been modified. The original is as follows:\n\n"
+s_hr_dc				="難易度はキャラクターレベルに応じて増加します（実際の難易度 = 基本難易度 + キャラクターレベル / 2 + WIS修正値）。"
+s_hr_mod_			="元のルールと比較して、このエントリは変更されています。 オリジナルは次のとおりです:\n\n"
 
-s_hr_no_lv_adj		="Remove <t=$s_lv_adj_nd c=fc_b>Level Adjustment</t>/<t=$s_race_hd_nd c=fc_b>Racial Hit Dice</t>"
-s_hr_abis_ex		="Improve core races and some subraces' ability adjustments"
-s_hr_spd_ex			="<t=$s_spd_s_nd c=fc_b>Slow Speed</t> (<t=#race_50_nb c=fc_b>Dwarf</t>/<t=#race_60_nb c=fc_b>Gnome</t>/<t=#race_70_nb c=fc_b>Halfling</t> and their subraces): 20 ft. -> 25 ft."
-s_hr_shift_hard		="<t=#race_20_nb c=fc_b>Elf</t> and its subraces: gain <t=@pwr_shift_hard c=fc_b>Graceful Step</t>"
-s_hr_tox_drow		="unconscious duration 10 -> 1"
+s_hr_no_lv_adj		="削除<t=$s_lv_adj_nd c=fc_b>レベル調整</t>/<t=$s_race_hd_nd c=fc_b>種族ヒットダイス</t>"
+s_hr_abis_ex		="コア種族と一部サブ種族の能力調整を改善"
+s_hr_spd_ex			="<t=$s_spd_s_nd c=fc_b>低速</t> (<t=#race_50_nb c=fc_b>ドワーフ</t>/<t=#race_60_nb c=fc_b>ノーム</t>/<t=#race_70_nb c=fc_b>ハーフリング</t>およびその亜種族):20フィート -> 25フィート"
+s_hr_shift_hard		="<t=#race_20_nb c=fc_b>エルフ</t>およびそのサブ種族：ゲイン<t=@pwr_shift_hard c=fc_b>優雅なステップ</t>"
+s_hr_tox_drow		="無意識期間 10 -> 1"
 
-s_hr_no_xcls_xp_pnt	="Remove <t=$s_xcls_xp_pnt_nd c=fc_b>マルチクラス XP ペナルティ</t>"
-s_hr_cls_aln_0		="Remove alignment restrictions of classes"
-s_hr_cls_race_0		="Remove race restrictions of prestige classes"
-s_hr_ex_cls_0		="Remove ex-class restrictions"
-s_hr_rage			="+2 uses per day"
-s_hr_bbn_dr			="damage reduction points = barbarian level"
-s_hr_unarm_x		="extra attacks"
-s_hr_unarm_ratk_x	="extra attacks for regular attack <c=twa>(unchecked: for full attack only)</c>"
-s_hr_mnk_ac			="limit maximum bonus"	s_hr_mnk_ac_d	="If the sum of Wis bonus and Dex bonus is greater than the highest ability bonus + 4, ignore the excess of Wis bonus. In addition, limit the bonus based on monk level to +6 max."
-s_hr_quivering_palm	="+2 uses per week"
-s_hr_wholeness_of_body	="add level x (Wis bonus / 2) to healing points per day"
-s_hr_mnk_dr			="damage reduction points = monk level / 2 and cannot be overcome"
-s_hr_dfl_x			="up to 4 times"
-s_hr_smites			="+2 uses per day; damage bonus per level: 1 -> 4; bonus on attack rolls: +10 max"
-s_hr_lay_on_hands	="add Cha bonus to healing points per day"
-s_hr_pal_saves		="+5 Max"
-s_hr_edl_mod		="effective druid level = ranger level - 3 <c=twa>(unchecked: ranger level / 2)</c>"
-s_hr_brd_mus		="at least 3 uses per day"
-s_hr_mus_atk		="+5 Max"
-s_hr_mus_skl		="effect on all skill checks of all allies in range"
-s_hr_zdd_ac_bonus	="+6 Max"
-s_hr_zdd_def		="+4 bonus on Combat Maneuvers Defense"
-s_hr_trap_sense		="+10 Max"
-s_hr_zaa_xa			="+1 use per day for every 2 levels, up to 3 uses per day"
-s_hr_zaa_da			="+1 use per day for every 5 levels, up to 3 uses per day"
-s_hr_prc_dmg		="+5 bonus on attack rolls"
-s_hr_zdu_ac_int		="+6 Max"
-s_hr_zdu_ac_def		="+4 Max"
-s_hr_zdr_bwpn_use	="+2 uses per day"
-s_hr_cls_dc			="When calculating DC, replace class level with character level / 2"
-s_hr_zat_req		="remove prerequisites: <t=@pwr_sa c=fc_b>《急所攻撃》+2d6</t>"
-s_hr_sa_frc_add		="+2 uses per day"
-s_hr_sa_frc_act		="one use per action <c=twa>(unchecked: one use per attack)</c>"
-s_hr_zbm_req		="remove prerequisites: <t=@pwr_mobility c=fc_b>Mobility</t>/<t=@pwr_cbt_exp c=fc_b>Combat Expertise</t>"
-s_hr_zbm_inc_use	="daily uses continue to increase after level 10"
-s_hr_zbm_act_use	="one use per action <c=twa>(unchecked: one use per attack)</c>"
+s_hr_no_xcls_xp_pnt	="削除<t=$s_xcls_xp_pnt_nd c=fc_b>マルチクラス XP ペナルティ</t>"
+s_hr_cls_aln_0		="クラスのアライメント制限を削除する"
+s_hr_cls_race_0		="上級クラスの種族制限を削除"
+s_hr_ex_cls_0		="クラス外の制限を削除する"
+s_hr_rage			="1 日あたり +2 回使用可能"
+s_hr_bbn_dr			="ダメージ軽減ポイント = バーバリアンレベル"
+s_hr_unarm_x		="追加攻撃"
+s_hr_unarm_ratk_x	="通常攻撃に対する追加攻撃<c=twa>(チェックなし:全体攻撃のみ)</c>"
+s_hr_mnk_ac			="ボーナスの最大値を制限する"	s_hr_mnk_ac_d	="WIS ボーナスと DEX ボーナスの合計が最高能力ボーナス + 4 より大きい場合、WIS ボーナスの超過分は無視されます。 さらに、モンクレベルに基づくボーナスを最大 +6 に制限します。"
+s_hr_quivering_palm	="週あたり +2 回の使用"
+s_hr_wholeness_of_body	="レベル x (WIS ボーナス / 2) を 1 日あたりの回復ポイントに追加します"
+s_hr_mnk_dr			="ダメージ軽減ポイント = モンクレベル / 2 であり、克服できません"
+s_hr_dfl_x			="4回まで"
+s_hr_smites			="1 日あたり +2 回の使用; レベルごとのダメージボーナス: 1 -> 4; 攻撃ロールのボーナス: +10 最大"
+s_hr_lay_on_hands	="1日あたりの回復ポイントにCHAボーナスを追加します"
+s_hr_pal_saves		="+5最大"
+s_hr_edl_mod		="有効なドルイドレベル = レンジャーレベル - 3<c=twa>（チェックなし：レンジャーレベル/2）</c>"
+s_hr_brd_mus		="1日あたり少なくとも3回の使用"
+s_hr_mus_atk		="+5最大"
+s_hr_mus_skl		="範囲内のすべての味方のすべてのスキルチェックに影響を与える"
+s_hr_zdd_ac_bonus	="+6最大"
+s_hr_zdd_def		="戦闘機動防御力に +4 ボーナス"
+s_hr_trap_sense		="+10最大"
+s_hr_zaa_xa			="2 レベルごとに 1 日あたり +1 回の使用、1 日あたり最大 3 回まで使用可能"
+s_hr_zaa_da			="5 レベルごとに 1 日あたり +1 回の使用、1 日あたり最大 3 回まで使用可能"
+s_hr_prc_dmg		="攻撃ロールに+5ボーナス"
+s_hr_zdu_ac_int		="+6最大"
+s_hr_zdu_ac_def		="+4最大"
+s_hr_zdr_bwpn_use	="1 日あたり +2 回使用可能"
+s_hr_cls_dc			="難易度を計算するときは、クラスレベルをキャラクターレベル/2に置き換えます"
+s_hr_zat_req		="前提条件を削除する: <t=@pwr_sa c=fc_b>急所攻撃+2d6</t>"
+s_hr_sa_frc_add		="1 日あたり +2 回使用可能"
+s_hr_sa_frc_act		="アクションごとに 1 回の使用<c=twa>(チェックなし: 攻撃ごとに 1 回使用)</c>"
+s_hr_zbm_req		="前提条件を削除する: <t=@pwr_mobility c=fc_b>機動性</t>/<t=@pwr_cbt_exp c=fc_b>戦闘の専門知識</t>"
+s_hr_zbm_inc_use	="レベル10以降も毎日の使用量は増加し続けます"
+s_hr_zbm_act_use	="アクションごとに 1 回の使用<c=twa>(チェックなし: 攻撃ごとに 1 回使用)</c>"
 
-s_hr_spl_cd			="呪文発動モード：クールダウン<c=twa>（チェックなし：呪文スロット）</c>"-- ...の場合はオフ
-s_hr_spl_abi_50		="能力ボーナス呪文スロットを計算する際、最大有効能力値を５０に制限する"
-s_hr_spl_1x3		="レベル1の最小呪文スロットを3に設定する<c=twa>（レベル0の呪文スロットがないようにバランスを取るため）</c>"
-s_hr_sum_cha		="Summoner's Cha modifier applies to summoned creatures' physical abilities (+6 max)"
+s_hr_spl_cd			="呪文詠唱モード: クールダウン<c=twa>(チェックなし: 呪文スロット)</c>"
+s_hr_spl_abi_50		="能力ボーナス呪文スロットを計算すると、実質的な能力スコアは50まで"
+s_hr_spl_1x3		="レベル1の最小呪文スロットを3に設定<c=twa>(レベル0の呪文スロットがないバランスを取るため)</c>"
+s_hr_sum_cha		="サモナーの CHA 修正は召喚されたクリーチャーの物理的能力に適用されます (+6 最大)"
 
-s_hr_heal			="DC = 10 + target's level + target's Con modifier<c=twa> (unchecked: DC = 15)</c>"
-s_hr_conc			="DC base on level and ability scores<c=twa> (unchecked: base on damage or fixed)</c>"
+s_hr_heal			="難易度 = 10 + ターゲットのレベル + ターゲットの CON 修正値<c=twa>(チェックなし：難易度=15)</c>"
+s_hr_conc			="レベルと能力スコアに基づいた 難易度<c=twa>(チェックなし: 損傷または修正に基づく)</c>"
 
-s_hr_eu_dist		="Distance Algorithm: Euclidean Distance <c=twa>(unchecked: OGL 3.5 Distance)</c>"	s_hr_eu_dist_t	=[[<b c=ty>Euclidean Distance:</b>
-The euclidean distance from a character (a) to a square (b):
+s_hr_eu_dist		="距離アルゴリズム:ユークリッド距離<c=twa>(チェックなし: オープンゲーミングライセンス 3.5 距離)</c>"	s_hr_eu_dist_t	=[[<b c=ty>ユークリッド距離:</b>
+キャラクター(a)から正方形(b)までのユークリッド距離:
 sqrt((a.x - b.x) ^ 2 + (a.y - b.y) ^ 2).
 
-<b c=ty>OGL 3.5 Distance:</b>]]
+<b c=ty>オープンゲーミングライセンス 3.5 距離:</b>]]
 
-s_hr_32_buy			="Use 32 points buy <c=twa>(unchecked: standard 25 points)</c>"
+s_hr_32_buy			="32ポイントを使って購入する<c=twa>(チェックなし：標準25ポイント）</c>"
 
-s_wip				="This ability has no practical use at present (WIP)."
-s_for_btl			="This ability is currently only available in combat."
+s_wip				="この機能は、現在 (進行中の作業) では実用化されていません。"
+s_for_btl			="この能力は現在戦闘でのみ利用可能です。"
 
-s_fix_dmg			="Invariable Damage"	s_fix_dmg_d	=[[This sort of invariable damage, damage reduction, regeneration, or resistance, etc. involve the following abilities or values:
+s_fix_dmg			="不変ダメージ"	s_fix_dmg_d	=[[このような一定ダメージ、ダメージ軽減、回復、耐性などには以下のような能力や値が関係します。:
 
-Weapon Specialization, Greater Weapon Specialization, Two-Handed Weapon Fighting, Improved Two-Handed Weapon Fighting, Two-Weapon Rend, Point-Blank Shot, Crossbow Sniper, Bleeding Critical, Improved Bleeding Critical, Overwhelming Critical, Charge, Improved Charge, Greater Charge, Charge Weapon.
+武器特化、より優れた武器特化、両手武器戦闘、改良された両手武器戦闘、二刀流、ポイントブランクショット、クロスボウスナイパー、出血クリティカル、改良された出血クリティカル、圧倒的なクリティカル、チャージ、改良されたチャージ、より大きなチャージ , チャージ武器。
 
-Inspire Courage, Celestial Resistance, Fiendish Resistance, Divine Favor, Prayer, Good Hope, Crushing Despair, Consecrate, Desecrate, Bleeding, Burning, Poisoned, Corroded, Regenerating, Sickened, Luck damage bonus of wondrous items, Squeezing Damage (Empty Body, etc.), Burning Damage (Grease, Web, etc.).
+インスパイア・カレッジ、セレスティアル・レジスタンス、フィーンディッシュ・レジスタンス、ディヴァイン・フェイバー、プレイヤー、グッド・ホープ、クラッシング・デスペア、コンセクレイト、ディセクレイト、ブリーディング、バーニング、ポイズンド、コローデッド、リジェネレーティング、シッケンド、ラック・ダメージ・ボーナス・オブ・ワンダラス・アイテム、スクイージング・ダメージ（エンプティ・ボディなど）、バーニング・ダメージ（グリース、ウェブなど）。
 
-<b>Monster Abilities: </b>Cruelty Aura, Healing Aura, Flaming Aura, Ptomaine Aura, Pack Attack, Rend, Bloodlust, Bloodthirsty, Blood Rage, Extreme Blood Rage, Imbue Arrow, Violent Charge, Furious Charge, Strangle, Ursine Crush, Sting, Giant Sting, Blood Drain, Ghoul Bite, Air Mastery, Earth Mastery, Water Mastery.]]
+<b>モンスターの能力: </b>残酷なオーラ、癒しのオーラ、炎のオーラ、毒のオーラ、パックアタック、レンド、血の渇望、血の渇き、ブラッドレイジ、エクストリームブラッドレイジ、インビューアロー、バイオレントチャージ、フューアスチャージ、ストラングル、アーシンクラッシュ、スティング、ジャイアントスティング、ブラッドドレイン、 グールバイト、風マスタリー、地マスタリー、水
+
+
+
+
+マスタリー。]]
 
 
 -- z_acts
-s_spd				="速度"	s_spd_d="速度はラウンド中にどれくらいの速度で移動できるかを示します。これは種族と装備している鎧に依存します。"
-s_spd_fmt			="基本移動速度 %dスクエア。"
-s_spd_r				="速い速度"
+s_spd				="スピード"		s_spd_d="速度によって、ラウンド中にどれくらいの距離を移動できるかがわかります。 それは主にあなたの種族とあなたが着ている鎧によって異なります。"
+s_spd_fmt			="基本陸上速度は %d マスです。"
+s_spd_r				="高速"
 s_spd_m				="通常速度"
-s_spd_m_d			="基本移動速度 ６スクエア。"-- 標準 は
-s_spd_s				="遅い速度"
-s_spd_s_d			="基本移動速度 ４スクエア。"
+s_spd_m_d			="基本陸上速度は30フィート（6マス）。"
+s_spd_s				="低速"
+s_spd_s_d			="基本陸上速度は20フィート（4マス）。"
 
-s_mov				="移動"			s_mov_d		="最も簡単な移動アクションは標準的な移動モードで、隣接する敵から機会攻撃を誘発します。"
-s_mov_1				="シフト"		s_mov_1_d	="You can move 5 feet in any round when you don’t perform any other kind of movement.\n\nTaking this 5-foot step spends no action and never provokes an attack of opportunity."-- 5-Foot Step
-s_mov_2				="Double-move"	s_mov_2_d	="If you do nothing but move (that is, if you use both of your actions in a round to move your speed), you can move double your speed."
-s_mov_r				="Run"			s_mov_r_d	=[[You can run as a full-round action. When you run, you can move up to four times your speed in a straight line (or three times your speed if you’re in heavy armor).
+s_mov				="移動"			s_mov_d		="最も単純な移動アクションは速度移動だが、隣接する敵からの機会攻撃を誘発することがある。"
+s_mov_1				="交代"	s_mov_1_d	="他の種類の移動を行わない場合は、どのラウンドでも 5 フィート移動できます。\n\nこの 5 フィートのステップではアクションは消費されず、機会攻撃が誘発されることはありません。"
+s_mov_2				="ダブルムーブ"	s_mov_2_d	="移動のみを行う場合 (つまり、ラウンド内で両方のアクションを使用して速度を移動する場合)、速度を 2 倍にすることができます。"
+s_mov_r				="走る"			s_mov_r_d	=[[フルラウンドアクションとして実行できます。 走るときは、直線で最大 4 倍の速度で移動できます (重鎧を着ている場合は 3 倍の速度で移動できます)。
 
-You lose any Dexterity bonus to AC unless you have the Run feat.
+走りの特技を持っていない限り、ACのDEXのボーナスを失う。
 
-You can’t run across difficult terrain or if you can’t see where you’re going.]]
-s_mov_b				="Burrow"		s_mov_b_d	=[[A creature with a burrow speed can tunnel through dirt, but not through rock.
+困難な地形を走ったり、どこへ行くのかが見えなかったりする場合は走れません。]]
+s_mov_b				="潜行"		s_mov_b_d	=[[潜行速度を持つクリーチャーは土を掘ることはできるが、岩を掘ることはできない。
 
-Creatures cannot charge or run while burrowing.
+クリーチャーは穴を掘っている間はチャージしたり走ったりできない。
 
-Most burrowing creatures do not leave behind tunnels other creatures can use (either because the material they tunnel through fills in behind them or because they do not actually dislocate any material when burrowing).]]
-s_mov_c				="Climb"		s_mov_c_d	=[[A creature with a climb speed has a +8 racial bonus on all Climb checks. The creature must make a Climb check to climb any wall or slope with a DC of more than 0, but it always can choose to take 10 even if rushed or threatened while climbing.
+ほとんどの穴掘りクリーチャーは、他のクリーチャーが利用できるトンネルを残さない（トンネルを掘った物質が背後で埋まるためか、穴掘りの際に実際に物質を変位させないため）。]]
+s_mov_c				="登坂"		s_mov_c_d	=[[登坂速度を持つクリーチャーは、すべての登坂チェックに＋8の種族ボーナスを持つ。このクリーチャーは難易度が0以上の壁や斜面を登るには登坂チェックを行なわなければならないが、登坂している最中に急かされたり脅かされたりしても、常にテイク１０（ダイスを振らずに通常の能力値チェックを10として扱う）を選択できる。
 
-The creature climbs at the given speed while climbing. If it chooses an accelerated climb it moves at double the given climb speed (or its base land speed, whichever is lower) and makes a single Climb check at a –5 penalty. Creatures cannot run while climbing.
+そのクリーチャーは上昇中、指定された速度で上昇する。加速上昇を選んだ場合、指定された上昇速度の2倍（またはその基本陸上速度のいずれか低い方）で移動し、-5のペナルティで1回の上昇チェックを行なう。クリーチャーは登る中に走ることはできない。
 
-A creature retains its Dexterity bonus to Armor Class (if any) while climbing, and opponents get no special bonus on their attacks against a climbing creature.]]
-s_mov_f				="Fly"			s_mov_f_d	=[[A creature with a fly speed can move through the air at the indicated speed if carrying no more than a light load. (Note that medium armor does not necessarily constitute a medium load.)
+クリーチャーは登っている間、（もしあれば）アーマークラスに対するDEXのボーナスを維持し、対戦相手は登っているクリーチャーに対する攻撃に特別なボーナスを受けない。]]
+s_mov_f				="飛行"			s_mov_f_d	=[[飛行速度を持つクリーチャーは、軽い荷物しか運んでいなければ、指定された速度で空中を移動できます。 (中程度の装甲が必ずしも中程度の荷重を構成するわけではないことに注意してください。)
 
-Flying creatures are not hampered by difficult terrain and can avoid most obstacles.]]
-s_mov_w				="Swim"			s_mov_w_d	=[[A creature with a swim speed can move through water at its swim speed without making Swim checks.
+飛行する生き物は困難な地形に邪魔されず、ほとんどの障害物を回避できます。]]
+s_mov_w				="水泳"			s_mov_w_d	=[[水泳速度を持つクリーチャーは、水泳チェックを行なうことなく、その水泳速度で水中を移動できる。
 
-It has a +8 racial bonus on any Swim check to perform some special action or avoid a hazard. The creature can always can choose to take 10 on a Swim check, even if distracted or endangered.
+このクリーチャーは、何らかの特別な行動を行なったり危険を回避したりするための水泳チェックに＋8の種族ボーナスを持つ。このクリーチャーは、注意散漫であっても、危険にさらされていても、常に泳ぎチェックでテイク１０（ダイスを振らずに通常の能力値チェックを10として扱う）を選択できる。
 
-The creature can use the run action while swimming, provided it swims in a straight line.]]
+クリーチャーは、直線的に泳ぐ場合に限り、泳ぎながら走るアクションを使用できます。]]
 
 -- z_eqpt_prof
-s_auto_prof			="\n\nSpecial: Creatures are automatically proficient with its natural weapons, unarmed attacks, and touch attacks."
-s_wp_any			="Any Weapon Proficiency"	s_wp_any_d	="Proficient with any weapon."
-s_wp_nwpn			="《肉体武器習熟》"	s_wp_nwpn_d			="You make attack rolls with natural weapons normally.\n\nNormal: When using a weapon with which you are not proficient, you take a –4 penalty on attack rolls.\n\nSpecial: Natural weapons are weapons that are physically a part of a creature. A creature automatically proficient in its natural weapons."
-s_wp_simple			="《単純武器習熟》"	s_wp_simple_d		="You make attack rolls with simple weapons normally.\n\nNormal: When using a weapon with which you are not proficient, you take a –4 penalty on attack rolls.\n\nSpecial: All characters except for druids, monks, and wizards are automatically proficient with all simple weapons. They need not select this feat."
-s_wp_martial		="《軍用武器習熟》"	s_wp_martial_d		="You make attack rolls with martial weapons normally.\n\nNormal: When using a weapon with which you are not proficient, you take a –4 penalty on attack rolls.\n\nSpecial: Barbarians, fighters, paladins, and rangers are proficient with all martial weapons. They need not select this feat."
-s_wp_martial_grp	="《軍用武器習熟》"	s_wp_martial_grp_d	="You make attack rolls with martial weapons of this group normally.\n\nNormal: When using a weapon with which you are not proficient, you take a –4 penalty on attack rolls.\n\nSpecial: Barbarians, fighters, paladins, and rangers are proficient with all martial weapons. They need not select this feat."
-s_wp_exotic			="《特殊武器習熟》"	s_wp_exotic_d		="You make attack rolls with the weapon normally.\n\nNormal: When using a weapon with which you are not proficient, you take a –4 penalty on attack rolls.\n\nSpecial: 単純武器や軍用武器と比較して、特殊武器は比較的まれで使用が難しく、熟練するには専門的な訓練が必要となる。"
-s_wp_elf			="《種族武器習熟》：エルフ"				s_wp_elf_d	="Elves are proficient with longsword, rapier, longbow (including composite longbow), and shortbow (including composite shortbow)."
-s_wp_drow			="《種族武器習熟》：ドラウ"				s_wp_drow_d	="Drow are proficient with short sword, rapier, and hand crossbow."
-s_wp_wiz			="《クラス武器習熟》：ウィザード"		s_wp_wiz_d	="Wizards are proficient with club, dagger, heavy crossbow, light crossbow, and quarterstaff."
-s_wp_mnk			="《クラス武器習熟》：モンク"			s_wp_mnk_d	="Monks are proficient with club, light crossbow, heavy crossbow, dagger, throwing axe, javelin, kama, nunchaku, quarterstaff, sai, shuriken, siangham, and sling."
-s_wp_rog			="《クラス武器習熟》：ローグ"			s_wp_rog_d	="Rogues are proficient with hand crossbow, rapier, sap, shortbow, and short sword."
-s_wp_drd			="《クラス武器習熟》：ドルイド"			s_wp_drd_d	="Druids are proficient with club, dart, quarterstaff, scimitar, sickle, shortspear, sling, and spear. They are also proficient with all natural attacks (claw, bite, and so forth) of any form they assume with wild shape."
-s_wp_brd			="《クラス武器習熟》：吟遊詩人"			s_wp_brd_d	="Bards are proficient with short sword, longsword, rapier, shortbow, sap, and whip."
-s_wp_zas			="《クラス武器習熟》：アサシン"			s_wp_zas_d	="Assassins are proficient with the crossbow (hand, light, or heavy), dagger, dart, rapier, sap, shortbow (normal and composite), and short sword."
-s_wp_zsd			="《クラス武器習熟》：シャドウダンサー"	s_wp_zsd_d	="Shadowdancers are proficient with the club, crossbow (hand, light, or heavy), dagger, dart, mace, morningstar, quarterstaff, rapier, sap, shortbow (normal and composite), and short sword."
+s_auto_prof			="\n\n特殊：クリーチャーは自動的に肉体武器、非武装攻撃、接触攻撃に習熟する。"
+s_wp_any			="あらゆる武器の熟練度"		s_wp_any_d			="あらゆる武器の扱いに長けている。"
+s_wp_nwpn			="肉体武器の熟練度"	s_wp_nwpn_d			="通常、肉体武器を使用して攻撃ロールを作成します。\n\n通常: 習熟していない武器を使用すると、攻撃ロールに -4 のペナルティを受けます。\n\n特殊: 肉体武器は物理的に一部である武器です。 生き物。 自然の武器に自動的に習熟する生き物。"
+s_wp_simple			="単純武器の熟練度"	s_wp_simple_d		="通常、単純武器を使用して攻撃ロールを作成します。\n\n通常: 習熟していない武器を使用すると、攻撃ロールに -4 のペナルティを受けます。\n\n特殊: ドルイド、モンク、ウィザードを除くすべてのキャラクター すべての単純武器に自動的に習熟します。 この特技を選択する必要はありません。"
+s_wp_martial		="格闘武器の熟練度"	s_wp_martial_d		="通常、格闘武器を使用して攻撃ロールを行います。\n\n通常: 熟練していない武器を使用すると、攻撃ロールに -4 のペナルティを受けます。\n\n特殊: バーバリアン、ファイター、パラディン、レンジャーは熟練しています。 あらゆる格闘武器を使って。 この特技を選択する必要はありません。"
+s_wp_martial_grp	="格闘武器の熟練度"	s_wp_martial_grp_d	="あなたは通常、このグループの格闘武器を使って攻撃ロールを行います。\n\n通常: 習熟していない武器を使用する場合、攻撃ロールに -4 のペナルティを受けます。\n\n特殊: バーバリアン、ファイター、パラディン、 レンジャーはあらゆる格闘武器に精通しています。 この特技を選択する必要はありません。"
+s_wp_exotic			="珍しい武器の熟練度"	s_wp_exotic_d		="あなたはその武器を使って通常どおり攻撃ロールを行います。\n\n通常: 習熟していない武器を使用する場合、攻撃ロールに -4 のペナルティを受けます。\n\n特殊: シンプルな武器や軍用武器と比較すると、珍しい武器は 比較的まれで使用が難しく、使いこなすには専門的なトレーニングが必要です。"
+s_wp_elf			="種族武器熟練度：エルフ"			s_wp_elf_d	="エルフはロングソード、レイピア、ロングボウ（コンポジットロングボウを含む）、ショートボウ（コンポジットショートボウを含む）に熟練しています。"
+s_wp_drow			="種族武器熟練度：ドラウ"			s_wp_drow_d	="ドラウはショートソード、レイピア、ハンドクロスボウの扱いに熟練しています。"
+s_wp_zas			="クラス武器熟練度：アサシン"		s_wp_zas_d	="アサシンは、クロスボウ (ハンド、ライト、またはヘビー)、ダガー、ダーツ、レイピア、サップ、ショートボウ (ノーマルおよびコンポジット)、およびショートソードに熟練しています。"
+s_wp_zsd			="クラス武器熟練度: シャドウダンサー"	s_wp_zsd_d	="シャドウダンサーは、クラブ、クロスボウ（ハンド、ライト、またはヘビー）、ダガー、ダーツ、メイス、モーニングスター、クォータースタッフ、レイピア、サップ、ショートボウ（ノーマルおよびコンポジット）、ショートソードに熟練しています。"
+s_wp_wiz			="クラス武器熟練度：ウィザード"			s_wp_wiz_d	="ウィザードは、クラブ、ダガー、ヘビークロスボウ、ライトクロスボウ、クォータースタッフに熟練しています。"
+s_wp_mnk			="クラス武器熟練度：モンク"			s_wp_mnk_d	="モンクはこクラブ、ライトクロスボウ、ヘビークロスボウ、ダガー、スローイングアクス、ジャベリン、カマ、ヌンチャク、クォータースタッフ、サイ、シュリケン、シャンガム、スリングに熟練しています。"
+s_wp_rog			="クラス武器熟練度: ローグ"			s_wp_rog_d	="ローグはハンドクロスボウ、レイピア、サップ、ショートボウ、ショートソードに熟練しています。"
+s_wp_drd			="クラス武器熟練度: ドルイド"			s_wp_drd_d	="ドルイドは、クラブ、ダーツ、クォータースタッフ、シミター、シックル、ショートスピア、スリング、およびスピアに熟練しています。 彼らはまた、ワイルドシェイプで想定されるあらゆる形態のあらゆる肉体攻撃（爪、噛みつきなど）にも熟練しています。"
+s_wp_brd			="クラス武器熟練度：バード"			s_wp_brd_d	="バードはショートソード、ロングソード、レイピア、ショートボウ、サップ、ムチに熟練しています。"
 
 -- z_feats z_pwr_add
-s_wis_melee			="Zen Martial"	s_wis_melee_d	="When making melee attacks, you may use your Wisdom modifier instead of your Strength modifier on attack rolls."
-s_str_throw			="Brute Throw"	s_str_throw_d	="When making ranged attacks with a thrown weapon, you may use your Strength modifier instead of your Dexterity modifier on attack rolls."
+s_wis_melee			="禅武道"			s_wis_melee_d	="近接攻撃を行うとき、攻撃ロールでSTR修正値の代わりにWIS修正値を使用してもよい。"
+s_str_throw			="力投"			s_str_throw_d	="投擲武器で遠距離攻撃を行う場合、攻撃ロールでDEX修正値の代わりにSTR修正値を使用できます。"
 -- z_cm
-s_cmb			="戦技攻撃"
-s_cmd			="戦技防御"
-s_cm			="戦技"	s_cm_d	=[[During combat, you can attempt to perform a number of maneuvers that can hinder or even cripple your foe, including trip, grapple, bull rush, drag, and overrun. Although these maneuvers have vastly different results, they all use a similar mechanic to determine success.
+s_cmb			="戦闘機動ボーナス"
+s_cmd			="戦闘機動防御"
+s_cm			="戦闘機動"			s_cm_d	=[[戦闘中、トリップ、組みつき、ブルラッシュ、引きずり、オーバーランなど、敵を妨害したり、さらには機能不全に陥らせる可能性のあるさまざまな操作を実行しようとすることができます。 これらの操作の結果は大きく異なりますが、成功を決定するために同様の仕組みがすべて使用されます。
 
-When using a combat maneuver, a combat maneuver check is required: roll d20 + your Combat Maneuver Bonus against the target's Combat Maneuver Defense.
+戦闘機動を使用する場合、戦闘機動チェックが必要です。ターゲットの戦闘機動防御に対して d20 + 戦闘機動ボーナスをロールします。
 
-戦技攻撃 = Base Attack Bonus + 【筋力】修正値 + サイズ修正値 + その他 (特技など) + 状況ボーナス。
+戦闘機動ボーナス (CMB) = 基本攻撃ボーナス + STR 修正値 + サイズ修正値 + その他の修正値 (特技、状況ボーナスなど)。
 
-戦技防御 = 10 + Base Attack Bonus + 【筋力】修正値か【敏捷力】修正値の大きい方 + サイズ修正値 + その他 (特技など) + 状況ボーナス。]]
-s_cm1			="戦技体得"	s_cm1_d	="すべての戦技を使用できる：《足払い》、《組み付き》、《突き飛ばし》、《引き込み》、《蹴散らし》。"
-s_hr_cm_cd		="<t=$s_cm_nd c=fc_b>戦技</t>：with cool-down"
-s_trip			="《足払い》"		s_trip_d	="《足払い》を試み相手を伏せ状態する。"
-s_trip1			="《足払い強化》"	s_trip1_d	="足払いの攻撃、防御の両方に+2ボーナスを得る。対象からは機会攻撃を受けない。"
-s_trip2			="《上級足払い》"	s_trip2_d	="《足払い強化》の効果に加え+2ボーナスを得る。また、対象はあなたの味方（あなた自身は除く）の機会攻撃を誘発する。"
-s_grap			="《組み付き》"	s_grap_d	=[[Grab and hold an opponent, make him unable to act. 対象に組み付いて、行動できないようにする。
+戦闘機動防御 (CMD) = 10 + 基本攻撃ボーナス + STR 修正値と DEX 修正値の最大値 + サイズ修正値 + その他の修正値 (特技、状況ボーナスなど)。]]
+s_cm1			="戦闘機動マスタリー"	s_cm1_d	="すべての戦技を使用できる：足払い、組み付き、突き飛ばし、引き込み、蹴散らし。"
+s_hr_cm_cd		="<t=$s_cm_nd c=fc_b>戦闘機動</t>: クールダウンあり"
+s_trip			="足払い"						s_trip_d		="足払いを試み相手を伏せ状態する。"
+s_trip1			="足払い強化"			s_trip1_d		="足払いの攻撃、防御の両方に+2ボーナスを得る。対象からは機会攻撃を受けない。"
+s_trip2			="上級足払い"				s_trip2_d		="足払い強化の効果に加え+2ボーナスを得る。また、対象はあなたの味方（あなた自身は除く）の機会攻撃を誘発する。"
+s_grap			="組みつき"					s_grap_d		=[[相手を掴んで保持し、行動不能にする。 対象に組み付いて、行動できないようにする。
 
-First, you provoke an attack of opportunity from the target you are trying to grapple unless you have Improved Grapple. If the attack deals damage, the grapple attempt fails. If the attack misses or fails to deal damage, proceed to make a grapple check.
+まず、あなたが改善された組みつきを持っていない限り、あなたは組みつきを行おうとしている対象からの機会攻撃を誘発する。その攻撃がダメージを与えた場合、組みつきの試みは失敗する。攻撃が外れたかダメージを与えられなかった場合、組みつきチェックを行なう。
 
-<b>Grapple Check: </b>Roll d20 + your Combat Maneuver Attack against the target's Combat Maneuver Defense. If succeed, both sides are now grappling, and you deal damage to the target as if with an unarmed strike.
+<b>組みつきチェック: </b>d20 + ターゲットの戦闘機動防御に対してあなたの戦闘機動攻撃をロールします。 成功すると、両側が組み合いになり、素手で攻撃したかのようにターゲットにダメージを与えます。
 
-<b>Grappling: </b>Both sides in grappling can’t move, have no threatened squares, and lose Dex bonus on AC.
+<b>組みつき: </b>組みつき中の双方は移動できず、脅威となるマスを持たず、ACのDEXボーナスを失う。
 
-Each turn begins, you make an attack with a light weapon, natural weapon, or unarmed strike against the target. You take a –4 penalty on such attacks.
+各ターンが始まると、あなたはターゲットに対してライトウェポン、肉体武器、または非武装の攻撃を行います。 このような攻撃に対しては -4 ペナルティを受けます。
 
-Each turn begins, the target makes a grapple check to escape. If it's grappled by multiple opponents (multiple creatures can grapple a single target), its grapple check must beat the check results of each opponent.
+各ターンが始まるたび、対象は脱出するために組みつきチェックを行なう。複数の相手に組みつきされている場合（複数のクリーチャーが1体の対象に組みつきできる）、その組みつきチェックはそれぞれの相手のチェック結果に勝たなければならない。
 
-You can end the grapple as a free action. 自分が始めた組みつきを自由に終了することができる。
+フリーアクションとして組みつきを終了できます。
 
-<b>Special: </b>You can’t grapple a target who is two or more size categories larger than you are.]]
-s_grap1			="《組み付き強化》"	s_grap1_d		="組みつきの攻撃、防御の両方に+2ボーナスを得る。対象からは機会攻撃を受けない。"
-s_grap2			="《上級組み付き》"	s_grap2_d		="《組み付き強化》の効果に加え+2ボーナスを得る。Automatically deal damage to the target as if with an unarmed strike per turn."-- +2 bonus to Improved Grapple and automatically...
-s_bull_rush		="《突き飛ばし》"		s_bull_rush_d	="対象をまっすぐ後ろに押し出す。(※訳注：このアクションは機会攻撃を誘発する。戦技攻撃 vs 戦技防御に成功すれば、対象をまっすぐ後ろに１スクエア強制移動させる。)"
-s_bull_rush1	="《突き飛ばし強化》"	s_bull_rush1_d	="突き飛ばしの攻撃、防御の両方に+2ボーナスを得る。対象からは機会攻撃を受けない。"
-s_bull_rush2	="《上級突き飛ばし》"	s_bull_rush2_d	="《突き飛ばし強化》の効果に加え+2ボーナスを得る。また、対象はあなたの味方（あなた自身は除く）の機会攻撃を誘発する。"
-s_drag			="《引き込み》"		s_drag_d		="対象を引き寄せる。（※訳注：このアクションは機会攻撃を誘発する。戦技攻撃 vs 戦技防御に成功すれば、自分が１スクエア後ろに下がるとともに、対象を自分がいたスクエアに強制移動させる）"
-s_drag1			="《引き込み強化》"	s_drag1_d		="引き込みの攻撃、防御の両方に+2ボーナスを得る。対象からは機会攻撃を受けない。"
-s_drag2			="《上級引き込み》"	s_drag2_d		="《引き込み強化》の効果に加え+2ボーナスを得る。また、対象はあなたの味方（あなた自身は除く）の機会攻撃を誘発する。"
-s_overrun		="《蹴散らし》"		s_overrun_d		="対象に衝突する（そして、対象のいるスクエアを通り過ぎる)。攻撃の結果、相手の防御を5以上上回っていた場合、対象は打ち倒されて伏せ状態になる。"
-s_overrun1		="《蹴散らし強化》"	s_overrun1_d	="蹴散らしの攻撃、防御の両方に+2ボーナスを得る。対象からは機会攻撃を受けない。"
-s_overrun2		="《上級蹴散らし》"	s_overrun2_d	="《蹴散らし強化》の効果に加え+2ボーナスを得る。また、対象が打ち倒された場合あなたの味方（あなた自身は除く）の機会攻撃を誘発する。"
-s_cm_dex		="《機敏な戦術家》"	s_cm_dex_d		="戦技攻撃ロールに【筋力】ではなく【敏捷力】を使用できる。"-- When using combat maneuvers, you may use your Dexterity modifier instead of your Strength modifier on combat maneuver checks.
-s_wis_cm		="Zen Maneuvers"	s_wis_cm_d		="When using combat maneuvers, you may use your Wisdom modifier instead of your Strength modifier on combat maneuver checks. Likewise, you may use your Wisdom modifier instead of your Strength or Dexterity modifier on your combat maneuver defense."
-s_unarm1		="《素手打撃強化》"	s_unarm1_d		="You are considered to be armed even when unarmed - that is, you do not provoke attacks of opportunity from armed opponents when you attack them while unarmed. However, you still get an attack of opportunity against any opponent who makes an unarmed attack on you.\n\nNormal: Without this feat, you are considered unarmed when attacking with an unarmed strike."..s_auto_prof
+<b>特別: </b>自分より 2 サイズ以上大きいターゲットに組みつくことはできません。]]
+s_grap1			="組み付き強化"			s_grap1_d		="組みつきの攻撃、防御の両方に+2ボーナスを得る。対象からは機会攻撃を受けない。"
+s_grap2			="上級組み付き"			s_grap2_d		="組み付き強化の効果に加え+2ボーナスを得る。ターンごとに素手攻撃と同様にターゲットに自動的にダメージを与えます。"
+s_bull_rush		="突き飛ばし"				s_bull_rush_d	="対象をまっすぐ後ろに押し出す。(※訳注：このアクションは機会攻撃を誘発する。戦技攻撃 vs 戦技防御に成功すれば、対象をまっすぐ後ろに１スクエア強制移動させる。)"
+s_bull_rush1	="突き飛ばし強化"		s_bull_rush1_d	="突き飛ばしの攻撃、防御の両方に+2ボーナスを得る。対象からは機会攻撃を受けない。"
+s_bull_rush2	="上級突き飛ばし"		s_bull_rush2_d	="突き飛ばし強化の効果に加え+2ボーナスを得る。また、対象はあなたの味方（あなた自身は除く）の機会攻撃を誘発する。"
+s_drag			="引き込み"						s_drag_d		="対象を引き寄せる。（※訳注：このアクションは機会攻撃を誘発する。戦技攻撃 vs 戦技防御に成功すれば、自分が１スクエア後ろに下がるとともに、対象を自分がいたスクエアに強制移動させる）"
+s_drag1			="引き込み強化"			s_drag1_d		="引き込みの攻撃、防御の両方に+2ボーナスを得る。対象からは機会攻撃を受けない。"
+s_drag2			="上級引き込み"				s_drag2_d		="引き込み強化の効果に加え+2ボーナスを得る。また、対象はあなたの味方（あなた自身は除く）の機会攻撃を誘発する。"
+s_overrun		="蹴散らし"					s_overrun_d		="対象に衝突する（そして、対象のいるスクエアを通り過ぎる)。攻撃の結果、相手の防御を5以上上回っていた場合、対象は打ち倒されて伏せ状態になる。"
+s_overrun1		="蹴散らし強化"			s_overrun1_d	="蹴散らしの攻撃、防御の両方に+2ボーナスを得る。対象からは機会攻撃を受けない。"
+s_overrun2		="上級蹴散らし"			s_overrun2_d	="蹴散らし強化の効果に加え+2ボーナスを得る。また、対象が打ち倒された場合あなたの味方（あなた自身は除く）の機会攻撃を誘発する。"
+s_cm_dex		="機敏な戦術家"			s_cm_dex_d		="戦闘機動を使用する場合、戦闘機動判定でSTR修正の代わりにDEX修正を使用することができます。"
+s_wis_cm		="禅武道"			s_wis_cm_d		="戦闘機動を使用する場合、戦闘機動判定でSTR修正の代わりにWIS修正を使用することができます。 同様に、戦闘機動防御でSTRまたはDEX修正値の代わりにWIS修正値を使用することもできます。"
+s_unarm1		="素手打撃強化"	s_unarm1_d		="非武装の場合でも武装しているとみなされます。つまり、非武装のときに武装した敵を攻撃する場合、敵からの機会攻撃を誘発しません。 ただし、あなたに対して非武装の攻撃を行う相手に対しては、機会攻撃が与えられます。\n\n通常: この特技がなければ、非武装の攻撃で攻撃するとき、あなたは非武装とみなされます。"..s_auto_prof-- +4 proficiency bonus on unarmed strikes. 
 
-s_run="Run"
-s_run_d=[[When running, you move five times your normal speed (if wearing medium, light, or no armor and carrying no more than a medium load) or four times your speed (if wearing heavy armor or carrying a heavy load). While running, you retain your Dexterity bonus to AC.
+s_run="走る"
+s_run_d=[[走る場合、通常の速度の5倍（中鎧、軽鎧、または鎧を着ず、中程度の荷物しか持たない場合）、または4倍（重鎧を着、重い荷物を持つ場合）の速度で移動する。走っている間、君はACにDEXのボーナスを保持する。
 
-If you make a jump after a running start (see the Jump skill description), you gain a +4 bonus on your Jump check.
+ランニングスタート後にジャンプした場合 (ジャンプスキルの説明を参照)、ジャンプチェックに +4 ボーナスを獲得します。
 
-Normal: You move four times your speed while running (if wearing medium, light, or no armor and carrying no more than a medium load) or three times your speed (if wearing heavy armor or carrying a heavy load), and you lose your Dexterity bonus to AC.]]
+通常: 走行中に速度の 4 倍 (中鎧、軽鎧、または鎧を着ていない場合、中程度の荷物しか運んでいない場合) または速度の 3 倍 (重鎧を着ている場合、または重い荷物を運んでいる場合) に移動すると、速度が失われます。 ACにDEXボーナス。]]
 
-s_endurance="Endurance"
-s_endurance_d=[[You gain a +4 bonus on the following checks and saves:
-Swim checks made to resist nonlethal damage;
-Constitution checks made to hold your breath;
-Constitution checks made to continue running;
-Constitution checks made to avoid nonlethal damage from a forced march;
-Constitution checks made to avoid nonlethal damage from starvation or thirst;
-Fortitude saves made to avoid nonlethal damage from hot or cold environments;
-Fortitude saves made to resist damage from suffocation.
+s_endurance="持久力"
+s_endurance_d=[[次のチェックとセーブで +4 ボーナスを獲得します:
+非致死ダメージに抵抗するための水泳チェック;
+息を止めるためのCONチェック;
+走り続けるためのCONチェック;
+強行軍による非致死的なダメージを避けるためのCONチェック;
+飢えや渇きによる非致死的ダメージを避けるために行うCONチェック;
+高温または低温環境からの非致死的ダメージを避けるために不屈のセー ブを行う。;
+窒息によるダメージに抵抗するために不屈のセーヴを行う。
 
-Also, you may sleep in light or medium armor without becoming fatigued.
+また、軽鎧または中鎧を着ていても疲労せずに眠ることができます。
 
-Normal: A character without this feat who sleeps in medium or heavier armor is automatically fatigued the next day.
+通常: この特技を持たず、中鎧または重鎧を着て眠っているキャラクターは、翌日自動的に疲労します。
 
-Special: A ranger automatically gains Endurance as a bonus feat at 3rd level. He need not select it.]]
+特殊: レンジャーは、レベル 3 でボーナス特技として持久力を自動的に獲得します。 彼はそれを選択する必要はありません。]]
 
-s_diehard="Diehard"
-s_diehard_d=[[When reduced to between –1 and –9 hit points, you automatically become stable. You don’t have to roll d% to see if you lose 1 hit point each round.
+s_diehard="筋金入り"
+s_diehard_d=[[ヒットポイントが -1 ～ -9 まで減少すると、自動的に安定します。各ラウンドで 1 ヒットポイントを失うかどうかを確認するために d% を振る必要はありません。
 
-When reduced to negative hit points, you may choose to act as if you were disabled, rather than dying. You must make this decision as soon as you are reduced to negative hit points (even if it isn’t your turn). If you do not choose to act as if you were disabled, you immediately fall unconscious.
+マイナスヒットポイントになったとき、あなたは死亡するのではなく、戦闘不能になったものとして行動することを選ぶことができる。この選択は、マイナスヒットポイントになった時点で（たとえ自分のターンでなかったとしても）行なわなければならない。もしハンディキャップを持っているかのように行動することを選ばなかった場合、あなたは即座に意識を失う。
 
-When using this feat, you can take either a single move or standard action each turn, but not both, and you cannot take a full round action. You can take a move action without further injuring yourself, but if you perform any standard action (or any other action deemed as strenuous, including some free actions, such as casting a quickened spell) you take 1 point of damage after completing the act. If you reach –10 hit points, you immediately die.
+この特技を使用する場合、各ターンに 1 つの移動または標準アクションのいずれかを実行できますが、両方を実行することはできません。また、フルラウンドアクションを実行することはできません。 あなたはそれ以上怪我をすることなく移動アクションを実行できますが、標準アクション（または、高速化された呪文を唱えるなどの一部のフリーアクションを含む、激しいとみなされるその他のアクション）を実行すると、その行為の完了後に1ポイントのダメージを受けます。 ヒットポイントが-10に達すると、即死します。
 
-Normal: A character without this feat who is reduced to between –1 and –9 hit points is unconscious and dying.]]
+通常: この特技を持たず、ヒット ポイントが -1 ～ -9 に減少したキャラクターは意識を失い、瀕死の状態になります。]]
 
 
-s_track="Track"
-s_track_d=[[To find tracks or to follow them for 1 mile requires a successful Survival check.
+s_track="追跡"
+s_track_d=[[足跡を見つけたり、1 マイル追跡したりするには、生存チェックに成功する必要があります。
 
-If you fail a Survival check, you can retry after 1 hour (outdoors) or 10 minutes (indoors) of searching.
+生存チェックに失敗した場合は、1 時間 (屋外) または 10 分 (屋内) の探索後に再試行できます。
 
-You must make another Survival check every time the tracks become difficult to follow.
+足跡をたどるのが難しくなるたびに、もう一度生存チェックを行う必要があります。
 
-You move at half your normal speed (or at your normal speed with a –5 penalty on the check, or at up to twice your normal speed with a –20 penalty on the check).]]
-s_track_e=[[The DC depends on the surface and the prevailing conditions, as given on the table below:
-<b c=tw>Surface		Survival DC</b>
-Very soft ground	5
-Soft ground			10
-Firm ground			15
-Hard ground			20
+通常の半分の速度で移動します (または、通常の速度チェックで -5 ペナルティが課せられます。または、通常速度の最大 2 倍でチェックで -20 ペナルティが課せられます)。]]
+s_track_e=[[難易度 は、以下の表に示すように、路面と一般的な条件によって異なります。:
+<b c=tw>表面		サバイバル難易度</b>
+非常に柔らかい地盤	5
+柔らかい地面			10
+強固な地盤			15
+固い地表			20
 
-<b c=tw>Very Soft Ground: </b>Any surface (fresh snow, thick dust, wet mud) that holds deep, clear impressions of footprints.
+<b c=tw>非常に柔らかい地盤: </b>深く鮮明な足跡が残るあらゆる表面 (新雪、厚い粉塵、濡れた泥)。
 
-<b c=tw>Soft Ground: </b>Any surface soft enough to yield to pressure, but firmer than wet mud or fresh snow, in which a creature leaves frequent but shallow footprints.
+<b c=tw>柔らかい地面: </b>圧力に耐えられるほど柔らかいが、湿った泥や新雪よりは硬い、生き物が頻繁に浅い足跡を残す表面。
 
-<b c=tw>Firm Ground: </b>Most normal outdoor surfaces (such as lawns, fields, woods, and the like) or exceptionally soft or dirty indoor surfaces (thick rugs and very dirty or dusty floors). The creature might leave some traces (broken branches or tufts of hair), but it leaves only occasional or partial footprints.
+<b c=tw>強固な地盤: </b>ほとんどの通常の屋外表面(芝生、野原、森林など)、または非常に柔らかいまたは汚れた屋内表面 (厚い敷物や非常に汚れた床またはほこりっぽい床)。この生き物は何らかの痕跡（折れた枝や毛束）を残すかもしれませんが、足跡は時折、または部分的に残るだけです。
 
-<b c=tw>Hard Ground: </b>Any surface that doesn’t hold footprints at all, such as bare rock or an indoor floor. Most streambeds fall into this category, since any footprints left behind are obscured or washed away. The creature leaves only traces (scuff marks or displaced pebbles).
+<b c=tw>固い地表: </b>裸の岩や屋内の床など、足跡がまったく残らない表面。 残された足跡は隠されたり洗い流されたりするため、ほとんどの川床がこのカテゴリに分類されます。 生き物は痕跡（擦り傷やずれた小石）だけを残します。
 
 
-Several modifiers may apply to the Survival check, as given on the table below.
+以下の表に示すように、いくつかの修正が生存チェックに適用される場合があります。
 
-<b c=tw>Survival DC Modifier	Condition</b>
-–1		Every three creatures in the group being tracked
-		<c=ta>Size of creature or creatures being tracked (1):</c>
-+8		Fine
-+4		Diminutive
-+2		Tiny
-+1		Small
-+0		Medium
-–1		Large
-–2		Huge
-–4		Gargantuan
-–8		Colossal
-+1		Every 24 hours since the trail was made
-+1		Every hour of rain since the trail was made
-+10		Fresh snow cover since the trail was made
-		<c=ta>Poor visibility (2):</c>
-+6		Overcast or moonless night
-+3		Moonlight
-+3		Fog or precipitation
-+5		Tracked party hides trail (and moves at half speed)
+<b c=tw>サバイバル難易度修正	状態</b>
+–1		追跡対象グループ内の 3 匹ごとの生き物
+		<c=ta>追跡されるクリーチャーのサイズ (1):</c>
++8		細かい
++4		小柄な
++2		小型
++1		小さい
++0		中型
+–1		大きい
+–2		巨大
+–4		ガルガンチュアン
+–8		コロッサル
++1		軌跡が作られてから24時間ごと
++1		軌跡が作られて以来、雨が降るたびに
++10		軌跡ができてからの新雪
+		<c=ta>視界不良 (2):</c>
++6		曇りまたは月のない夜
++3		月明かり
++3		霧または降水
++5		追跡されたパーティーは痕跡を隠します（そして半分の速度で移動します）
 
-1. For a group of mixed sizes, apply only the modifier for the largest size category.
+1. サイズが混在するグループの場合、最も大きいサイズのカテゴリーにのみ修正値を適用する。
 
-2. Apply only the largest modifier from this category.
+2. このカテゴリの中で最大の修正のみを適用する。
 
 
-<b>Normal: </b>Without this feat, you can use the Survival skill to find tracks, but you can follow them only if the DC for the task is 10 or lower.
+<b>通常: </b>この特技がなければ、サバイバルスキルを使用して足跡を見つけることはできますが、追跡できるのはタスクの難易度が 10 以下である場合のみです。
 
-Alternatively, you can use the Search skill to find a footprint or similar sign of a creature’s passage using the DCs given above, but you can’t use Search to follow tracks, even if someone else has already found them.
+あるいは、探索スキルを使って、クリーチャーが通った足跡や同様の痕跡を上記の難易度を使って見つけることはできるが、他の誰かがすでに見つけていたとしても、足跡をたどるために探索を使うことはできない。
 
 
-<b>Special: </b>A ranger automatically has Track as a bonus feat. He need not select it.
+<b>特別: </b>レンジャーはボーナス特技として追跡を自動的に持ちます。 彼はそれを選択する必要はありません。
 
-This feat does not allow you to find or follow the tracks made by a subject of a pass without trace spell.]]
+この特技を使っても、跡形もなく通り過ぎる呪文の対象が作った足跡を見つけたり辿ったりすることはできない。]]
 
-s_track_2="Swift Tracker"
-s_track_2_d="Beginning at 8th level, a ranger can move at his normal speed while following tracks without taking the normal –5 penalty. He takes only a –10 penalty (instead of the normal –20) when moving at up to twice normal speed while tracking."
+s_track_2="迅速な追跡"
+s_track_2_d="第8レベルより、レンジャーは追跡中、通常の-5ペナルティを受けることなく、通常の速度で移動することができる。追跡中に通常の2倍の速度で移動しても、（通常の-20ではなく）-10のペナルティしか受けない。"
 
-s_pass_wood="Woodland Stride"
-s_pass_wood_d="Starting at 7th level, a ranger may move through any sort of undergrowth (such as natural thorns, briars, overgrown areas, and similar terrain) at his normal speed and without taking damage or suffering any other impairment.\n\nHowever, thorns, briars, and overgrown areas that are enchanted or magically manipulated to impede motion still affect him."
+s_pass_wood="森の歩幅"
+s_pass_wood_d="レベル 7 から、レンジャーは、ダメージを受けたり、その他の障害を受けたりすることなく、通常の速度で、あらゆる種類の下草 (自然のとげ、いばら、生い茂った地域、および同様の地形など) を通過できるようになります。\n\nただし、とげは、 いばら、動きを妨げるように魔法をかけられたり魔法で操作されたりした生い茂った領域は依然として彼に影響を与えます。"
 
-s_nat_terr_hide="Camouflage"
-s_nat_terr_hide_d="A ranger of 13th level or higher can use the Hide skill in any sort of natural terrain, even if the terrain doesn’t grant cover or concealment."
+s_nat_terr_hide="迷彩"
+s_nat_terr_hide_d="13 レベル以上のレンジャーは、たとえその地形が遮蔽や隠蔽を許可しない場合でも、あらゆる種類の自然地形で隠れ身スキルを使用できます。"
 
-s_nat_terr_hide_2="Hide in Plain Sight"
-s_nat_terr_hide_2_d="While in any sort of natural terrain, a ranger of 17th level or higher can use the Hide skill even while being observed."
+s_nat_terr_hide_2="見えないところに隠れる"
+s_nat_terr_hide_2_d="どのような自然地形であっても、レベル 17 以上のレンジャーは観察されているときでも隠れ身スキルを使用できます。"
 
 
-s_cmbt_style="Combat Style"
-s_cmbt_style_d=[[At 2nd level, a ranger must select one of two combat styles to pursue: archery or two-weapon combat. This choice affects the character’s class features but does not restrict his selection of feats or special abilities in any way.
+s_cmbt_style="戦闘スタイル"
+s_cmbt_style_d=[[2 レベルでは、レンジャーはアーチェリーまたは 二刀流の 2 つの戦闘スタイルのうち 1 つを選択する必要があります。 この選択はキャラクターのクラス機能に影響しますが、特技や特殊能力の選択を制限するものではありません。
 
-If the ranger selects archery, he is treated as having the Rapid Shot feat, even if he does not have the normal prerequisites for that feat.
+レンジャーがアーチェリーを選択した場合、たとえその特技の通常の前提条件を持っていなくても、彼はラピッドショット特技を持っているものとして扱われます。
 
-If the ranger selects two-weapon combat, he is treated as having the Two-Weapon Fighting feat, even if he does not have the normal prerequisites for that feat.
+レンジャーが二刀流戦闘を選択した場合、たとえその特技の通常の前提条件を持っていないとしても、彼は二刀流戦闘特技を持っているものとして扱われます。
 
-The benefits of the ranger’s chosen style apply only when he wears light or no armor. He loses all benefits of his combat style when wearing medium or heavy armor.]]
+レンジャーが選択したスタイルの利点は、レンジャーが軽鎧を着ているか、鎧を着ていない場合にのみ適用されます。 中鎧または重鎧を着用すると、戦闘スタイルの利点がすべて失われます。]]
 
-s_cmbt_style_rng="Combat Style: Archery"
-s_cmbt_style_tw="Combat Style: Two-Weapon Combat"
+s_cmbt_style_rng="戦闘スタイル: アーチェリー"
+s_cmbt_style_tw="戦闘スタイル: 二刀流戦闘"
 
-s_cmbt_style_2="Improved Combat Style"
-s_cmbt_style_2_d=[[At 6th level, a ranger’s aptitude in his chosen combat style (archery or two-weapon combat) improves.
+s_cmbt_style_2="改善された戦闘スタイル"
+s_cmbt_style_2_d=[[6 レベルでは、レンジャーの選択した戦闘スタイル (アーチェリーまたは二刀流戦闘) における適性が向上します。
 
-If he selected archery at 2nd level, he is treated as having the Manyshot feat, even if he does not have the normal prerequisites for that feat.
+彼が第 2 レベルでアーチェリーを選択した場合、たとえ彼がその特技の通常の前提条件を持っていないとしても、彼はメニーショットの特技を持っているものとして扱われます。
 
-If the ranger selected two-weapon combat at 2nd level, he is treated as having the Improved Two-Weapon Fighting feat, even if he does not have the normal prerequisites for that feat.
+レンジャーが第 2 レベルで二刀流戦闘を選択した場合、たとえその特技の通常の前提条件を持っていなくても、彼は改良二刀流戦闘特技を持っているものとして扱われます。
 
-As before, the benefits of the ranger’s chosen style apply only when he wears light or no armor. He loses all benefits of his combat style when wearing medium or heavy armor.]]
+以前と同様、レンジャーが選択したスタイルの利点は、レンジャーが軽鎧または鎧を着用していない場合にのみ適用されます。 中鎧または重鎧を着用すると、戦闘スタイルの利点がすべて失われます。]]
 
-s_cmbt_style_3="Combat Style Mastery"
-s_cmbt_style_3_d=[[At 11th level, a ranger’s aptitude in his chosen combat style (archery or two-weapon combat) improves again.
+s_cmbt_style_3="戦闘スタイルの習得"
+s_cmbt_style_3_d=[[11 レベルでは、レンジャーの選択した戦闘スタイル (アーチェリーまたは二刀流戦闘) における適性が再び向上します。
 
-If he selected archery at 2nd level, he is treated as having the Improved Precise Shot feat, even if he does not have the normal prerequisites for that feat.
+彼が第 2 レベルでアーチェリーを選択した場合、たとえ彼がその特技の通常の前提条件を持っていないとしても、改良された精密射撃特技を持っているものとして扱われます。
 
-If the ranger selected two-weapon combat at 2nd level, he is treated as having the Greater Two-Weapon Fighting feat, even if he does not have the normal prerequisites for that feat.
+レンジャーが第 2 レベルで二刀流戦闘を選択した場合、たとえその特技の通常の前提条件を持っていなくても、彼はより優れた二刀流戦闘特技を持っているものとして扱われます。
 
-As before, the benefits of the ranger’s chosen style apply only when he wears light or no armor. He loses all benefits of his combat style when wearing medium or heavy armor.]]
+以前と同様、レンジャーが選択したスタイルの利点は、レンジャーが軽鎧または鎧を着用していない場合にのみ適用されます。 中鎧または重鎧を着用すると、戦闘スタイルの利点がすべて失われます。]]
 
 
-s_fav_enm="Favored Enemy"
-s_fav_enm_d=[[At 1st level, a ranger may select a type of creature from among those given on Table: Ranger Favored Enemies. The ranger gains a +2 bonus on Bluff, Listen, Sense Motive, Spot, and Survival checks when using these skills against creatures of this type. Likewise, he gets a +2 bonus on weapon damage rolls against such creatures.
+s_fav_enm="好敵手"
+s_fav_enm_d=[[レベル1のとき、レンジャーは表で与えられたクリーチャーの中から1種類を選ぶことができる： レンジャー好敵手。レンジャーはこのタイプのクリーチャーに対してこれらのスキルを使用する場合、はったり、聞き耳、看破、見破る、サバイバルのチェックに＋2のボーナスを得る。同様に、この種のクリーチャーに対する武器ダメージ・ロールに＋2のボーナスを得る。
 
-At 5th level and every five levels thereafter (10th, 15th, and 20th level), the ranger may select an additional favored enemy from those given on the table. In addition, at each such interval, the bonus against any one favored enemy (including the one just selected, if so desired) increases by 2.
+レンジャーは5レベルと、その後5レベル毎(10レベル、15レベル、20レ ベル)に、表で与えられた好敵手からさらに好敵手を1体選ぶことができ る。さらに、その間隔が経過するごとに、好敵手1体に対するボーナス（希望すれ ば、今選択した敵も含む）が2増加する。
 
-If the ranger chooses humanoids or outsiders as a favored enemy, he must also choose an associated subtype, as indicated on the table. If a specific creature falls into more than one category of favored enemy, the ranger’s bonuses do not stack; he simply uses whichever bonus is higher.]]
-s_fav_enms="Favored Enemies"
-s_fav_enms_d=[[Humanoid (human)
-Humanoid (elf)
-Humanoid (dwarf)
-Humanoid (gnome)
-Humanoid (halfling)
-Humanoid (orc)
-Humanoid (goblinoid)
-Humanoid (gnoll)
-Humanoid (reptilian)
-Humanoid (aquatic)
-Outsider (air)
-Outsider (fire)
-Outsider (water)
-Outsider (earth)
-Outsider (lawful)
-Outsider (good)
-Outsider (chaotic)
-Outsider (evil)
-Outsider (native)
-Giant
-Fey
-Monstrous humanoid
-Elemental
-Aberration
-Dragon
-Animal
-Magical beast
-Vermin
-Plant
-Ooze
-Undead
-Construct]]
+レンジャーがヒューマノイドまたはアウトサイダーを好敵手として選択した場合、表で示されているように、関連するサブタイプも選択しなければならない。特定のクリーチャーが複数の好敵手に分類される場合、レンジャーのボーナスは重複しない。]]
+s_fav_enms="好敵手"
+s_fav_enms_d=[[ヒューマノイド（ヒューマン）
+ヒューマノイド（エルフ）
+ヒューマノイド（ドワーフ）
+ヒューマノイド (ノーム)
+ヒューマノイド（ハーフリング）
+ヒューマノイド(オーク)
+ヒューマノイド（ゴブリノイド）
+ヒューマノイド（ノール）
+ヒューマノイド（爬虫類）
+ヒューマノイド(水棲)
+アウトサイダー（風）
+アウトサイダー（火）
+アウトサイダー（水）
+アウトサイダー（地）
+アウトサイダー（ロウフル）
+アウトサイダー（グッド）
+アウトサイダー（カオティック）
+アウトサイダー（エビル）
+アウトサイダー（ネイティブ）
+ジャイアント
+フェイ
+モンスター型ヒューマノイド
+エレメンタル
+異形
+ドラゴン
+アニマル
+魔獣
+害虫
+植物
+ウーズ
+アンデッド
+魔法生物]]
 
 
-s_wild_empathy="Wild Empathy"
-s_wild_empathy_d=[[A ranger can improve the attitude of an animal. This ability functions just like a Diplomacy check to improve the attitude of a person. The ranger rolls 1d20 and adds his ranger level and his Charisma bonus to determine the wild empathy check result.
+s_wild_empathy="野生の共感"
+s_wild_empathy_d=[[レンジャーは動物の態度を改善することができる。この能力は人の態度を改善する外交チェックと同じように機能する。レンジャーは1d20を振り、自分のレンジャーレベルとCHAボーナスを加えて野生の共感チェックの結果を決定する。
 
-The typical domestic animal has a starting attitude of indifferent, while wild animals are usually unfriendly.
+典型的な家畜は無関心な態度から入るが、野生動物はたいてい無愛想である。
 
-To use wild empathy, the ranger and the animal must be able to study each other, which means that they must be within 30 feet of one another under normal visibility conditions. Generally, influencing an animal in this way takes 1 minute, but, as with influencing people, it might take more or less time.
+野生の共感を使うには、レンジャーとその動物が互いを研究できる状態でなければならない。つまり、通常の視界の状況で互いに30フィート以内にいなければならない。一般に、この方法で動物に影響を与えるには1分かかるが、人に影響を与える場合と同様、時間はもっとかかるかもしれないし、かからないかもしれない。
 
-The ranger can also use this ability to influence a magical beast with an Intelligence score of 1 or 2, but he takes a –4 penalty on the check.]]
+レンジャーはこの能力を使ってINT1か2の魔獣に影響を与えることもできるが、チェックに-4のペナルティを受ける。]]
 
-s_devotion="Devotion"	s_devotion_d="+4 morale bonus on Will saves against enchantment spells and effects."
+s_devotion="献身"	s_devotion_d="エンチャント呪文や効果に対する意志セーヴに+4の士気ボーナス。"
 
-s_link="Link"
-s_link_d="A druid can handle her animal companion as a free action, or push it as a move action, even if she doesn’t have any ranks in the Handle Animal skill.\n\nThe druid gains a +4 circumstance bonus on all wild empathy checks and Handle Animal checks made regarding an animal companion."
+s_link="リンク"
+s_link_d="ドルイドは、動物の扱いスキルのランクを持っていない場合でも、動物の仲間をフリーアクションとして扱うことも、移動アクションとしてプッシュすることもできます。\n\nドルイドはすべての野生の共感に +4 の状況ボーナスを獲得します。 動物の仲間に関して行われたチェックと扱う動物チェック。"
 
-s_share_spls="Share Spells"
-s_share_spls_d=[[At the druid’s option, she may have any spell (but not any spell-like ability) she casts upon herself also affect her animal companion. The animal companion must be within 5 feet of her at the time of casting to receive the benefit.
+s_share_spls="呪文を共有する"
+s_share_spls_d=[[ドルイドの選択により、ドルイドは自分自身にかける呪文（呪文のような能力は不可）を、その動物の仲間にもかけることができる。その恩恵を受けるには、動物の仲間は呪文を唱えた時点で彼女の5フィート以内にいなければならない。
 
-If the spell or effect has a duration other than instantaneous, it stops affecting the animal companion if the companion moves farther than 5 feet away and will not affect the animal again, even if it returns to the druid before the duration expires.
+呪文や効果の持続時間が瞬間的ではない場合、仲間が 5 フィート以上離れた場所に移動すると、仲間への影響はなくなり、たとえ持続時間が終了する前にドルイドの元に戻ったとしても、動物には再び影響を与えません。
 
-Additionally, the druid may cast a spell with a target of “You” on her animal companion (as a touch range spell) instead of on herself. A druid and her animal companion can share spells even if the spells normally do not affect creatures of the companion’s type (animal).]]
+さらに、ドルイドは「あなた」をターゲットとする呪文を、自分自身ではなく、仲間の動物に（接触範囲呪文として）唱えることができます。 ドルイドと動物の仲間は、その呪文が通常仲間のタイプ（動物）のクリーチャーに影響を及ぼさない場合でも、呪文を共有できます。]]
 
-s_anm_cmp="Animal Companion"
-s_anm_cmp_d=[[At 1st level, a druid (ranger at 4th level) gains an animal companion selected from the following list: badger, camel, dire rat, dog, riding dog, eagle, hawk, horse (light or heavy), owl, pony, snake (Small or Medium viper), or wolf.
+s_anm_cmp="動物の仲間"
+s_anm_cmp_d=[[レベル1のドルイド（レベル4でレンジャー）は、以下のリストから選ばれた動物の仲間を得る：アナグマ、ラクダ、ダイア・ラット、イヌ、乗用イヌ、ワシ、タカ、ウマ（小型または大型）、フクロウ、ポニー、ヘビ（小型または中型の毒蛇）、オオカミ。
 
-If the campaign takes place wholly or partly in an aquatic environment, the following creatures are also available: crocodile, porpoise, Medium shark, and squid.
+キャンペーンの一部または全部が水中環境で行われる場合、以下のクリーチャーも使用可能である：クロコダイル、イルカ、中型のサメ、イカ。
 
-This animal is a loyal companion that accompanies the druid on her adventures as appropriate for its kind.
+この動物は、その種類に応じてドルイドの冒険に同行する忠実な仲間です。
 
-A 1st-level druid’s companion is completely typical for its kind except as noted below. As a druid advances in level, the animal’s power increases as shown on the table. If a druid releases her companion from service, she may gain a new one by performing a ceremony requiring 24 uninterrupted hours of prayer. This ceremony can also replace an animal companion that has perished.
+第 1 レベルのドルイドの仲間は、以下に記載する点を除いて、その種のドルイドとしては完全に典型的なものです。 ドルイドのレベルが上がると、表に示されているように動物の力が増加します。 ドルイドが彼女の仲間を奉仕から解放した場合、彼女は24時間の途切れることのない祈りを必要とする儀式を行うことによって新しい仲間を得ることができます。 この儀式は、亡くなった動物の代わりになることもあります。
 
-A druid of 4th level or higher may select from alternative lists of animals (see below). Should she select an animal companion from one of these alternative lists, the creature gains abilities as if the character’s druid level were lower than it actually is. Subtract the value indicated in the appropriate list header from the character’s druid level and compare the result with the druid level entry on the table to determine the animal companion’s powers. (If this adjustment would reduce the druid’s effective level to 0 or lower, she can’t have that animal as a companion.)
+レベル4以上のドルイドは、動物の代替リスト（以下を参照）から選択することができる。これらの代替リストから動物の仲間を選んだ場合、そのクリーチャーはキャラクターのドルイドレベルが実際よりも低いものとして能力を得る。キャラクターのドルイドレベルから該当するリストのヘッダーに示された値を引き、その結果を表のドルイドレベルの項目と比較して、その動物の仲間の能力を決定する。(この調整によってドルイドの有効レベルが0以下になる場合、その動物を仲間にすることはできない)。
 
-A ranger’s effective druid level is one-half his ranger level.]]
+レンジャーの有効なドルイドレベルは、レンジャーレベルの半分です。]]
 
-s_hr_anm_cmp_ban="Flying or aquatic animal companions are currently unavailable."
+s_hr_anm_cmp_ban="現在、飛行動物または水棲動物の仲間はご利用いただけません。"
 
-s_anm_cmp_adj="Animal Companion Adjustments"
-s_anm_cmp_adj_d=[[A druid’s animal companion is superior to a normal animal of its kind and has special powers, as described below.
+s_anm_cmp_adj="動物の仲間の調整"
+s_anm_cmp_adj_d=[[ドルイドの相棒の動物は、同種の通常の動物よりも優れており、以下で説明するように特別な力を持っています。
 
-<b c=tw>Class Level	<x=150>Bonus HD	<x=300>Natural Armor Adj.	<x=500>Str/Dex Adj.	<x=650>Bonus Tricks	<x=800>Special</b>
-1st–2nd				<x=150>+0		<x=300>+0					<x=500>+0			<x=650>1			<x=800>Link, share spells
-3rd–5th				<x=150>+2		<x=300>+2					<x=500>+1			<x=650>2			<x=800>Evasion
-6th–8th				<x=150>+4		<x=300>+4					<x=500>+2			<x=650>3			<x=800>Devotion
-9th–11th			<x=150>+6		<x=300>+6					<x=500>+3			<x=650>4			<x=800>Multiattack
+<b c=tw>クラスレベル	<x=150>ボーナスヒットダイス	<x=300>肉体鎧調整	<x=500>STR/DEX調整	<x=650>ボーナストリック	<x=800>特別</b>
+1st–2nd				<x=150>+0		<x=300>+0					<x=500>+0			<x=650>1			<x=800>リンク、呪文を共有
+3rd–5th				<x=150>+2		<x=300>+2					<x=500>+1			<x=650>2			<x=800>回避
+6th–8th				<x=150>+4		<x=300>+4					<x=500>+2			<x=650>3			<x=800>献身
+9th–11th			<x=150>+6		<x=300>+6					<x=500>+3			<x=650>4			<x=800>マルチアタック
 12th–14th			<x=150>+8		<x=300>+8					<x=500>+4			<x=650>5			<x=800>
-15th–17th			<x=150>+10		<x=300>+10					<x=500>+5			<x=650>6			<x=800>Improved evasion
+15th–17th			<x=150>+10		<x=300>+10					<x=500>+5			<x=650>6			<x=800>回避力の向上
 18th–20th			<x=150>+12		<x=300>+12					<x=500>+6			<x=650>7			<x=800>
 
-<b>Animal Companion Basics: </b>Use the base statistics for a creature of the companion’s kind, but make the following changes.
+<b>動物の仲間の基本: </b>仲間の同種のクリーチャーの基本統計量を使用するが、以下の変更を加える。
 
-<b>Class Level: </b>The character’s druid level. The druid’s class levels stack with levels of any other classes that are entitled to an animal companion for the purpose of determining the companion’s abilities and the alternative lists available to the character.
+<b>クラスレベル: </b>キャラクターのドルイドレベル。ドルイドのクラスレベルは、その仲間の能力およびそのキャラクタが利用できる代替リストを決定する目的で、動物の仲間を持つ権利を持つ他のクラスのレベルと重複する。
 
-<b>Bonus HD: </b>Extra eight-sided (d8) Hit Dice, each of which gains a Constitution modifier, as normal. Remember that extra Hit Dice improve the animal companion’s base attack and base save bonuses. An animal companion’s base attack bonus is the same as that of a druid of a level equal to the animal’s HD. An animal companion has good Fortitude and Reflex saves (treat it as a character whose level equals the animal’s HD). An animal companion gains additional skill points and feats for bonus HD as normal for advancing a monster’s Hit Dice.
+<b>ボーナスヒットダイス: </b>追加の8面体（d8）のヒットダイスは、それぞれ通常通りCONの修正を得る。追加のヒットダイスは、動物の仲間の基本攻撃ボーナスと基本セーヴボーナスを向上させることを忘れない。動物の仲間の基本攻撃ボーナスは、その動物のヒットダイスと同じレベルのドルイドのそれと同じである。動物の仲間は不屈の精神と反射セーヴに優れている（動物のヒットダイスと同じレベルのキャラクターとして扱う）。動物の仲間はモンスターのヒットダイスを増加させるために、通常通りボーナスヒットダイス分のスキルポイントや特技を追加で得る。
 
-<b>Natural Armor Adj.: </b>The number noted here is an improvement to the animal companion’s existing natural armor bonus.
+<b>肉体鎧の調整: </b>ここに記載されている数値は、動物の仲間の既存の肉体鎧ボーナスの改善です。
 
-<b>Str/Dex Adj.: </b>Add this value to the animal companion’s Strength and Dexterity scores.
+<b>STR/DEX調整: </b>この値を動物の仲間のSTRとDEXの値に追加します。
 
-<b>Bonus Tricks: </b>The value given in this column is the total number of “bonus” tricks that the animal knows in addition to any that the druid might choose to teach it (see the Handle Animal skill). These bonus tricks don’t require any training time or Handle Animal checks, and they don’t count against the normal limit of tricks known by the animal. The druid selects these bonus tricks, and once selected, they can’t be changed.]]
+<b>ボーナストリック: </b>この列に指定される値は、ドルイドが動物に教えるために選択した技に加えて、動物が知っている「ボーナス」技の合計数です (「動物の扱い」スキルを参照)。 これらのボーナストリックにはトレーニング時間も動物の扱いチェックも必要なく、動物が知っているトリックの通常の制限にはカウントされません。 ドルイドはこれらのボーナストリックを選択し、一度選択すると変更できません。]]
 
-s_anm_cmps="Alternative Animal Companions"
-s_anm_cmps_d=[[A druid of sufficiently high level can select her animal companion from one of the following lists, applying the indicated adjustment to the druid’s level (in parentheses) for purposes of determining the companion’s characteristics and special abilities.
+s_anm_cmps="代替動物の仲間"
+s_anm_cmps_d=[[十分に高いレベルのドルイドは、以下のリストのいずれかから動物の仲間を選ぶことができ、その仲間の特性や特殊能力を決定する目的で、ドルイドのレベル（括弧内）に指示された調整を適用する。
 
-<b>4th Level or Higher (Level –3)</b>: Ape, Black bear, Bison, Boar, Cheetah, Crocodile(1), Dire badger, Dire bat, Dire weasel, Leopard, Monitor lizard, Large shark(1), Constrictor snake, Large viper snake, Wolverine.
+<b>レベル4以上（レベル-3）</b>: エイプ、ツキノワグマ、バイソン、イノシシ、チーター、ワニ(1)、ダイアアナグマ、ダイアコウモリ、ダイアイタチ、ヒョウ、オオトカゲ、大型サメ(1)、コンストリクター・スネーク、大型クサリヘビ、クズリ。
 
-<b>7th Level or Higher (Level –6)</b>: Brown bear, Dire wolverine, Giant crocodile, Deinonychus, Dire ape, Dire boar, Dire wolf, Elasmosaurus(1), Lion, Rhinoceros, Huge viper snake, Tiger.
+<b>レベル7以上（レベル-6）</b>: ヒグマ、ダイアウルヴァリン、巨大ワニ、デイノニクス、ダイアエイプ、ダイアイノシシ、ダイアウルフ、エラスモサウルス(1)、ライオン、サイ、巨大な毒蛇、トラ。
 
-<b>10th Level or Higher (Level –9)</b>: Polar bear, Dire lion, Megaraptor, Huge shark(1), Giant constrictor snake, Orca whale(1).
+<b>第10レベル以上（レベル-9）</b>: ホッキョクグマ、ダイアライオン、メガラプトル、巨大なサメ(1)、巨大な蛇、シャチ(1)。
 
-<b>13th Level or Higher (Level –12)</b>: Dire bear, Elephant, Giant octopus(1).
+<b>13レベル以上（レベル-12）</b>: ダイアベア、ゾウ、巨大タコ(1)。
 
-<b>16th Level or Higher (Level –15)</b>: Dire shark(1), Dire tiger, Giant squid(1), Triceratops, Tyrannosaurus.
+<b>16レベル以上（レベル-15）</b>: ダイアーシャーク(1)、ダイアータイガー、ダイオウイカ(1)、トリケラトプス、ティラノサウルス。
 
-1. Available only in an aquatic environment.]]
+1. 水生環境でのみ使用可能です。]]
 
-s_sum_nat	="Summon Nature's Ally"	s_sum_nat_d	="This series of spells summon a (or multiple) natural creature. It appears where you designate and acts immediately, on your turn. It attacks your opponents to the best of its ability."
-pwr_sum_nat_1_n="Summon Nature's Ally I"	pwr_sum_nat_1_d=[[This spell summons a natural creature. It appears where you designate and acts immediately, on your turn. It attacks your opponents to the best of its ability. If you can communicate with the creature, you can direct it not to attack, to attack particular enemies, or to perform other actions.
+s_sum_nat	="自然の味方を召喚する"	s_sum_nat_d	="この一連の呪文は自然クリーチャー1体（または複数）を召喚する。それはあなたが指定した場所に現れ、あなたのターンに即座に行動する。それはあなたの対戦相手を能力の限り攻撃する。"
+pwr_sum_nat_1_n="自然の味方を召喚 I"	pwr_sum_nat_1_d=[[この呪文は自然クリーチャーを召喚する。それはあなたが指定した場所に現れ、あなたのターンに即座に行動する。そのクリーチャーはその能力を最大限に発揮してあなたの対戦相手を攻撃する。そのクリーチャーと意思疎通ができれば、攻撃しないように指示したり、特定の敵を攻撃するように指示したり、その他の行動をさせることができる。
 
-A summoned monster cannot summon or otherwise conjure another creature, nor can it use any teleportation or planar travel abilities. Creatures cannot be summoned into an environment that cannot support them.
+召喚されたモンスターは、他のクリーチャーを召喚したり呼び出したりすることはできず、テレポート能力や平面移動能力を使うこともできない。クリーチャーをサポートできない環境に召喚することはできない。
 
-The spell conjures one of the creatures from the 1st-level list on the accompanying Summon Nature's Ally table. You choose which kind of creature to summon, and you can change that choice each time you cast the spell. All the creatures on the table are neutral unless otherwise noted.]]
-pwr_sum_nat_2_n="Summon Nature's Ally II"	pwr_sum_nat_2_d="This spell functions like summon nature's ally I, except that you can summon one 2nd-level creature or 1d3 1st-level creatures of the same kind."
-pwr_sum_nat_3_n="Summon Nature's Ally III"	pwr_sum_nat_3_d="This spell functions like summon nature's ally I, except that you can summon one 3rd-level creature, 1d3 2nd-level creatures of the same kind, or 1d4+1 1st-level creatures of the same kind.\n\nWhen you use a summoning spell to summon an air, chaotic, earth, evil, fire, good, lawful, or water creature, it is a spell of that type."
-pwr_sum_nat_4_n="Summon Nature's Ally IV"	pwr_sum_nat_4_d="This spell functions like summon nature's ally I, except that you can summon one 4th-level creature, 1d3 3rd-level creatures of the same kind, or 1d4+1 lower-level creatures of the same kind.\n\nWhen you use a summoning spell to summon an air, chaotic, earth, evil, fire, good, lawful, or water creature, it is a spell of that type."
-pwr_sum_nat_5_n="Summon Nature's Ally V"	pwr_sum_nat_5_d="This spell functions like summon nature's ally I, except that you can summon one 5th-level creature, 1d3 4th-level creatures of the same kind, or 1d4+1 lower-level creatures of the same kind.\n\nWhen you use a summoning spell to summon an air, chaotic, earth, evil, fire, good, lawful, or water creature, it is a spell of that type."
-pwr_sum_nat_6_n="Summon Nature's Ally VI"	pwr_sum_nat_6_d="This spell functions like summon nature's ally I, except that you can summon one 6th-level creature, 1d3 5th-level creatures of the same kind, or 1d4+1 lower-level creatures of the same kind.\n\nWhen you use a summoning spell to summon an air, chaotic, earth, evil, fire, good, lawful, or water creature, it is a spell of that type."
-pwr_sum_nat_7_n="Summon Nature's Ally VII"	pwr_sum_nat_7_d="This spell functions like summon nature's ally I, except that you can summon one 7th-level creature, 1d3 6th-level creatures of the same kind, or 1d4+1 lower-level creatures of the same kind.\n\nWhen you use a summoning spell to summon an air, chaotic, earth, evil, fire, good, lawful, or water creature, it is a spell of that type."
-pwr_sum_nat_8_n="Summon Nature's Ally VIII"	pwr_sum_nat_8_d="This spell functions like summon nature's ally I, except that you can summon one 8th-level creature, 1d3 7th-level creatures of the same kind, or 1d4+1 lower-level creatures of the same kind.\n\nWhen you use a summoning spell to summon an air, chaotic, earth, evil, fire, good, lawful, or water creature, it is a spell of that type."
-pwr_sum_nat_9_n="Summon Nature's Ally IX"	pwr_sum_nat_9_d="This spell functions like summon nature's ally I, except that you can summon one 9th-level creature, 1d3 8th-level creatures of the same kind, or 1d4+1 lower-level creatures of the same kind.\n\nWhen you use a summoning spell to summon an air, chaotic, earth, evil, fire, good, lawful, or water creature, it is a spell of that type."
-s_hr_sum_lmt="Only some types of creatures are available."
-s_sum_nats="Summon Nature's Ally List"
-s_sum_nats_d=[[The Summon Nature's Ally spells summon creatures from the corresponding level list:
+この呪文は、付属の「自然の味方を召喚」の表の第1レベルのクリーチャーリストから1体を呼び出す。あなたは召喚するクリーチャーの種類を選び、呪文を唱えるたびにその選択を変更できる。この表のクリーチャーは、特に断りのない限りすべて中立である。]]
+pwr_sum_nat_2_n="自然の味方を召喚 II"	pwr_sum_nat_2_d="この呪文は自然の味方を召喚Iと同じ働きをするが、召喚できるクリーチャーは2レベル・クリーチャー1体か、同じ種類の1レベル・クリーチャー1～3体である。"
+pwr_sum_nat_3_n="自然の味方を召喚 III"	pwr_sum_nat_3_d="この呪文は、自然の味方を召喚Iと同じように機能しますが、第 3 レベルのクリーチャーを 1 体、同じ種類の第 2 レベルのクリーチャーを 1d3 体、または同じ種類の第 1 レベルのクリーチャーを 1d4+1 体召喚できる点が異なります。\n\n 召喚呪文は、風、カオティック、地、エビル、火、グッド、ロウフル、または水の生き物を召喚する、そのタイプの呪文です。"
+pwr_sum_nat_4_n="自然の味方を召喚 IV"	pwr_sum_nat_4_d="この呪文は、自然の味方を召喚Iと同じように機能しますが、第 4 レベルのクリーチャーを 1 体、同じ種類の第 3 レベルのクリーチャーを 1d3 体、または同じ種類の下位レベルのクリーチャーを 1d4+1 体召喚できる点が異なります。\n\n 召喚呪文は、風、カオティック、地、エビル、火、グッド、ロウフル、または水の生き物を召喚する、そのタイプの呪文です。"
+pwr_sum_nat_5_n="自然の味方を召喚 V"	pwr_sum_nat_5_d="この呪文は、自然の味方を召喚Iと同じように機能しますが、第 5 レベルのクリーチャーを 1 体、同じ種類の第 4 レベルのクリーチャーを 1d3 体、または同じ種類の下位レベルのクリーチャーを 1d4+1 体召喚できる点が異なります。\n\n 召喚呪文は、風、カオティック、地、エビル、火、グッド、ロウフル、または水の生き物を召喚する、そのタイプの呪文です。"
+pwr_sum_nat_6_n="自然の味方を召喚 VI"	pwr_sum_nat_6_d="この呪文は、自然の味方を召喚Iと同じように機能しますが、第 6 レベルのクリーチャーを 1 体、同じ種類の第 5 レベルのクリーチャーを 1d3 体、または同じ種類の下位レベルのクリーチャーを 1d4+1 体召喚できる点が異なります。\n\n 召喚呪文は、風、カオティック、地、エビル、火、グッド、ロウフル、または水の生き物を召喚する、そのタイプの呪文です。"
+pwr_sum_nat_7_n="自然の味方を召喚 VII"	pwr_sum_nat_7_d="この呪文は、自然の味方を召喚Iと同じように機能しますが、第 7 レベルのクリーチャーを 1 体、同じ種類の第 6 レベルのクリーチャーを 1d3 体、または同じ種類の下位レベルのクリーチャーを 1d4+1 体召喚できる点が異なります。\n\n 召喚呪文は、風、カオティック、地、エビル、火、グッド、ロウフル、または水の生き物を召喚する、そのタイプの呪文です。"
+pwr_sum_nat_8_n="自然の味方を召喚 VIII"	pwr_sum_nat_8_d="この呪文は、自然の味方を召喚Iと同じように機能しますが、第 8 レベルのクリーチャーを 1 体、同じ種類の第 7 レベルのクリーチャーを 1d3 体、または同じ種類の下位レベルのクリーチャーを 1d4+1 体召喚できる点が異なります。\n\n 召喚呪文は、風、カオティック、地、エビル、火、グッド、ロウフル、または水の生き物を召喚する、そのタイプの呪文です。"
+pwr_sum_nat_9_n="自然の味方を召喚 IX"	pwr_sum_nat_9_d="この呪文は、自然の味方を召喚Iと同じように機能しますが、第 9 レベルのクリーチャーを 1 体、同じ種類の第 8 レベルのクリーチャーを 1d3 体、または同じ種類の下位レベルのクリーチャーを 1d4+1 体召喚できる点が異なります。\n\n 召喚呪文は、風、カオティック、地、エビル、火、グッド、ロウフル、または水の生き物を召喚する、そのタイプの呪文です。"
+s_hr_sum_lmt="一部の種類の生き物のみが利用可能です。"
+s_sum_nats="自然の味方を召喚リスト"
+s_sum_nats_d=[[自然の味方を召喚は、対応するレベルリストからクリーチャーを召喚する呪文を唱える:
 
-<b>Level-1: </b>Dire rat, Eagle, Monkey, Octopus(1), Owl, Porpoise(1), Small viper snake, Wolf.
+<b>レベル1: </b>ネズミ、ワシ、サル、タコ(1)、フクロウ、イルカ(1)、小さなマムシ、オオカミ。
 
-<b>Level-2: </b>Black Bear, Crocodile, Dire badger, Dire bat, Small elemental, Hippogriff, Medium Shark(1), Medium viper snake, Squid(1), Wolverine.
+<b>レベル2: </b>ブラックベア、クロコダイル、ダイアアナグマ、ダイアバット、小型エレメンタル、ヒッポグリフ、中型サメ (1)、中型バイパースネーク、イカ (1)、ウルヴァリン。
 
-<b>Level-3: </b>Ape, Dire weasel, Dire wolf, Giant eagle [NG], Lion, Giant owl [NG], Satyr [CN; without pipes], Large shark(1), Constrictor snake, Large viper snake, Thoqqua.
+<b>レベル3: </b>エイプ、ダイアイタチ、ダイアウルフ、オオワシ[NG]、ライオン、オオフクロウ[NG]、サテュロス[CN; パイプなし]、大型サメ(1)、コンストリクタースネーク、大型マムシ、トクア。
 
-<b>Level-4: </b>Juvenile arrowhawk, Brown bear, Giant crocodile, Deinonychus, Dire ape, Dire boar, Dire wolverine, Medium elemental, Flamebrother salamander [NE], Sea cat(1), Huge shark(1), Huge viper snake, Tiger, Juvenile tojanida(1), Unicorn [CG], Minor xorn.
+<b>レベル4: </b>アローホークの幼体、ヒグマ、ジャイアントクロコダイル、ダイノニクス、ダイアエイプ、ダイアイノシシ、ダイアウルヴァリン、ミディアムエレメンタル、フレイムブロッサーサラマンダー[NE]、ウミヤマネコ(1)、巨大サメ(1)、巨大マムシ、タイガー、トジャニダの幼体(1)、ユニコーン[CG]、マイナーゾーン。
 
-<b>Level-5: </b>Adult arrowhawk, Polar bear, Dire lion, Elasmosaurus(1), Large elemental, Griffon, Janni, Rhinoceros, Satyr [CN; with pipes], Giant constrictor snake, Nixie, Adult tojanida(1), Orca whale(1).
+<b>レベル5: </b>アローホーク成体、ホッキョクグマ、ダイアライオン、エラスモサウルス(1)、ラージエレメンタル、グリフォン、ヤンニ、サイ、サテュロス[CN; パイプ付き]、巨大コンストリクタースネーク、ニクシー、トジャニダ成体(1)、シャチ(1)。
 
-<b>Level-6: </b>Dire bear, Huge elemental, Elephant, Girallon, Megaraptor, Giant octopus(1), Pixie [NG; no special arrows; no irresistible dance], Average salamander [NE], Baleen whale(1), Average xorn.
+<b>レベル6: </b>ダイアベア、巨大エレメンタル、ゾウ、ジラロン、メガラプトル、巨大なタコ(1)、ピクシー[NG;特別な矢なし、魅力的なダンスなし]、平均的なサンショウウオ[NE]、ヒゲクジラ(1)、平均的なゾルン。
 
-<b>Level-7: </b>Elder arrowhawk, Dire tiger, Greater elemental, Djinni [NG], Invisible stalker, Pixie [NG; with sleep arrows; no irresistible dance], Giant squid(1), Triceratops, Tyrannosaurus, Cachalot whale(1), Elder xorn.
+<b>レベル7: </b>エルダーアローホーク、ダイアタイガー、グレーターエレメンタル、ジンニ【NG】、インビジブルストーカー、ピクシー【NG; 睡眠の矢付き。魅力的なダンス]、ダイオウイカ (1)、トリケラトプス、ティラノサウルス、カシャロットクジラ (1)、エルダーゾン。
 
-<b>Level-8: </b>Dire shark(1), Roc, Noble salamander [NE], Elder tojanida.
+<b>レベル8: </b>ダイアシャーク(1)、ロック、ノーブルサラマンダー[NE]、エルダートジャニダ。
 
-<b>Level-9: </b>Elder elemental, Grig [NG; with fiddle], Pixie [NG; with sleep and memory loss arrows; with irresistible dance], Celestial charger unicorn.
+<b>レベル9: </b>エルダーエレメンタル、グリッグ［NG；フィドルを持つ］、ピクシー［NG；睡眠と記憶喪失の矢を持つ；抗いがたいダンスを持つ］、セレスティアルチャージャーユニコーン。
 
-1. May be summoned only into an aquatic or watery environment.]]
+1. 水中または水中の環境にのみ召喚できます。]]
 
-s_sel_new_fav_enm	="Choose New Favored Enemy"
-s_sel_old_fav_enm	="Improve Existing Favored Enemy"
-s_sel_anm_cmp		="Choose Animal Companion"
-s_dis				="Disable"
-s_edl				="Effective druid level"
-s_edl_req			="Effective druid level required"
-s_base_stats		="Base Statistics"
-s_anm_cmp_adjs		="Animal Companion Adjustments"
-s_hr_fav_enm		="increase damage bonus by 1 time per 10 levels"
-s_hr_anm_cmp_lv		="level = master's related class levels, no natural armor adjustment <c=twa>(unchecked: based on effective druid level)</c>"
-s_hr_sum_nat_lv		="ally's level is based on summoner's related class levels <c=twa>(unchecked: level fixed)</c>"
-s_hr_share_spls		="no need to adjacent to master"
+s_sel_new_fav_enm	="新たな好敵手を選ぶ"
+s_sel_old_fav_enm	="既存の敵を強化する"
+s_sel_anm_cmp		="動物の仲間を選択してください"
+s_dis				="無効にする"
+s_edl				="有効なドルイドのレベル"
+s_edl_req			="有効なドルイドのレベルが必要"
+s_base_stats		="基本統計"
+s_anm_cmp_adjs		="動物の仲間の調整"
+s_hr_fav_enm		="ダメージボーナスが10レベルごとに1回増加します"
+s_hr_anm_cmp_lv		="レベル = マスター関連のクラスレベル、肉体鎧調整なし<c=twa>(チェックなし: 有効なドルイドのレベルに基づいて)</c>"
+s_hr_sum_nat_lv		="味方のレベルはサモナーの関連クラスレベルに基づいています<c=twa>（チェックなし：レベル固定）</c>"
+s_hr_share_spls		="マスターに隣接する必要はありません"
 -- z_drd
-s_nature_sense		="Nature Sense"			s_nature_sense_d	="+2 bonus on Knowledge (nature) and Survival checks."
-s_no_track			="Trackless Step"		s_no_track_d		="Leave no trail in natural surroundings and cannot be tracked. You may choose to leave a trail if so desired."
-s_res_nature		="Resist Nature’s Lure"	s_res_nature_d		="+4 bonus on saving throws against the spell-like abilities of fey."
-s_imm_tox			="Venom Immunity"		s_imm_tox_d			="Immune to all poisons."
-s_x_faces			="A Thousand Faces"		s_x_faces_d			="The character gains the ability to change her appearance at will, as if using the alter self spell, but only while in her normal form."
-s_wild_shape		="Wild Shape"			s_wild_shape_d		=[[At 5th level, a druid gains the ability to turn herself into any Small or Medium animal and back again once per day. The new form can be any animal she is familiar with. But its Hit Dice can’t exceed her druid level.
+s_nature_sense		="自然感覚"			s_nature_sense_d	="知識 (自然) と生存判定に +2 ボーナス。"
+s_no_track			="無軌道ステップ"		s_no_track_d		="自然環境には痕跡を残さず、追跡することはできません。 必要に応じて、軌跡を残すこともできます。"
+s_res_nature		="自然の誘惑に抵抗する"	s_res_nature_d		="フェイの呪文のような能力に対するセーヴィングスローに+4のボーナス。"
+s_imm_tox			="毒に対する免疫"		s_imm_tox_d			="あらゆる毒に対する免疫を持つ。"
+s_x_faces			="千の顔"		s_x_faces_d			="キャラクターは、あたかも自己変更呪文を使用しているかのように、自分の外見を自由に変える能力を獲得しますが、それは通常の形態にある場合に限られます。"
+s_wild_shape		="ワイルドシェイプ"			s_wild_shape_d		=[[5 レベルでは、ドルイドは 1 日に 1 回、自分自身を小型または中型の動物に変身させ、また元に戻す能力を獲得します。 新しい姿は彼女がよく知っているどんな動物でも構いません。 しかし、そのヒットダイスは彼女のドルイドレベルを超えることはできません。
 
-She acquires the physical qualities of the new form while retaining her own mind. Physical qualities include natural size, movement speed, natural armor bonus, natural weapons, Strength, Dexterity, and Constitution scores, plus extraordinary special attacks. But at the same time, the new form will limit the ability to speak, cast spells and use manufactured weapons, etc.
+彼女は自分の心を保持したまま、新しいフォームの肉体的資質を獲得する。肉体的資質には、生まれつきのサイズ、移動速度、生まれつきのAC、生まれつきの武器、STR、DEX、CONの値、それに並外れた特殊攻撃が含まれる。しかし同時に、新形態では話す能力、呪文を唱える能力、製造された武器を使用する能力などが制限される。
 
-She can use this ability more times per day at 6th, 7th, 10th, and every four levels thereafter (14, 18...).
+彼女はこの能力を 6、7、10 レベル、およびその後 4 レベルごと (14、18...) に 1 日にさらに回数使用できます。
 
-At 8th level, she gains the ability to take the shape of a Large animal, a Tiny animal at 11th level, and a Huge animal at 15th level.]]
-s_wild_shape_elm	="Wild Shape: Elemental"	s_wild_shape_elm_d	=[[At 16th level, a druid becomes able to use wild shape to change into a Small, Medium, or Large elemental (air, earth, fire, or water) once per day.
+8レベルで、彼女は大きな動物、11レベルで小さな動物、15レベルで巨大な動物の形をとる能力を獲得します。]]
+s_wild_shape_elm	="ワイルドシェイプ: エレメンタル"	s_wild_shape_elm_d	=[[16 レベルになると、ドルイドはワイルド シェイプを使用して、1 日に 1 回、小、中、または大のエレメンタル (風、地、火、または水) に変化できるようになります。
 
-These elemental forms are in addition to her normal wild shape usage. In addition to the normal effects of wild shape, the druid gains all the elemental’s extraordinary, supernatural, and spell-like abilities. She also gains the elemental’s feats for as long as she maintains the wild shape, but she retains her own creature type.
+これらのエレメンタルフォームは通常のワイルドシェイプの使用に加えて使用される。ワイルドシェイプの通常の効果に加え、ドルイドはエレメンタルの非凡能力、超自然能力、呪文のような能力をすべて得る。また、ワイルドシェイプを維持している間はエレメンタルの技を得るが、彼女自身のクリーチャータイプは維持される。
 
-At 18th level, she becomes able to assume elemental form twice per day, and at 20th level she can do so three times per day.
+18レベルでは1日に2回、20レベルでは1日に3回エレメンタルフォームを取ることができるようになります。
 
-At 20th level, she may use this wild shape ability to change into a Huge elemental.]]
-s_hr_trans			="new shape's HD = druid level <c=twa>(unchecked: fixed)</c>"
+20レベルで、彼女はこのワイルドシェイプ能力を使用して巨大なエレメンタルに変化する可能性があります。]]
+s_hr_trans			="新しいシェイプのヒットダイス＝ドルイドレベル<c=twa>（チェックなし：固定）</c>"
 -- z_brd
-s_brd_know			="Bardic Knowledge"		s_brd_know_d	=[[A bard may make a special bardic knowledge check with a bonus equal to his bard level + his Intelligence modifier to see whether he knows some relevant information about local notable people, legendary items, or noteworthy places. (If the bard has 5 or more ranks in Knowledge (history), he gains a +2 bonus on this check.)
+s_brd_know			="バードの知識"		s_brd_know_d	=[[バードは、自分のバードレベル＋自分のINT修正値に等しいボーナスを持つ特別なバード知識チェックを行い、その土地の有名人、伝説のアイテム、注目すべき場所についての関連情報を知っているかどうかを確認することができる（バードが知識（歴史）のランクを5以上持っている場合、このチェックには＋2のボーナスが加わる）。(バードが知識(歴史)のランクを5以上持っている場合、このチェックに+2のボーナスを得る)。
 
-A successful bardic knowledge check will not reveal the powers of a magic item but may give a hint as to its general function. A bard may not take 10 or take 20 on this check; this sort of knowledge is essentially random.
+バードの知識チェックに成功しても、そのマジックアイテムの力を明らかにすることはできないが、大まかな機能のヒントを与えることはできる。この種の知識は基本的にランダムである。
 
-<b c=tw>DC	Type of Knowledge</b>
-10	Common, known by at least a substantial minority drinking; common legends of the local population.
-20	Uncommon but available, known by only a few people legends.
-25	Obscure, known by few, hard to come by.
-30	Extremely obscure, known by very few, possibly forgotten by most who once knew it, possibly known only by those who don’t understand the significance of the knowledge.]]
-s_brd_mus			="Bardic Music"			s_brd_mus_d		=[[Once per day per bard level, a bard can use his song or poetics to produce magical effects on those around him (usually including himself, if desired). While these abilities fall under the category of bardic music and the descriptions discuss singing or playing instruments, they can all be activated by reciting poetry, chanting, singing lyrical songs, singing melodies, whistling, playing an instrument, or playing an instrument in combination with some spoken performance. Each ability requires both a minimum bard level and a minimum number of ranks in the Perform skill to qualify; if a bard does not have the required number of ranks in at least one Perform skill, he does not gain the bardic music ability until he acquires the needed ranks.
+<b c=tw>難易度	知識の種類</b>
+10	一般,少なくともかなりの少数派の飲酒者には知られている;地元住民に共通する伝説。
+20	一般的ではないが入手可能,少数の人々の伝説によってのみ知られています。
+25	曖昧な,少数の人に知られている,入手困難。
+30	非常に不明瞭,ごく少数の人にしか知られていない,かつてそれを知っていたほとんどの人には忘れられている可能性があり、おそらく知識の重要性を理解していない人だけが知っているかもしれません。]]
+s_brd_mus			="バードの音楽"			s_brd_mus_d		=[[バードは1日1回、バードのレベルごとに、自分の歌や詩学を使って周囲の者（望むなら通常自分も含む）に魔法の効果をもたらすことができる。これらの能力はバードの音楽の範疇に属し、説明では歌や楽器の演奏について述べられているが、これらはすべて詩の朗読、詠唱、叙情的な歌の歌唱、旋律の歌唱、口笛、楽器の演奏、または何らかの口演と組み合わせた楽器の演奏によって発動することができる。各能力の発動にはバードレベルの下限と、演奏技能の下限ランクの両方が必要である。
 
-Starting a bardic music effect is a standard action. Some bardic music abilities require concentration, which means the bard must take a standard action each round to maintain the ability. Even while using bardic music that doesn’t require concentration, a bard cannot cast spells, activate magic items by spell completion (such as scrolls), or activate magic items by magic word (such as wands).
+バードの音楽効果の開始は標準アクションである。バードの音楽能力の中には集中を必要とするものがあり、その能力を維持するために、バードは毎ラウンド標準アクションをとらなければならない。集中を必要としない吟遊音楽を使っている間でも、バードは呪文を唱えたり、呪文の完成によってマジックアイテムを起動したり（巻物など）、魔法の言葉によってマジックアイテムを起動したり（杖など）することはできない。
 
-Just as for casting a spell with a verbal component, a deaf bard has a 20% chance to fail when attempting to use bardic music. If he fails, the attempt still counts against his daily limit.]]
-s_mus_fas			="Fascinate"			s_mus_fas_d		=[[A bard with 3 or more ranks in a Perform skill can use his music or poetics to cause one or more creatures to become fascinated with him. Each creature to be fascinated must be within 90 feet, able to see and hear the bard, and able to pay attention to him. The bard must also be able to see the creature. The distraction of a nearby combat or other dangers prevents the ability from working. For every three levels a bard attains beyond 1st, he can target one additional creature with a single use of this ability.
+言葉の要素を含む呪文を唱える場合と同様に、聴覚ハンディキャップのあるバードがバードの音楽を使用しようとすると、20% の確率で失敗します。 失敗した場合でも、その試みは 1 日の制限に対してカウントされます。]]
+s_mus_fas			="魅了する"			s_mus_fas_d		=[[パフォームスキルが3ランク以上あるバードは、その音楽または詩学を用いて、1体以上のクリーチャーを自分に魅了させることができる。魅了される各クリーチャーは90フィート以内にいて、バードを見聞きでき、彼に注意を払うことができなければならない。バードもまた、そのクリーチャーを見ることができなければならない。近くの戦闘やその他の危険に気を取られると、この能力は働かない。バードが1レベルを超えて3レベルに達するごとに、この能力を1回使用することでさらに1体のクリーチャーを対象にできる。
 
-To use the ability, a bard makes a Perform check. His check result is the DC for each affected creature’s Will save against the effect. If a creature’s saving throw succeeds, the bard cannot attempt to fascinate that creature again for 24 hours. If its saving throw fails, the creature sits quietly and listens to the song, taking no other actions, for as long as the bard continues to play and concentrate (up to a maximum of 1 round per bard level). While fascinated, a target takes a –4 penalty on skill checks made as reactions, such as Listen and Spot checks. Any potential threat requires the bard to make another Perform check and allows the creature a new saving throw against a DC equal to the new Perform check result.
+この能力を使うには、バードはパフォームチェックを行なう。そのチェックの結果は、効果を受けた各クリーチャーの効果に対する意志による防御の難易度となる。クリーチャーのセーヴィングスローが成功した場合、バードは24時間そのクリーチャーを再び魅了しようと試みることはできない。セーヴィングスローが失敗した場合、そのクリーチャーはバードが演奏と集中を続けている限り（バードのレベル1につき最大1ラウンドまで）、他の行動をとらず、静かに座って歌を聴く。魅了されている間、対象はリスンや見破るチェックなどのリアクションとして行うスキルチェックに-4のペナルティを受ける。潜在的な脅威がある場合、バードは再度パフォームチェックを行なう必要があり、そのクリーチャーは新たなパフォームチェックの結果に等しい難易度に対して新たにセーヴィングスローを行なうことができる。
 
-Any obvious threat, such as someone drawing a weapon, casting a spell, or aiming a ranged weapon at the target, automatically breaks the effect. Fascinate is an enchantment (compulsion), mind-affecting ability.]]
-s_mus_sug			="Suggestion"			s_mus_sug_d	=[[A bard of 6th level or higher with 9 or more ranks in a Perform skill can make a suggestion (as the spell) to a creature that he has already fascinated (see above). Using this ability does not break the bard’s concentration on the fascinate effect, nor does it allow a second saving throw against the fascinate effect.
+誰かが武器を抜いたり、呪文を唱えたり、射撃武器を対象に向けたりといった明らかな脅威があれば、効果は自動的に解除される。魅了はエンチャント（強制）であり、マインドエフェクト能力である。]]
+s_mus_sug			="暗示"			s_mus_sug_d	=[[パフォームスキルのランクが9以上ある6レベル以上のバードは、すでに魅了したクリーチャーに（呪文のように）暗示をかけることができる（上記参照）。この能力を使用しても、魅了効果に対するバードの集中は切れないし、魅了効果に対する2回目のセーヴィングスローもできない。
 
-Making a suggestion doesn’t count against a bard’s daily limit on bardic music performances. A Will saving throw (DC 10 + 1/2 bard’s level + bard’s Cha modifier) negates the effect.
+提案を行っても、バードの 1 日あたりのバードの音楽演奏制限にはカウントされません。 意志セーヴィングスロー（難易度 10 + 1/2 バードのレベル + バードの CHA 修正）は効果を無効にする。
 
-Suggestion is an enchantment (compulsion), mind-affecting, language dependent ability.]]
-s_mus_sugs			="Mass Suggestion"		s_mus_sugs_d	=[[A bard of 18th level or higher with 21 or more ranks in a Perform skill can make the suggestion simultaneously to any number of creatures that he has already fascinated.]]
-s_mus_unspl			="Countersong"			s_mus_unspl_d	=[[A bard with 3 or more ranks in a Perform skill can use his music or poetics to counter magical effects that depend on sound (but not spells that simply have verbal components).
+提案はエンチャント（強制）である,心に影響を与える,言語に依存した能力。]]
+s_mus_sugs			="大量暗示"		s_mus_sugs_d	=[[パフォームスキルで21以上のランクを持つ18レベル以上のバードは、すでに魅了している任意の数のクリーチャーに対して同時に暗示を行うことができます。]]
+s_mus_unspl			="カウンターソング"			s_mus_unspl_d	=[[パフォームスキルで 3 ランク以上のバードは、音楽や詩学を使用して、音に依存する魔法の効果に対抗できます (ただし、単に言葉の要素を持つ呪文は対象外です)。
 
-Each round of the countersong, he makes a Perform check. Any creature within 30 feet of the bard (including the bard himself) that is affected by a sonic or language-dependent magical attack may use the bard’s Perform check result in place of its saving throw if, after the saving throw is rolled, the Perform check result proves to be higher.
+カウンターソングの各ラウンドに、彼はパフォームチェックを行う。バードから30フィート以内のクリーチャー（バード自身を含む）で、音波または言語に依存した魔法攻撃の影響を受けているものは、セーヴィングスローを行なった後、パフォームチェックの結果の方が高いと判明した場合、セーヴィングスローの代わりにバードのパフォームチェックの結果を使用してもよい。
 
-If a creature within range of the countersong is already under the effect of a noninstantaneous sonic or language-dependent magical attack, it gains another saving throw against the effect each round it hears the countersong, but it must use the bard’s Perform check result for the save.
+カウンターソングの範囲内にいるクリーチャーが、すでに瞬間的でない音波または言語に依存した魔法攻撃の効果下にある場合、カウンターソングを聞くたびにその効果に対するセーヴィングスローを得るが、そのセーヴィングにはバードのパフォームチェックの結果を使わなければならない。
 
-Countersong has no effect against effects that don’t allow saves. The bard may keep up the countersong for 10 rounds.]]
-s_mus_atk			="Inspire Courage"		s_mus_atk_d		=[[A bard with 3 or more ranks in a Perform skill can use song or poetics to inspire courage in his allies (including himself), bolstering them against fear and improving their combat abilities.
+カウンターソングは、セーブを許可しない効果に対しては効果がない。バードは10ラウンドの間、カウンターソングを続けることができます。]]
+s_mus_atk			="勇気を鼓舞する"		s_mus_atk_d		=[[パフォームスキルのランクが3以上あるバードは、歌や詩学を用いて味方（自分自身を含む）に勇気を鼓舞し、恐怖から味方を強化し、戦闘能力を向上させることができる。
 
-To be affected, an ally must be able to hear the bard sing. The effect lasts for as long as the ally hears the bard sing and for 5 rounds thereafter.
+効果を受けるには、味方はバードの歌を聞くことができなければならない。この効果は、味方がバードの歌を聞いている間と、その後5ラウンド続く。
 
-An affected ally receives a +1 morale bonus on saving throws against charm and fear effects and a +1 morale bonus on attack and weapon damage rolls. At 8th level, and every six bard levels thereafter, this bonus increases by 1 (+2 at 8th, +3 at 14th, and +4 at 20th, and so on.).
+影響を受けた味方は、魅了と恐怖の効果に対するセーヴィングスローに+1の士気ボーナスを、攻撃と武器のダメージロールに+1の士気ボーナスを得る。8レベルになると、そしてその後6レベルごとに、このボーナスは＋1される（8レベルでは＋2、14レベルでは＋3、20レベルでは＋4、といった具合）。
 
-Inspire courage is a mind-affecting ability.]]
-s_mus_skl			="Inspire Competence"	s_mus_skl_d		=[[A bard of 3rd level or higher with 6 or more ranks in a Perform skill can use his music or poetics to help an ally (not including himself) succeed at a task.
+勇気を鼓舞するは精神に影響を与える能力である。]]
+s_mus_skl			="能力を刺激する"	s_mus_skl_d		=[[パフォームスキルで6ランク以上を持つ3レベル以上のバードは、自分の音楽や詩学を使って味方（自分自身を除く）が任務を成功させるのを助けることができます。
 
-The ally must be within 30 feet and able to see and hear the bard. The bard must also be able to see the ally. The ally gets a +2 competence bonus on skill checks with a particular skill as long as he or she continues to hear the bard’s music. Certain uses of this ability are infeasible. The effect lasts as long as the bard concentrates, up to a maximum of 2 minutes.
+その味方は30フィート以内にいて、バードを見ることも聞くこともできなければならない。バードも味方を見ることができなければならない。味方は、バードの音楽を聴き続けている限り、特定の技能の技能チェックに＋2の能力ボーナスを得る。この能力のある種の使用は不可能である。この効果はバードが集中している間、最大2分まで続く。
 
-Inspire competence is a mind-affecting ability.]]
-s_mus_hp			="Inspire Greatness"	s_mus_hp_d		=[[A bard of 9th level or higher with 12 or more ranks in a Perform skill can use music or poetics to inspire greatness in himself or a single willing ally within 30 feet, granting him or her extra fighting capability. For every three levels a bard attains beyond 9th, he can target one additional ally with a single use of this ability (two at 12th level, three at 15th, four at 18th).
+能力を刺激するは精神に影響を与える能力である。]]
+s_mus_hp			="偉大な鼓舞"	s_mus_hp_d		=[[パフォームスキルのランクが12以上ある9レベル以上のバードは、音楽または詩学を用いて、自身または30フィート以内にいる意思のある味方1人に偉大な鼓舞し、その者に特別な戦闘能力を与えることができる。バードが9レベルを超えて3レベルに達するごとに、1回のこの能力の使用でさらに1人の味方を対象とすることができる（12レベルでは2人、15レベルでは3人、18レベルでは4人）。
 
-To inspire greatness, a bard must sing and an ally must hear him sing. The effect lasts for as long as the ally hears the bard sing and for 5 rounds thereafter.
+偉大な鼓舞には、バードは歌わなければならず、味方はその歌を聞かなければならない。この効果は、味方がバードの歌を聞いている間と、その後5ラウンド続く。
 
-A creature inspired with greatness gains 2 bonus Hit Dice (d10s), the commensurate number of temporary hit points (apply the target’s Constitution modifier, if any, to these bonus Hit Dice), a +2 competence bonus on attack rolls, and a +1 competence bonus on Fortitude saves. The bonus Hit Dice count as regular Hit Dice for determining the effect of spells that are Hit Dice dependant.
+偉大な鼓舞を受けたクリーチャーは2個のボーナスヒットダイス（d10）と、それに見合う数の一時的なヒットポイント（ボーナスヒットダイスに対象のCON修正があればそれを適用する）、攻撃ロールに＋2能力ボーナス、不屈のセーヴに＋1能力ボーナスを得る。ボーナスヒットダイスは通常のヒットダイスとしてカウントされ、ヒットダイスに依存する呪文の効果を決定する。
 
-Inspire greatness is a mind-affecting ability.]]
-s_mus_def			="Inspire Heroics"		s_mus_def_d		=[[A bard of 15th level or higher with 18 or more ranks in a Perform skill can use music or poetics to inspire tremendous heroism in himself or a single willing ally within 30 feet. For every three bard levels the character attains beyond 15th, he can inspire heroics in one additional creature.
+偉大な鼓舞は心に影響を与える能力です。]]
+s_mus_def			="英雄を鼓舞する"		s_mus_def_d		=[[パフォームスキルのランクが18以上ある15レベル以上のバードは、音楽または詩学を用いて、自身または30フィート以内にいる意思のある味方1人に、とてつもない英雄を鼓舞することができる。そのキャラクターが15レベルを超えてバードのレベルを3つ上げるごとに、さらに1体のクリーチャーに英雄を鼓舞することができる。
 
-To inspire heroics, a bard must sing and an ally must hear the bard sing for a full round. A creature so inspired gains a +4 morale bonus on saving throws and a +4 dodge bonus to AC. The effect lasts for as long as the ally hears the bard sing and for up to 5 rounds thereafter.
+英雄を鼓舞するには、バードは歌わなければならず、味方は1ラウンドの間バードの歌を聞かなければならない。鼓舞されたクリーチャーはセーヴィングスローに＋4の士気ボーナスを得、ACに＋4の回避ボーナスを得る。この効果は、味方がバードの歌を聞いている間と、その後5ラウンドまで続く。
 
-Inspire heroics is a mind-affecting ability.]]
-s_hr_mus_def		="effective upon hearing"
-s_mus_free			="Song of Freedom"		s_mus_free_d	=[[A bard of 12th level or higher with 15 or more ranks in a Perform skill can use music or poetics to create an effect equivalent to the break enchantment spell (caster level equals the character’s bard level).
+英雄を鼓舞するは精神に影響を与える能力です。]]
+s_hr_mus_def		="聴聞により効力を生じる"
+s_mus_free			="ソングオブフリーダム"		s_mus_free_d	=[[パフォームスキルのランクが15以上ある12レベル以上のバードは、音楽や詩学を用いてブレイクエンチャント呪文と同等の効果を生み出すことができる（術者レベルはキャラクターのバードレベルに等しい）。
 
-Using this ability requires 1 minute of uninterrupted concentration and music, and it functions on a single target within 30 feet. A bard can’t use song of freedom on himself.]]
-s_brk_ench			="Break Enchantment"	s_brk_ench_d	=[[This spell frees victims from enchantments, transmutations, and curses. Break enchantment can reverse even an instantaneous effect.
+この能力の使用には1分間の集中力と音楽が必要であり、30フィート以内の対象1人を対象とする。バードは自分自身に自由の歌を使うことはできない。]]
+s_brk_ench			="ブレイクエンチャント"	s_brk_ench_d	=[[この呪文は犠牲者をエンチャント、転生、呪いから解放する。ブレイク・エンチャントは瞬時の効果であっても元に戻すことができる。
 
-For each such effect, you make a caster level check (1d20 + caster level, maximum +15) against a DC of 11 + caster level of the effect. Success means that the creature is free of the spell, curse, or effect. For a cursed magic item, the DC is 25.
+そのような効果1つにつき、あなたは難易度11＋その効果の術者レベルに対する術者レベルチェック（1d20＋術者レベル、最大＋15）を行なう。成功すれば、そのクリーチャーは呪文、呪い、効果から解放される。呪われたマジックアイテムの場合、難易度は25である。
 
-If the spell is one that cannot be dispelled by dispel magic, break enchantment works only if that spell is 5th level or lower.
+その呪文がディスペルマジックで払拭できないものである場合、ブレイクエンチャントはその呪文が5レベル以下の場合にのみ機能する。
 
-If the effect comes from some permanent magic item break enchantment does not remove the curse from the item, but it does frees the victim from the item's effects.]]
-s_hr_brk_ench		="just one standard action"
+その効果が永続的な魔法のアイテムに由来する場合、ブレイクエンチャントはそのアイテムから呪いを取り除くことはできないが、犠牲者をそのアイテムの効果から解放することはできる。]]
+s_hr_brk_ench		="たった 1 つの標準アクション"
 
 
 -- misc pwrs
-s_mon_pwrs				="Monster Special Abilities"
-s_mon_pwrs_d			=[[Many creatures have unusual abilities, including special attacks, special qualities, and monster feats.
+s_mon_pwrs				="モンスターの特殊能力"
+s_mon_pwrs_d			=[[多くのクリーチャーは、特別な攻撃、特別な性質、モンスターの特技などの珍しい能力を持っています。
 
-Special qualities include defenses, vulnerabilities, and other special abilities that are not modes of attack.
+特別な性質には、防御、脆弱性、および攻撃モードではないその他の特別な能力が含まれます。
 
-Monster feats apply to abilities most commonly found amongst monsters or are related to monsters.
+モンスターの特技は、モンスター間で最も一般的に見られる、またはモンスターに関連する能力に適用されます。
 
-A special ability is either extraordinary (Ex), spell-like (Sp), or supernatural (Su).]]
+特殊能力は、並外れた能力 (Ex)、呪文のような能力 (Sp)、または超自然的な能力 (Su) のいずれかです。]]
 
-s_race_atk_abr			= "Hatred"
-s_race_atk_abr_d		= "+1 racial bonus on attack rolls against aberrations."
-s_race_atk_gob_orc		= "Hatred"
-s_race_atk_gob_orc_d	= "+1 racial bonus to attack rolls against orcs and goblinoids."
-s_race_atk_gob_kob		= "Hatred"
-s_race_atk_gob_kob_d	= "+1 racial bonus on attack rolls against kobolds and goblinoids."
-s_race_atk_gob_orc_rep	= "Hatred"
-s_race_atk_gob_orc_rep_d= "+1 racial bonus on attack rolls against goblinoids, orcs, and reptilian humanoids (including kobolds)."
+s_race_atk_abr			= "ヘイト"
+s_race_atk_abr_d		= "+異形に対する攻撃ロールに＋1の種族ボーナス。"
+s_race_atk_gob_orc		= "ヘイト"
+s_race_atk_gob_orc_d	= "オークとゴブリノイドに対する攻撃ロールに種族ボーナス+1。"
+s_race_atk_gob_kob		= "ヘイト"
+s_race_atk_gob_kob_d	= "+コボルドとゴブリノイドに対する攻撃ロールに＋1の種族ボーナス。"
+s_race_atk_gob_orc_rep	= "ヘイト"
+s_race_atk_gob_orc_rep_d= "+ゴブリノイド、オーク、爬虫類型ヒューマノイド（コボルドを含む）に対する攻撃ロールに＋1の種族ボーナス。"
 
-s_race_def_gnt			= "Defensive Training"
-s_race_def_gnt_d		= "+4 dodge bonus to AC against monsters of the giant type."
-s_ac_dodge_4			= "Defensive Training"
-s_ac_dodge_4_d			= "+4 dodge bonus to Armor Class against all creatures."
+s_race_def_gnt			= "ディフェンストレーニング"
+s_race_def_gnt_d		= "ジャイアント系モンスターに対するACの回避ボーナス+4。"
+s_ac_dodge_4			= "ディフェンストレーニング"
+s_ac_dodge_4_d			= "すべてのクリーチャーに対するACに+4の回避ボーナス。"
 
-s_dr5_cdir				="Damage Reduction 5/cold iron"
-s_res_ace_5				="Celestial Resistance"	s_res_ace_5_d	="Resistance to acid 5, cold 5, and electricity 5."
-s_res_cef_5				="Fiendish Resistance"	s_res_cef_5_d	="Resistance to cold 5, electricity 5, and fire 5."
-s_res_e_5				="Elemental Resistance"	s_res_e_5_d		="Resistance to electricity 5."
-s_res_f_5				="Elemental Resistance"	s_res_f_5_d		="Resistance to fire 5."
-s_res_c_5				="Elemental Resistance"	s_res_c_5_d		="Resistance to cold 5."
-s_res_a_5				="Elemental Resistance"	s_res_a_5_d		="Resistance to acid 5."
-s_res_ene				="Resistance to Energy"	s_res_ene_d		="A creature with this special quality ignores some damage of the indicated type each time it takes damage of that kind (commonly acid, cold, fire, or electricity).\n\nThe entry indicates the amount and type of damage ignored."
-s_res					="Resistance"
+s_dr5_cdir				="ダメージ軽減5/コールド　アイアン"
+s_res_ace_5				="天空の抵抗"	s_res_ace_5_d	="酸に対する耐性は5、冷気に対する耐性は5、電気に対する耐性は5。"
+s_res_cef_5				="魔の抵抗"	s_res_cef_5_d	="冷気5、電気5、火5に対する耐性。"
+s_res_e_5				="エレメンタル耐性"	s_res_e_5_d		="電気への耐性 5."
+s_res_f_5				="エレメンタル耐性"	s_res_f_5_d		="火への耐性 5."
+s_res_c_5				="エレメンタル耐性"	s_res_c_5_d		="寒さへの耐性 5."
+s_res_a_5				="エレメンタル耐性"	s_res_a_5_d		="酸への耐性 5."
+s_res_ene				="エネルギーに対する耐性"	s_res_ene_d		="この特別な性質を持つクリーチャーは、その種類のダメージ（通常、酸、冷、火、電気）を受けるたびに、指示された種類のダメージを無視する。"
+s_res					="抵抗"
 
-s_dwf_u_imms			= "Duergar Immunities"
-s_dwf_u_imms_d			= "Immunity to paralysis, phantasms, and poison."
+s_dwf_u_imms			= "ドゥエルガーの免疫"
+s_dwf_u_imms_d			= "麻痺、幻覚、毒に対する耐性。"
 
 s_hfl_luck				= "ハーフリングの幸運"
-s_hfl_luck_d			= "全てのセーヴに ＋1 の種族ボーナスを得る。"
-s_save_race_2			= "幸運"-- Fortunate
-s_save_race_2_d			= "全てのセーヴに ＋2 の種族ボーナスを得る。"
-s_res_spl_air_race_1	= "Magic Resistance"
-s_res_spl_air_race_1_d	= "+1 racial bonus on saving throws against air spells and spell-like effects. The bonus increases by 1 per 5 levels."
-s_res_spl_fire_race_1	= "Magic Resistance"
-s_res_spl_fire_race_1_d	= "+1 racial bonus on saving throws against fire spells and spell-like effects. The bonus increases by 1 per 5 levels."
-s_res_spl_water_race_1	= "Magic Resistance"
-s_res_spl_water_race_1_d= "+1 racial bonus on saving throws against water spells and spell-like effects. The bonus increases by 1 per 5 levels."
-s_res_spl_earth_race_1	= "Magic Resistance"
-s_res_spl_earth_race_1_d= "+1 racial bonus on saving throws against earth spells and spell-like effects. The bonus increases by 1 per 5 levels."
-s_res_spl_will_race_2	= "Magic Resistance"
-s_res_spl_will_race_2_d	= "+2 racial bonus on Will saves against spells and spell-like abilities."
-s_race_res_spl_2		= "Magic Resistance"
-s_race_res_spl_2_d		= "+2 racial bonus on saving throws against spells and spell-like effects."
-s_race_res_spl_3		= "Magic Resistance"
-s_race_res_spl_3_d		= "+3 racial bonus on saving throws against spells and spell-like effects."
-s_race_res_tox_2		= "Poison Resistance"
-s_race_res_tox_2_d		= "+2 racial bonus on saving throws against poison."
-s_race_res_tox_3		= "Poison Resistance"
-s_race_res_tox_3_d		= "+3 racial bonus on saving throws against poison."
-s_spl_res_11			= "Spell Resistance"
-s_spl_res_11_d			= "Have spell resistance equal to 11 + class levels."
-s_spl_res_13			= "Spell Resistance"
-s_spl_res_13_d			= "Have spell resistance equal to 13 + class levels."
-s_spl_res_15			= "Spell Resistance"
-s_spl_res_15_d			= "Have spell resistance equal to 15 + class levels."
+s_hfl_luck_d			= "すべてのセーヴィングスローに +1 種族ボーナス。"
+s_save_race_2			= "幸運"
+s_save_race_2_d			= "すべてのセーヴィングスローに +2 種族ボーナス。"
+s_res_spl_air_race_1	= "魔法耐性"
+s_res_spl_air_race_1_d	= "+空気の呪文や呪文のような効果に対するセーヴィングスローに＋1の種族ボーナス。このボーナスは5レベルにつき1増加する。"
+s_res_spl_fire_race_1	= "魔法耐性"
+s_res_spl_fire_race_1_d	= "火の呪文および呪文のような効果に対するセーヴィングスローに +1 種族ボーナス。 ボーナスは5レベルごとに1ずつ増加します。"
+s_res_spl_water_race_1	= "魔法耐性"
+s_res_spl_water_race_1_d= "水の呪文および呪文のような効果に対するセーヴィングスローに +1 種族ボーナス。 ボーナスは5レベルごとに1ずつ増加します。"
+s_res_spl_earth_race_1	= "魔法耐性"
+s_res_spl_earth_race_1_d= "土の呪文および呪文のような効果に対するセーヴィングスローに +1 種族ボーナス。 ボーナスは5レベルごとに1ずつ増加します。"
+s_res_spl_will_race_2	= "魔法耐性"
+s_res_spl_will_race_2_d	= "呪文や呪文に似た能力に対する意志セーヴに +2 種族ボーナス。"
+s_race_res_spl_2		= "魔法耐性"
+s_race_res_spl_2_d		= "呪文および呪文に似た効果に対するセーヴィングスローに +2 種族ボーナス。"
+s_race_res_spl_3		= "魔法耐性"
+s_race_res_spl_3_d		= "呪文および呪文に似た効果に対するセーヴィングスローに +3 種族ボーナス。"
+s_race_res_tox_2		= "毒耐性"
+s_race_res_tox_2_d		= "毒に対するセーヴィングスローに+2種族ボーナス。"
+s_race_res_tox_3		= "毒耐性"
+s_race_res_tox_3_d		= "毒に対するセーヴィングスローに+3種族ボーナス。"
+s_spl_res_11			= "呪文耐性"
+s_spl_res_11_d			= "11 + クラスレベルに等しい呪文耐性を持ちます。"
+s_spl_res_13			= "呪文耐性"
+s_spl_res_13_d			= "13 + クラスレベルに等しい呪文耐性を持っています。"
+s_spl_res_15			= "呪文耐性"
+s_spl_res_15_d			= "15 + クラスレベルに等しい呪文耐性を持ちます。"
 
-s_keen_senses_door		= "Keen Senses"
-s_keen_senses_door_d	= "+2 racial bonus on Search, Spot, and Listen checks. The character who merely passes within 5 feet of a secret or concealed door is entitled to a Search check to notice it as if he were actively looking for it."
-s_craftsman				= "Craftsman"
-s_craftsman_d			= "+2 racial bonus on Appraise and Craft checks that are related to stone or metal."
+s_keen_senses_door		= "鋭い感覚"
+s_keen_senses_door_d	= "探索、見破る、聞き耳のチェックに＋2の種族ボーナス。秘密の扉や隠された扉の5フィート以内を通過しただけのキャラクターは、あたかも積極的にそれを探しているかのように、それに気づくための探索チェックを受ける権利がある。"
+s_craftsman				= "職人"
+s_craftsman_d			= "石または金属に関連する鑑定と製作チェックに +2 種族ボーナス。"
 
 
-s_unusual_stonework		= "Unusual Stonework"
-s_unusual_stonework_d	= [[Such as sliding walls, stonework traps, new construction (even when built to match the old), unsafe stone surfaces, shaky stone ceilings, and the like.
+s_unusual_stonework		= "珍しい石細工"
+s_unusual_stonework_d	= [[例えば、スライドする壁、石造りの罠、新築（たとえ古いものに合わせて建てられていても）、安全でない石造りの表面、揺れ動く石造りの天井などである。
 
-Something that isn’t stone but that is disguised as stone also counts as unusual stonework.]]
+石ではないが石に見せかけたものも、珍しい石細工としてカウントされる。]]
 
-s_stonecunning_more		= [[The character who merely comes within 10 feet of unusual stonework can make a Search check as if he were actively searching.
+s_stonecunning_more		= [[珍しい石細工の10フィート以内に近づいただけのキャラクターは、積極的に探しているかのように探索チェックを行なうことができる。
 
-Besides, the character can use the Search skill to find stonework traps as a rogue can.
+その上、このキャラクターはローグと同じように探索スキルを使って石細工の罠を見つけることができる。
 
-The character can also intuit depth, sensing his approximate depth underground as naturally as a human can sense which way is up.]]
+また、このキャラクターは深さを直感することができ、地下のおおよその深さを、人間がどちらが上かを感じるのと同じくらい自然に感じ取ることができる。]]
 
-s_stonecunning			= "Stonecunning"
-s_stonecunning_d		= "+2 racial bonus on Search checks to notice <t=$s_unusual_stonework_nd c=fc_b>unusual stonework</t>. Besides, the character also has <t=$s_stonecunning_more c=fc_b>other stonework related abilities</t>."
+s_stonecunning			= "石の狡猾さ"
+s_stonecunning_d		= "探索チェックの気付きに＋2の種族ボーナス<t=$s_unusual_stonework_nd c=fc_b>珍しい石造り</t>。 さらに、キャラクターには、<t=$s_stonecunning_more c=fc_b>その他の石造物関連の能力</t>."
 
 
-s_light_sensitivity		= "Light Sensitivity"
-s_light_sensitivity_d	= "Dazzled in bright sunlight or within the radius of a daylight spell."
-s_lit_blind				= "Light Blindness"
-s_lit_blind_d			= "Abrupt exposure to bright light (such as sunlight or a daylight spell) blinds you for 1 round. On subsequent rounds, you are dazzled as long as you remain in the affected area."
+s_light_sensitivity		= "光感度"
+s_light_sensitivity_d	= "明るい日差しや日光の呪文の半径内で目がくらむ。"
+s_lit_blind				= "眩しい光"
+s_lit_blind_d			= "明るい光（日光や昼光魔法など）に突然さらされると、1ラウンドの間、目がくらむ。それ以降のラウンドも、その場所にいる限りは目がくらむ。"
 
 
-s_grab_m_2				="Improved Grab"
-s_grab_m_2_d			=[[If a creature with this special attack hits with a melee weapon (usually a claw or bite attack), it deals normal damage and attempts to start a grapple as a free action without provoking an attack of opportunity.
+s_grab_m_2				="改良された組みつき"
+s_grab_m_2_d			=[[この特殊攻撃を持つクリーチャーが近接武器（通常は鉤爪か噛みつき攻撃）で攻撃した場合、通常ダメージを与え、機会攻撃を誘発させずに自由行動として組みつきを開始しようとする。
 
-The first successful grapple check does not deal any extra damage. Each successful grapple check it makes during successive rounds automatically deals the damage indicated for the attack that established the hold.
+最初の組みつきチェックの成功は追加ダメージを与えない。その後のラウンド中に組みつきチェックが成功するたびに、掴むを確立した攻撃に示されたダメージを自動的に与える。
 
-Improved grab works only against opponents at least one size category smaller than the creature.]]
-s_rake					="Rake"
-s_rake_d				=[[A creature with this special attack gains extra natural attacks when it grapples its foe.
+改良された組みつきは、クリーチャーより少なくとも 1 サイズ カテゴリが小さい相手に対してのみ機能します。]]
+s_rake					="熊手"
+s_rake_d				=[[この特別な攻撃を持つクリーチャーは、敵と組み合うときに追加の自然攻撃を獲得します。
 
-Normally, a monster can attack with only one of its natural weapons while grappling, but a monster with the rake ability usually gains two additional claw attacks that it can use only against a grappled foe. Rake attacks are not subject to the usual –4 penalty for attacking with a natural weapon in a grapple.
+通常、モンスターは組みつき中に肉体武器のうち1つでしか攻撃できないが、熊手能力を持つモンスターは通常、組みつき中の敵に対してのみ使用できる追加のクロー攻撃を2つ得る。熊手攻撃には、組みつき中の肉体武器による攻撃に対する通常の-4ペナルティは適用されない。
 
-A monster with the rake ability must begin its turn grappling to use its rake — it can’t begin a grapple and rake in the same turn.]]
-s_constrict				="Constrict"
-s_constrict_d			=[[A creature with this special attack can crush an opponent, dealing bludgeoning damage equal to the damage of its primary natural weapon, after making a successful grapple check.
+熊手能力を持つモンスターは、熊手を使用するためにそのターンで組みつきを開始する必要があります。同じターンに組みつきと熊手を開始することはできません。]]
+s_constrict				="締め付け"
+s_constrict_d			=[[この特殊攻撃を持つクリーチャーは、組みつきチェックに成功した後、その主要な肉体武器のダメージに等しい打撃ダメージを与え、相手を押しつぶすことができる。
 
-If the creature also has the improved grab ability it deals constriction damage in addition to damage dealt by the weapon used to grab.]]
-s_swallow				="Swallow Whole"
-s_swallow_d				=[[If a creature with this special attack begins its turn with an opponent held in its mouth (see Improved Grab), it can attempt a new grapple check. If it succeeds, it swallows its prey, and the opponent takes bite damage. Unless otherwise noted, the opponent can be up to one size category smaller than the swallowing creature.
+クリーチャーが改善された組みつき能力も持っている場合、組みつきに使用された武器によって与えられるダメージに加えて、締め付けダメージを与えます。]]
+s_swallow				="丸飲み"
+s_swallow_d				=[[この特殊攻撃を持つクリーチャーが、対戦相手を咥えた状態でターンを開始した場合（改良型組みつき参照）、新たな組みつきチェックを試みることができる。成功すれば獲物を飲み込み、相手は噛みつきダメージを受ける。特に断りのない限り、相手は飲み込むクリーチャーより1サイズカテゴリーまで小さくできる。
 
-Being swallowed has various consequences, depending on the creature doing the swallowing. A swallowed creature is considered to be grappled, while the creature that did the swallowing is not.
+飲み込まれることは、飲み込んだクリーチャーによってさまざまな結果をもたらす。飲み込まれたクリーチャーは組みつきされたものとみなされるが、飲み込んだクリーチャーはそうならない。
 
-A swallowed creature can try to cut its way free with any light slashing or piercing weapon, or it can just try to escape the grapple.
+飲み込まれたクリーチャーは、軽めの斬撃か貫通の武器で自由を切り開こうとすることもできるし、組みつきから逃れようとすることもできる。
 
-The Armor Class of the interior of a creature that swallows whole is normally 10 + 1/2 its natural armor bonus, with no modifiers for size or Dexterity.
+丸呑みするクリーチャーの内部のACは通常10＋その自然のアーマーボーナスの1/2であり、サイズやDEXによる修正はない。
 
-If the swallowed creature escapes the grapple, success puts it back in the attacker’s mouth, where it may be bitten or swallowed again.]]
-s_attach_m				="Attach"
-s_attach_m_d			=[[If a creature with this ability hits with a bite attack, it uses its powerful jaws to latch onto the opponent’s body and automatically deals bite damage each round it remains attached.
+飲み込まれたクリーチャーが組みつきから逃れた場合、成功すれば攻撃者の口の中に戻され、そこで再び噛まれたり飲み込まれたりする可能性がある。]]
+s_attach_m				="取り付く"
+s_attach_m_d			=[[この能力を持つクリーチャーが咬みつき攻撃で命中した場合、その強力な顎で相手の身体にしがみつき、しがみついたまま毎ラウンド自動的に咬みつきダメージを与える。
 
-An attached creature loses its Dexterity bonus to Armor Class and can be struck with a weapon or grappled itself.]]
-s_con_drn				="Blood Drain"
-s_con_drn_d				=[[A creature with this ability drains blood for 1d4 points of Constitution damage each round it remains attached.]]
-s_trip_m				="Trip"
-s_trip_m_d				=[[A creature with this ability that hits with a claw or bite attack can attempt to trip the opponent as a free action without making a touch attack or provoking an attack of opportunity. If the attempt fails, the opponent cannot react to trip the creature.]]
-s_chg_fatk				="Pounce"
-s_chg_fatk_d			=[[When a creature with this special attack makes a charge, it can follow with a full attack—including rake attacks if the creature also has the rake ability.]]
-s_chg_dmg				="Powerful Charge"
-s_chg_dmg_d				=[[When a creature with this special attack makes a charge, its attack deals double damage in addition to the normal benefits and hazards of a charge.]]
-s_trample				="Trample"
-s_trample_d				=[[As a full-round action, a creature with this special attack can move up to twice its speed and literally run over any opponents at least one size category smaller than itself.
+取り付いたクリーチャーはACのDEXのボーナスを失い、武器で殴られたり、自ら掴まれたりする。]]
+s_con_drn				="吸血"
+s_con_drn_d				=[[この能力を持つクリーチャーは、付着したまま毎ラウンド1d4ポイントのCONダメージを与える。]]
+s_trip_m				="足払い"
+s_trip_m_d				=[[この能力を持つクリーチャーが鉤爪攻撃や噛みつき攻撃を命中させた場合、接触攻撃を行なったり機会攻撃を誘発させたりすることなく、自由行動として相手を足払いさせようと試みることができる。試みが失敗した場合、相手はそのクリーチャーを足払いさせるリアクションをとれない。]]
+s_chg_fatk				="急襲"
+s_chg_fatk_d			=[[この特殊攻撃を持つクリーチャーがチャージを行うとき、そのクリーチャーが熊手能力も持っているなら、熊手攻撃を含む全体攻撃で追撃できる。]]
+s_chg_dmg				="パワフルチャージ"
+s_chg_dmg_d				=[[この特殊攻撃を持つクリーチャーがチャージを行なう場合、その攻撃は通常のチャージの利益と危険に加えて2倍のダメージを与える。]]
+s_trample				="踏みつけ"
+s_trample_d				=[[この特殊攻撃を持つクリーチャーは、全ラウンドアクションとして、自分の速度の2倍まで移動し、自分より少なくとも1サイズカテゴリー小さい相手を文字通り轢き殺すことができる。
 
-A trample attack deals bludgeoning damage (the creature’s slam damage + 1-1/2 times its Str modifier).]]
+踏みつけ攻撃は撲殺ダメージ（クリーチャーの叩きつけダメージ＋そのSTR修正値の1～1/2倍）を与える。]]
 
-s_trample_e				=[[The creature merely has to move over the opponents in its path; any creature whose space is completely covered by the trampling creature’s space is subject to the trample attack.
+s_trample_e				=[[クリーチャーはただその進路上の敵の上を移動するだけでよい。 踏みつけているクリーチャーのスペースで完全に覆われているクリーチャーは、踏みつけ攻撃の対象となります。
 
-If a target’s space is larger than 5 feet, it is only considered trampled if the trampling creature moves over all the squares it occupies.
+対象の空間が5フィートより大きい場合、踏みつけクリーチャーがその対象が占めるすべてのマスを移動した場合のみ、踏みつけられたとみなされる。
 
-If the trampling creature moves over only some of a target’s space, the target can make an attack of opportunity against the trampling creature at a –4 penalty.
+踏みつけクリーチャーが対象のスペースの一部だけを移動する場合、対象は-4のペナルティで踏みつけクリーチャーに対して機会攻撃を行なうことができる。
 
-A trampling creature that accidentally ends its movement in an illegal space returns to the last legal position it occupied, or the closest legal position, if there’s a legal position that’s closer.
+誤って不正な空間で移動を終了した踏みつけクリーチャーは、そのクリーチャーが最後に占有していた合法的な位置か、より近い合法的な位置がある場合には最も近い合法的な位置に戻る。
 
-Trampled opponents can attempt attacks of opportunity, but these take a –4 penalty. If they do not make attacks of opportunity, trampled opponents can attempt Reflex saves to take half damage.
+踏みつけられた相手は機会攻撃を試みることができるが、この場合-4のペナルティを受ける。機会攻撃をしなかった場合、踏みつけられた相手は反射セーヴを試みてダメージを半分にすることができる。
 
-The save DC against a creature’s trample attack is 10 + 1/2 creature’s HD + creature’s Str modifier.
+クリーチャーの踏みつけ攻撃に対するセーヴ難易度は10＋クリーチャーのヒットダイスの1/2＋クリーチャーのSTR修正値である。
 
-A trampling creature can only deal trampling damage to each target once per round, no matter how many times its movement takes it over a target creature.]]
-s_stampede				="Stampede"
-s_stampede_d			=[[A frightened herd of bison flees as a group in a random direction (but always away from the perceived source of danger).
+踏みつけクリーチャーは、その移動によって対象のクリーチャーの上を何度通過しても、1ラウンドに1度だけ、各対象に踏みつけダメージを与えることができる。]]
+s_stampede				="スタンピード"
+s_stampede_d			=[[怯えたバイソンの群れは、集団としてランダムな方向に逃げます(ただし、常に危険源から遠ざかります)。
 
-They literally run over anything of Large size or smaller that gets in their way, dealing 1d12 points of damage for each five bison in the herd (Reflex DC 18 half). The save DC is Strength-based.]]
-s_sprint				="Sprint"
-s_sprint_d				=[[Once per hour, a creature with this ability can move ten times its normal speed when it makes a charge.]]
-s_flight				="Flight"
-s_flight_d				=[[A creature with this ability can cease or resume flight as a free action. If the ability is supernatural, it becomes ineffective in an antimagic field, and the creature loses its ability to fly for as long as the antimagic effect persists.]]
+彼らは文字通り、邪魔になるラージサイズ以下のものを轢き、群れのバイソン5頭につき1d12点のダメージを与える（半減は反射難易度18）。セーヴ難易度はSTRベースである。]]
+s_sprint				="疾走"
+s_sprint_d				=[[1 時間に 1 回、この能力を持つクリーチャーはチャージ時に通常の 10 倍の速度で移動できます。]]
+s_flight				="飛行"
+s_flight_d				=[[この能力を持つクリーチャーは、自由行動として飛行を中止したり再開したりできる。この能力が超自然的なものである場合、反魔法フィールドの中では効果がなくなり、そのクリーチャーは反魔法の効果が持続する限り飛行能力を失う。]]
 
-s_ray_m					="Ray"
-s_ray_m_d				=[[This form of special attack works like a ranged attack. Hitting with a ray attack requires a successful ranged touch attack roll, ignoring armor, natural armor, and shield and using the creature’s ranged attack bonus.
+s_ray_m					="光線"
+s_ray_m_d				=[[この特殊攻撃は射撃攻撃のように機能する。光線攻撃で命中させるには、アーマー、肉体鎧、シールドを無視し、クリーチャーの射撃攻撃ボーナスを使用して、射撃タッチ攻撃ロールに成功する必要がある。
 
-Ray attacks have no range increment. The creature’s descriptive text specifies the maximum range, effects, and any applicable saving throw.]]
-s_sonic_atk				="Sonic Attacks"
-s_sonic_atk_d			=[[Unless otherwise noted, a sonic attack follows the rules for spreads. The range of the spread is measured from the creature using the sonic attack.
+光線攻撃には射程の増分はない。クリーチャーの説明文には、最大射程、効果、適用されるセーヴィングスローが明記されている。]]
+s_sonic_atk				="音波攻撃"
+s_sonic_atk_d			=[[特に断りのない限り、音波攻撃は拡散のルールに従う。拡散の範囲は音波攻撃を使用しているクリーチャーから測定される。
 
-Once a sonic attack has taken effect, deafening the subject or stopping its ears does not end the effect.
+音波攻撃は一旦効果を発揮すると、対象者の耳をつんざいたり、耳を塞いだりしても効果は終わらない。
 
-Stopping one’s ears ahead of time allows opponents to avoid having to make saving throws against mind-affecting sonic attacks, but not other kinds of sonic attacks (such as those that deal damage).
+先に耳を塞いでおくことで、相手は精神に影響を与える音波攻撃に対するセービングスローを避けることができるが、他の種類の音波攻撃（ダメージを与えるものなど）に対するセービングスローを避けることはできない。
 
-Stopping one’s ears is a full-round action and requires wax or other soundproof material to stuff into the ears.]]
-s_breath_wpn			="Breath Weapon"
-s_breath_wpn_d			=[[A breath weapon attack usually deals damage and is often based on some type of energy.
+耳を塞ぐのは全ラウンドアクションであり、耳にワックスなどの防音材を詰める必要がある。]]
+s_breath_wpn			="ブレス武器"
+s_breath_wpn_d			=[[ブレス武器の攻撃は通常ダメージを与え、何らかのエネルギーに基づくことが多い。
 
-Such breath weapons allow a Reflex save for half damage (DC 10 + 1/2 breathing creature’s racial HD + breathing creature’s Con modifier). Some breath weapons allow a Fortitude save or a Will save instead of a Reflex save.
+そのようなブレス武器は、ダメージの半分（難易度10＋ブレスクリーチャーの種族ヒットダイスの1/2＋呼吸クリーチャーのCON修正値）に対して反射セーヴを行なうことができる。ブレス武器によっては、反射セーヴの代わりに不屈セーヴか意志セーヴが可能なものもある。
 
-A creature is immune to its own breath weapon unless otherwise noted.]]
-s_poison_m				="Poison"
-s_poison_m_d			=[[Poison attacks deal initial damage, such as ability damage or some other effect, to the opponent on a failed Fortitude save.
+クリーチャーは特に断りのない限り、自身のブレス武器に免疫がある。]]
+s_poison_m				="毒"
+s_poison_m_d			=[[毒攻撃は、不屈セーヴに失敗した場合、相手に能力ダメージなどの初期ダメージを与える。
 
-The Fortitude save DC against this ability is equal to 10 + 1/2 the creature’s racial HD + the creature’s Con modifier. A successful save avoids (negates) the damage.
+この能力に対する不屈セーヴの難易度は、10＋そのクリーチャーの種族ヒットダイスの1/2＋そのクリーチャーのCON修正値に等しい。セーヴに成功するとダメージは回避（無効化）される。
 
-Unless otherwise noted, another saving throw is required 1 minute later (regardless of the first save’s result) to avoid secondary damage.
+特に明記されていない限り、二次被害を避けるために、(最初のセーブの結果に関係なく) 1 分後に別のセーヴィングスローが必要です。
 
-A creature with a poison attack is immune to its own poison and the poison of others of its kind.]]
-s_poison_con			="Poison"
-s_poison_con_d			=[[A creature with this ability has a poisonous bite that deals initial and secondary damage of 1d6 Con.]]
-s_filth_bite			="Disease"
-s_filth_bite_d			=[[A creature with this ability that hits with a bite attack can infect filth fever that deals damage 1d3 Dex and 1d3 Con.
+毒攻撃を持つクリーチャーは、自分自身の毒と他の同種の毒の影響を受けません。]]
+s_poison_con			="毒"
+s_poison_con_d			=[[この能力を持つクリーチャーは有毒な咬傷を持ち、1d6 CON の初期および二次ダメージを与えます。]]
+s_filth_bite			="病気"
+s_filth_bite_d			=[[この能力を持つクリーチャーが噛み付き攻撃で命中すると、汚物熱に感染し、1d3 DEX と 1d3 CON のダメージを与えることができます。
 
-The Fortitude save DC against this ability is equal to 10 + 1/2 the creature’s racial HD + the creature’s Con modifier. A successful save avoids (negates) the damage.]]
-s_paraly_m				="Paralysis"
-s_paraly_m_d			=[[This special attack renders the victim immobile.
+この能力に対する不屈のセーブ難易度は、10 + クリーチャーの種族ヒットダイスの1/2 + クリーチャーのCON修正値に等しい。 セーブに成功すると、ダメージは回避（無効化）されます。]]
+s_paraly_m				="麻痺"
+s_paraly_m_d			=[[この特殊な攻撃により、被害者は動けなくなります。
 
-Paralyzed creatures cannot move, speak, or take any physical actions. The creature is rooted to the spot, frozen and helpless.
+麻痺した生き物は動くことも、話すことも、いかなる物理的行動も取ることができません。 生き物はその場に根を張って凍りつき、無力です。
 
-Paralysis works on the body, and a character can usually resist it with a Fortitude saving throw. Unlike hold person and similar effects, a paralysis effect does not allow a new save each round.
+麻痺は体に作用し、キャラクターは通常、不屈の精神セーヴィングスローで麻痺に抵抗できます。 ホールドパーソンや同様の効果とは異なり、麻痺効果ではラウンドごとに新たにセーブすることはできません。
 
-A winged creature flying in the air at the time that it is paralyzed cannot flap its wings and falls. A swimmer can’t swim and may drown.]]
-s_gaze					="Gaze"
-s_gaze_d				=[[A gaze special attack takes effect when opponents look at the creature’s eyes. The attack can have almost any sort of effect: petrification, death, charm, and so on.
+麻痺状態になると空を飛んでいた有翼クリーチャーは翼を羽ばたかせることができず落下してしまいます。 水棲クリーチャーは泳げないので溺れる可能性があります。]]
+s_gaze					="視線"
+s_gaze_d				=[[視線特別攻撃は、対戦相手がクリーチャーの目を見つめたときに効果を発揮します。 この攻撃には、石化、死、魅了など、ほぼあらゆる種類の効果が発生します。
 
-The typical range is 30 feet. The type of saving throw for a gaze attack varies, but it is usually a Will or Fortitude save (DC 10 + 1/2 gazing creature’s racial HD + gazing creature’s Cha modifier). A successful saving throw negates the effect.
+通常の範囲は 30 フィートです。 凝視攻撃のセーヴィングスローのタイプはさまざまですが、通常は意志または不屈のセーヴ（難易度 10 + 1/2 凝視するクリーチャーの種族 ヒットダイス + 凝視するクリーチャーの CHA 修正）です。 セーヴィングスローに成功すると効果は無効化される。
 
-Each opponent within range of a gaze attack must attempt a saving throw each round at the beginning of his or her turn in the initiative order. Only looking directly at a creature with a gaze attack leaves an opponent vulnerable.]]
+視線攻撃の範囲内の各対戦相手は、各ラウンドのターンの開始時にイニシアチブの順序でセーヴィング スローを試行しなければなりません。 視線攻撃でクリーチャーを直接見るだけで、対戦相手は無防備になります。]]
 
-s_gaze_e				=[[Opponents can avoid the need to make the saving throw by not looking at the creature, in one of two ways.
+s_gaze_e				=[[対戦相手は 2 つの方法のいずれかで、クリーチャーを見ないようにすることでセーヴィングスローを行う必要性を回避できます。
 
-Averting Eyes: The opponent avoids looking at the creature’s face, instead looking at its body, watching its shadow, tracking it in a reflective surface, and so on. Each round, the opponent has a 50% chance to not need to make a saving throw against the gaze attack. The creature with the gaze attack, however, gains concealment against that opponent.
+目をそらす: 対戦相手はクリーチャーの顔を見ることを避け、代わりにその体を見たり、その影を観察したり、反射面でそれを追跡したりするなどします。 各ラウンドで、対戦相手は 50% の確率で視線攻撃に対してセーヴィングスローを行う必要がなくなります。 ただし、視線攻撃を持つクリーチャーは、その対戦相手に対する隠蔽を獲得します。
 
-Wearing a Blindfold: The opponent cannot see the creature at all (also possible to achieve by turning one’s back on the creature or shutting one’s eyes). The creature with the gaze attack gains total concealment against the opponent.
+目隠しをする：対戦相手はクリーチャーをまったく見ることができません（クリーチャーに背を向けたり目を閉じることによっても達成できます）。 視線攻撃を持つクリーチャーは、対戦相手に対して完全な隠蔽を獲得します。
 
-A creature with a gaze attack can actively gaze as an attack action by choosing a target within range. That opponent must attempt a saving throw but can try to avoid this as described above. Thus, it is possible for an opponent to save against a creature’s gaze twice during the same round, once before the opponent’s action and once during the creature’s turn.
+視線攻撃を持つクリーチャーは、範囲内のターゲットを選択することで、攻撃アクションとして積極的に視線攻撃を行うことができます。 対戦相手はセーヴィングスローを試みる必要がありますが、上記のようにこれを回避しようとすることもできます。 したがって、対戦相手は同じラウンド中にクリーチャーの視線に対して 2 回セーブすることが可能です。1 回は対戦相手のアクション前、もう 1 回はクリーチャーのターン中にです。
 
-Gaze attacks can affect ethereal opponents. A creature is immune to gaze attacks of others of its kind unless otherwise noted.
+視線攻撃は、霊的な敵に影響を与える可能性があります。 特に明記されていない限り、クリーチャーは同種の他のクリーチャーの視線攻撃の影響を受けません。
 
-Allies of a creature with a gaze attack might be affected. All the creature’s allies are considered to be averting their eyes from the creature with the gaze attack, and have a 50% chance to not need to make a saving throw against the gaze attack each round.
+視線攻撃を持つクリーチャーの味方は影響を受けるかもしれない。そのクリーチャーのすべての味方は、視線攻撃を持つクリーチャーから目をそらしているとみなされ、各ラウンドに50％の確率で視線攻撃に対するセーヴィングスローを行なう必要がなくなる。
 
-The creature also can veil its eyes, thus negating its gaze ability.]]
+この生き物は目を覆い、視線能力を無効にすることもできます。]]
 
-s_fear_m				="Fear"
-s_fear_m_d				=[[Fear attacks can have various effects. If a fear effect allows a saving throw, it is a Will save (DC 10 + 1/2 fearsome creature’s racial HD + creature’s Cha modifier). All fear attacks are mind-affecting fear effects.]]
-s_fear_aura				="Fear Aura"
-s_fear_aura_d			=[[The use of this ability is a free action. The aura can freeze an opponent (such as a mummy’s despair) or function like the fear spell. Other effects are possible. A fear aura is an area effect. The descriptive text gives the size and kind of area.]]
-s_fear_cone				="Fear Cones"
-s_fear_cone_d			=[[These effects usually work like the fear spell.]]
-s_fear_ray				="Fear Rays"
-s_fear_ray_d			=[[These effects usually work like the fear spell.]]
-s_fear_look				="Frightful Presence"
-s_fear_look_d			=[[This special quality makes a creature’s very presence unsettling to foes.
+s_fear_m				="恐怖"
+s_fear_m_d				=[[恐怖攻撃はさまざまな影響を与える可能性があります。 恐怖効果によってセーヴィングスローが許可される場合、それは意志セーブ（難易度 10 + 1/2 恐ろしいクリーチャーの種族 ヒットダイス + クリーチャーの CHA 修正）です。 すべての恐怖攻撃は心に影響を与える恐怖効果です。]]
+s_fear_aura				="恐怖のオーラ"
+s_fear_aura_d			=[[この能力の使用は自由な行為です。 オーラは相手を凍らせたり（ミイラの絶望など）、恐怖の呪文のように機能したりできます。 他の効果も考えられます。 恐怖のオーラはエリア効果です。 説明テキストには領域のサイズと種類が示されます。]]
+s_fear_cone				="恐怖の円錐"
+s_fear_cone_d			=[[これらの効果は通常、恐怖の呪文のように機能します。]]
+s_fear_ray				="恐怖の光線"
+s_fear_ray_d			=[[これらの効果は通常、恐怖の呪文のように機能します。]]
+s_fear_look				="恐ろしい存在感"
+s_fear_look_d			=[[この特別な性質により、クリーチャーの存在そのものが敵を不安にさせます。
 
-It takes effect automatically when the creature performs some sort of dramatic action (such as charging, attacking, or snarling). Opponents within range who witness the action may become frightened or shaken. The range is usually 30 feet, and the duration is usually 5d6 rounds.
+クリーチャーが何らかの劇的なアクション（チャージ、攻撃、うなり声など）を実行すると、自動的に有効になります。 その行為を目撃した範囲内の敵は恐怖を感じたり、動揺したりする可能性があります。 射程は通常 30 フィートで、継続時間は通常 5d6 ラウンドです。
 
-This ability affects only opponents with fewer Hit Dice or levels than the creature has. An affected opponent can resist the effects with a successful Will save (DC 10 + 1/2 frightful creature’s racial HD + frightful creature’s Cha modifier).
+この能力は、クリーチャーよりもヒットダイスまたはレベルが少ない対戦相手にのみ影響します。 影響を受けた対戦相手は、成功した意志セーヴ（難易度 10 + 恐ろしいクリーチャーの種族 ヒットダイス + 恐ろしいクリーチャーの CHA 修正値）で効果に抵抗することができます。
 
-An opponent that succeeds on the saving throw is immune to that same creature’s frightful presence for 24 hours.
+セーヴィングスローに成功した対戦相手は、24 時間その同じクリーチャーの恐ろしい存在に対して影響を受けません。
 
-Frightful presence is a mind-affecting fear effect.]]
+恐ろしい存在は心に影響を与える恐怖効果です。]]
 
-s_abi_loss_m			="Ability Score Loss"
-s_abi_loss_m_d			=[[Some attacks reduce the opponent’s score in one or more abilities. This loss can be temporary (ability damage) or permanent (ability drain).]]
-s_abi_dmg_m				="Ability Damage"
-s_abi_dmg_m_d			=[[This attack damages an opponent’s ability score. The creature’s descriptive text gives the ability and the amount of damage.
+s_abi_loss_m			="能力値の低下"
+s_abi_loss_m_d			=[[一部の攻撃は、対戦相手の1つ以上の能力の点数を減少させる。この損失は一時的なもの(能力ダメージ)もあれば永続的なもの(能力ドレイン)もある。]]
+s_abi_dmg_m				="能力ダメージ"
+s_abi_dmg_m_d			=[[この攻撃は相手の能力値にダメージを与えます。 クリーチャーの説明テキストには能力とダメージ量が表示されます。
 
-If an attack that causes ability damage scores a critical hit, it deals twice the indicated amount of damage (if the damage is expressed as a die range, roll two dice).
+能力ダメージを引き起こす攻撃がクリティカルヒットを獲得した場合、指定された量の 2 倍のダメージを与えます (ダメージがサイコロの範囲で表される場合は、2 つのサイコロを振ります)。
 
-Ability damage returns at the rate of 1 point per day for each affected ability.]]
-s_abi_drn_m				="Ability Drain"
-s_abi_drn_m_d			=[[This effect permanently reduces a living opponent’s ability score when the creature hits with a melee attack. The creature’s descriptive text gives the ability and the amount drained.
+能力のダメージは、影響を受けるアビリティごとに 1 日あたり 1 ポイントの割合で回復します。]]
+s_abi_drn_m				="能力ドレイン"
+s_abi_drn_m_d			=[[この効果は、クリーチャーが近接攻撃をヒットしたときに、生きている対戦相手の能力スコアを永久に減少させます。 クリーチャーの説明文には能力と消耗量が記載されています。
 
-If an attack that causes ability drain scores a critical hit, it drains twice the indicated amount (if the damage is expressed as a die range, roll two dice).
+能力ドレインを引き起こす攻撃がクリティカルヒットを獲得した場合、指定された量の 2 倍の量をドレインします (ダメージがサイコロの範囲で表される場合は、2 つのサイコロを振ります)。
 
-Unless otherwise specified in the creature’s description, a draining creature gains 5 temporary hit points (10 on a critical hit) whenever it drains an ability score no matter how many points it drains. Temporary hit points gained in this fashion last for a maximum of 1 hour.
+クリーチャーの説明で特に指定されていない限り、ドレインしているクリーチャーは、能力値をドレインするたびに、ドレインするポイントの数に関係なく、一時的に 5 ヒットポイント (クリティカルヒットの場合は 10) を獲得します。 この方法で獲得した一時的なヒットポイントは最大 1 時間持続します。
 
-Some ability drain attacks allow a Fortitude save (DC 10 + 1/2 draining creature’s racial HD + draining creature’s Cha modifier). If no saving throw is mentioned, none is allowed.]]
-s_ene_drn_m				="Energy Drain"
-s_ene_drn_m_d			=[[This attack saps a living opponent’s vital energy and happens automatically when a melee or ranged attack hits.
+一部の能力ドレイン攻撃では、不屈の精神セーブ（難易度 10 + 1/2 ドレインクリーチャーの種族 ヒットダイス + ドレインクリーチャーの CHA 修正）が可能になります。 セーヴィングスローが言及されていない場合、セーヴィングスローは許可されません。]]
+s_ene_drn_m				="エネルギードレイン"
+s_ene_drn_m_d			=[[この攻撃は生きている敵の生命エネルギーを奪い、近接攻撃または遠距離攻撃が命中すると自動的に発生します。
 
-Each successful energy drain bestows one or more negative levels. If an attack that includes an energy drain scores a critical hit, it drains twice the given amount.
+エネルギードレインが成功するたびに、1 つ以上のマイナスレベルが与えられます。 エネルギードレインを含む攻撃でクリティカルヒットを獲得すると、規定量の2倍のエネルギードレインが発生します。
 
-Unless otherwise specified in the creature’s description, a draining creature gains 5 temporary hit points (10 on a critical hit) for each negative level it bestows on an opponent. These temporary hit points last for a maximum of 1 hour.]]
+クリーチャーの説明で特に指定されていない限り、ドレインクリーチャーは対戦相手に与えるマイナスレベルごとに一時的に5ヒットポイント（クリティカルヒットの場合は10）を得る。 これらの一時的なヒットポイントは最大 1 時間持続します。]]
 
-s_ene_drn_m_e			=[[An affected opponent takes a –1 penalty on all skill checks and ability checks, attack rolls, and saving throws, and loses one effective level or Hit Die (whenever level is used in a die roll or calculation) for each negative level.
+s_ene_drn_m_e			=[[影響を受けた対戦相手は、すべてのスキルチェックと能力チェック、攻撃ロール、セーヴィングスローに-1のペナルティを受け、マイナスレベルごとに有効レベルを1つ失うか、ヒットダイス（ダイスロールや計算でレベルが使用される場合）を失う。
 
-A spellcaster loses one spell slot of the highest level of spells she can cast and (if applicable) one prepared spell of that level; this loss persists until the negative level is removed.
+呪文の詠唱者は、詠唱できる呪文の最高レベルの呪文スロットを 1 つ失い、（該当する場合）そのレベルの準備済み呪文を 1 つ失います。 この損失は、負のレベルが除去されるまで続きます。
 
-Negative levels remain until 24 hours have passed or until they are removed with a spell, such as restoration. If a negative level is not removed before 24 hours have passed, the affected creature must attempt a Fortitude save (DC 10 + 1/2 draining creature’s racial HD + draining creature’s Cha modifier).
+マイナスのレベルは、24 時間が経過するか、回復などの呪文で削除されるまで残ります。 24時間が経過する前にマイナスレベルが除去されなかった場合、影響を受けたクリーチャーは不屈の精神セーブ（難易度10 + 1/2の消耗クリーチャーの種族ヒットダイス + 消耗クリーチャーのCHA修正）を試みなければなりません。
 
-On a success, the negative level goes away with no harm to the creature. On a failure, the negative level goes away, but the creature’s level is also reduced by one. A separate saving throw is required for each negative level.]]
+成功すると、クリーチャーに害を与えることなくマイナスレベルが消えます。 失敗するとマイナスレベルは消えますが、クリーチャーのレベルも1つ減ります。 マイナスレベルごとに個別のセーヴィングスローが必要です。]]
 
-s_spl_m					="Spells"
-s_spl_m_d				=[[Sometimes a creature can cast arcane or divine spells just as a member of a spellcasting class can (and can activate magic items accordingly). Such creatures are subject to the same spellcasting rules that characters are, except as follows.
+s_spl_m					="呪文"
+s_spl_m_d				=[[クリーチャーは、呪文を唱えるクラスのメンバーと同じように、秘術や神聖な呪文を唱えることができます (また、それに応じて魔法のアイテムを起動することもできます)。 そのようなクリーチャーは、以下を除いて、キャラクターと同じ呪文発動ルールの対象となります。
 
-A spellcasting creature that lacks hands or arms can provide any somatic component a spell might require by moving its body. Such a creature also does need material components for its spells. The creature can cast the spell by either touching the required component (but not if the component is in another creature’s possession) or having the required component on its person. Sometimes spellcasting creatures utilize the Eschew Materials feat to avoid fussing with noncostly components.
+手や腕を持たない呪文を唱えるクリーチャーは、その体を動かすことによって呪文が必要とするあらゆる体性要素を提供できる。また、そのようなクリーチャーは呪文に物質的要素を必要とする。そのクリーチャーは、必要な構成要素に触れるか（ただし、その構成要素が他のクリーチャーが所有している場合は除く）、必要な構成要素を身につけていることで、呪文を唱えることができる。呪文を唱えるクリーチャーは、コストのかからない部品に手を出すのを避けるために、材料を避けるの特技を利用することがある。
 
-A spellcasting creature is not actually a member of a class unless its entry says so, and it does not gain any class abilities.
+呪文を唱えるクリーチャーは、その項目にそう書かれていない限り、実際にはクラスの一員ではないし、クラス能力を得ることもない。
 
-A creature with access to cleric spells must prepare them in the normal manner and receives domain spells if noted, but it does not receive domain granted powers unless it has at least one level in the cleric class.]]
-s_spl_res				="Spell Resistance"
-s_spl_res_d				=[[A creature with spell resistance can avoid the effects of spells and spell-like abilities that directly affect it.
+クレリック呪文にアクセスできるクリーチャーは通常の方法で呪文を準備しなければならず、特記されていれば領域呪文を受けるが、クレリッククラスのレベルが少なくとも1でない限り、領域付与されたパワーを受けることはない。]]
+s_spl_res				="呪文耐性"
+s_spl_res_d				=[[呪文耐性を持つクリーチャーは、そのクリーチャーに直接作用する呪文や呪文のような能力の効果を避けることができる。
 
-To determine if a spell or spell-like ability works against a creature with spell resistance, the caster must make a caster level check (1d20 + caster level).
+呪文または呪文に類似した能力が呪文耐性を持つクリーチャーに対して機能するかどうかを判断するには、術者は術者レベル チェック (1d20 + 術者レベル) を行う必要があります。
 
-If the result equals or exceeds the creature’s spell resistance, the spell works normally, although the creature is still allowed a saving throw.]]
-s_spl_imm				="Spell Immunity"
-s_spl_imm_d				=[[A creature with spell immunity avoids the effects of spells and spell-like abilities that directly affect it. This works exactly like spell resistance, except that it cannot be overcome.
+結果がクリーチャーの呪文耐性と同じかそれを超えている場合、クリーチャーにはセーヴィング・スローが許可されていますが、呪文は通常どおり機能します。]]
+s_spl_imm				="呪文耐性"
+s_spl_imm_d				=[[呪文耐性を持つクリーチャーは、クリーチャーに直接影響を与える呪文や呪文に似た能力の影響を回避します。 これは、克服できないことを除いて、呪文耐性とまったく同じように機能します。
 
-Sometimes spell immunity is conditional or applies to only spells of a certain kind or level.
+場合によっては、呪文耐性が条件付きであったり、特定の種類またはレベルの呪文にのみ適用されたりすることがあります。
 
-Spells that do not allow spell resistance are not affected by spell immunity.]]
-s_summon_m				="Summon"
-s_summon_m_d			=[[A creature with the summon ability can summon specific other creatures of its kind much as though casting a summon monster spell, but it usually has only a limited chance of success (as specified in the creature’s entry). Roll d%: On a failure, no creature answers the summons.
+呪文耐性を許可しない呪文は、呪文耐性の影響を受けません。]]
+s_summon_m				="召喚"
+s_summon_m_d			=[[召喚能力を持つクリーチャーは、まるで召喚モンスターの呪文を唱えるかのように、同じ種類の他の特定のクリーチャーを召喚できますが、通常、成功の可能性は限られています（クリーチャーのエントリで指定されているように）。 ロール d%: 失敗すると、召喚に応じるクリーチャーは存在しません。
 
-Summoned creatures automatically return whence they came after 1 hour. A creature that has just been summoned cannot use its own summon ability for 1 hour.
+召喚されたクリーチャーは 1 時間後に自動的に元の場所に戻ります。 召喚されたばかりのクリーチャーは、1 時間は自身の召喚能力を使用できません。
 
-Most creatures with the ability to summon do not use it lightly, since it leaves them beholden to the summoned creature. In general, they use it only when necessary to save their own lives.
+召喚能力を持つほとんどのクリーチャーは、召喚されたクリーチャーの恩恵を受けることになるため、それを軽々しく使用しません。 一般に、彼らは自分の命を救うために必要な場合にのみそれを使用します。
 
-An appropriate spell level is given for each summoning ability for purposes of Concentration checks and attempts to dispel the summoned creature.
+集中力チェックと召喚されたクリーチャーの解呪を目的として、各召喚能力に適切な呪文レベルが与えられます。
 
-No experience points are awarded for summoned monsters.]]
-s_psionics				="Psionics"
-s_psionics_d			=[[These are spell-like abilities that a creature generates with the power of its mind. Psionic abilities are usually usable at will.]]
+召喚したモンスターには経験値は入りません。]]
+s_psionics				="サイオニクス"
+s_psionics_d			=[[これらは、クリーチャーがその精神の力で生成する呪文のような能力です。 超能力は通常、自由に使用できます。]]
 
-s_hp_reg				="Regeneration"
-s_hp_reg_d				=[[A creature with this ability is difficult to kill. Damage dealt to the creature is treated as nonlethal damage. The creature automatically heals nonlethal damage at a fixed rate per round (no effect after death).
+s_hp_reg				="リジェネレーション"
+s_hp_reg_d				=[[この能力を持つクリーチャーを殺すのは困難です。 クリーチャーに与えられたダメージは非致死ダメージとして扱われます。 クリーチャーはラウンドごとに固定率で非致死ダメージを自動的に回復します（死亡後は効果はありません）。
 
-Certain attack forms, typically fire and acid, deal lethal damage to the creature, which doesn’t go away. Additional, these specific attacks stop the creature from regenerating in the next round (it won't heal damage and will die normally).
+特定の攻撃形式（通常は火と酸）は、クリーチャーに致命的なダメージを与え、それは消えません。 さらに、これらの特定の攻撃は、クリーチャーが次のラウンドで再生するのを防ぎます（ダメージは回復せず、通常通り死にます）。
 
-Attack forms that don’t deal hit point damage ignore regeneration. Regeneration also does not restore hit points lost from starvation, thirst, or suffocation.
+ヒットポイントダメージを与えない攻撃フォームは再生を無視します。 また、再生では、飢餓、渇き、窒息によって失われたヒットポイントは回復しません。
 
-Some regenerating creatures can regrow lost portions of their bodies and can reattach severed limbs or body parts. Severed parts that are not reattached wither and die normally.
+一部の再生生物は、体の失われた部分を再生したり、切断された手足や体の一部を再び取り付けることができます。 切断された部分は再接続されず、通常は枯れて死んでしまいます。
 
-A creature must have a Constitution score to have the regeneration ability.]]
-s_fast_heal				="Fast Healing"
-s_fast_heal_d			=[[A creature with the fast healing special quality regains hit points at an exceptionally fast rate, usually 1 or more hit points per round.
+クリーチャーが再生能力を持つには、CON値が必要です。]]
+s_fast_heal				="ファストヒーリング"
+s_fast_heal_d			=[[ファストヒーリングの特別な性質を持つクリーチャーは、非常に速い速度でヒットポイントを回復します。通常、ラウンドごとに 1 以上のヒット ポイントを回復します。
 
-Except where noted here, fast healing is just like natural healing. Fast healing does not restore hit points lost from starvation, thirst, or suffocation, and it does not allow a creature to regrow lost body parts. Unless otherwise stated, it does not allow lost body parts to be reattached.]]
-s_ene_res				="Resistance to Energy"
-s_ene_res_d				=[[A creature with this special quality ignores some damage of the indicated type each time it takes damage of that kind (commonly acid, cold, fire, or electricity).]]
-s_ene_vul				="Vulnerability to Energy"
-s_ene_vul_d				=[[Some creatures have vulnerability to a certain kind of energy effect (typically either cold or fire). Such a creature takes half again as much (+50%) damage as normal from the effect, regardless of whether a saving throw is allowed, or if the save is a success or failure.]]
-s_turn_res				="Turn Resistance"
-s_turn_res_d			=[[A creature with this special quality (usually an undead) is less easily affected by clerics or paladins. When resolving a turn, rebuke, command, or bolster attempt, add the indicated number to the creature’s Hit Dice total.]]
-s_ferocity				="Ferocity"
-s_ferocity_d			=[[A creature with this ability is such a tenacious combatant that it continues to fight without penalty even while disabled or dying.]]
-s_rage_hurt				="Rage"
-s_rage_hurt_d			=[[A creature with this ability that takes damage in combat flies into a berserk rage on its next turn, clawing and biting madly until either it or its opponent is dead.
+ここに記載されている場合を除き、ファストヒーリングは自然治癒とまったく同じです。ファストヒーリングでは、飢餓、喉の渇き、または窒息によって失われたヒットポイントは回復せず、クリーチャーが失われた体の部分を再生することもできません。 特に明記されていない限り、失われた身体部分を再取り付けすることはできません。]]
+s_ene_res				="エネルギー耐性"
+s_ene_res_d				=[[この特別な性質を持つクリーチャーは、指定された種類のダメージ (通常は酸、冷気、火、または電気) を受けるたびに、その種類のダメージを無視します。]]
+s_ene_vul				="エネルギーに対する脆弱性"
+s_ene_vul_d				=[[一部の生き物は、特定の種類のエネルギー効果 (通常は冷気または火) に対して脆弱です。 そのようなクリーチャーは、セーヴィングスローが許可されているかどうか、またはセーヴが成功したか失敗したかに関係なく、その効果によって通常の半分（+50%）のダメージを受けます。]]
+s_turn_res				="ターン抵抗"
+s_turn_res_d			=[[この特別な性質を持つクリーチャー（通常はアンデッド）は、クレリックやパラディンの影響を受けにくくなります。 ターン、叱責、命令、または強化の試みを解決するとき、指定された数値をクリーチャーのヒット ダイスの合計に追加します。]]
+s_ferocity				="獰猛"
+s_ferocity_d			=[[この能力を持つクリーチャーは非常に粘り強い戦闘員であるため、無効化されたり死亡したりしてもペナルティなしで戦い続けます。]]
+s_rage_hurt				="激怒"
+s_rage_hurt_d			=[[この能力を持つクリーチャーが戦闘中にダメージを受けると、次のターンに凶暴な激怒に陥り、自分か相手のどちらかが死ぬまで狂ったようにひっかき、噛みつきます。
 
-It gains +4 to Strength, +4 to Constitution, and –2 to Armor Class.
+STR に +4、CON に +4、AC に -2 を獲得します。
 
-The creature cannot end its rage voluntarily.]]
+クリーチャーは自らの意志で怒りを止めることはできません。]]
 
-s_blindsight			="Blindsight"
-s_blindsight_d			=[[This ability is similar to blindsense, but is far more discerning. Using nonvisual senses, such as sensitivity to vibrations, keen smell, acute hearing, or echolocation, a creature with blindsight maneuvers and fights as well as a sighted creature.
+s_blindsight			="ブラインドサイト"
+s_blindsight_d			=[[この能力はブラインドセンスに似ているが、はるかに識別力が高い。振動に対する感受性、鋭い嗅覚、鋭敏な聴覚、エコーロケーションなど、視覚以外の感覚を用いることで、ブラインドセンスを持つクリーチャーは視覚を持つクリーチャーと同じように操縦し、戦うことができる。
 
-Invisibility, darkness, and most kinds of concealment are irrelevant, though the creature must have line of effect to a creature or object to discern that creature or object. The ability’s range is specified in the creature’s descriptive text. The creature usually does not need to make Spot or Listen checks to notice creatures within range of its blindsight ability.
+インビジビリティ、ダークネス、ほとんどの種類の隠蔽は関係ないが、クリーチャーがクリーチャーやオブジェクトを識別するためには、そのクリーチャーやオブジェクトに対する効果線を持っていなければならない。能力の範囲はクリーチャーの説明文に明記されている。クリーチャーは通常、そのブラインドサイト能力の範囲内にいるクリーチャーに気づくために見破りチェックや聞き耳チェックを行なう必要はない。
 
-Unless noted otherwise, blindsight is continuous, and the creature need do nothing to use it. Some forms of blindsight, however, must be triggered as a free action. If so, this is noted in the creature’s description. If a creature must trigger its blindsight ability, the creature gains the benefits of blindsight only during its turn.
+特に断りのない限り、ブラインドサイトは継続的なものであり、クリーチャーはそれを使うために何もする必要はない。ただし、ブラインドサイトの中には自由行動として発動しなければならないものもある。その場合、そのクリーチャーの説明文にその旨が記されている。ブラインドサイト能力を誘発させなければならない場合、そのクリーチャーはそのターンの間だけブラインドサイトの恩恵を得る。
 
-Related: Porpoises and whales can “see” by emitting high-frequency sounds, inaudible to most other creatures, that allow them to locate objects and creatures within 120 feet. A silence spell negates this and forces the creature to rely on its vision, which is approximately as good as a human’s.]]
-s_blindsense			="Blindsense"
-s_blindsense_20			="Blindsense 20 ft."
-s_blindsense_30			="Blindsense 30 ft."
-s_blindsense_40			="Blindsense 40 ft."
-s_blindsense_60			="Blindsense 60 ft."
-s_blindsense_d			=[[Using nonvisual senses, such as acute smell or hearing, a creature with blindsense notices things it cannot see.
+関連:イルカとクジラは、他のほとんどのクリーチャーには聞こえない高周波の音を発することで "見る "ことができ、それによって120フィート以内の物体やクリーチャーの位置を知ることができる。沈黙の呪文はこれを無効にし、クリーチャーは人間と同程度の視覚に頼らざるを得なくなる。]]
+s_blindsense			="ブラインドセンス"
+s_blindsense_20			="ブラインドセンス 20 フィート"
+s_blindsense_30			="ブラインドセンス 30 フィート"
+s_blindsense_40			="ブラインドセンス 40 フィート"
+s_blindsense_60			="ブラインドセンス 60 フィート"
+s_blindsense_d			=[[ブラインドセンスを持つ生き物は、鋭い嗅覚や聴覚などの非視覚感覚を使用して、見えないものに気づきます。
 
-The creature usually does not need to make Spot or Listen checks to pinpoint the location of a creature within range of its blindsense ability, provided that it has line of effect to that creature.
+クリーチャーは通常、そのクリーチャーに対する効果線がある限り、ブラインドセンス能力の範囲内にあるクリーチャーの位置を正確に特定するために見破るチェックや聞き耳チェックを行う必要はありません。
 
-Any opponent the creature cannot see still has total concealment against the creature with blindsense, and the creature still has the normal miss chance when attacking foes that have concealment.
+クリーチャーが見えない相手は、ブラインドセンスを持つクリーチャーに対して依然として完全な隠蔽を持ち、クリーチャーは隠蔽を持つ敵を攻撃する際に通常のミスチャンスを持つ。
 
-Visibility still affects the movement of a creature with blindsense. A creature with blindsense is still denied its Dexterity bonus to Armor Class against attacks from creatures it cannot see.
+視界は依然としてブラインドセンスを持つクリーチャーの動きに影響する。ブラインドセンスを持つクリーチャーは、見えないクリーチャーからの攻撃に対するACのDEXのボーナスを依然として否定される。
 
-Related:
-A bat notices and locates creatures within 20 feet.
-A dire bat uses echolocation to pinpoint creatures within 40 feet.
-A shark can locate creatures underwater within a 30-foot radius. This ability works only when the shark is underwater.]]
-s_tremorsense			="Tremorsense"
-s_tremorsense_d			=[[A creature with tremorsense is sensitive to vibrations in the ground and can automatically pinpoint the location of anything that is in contact with the ground.
+関連:
+バットは 20 フィート以内の生き物に気づき、位置を特定します。
+ダイアー バットはエコーロケーションを使用して、40 フィート以内の生き物を正確に特定します。
+シャークは半径30フィート以内の水中の生き物を見つけることができます。 この能力はシャークが水中にいるときにのみ機能します。]]
+s_tremorsense			="振感"
+s_tremorsense_d			=[[振感をもつ生き物は地面の振動に敏感で、地面に接触しているものの位置を自動的に特定することができます。
 
-Aquatic creatures with tremorsense can also sense the location of creatures moving through water.
+振感を持つ水棲生物は、水中を移動する生物の位置を感知することもできます。
 
-The ability’s range is specified in the creature’s descriptive text.]]
-s_scent					="Scent"
-s_scent_d				=[[This extraordinary ability lets a creature detect approaching enemies, sniff out hidden foes, and track by sense of smell.]]
+能力の範囲はクリーチャーの説明文で指定されます。]]
+s_scent					="嗅覚"
+s_scent_d				=[[この並外れた能力により、生き物は近づいてくる敵を感知し、隠れた敵を嗅ぎ分け、嗅覚で追跡することができます。]]
 
-s_scent_e				=[[A creature with the scent ability can detect opponents by sense of smell, generally within 30 feet. If the opponent is upwind, the range is 60 feet. If it is downwind, the range is 15 feet. Strong scents, such as smoke or rotting garbage, can be detected at twice the ranges noted above. Overpowering scents, such as skunk musk or troglodyte stench, can be detected at three times these ranges.
+s_scent_e				=[[嗅覚の能力を持つクリーチャーは、通常30フィート以内の敵を嗅覚によって感知することができます。 相手が風上にいる場合、射程は 60 フィートです。 風下の場合、範囲は 15 フィートです。 煙や腐ったゴミなどの強い臭いは、上記の2倍の範囲で検出できます。 スカンクの麝香やトログロダイトの悪臭などの圧倒的な香りは、これらの範囲の 3 倍で検出できます。
 
-The creature detects another creature’s presence but not its specific location. Noting the direction of the scent is a move action. If it moves within 5 feet of the scent’s source, the creature can pinpoint that source.
+クリーチャーは別のクリーチャーの存在を検出しますが、その特定の場所は検出しません。 匂いの方向に注目することは、動きのアクションです。 匂いの発生源から 5 フィート以内に移動すると、その生物はその匂いの発生源を正確に特定できます。
 
-A creature with the Track feat and the scent ability can follow tracks by smell, making a Wisdom check to find or follow a track. The typical DC for a fresh trail is 10. The DC increases or decreases depending on how strong the quarry’s odor is, the number of creatures, and the age of the trail. For each hour that the trail is cold, the DC increases by 2. The ability otherwise follows the rules for the Track feat. Creatures tracking by scent ignore the effects of surface conditions and poor visibility.
+追跡の特技と嗅覚の能力を持つクリーチャーは嗅覚によって足跡をたどることができ、足跡を見つけるかたどるためにWISチェックを行なう。新しい足跡の一般的な難易度は10である。難易度は獲物の匂いの強さ、クリーチャーの数、足跡の古さによって増減する。それ以外の能力は追跡技能のルールに従う。匂いで追跡するクリーチャーは、地表の状態や視界不良の影響を無視する。
 
-Creatures with the scent ability can identify familiar odors just as humans do familiar sights.
+嗅覚能力を持つ生き物は、人間が見慣れた光景を認識するのと同じように、見慣れた匂いを識別することができます。
 
-Water, particularly running water, ruins a trail for air-breathing creatures. Water-breathing creatures that have the scent ability, however, can use it in the water easily.
+水、特に流水は、空気を呼吸するクリーチャーにとって足跡を台無しにする。しかし、嗅覚能力を持つ水呼吸のクリーチャーは、水中でも簡単に嗅覚能力を使うことができる。
 
-False, powerful odors can easily mask other scents. The presence of such an odor completely spoils the ability to properly detect or identify creatures, and the base Survival DC to track becomes 20 rather than 10.]]
-s_scent_180				="Keen Scent"
-s_scent_180_d			=[[A creature with this ability can notice creatures by scent in a 180-foot radius and can detect blood in the water at a range of up to 1 mile.]]
-s_telepathy				="Telepathy"
-s_telepathy_d			=[[A creature with this ability can communicate telepathically with any other creature within a certain range (specified in the creature’s entry, usually 100 feet) that has a language.
+偽りの強力な臭いは他の臭いを容易に覆い隠してしまう。そのような臭いがあると、クリーチャーを適切に発見したり識別したりする能力は完全に損なわれ、追跡するための基本生存力難易度は10ではなく20になる。]]
+s_scent_180				="鋭敏な匂い"
+s_scent_180_d			=[[この能力を持つ生物は、半径40フィート以内の生物を匂いで認識することができ、最大1マイルの範囲で水中の血を感知することができます。]]
+s_telepathy				="テレパシー"
+s_telepathy_d			=[[この能力を持つクリーチャーは、言語を持つ一定の範囲内（クリーチャーの項目で指定されている、通常は100フィート）にいる他のクリーチャーとテレパシーで交信できる。
 
-It is possible to address multiple creatures at once telepathically, although maintaining a telepathic conversation with more than one creature at a time is just as difficult as simultaneously speaking and listening to multiple people at the same time.
+テレパシーで一度に複数のクリーチャーに話しかけることは可能ですが、一度に複数のクリーチャーとテレパシーで会話を続けることは、複数の人と同時に話したり聞いたりするのと同じくらい難しいことです。
 
-Some creatures have a limited form of telepathy, while others have a more powerful form of the ability.]]
+限定的なテレパシーを持つクリーチャーもいれば、より強力な能力を持つクリーチャーもいる。]]
 
-s_hold_breath			="Hold Breath"
-s_hold_breath_d			=[[A creature with this ability can hold its breath for a number of rounds before it risks drowning.
+s_hold_breath			="息を止める"
+s_hold_breath_d			=[[この能力を持つクリーチャーは、溺れる危険が生じる前に、数ラウンドの間息を止めることができます。
 
-Crocodile, Porpoise	6 x Con
-Whale		8 x Con
-Lizardfolk and others	4 x Con]]
-s_amphibious			="Amphibious"
-s_amphibious_d			=[[An aquatic creature with this ability can breathe air.]]
-s_ink_cloud				="Ink Cloud"
-s_ink_cloud_d			=[[A creature with this ability can emit a cloud of jet-black ink 10 feet high by 10 feet wide by 10 feet long (this size is applicable to octopus and squid, while giant octopus and giant squid are doubled in length, width and height) once per minute as a free action.
+ワニ、イルカ 6 x CON
+クジラ 8 × CON
+リザードフォーク他 4 × CON]]
+s_amphibious			="水陸両用"
+s_amphibious_d			=[[この能力を持つ水棲生物は空気を呼吸することができます。]]
+s_ink_cloud				="インククラウド"
+s_ink_cloud_d			=[[この能力を持つ生物は、高さ 10 フィート、幅 10 フィート、長さ 10 フィートの漆黒のインクの雲を放出することができます (このサイズはタコとイカに当てはまりますが、巨大なタコと巨大イカは長さ、幅、高さが 2 倍になります)。 無料のアクションとして 1 分に 1 回。
 
-The cloud provides total concealment, which the creature normally uses to escape a losing fight. All vision within the cloud is obscured.]]
-s_jet					="Jet"
-s_jet_d					=[[A creature with this ability can jet backward once per round as a full-round action, at a certain speed (octopus, giant octopus: 200 feet; squid: 240 feet; giant squid: 320 feet).
+雲は完全な隠蔽を提供し、クリーチャーは通常、負けた戦いから逃れるためにそれを使用します。 雲の中の視界はすべて遮られます。]]
+s_jet					="ジェット"
+s_jet_d					=[[この能力を持つクリーチャーは、ラウンドごとに 1 回、一定の速度でフルラウンドアクションとして後方に噴射できます (タコ、ダイオウダコ: 200 フィート、イカ: 240 フィート、ダイオウイカ: 320 フィート)。
 
-It must move in a straight line, but does not provoke attacks of opportunity while jetting.]]
+直線的に移動しなければならないが、噴射中は機会攻撃を誘発しない。]]
+s_dr					="ダメージ軽減"	s_dr_d	=[[この特別な性質を持つクリーチャーは、ほとんどの武器や自然攻撃によるダメージを無視します。 特定の種類の武器からの攻撃でない限り、傷はすぐに治るか、武器は無害に跳ね返されます（どちらの場合でも、相手は攻撃が無効であることを知っています）。
 
-s_dr					="ダメージ減少"	s_dr_d	=[[この特殊な特質を持つクリーチャーは、ほとんどの武器や肉体攻撃によるダメージを無視する。傷がすぐに癒えるか、武器が無害に跳ね返ってくる（どちらの場合も、相手はその攻撃が無効であったことを知っている）が、それが特定の種類の武器からの攻撃でない限りは、それを無視する。
+<b>記述形式: </b>ダメージ量は無視 / 能力を無効にする武器の種類。
 
-<b>説明形式：</b>無視されるダメージの量／能力を無効にする武器の種類。
+<b>例:</b>
+10/魔法：10ダメージは無視される。 魔法の武器はダメージ軽減を克服します。
+5/アダマンタイン: 5ダメージは無視される。 アダマンタイン武器はダメージ軽減を克服します。
+3/-: 3 ダメージは無視されます。 ダメージ軽減を無効にする武器はありません。
 
-<b>例：</b>
-10/魔法：10ダメージ無視。魔法の武器はダメージ減少を打ち消す。
-5/アダマンティン：5ダメージ無視。アダマンティンの武器はダメージ減少を打ち消す。
-3/-：3ダメージ無視。どの武器もダメージ減少を無視する。
+<b>増加:</b>
+バーバリアン: 7 レベルから開始し、その後 3 クラス レベル (7、10、13...) ごとに +1 ずつ上昇します。
+ドワーフディフェンダー: 6 レベルから開始し、その後 4 クラス レベルごとに +1 ずつ上昇します (6、10、14...)。
+エレメンタルロード: 2 レベルから開始し、その後 2 クラスレベルごとに +1 ずつ上昇します (2、4、6…)。]]-- z_dr
 
-<b>Increases:</b>
-Barbarian: Starting at 7th level, rise by +1 every 3 class levels thereafter (7, 10, 13...).
-Dwarven Defender: Starting at 6th level, rise by +1 every 4 class levels thereafter (6, 10, 14...).
-Elemental Lord: Starting at 2rd level, rise by +1 every 2 class levels thereafter (2, 4, 6…).]]-- z_dr
+s_pass_without_trace	= "跡形もなく通過"
+s_pass_without_trace_d	= "対象はあらゆる種類の地形を移動でき、足跡も匂いも残しません。 対象を追跡することは、魔法以外の手段では不可能です。"
 
-s_pass_without_trace	= "Pass without Trace"
-s_pass_without_trace_d	= "The subject or subjects can move through any type of terrain and leave neither footprints nor scent. Tracking the subjects is impossible by nonmagical means."
+s_pwr_nondetection		= "探知不能"
+s_pwr_nondetection_d	= [[守護されたクリーチャーや物体は、透聴/千里眼、物体の位置特定、呪文の検出などの占い呪文によって検出することが困難になります。 検出されない場合は、水晶玉などの魔法のアイテムによる位置特定もできなくなります。
 
-s_pwr_nondetection		= "Nondetection"
-s_pwr_nondetection_d	= [[The warded creature or object becomes difficult to detect by divination spells such as clairaudience/clairvoyance, locate object, and detect spells. Nondetection also prevents location by such magic items as crystal balls.
+守護されたクリーチャーまたはアイテムに対して占いが試みられた場合、占いの術者は、難易度11 + 非検出を唱えた術者の術者レベルに対する術者レベル判定(1d20 + 術者レベル)に成功しなければならない。 あなたが自分自身、または現在所有しているアイテムに非検出を詠唱する場合、難易度は15 + あなたのキャスターレベルです。
 
-If a divination is attempted against the warded creature or item, the caster of the divination must succeed on a caster level check (1d20 + caster level) against a DC of 11 + the caster level of the spellcaster who cast nondetection. If you cast nondetection on yourself or on an item currently in your possession, the DC is 15 + your caster level.
-
-If cast on a creature, nondetection wards the creature's gear as well as the creature itself.]]
+クリーチャーに詠唱した場合、探知不能はクリーチャー自体だけでなくクリーチャーの装備も無効にします。]]
 
 -- z_esc_pwr
-s_sf_knowledge		="Skill Focus: Knowledge (any)"
-s_sf_craft			="Skill Focus: Craft (any)"
-s_sf_profession		="Skill Focus: Profession (any)"
-s_sf_perform		="Skill Focus: Perform (any)"
-s_any_metamagic		="Any metamagic feat"
-s_mm_cft_itm_x3		="Any three metamagic or item creation feats"
-s_spl_focus_x2		="Spell Focus in two schools of magic"
+s_sf_knowledge		="重点スキル: 知識 (全般)"
+s_sf_craft			="重点スキル: クラフト (全般)"
+s_sf_profession		="重点スキル: 職業 (全般)"
+s_sf_perform		="重点スキル: パフォーマンス (全般)"
+s_any_metamagic		="あらゆるメタマジックの特技"
+s_mm_cft_itm_x3		="メタマジックまたはアイテム作成のいずれかの 3 つの特技"
+s_spl_focus_x2		="2つの魔法流派の呪文集中"
 
 
 -- z_lit
-s_lit_0					= "Dark"
-s_lit_3					= "Shadowier"
-s_lit_2					= "Shadowy"
-s_lit_1					= "Bright"
-s_lit_unkn				= "Unknown illumination"
-s_spl_k					= "Magical Darkness"
+s_lit_0					= "暗闇"
+s_lit_3					= "影が濃い"
+s_lit_2					= "影のある"
+s_lit_1					= "明るい"
+s_lit_unkn				= "未知の照明"
+s_spl_k					= "魔法の暗闇"
 
-s_bf_lit				= "Ambient illumination"
-s_show_precise_lit		= "Precise illumination area"
+s_bf_lit				= "環境照明"
+s_show_precise_lit		= "正確な照明エリア"
 
-s_hr_team_lit_t			= "このハウスルールが適用されている場合、通常光源を持たない動物も含め、すべてのクリーチャーは光源を持つものとみなされる。"
-s_hr_team_lit			= "クリーチャーが携帯する光源は、自分の側だけに照明を提供する"
-s_hr_lit_rng			= "影のある照明の半径を1/4に減少"
+s_hr_team_lit_t			= "このハウスルールがオンの場合、通常は光源を持たない動物も含め、すべてのクリーチャーが光源を持っていると見なされます。"
+s_hr_team_lit			= "クリーチャーが持つ光源は、そのクリーチャー側のみに照明を提供します"
+s_hr_lit_rng			= "影の半径を1/4に縮小"
 s_hooded_lantern		= "フード付きランタン"
-s_hooded_lantern_d		= "フード付きランタンは、側面がシャッターまたは蝶番で覆われています。半径30フィートの範囲をはっきりと照らし、半径60フィートの範囲を影のように照らします。1パイントのオイルで6時間燃焼します。"
-s_cover_lit				= "Cover/uncover light source"
-s_cover_lit_d			= "Cover or uncover the light/dark spell effect at the location or on the character."
+s_hooded_lantern_d		= "フード付きランタンの側面にはシャッターが付いているか、ヒンジが付いています。 半径 30 フィートをはっきりと照らし、半径 60 フィートでは影のある照明を提供します。 1パイントの油で6時間燃焼します。"
+s_cover_lit				= "光源のカバー/カバー解除"
+s_cover_lit_d			= "その場所またはキャラクターの明暗の呪文効果をカバー/カバー解除します。"
 
-s_darkvision_30			= "Darkvision 30 ft."
-s_darkvision_60			= "Darkvision 60 ft."
-s_darkvision_90			= "Darkvision 90 ft."
-s_darkvision_120		= "Darkvision 120 ft."
-s_darkvision_150		= "Darkvision 150 ft."
-s_darkvision_180		= "Darkvision 180 ft."
-s_darkvision_210		= "Darkvision 210 ft."
-s_darkvision_240		= "Darkvision 240 ft."
-s_darkvision_270		= "Darkvision 270 ft."
-s_darkvision_300		= "Darkvision 300 ft."
-s_darkvision			= "Darkvision"
-s_darkvision_d			= "Characters with darkvision can see in the dark. Darkvision is black and white only, but it is otherwise like normal sight. The presence of light does not spoil darkvision."
-s_darkvision_b			= "Characters with darkvision can see in the dark."
+s_darkvision_30			= "暗視30フィート。"
+s_darkvision_60			= "暗視60フィート。"
+s_darkvision_90			= "暗視90フィート。"
+s_darkvision_120		= "暗視 120フィート"
+s_darkvision_150		= "暗視150フィート。"
+s_darkvision_180		= "暗視180フィート。"
+s_darkvision_210		= "暗視210フィート。"
+s_darkvision_240		= "暗視240フィート。"
+s_darkvision_270		= "暗視270フィート。"
+s_darkvision_300		= "暗視300フィート。"
+s_darkvision			= "暗視"
+s_darkvision_d			= "暗視を持つキャラクターは暗闇でも見ることができる。暗視は白黒のみだが、それ以外は通常の視力と同じである。光があっても暗視は損なわれない。"
+s_darkvision_b			= "暗視を持つキャラクターは暗闇でも見ることができます。"
 
-s_hr_low_light_vision	= "Low-light Visionは、影のある照明を明るい照明として扱い、遠くを見ることができない"
-s_low_light_vision		= "Low-light Vision"
-s_low_light_vision_d	= "Characters with low-light vision have eyes that are so sensitive to light that they can see twice as far as normal in dim light. Double the effective radius of bright light and of shadowy illumination for such characters. Low-light vision is color vision."
-s_low_light_vision_b	= "Characters with low-light vision can see twice as far as normal in dim light."
-s_low_lit_vis_4			= "Superior Low-light Vision"
-s_low_lit_vis_4_d		= "Similar with low-light vision, you can see four times as far as normal in dim light."
-
-
-s_cover_concealment		= "Cover and Concealment"
-
-s_cover					= "Cover"
-s_cover_d				= [[One of the best defenses available is cover. By taking cover behind a tree, a wall, the side of a wagon, or the battlements of a castle, you can protect yourself from attacks, especially ranged attacks, and also from being spotted.
-
-To determine whether your target has cover from your ranged attack, choose a corner of your square. If any line from this corner to any corner of the target’s square passes through a square or border that blocks line of effect or provides cover, or through a square occupied by a creature, the target has cover (+4 to AC).
-
-When making a melee attack against an adjacent target, your target has cover if any line from your square to the target’s square goes through a wall (including a low wall). When making a melee attack against a target that isn’t adjacent to you (such as with a reach weapon), use the rules for determining cover from ranged attacks.
-
-<b c=ty>Cover and Reflex Saves: </b>Cover grants you a +2 bonus on Reflex saves against attacks that originate or burst out from a point on the other side of the cover from you, such as a breath weapon or a lightning bolt. Note that spread effects, such as a fireball, can extend around corners and thus negate this cover bonus.
-
-<b c=ty>Soft Cover: </b>Creatures, even your enemies, can provide you with cover against ranged attacks. However, such soft cover provides no bonus on Reflex saves.
-
-<b c=ty>Superior Cover: </b>Similar to cover, but the target is covered by a larger area and double the normal cover bonuses to AC and Reflex saves (to +8 and +4, respectively). Only ranged attacks may suffer superior cover, melee attacks suffer at most cover.
-
-<b c=ty>Total Cover: </b>If you don’t have line of effect to your target (for instance, if he is completely behind a high wall), he is considered to have total cover from you. You can’t make an attack against a target that has total cover.
-
-<b c=ty>Cover and Attacks of Opportunity: </b>You can’t execute an attack of opportunity against an opponent with cover relative to you.]]
-
-s_concealment			= "Concealment"
-s_total_concealment		= "Total Concealment"
-s_concealment_d			= [[Besides cover, another way to avoid attacks is to make it hard for opponents to know where you are. Concealment encompasses all circumstances where nothing physically blocks a blow or shot but where something interferes with an attacker’s accuracy. Typically, concealment is provided by a shadowy area, darkness, fog, or magical effects that make it difficult to pinpoint a target’s location.
-
-Concealment gives the subject of a successful attack a 20% chance that the attacker missed because of the concealment. If the attacker hits, the defender makes a miss chance percentile roll to avoid being struck. Multiple concealment conditions do not stack.
-
-<b c=ty>Total Concealment: </b>If you have line of effect to a target but not line of sight (for instance, if he is in darkness, or if you’re blinded), he is considered to have total concealment from you. You can’t attack the target, though you can attack into a square that you think he occupies. A successful attack into a square occupied by an enemy with total concealment has a 50% miss chance. Moreover, you can’t execute an attack of opportunity against the target.
-
-<b c=ty>Ignoring Concealment: </b>Concealment isn’t always effective. A shadowy area or darkness doesn’t provide any concealment against an opponent with darkvision. Characters with low-light vision can see clearly for a greater distance with the same light source than other characters.]]
-
-s_vision_and_light		= "Vision and Light"
-s_vision_and_light_d	= [[A character's field of view depends on the light on the battlefield. When the ambient light is poor, a carry-on light source can provide additional illumination.
+s_hr_low_light_vision	= "低照度視覚では、影のある照明が明るい照明として扱われ、より遠くを見ることができません。"
+s_low_light_vision		= "低照度視覚"
+s_low_light_vision_d	= "弱視のキャラクターは光に非常に敏感な目を持っているため、薄暗い場所でも通常の 2 倍遠くを見ることができます。 このようなキャラクターの場合、明るい光と影のある照明の有効半径が 2 倍になります。 低照度視覚は色覚です。"
+s_low_light_vision_b	= "弱視のキャラクターは、薄暗い光の中で通常の 2 倍遠くまで見ることができます。"
+s_low_lit_vis_4			= "優れた低照度視覚"
+s_low_lit_vis_4_d		= "低照度視力と同様に、薄暗い場所では通常の 4 倍遠くまで見ることができます。"
 
 
-The brightness of illumination has a significant impact on vision:
+s_cover_concealment		= "カバーと隠蔽"
 
-<b>Bright: </b>all characters can see clearly.
+s_cover					= "カバー"
+s_cover_d				= [[最も有効な防御のひとつは、身を隠すことである。木や壁、荷馬車の側面、城の塁などに身を隠せば、攻撃、特に遠距離攻撃から身を守り、また発見されるのを防ぐことができる。
 
-<b>Shadowy: </b>creatures can see dimly. Creatures within this area have concealment.
+あなたの射撃攻撃から対象が援護を受けるかどうかを決定するには、あなたのマスの角を1つ選ぶ。この角から対象のマスの角までのいずれかの線が、効果線を遮ったり援護を与えたりするマスや境界を通るか、クリーチャーがいるマスを通る場合、対象は援護を得る（ACに＋4）。
 
-<b>Dark: </b>creatures are effectively blinded. Creatures within this area have total concealment.
+隣接している目標に対して近接攻撃を行なう場合、あなたのマスからその目標のマスまでのいずれかの線が壁（低い壁を含む）を通っていれば、あなたの目標はカバーを持っている。隣接していない目標に対して近接攻撃を行なう場合（リーチウェポンを用いる場合など）、射撃攻撃による援護の判定ルールを用いる。
+
+<b c=ty>カバーと反射セーブ: </b>援護は、ブレス武器や稲妻のように、援護の反対側に位置する地点から発せられたり、あるいははじき出されたりする攻撃に対して、反射セーヴに＋2のボーナスを与える。火球のような拡散効果は角を曲がって広がるため、このカバーボーナスは無効となる。
+
+<b c=ty>ソフトカバー: </b>クリーチャーは、たとえ敵であっても、遠距離攻撃から身を守ることができます。 ただし、このようなソフトカバーは反射セーブにボーナスを提供しません。
+
+<b c=ty>優れたカバー: </b>カバーと似ていますが、ターゲットはより広いエリアでカバーされ、AC と反射セーブに対する通常のカバーボーナスの 2 倍になります (それぞれ +8 と +4)。 遠距離攻撃のみが優れた遮蔽を受けることができ、近接攻撃はせいぜい遮蔽を受けることができます。
+
+<b c=ty>トータルカバー: </b>目標に対して効果線がない場合（例えば、目標が完全に高い壁の後ろにいる場合）、その目標はあなたから完全にカバーされているとみなされる。完全な援護を持つ目標に対して攻撃を行なうことはできない。
+
+<b c=ty>カバーと機会攻撃: </b>自分をカバーしている相手に対して機会攻撃を実行することはできません。]]
+
+s_concealment			= "隠蔽"
+s_total_concealment		= "完全な隠蔽"
+s_concealment_d			= [[攻撃を回避するもう 1 つの方法は、遮蔽物以外に、自分の位置を相手にわかりにくくすることです。 隠蔽には、打撃や射撃を物理的に妨げるものがないが、何かが攻撃者の精度を妨げるすべての状況が含まれます。 通常、隠蔽は影の領域、暗闇、霧、またはターゲットの位置を正確に特定することを困難にする魔法の効果によって提供されます。
+
+隠蔽により、攻撃が成功した対象者は、攻撃者が隠蔽のために攻撃を逃す可能性が 20% 与えられます。 攻撃者が攻撃した場合、防御者は攻撃を避けるためにミスチャンスパーセンタイルロールを行います。 複数の隠蔽条件は重複しません。
+
+<b c=ty>完全な隠蔽: </b>あなたが対象に対して射程距離を持っているが、視線は持っていない場合 （たとえば、対象が暗闇の中にいる場合や、あなたが盲目になっている場合）、 その対象はあなたから完全に隠蔽されているとみなされる。あなたはその目標を攻撃することはできないが、その目標が占有してい ると思われるマスに攻撃することはできる。完全隠蔽を持つ敵が占有しているマスへの攻撃が成功した場合、50％の確率で失敗する。さらに、あなたはその目標に対して機会攻撃を行えない。
+
+<b c=ty>隠蔽の無視: </b>隠蔽は常に有効とは限らない。暗い場所や暗闇は、暗視を持つ相手に対して隠蔽効果を発揮しない。暗視を持つキャラクターは、他のキャラクターよりも、同じ光源でより遠くまではっきりと見ることができる。]]
+
+s_vision_and_light		= "視覚と光"
+s_vision_and_light_d	= [[キャラクターの視野は戦場の光によって決まります。 周囲の光が暗い場合は、機内持ち込み光源を使用して追加の照明を提供できます。
 
 
-<b c=ty>Shared vision: </b>Allies can roughly share vision information with each other, but a character's actual attack modifiers depend on his own vision.
+照明の明るさは視力に大きな影響を与えます:
 
-<b c=ty>Low-light vision: </b>Characters with low-light vision (elves, gnomes, and half-elves) can see objects twice as far away as the given radius.
+<b>明るい: </b>すべてのキャラクターがはっきりと見えます。
 
-<b c=ty>Darkvision: </b>Characters with darkvision (dwarves and half-orcs) can see lit areas normally as well as dark areas within 60 feet.]]
+<b>影のある: </b>クリーチャーはぼんやりと見ることができます。 このエリア内のクリーチャーには隠蔽力があります。
+
+<b>暗闇: </b>クリーチャーは実質的に盲目になります。 このエリア内のクリーチャーは完全に隠蔽されます。
+
+
+<b c=ty>共有ビジョン: </b>味方はお互いに視覚情報を大まかに共有できますが、キャラクターの実際の攻撃修正値は彼自身の視覚に依存します。
+
+<b c=ty>低照度視力: </b>低照度視力を持つキャラクター (エルフ、ノーム、ハーフエルフ) は、指定された半径の 2 倍離れたオブジェクトを見ることができます。
+
+<b c=ty>暗視: </b>暗視を持つキャラクター (ドワーフとハーフオーク) は、60 フィート以内の暗い領域だけでなく、明るい領域も通常見ることができます。]]

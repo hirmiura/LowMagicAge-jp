@@ -1,214 +1,214 @@
 require "skls_h"
 
-n_op_listen			="〈聞き耳〉"
-n_so_srch			="〈捜索〉"
-n_so_srch20			="〈捜索〉"
-n_so_untrap			="〈罠の解除〉"
-n_so_unlock			="〈解錠〉"
+n_op_listen			= "Listen"
+n_so_srch			= "Search"
+n_so_srch20			= "Search"
+n_so_untrap			= "Disarm Trap"
+n_so_unlock			= "Open Lock"
 
-n_op_shovel			="シャベル"
-n_op_chop			="チョップ"
-n_op_mine			="採掘"
-n_op_gather			="情報収集"
-n_op_harvest		="収穫"
-n_op_fish			="釣り"
+n_op_shovel			= "Shovel"
+n_op_chop			= "Chop"
+n_op_mine			= "Mine"
+n_op_gather			= "Gather"
+n_op_harvest		= "Harvest"
+n_op_fish			= "Fish"
 
-n_op_mov			="移動"
-n_op_enter			="入る"
-n_op_leave			="出る"
-n_op_up				="上の階へ移動"
-n_op_down			="下の階へ移動"
+n_op_mov			= "Move"
+n_op_enter			= "Enter"
+n_op_leave			= "Leave"
+n_op_up				= "Back to upper floor"
+n_op_down			= "Go to lower floor"
 
 -- z_skl
-s_skl				="技能"		s_skl_d		="技能は、キャラクターが持つ最も基本的でありながら最も基本的な能力の一部です。\n\nキャラクターのレベルが上がるにつれて、彼は新しい技能を習得し、既存の技能を劇的に向上させることができます。"
-s_skls				=s_skl		s_skls_d	=s_skl_d
-s_skls_trn			="訓練の技能"-- Trained Skills
-s_skls_dev			="その他の技能 (IN DEV)"
-s_skl_rk			="技能ランク"
-s_cls_skls			="クラス技能"
-s_cls_skl_of		="クラス技能対象"
-s_skl_pts_left		="技能ポイントが割り当てられていません"
-s_key_abi			="対応能力値"
-s_synergy			="Synergy"
-s_synergy_f			="If you have 5 or more ranks in %1$s, you get a +2 bonus on %2$s checks."
-s_rel_bnss			="Related Bonuses"
-s_aid_chk_bns		="+2 のボーナスを与える。"
-s_sz_good			="サイズの長所"
-s_sz_bad			="サイズの短所"
-s_anm_int			="動物の知力"
-s_non_hum			="非人型生物"
-s_unhurt			="無傷"
-s_treated			="治療を受けた"
-s_no_int			="無知力"
-s_imm_fear			="［恐怖］への完全耐性"
-s_show_skl_desc		="技能の説明を表示"
-s_show_skl_rank		="技能ランクの表示"
-s_show_skl_mods		="技能修正値の表示"
-s_li_s				="一覧のサイズ：小"
-s_town_svcs			="タウンサービス"
-s_town_svcs_d		="都市や村は冒険家がよく訪れる。これらの場所は必要な物資とサービスを提供する。大都市ではより多くの物を提供できる。"
-s_adv_guild			= {n="冒険者ギルド", d="冒険者ギルドは、冒険者が必要とするさまざまなサービスを提供している。"}-- z_add_ex_builds
-s_cft_guild			= {n="職人ギルド", d="職人ギルドはあらゆる職業の職人に様々なサービスを提供している。"}
-s_services			="サービス"
-s_retrain			="再訓練"
-s_rst_pc_skls		= {n="技能の再訓練", d="有料でキャラクターのすべての技能を元の状態に戻す。"}
-s_rst_pcs_skls		= {n="技能の再訓練", d="有料でキャラクターのすべての技能を元の状態に戻す。"}
-s_rst_pc_skls_cfm	="キャラクターのすべての技能を再訓練しますか？\n\n<c=ty>コスト：</c>%s"
-s_rst_pcs_skls_cfm	="選択したキャラクターのすべての技能を再訓練しますか？\n\n<c=ty>コスト：</c>%s"
-s_rst_pc_skls_done	="%s の技能は再訓練された！"
-s_add_pcs_skl		="技能の訓練"
-s_add_pcs_skl_cfm	="選択したキャラクターに技能 %s を訓練しますか？\n\n<c=ty>コスト：</c>%s"
-s_add_pc_skl_done	="%s が技能 %s を習得した！"
-s_unlearned			="未習得"
-s_untrained			="未訓練"
-s_need_learn		="Tutor Needed"
-s_need_learn_d		="This skill needs to be taught by a tutor.\n\nThis skill applies the proficiency mechanism. When using the skill, the character gains proficiency points that can raise the proficiency level.\n\nThe proficiency level replaces the assigned level when using the skill, and the assigned level obtained by adding points only determines the upper limit of the proficiency level."
-s_need_train		="Trained Only"
-s_need_train_d		="This notation indicates you must have at least 1 rank in the skill to use it.\n\nIf it is omitted, the skill can be used untrained (with a rank of 0).\n\nIf any special notes apply to trained or untrained use, they are covered in the Untrained section."
-s_u_xs_skl_trn		="Show Trained Skills Only"
-s_skl_amr			="鎧の未習熟ペナルティ"
-s_skl_amr_d			="This skill applies Armor Check Penalty."
-s_skl_amr_2			="Double Armor Check Penalty"
-s_skl_amr_2_d		="The skill checks are subject to double the normal armor check penalty and encumbrance penalty."
---s_wip				="Currently no application scenarios for this skill. (IN DEV)"
---s_for_btl			="This skill is currently only available in combat."
-local s_skl_hour	="Work progress of this skill is currently calculated in hours."
+s_skl				="Skill"		s_skl_d		="Skills represent some of the most basic and yet most fundamental abilities a character possesses.\n\nAs a character advances in level, he can gain new skills and improve his existing skills dramatically."
+s_skls				="Skills"		s_skls_d	=s_skl_d
+s_skls_trn			="Trained Skills"
+s_skls_dev			= "Other Skills (IN DEV)"
+s_skl_rk			= "Skill Rank"
+s_cls_skls			= "Class Skills"
+s_cls_skl_of		= "Class Skill of"
+s_skl_pts_left		= "Skill points unassigned"
+s_key_abi			= "Key Ability"
+s_synergy			= "Synergy"
+s_synergy_f			= "If you have 5 or more ranks in %1$s, you get a +2 bonus on %2$s checks."
+s_rel_bnss			= "Related Bonuses"
+s_aid_chk_bns		= "Providing a +2 bonus."
+s_sz_good			= "Size Advantage"
+s_sz_bad			= "Size Disadvantage"
+s_anm_int			= "Animal Intelligence"
+s_non_hum			= "Non-humanoid"
+s_unhurt			= "Unhurt"
+s_treated			= "Has been treated"
+s_no_int			= "No Intelligence"
+s_imm_fear			= "Immune to Fear"
+s_show_skl_desc		= "Show Skill Description"
+s_show_skl_rank		= "Show Skill Rank"
+s_show_skl_mods		= "Show Skill Modifiers"
+s_li_s				= "Show small list items"
+s_town_svcs			= "Town Services"
+s_town_svcs_d		= "Cities and villages are frequented by adventurers. These places provide necessary supplies and services. Big cities can provide more."
+s_adv_guild			= {n="Adventurers Guild", d="Adventurers Guild provides various services that adventurers need, and the divisions focus differently."}-- z_add_ex_builds
+s_cft_guild			= {n="Artisans Guild", d="Artisans Guild provides various services for artisans in all professions."}
+s_services			= "Services"
+s_retrain			= "Retrain"
+s_rst_pc_skls		= {n="Retrain Skills", d="Restore all the skills of the character to its original state for a fee."}
+s_rst_pcs_skls		= {n="Retrain Skills", d="Restore all the skills of characters to its original state for a fee."}
+s_rst_pc_skls_cfm	= "Retrain all the skills of the character?\n\n<c=ty>Cost: </c>%s"
+s_rst_pcs_skls_cfm	= "Retrain all the skills of the selected characters?\n\n<c=ty>Cost: </c>%s"
+s_rst_pc_skls_done	= "%s's skills have been retrained!"
+s_add_pcs_skl		= "Train Skill"
+s_add_pcs_skl_cfm	= "Train selected characters the skill %s?\n\n<c=ty>Cost: </c>%s"
+s_add_pc_skl_done	= "%s learned the skill %s!"
+s_unlearned			= "Unlearned"
+s_untrained			= "Untrained"
+s_need_learn		= "Tutor Needed"
+s_need_learn_d		= "This skill needs to be taught by a tutor.\n\nThis skill applies the proficiency mechanism. When using the skill, the character gains proficiency points that can raise the proficiency level.\n\nThe proficiency level replaces the assigned level when using the skill, and the assigned level obtained by adding points only determines the upper limit of the proficiency level."
+s_need_train		= "Trained Only"
+s_need_train_d		= "This notation indicates you must have at least 1 rank in the skill to use it.\n\nIf it is omitted, the skill can be used untrained (with a rank of 0).\n\nIf any special notes apply to trained or untrained use, they are covered in the Untrained section."
+s_u_xs_skl_trn		= "Show Trained Skills Only"
+s_skl_amr			= "Armor Check Penalty"
+s_skl_amr_d			= "This skill applies Armor Check Penalty."
+s_skl_amr_2			= "Double Armor Check Penalty"
+s_skl_amr_2_d		= "The skill checks are subject to double the normal armor check penalty and encumbrance penalty."
+--s_wip				= "Currently no application scenarios for this skill. (IN DEV)"
+--s_for_btl			= "This skill is currently only available in combat."
+local s_skl_hour	= "Work progress of this skill is currently calculated in hours."
 
-s_skl_usr			="技能ユーザー"
-s_skl_adr			="支援者"
-s_skl_usrs			="技能ユーザー"
-s_skl_usrs_d		="選択した技能にユーザーと支援者を割り当てる。\n\n<c=ty>技能の組み合わせ</c>\n技能によっては、複数のキャラクター（１人のユーザーと1人または２人の支援者）が同時に技能判定を行うことができる。支援者の判定が成功すると、ユーザはその判定に対して＋２のボーナスを得る。"
-s_no_skl_usr		="技能ユーザーが割り当てられていない！"
-s_pty_no_skl_f		="%s技能を習得したキャラクターがいない！"
-s_max_usrs			="最大結合ユーザー数"
-s_max_skl_lv_pc		="最高技能ランクのキャラクター"
+s_skl_usr			= "Skill User"
+s_skl_adr			= "Aider"
+s_skl_usrs			= "Skill Users"
+s_skl_usrs_d		= "Assign user and aiders for the selected skill.\n\n<c=ty>Combining Skill Attempts</c>\nSome skills allow multiple characters (one user and one or two aiders) to make skill checks at the same time. When an aider's check succeeds, the user gets a +2 bonus to his check."
+s_no_skl_usr		= "No skill users assigned!"
+s_pty_no_skl_f		= "No character learned the %s skill!"
+s_max_usrs			= "Maximum combining users"
+s_max_skl_lv_pc		= "Character of the highest skill rank"
 
-s_low_skl_rank		="技能ランクが足りない！"
-s_asgn_rank			="割り当てられたランク"
-s_prof_rank			="習熟ランク"
-s_prof_pts			="習熟ポイント"
-s_prof_pts_d		="技能の習熟レベルが、割り当てられたレベルよりも低い場合、技能を使用すると習熟ポイントが得られ、習熟レベルが上がります。\n\n技能判定に失敗した場合、または技能判定を行った場合、習熟ポイントが少なくなります。"
-s_get_prof_pts_f	="%s が <c=y>%d</c>：<c=ty>%s</c>の習熟ポイントを獲得した。"
-s_prof_lv_up_f		="%sの<c=ty>%s</c>の習熟ランクは<c=y>%d</c>に増加した。"
-s_prof_lv_max_f		="%sの習熟ランク<c=ty>%s</c>は割り当てられたランク制限の上限に達している。"
+s_low_skl_rank		= "Insufficient skill rank!"
+s_asgn_rank			= "Assigned Rank"
+s_prof_rank			= "Proficiency Rank"
+s_prof_pts			= "Proficiency Points"
+s_prof_pts_d		= "When a skill's proficiency level is lower than the assigned level, using the skill will gain proficiency points, which will increase the proficiency level.\n\nFailed or aid skill checks gain less proficiency points."
+s_get_prof_pts_f	= "%s gained <c=y>%d</c> proficiency points of <c=ty>%s</c>."
+s_prof_lv_up_f		= "%s’s proficiency rank of <c=ty>%s</c> increased to <c=y>%d</c>!"
+s_prof_lv_max_f		= "<c=tr>%s’s proficiency rank of <c=ty>%s</c> has already reached the assigned rank limit.</c>"
 
-s_post_succ_f		="%s に成功した！"
-s_post_fail_f		="<c=tr>%s に失敗した！</c>"
-s_shovelled_s		="%s - 削除された。"
-s_ready_for_f		="%s の準備が完了した"
-s_open_chest		="箱を開く"
+s_post_succ_f		= "%s succeeded!"
+s_post_fail_f		= "<c=tr>%s failed!</c>"
+s_shovelled_s		= "%s - Removed."
+s_ready_for_f		= "Ready for %s"
+s_open_chest		= "Open Chest"
 
-s_no_tool			="単純な道具や盗賊道具がない！"
-s_tool_mod			="道具による状況修正値"
-s_no_lockpick		="ロックピックがない！"
-s_lockpick_broken	="壊れたロックピック"
-s_try_i				="--- Try #%d ---"
+s_no_tool			= "No simple tools or thieves’ tools!"
+s_tool_mod			= "Circumstance modifiers provided by tools"
+s_no_lockpick		= "No lockpicks!"
+s_lockpick_broken	= "Broke one lockpick."
+s_try_i				= "--- Try #%d ---"
 
-s_workshop			="工房"
-s_workshops			="工房"
-s_workshops_d		="工房では、製作に必要なさまざまな設備や作業条件を提供している。"
-s_lost_hlf_mats		="材料の半分がだめになった。"
-s_lost_all_mats		="材料が全てだめになった。"
-s_lack_mats			="材料が足りない！"
-s_enching			="強化"
-s_enching_d			="強化は、武器、鎧、盾に1つ以上の魔法の特徴を追加できます。\n\n強化されるアイテムは、高品質またはマジックアイテムとなり、最終製品よりもレアリティと魔法のボーナスが低くなる。\n\n<c=o>手順が失敗した場合、マテリアルのすべてまたは一部が失われ、元のアイテムは変更されない。"
-s_upging_itms		="アイテムのアップグレード"
-s_upging_itms_d		="強化により既存のマジックアイテムのマジックボーナスを増加させる。\n\n<c=o>この工程に失敗すると、マテリアルのすべてまたは一部が失われ、元のアイテムは変更されない。</c>"
-s_uncft				="呪文除去"
-s_uncft_d			="呪文除去とは、マジックアイテムを秘術の残滓（ダスト、精髄、粉体、破片、結晶）に変換し、それを使用しマジックアイテムを作成する工程である。\n\n<c=o>注：成否にかかわらず、元のアイテムは破棄される。</c>"
-s_cft_i				="--- 製作 %s: %d/%d ---"
-s_uncft_i			="--- 呪文除去 %s: %d/%d ---"
-s_cfting_			="--- 製作中 %s ---"
-s_cft_qty			="製作品質"
-s_cft_fee			="製作コスト"
-s_cft_aborted		="製作は中止された。"
-s_dc_std			="標準コンポーネント"
-s_dc_mw				="高品質コンポーネント"
-s_dc_sm				="特殊な素材コンポーネント"
-s_dc_mm				="特殊な素材コンポーネント (高品質相当)"
-s_var_bns			="可変マジックボーナス"
-s_fix_bns			="固定マジックボーナス"
-s_var_bns_d			="ほとんどのマジックアイテムには、マジックボーナスに基づく複数の種類があり、低レベルのものは高レベルのものにアップグレードでき、関連する値はそれに応じて変化します。"
-s_fix_bns_d			="一部のワンダラス・アイテムの強化は固定で、アップグレードできません。これらのアイテムはマジックボーナスに基づく複数の種類はなく、作るのが難しいです。"
-s_cft_nm			="一般的な装備の製作"
-s_cft_nm_d			="一般的なマテリアルで作られた武器と鎧には追加の機能はなく、作成するのも難しくない。"
-s_cft_mw			="高品質アイテムの製作"
-s_cft_mw_d			="高品質アイテムを作成できます。武器、鎧、シールドは、魔法ではなく、その卓越した職人技によって使用にボーナスをもたらします。\n\n高品質アイテムを作成するには、標準アイテムに加えて別のアイテムであるかのようにアイテム コンポーネントを作成します。高品質コンポーネントには独自の価格があり、製作難易度は20です。標準コンポーネントと高品質コンポーネントの両方が完成すると、高品質アイテムが完成します。"
-s_cft_magic_bns		="マジックボーナス"
-s_cft_magic_bns_d	="マジックアイテムを作成するときにマジックボーナスを指定できます(上限はパーティーの最高キャラクターレベルに基づく)。マジックボーナスが高ければ高いほど、作成が難しくなり、より多くの材料が必要になります。"
-s_rare_fltr_s		="レアリティ(%s)のアイテムのみを表示"
-s_rare_fltr_op_s	="選択されたレアリティ(%s)のアイテムのみを表示"
-s_show_can_upg		="アップグレード可能なアイテムを表示"
-s_show_non_upg		="アップグレード不可能なアイテムを表示"
+s_workshop			= "Workshop"
+s_workshops			= "Workshops"
+s_workshops_d		= "Workshops provide various necessary facilities and working conditions for crafting."
+s_lost_hlf_mats		= "Half the materials are ruined."
+s_lost_all_mats		= "All the materials are ruined."
+s_lack_mats			= "Not enough materials!"
+s_enching			= "Enchanting"
+s_enching_d			= "Enchanting can add one or more magical features to a weapon, suit of armor, or shield.\n\nThe item to be enchanted must be a masterwork or magic item, and it must have a lower rarity and magic bonus than the final product.\n\n<c=o>If the process fails, all or part of the raw materials will be lost, and the source item will not change.</c>"
+s_upging_itms		= "Upgrading Items"
+s_upging_itms_d		= "Increase the magic bonus of an existing magic item through a process similar to enchanting.\n\n<c=o>If the process fails, all or part of the raw materials will be lost, and the source item will not change.</c>"
+s_uncft				= "Disenchant"
+s_uncft_d			= "Disenchanting is the process of transmuting magic items into arcane residues (dusts, essences, granules, shards, and crystals), which can then be used to craft magic items.\n\n<c=o>Whether successful or not, this process destroys the source item!</c>"
+s_cft_i				= "--- Craft %s: %d/%d ---"
+s_uncft_i			= "--- Disenchant %s: %d/%d ---"
+s_cfting_			= "--- Creating %s ---"
+s_cft_qty			= "Crafting Quantity"
+s_cft_fee			= "Crafting Cost"
+s_cft_aborted		= "Crafting is aborted."
+s_dc_std			= "Standard Component"
+s_dc_mw				= "Masterwork Component"
+s_dc_sm				= "Special Material Component"
+s_dc_mm				= "Special Material Component (considered Masterwork)"
+s_var_bns			= "Variable Magic Bonus"
+s_fix_bns			= "Constant Magic Bonus"
+s_var_bns_d			= "Most magic items have multiple versions based on their magic bonuses. Low-level ones can be upgraded to high-level ones, and related values will change accordingly."
+s_fix_bns_d			= "Enchantments of some wondrous items are constant and cannot be upgraded. There are no multiple magic bonus versions of these items, and more difficult to craft them."
+s_cft_nm			= "Craft Mundane Equipment"
+s_cft_nm_d			= "Weapons and armor made from common materials have no additional features and are less difficult to craft."
+s_cft_mw			= "Craft Masterwork Items"
+s_cft_mw_d			= "You can make a masterwork item — a weapon, suit of armor, or shield that conveys a bonus on its use through its exceptional craftsmanship, not through being magical.\n\nTo create a masterwork item, you create the masterwork component as if it were a separate item in addition to the standard item. The masterwork component has its own price and a Craft DC of 20. Once both the standard component and the masterwork component are completed, the masterwork item is finished."
+s_cft_magic_bns		= "Magic Bonus"
+s_cft_magic_bns_d	= "You can specify the magic bonus when creating magic items (upper limit is based on the party's highest character level). The higher the magic bonus, the more difficult to create and the more materials needed."
+s_rare_fltr_s		= "Only show items of rarity%s"
+s_rare_fltr_op_s	= "Only show items of rarity%sselected rarity"
+s_show_can_upg		= "Show upgradeable items"
+s_show_non_upg		= "Show non-upgradable items"
 s_show_can_upg_d	= s_var_bns_d
 s_show_non_upg_d	= s_fix_bns_d
-s_cft_show_ammo		="矢弾を表示する"
-s_cft_show_ammo_d	="一部の強化は矢弾にも適用できるが、矢弾の強化ボーナスは発射武器とは累積しないため、ほとんど意味がない。\n\n例外：矢弾に銀を接合することは実用的な意味がある。"
-s_cft_x				="大量生産"
-s_cft_x_d			="マテリアルはバッチで製造することができ、時間の節約にはなるが、難易度は高まる。"
-s_show_mats_ok		="完全なマテリアルのみを表示"
-s_show_pct_0		="成功率 ＞ 0% を表示"
-s_show_pct_50		="成功率 ≧ 50% を表示"
-s_cft_show_eqpted	="既存のアイテムを変換するときに装備を表示"
-s_cft_show_in_bag	="既存のアイテムを変換するときにバックパックのアイテムを表示する"
-s_show_itm_tp_sep	="アイテムタイプセパレーターを表示する"
-s_cft_use_bank		="ストレージ・ボックスでマテリアルを使用する"
-s_no_fit_itms		="適切なアイテムがありません"
-s_no_fit_recipes	="適切なレシピがありません"
-s_for_recipes		="使用可能なレシピ"
-s_fast_cft_ani		="高速製作アニメーション"
-s_cft_scrn_text		="製作結果のフローティングテキストを表示する"
+s_cft_show_ammo		= "Show ammunition items"
+s_cft_show_ammo_d	= "Although some enchantment crafts can be applied to ammunitions, it makes little sense since enhancement bonuses on ammunitions cannot be stacked with projectile weapons.\n\nException: Bonding silver on ammunitions has some practical significance."
+s_cft_x				= "Volume Production"
+s_cft_x_d			= "Raw materials can be produced in batches, which is more time-saving but more difficult."
+s_show_mats_ok		= "Show complete materials only"
+s_show_pct_0		= "Show success rate › 0% only"
+s_show_pct_50		= "Show success rate ≥ 50% only"
+s_cft_show_eqpted	= "Show equipped when transform existing items"
+s_cft_show_in_bag	= "Show items in backpack when transform existing items"
+s_show_itm_tp_sep	= "Show item type separators"
+s_cft_use_bank		= "Use materials in Storage Box"
+s_no_fit_itms		= "No suitable items available"
+s_no_fit_recipes	= "No suitable recipes available"
+s_for_recipes		= "For recipes"
+s_fast_cft_ani		= "Fast craft animations"
+s_cft_scrn_text		= "Show floating text for craft results"
 
 -- z_lock_trap_dc
-s_lock_15			="<c=a>非常に単純な錠</c>"
-s_lock_20			="<c=g>単純な錠</c>"
-s_lock_25			="<c=y>平均的な錠</c>"
-s_lock_30			="<c=o>良い錠</c>"
-s_lock_40			="<c=r>素晴らしい錠</c>"
-s_locked			="ロック済み"
-s_locked2			="ロック済み"
-s_unlocked2			="ロック解除済み"
+s_lock_15			= "<c=a>Very Simple Lock</c>"
+s_lock_20			= "<c=g>Simple Lock</c>"
+s_lock_25			= "<c=y>Average Lock</c>"
+s_lock_30			= "<c=o>Good Lock</c>"
+s_lock_40			= "<c=r>Superior Lock</c>"
+s_locked			= "Locked"
+s_locked2			= "Locked"
+s_unlocked2			= "Unlocked"
 
 s_bag_heavy			= "Heavy"
 s_edged				= "Edged"
 
-s_tk_10				="(10 取得)"
-s_tk_20				="(20 取得)"
+s_tk_10				= " (taking 10)"
+s_tk_20				= " (taking 20)"
 
-s_matk_s			="近接攻撃 %s："
-s_ratk_s			="遠隔攻撃 %s："
-s_mtouch_atk_s		="近接接触攻撃 %s："
-s_rtouch_atk_s		="遠隔接触攻撃 %s："
+s_matk_s			= "Melee attack %s: "
+s_ratk_s			= "Ranged attack %s: "
+s_mtouch_atk_s		= "Melee touch attack %s: "
+s_rtouch_atk_s		= "Ranged touch attack %s: "
 
-s_s_do_s_save		="%sは%s セーブ判定を行う："
-s_avoided_trap		="<c=tg>罠を回避した！</c>"
-s_s_unharmed		="<c=tg>%s: 無傷！</c>"
-s_dmg_halved		="<c=tg>ダメージが半減した。</c>"
-s_s_dmg_halved		="<c=tg>%s: ダメージが半減した。</c>"
-s_only_pct_dmg		="<c=tg>%s：ダメージは %d%% のみ。</c>"
-s_fell_into_pit		="<c=tr>落とし穴に落ちた！</c>"
-s_trap_tgred		="罠が作動した"
-s_s_disarmed		="%sは無効化された。"
-s_s_tgred			="<c=tr>%s が作動した！</c>"
-s_s_auto_rsted		="<c=tr>%s は自動的にリセットされる</c>"
-s_s_ineffective		="<c=tg>%s は無効。</c>"
-s_rush				="強制作動"
-s_rush_d			="適切なキャラクターを選択し、パーティが罠エリアを通過できるように 罠 を作動させる。\n\nただし、自動リセットモードの罠は、作動させても機能が失われるわけではない。したがって、全員が一緒にその場所を通過しなければならない。"
-s_rush_cfm			="この罠エリアを通過しますか（自動リセットモード）？"
-s_rush_ok			="パーティは罠エリアを無事通過した！"
+s_s_do_s_save		= "%s makes a %s save check: "
+s_avoided_trap		= " <c=tg>Avoided the trap!</c>"
+s_s_unharmed		= " <c=tg>%s: Unharmed!</c>"
+s_dmg_halved		= " <c=tg>Damage halved.</c>"
+s_s_dmg_halved		= " <c=tg>%s: Damage halved.</c>"
+s_only_pct_dmg		= " <c=tg>%s：Only taken %d%% damage.</c>"
+s_fell_into_pit		= " <c=tr>Fell into the pit!</c>"
+s_trap_tgred		= "Trap Triggered"
+s_s_disarmed		= "%s is disarmed."
+s_s_tgred			= "<c=tr>%s is triggered!</c>"
+s_s_auto_rsted		= "<c=tr>%s is automatic reset.</c>"
+s_s_ineffective		= "<c=tg>%s is ineffective.</c>"
+s_rush				= "Forced Trigger"
+s_rush_d			= "Select appropriate characters to trigger the trap actively so that your party can go through the trap area.\n\nBut a trap of auto-reset mode will not lose its functions when triggered. So all the party members must go through it together."
+s_rush_cfm			= "Go through this trap area (auto-reset mode)?"
+s_rush_ok			= "Your party successfully passed the trap area!"
 
-s_found_something	="何かを見つけた！"
-s_found_s			="%sを見つけた！"
-s_srch_sup			="物資の検索"
-s_loot				="戦利品"
-s_loot_site_msg		="この場所で特別な戦利品を見つけた："
+s_found_something	= "Found something!"
+s_found_s			= "Found %s!"
+s_srch_sup			= "Searching for supplies"
+s_loot				= "Loot"
+s_loot_site_msg		= "You found some extra loot inside this place:"
 
-s_own_site			="サイトを所有する"
-s_have_pl			="生産ライセンス取得済み"
-s_no_pl				="生産ライセンスなし"
-s_buy_pl_sd			="このサイトの生産ライセンスを購入しますか?\n\n<c=ty>コスト：</c>%s\n\n<c=ty>最小評判値：</c>%s"
-s_got_pl_s			="生産ライセンスを取得"
-s_occupied_by_mob	="モンスターが占領"
+s_own_site			= "Own the site"
+s_have_pl			= "Have production license"
+s_no_pl				= "No production license"
+s_buy_pl_sd			= "Purchase the production licence of this site?\n\n<c=ty>Cost: </c>%s\n\n<c=ty>Minimum Reputation: </c>%s"
+s_got_pl_s			= "Received production licence"
+s_occupied_by_mob	= "Occupied by monsters"
 
 s_skls_sec	= s_skls_d.."\n\n"..[[
 This section describes each skill, including common uses and typical modifiers.
@@ -386,7 +386,7 @@ Many skills can be used only by someone who is trained in them.
 
 The chance of success can be altered in four ways to take into account exceptional circumstances.
 
-1. Give the skill user a +2 circumstance bonus to represent conditions that improve performance, such as having the perfect tool for the job, getting help from another character (see Combining Skill Attempts), or possessing unusually accurate information.
+1. Give the skill user a +2 circumstance bonus to represent conditions that improve performance, such as having the perfect tool for the job, getting help from another character (see Combining Skill Attempts), or possessing unusually accurate information. 
 
 2. Give the skill user a –2 circumstance penalty to represent conditions that hamper performance, such as being forced to use improvised tools or having misleading information.
 
@@ -1090,7 +1090,7 @@ Varies		Bind a character
 
 Failure by 4 or less indicates that the hook fails to catch and falls, allowing you to try again.
 
-Failure by 5 or more indicates that the grappling hook initially holds, but comes loose after 1d4 rounds of supporting weight.
+Failure by 5 or more indicates that the grappling hook initially holds, but comes loose after 1d4 rounds of supporting weight. 
 
 This check is made secretly, so that you don’t know whether the rope will hold your weight.
 
@@ -1389,7 +1389,7 @@ The Ride skill is a prerequisite for the feats Mounted Archery, Mounted Combat, 
 
 
 
-[skl_lock	]={n="〈解錠〉"	,b="南京錠、差し込み錠、巧妙な組み合わせ錠などの様々な錠を選んで、〈解錠〉が可能。"
+[skl_lock	]={n="Open Lock"	,b="You can pick padlocks, finesse combination locks, and solve puzzle locks."
 ,d=[[
 The effort requires at least a simple tool of the appropriate sort (a pick, pry bar, blank key, wire, or the like).
 
@@ -1419,9 +1419,9 @@ If you use masterwork thieves’ tools, you gain a +2 circumstance bonus on the 
 
 
 
-[skl_disdev	]={n="〈装置無力化〉"	,b="Use this skill to disarm a trap, jam a lock (in either the open or closed position), or rig a wagon wheel to fall off."
+[skl_disdev	]={n="Disable Device"	,b="Use this skill to disarm a trap, jam a lock (in either the open or closed position), or rig a wagon wheel to fall off."
 ,hr=[[
-この技能を使えば様々な罠を解除することができる。
+You can use this skill to disarm various traps.
 ]]
 ,d=[[
 You can examine a fairly simple or fairly small mechanical device and disable it.
@@ -1491,7 +1491,7 @@ Failing that, it’s possible to plug up the holes from which the projectiles em
 
 <b c=ty7>Melee Attack Traps: </b>These devices can be thwarted by smashing the mechanism or blocking the weapons, as noted above.
 
-Alternatively, if a character studies the trap as it triggers, he might be able to time his dodges just right to avoid damage.
+Alternatively, if a character studies the trap as it triggers, he might be able to time his dodges just right to avoid damage. 
 
 A character who is doing nothing but studying a trap when it first goes off gains a +4 dodge bonus against its attacks if it is triggered again within the next minute.
 
@@ -1688,9 +1688,9 @@ Additionally, certain spells allow you to gain information about magic, provided
 
 
 
-[skl_search	]={n="〈捜索〉"	,b=" You can find secret doors, simple traps, hidden compartments, and other details not readily apparent."
+[skl_search	]={n="Search"	,b=" You can find secret doors, simple traps, hidden compartments, and other details not readily apparent."
 ,hr=[[
-この技能を使えば隠された宝や罠を見つけることができる。
+You can use this skill to find hidden treasure and traps.
 ]]
 ,d=[[
 The Spot skill lets you notice something, such as a hiding rogue.
@@ -1828,9 +1828,9 @@ The master of an owl familiar gains a +3 bonus on Spot checks in shadowy or othe
 
 
 
-[skl_listen	]={n="〈聞き耳〉"	,b="Use this skill to hear approaching enemies, to detect someone sneaking up on you from behind, or to eavesdrop on someone else’s conversation."
+[skl_listen	]={n="Listen"	,b="Use this skill to hear approaching enemies, to detect someone sneaking up on you from behind, or to eavesdrop on someone else’s conversation."
 ,hr=[[
-この技能を使えば、ダンジョンに隠れているモンスターを見つけることができる。
+You can use this skill to detect hidden monsters in dungeons.
 ]]
 ,d=[[
 <b>Check: </b>Your Listen check is either made against a DC that reflects how quiet the noise is that you might hear, or it is opposed by your target’s Move Silently check.
@@ -1893,19 +1893,19 @@ A sleeping character may make Listen checks at a –10 penalty. A successful che
 
 
 
-[skl_heal	]={n="〈治療〉"	,b="Use this skill to keep a badly wounded friend from dying, to help others recover faster from wounds, to keep your friend from succumbing to a wyvern’s sting, or to treat disease."
+[skl_heal	]={n="Heal"	,b="Use this skill to keep a badly wounded friend from dying, to help others recover faster from wounds, to keep your friend from succumbing to a wyvern’s sting, or to treat disease."
 ,hr=[[
-この技能を使って、他の人が傷、［出血］、［毒］からより早く回復できるようにする。
+Use this skill to help others recover faster from wounds, bleeding, or poisoning.
 
-<b>応急手当：</b>DC 15 の〈治療〉判定をする。 成功した場合、ターゲットは最大HPの1/4を回復する。
+<b>First Aid: </b>Make a DC 15 Heal check. If you succeed, the target restores 1/4 of max HP.
 
-DCを5以上超えている場合、【判断力】ボーナスをこの量に加える。
+If you exceed the DC by 5 or more, add your Wisdom bonus to this amount.
 
-クリーチャーはこの能力から戦闘ごとに一度だけ利益を得ることができる。
+A creature can only benefit from this ability once per battle.
 
-<b>［出血］の治療：</b>DC 15 の〈治療〉判定をする。 成功した場合、［出血］の効果はターゲットから取り除かれる。
+<b>Treat Bleeding: </b>Make a DC 15 Heal check. If you succeed, bleeding effects will be removed from the target.
 
-<b>［毒］の治療：</b>DC 15 の〈治療〉判定をする。 成功した場合、［毒］の効果はターゲットから取り除かれる。
+<b>Treat Poison: </b>Make a DC 15 Heal check. If you succeed, poison effects will be removed from the target.
 ]]
 ,d=[[
 <b>Check: </b>The DC and effect depend on the task you attempt.
@@ -2056,12 +2056,12 @@ If you have 5 or more ranks in Search, you get a +2 bonus on Survival checks to 
 
 
 
-[skl_sense	]={n="〈真意看破〉"	,b="この技能を使って、誰かがあなたに対し〈はったり〉をかけているかを見分ける事ができる。Use this skill to tell when someone is bluffing you, to discern hidden messages in conversations, or to sense when someone is being magically influenced."
+[skl_sense	]={n="Sense Motive"	,b="Use this skill to tell when someone is bluffing you, to discern hidden messages in conversations, or to sense when someone is being magically influenced."
 ,hr=[[
-〈真意看破〉判定が成功すると、〈はったり〉の影響を避けることができる（〈はったり〉技能を参照）。
+A successful Sense Motive check lets you avoid being bluffed (see the Bluff skill).
 ]]
 ,d=[[
-この技能は、ボディランゲージ、話し方、他人の癖に対する感受性を表す。
+This skill represents sensitivity to the body language, speech habits, and mannerisms of others.
 
 <b>Check: </b>A successful check lets you avoid being bluffed (see the Bluff skill).
 
@@ -2159,7 +2159,7 @@ If you have the Negotiator feat, you get a +2 bonus on Diplomacy checks.
 
 <b c=ty7>Initial Attitude	New Attitude (DC to achieve)</b>
 
-		Hostile	Unfri.	Indiff.	Friendly	Helpful
+		Hostile	Unfriend.	Indiffere.	Friendly	Helpful
 
 Hostile		<< 20	20	25	35	50
 
@@ -2188,17 +2188,17 @@ Helpful		Will take risks to help you	<min_x=cur_x>Protect, back up, heal, aid<mi
 
 
 
-[skl_intimidate	]={n="〈威圧〉"	,b="Use this skill to get a bully to back down, to frighten an opponent, or to make a prisoner give you the information you want."
+[skl_intimidate	]={n="Intimidate"	,b="Use this skill to get a bully to back down, to frighten an opponent, or to make a prisoner give you the information you want."
 ,hr=[[
-この技能を使って、対戦相手の士気をくじくことができる。
+You can use this skill to weaken an opponent’s resolve in combat.
 
-対象のレベルチェック（1d20 + キャラクターレベル + 【判断力】のボーナス + ［恐怖］ に対するセーヴィング・スローの修正値）に対抗するため〈威圧〉判定を行う。 成功した場合は、対象は 1 ラウンドの間怯え状態になる。 持続時間は対象への判定に成功した場合 5 ランクごとに 1 ラウンド増加する。
+Make an Intimidate check opposed by the target’s level check (1d20 + character level + Wisdom bonus + modifiers on saves against fear). If you win, the target becomes shaken for 1 round. This duration increases by 1 round for every 5 by which you beat the target’s check.
 
-怯え状態のキャラクターは、攻撃ロールとセーヴィング・スローに -2 のペナルティを受ける。
+A shaken character takes a -2 penalty on attack rolls and saving throws.
 
-このやり方で脅せるのは、相手が６スクエア以内に存在し、はっきりと目視でき、声を聞くことができる相手 1 体のみである。
+You can intimidate only an opponent that within 6 squares and can see and hear you.
 
-同じクリーチャーに〈威圧〉を使用しても、持続時間が延びるだけである。 それはより強い怯え状態を作り出すものではない。
+Using Intimidate on the same creature only extends the duration; it does not create a stronger fear condition.
 ]]
 ,d=[[
 Intimidation includes verbal threats and body language.
@@ -2260,13 +2260,13 @@ If you have the Persuasive feat, you get a +2 bonus on Intimidate checks.
 
 
 
-[skl_bluff	]={n="〈はったり〉"	,b="You can make the outrageous or the untrue seem plausible, or use doublespeak or innuendo to deliver a secret message to another character."
+[skl_bluff	]={n="Bluff"	,b="You can make the outrageous or the untrue seem plausible, or use doublespeak or innuendo to deliver a secret message to another character."
 ,hr=[[
-近接戦闘中に〈はったり〉を使用して、相手に不意打ちすることができる（それにより、次の攻撃を効果的に回避することはできない）。 この種の行動はフェイントと呼ぶ。
+You can use Bluff to mislead an opponent in melee combat (so that it can’t dodge your next attack effectively). This kind of action is called Feint.
 
-対象の〈真意看破〉判定に対抗するために〈はったり〉判定を行う。 成功した場合、対象に対する次の近接攻撃において、対象はアーマー・クラスに【敏捷力】ボーナスを（もしあれば）加えることができない。
+Make a Bluff check opposed by your target’s Sense Motive check. If you win, the target is denied its Dexterity bonus to AC (if any) for the next melee attack you make against it.
 
-この攻撃は次のターンまでに行なわれなければならない。
+This attack must be made on or before your next turn.
 ]]
 ,d=[[
 The skill encompasses acting, conning, fast talking, misdirection, prevarication, and misleading body language.
@@ -2748,11 +2748,11 @@ If you have 5 or more ranks in Use Magic Device, you get a +2 bonus to Spellcraf
 
 
 
-[skl_conc	]={n="〈精神集中〉"	,b="You are particularly good at focusing your mind."
+[skl_conc	]={n="Concentration"	,b="You are particularly good at focusing your mind."
 ,hr=[[
-呪文の詠唱や〈治療〉技能の使用に伴う機会攻撃を誘発する度に〈精神集中〉判定を行わなければならない。
+You must make a Concentration check whenever you provoke an attack of opportunity while casting a spell or using the Heal skill.
 
-〈精神集中〉判定が成功すると、アクションは通常どおり続行される。 判定が失敗すると、アクションは自動的に失敗して無駄になる。
+If the Concentration check succeeds, the action continues as normal. If the check fails, the action automatically fails and is wasted.
 ]]
 ,d=[[
 <b>Check: </b>You must make a Concentration check whenever you might potentially be distracted (by taking damage, by harsh weather, and so on) while engaged in some action that requires your full attention.
@@ -2784,7 +2784,7 @@ If more than one type of distraction is present, make a check for each one; any 
 
 <b c=ty7>Concentration DC(1)	Distraction</b>
 
-10 + damage dealt	<min_x=cur_x>Damaged during the action.(2)<min_x=0>
+10 + damage dealt		<min_x=cur_x>Damaged during the action.(2)<min_x=0>
 
 10 + half of continuous	<min_x=cur_x>Taking continuous damage during the damage last dealt action.(3)<min_x=0>
 
@@ -2856,7 +2856,7 @@ The Speak Language skill doesn’t work like other skills. Languages work as fol
 
 Common languages and their alphabets are summarized on the table below.
 
-<b c=ty7>Language	Alphabet		Typical Speakers</b>
+<b c=ty7>Language		Alphabet		Typical Speakers</b>
 Abyssal		Infernal		<min_x=cur_x>Demons, chaotic evil outsiders<min_x=0>
 Aquan		Elven		<min_x=cur_x>Water-based creatures<min_x=0>
 Auran		Draconic		<min_x=cur_x>Air-based creatures<min_x=0>
@@ -2963,7 +2963,7 @@ If you have 5 or more ranks in Survival, you get a +2 bonus on Knowledge (nature
 
 
 
-[skl_craft	]={n="製作"	,b="〈製作〉、交易または工芸の訓練を受けている。"
+[skl_craft	]={n="Craft"	,b="You are trained in a craft, trade, or art."
 ,hr=s_skl_hour
 ,d=[[
 Like Knowledge, Perform, and Profession, Craft is actually a number of separate skills.
@@ -3054,7 +3054,7 @@ The cost of repairing an item is one-fifth of the item’s price.
 
 When you use the Craft skill to make a particular sort of item, the DC for checks involving the creation of that item are typically as given on the following table.
 
-<b c=ty7>Craft Skill	Craft DC		Item</b>
+<b c=ty7>Craft Skill		Craft DC		Item</b>
 Alchemy(1)	15		<min_x=cur_x>Acid<min_x=0>
 Alchemy(1)	20		<min_x=cur_x>Alchemist’s fire, smokestick, or tindertwig<min_x=0>
 Alchemy(1)	25		<min_x=cur_x>Antitoxin, sunrod, tanglefoot bag, or thunderstone<min_x=0>
@@ -3108,7 +3108,7 @@ Purchasing and maintaining an alchemist’s lab grants a +2 circumstance bonus o
 
 
 
-[skl_profession	]={n="職能"	,b="生活のため、または専門職として訓練を受けている。"
+[skl_profession	]={n="Profession"	,b="You are trained in a livelihood or a professional role."
 ,hr=s_skl_hour
 ,d=[[
 Like Craft, Knowledge, and Perform, Profession is actually a number of separate skills.
@@ -3174,7 +3174,7 @@ Each of the nine categories of the Perform skill includes a variety of methods, 
 
 15		Enjoyable performance	<min_x=cur_x>In a prosperous city, you can earn 1d10 sp/day.<min_x=0>
 
-20		Great performance	<min_x=cur_x>In a prosperous city, you can earn 3d10 sp/day. In time, you may be invited to join a professional troupe and may develop a regional reputation.<min_x=0>
+20		Great performance		<min_x=cur_x>In a prosperous city, you can earn 3d10 sp/day. In time, you may be invited to join a professional troupe and may develop a regional reputation.<min_x=0>
 
 25		Memorable performance	<min_x=cur_x>In a prosperous city, you can earn 1d6 gp/day. In time, you may come to the attention of noble patrons and develop a national reputation.<min_x=0>
 
@@ -3224,15 +3224,15 @@ In addition to using the Perform skill, you can entertain people with sleight of
 [skl_f_act					]={n="Act					"},
 [skl_f_comedy				]={n="Comedy				"},
 
-[skl_p_wood					]={n="木こり					"},
-[skl_p_mine					]={n="鉱夫					"},
+[skl_p_wood					]={n="Woodcutter			"},
+[skl_p_mine					]={n="Miner					"},
 [skl_p_rock					]={n="Quarrier				"},
-[skl_p_hunt					]={n="ハンター				"},
-[skl_p_fish					]={n="漁師					"},
-[skl_p_anim					]={n="農場経営者				"},
-[skl_p_farm					]={n="農場主					"},
-[skl_p_herb					]={n="薬草商					"},
-[skl_p_cook					]={n="料理人					"},
+[skl_p_hunt					]={n="Hunter				"},
+[skl_p_fish					]={n="Fisherman				"},
+[skl_p_anim					]={n="Rancher				"},
+[skl_p_farm					]={n="Farmer				"},
+[skl_p_herb					]={n="Herbalist				"},
+[skl_p_cook					]={n="Cook					"},
 [skl_p_lumb			]={n="Lumberjack			"},
 [skl_p_tanner				]={n="Tanner				"},
 [skl_p_apo			]={n="Apothecary			"},
@@ -3265,21 +3265,21 @@ In addition to using the Perform skill, you can entertain people with sleight of
 [skl_p_sailor				]={n="Sailor				"},
 [skl_p_soldier				]={n="Soldier				"},
 
-[skl_c_bs					]={n="鍛冶					"},
-[skl_c_wpn					]={n="武器製作				"},
-[skl_c_amr					]={n="防具製作				"},
-[skl_c_maa					]={n="魔法装備の製作			"},
-[skl_c_wond					]={n="ワンダラス・アイテムの製作"},-- クラフト・ワンダラス・アイテム
-[skl_c_tailor			]={n="仕立て屋				"},
-[skl_c_lthr		]={n="革職人					"},
-[skl_c_carp			]={n="大工					"},
-[skl_c_bow					]={n="弓製作					"},
-[skl_c_trap			]={n="罠製作					"},
-[skl_c_lock			]={n="錠前制作				"},
-[skl_c_stone			]={n="石工					"},
-[skl_c_gem			]={n="宝石研磨術				"},
-[skl_c_jewel				]={n="宝飾品					"},
-[skl_c_alchemy				]={n="錬金術					"},
+[skl_c_bs					]={n="Blacksmithing			"},
+[skl_c_wpn					]={n="Weaponsmithing		"},
+[skl_c_amr					]={n="Armorsmithing			"},
+[skl_c_maa					]={n="Craft Magic Equipment	"},
+[skl_c_wond					]={n="Craft Wondrous Item	"},
+[skl_c_tailor			]={n="Tailoring				"},
+[skl_c_lthr		]={n="Leatherworking		"},
+[skl_c_carp			]={n="Carpentry				"},
+[skl_c_bow					]={n="Bowmaking				"},
+[skl_c_trap			]={n="Trapmaking			"},
+[skl_c_lock			]={n="Locksmithing			"},
+[skl_c_stone			]={n="Stonemasonry			"},
+[skl_c_gem			]={n="Gemcutting			"},
+[skl_c_jewel				]={n="Jewelry				"},
+[skl_c_alchemy				]={n="Alchemy				"},
 [skl_c_cal			]={n="Calligraphy			"},
 [skl_c_paint				]={n="Painting				"},
 [skl_c_sculpt			]={n="Sculpting				"},

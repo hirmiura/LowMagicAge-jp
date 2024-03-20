@@ -1,1223 +1,1231 @@
-s_cls				="クラス"	s_cls_d		="クラスはキャラクターの専門分野や職業です。クラスはキャラクターが何ができるのかを決定します。それは、戦闘の腕前であったり魔法の能力や技能など様々です。"
-s_core_cls			="Core Class"	s_core_cls_d	="A character’s core class is one of his most defining features. It’s the source of most of his abilities, and gives him a specific role in any adventuring party."
-s_adv_cls			="Prestige Class"	s_adv_cls_d	=[[Prestige classes represent specializations not available to most adventurers, the culmination of extensive practice in a specific field or discipline. Prestige classes allow characters to become truly exceptional, gaining powers beyond the ken of their peers.
+s_cls				="クラス"	s_cls_d		="クラスはキャラクターの職業または天職です。 それはキャラクターができること、つまり戦闘能力、魔法の能力、スキルなどを決定します。"
+s_core_cls			="コアクラス"	s_core_cls_d	="キャラクターのコアクラスは、そのキャラクターを定義する最も重要な特徴の1つである。このクラスはそのキャラクターのほとんどの能力の源であり、冒険者パーティにおける特定の役割を与える。"
+s_adv_cls			="上級クラス"	s_adv_cls_d	=[[上級クラスは、ほとんどの冒険者が利用できない専門分野、つまり特定の分野または分野での広範な練習の集大成を表します。上級クラスを使用すると、キャラクターが真に卓越した存在となり、仲間の常識を超えた力を得ることができます。
 
-Unlike the basic classes, characters must meet requirements before they can take their first level of a prestige class. Also, every prestige class has a level limit: 10-level or 5-level.
+基本クラスとは異なり、キャラクターは上級クラスの最初のレベルを取得する前に要件を満たす必要があります。 また、すべての上級クラスにはレベル制限があります: 10 レベルまたは 5 レベル。
 
-Before character level 20, a prestige class can be advanced up to its level limit.
+キャラクターレベルが 20 になる前は、上級クラスをレベル制限まで進めることができます。
 
-After character level 20, a 10-level prestige class can be advanced beyond 10th level. However, a 5-level prestige class can never be advanced beyond 5th level.
+キャラクターレベルが 20 になると、10 レベルの上級クラスを 10 レベル以上に進めることができます。 ただし、5 レベルの上級クラスは 5 レベルを超えて進むことはできません。
 
-Prestige classes offer a new form of multiclassing. Taking a prestige class does not incur the experience point penalties normally associated with multiclassing.]]
-s_adv_clss_lost		="The Lost Prestige Classes"	s_adv_clss_lost_d	=[[Throughout the famous ancient books and records, there are a wide range of prestige classes on record, including a variety of advanced branches of martial and spellcasting classes. For any adventurer who wants to make great strides in his or her career, these advanced classes in specific fields are coveted and priceless treasures.
+上級クラスは、新しい形式のマルチクラス化を提供します。上級クラスを受講しても、通常マルチクラス化に伴う経験値ペナルティは発生しません。]]
+s_adv_clss_lost		="失われた上級クラス"	s_adv_clss_lost_d	=[[有名な古代の書籍や記録には、武術クラスや呪文詠唱クラスのさまざまな高度な分野を含む、広範囲にわたる名声クラスが記録されています。 キャリアを大きく前進させたい冒険者にとって、特定分野の上級クラスは誰もが欲しがる、かけがえのない宝物です。
 
-Unfortunately, only a few prestige classes are still taught by dedicated instructors or have detailed and complete research literature available at a magic academy, while other prestige classes have been lost for years or even centuries. In the foreseeable future, those elite classes that exist only in legends will hardly appear in this adventure world.
+残念ながら、まだ専任の講師によって教えられたり、魔法アカデミーで入手可能な詳細かつ完全な研究文献を備えている上級クラスはほんのわずかであり、他の上級クラスは何年も、あるいは何世紀にもわたって失われています。 近い将来、伝説の中にのみ存在するエリートクラスは、この冒険の世界にはほとんど登場しません。
 
-But even in the most unlikely situation, adventurers still have dreams in mind! Perhaps someday in a new era, a quasi-loremaster miraculously found a research manuscript of the archmage prestige class next to a legendary lich's phylactery, or a planeswalker brought back some ancient texts from the outer planes and discovered the detailed literature of the thaumaturgist. Of course, more likely, these quintessence of years of research by generations of mentors are lost forever in the river of knowledge…]]
-s_core_clss_list	="List of core classes (%d in total)"
-s_adv_clss_list		="List of prestige classes (%d in total, including lost ones)"
-s_clss				=s_cls		s_clss_d		=s_cls_d
-s_core_clss			=s_core_cls	s_core_clss_d	=s_core_cls_d
-s_adv_clss			=s_adv_cls	s_adv_clss_d	=s_adv_cls_d
+しかし、たとえ最もありそうにない状況であっても、冒険者はまだ夢を持っています。 おそらく新しい時代のいつか、準伝承者が伝説のリッチの経典の隣に大魔術師の上級クラスの研究文書を奇跡的に発見したり、プレインズウォーカーが外次元からいくつかの古代文書を持ち帰って魔術師の詳細な文献を発見したりしたのかもしれない。 もちろん、何世代にもわたる指導者による長年の研究の真髄が、知識の川の中で永久に失われる可能性の方が高いでしょう…]]
+s_core_clss_list	="コアクラスのリスト (合計 %d)"
+s_adv_clss_list		="上級クラスのリスト (失われたものを含む合計 %d)"
+s_clss				="クラス"			s_clss_d		=s_cls_d
+s_core_clss			="コアクラス"		s_core_clss_d	=s_core_cls_d
+s_adv_clss			="上級クラス"	s_adv_clss_d	=s_adv_cls_d
 
-s_cls_list			="クラス一覧"
-s_fav_cls			="適性クラス"	s_fav_cls_d	=[[Favored class is a multiclass related concept which single class characters don't need to consider.
-
-
-When determining whether a character take a multiclassing XP penalty:
-
-A multiclass character suffers a –20% penalty to XP for each class that is not within one level of her highest-level class.
-
-If her favored class is a specific class, ignore it first.
-
-If her favored class is any class, ignore her highest-level class it first.]]
-s_xcls_xp_pnt		="マルチクラス XP ペナルティ"	s_xcls_xp_pnt_d	="マルチクラスのキャラクタは、最高レベルのクラスのレベルに含まれない各クラスに対して、XPに対して–20%のペナルティを受ける。\n\n適性クラス（種族の項目を参照）は、このペナルティの対象にはならない。"-- z_new A favored class (see the race entries) or a prestige class does not count for this penalty.
-s_clsx				="マルチクラス キャラクター"	s_clsx_d	=[[キャラクターはレベルが上がるにつれて新しいクラスを追加し、マルチクラス キャラクターになることができる。キャラクタの様々なクラスの能力が組み合わされて、マルチクラス キャラクタの全体的な能力が決定される。マルチクラス化は、集中力を犠牲にしてでもキャラクターの汎用性を向上させる。
+s_cls_list			="クラスリスト"
+s_fav_cls			="得意クラス"	s_fav_cls_d	=[[得意クラスは、単一クラスのキャラクターが考慮する必要のないマルチクラス関連の概念です。
 
 
-<h2 c=ty>Class and Level Features</h2>
-As a general rule, the abilities of a multiclass character are the sum of the abilities of each of the character’s classes.
+キャラクターがマルチクラス XP ペナルティを受けるかどうかを決定するとき:
 
-<b c=ty>レベル：</b>キャラクター・レベルとは、キャラクターのレベルの合計である。これは、特技や能力値をいつ上げるかを決定するために使用される。
+マルチクラス キャラクターは、最高レベルのクラスの 1 レベル以内にないクラスごとに XP に -20% のペナルティを受けます。
 
-クラス・レベルは、特定のクラスにおけるキャラクターのレベルである。各クラスのレベルがすべて同じ場合、キャラクター・レベルとクラス・レベルは同じになる。
+彼女の好きなクラスが特定のクラスである場合は、まず無視してください。
 
-<b c=ty>ヒット・ポイント：</b>クラス・レベルの上昇に応じて各クラスのヒット・ポイントを獲得し、新しいヒット・ポイントを前回の合計に加算する。
+彼女の好みのクラスがいずれかのクラスである場合は、最初に彼女の最高レベルのクラスを無視してください。]]
+s_xcls_xp_pnt		="マルチクラス XP ペナルティ"	s_xcls_xp_pnt_d	="マルチクラス キャラクターは、最高レベルのクラスの 1 レベル以内にないクラスごとに XP に -20% のペナルティを受けます。\n\n得意なクラス (種族のエントリーを参照) や上級クラスは、このペナルティの対象になりません。"
+s_clsx				="マルチクラスキャラクター"	s_clsx_d	=[[キャラクターはレベルが進むにつれて新しいクラスを追加し、マルチクラス キャラクターになることがあります。 キャラクターのさまざまなクラスのクラス能力を組み合わせて、マルチクラス キャラクターの全体的な能力が決定されます。 マルチクラス化により、集中力は犠牲になりますが、キャラクターの多用途性が向上します。
 
-<b c=ty>Base Attack Bonus:</b> Add the base attack bonuses acquired for each class to get the character’s base attack bonus. A resulting value of +6 or higher provides the character with multiple attacks.
 
-<b c=ty>セーブボーナス：</b>各クラスの異なるセーブボーナスを纏めて加算する。
+<h2 c=ty>クラスとレベルの特徴</h2>
+原則として、マルチクラス キャラクターの能力は、キャラクターの各クラスの能力の合計です。
 
-<b c=ty>Ability Increases:</b> Gain ability score increases based on character level, regardless of individual class level.
+<b c=ty>レベル:</b> "キャラクターレベル" はキャラクターの合計レベル数です。 これは、特技と能力スコアのブーストがいつ得られるかを決定するために使用されます。
 
-<b c=ty>Feats:</b> Gain feats based on character levels, regardless of individual class level.
+"クラスレベル"は、特定のクラスにおけるキャラクターのレベルです。 レベルが全て同じクラスのキャラクターの場合、キャラクターレベルとクラスレベルは同じになります。
 
-<b c=ty>技能：</b>各クラスのクラス技能をクラス技能として扱う。
+<b c=ty>ヒットポイント:</b> クラスレベルが上がるにつれて各クラスからヒットポイントを獲得し、新しいヒットポイントを以前の合計に追加します。
 
-If a skill is a class skill for any of a multiclass character’s classes, then character level determines a skill’s maximum rank. (The maximum rank for a class skill is 3 + character level.)
+<b c=ty>基本攻撃ボーナス:</b> 各クラスで獲得した基本攻撃ボーナスを加算して、キャラクターの基本攻撃ボーナスを取得します。 結果の値が +6 以上になると、キャラクターに複数の攻撃が与えられます。
 
-If a skill is not a class skill for any of a multiclass character’s classes, the maximum rank for that skill is one-half the maximum for a class skill.
+<b c=ty>セービングスロー:</b> 各クラスの基本セーブボーナスを合計します。
 
-<b c=ty>呪文：</b>呪文を唱えるクラスのすべての呪文を獲得できる。Gain spells from all of the character’s spellcasting classes and keeps a separate spell list for each class. If a spell’s effect is based on the class level of the caster, you must choose which class’s spell list the character is casting the spell from.
+<b c=ty>能力が増加する:</b> 獲得能力スコアは、個々のクラスレベルに関係なく、キャラクターレベルに基づいて増加します。
 
-<b c=ty>クラスの特徴：</b>すべてのクラスの特徴を得ることができるが、すべてのクラスの特別な制限の影響を受けなければならない。
+<b c=ty>特技:</b> 個々のクラスレベルに関係なく、キャラクターレベルに基づいて特技を獲得します。
 
-<c=twa>例えば、ローグは軽装鎧に精通しているが、ローグ/ウィザードは鎧を着用している場合、依然として秘術呪文に失敗する可能性がある。</c>
+<b c=ty>スキル:</b> 各クラスのクラススキルをクラススキルとして扱います。
 
-In the special case of turning undead, both clerics and experienced paladins have the same ability. If the character’s paladin level is 4th or higher, her effective turning level is her cleric level plus her paladin level minus 3.
+スキルがマルチクラス キャラクターのいずれかのクラスのクラス スキルである場合、キャラクター レベルによってスキルの最大ランクが決まります。 (クラススキルの最大ランクは3+キャラクターレベルです。)
+
+スキルがマルチクラス キャラクターのどのクラスのクラス スキルでもない場合、そのスキルの最大ランクはクラス スキルの最大ランクの 2 分の 1 になります。
+
+<b c=ty>呪文:</b> キャラクターの呪文を唱えるすべてのクラスから呪文を取得し、クラスごとに個別の呪文リストを保持します。 呪文の効果が術者のクラス レベルに基づいている場合、キャラクターが呪文を唱えるクラスの呪文リストを選択する必要があります。
+
+<b c=ty>クラスの特徴:</b> 彼女のすべてのクラスのすべてのクラス機能を取得しますが、すべてのクラスの特別な制限の影響も受けなければなりません。 (例外: バーバリアン クラスを取得したキャラクターは文盲になりません。)
+
+<c=twa>たとえば、ローグは軽装鎧に習熟していますが、ローグ/ウィザードは鎧を着ている場合でも秘術の呪文が失敗する可能性があります。</c>
+
+アンデッドに変えるという特殊なケースでは、クレリックと経験豊富なパラディンの両方が同じ能力を持っています。 キャラクターのパラディンレベルが4以上の場合、有効なターンレベルはクレリックレベルにパラディンレベルを加えた値から3を引いた値となります。
 <z>
-In the special case of obtaining a familiar, both wizards and sorcerers have the same ability. A sorcerer/wizard stacks his sorcerer and wizard levels to determine the familiar’s natural armor, Intelligence score, and special abilities.
+使い魔を入手するという特別な場合には、ウィザードとソーサラーの両方が同じ能力を持っています。 ウィザード/ソーサラーはウィザードとソーサラーのレベルを積み重ねて、使い魔の肉体鎧、INTスコア、特殊能力を決定します。
 </z>
-直感回避という特殊なケースでは、経験豊富なバーバリアンもローグも同じ能力を持っている。バーバリアン/ローグが２回目に（二つ目のクラスのために）直感回避を得る場合、代わりに直感回避強化を得る。
+アンカニードッジという特殊なケースでは、経験豊富なバーバリアンも経験豊富なローグも同じ能力を持っています。 バーバリアン/ローグが 2 度目にアンカニードッジを獲得するとき (2 番目のクラスの場合)、彼女はまだそれを持っていない場合、代わりに改善された不気味な回避を獲得します。
 
-バーバリアンレベルとローグレベルは、攻撃者が君を挟撃するために必要なローグレベルを決定するために積み重ねらる。
+彼女のバーバリアンレベルとローグ レベルは積み重なり、攻撃者が彼女を側面攻撃するために必要なローグ レベルを決定します。
 
-<c=twa>例えば、２レベルのバーバリアンと４レベルのローグの場合、少なくとも10レベルのローグにしか挟撃を受けない。</c>
+<c=twa>たとえば、2レベルバーバリアン/4レベルローグは、少なくとも10レベル以上のローグにしか側面攻撃を受けることができない。</c>
 
 
 <h2 c=ty>マルチクラス XP ペナルティ</h2>
-Developing and maintaining skills and abilities in more than one class is a demanding process. Depending on the character’s class levels and race, he might or might not suffer an XP penalty.
+複数のクラスでスキルと能力を開発し維持することは、困難なプロセスです。 キャラクターのクラスレベルと種族に応じて、XP ペナルティを受ける場合と受けない場合があります。
 
-If any two of a multiclass character’s classes are two or more levels apart, the strain of developing and maintaining different skills at different levels takes its toll. マルチクラスのキャラクタは、最高レベルのクラスのレベルに含まれない各クラスに対して、XPに対して–20%のペナルティを受ける。
+マルチクラス キャラクターのクラスのいずれか 2 つが 2 レベル以上離れている場合、異なるレベルで異なるスキルを開発および維持する負担が大きくなります。 マルチクラス キャラクターは、最高レベルのクラスの 1 レベル以内にないクラスごとに XP に -20% のペナルティを受けます。
 
-適性クラス（種族の項目を参照）は、このペナルティの対象にはならない。]]-- z_new	A favored class (see the race entries) or a prestige class does not count for this penalty.	クラス・レベルに応じて、キャラクターの以下の値と特徴が決まる：
+得意クラス (種族エントリーを参照) または上級クラスは、このペナルティの対象にはなりません。]]
 
 s_cls_features		="クラスの特徴"
-s_key_abis			="重要な能力値"
-s_lv_skl_pts		="レベル毎の技能ランク"	s_lv_skl_pts_f	="%d + Int 修正値。"	s_lv_skl_pts_x4	="x4 at 1st Level。"
-s_wpn_prof			="《武器習熟》"
-s_amr_prof			="《鎧習熟》"
-s_auto_pwrs			="自動的に取得する能力"
-s_fami_cls			="レベル１になると、<t=$s_fami_nd>使い魔</t>を従者として手に入れることができる。"
+s_key_abis			="主要な能力"
+s_lv_skl_pts		="レベルごとのスキルポイント"	s_lv_skl_pts_f	="%d + INT 修正。"	s_lv_skl_pts_x4	="1レベルでx4。"
+s_wpn_prof			="武器熟練度"
+s_amr_prof			="防具の熟練度"
+s_auto_pwrs			="自動的に獲得される能力"
+s_fami_cls			="1 レベルで、従者として<t=$s_fami_nd>ファミリア</t>を取得します。"
 
-s_bns_feat_1		="１レベルに特技を獲得します。"-- Gains an extra feat at 1st level.
-s_bns_feats_f		="１レベルとそれ以降%dレベル毎に追加の特技を得ます（1、%d、%d...）。"-- todo …） レベル１と、それ以降%dレベル毎に追加の特技を得ます（1、%d、%d...）。	１レベルとそれ以降は%dレベル毎に特技を一つ得ることができる（1、%d、%d...）。	１レベルとそれ以降は%dレベル毎に追加の特技を一つ得ることができる（1、%d、%d...）。
-s_bns_feats_e_f		="20レベル以降、%dレベルごと（%d、%d...）に特技を獲得します。"
-s_bns_feats_ea_f	="10レベル以降、%dレベルごと（%d、%d...）に特技を獲得します。"
-s_bns_feats_e2_f	="20レベル以降は%dレベルごと（%d、%d...）。"
-s_bns_feats_e3_f	="20レベル以降も同様（%d、%d...）。"
-s_bns_feats			="ボーナス特技"	s_bns_feats_d	="These bonus feats are in addition to the feat that any 1st-level character gets, the bonus feat granted to a human character, and a character of any class gets from advancing levels."
-s_hr_bns_feats		="Add bonus feats before level 20 to make up for the current lack of class features."
+s_bns_feat_1		="1レベルで追加の特技を獲得します。"
+s_bns_feats_f		="最初のレベルとその後 %d レベルごとに追加の特技を獲得します (1、%d、%d...)。"
+s_bns_feats_e_f		="20 レベル (%d、%d...) 以降は %d レベルごとに追加の特技を獲得します。"
+s_bns_feats_ea_f	="10 レベル (%d、%d...) 以降は %d レベルごとに追加の特技を獲得します。"
+s_bns_feats_e2_f	="20 レベル以降は %d レベルごと (%d、%d...)。"
+s_bns_feats_e3_f	="20 レベル (%d、%d...) 以降も同様です。"
+s_bns_feats			="ボーナス特技"	s_bns_feats_d	="これらのボーナス特技は、第 1 レベルのキャラクターが取得する特技、人間のキャラクター、およびレベルが進むと任意のクラスのキャラクターに付与されるボーナス特技に追加されます。"
+s_hr_bns_feats		="現在不足しているクラス機能を補うために、レベル 20 より前にボーナス特技を追加します。"
 s_hr_bns_feats_ftr	=[[Remove the limit of fighter bonus feats.
 
-The original is as follows:
-At 1st level, a fighter gets a bonus combat-oriented feat in addition to the feat that any 1st-level character gets and the bonus feat granted to a human character. The fighter gains an additional bonus feat at 2nd level and every two fighter levels thereafter (4th, 6th, 8th, 10th, 12th, 14th, 16th, 18th, and 20th). These bonus feats must be drawn from the feats noted as fighter bonus feats. A fighter must still meet all prerequisites for a bonus feat, including ability score and base attack bonus minimums.
+原文は以下の通り:
+第 1 レベルでは、ファイターは第 1 レベルのキャラクターが取得する特技と人間のキャラクターに付与されるボーナス特技に加えて、戦闘指向のボーナス特技を取得します。 ファイターは第 2 レベルで追加のボーナス特技を獲得し、その後はファイター レベルが 2 上がるごとに (4、6、8、10、12、14、16、18、および 20) 獲得します。 これらのボーナス特技は、ファイターボーナス特技として記載されている特技から引き出す必要があります。 ファイターは、能力スコアや基本攻撃ボーナスの最低値など、ボーナス特技のすべての前提条件を満たしている必要があります。
 
-These bonus feats are in addition to the feat that a character of any class gets from advancing levels. A fighter is not limited to the list of fighter bonus feats when choosing these feats.
+これらのボーナス特技は、どのクラスのキャラクターでもレベルが上がると得られる特技に追加されます。 これらの特技を選択する場合、ファイターはファイターボーナス特技のリストに限定されません。
 
-List of fighter bonus feats: Blind-Fight, Cleave, Combat Expertise, Combat Reflexes, Deflect Arrows, Dodge, Exotic Weapon Proficiency, Far Shot, Great Cleave, Greater Two-Weapon Fighting, Greater Weapon Focus, Greater Weapon Specialization, Improved Bull Rush, Improved Critical, Improved Disarm, Improved Feint, Improved Grapple, Improved Initiative, Improved Overrun, Improved Precise Shot, Improved Shield Bash, Improved Sunder, Improved Trip, Improved Two-Weapon Fighting, Improved Unarmed Strike, Manyshot, Mobility, Mounted Archery, Mounted Combat, Point Blank Shot, Power Attack, Precise Shot, Quick Draw, Rapid Reload, Rapid Shot, Ride-By Attack, Shot On The Run, Snatch Arrows, Spirited Charge, Spring Attack, Stunning Fist, Trample, Two-Weapon Defense, Two-Weapon Fighting, Weapon Finesse, Weapon Focus, Weapon Specialization, Whirlwind Attack.]]
-s_hr_bns_feats_wiz	=[[Removed the limit of wizard bonus feats.
+ファイターボーナス特技のリスト：ブラインドファイト、クリーブ、戦闘専門知識、戦闘反射神経、矢をそらす、回避、エキゾチック武器熟練度、ファーショット、グレートクリーブ、より優れた二武器格闘、より優れた武器集中力、より優れた武器特化、改良されたブルラッシュ 、クリティカルの改善、武装解除の改善、フェイントの改善、組みつきの改善、イニシアチブの改善、オーバーランの改善、精密射撃の改善、シールドバッシュの改善、サンダーの改善、トリップの改善、二武器格闘の改善、素手打撃の改善、マンショット、機動性、騎馬アーチェリー、 騎乗戦闘、ポイントブランクショット、パワーアタック、精密射撃、クイックドロー、ラピッドリロード、ラピッドショット、ライドバイアタック、ショット・オン・ザ・ラン、スナッチアロー、スピリットチャージ、スプリングアタック、スタニングフィスト、トランプル、二刀流防御 、二武器格闘、武器フィネス、武器集中、武器特化、旋風攻撃。]]
+s_hr_bns_feats_wiz	=[[ウィザードボーナス特技の制限を削除しました。
 
-The original is as follows:
-At 1st level, a wizard gains Scribe Scroll as a bonus feat. At 5th, 10th, 15th, and 20th level, a wizard gains a bonus feat. At each such opportunity, she can choose a metamagic feat, an item creation feat, or Spell Mastery. The wizard must still meet all prerequisites for a bonus feat, including caster level minimums.
+原文は以下の通り:
+第 1 レベルでは、ウィザードはボーナス特技として スクライブスクロール を獲得します。 5、10、15、20 レベルで、ウィザードはボーナス特技を獲得します。 そのような機会ごとに、彼女はメタマジック特技、アイテム作成特技、または呪文マスタリーを選択できます。 ウィザードは、キャスター レベルの最低条件を含む、ボーナス特技のすべての前提条件を満たしている必要があります。
 
-These bonus feats are in addition to the feat that a character of any class gets from advancing levels. The wizard is not limited to the categories of item creation feats, metamagic feats, or Spell Mastery when choosing these feats.]]
+これらのボーナス特技は、どのクラスのキャラクターでもレベルが上がると得られる特技に追加されます。 ウィザードは、アイテム作成特技、メタマジック特技、または呪文マスタリーのカテゴリに限定されず、これらの特技を選択します。]]
 
-s_spls_wiz_b		="Wizards cast arcane spells with Intelligence."
-s_spls_wiz_d		=[[ウィザードは秘術呪文を唱えることができる。使用可能な呪文はレベルアップするときに習得できる。ウィザードは、奇数レベルで高いレベルの呪文を学ぶことがでる。ウィザードは事前に呪文を選び、準備しておかなければならない。
+s_spls_wiz_b		="ウィザードはINTを使って秘術の呪文を唱えます。"
+s_spls_wiz_d		=[[ウィザードは秘術の呪文を唱えます。 利用可能な呪文はレベルアップ時に習得できます。 ウィザードは事前に呪文を選択して準備しなければなりません。
 
-ウィザードが呪文を学び、準備し、呪文を発動するためには、少なくとも１０＋呪文レベルの【知力】の値が必要である。 The spell DC = 10 + the spell level + Intelligence bonus.
+呪文を学習、準備、または唱えるには、ウィザードは少なくとも 10 + 呪文レベルに等しいINTスコアを持っている必要があります。 呪文難易度 = 10 + 呪文レベル + INTボーナス。
 
-ウィザードは１日に各呪文レベルの呪文を一定数しか唱えることができない。さらに、高い【知力】の値を持っている場合、1日あたりのボーナス呪文を受け取ることができる。]]
+ウィザードは、1 日に各呪文レベルの特定の数の呪文のみを唱えることができます。 さらに、高いINTスコアを持っている場合、彼女は毎日ボーナス呪文を受け取ります。]]
 
-s_spls_zas_b		="Assassins cast limited arcane spells with Intelligence and need not prepare in advance."
-s_spls_zas_d		=[[Assassins cast arcane spells. Available spells could be learned when they level up, but the selection is extremely limited. An assassin need not prepare his spells in advance.
+s_spls_zas_b		="アサシンはINTを使って限られた秘術の呪文を唱えるため、事前に準備する必要はありません。"
+s_spls_zas_d		=[[アサシンは秘術の呪文を唱えます。 利用可能な呪文はレベルアップ時に学習できますが、選択肢は非常に限られています。 アサシンは事前に呪文を準備する必要はありません。
 
-To learn or cast a spell, an assassin must have a Intelligence score equal to at least 10 + the spell level. The spell DC = 10 + the spell level + Intelligence bonus.
+呪文を学習または唱えるには、アサシンは少なくとも 10 + 呪文レベルに等しいINTスコアを持っている必要があります。 呪文難易度 = 10 + 呪文レベル + INTボーナス。
 
-An assassin can cast only a certain number of spells of each spell level per day. In addition, he receives bonus spells per day if he has a high Intelligence score.]]
+アサシンは、1 日に各呪文レベルの特定の数の呪文のみを唱えることができます。 さらに、高いINTスコアを持っている場合は、毎日ボーナス呪文を受け取ります。]]
 
-s_spls_sor_b		="Sorcerers cast limited arcane spells with Charisma and need not prepare in advance."
-s_spls_sor_d		=[[ソーサラーは秘術呪文を発動する。利用可能な呪文は、レベルアップ時に学習することができる, but the selection is extremely limited。ソーサラーは事前に呪文を準備する必要はない。
+s_spls_sor_b		="ソーサラーはCHAで限定された秘術の呪文を唱えるため、事前に準備する必要はありません。"
+s_spls_sor_d		=[[ソーサラーは秘術の呪文を唱えます。 利用可能な呪文はレベルアップ時に学習できますが、選択肢は非常に限られています。 ソーサラーは事前に呪文を準備する必要はありません。
 
-呪文を習得したり、呪文を発動したりするためには、ソーサラーは【魅力】の値が少なくとも１０＋呪文レベルに達していなければならない。 The spell DC = 10 + the spell level + Charisma bonus.
+呪文を学習または唱えるには、ソーサラーは少なくとも 10 + 呪文レベルに等しいCHA スコアを持っている必要があります。 呪文難易度 = 10 + 呪文レベル + CHAボーナス。
 
-ソーサラーは１日に各呪文レベルの呪文を一定数しか発動できない。さらに、【魅力】の値が高い場合、１日あたりのボーナス呪文を受け取ることができる。]]
+ソーサラーは、1 日に各呪文レベルの特定の数の呪文のみを唱えることができます。 さらに、高いCHAスコアを持っている場合は、毎日ボーナス呪文を受け取ります。]]
 
-s_spls_brd_b		="Bards cast limited arcane spells with Charisma and need not prepare in advance."
-s_spls_brd_d		=[[Bards cast arcane spells. Available spells could be learned when they level up, but the selection is extremely limited. A bard need not prepare his spells in advance.
+s_spls_brd_b		="バードはCHAで限定された秘術の呪文を唱えるため、事前に準備する必要はありません。"
+s_spls_brd_d		=[[バードは秘術の呪文を唱えます。 利用可能な呪文はレベルアップ時に学習できますが、選択肢は非常に限られています。 バードは事前に呪文を準備する必要はありません。
 
-To learn or cast a spell, a bard must have a Charisma score equal to at least 10 + the spell level. The spell DC = 10 + the spell level + Charisma bonus.
+呪文を学習または唱えるには、バードは少なくとも 10 + 呪文レベルに等しいCHA スコアを持っている必要があります。 呪文難易度 = 10 + 呪文レベル + CHAボーナス。
 
-A bard can cast only a certain number of spells of each spell level per day. In addition, he receives bonus spells per day if he has a high Charisma score.]]
+バードは、1 日に各呪文レベルの一定数の呪文のみを唱えることができます。 さらに、高いCHAスコアを持っている場合は、毎日ボーナス呪文を受け取ります。]]
 
-s_spls_clr_b		="Clerics cast divine spells with Wisdom."
-s_spls_clr_d		=[[クレリックは信仰呪文を唱えることができる。使用可能な呪文はレベルアップ時に自動的に修得される。クレリックは事前に呪文を選び、準備しておかなければならない。
+s_spls_clr_b		="クレリックはWISを使って神聖な呪文を唱えます。"
+s_spls_clr_d		=[[クレリックは神聖な呪文を唱えます。 利用可能な呪文はレベルアップすると自動的に習得されます。 クレリックは事前に呪文を選択し、準備しなければなりません。
 
-呪文を準備または発動するには、クレリックの【判断力】の値が少なくとも１０＋呪文レベルである必要がある。 The spell DC = 10 + the spell level + Wisdom bonus.
+呪文を準備または発動するには、クレリックは少なくとも 10 + 呪文レベルに等しいWISスコアを持っている必要があります。 呪文難易度 = 10 + 呪文レベル + WISボーナス。
 
-クレリックは１日あたり各呪文レベルの特定の数の呪文のみを発動できる。 さらに、【判断力】の値が高い場合、１日あたりのボーナス呪文を受け取ることができる。]]
+クレリックは、1 日に各呪文レベルの特定の数の呪文のみを唱えることができます。 さらに、WISスコアが高い場合は、毎日ボーナス呪文を受け取ります。]]
 
-s_spls_drd_b		="Druids cast divine spells with Wisdom."
-s_spls_drd_d		=[[Druids cast divine spells. Available spells will be learned automatically when they level up. A druid must choose and prepare her spells in advance.
+s_spls_drd_b		="ドルイドはWISを使って神聖な呪文を唱えます。"
+s_spls_drd_d		=[[ドルイドは神聖な呪文を唱えます。 利用可能な呪文はレベルアップすると自動的に習得されます。 ドルイドは事前に呪文を選択して準備しなければなりません。
 
-To prepare or cast a spell, a druid must have a Wisdom score equal to at least 10 + the spell level. The spell DC = 10 + the spell level + Wisdom bonus.
+呪文を準備または唱えるには、ドルイドは少なくとも 10 + 呪文レベルに等しいWISスコアを持っている必要があります。 呪文難易度 = 10 + 呪文レベル + WISボーナス。
 
-A druid can cast only a certain number of spells of each spell level per day. In addition, she receives bonus spells per day if she has a high Wisdom score.]]
+ドルイドは 1 日に各呪文レベルの特定の数の呪文しか唱えることができません。 さらに、高いWISスコアを持っている場合、彼女は毎日ボーナス呪文を受け取ります。]]
 
-s_spls_zbg_b		="Blackguards can cast a small number of divine spells with Wisdom."
-s_spls_zbg_d		=[[A blackguard gains the ability to cast a small number of divine spells. Available spells will be learned automatically when he level up. A blackguard must choose and prepare his spells in advance.
+s_spls_zbg_b		="ブラックガードはWISを使って少数の神聖な呪文を唱えることができます。"
+s_spls_zbg_d		=[[ブラックガードは少数の神聖な呪文を唱える能力を獲得します。 利用可能な呪文はレベルアップ時に自動的に学習されます。 ブラックガードは事前に呪文を選択して準備しなければなりません。
 
-To prepare or cast a spell, a blackguard must have a Wisdom score equal to at least 10 + the spell level. The spell DC = 10 + the spell level + Wisdom bonus.
+呪文を準備または唱えるには、ブラックガードは少なくとも 10 + 呪文レベルに等しいWISスコアを持っている必要があります。 呪文難易度 = 10 + 呪文レベル + WISボーナス。
 
-A blackguard can cast only a certain number of spells of each spell level per day. In addition, he receives bonus spells per day if he has a high Wisdom score.]]
+ブラックガードは、1 日に各呪文レベルの特定の数の呪文のみを唱えることができます。 さらに、WISスコアが高い場合は、毎日ボーナス呪文を受け取ります。]]
 
-s_spls_rgr_b		="Beginning at 4th level, rangers can cast a small number of divine spells with Wisdom."
-s_spls_rgr_d		=[[Beginning at 4th level, a ranger gains the ability to cast a small number of divine spells. Available spells will be learned automatically when she level up. A ranger must choose and prepare her spells in advance.
+s_spls_rgr_b		="4 レベルから、レンジャーはWISを使って少数の神聖な呪文を唱えることができます。"
+s_spls_rgr_d		=[[4 レベルから、レンジャーは少数の神聖な呪文を唱える能力を獲得します。 利用可能な呪文はレベルアップ時に自動的に習得されます。 レンジャーは事前に呪文を選択して準備しなければなりません。
 
-To prepare or cast a spell, a ranger must have a Wisdom score equal to at least 10 + the spell level. The spell DC = 10 + the spell level + Wisdom bonus.
+呪文を準備または唱えるには、レンジャーは少なくとも 10 + 呪文レベルに等しいWISスコアを持っている必要があります。 呪文難易度 = 10 + 呪文レベル + WISボーナス。
 
-A ranger can cast only a certain number of spells of each spell level per day. In addition, she receives bonus spells per day if she has a high Wisdom score.
+レンジャーは、1 日に各呪文レベルの特定の数の呪文のみを唱えることができます。 さらに、高いWISスコアを持っている場合、彼女は毎日ボーナス呪文を受け取ります。
 
-Through 3rd level, a ranger has no caster level. At 4th level and higher, her caster level is one-half her ranger level.]]
+3 レベルまでは、レンジャーにはキャスター レベルがありません。 4レベル以上では、キャスターレベルはレンジャーレベルの半分になります。]]
 
-s_spls_pal_b		="Beginning at 4th level, paladins can cast a small number of divine spells with Wisdom."
-s_spls_pal_d		=[[Beginning at 4th level, a paladin gains the ability to cast a small number of divine spells. Available spells will be learned automatically when she level up. A paladin must choose and prepare her spells in advance.
+s_spls_pal_b		="4レベルから、パラディンはWISを使って少数の神聖な呪文を唱えることができます。"
+s_spls_pal_d		=[[4 レベルから、パラディンは少数の神聖な呪文を唱える能力を獲得します。 利用可能な呪文はレベルアップ時に自動的に習得されます。 パラディンは事前に呪文を選択し、準備する必要があります。
 
-To prepare or cast a spell, a paladin must have a Wisdom score equal to at least 10 + the spell level. The spell DC = 10 + the spell level + Wisdom bonus.
+呪文を準備または唱えるには、パラディンは少なくとも 10 + 呪文レベルに等しいWISスコアを持っている必要があります。 呪文難易度 = 10 + 呪文レベル + WISボーナス。
 
-A paladin can cast only a certain number of spells of each spell level per day. In addition, she receives bonus spells per day if she has a high Wisdom score.
+パラディンは、1 日に各呪文レベルの特定の数の呪文のみを唱えることができます。 さらに、高いWISスコアを持っている場合、彼女は毎日ボーナス呪文を受け取ります。
 
-Through 3rd level, a paladin has no caster level. At 4th level and higher, her caster level is one-half her paladin level.]]
+第 3 レベルまでは、パラディンにはキャスター レベルがありません。 4レベル以上では、キャスターレベルはパラディンレベルの半分になります。]]
 
-s_drd_nwpns			="Druids are also proficient with all natural attacks (claw, bite, and so forth) of any form they assume with wild shape."
-s_drd_amr			="Druids are prohibited from wearing metal armor or shields, otherwise they are unable to cast druid spells or use any of their supernatural or spell-like class abilities while doing so."
-s_drd_ban			="Prohibited"	s_drd_ban_d	="Suppress druidic powers."
-s_mnk_amr			="鎧を装備したり、盾を使用したり、中程度または重い荷物を運んだりすると、モンクはＡＣボーナスを失うだけでなく、高速移動や連打の能力を失う。"
-s_spl_amr			="秘術呪文と防具"	s_spl_amr_d	=[[ウィザードは鎧を着用することはめったにない。どのタイプの鎧でもその動きが妨げられ、秘術呪文が失敗する可能性がある。秘術呪文の失敗の可能性は、鎧と盾の詳細で確認することができる。
+s_drd_nwpns			="ドルイドはまた、ワイルドシェイプを想定したあらゆる自然の攻撃（爪、噛みつきなど）にも熟練しています。"
+s_drd_amr			="ドルイドは金属製の鎧や盾を着用することを禁じられており、そうしないとドルイド呪文を唱えたり、超自然的または呪文のようなクラス能力を使用したりすることはできません。"
+s_drd_ban			="禁止事項"	s_drd_ban_d	="ドルイドの力を抑制します。"
+s_mnk_amr			="鎧を着たり、盾を使用したり、中程度または重い荷物を運んだりすると、モンクは AC ボーナスだけでなく、高速移動や連打能力も失います。"
+s_spl_amr			="秘術の呪文と鎧"	s_spl_amr_d	=[[ウィザードやソーサラーは、鎧を効果的に着用する方法を知りません。
 
-If desired, they can wear armor anyway (though they’ll be clumsy in it), or they can gain training in the proper use of armor (with the various Armor Proficiency feats — light, medium, and heavy — and the Shield Proficiency feat), or they can multiclass to add a class that grants them armor proficiency. Even if a wizard or sorcerer is wearing armor with which he or she is proficient, however, it might still interfere with spellcasting.
+必要に応じて、彼らはとにかく鎧を着ることもできます（着方が不器用ではありますが）、または鎧の適切な使用法（軽、中、重のさまざまな鎧熟練特技と盾熟練特技を使用して）の訓練を受けることもできます ）、またはマルチクラス化して、鎧の熟練度を付与するクラスを追加することもできます。 ただし、たとえ魔法使いや魔術師が熟練した鎧を着ていたとしても、それでも呪文の詠唱を妨げる可能性があります。
 
-Armor restricts the complicated gestures that a wizards or sorcerer must make while casting any spell that has a somatic component (most do). The armor and shield descriptions list the arcane spell failure chance for different armors and shields.
+アーマーは、魔法使いや魔術師が身体要素を含む呪文を唱えるときに行う必要がある複雑なジェスチャーを制限します (ほとんどの場合そうします)。 鎧と盾の説明には、さまざまな鎧と盾の秘術スペルが失敗する確率がリストされています。
 
-By contrast, bards not only know how to wear light armor effectively, but they can also ignore the arcane spell failure chance for such armor. A bard wearing armor heavier than light or using any type of shield incurs the normal arcane spell failure chance, even if he becomes proficient with that armor.]]-- Wizards and sorcerers do not know how to wear armor effectively.
+対照的に、バードは軽い鎧を効果的に着用する方法を知っているだけでなく、そのような鎧の秘術スペルの失敗確率を無視することができる。軽い鎧よりも重い鎧を着たり、何らかの盾を使ったりするバードは、たとえその鎧に習熟したとしても、通常の秘術スペルの失敗確率を負う。]]
 
-s_pal_code			="Code of Conduct"	s_pal_code_d	="A paladin must be of lawful good alignment and loses all class abilities if she ever willingly commits an evil act.\n\nAdditionally, a paladin's code requires that she respect legitimate authority, act with honor (not lying, not cheating, not using poison, and so forth), help those in need (provided they do not use the help for evil or chaotic ends), and punish those who harm or threaten innocents."
-s_pal_asso			="Associates"		s_pal_asso_d	="While she may adventure with characters of any good or neutral alignment, a paladin will never knowingly associate with evil characters, nor will she continue an association with someone who consistently offends her moral code.\n\nA paladin may accept only henchmen, followers, or cohorts who are lawful good."
+s_pal_code			="行動規範"	s_pal_code_d	="パラディンはロウフルグッドでなければならず、悪事を働いた場合、すべてのクラス能力を失う。\n\nさらに、パラディンの掟では、正当な権威を尊重すること、名誉ある行動(嘘をつかないこと、ごまかさないこと、毒を使わないことなど)、困っている人を助けること(ただし、悪事や混沌とした目的のために助けを使わないことが条件)が求められている。 無実の人々を傷つけたり脅したりする者を罰する。"
+s_pal_asso			="仲間"		s_pal_asso_d	="パラディンはグッドまたはナチュラルな立場のキャラクターと冒険することはできますが、故意にエビルなキャラクターと付き合ったり、常に道徳律に反する人物と付き合ったりすることは決してありません。\n\nパラディンは、ロウフルグッドである子分、信奉者、または仲間のみを受け入れることができます。"
 
-s_ex_bbn			="Ex-Barbarians"	s_ex_bbn_d	="A barbarian who becomes lawful loses the ability to rage and cannot gain more levels as a barbarian. He retains all the other benefits of the class (damage reduction, fast movement, trap sense, and uncanny dodge)."
-s_ex_brd			="Ex-Bards"			s_ex_brd_d	="A bard who becomes lawful in alignment cannot progress in levels as a bard, though he retains all his bard abilities."
-s_ex_clr			="Ex-Clerics"		s_ex_clr_d	="A cleric who grossly violates the code of conduct required by his god loses all spells and class features, except for armor and shield proficiencies and proficiency with simple weapons. He cannot thereafter gain levels as a cleric of that god until he atones (see the atonement spell description)."
-s_ex_drd			="Ex-Druids"		s_ex_drd_d	="A druid who ceases to revere nature, changes to a prohibited alignment, or teaches the Druidic language to a nondruid loses all spells and druid abilities (including her animal companion, but not including weapon, armor, and shield proficiencies). She cannot thereafter gain levels as a druid until she atones (see the atonement spell description)."
-s_ex_mnk			="Ex-Monks"			s_ex_mnk_d	="A monk who becomes nonlawful cannot gain new levels as a monk but retains all monk abilities.\n\nA monk who gains a new class or raises another class by a level may never again raise her monk level, though she retains all her monk abilities."	s_ex_mnk_b	="新しいクラスを取得したり、他のクラスをレベルアップした場合は、モンクとしての能力は保持されるが、それ以降モンクのレベルを再び上げることはできない。"
-s_ex_pal			="元パラディン"		s_ex_pal_d	="A paladin who ceases to be lawful good, who willfully commits an evil act, or who grossly violates the code of conduct loses all paladin spells and abilities.\n\nA paladin who gains a level in any class other than paladin may never again raise her paladin level, though she retains all her paladin abilities."	s_ex_pal_b	="新しいクラスを取得したり、他のクラスをレベルアップした場合は、パラディンとしての能力は保持されるが、それ以降パラディンのレベルを再び上げることはできない。"
+s_ex_bbn			="元バーバリアン"	s_ex_bbn_d	="ロウフルになったバーバリアンは激怒する能力を失い、バーバリアンとしてそれ以上のレベルを獲得することはできません。 彼はこのクラスの他のすべての利点 (ダメージの軽減、素早い動き、罠の感覚、驚異的な回避) を保持しています。"
+s_ex_brd			="元バード"			s_ex_brd_d	="アライメントがロウフルになったバードは、バードとしてのレベルを上げることはできないが、バードとしての能力はすべて保持している。"
+s_ex_clr			="元クレリック"		s_ex_clr_d	="神が要求する行動規範に著しく違反したクレリックは、鎧と盾の熟練度および単純な武器の熟練度を除いて、すべての呪文とクラスの特徴を失います。 その後、彼は罪を償うまでその神のクレリックとしてレベルを上げることはできません（罪滅ぼしの呪文の説明を参照）。"
+s_ex_drd			="元ドルイド"		s_ex_drd_d	="自然への畏敬をやめたり、禁止された属性に変更したり、非ドルイドにドルイドの言語を教えたりしたドルイドは、すべての呪文とドルイドの能力を失います（相棒の動物を含みますが、武器、鎧、盾の熟練度は含みません）。 その後、彼女は償うまでドルイドとしてレベルを上げることができません（償いの呪文の説明を参照）。"
+s_ex_mnk			="元モンク"			s_ex_mnk_d	="ロウフルでなくなったモンクは、モンクとして新たなレベルを獲得することはできませんが、モンクの能力はすべて保持されます。\n\nモンクが新しいクラスを取得したり、別のクラスをレベル上げした場合、モンクの能力はすべて保持されますが、モンクのレベルを二度と上げることはできません。 ." s_ex_mnk_b ="モンク以外のクラスでレベルを上げたモンクは、二度とモンクレベルを上げることはできません。"
+s_ex_pal			="元パラディン"		s_ex_pal_d	="ロウフルグッドでなくなったパラディン、故意に邪悪な行為を行ったパラディン、または行動規範に著しく違反したパラディンは、すべてのパラディンの呪文と能力を失います。\n\nパラディン以外のクラスでレベルを獲得したパラディンは、二度とレベルを上げることはできません。 " s_ex_pal_b = "パラディン以外のクラスでレベルを獲得したパラディンは、二度とパラディン レベルを上げることはできません。"
 
-s_illiteracy		="Illiteracy"	s_illiteracy_d	="Barbarians are the only characters who do not automatically know how to read and write. A barbarian may spend 2 skill points to gain the ability to read and write all languages he is able to speak.\n\nA barbarian who gains a level in any other class automatically gains literacy. Any other character who gains a barbarian level does not lose the literacy he or she already had."
-s_ex_langs			="Bonus Languages"
-s_ex_langs_clr_d	="A cleric’s bonus language options include Celestial, Abyssal, and Infernal (the languages of good, chaotic evil, and lawful evil outsiders, respectively). These choices are in addition to the bonus languages available to the character because of his race."
-s_ex_langs_drd_d	="A druid’s bonus language options include Sylvan, the language of woodland creatures. This choice is in addition to the bonus languages available to the character because of her race.\n\nA druid also knows Druidic, a secret language known only to druids, which she learns upon becoming a 1st-level druid. Druidic is a free language for a druid; that is, she knows it in addition to her regular allotment of languages and it doesn’t take up a language slot. Druids are forbidden to teach this language to nondruids.\n\nDruidic has its own alphabet."
-s_ex_langs_wiz_d	="A wizard may substitute Draconic for one of the bonus languages available to the character because of her race."
+s_illiteracy		="文盲"	s_illiteracy_d	="バーバリアンは、自動的に読み書きの方法を知らない唯一の登場人物です。 バーバリアンは 2 スキル ポイントを消費して、話せるすべての言語の読み書きができるようになります。\n\n他のクラスでレベルを獲得したバーバリアンは、自動的に読み書き能力を獲得します。 バーバリアンレベルを獲得した他のキャラクターは、すでに持っていた読み書き能力を失うことはありません。"
+s_ex_langs			="ボーナス言語"
+s_ex_langs_clr_d	="クレリックのボーナス言語の選択肢には、セレスティアル、アビサル、インファナル（それぞれグッド、カオティックエビル、ロウフルエビルのアウトサイダーの言語）がある。これらの選択肢は、そのキャラクターが種族によって利用できるボーナス言語に追加される。"
+s_ex_langs_drd_d	="ドルイドのボーナス言語オプションには、森の生き物の言語であるシルヴァンが含まれます。 この選択は、キャラクターの種族によって利用できるボーナス言語に加えて行われます。\n\nドルイドは、ドルイドだけが知っている秘密の言語であるドルイド語も知っています。ドルイドは、第 1 レベルのドルイドになるとそれを学びます。 ドルイド語はドルイドのための無料言語です。 つまり、彼女は通常の割り当て言語に加えてそれを知っており、言語スロットを占有しません。 ドルイドがこの言語をドルイド以外に教えることは禁じられています。\n\nドルイド語には独自のアルファベットがあります。"
+s_ex_langs_wiz_d	="ウィザードは、ドラコニック語を、その種族のためにキャラクターが使用できるボーナス言語の1つに代えることができる。"
 
-s_aln_spls			="Chaotic, Evil, Good, and Lawful Spells"
-s_aln_spls_d		="A cleric or druid can’t cast spells of an alignment opposed to his own or his deity’s (if he has one). Spells associated with particular alignments are indicated by the chaos, evil, good, and law descriptors in their spell descriptions."
-s_cvt_spls			="Spontaneous Casting"
-s_cvt_spls_d		=[[A cleric or druid can channel stored spell energy into other spells that he hasn’t prepared ahead of time.
+s_aln_spls			="カオティック、エビル、グッド、ロウフルの呪文"
+s_aln_spls_d		="クレリックやドルイドは、自分自身や自分の神（神を持っている場合）と対立するアライメントの呪文を唱えることはできない。特定のアライメントに関連する呪文は、その呪文の説明文のカオティック、エビル、グッド、ロウフルの記述子によって示される。"
+s_cvt_spls			="自発的なキャスト"
+s_cvt_spls_d		=[[クレリックやドルイドは、蓄えられた呪文エネルギーを、事前に準備していない他の呪文に振り向けることができます。
 
-A druid can channel stored spell energy into summoning spells that she hasn’t prepared ahead of time. She can “lose” a prepared spell in order to cast any summon nature’s ally spell of the same level or lower.
+ドルイドは、蓄えられた呪文エネルギーを、事前に準備していない召喚呪文に振り向けることができます。 彼女は、同じレベル以下の召喚自然の味方呪文を唱えるために、準備された呪文を「失う」ことができます。
 
-A good cleric (or a neutral cleric of a good deity) can channel stored spell energy into healing spells that the cleric did not prepare ahead of time. The cleric can “lose” any prepared spell that is not a domain spell in order to cast any cure spell of the same spell level or lower (a cure spell is any spell with “cure” in its name).
+グッドクレリック（またはグッド神のナチュラルなクレリック）は、蓄えられた呪文エネルギーを、事前に準備しなかった治癒呪文に振り向けることができます。 クレリックは、同じ呪文レベル以下のキュア呪文を唱えるために、領域呪文ではない準備された呪文を「失う」ことができます（治癒呪文とは、名前に「キュア」が含まれる呪文です）。
 
-An evil cleric (or a neutral cleric of an evil deity), can’t convert prepared spells to cure spells but can convert them to inflict spells (an inflict spell is one with “inflict” in its name).
+エビルクレリック（あるいはエビルな神のナチュラルクレリック）は、準備された呪文を治療呪文に変換することはできないが、加害呪文に変換することはできる（加害呪文とは、その名前に "インフリクト"が含まれる呪文のことである）。
 
-A cleric who is neither good nor evil and whose deity is neither good nor evil can convert spells to either cure spells or inflict spells (player’s choice). Once the player makes this choice, it cannot be reversed.<z> This choice also determines whether the cleric turns or commands undead.</z>]]
-s_cvt_spls_hr		="In current version, clerics can convert spells to either cure spells or inflict spells at will."
+グッドでもエビルでもなく、その神格がグッドでもエビルでもないクレリックは、呪文を治療呪文か加害呪文のいずれかに変換できる（プレイヤーの選択）。<z>この選択によって、クレリックがアンデッドを退散させるか命令するかを決定する。</z>]]
+s_cvt_spls_hr		="現在のバージョンでは、クレリックは呪文を任意に治療呪文または加害呪文に変換できます。"
 
-s_ftr_extra			="<b>特技の詳細：</b>いくつかの先進的な戦闘特技は、ファイターによってのみ学ぶことができます。"
-s_clr_extra			="<b>アンデッドの天敵： </b>クレリックは 《アンデッド退散》 を行うことができる。 《アンデッド退散》されたクリーチャーは行動できなくなり、退散を使用したものから遠ざかるように逃げる。"
-s_rog_sa			="Special Ability"	s_rog_sa_d	="10レベルとそれ以降の３レベル毎に（10,13,16,19...）、以下のオプションの中から特別な能力（または一般的な特技）が得られます："
-s_mnk_bns_feats_pre	="モンクは、これらの特技を選択するのに通常必要とされる前提条件を満たす必要がない："
+s_ftr_extra			="<b>特定の特技: </b>ファイターのみが習得できる高度な戦闘技もある。"
+s_clr_extra			="<b>アンデッドの天敵: </b>クレリックはアンデッドクリーチャーを退散させることができる。退散させられたアンデッドクリーチャーは手に負えなくなり、ディスペルから逃げ出す。"
+s_rog_sa			="特別な能力"	s_rog_sa_d	="10 レベルとその後 3 レベルごと (10、13、16...) で、次のオプションの中から特別な能力 (または代わりに一般特技) を獲得します。:"
+s_mnk_bns_feats_pre	="以下のレベルで特技を獲得します（前提条件は必要ありません）:"
 
 -- z_cls
 clss={
-[0]={n="保留中のクラス"	,d="クラスはまだ選択されていません。"},
+[0]={n="保留中のクラス"	,d="まだクラスが選択されていません。"},
 
-[cls_ftr]={n="ファイター", a="FTR"
-,b="さまざまな武器や装甲に精通した武術の達人。"
-,d="すべてのクラスの中で、ファイターは、武器と防具に対する比類のない技能で最高のオールラウンドな戦闘能力を持っています。ファイターが経験を積むにつれて、戦闘技能を強化する機会が増えます。"
-,d_wpns="単純武器、軍用武器。"
+[cls_ftr]={n="ファイター", a="Ftr"
+,b="様々な武器や防具を使いこなす格闘技の達人。"
+,d="すべてのクラスの中で、ファイターは最高の万能戦闘能力と武器と防具の比類のないスキルを持っています。 ファイターが経験を積むにつれて、戦闘スキルを向上させる機会が増えます。"
+,d_wpns="単純武器と軍用武器。"
 ,d_amrs="すべての鎧と盾。"
 },
 
-[cls_clr]={n="クレリック", a="CLR"
-,b="信仰魔法を用い、より高位の存在に仕える聖職の擁護者。"
-,d="クレリックは神性魔法の巨匠であり、特に癒しの能力に長けている。さらに、聖なるエネルギーの霊媒者として、クレリックはアンデッドのクリーチャーを退散させたり、破壊したりすることができる。クレリックはまた、いくつかの戦闘訓練を行っており、ほとんどの鎧と盾に精通している。"
+[cls_clr]={n="クレリック", a="Clr"
+,b="神聖な魔法を習得した神官のチャンピオン。"
+,d="クレリックは、特に治癒に優れた神聖な魔法の達人です。 さらに、神聖なエネルギーのチャネラーとして、クレリックはアンデッドのクリーチャーを追い払ったり、破壊したりすることさえできます。 クレリックはある程度の戦闘訓練も受けており、ほとんどの鎧や盾に精通しています。"
 ,d_wpns="単純武器。"
-,d_amrs="すべての鎧、ライト・シールド、ヘヴィ・シールド。"
+,d_amrs="すべての鎧、軽い盾と重い盾。"
 },
 
-[cls_wiz]={n="ウィザード", a="WIZ"
-,b="秘術を身につけた強力なスペルキャスター。"
-,d="ウィザードの強さは呪文で、それ以外は二次的なものです。 彼らは単純な武器や石弓を使用することはできるが、どのようなタイプの鎧や盾にも習熟していません。"-- They can use crossbows and several other simple weapons
-,d_wpns="クラブ、ダガー、ヘヴィ・クロスボウ、ライト・クロスボウ、クオータースタッフ。"
-,d_amrs="なし。Armor may cause arcane spells to fail. <ico=ico/_s_dots t=$s_spl_amr_nd>"
+[cls_wiz]={n="ウィザード", a="Wiz"
+,b="秘術を学んだ強力な呪文使い。"
+,d="ウィザードの強みは呪文です。 それ以外はすべて二の次です。 彼らはクロスボウや他のいくつかの単純な武器を使用できますが、いかなる種類の鎧や盾にも習熟していません。"
+,d_wpns="クラブ、ダガー、ヘビークロスボウ、ライトクロスボウ、クォータースタッフ。"
+,d_amrs="なし。 鎧は秘術呪文を失敗させる可能性があります。 <ico=ico/_s_dots t=$s_spl_amr_nd>"
 },
 
 [cls_rog]={n="ローグ", a="Rog"
-,b="巧妙で巧みな偵察と観察は、力技ではなく 《急所攻撃》によって戦いに勝利する。"
-,d="ローグは非常に高い技能を有しており、いくつかのカテゴリーの技能の向上に専念することができる。戦闘ではファイターには及ばないが、ローグは敵の急所を突く方法を熟知しており、《急所攻撃》で大ダメージを与えることができる。さらに、ローグは鋭い第六感を持っており身かわしや《回避》など様々な技能を習得している。"
-,d_wpns="単純武器、ハンド・クロスボウ、レイピア、サップ、ショートボウ、ショート・ソード。"
+,b="トリッキーで熟練したスカウトであり、力ずくではなく急所攻撃で戦いに勝つスパイです。"
+,d="ローグは高度なスキルを備えており、いくつかのカテゴリのスキルのいずれかを開発することに集中できます。 戦闘においてはファイターには及ばないものの、ローグは痛いところを突く方法を知っており、急所攻撃で大きなダメージを与えることができます。 さらに、ローグは鋭い第六感を持っています。 彼らは回避と回避のさまざまなスキルを習得します。"
+,d_wpns="単純武器、ハンドクロスボウ、レイピア、サップ、ショートボウ、ショートソード。"
 ,d_amrs="軽装鎧。"
 },
 
 [cls_bbn]={n="バーバリアン", a="Bbn"
-,b="怒りと本能により敵を倒す凶暴な戦士。"
-,d="バーバリアンは優秀な戦士です。戦場における戦闘技能は訓練と規律に由来し、怒りの効果を発揮します。"
-,d_wpns="単純武器、軍用武器。"
-,d_amrs="軽装鎧、中装鎧、ライト・シールド、ヘヴィ・シールド。"
+,b="怒りと本能で敵を倒す凶暴な戦士。"
+,d="バーバリアンは優れた戦士です。 しかし、ファイターの戦闘スキルは訓練と規律によってもたらされるのに対し、バーバリアンは強力な怒りを持っています。"
+,d_wpns="単純武器と軍用武器。"
+,d_amrs="軽装と中装鎧、軽装と重装の盾。"
 },
 
 [cls_mnk]={n="モンク", a="Mnk"
-,b="激しく素早い《素手打撃》を行う武勇の達人で、異国情緒あふれる能力の持ち主でもある。"
-,d="モンクの最大の特徴は、鎧なしで素手で戦えること、体の「気」を使って様々な驚くべき技能を発揮できることである。モンクはまた、並外れた警戒心を持っており、無意識のうちに攻撃を回避することができる。"
-,d_wpns="クラブ、ライト・クロスボウ、ヘヴィ・クロスボウ、ダガー、スローイング・アックス、ジャヴェリン、カマ、ヌンチャク、クオータースタッフ、サイ、シュリケン、シャンガム、スリング。"
-,d_amrs="なし。May not wear armor or shields. <ico=ico/_s_dots t=$s_mnk_amr>"
-},-- Gains feats (no prerequisites required) at the following levels:
+,b="素手での打撃が速くて強烈な武道家であり、珍しい力の達人でもあります。"
+,d="モンクの大きな特徴は、丸腰で戦うことができることだ。彼女は 気 と呼ばれる微細なエネルギーを操り、驚異的な技を繰り出すことができる。また、意識していなくても攻撃をかわすことができる超自然的な意識も持っている。"
+,d_wpns="クラブ、ライトクロスボウ、ヘビークロスボウ、ダガー、スローイングアクス、ジャベリン、カマ、ヌンチャク、クォータースタッフ、サイ、シュリケン、シャンガム、スリング。"
+,d_amrs="なし。 鎧や盾を着用することはできません。 <ico=ico/_s_dots t=$s_mnk_amr>"
+},
 
 [cls_sor]={n="ソーサラー", a="Sor"
-,b="先天的な魔法能力を持つスペルキャスター。"
-,d="ソーサラーは、入念な訓練や研究よりも、生得的な力で呪文を発動する。これらの魔法は論理的ではなく直感的である。ソーサラーはウィザードよりもゆっくりと強力な呪文を習得し、呪文をより頻繁に発動することがでる。また、事前に呪文を選び準備する必要もない。"
+,b="生まれながらに魔法の才能を持つ魔法使い。"
+,d="ソーサラーは、注意深い訓練や研究を通じてではなく、生来の力によって呪文を唱えます。 彼らの魔法は論理的ではなく直感的です。 ソーサラーはウィザードよりも知っている呪文が少なく、強力な呪文を習得するのがウィザードよりも遅いですが、より頻繁に呪文を唱えることができ、事前に呪文を選択して準備する必要がありません。"
 ,d_wpns="単純武器。"
-,d_amrs="なし。Armor may cause arcane spells to fail. <ico=ico/_s_dots t=$s_spl_amr_nd>"
+,d_amrs="なし。 鎧は秘術呪文を失敗させる可能性があります。 <ico=ico/_s_dots t=$s_spl_amr_nd>"
 },
 
 [cls_pal]={n="パラディン", a="Pal"
-,b="A champion of justice and destroyer of evil, protected and strengthened by an array of divine powers."
-,d="Divine power protects the paladin and gives her special powers. It wards off harm, protects her from disease, lets her heal herself, and guards her heart against fear. The paladin can also direct this power to help others, healing their wounds or curing diseases. Finally, the paladin can use this power to detect and destroy evil."
-,d_wpns="単純武器、軍用武器。"
-,d_amrs="すべての鎧、ライト・シールド、ヘヴィ・シールド。"
-},-- "Paladin"	
+,b="正義の擁護者であり悪の破壊者であり、さまざまな神聖な力によって保護され、強化されています。"
+,d="神の力がパラディンを守り、彼女に特別な力を与えます。 それは危害を避け、病気から守り、自分自身を癒し、恐怖から心を守ります。 パラディンは、この力を他の人を助け、傷を癒したり、病気を治したりするために向けることもできます。 最後に、パラディンはこの力を利用してエビルを検出し、破壊することができます。"
+,d_wpns="単純武器と軍用武器。"
+,d_amrs="すべての鎧、軽い盾と重い盾。"
+},
 
 [cls_rgr]={n="レンジャー", a="Rgr"
-,b="A cunning, skilled warrior of the wilderness."
-,d="A ranger can use a variety of weapons and is quite capable in combat. His skills allow him to survive in the wilderness, to find his prey, and to avoid detection. He also has special knowledge about certain types of creatures, which makes it easier for him to find and defeat such foes. Finally, an experienced ranger has such a tie to nature that he can actually draw upon natural power to cast divine spells, much as a druid does."
-,d_wpns="単純武器、軍用武器。"
-,d_amrs="軽装鎧、ライト・シールド、ヘヴィ・シールド。"
+,b="狡猾で熟練した荒野の戦士。"
+,d="レンジャーはさまざまな武器を使用でき、戦闘において非常に有能です。 彼のスキルにより、彼は荒野で生き残り、獲物を見つけ、発見を避けることができます。 彼はまた、特定の種類のクリーチャーに関する特別な知識を持っているため、そのような敵を見つけて倒すことが容易になります。 最後に、経験豊富なレンジャーは自然と非常に結びついており、ドルイドと同じように、実際に自然の力を利用して神聖な呪文を唱えることができます。"
+,d_wpns="単純武器と軍用武器。"
+,d_amrs="軽鎧、軽盾、重盾。"
 },
 
 [cls_drd]={n="ドルイド", a="Drd"
-,b="One who draws energy from the natural world to cast divine spells and gain strange magical powers."
-,d="Druids cast divine spells much the same way clerics do, though most get their spells from the power of nature rather than from deities. Their spells are oriented toward nature and animals. In addition to spells, druids gain an increasing array of magical powers, including the ability to take the shapes of animals, as they advance in level. The armor of druids are restricted by traditional oaths. Wearing metal armor would suppress their druidic powers."
-,d_wpns="Club, dagger, dart, quarterstaff, scimitar, sickle, shortspear, sling, and spear. Special: Natural weapons. <ico=ico/_s_dots t=$s_drd_nwpns>"
-,d_amrs="Light and medium armor, light and heavy shields. May not wear metal armor or shields. <ico=ico/_s_dots t=$s_drd_amr>"
-},-- "Druid"	
+,b="自然界からエネルギーを引き出して神聖な呪文を唱え、奇妙な魔法の力を得る者。"
+,d="ドルイドはクレリックとほぼ同じ方法で神の呪文を唱えますが、ほとんどのドルイドは神からではなく自然の力から呪文を得ます。 彼らの呪文は自然と動物を対象としています。 呪文に加えて、ドルイドはレベルが上がるにつれて、動物の形をとる能力など、ますます多くの魔法の力を獲得します。 ドルイドの鎧は伝統的な誓いによって制限されています。 金属の鎧を着ていると、ドルイドの力が抑制されてしまいます。"
+,d_wpns="クラブ、ダガー、ダーツ、クォータースタッフ、シミター、カマ、ショートスピア、スリング、スピア。 特殊：自然武器。 <ico=ico/_s_dots t=$s_drd_nwpns>"
+,d_amrs="軽装と中装鎧、軽装と重装の盾。 金属製の鎧や盾を着用することはできません。 <ico=ico/_s_dots t=$s_drd_amr>"
+},
 
-[cls_brd]={n="吟遊詩人", a="Brd"
-,b="A performer whose music works magic—a wanderer, a taleteller, and a jack-of-all trades."
-,d=[[A bard brings forth magic from his soul, not from a book. He can cast only a small number of spells, but he can do so without selecting or preparing them in advance. His magic emphasizes charms and illusions over the more dramatic evocation spells that wizards and sorcerers often use.
+[cls_brd]={n="バード", a="Brd"
+,b="魔法のような音楽を奏でるパフォーマー。放浪者、語り手、何でも屋。"
+,d=[[バードは本からではなく、魂から魔法を生み出します。 彼は少数の呪文しか唱えることができませんが、事前に呪文を選択したり準備したりせずに唱えることができます。 彼の魔法は、ソーサラーやウィザードがよく使う劇的な召喚呪文よりも、魅力と幻想を強調しています。
 
-In addition to spells, a bard works magic with his music and poetry. He can encourage allies, hold his audiences rapt, and counter magical effects that rely on speech or sound.
+呪文に加えて、バードは音楽と詩で魔法を使います。 彼は味方を励まし、聴衆を魅了し、言葉や音に依存する魔法の効果に対抗することができます。
 
-Bards have some of the skills that rogues have, although bards they are not as focused on skill mastery as rogues are. A bard listens to stories as well as telling them, of course, so he has a vast knowl-edge of local events and noteworthy items.]]
-,d_wpns="Simple weapons, longsword, rapier, sap, short sword, shortbow, and whip."
-,d_amrs="Light armor, light and heavy shields. Armor may cause arcane spells to fail, but bards can cast bard spells normally while wearing light armor. <ico=ico/_s_dots t=$s_spl_amr_nd>"
-},-- "Bard"		
+バードはローグが持つスキルの一部を持っていますが、バードはローグほどスキルの習得に重点を置いていません。 バードは、語るだけでなく話を聞くのはもちろん、地域の行事や名所などにも詳しい。]]
+,d_wpns="単純武器、ロングソード、レイピア、サップ、ショートソード、ショートボウ、ウイップ。"
+,d_amrs="軽装鎧、軽装と重装の盾。 鎧があると秘術呪文が失敗する可能性がありますが、吟遊詩人は軽鎧を着ていても吟遊詩人の呪文を通常通りに唱えることができます。 <ico=ico/_s_dots t=$s_spl_amr_nd>"
+},
 
-[cls_wrr]={n="ウォリアー"				},-- "Warrior"		
-[cls_adp]={n="アデプト"				},-- "Adept"		
-[cls_exp]={n="専門家"				},-- "Expert"		
-[cls_ars]={n="貴族"					},-- "Aristocrat"	
-[cls_cmm]={n="コモナー"				},-- "Commoner"		
+[cls_wrr]={n="戦士"		},
+[cls_adp]={n="達人"		},
+[cls_exp]={n="専門家"		},
+[cls_ars]={n="貴族"	},
+[cls_cmm]={n="平民"		},
 
-[cls_fr2]={n="ウォリアー"				},
-[cls_prs]={n="クレリック"				},
-[cls_shm]={n="ウィザード"				},
-[cls_non]={n="クラスなし"				,d=s_no_cls_d},-- "No Class"	"オブスキュア"
+[cls_fr2]={n="ウォーリアー"		},
+[cls_prs]={n="クレリック"		},
+[cls_shm]={n="ウィザード"		},
+[cls_non]={n="クラスなし"		,d=s_no_cls_d},-- Obscure
 }
 
 -- z_rog	游荡者	Rogue
-s_trap_sense		="Trap Sense"	s_trap_sense_d	=[[The character gains an intuitive sense that alerts her to danger from traps, giving her a +1 bonus on Reflex saves made to avoid traps and a +1 dodge bonus to AC against attacks made by traps.
+s_trap_sense		="罠感知"	s_trap_sense_d	=[[キャラクターは罠による危険を警告する直感的な感覚を獲得し、罠を回避するための反射セーブに +1 ボーナスを与え、罠による攻撃に対する AC に +1 回避ボーナスを与えます。
 
-These bonuses rise with the class level. Trap sense bonuses gained from multiple classes stack.
+これらのボーナスはクラスレベルに応じて増加します。 複数のクラスから得られる罠感知ボーナスは重複されます。
 
-<b>Increases:</b>
-Barbarian, Rogue: Starting at 3rd level, rise by +1 every 3 class levels thereafter (3, 6, 9...).
-Dwarven Defender: Starting at 4th level, rise by +1 every 4 class levels thereafter (4, 8, 12...).]]
-s_trap_find			="Trapfinding"	s_trap_find_d	=[[Rogues (and only rogues) can use the Search skill to locate traps when the task has a Difficulty Class higher than 20.
+<b>増加:</b>
+バーバリアン、ローグ: 3 レベルから開始し、その後 3 クラス レベル (3、6、9...) ごとに +1 ずつ上昇します。
+ドワーフディフェンダー: 4 レベルから開始し、その後 4 クラス レベルごとに +1 ずつ上昇します (4、8、12...)。]]
+s_trap_find			="罠探し"	s_trap_find_d	=[[タスクの難易度クラスが 20 より高い場合、ローグ (およびローグのみ) は罠探しスキルを使用してトラップを見つけることができます。
 
-Finding a nonmagical trap has a DC of at least 20, or higher if it is well hidden. Finding a magic trap has a DC of 25 + the level of the spell used to create it.
+非魔法の罠を見つけると、難易度は少なくとも 20、またはうまく隠されている場合はそれ以上になります。 魔法の罠を見つけるには、25 + 魔法の罠を作成するために使用された呪文のレベルの難易度がかかります。
 
-Rogues (and only rogues) can use the Disable Device skill to disarm magic traps. A magic trap generally has a DC of 25 + the level of the spell used to create it.
+ローグ (そしてローグのみ) は、装置無効化 スキルを使用して魔法の罠を解除できます。 魔法の罠の難易度は通常、25 + それを作成するために使用された呪文のレベルです。
 
-A rogue who beats a trap’s DC by 10 or more with a Disable Device check can study a trap, figure out how it works, and bypass it (with her party) without disarming it.]]
-s_sa				="《急所攻撃》"	s_sa_d	=[[If a rogue (or any other class with this ability) can catch an opponent when he is unable to defend himself effectively from her attack, she can strike a vital spot for extra damage.
+「装置無効化」チェックでトラップの 難易度 を 10 以上上回るローグは、トラップを研究し、その仕組みを理解して、解除せずに (パーティーとともに) トラップを回避できます。]]
+s_sa				="急所攻撃"	s_sa_d	=[[ローグ (またはこの能力を持つ他のクラス) が、相手の攻撃から効果的に身を守ることができないときに敵を捕まえることができた場合、急所を攻撃して追加ダメージを与えることができます。
 
-The rogue’s attack deals extra damage any time her target would be denied a Dexterity bonus to AC (whether the target actually has a Dexterity bonus or not), or when the rogue flanks her target. This extra damage is 1d6 at 1st level, and it increases by 1d6 every two rogue levels thereafter. Should the rogue score a critical hit with a sneak attack, this extra damage is not multiplied.
+ローグの攻撃は、ターゲットが AC へのDEXボーナスを拒否されたとき (ターゲットが実際にDEXボーナスを持っているかどうかに関係なく)、またはローグがターゲットの側面についたときに追加のダメージを与えます。 この追加ダメージは第 1 レベルで 1d6 で、その後はローグ レベル 2 つごとに 1d6 ずつ増加します。 ローグが急所攻撃でクリティカル ヒットを記録した場合、この追加ダメージは乗算されません。
 
-Ranged attacks can count as sneak attacks only if the target is within 30 feet.
+遠隔攻撃は、ターゲットが 30 フィート以内にある場合にのみ、急所攻撃としてカウントできます。
 
-A rogue can sneak attack only living creatures with discernible anatomies — undead, constructs, oozes, plants, and incorporeal creatures lack vital areas to attack. Any creature that is immune to critical hits is not vulnerable to sneak attacks. The rogue must be able to see the target well enough to pick out a vital spot and must be able to reach such a spot. A rogue cannot sneak attack while striking a creature with concealment or striking the limbs of a creature whose vitals are beyond reach.
+ローグが急所攻撃できるのは、解剖学的に識別できる生身のクリーチャーだけである。アンデッド、構築物、ウーズ、植物、および無実体のクリーチャーには、攻撃するための重要な部位がない。クリティカル・ヒットに免疫のあるクリーチャーは急所攻撃の対象にならない。ローグは対象をよく見て急所を見つけ、その急所に到達できなければならない。隠れているクリーチャーを攻撃しているときや、急所に手が届かないクリーチャーの手足を攻撃しているときは、ローグは急所攻撃を行えない。
 
-<b>Increases:</b>
-Rogue, Assassin: Starting at 1st level, rise by +1d6 every 2 class levels thereafter (1, 3, 5...).
-Arcane Trickster: Starting at 2nd level, rise by +1d6 every 2 class levels thereafter (2, 4, 6...).
-Blackguard: Starting at 4th level, rise by +1d6 every 3 class levels thereafter (4, 7, 10...).]]
-s_crippling_strike			="弱体化打撃"			s_crippling_strike_d		="《急所攻撃》によって傷ついた相手に、さらに2ポイントのStrダメージを与える。\n\n能力の低下は、戦闘全体に渡り累積可能であり、回復も可能である。"
-s_opportunist				="追い討ち"			s_opportunist_d				="1ラウンドに付き1回、別キャラクターが近接戦闘でダメージを受けた相手に対して機会攻撃を行うことができる。"
-s_evasion					="身かわし"			s_evasion_d					="反応セーヴに成功することでダメージを半減できる攻撃の対象となった場合、ローグはセーヴィング・スローに成功すればダメージを全く受けずにすむ。軽装鎧を装備している時か、鎧を装備していない時にのみ使用できる。"
-s_improved_evasion			="身かわし強化"		s_improved_evasion_d		="身かわし強化と同様ですが、セーブに失敗した場合でもダメージは半分で済む。"
-s_uncanny_dodge				="直感回避"			s_uncanny_dodge_d			="移動不能状態を除いて立ちすくみ状態の時でもDexボーナスをACに適用します。\n\n<b>Special: </b>バーバリアンやローグが二回目(セカンド・クラスの時)に直感回避を得た場合、その代わりに直感回避強化を得る。"
-s_improved_uncanny_dodge	="直感回避強化"		s_improved_uncanny_dodge_d	="攻撃者のローグレベルがターゲットのバーバリアンレベルとローグレベルの合計よりも少なくとも４以上でなければ、挟撃は使用できない。"-- z_new	You can no longer be flanked (so rogues cannot use flank attacks to sneak attack you), unless the attacker has at least 4 rogue levels higher than the sum of your class levels that gained uncanny dodge.
-s_defensive_roll			="打撃のいなし"		s_defensive_roll_d			="戦闘ごとに1回、武器により攻撃され、そのダメージが致命傷の場合、反応セーヴを試みます。成功した場合、ダメージは半分となります。\n\nACに【敏捷力】ボーナスが必要です。"
-s_slippery_mind				="心術破り"			s_slippery_mind_d			="［精神作用］の影響を受けてセーヴィング・スローに失敗した場合は、1ラウンド後に再試行できます。"
+<b>増加:</b>
+ローグ、アサシン: 1 レベルから開始し、その後 2 クラス レベルごとに +1d6 上昇します (1、3、5...)。
+アーケイントリックスター: 2 レベルから開始し、その後 2 クラス レベルごとに +1d6 上昇します (2、4、6...)。
+ブラックガード: 4 レベルから開始し、その後 3 クラス レベル (4、7、10...) ごとに +1d6 ずつ上昇します。]]
+s_crippling_strike			="致命的な打撃"			s_crippling_strike_d		="あなたの急所攻撃によってダメージを受けた敵も 2 ポイントの STR ダメージを受けます。\n\nダメージを受けた能力は戦闘全体にわたって持続し、重複可能で回復可能です。"
+s_opportunist				="機会攻撃"				s_opportunist_d				="ラウンドごとに 1 回、別のキャラクターによって近接攻撃でダメージを受けたばかりの相手に対して機会攻撃を行うことができます。"
+s_evasion					="回避"					s_evasion_d					="通常、セーブに成功すると半分のダメージを与える攻撃に対して反射セーヴィング スローを成功させると、代わりにダメージを受けません。\n\n軽装鎧を着ているか鎧を着ていない場合、負荷が軽く無力ではない場合に限ります。"
+s_improved_evasion			="回避力の向上"			s_improved_evasion_d		="回避と同様に機能し、さらにセーブに失敗した場合のダメージは半分だけです。"
+s_uncanny_dodge				="驚異的な回避"			s_uncanny_dodge_d			="動けなくなっている場合を除き、立ちすくみであっても AC に対する DEX ボーナスを維持します。\n\n<b>特殊: </b>キャラクターが 2 回目に不気味な回避を獲得する場合 (2 番目のクラスの場合)、代わりに改善された不気味な回避を獲得します。 彼女がまだそれを持っていない場合。"
+s_improved_uncanny_dodge	="改良された驚異的な回避"	s_improved_uncanny_dodge_d	="攻撃者が驚異的な回避を獲得したクラス レベルの合計より少なくとも 4 高いローグ レベルを持っていない限り、あなたを側面攻撃することはできなくなります (そのため、ローグは側面攻撃を使用してあなたを急所攻撃することはできません)。"
+s_defensive_roll			="ディフェンシブロール"			s_defensive_roll_d			="戦闘ごとに 1 回、武器で攻撃され、そのダメージがあなたを殺すのに十分な場合、反射セーヴィング スローを試みます。 成功すればダメージは半分で済みます。 \n\nAC には DEX ボーナスが必要です。"
+s_slippery_mind				="スリッッピーマインド"			s_slippery_mind_d			="精神に影響を与える効果を受けてセーヴィング・スローに失敗した場合、1ラウンド後に再度挑戦することができます。"
 -- z_bbn	野蛮人	Barbarian
-s_rage						="激怒"				s_rage_d					=[[内に眠る凶暴さを呼び覚まし、血の狂乱の雄叫びを上げ、驚異的な【筋力】と耐久性を得るが、防御が甘くなる。
+s_rage						="レイジ"						s_rage_d					=[[血の叫びの狂乱の中に飛び込むと、キャラクターは驚異的な強さと耐久性を獲得しますが、無謀で自分を守ることができなくなります。
 
-StrとConに +4 の士気ボーナス、意志セーブに +2 の士気ボーナス、ACに -2、10バーバリアンレベルごとにStrとConに +2、激怒に +1 の 意志修正値。
+激怒すると、キャラクターは一時的に STR と CONに +4 ボーナスを獲得し、士気セーヴに +2 士気ボーナスを獲得しますが、AC に -2 ペナルティを受けます。
 
-激怒終了後、戦闘が終了するまでの間疲労状態となる（-2 Str、-2 Dex、《突撃》不可）
+激怒が終わると、キャラクターは現在のエンカウントの間疲労状態になります（STR と DEX に -2 ペナルティ、チャージできません）。
 
-最終ラウンド：3 + Con修正値（激怒）
-1日の使用回数：1 + バーバリアンレベル / 4
-遭遇ごとに１回のみ使用可能]]
-s_rage_3					="Greater Rage"		s_rage_3_d					="Bonuses to Str and Con during rage each increase to +6, and morale bonus on Will saves increases to +3. The penalty to AC remains at –2."
-s_rage_4					="Mighty Rage"		s_rage_4_d					="Bonuses to Str and Con during rage each increase to +8, and morale bonus on Will saves increases to +4. The penalty to AC remains at –2."
-s_indomitable_will			="不屈の意思"			s_indomitable_will_d		="激怒中、［精神作用］に抵抗するため意思セーブに +4のボーナスを得る。"
-s_tireless_rage				="無疲労激怒"			s_tireless_rage_d			="激怒の後の疲労状態を回避する。"
-s_fast_movement				="高速移動"			s_fast_movement_d			="+2 基本移動速度。重装鎧を装備したり重い荷物を持った場合は効果が失われます。"
+最終ラウンド: 3 + CON 修正 (激怒)。
+1 日あたりの使用量: 1 + レベル / 4。
+1回の遭遇につき1回までしか使用できません。]]
+s_rage_3					="グレーターレイジ"				s_rage_3_d					="激怒中のSTRとCONへのボーナスはそれぞれ+6に増加し、意志セーブの士気ボーナスは+3に増加します。 AC へのペナルティは -2 のままです。"
+s_rage_4					="マイティレイジ"				s_rage_4_d					="激怒中のSTRとCONへのボーナスはそれぞれ+8に増加し、意志セーブの士気ボーナスは+4に増加します。 AC へのペナルティは -2 のままです。"
+s_indomitable_will			="不屈の意志"			s_indomitable_will_d		="激怒している間、精神に影響を及ぼす効果に抵抗するための士気セーヴに+4のボーナス。"
+s_tireless_rage				="タイアレスレイジ"			s_tireless_rage_d			="怒りの後に疲労しなくなりました。"
+s_fast_movement				="ファストムーブメント"			s_fast_movement_d			="基本速度+2。 重い鎧や重い荷物を着ていると効果が失われます。"
 -- z_pal	圣武士
-s_divine_grace		="Divine Grace"		s_divine_grace_d		="Gains a bonus equal to Cha bonus on all saving throws."
-s_divine_health		="Divine Health"	s_divine_health_d		="Gains immunity to all diseases, including supernatural and magical diseases."
-s_aura_of_courage	="Aura of Courage"	s_aura_of_courage_d		="A paladin is immune to fear. Each ally within 10 feet of her gains a +4 morale bonus on saving throws against fear effects.\n\nThis ability functions only while the paladin is conscious."
-s_special_mount		="Special Mount"	s_special_mount_d		="A paladin gains the service of an unusually intelligent, strong, and loyal steed to serve her in her crusade against evil."
-s_remove_disease_2	="Remove Disease"	s_remove_disease_2_d	="A paladin can produce a remove disease effect, as the spell.\n\nUses per week: 1 + (level - 6) / 3. Minimum 1."
-s_aura_of_good		="Aura of Good"		s_aura_of_good_d		="The power of a paladin’s aura of good is equal to her level."
-s_aura_of_evil		="Aura of Evil"		s_aura_of_evil_d		="The power of a blackguard’s aura of evil is equal to his class level plus his cleric level, if any."
-s_aura_of_law		="Aura of Law"		s_aura_of_law_d			="The power of a paladin’s aura of law is equal to her level."
-s_aura_of_chaos		="Aura of Chaos"	s_aura_of_chaos_d		="The power of a paladin’s aura of chaos is equal to her level."
-s_detect_good_2		="Detect Good"		s_detect_good_2_d		="You can sense the presence of good."
-s_detect_evil_2		="Detect Evil"		s_detect_evil_2_d		="You can sense the presence of evil."
-s_detect_law_2		="Detect Law"		s_detect_law_2_d		="You can sense the presence of law."
-s_detect_chaos_2	="Detect Chaos"		s_detect_chaos_2_d		="You can sense the presence of chaos."
-s_smite_good		="Smite Good"		s_smite_good_d			="A blackguard may attempt to smite good with melee attacks.\n\nShe adds her Cha bonus to her attack roll and deals 1 extra point of damage per level.\n\nUses per day: 1 + level / 5."
-s_smite_evil		="Smite Evil"		s_smite_evil_d			="A paladin may attempt to smite evil with melee attacks.\n\nShe adds her Cha bonus to her attack roll and deals 1 extra point of damage per level.\n\nUses per day: 1 + level / 5."
-s_smite_law			="Smite Law"		s_smite_law_d			="A paladin may attempt to smite law with melee attacks.\n\nShe adds her Cha bonus to her attack roll and deals 1 extra point of damage per level.\n\nUses per day: 1 + level / 5."
-s_smite_chaos		="Smite Chaos"		s_smite_chaos_d			="A paladin may attempt to smite chaos with melee attacks.\n\nShe adds her Cha bonus to her attack roll and deals 1 extra point of damage per level.\n\nUses per day: 1 + level / 5."
-s_lay_on_hands		="Lay on Hands"		s_lay_on_hands_d		=[[A paladin with a Cha bonus can heal wounds (her own or those of others) by touch.
+s_divine_grace		="ディバイングレース"		s_divine_grace_d		="すべてのセーヴィング スローで CHA ボーナスと同じボーナスを獲得します。"
+s_divine_health		="ディバインヘルス"	s_divine_health_d		="超自然的な病気や魔法の病気を含むすべての病気に対する免疫を獲得します。"
+s_aura_of_courage	="オーラオブカレッジ"	s_aura_of_courage_d		="パラディンは恐怖の影響を受けません。 彼女の 10 フィート以内にいる各味方は、恐怖効果に対するセーヴィング スローで +4 の士気ボーナスを獲得します。\n\nこの能力はパラディンが意識がある間のみ機能します。"
+s_special_mount		="スペシャルマウント"	s_special_mount_d		="パラディンは、エビルとの戦いで彼女に仕えるために、異常にINTがあり、強く、忠実な馬の奉仕を得ます。"
+s_remove_disease_2	="リムーブディシーズ"	s_remove_disease_2_d	="パラディンは呪文として病気を取り除く効果を生み出すことができる。\n\n1週間あたりの使用量: 1 + (レベル - 6) / 3.最小 1."
+s_aura_of_good		="グッドオーラ"		s_aura_of_good_d		="パラディンのグッドのオーラの力は彼女のレベルに等しい。"
+s_aura_of_evil		="エビルオーラ"		s_aura_of_evil_d		="ブラックガードのエビルのオーラの力は、そのクラス レベルにクレリックレベルを加えたものに等しい。"
+s_aura_of_law		="ロウフルオーラ"		s_aura_of_law_d			="キャラクターのロウフルのオーラの力はそのレベルに等しい。"
+s_aura_of_chaos		="カオティックオーラ"	s_aura_of_chaos_d		="キャラクターのカオティックのオーラの力はそのレベルに等しい。"
+s_detect_good_2		="ディテクトグッド"		s_detect_good_2_d		="グッドの存在を感じることができます。"
+s_detect_evil_2		="ディテクトエビル"		s_detect_evil_2_d		="エビルの存在を感じることができます。"
+s_detect_law_2		="ディテクトロウフル"		s_detect_law_2_d		="ロウフルの存在を感じることができます。"
+s_detect_chaos_2	="ディテクトカオティック"		s_detect_chaos_2_d		="カオティックの存在を感じることができます。"
+s_smite_good		="スマイトグッド"		s_smite_good_d			="ブラックガードは近接攻撃でグッドを攻撃しようとするかもしれません。\n\n彼女は攻撃ロールに CHA ボーナスを追加し、レベルごとに 1 ポイントの追加ダメージを与えます。\n\n1 日あたりの使用量: 1 + レベル / 5。"
+s_smite_evil		="スマイトエビル"		s_smite_evil_d			="パラディンは近接攻撃でエビルを打ち負かそうとするかもしれません。\n\n彼女は攻撃ロールに CHA ボーナスを追加し、レベルごとに 1 ポイントの追加ダメージを与えます。\n\n1 日あたりの使用量: 1 + レベル / 5。"
+s_smite_law			="スマイトロウフル"		s_smite_law_d			="キャラクターは近接攻撃でロウフルを打ち負かそうとすることができます。\n\n彼女は攻撃ロールに CHA ボーナスを追加し、レベルごとに 1 ポイントの追加ダメージを与えます。\n\n1 日あたりの使用量: 1 + レベル / 5。"
+s_smite_chaos		="スマイトカオティック"		s_smite_chaos_d			="キャラクターは近接攻撃でカオティックを打とうと試みることができます。\n\n彼女は攻撃ロールに CHA ボーナスを追加し、レベルごとに 1 ポイントの追加ダメージを与えます。\n\n1 日あたりの使用量: 1 + レベル / 5。"
+s_lay_on_hands		="レイオンハンズ"		s_lay_on_hands_d		=[[CHA ボーナスを持つパラディンは、触れることで傷 (自分の傷または他人の傷) を治すことができます。
 
-Healing points per day: level x Cha bonus. The healing can be divided among several uses.
+1 日あたりの回復ポイント: レベル x CHA ボーナス。 治癒はいくつかの用途に分けることができます。
 
-This ability can also be used to strike undead: after a successful melee touch attack (doesn’t provoke AOs), the paladin can spend the points to deal damage to the undead.]]
+この能力は、アンデッドを攻撃するためにも使用できます。近接接触攻撃が成功した後（AO を誘発しません）、パラディンはポイントを消費してアンデッドにダメージを与えることができます。]]
 
 
 -- z_adv_cls
-s_adv_cls_lv_lmt	="Level Limit"
-s_adv_cls_dc		="Any prestige class feature that calculates a save DC using the class level should add only half the character’s class levels above 10th."
-s_race_no_dragon	="Any nondragon (cannot already be a half-dragon)"
-s_skl_x_ranks		="%s %d ranks"
-s_skl_xx_ranks		="%s (any %d) %d ranks in each"
-s_req_free_arcane	="Ability to cast arcane spells without preparation"
-s_req_arcane_lv		="Ability to cast level-%d arcane spells"
-s_req_divine_lv		="Ability to cast level-%d divine spells"
-s_req_divine_arcane	="Ability to cast level-%d divine spells and level-%d arcane spells"
+s_adv_cls_lv_lmt	="レベル制限"
+s_adv_cls_dc		="クラスレベルを使用してセーブ難易度を計算する上級クラス機能は、10位以上のキャラクターのクラスレベルの半分のみを追加する必要があります。"
+s_race_no_dragon	="ドラゴン以外のもの(ハーフドラゴンにはなれない)"
+s_skl_x_ranks		="%s %d ランク"
+s_skl_xx_ranks		="%s (任意の %d) %d ランクがそれぞれにあります"
+s_req_free_arcane	="準備なしで秘術呪文を唱える能力"
+s_req_arcane_lv		="レベル-%dの秘術呪文を唱える能力"
+s_req_divine_lv		="レベル-%dの神聖な呪文を唱える能力"
+s_req_divine_arcane	="レベル-%d の神聖な呪文とレベル-%d の秘術の呪文を唱える能力"
 -- z_req_spls
-s_req_spls_zat		="Ability to cast mage hand and at least one arcane spell of 3rd level or higher"
-s_req_spls_zlm		="Able to cast seven different divination spells, one of which must be 3rd level or higher"
-s_req_spls_ztt		="Able to cast lesser planar ally"
-s_req_spls_zam		="knowledge of 5th-level or higher spells from at least five schools"
+s_req_spls_zat		="メイジハンドと少なくとも1つの第3レベル以上の秘術呪文を唱える能力"
+s_req_spls_zlm		="7種類の占いの呪文を唱えることができ、そのうちの1つは3レベル以上でなければならない。"
+s_req_spls_ztt		="より小さい低次元の味方を唱えることができる。"
+s_req_spls_zam		="少なくとも 5 つの流派の 5 レベル以上の呪文の知識"
 -- z_req_ex
-s_req_ex_hi_evil	="Have made peaceful contact with an evil outsider who was summoned by the character or someone else"
+s_req_ex_hi_evil	="キャラクターまたは他の誰かによって召喚されたアウトサイダーと平和的に接触したことがある"
 --s_req_ex_sel_drgn	="Choose a dragon variety when taking the first level in this prestige class"
-s_req_ex_ass_kill	="Kill someone for no other reason than to join the assassins"
+s_req_ex_ass_kill	="アサシンに加わる以外の理由で人を殺すこと"
 
-s_zdd_amrs="すべての鎧と盾。"									s_zdd_wpns="単純武器、軍用武器。"
-s_zbg_amrs="すべての鎧、ライト・シールド、ヘヴィ・シールド。"		s_zbg_wpns="単純武器、軍用武器。"
-s_zaa_amrs="軽装鎧、中装鎧、ライト・シールド、ヘヴィ・シールド。"	s_zaa_wpns="単純武器、軍用武器。"
-s_zdu_amrs="なし。"											s_zdu_wpns="単純武器、軍用武器。"
-s_zsd_amrs="軽装鎧。"											s_zsd_wpns="club, crossbow (hand, light, or heavy), dagger, dart, mace, morningstar, quarterstaff, rapier, sap, shortbow, and short sword."
-s_zas_amrs="軽装鎧。"											s_zas_wpns="crossbow (hand, light, or heavy), dagger, dart, rapier, sap, shortbow, and short sword."
+s_zdd_amrs="すべての鎧と盾。"								s_zdd_wpns="単純武器と軍用武器"
+s_zbg_amrs="すべての鎧、軽い盾と重い盾。"				s_zbg_wpns="単純武器と軍用武器"
+s_zaa_amrs="軽装と中装鎧、軽装と重装の盾。"	s_zaa_wpns="単純武器と軍用武器"
+s_zdu_amrs="なし。"												s_zdu_wpns="単純武器と軍用武器"
+s_zsd_amrs="軽装鎧。"										s_zsd_wpns="クラブ、クロスボウ (ハンド、ライト、またはヘビー)、ダガー、ダーツ、メイス、モーニングスター、クォータースタッフ、レイピア、サップ、ショートボウ、ショートソード。"
+s_zas_amrs="軽装鎧。"										s_zas_wpns="クロスボウ（ハンド、ライト、またはヘビー）、ダガー、ダーツ、レイピア、サップ、ショートボウ、ショートソード。"
 
-s_bns_scl			="Bonus Spellcasting Level"	s_bns_scl_b	="When leveling up this class, the effective spellcasting level of a spellcasting class is also increased."
-s_bns_scl_d			=[[When a new level of this prestige class is gained, the character gains new spells per day (and spells known, if applicable) as if he had also gained a level in a spellcasting class he belonged to before adding the prestige class. He does not, however, gain any other benefit a character of that class would have gained, except for an increased effective level of spellcasting.
+s_bns_scl			="ボーナス呪文詠唱レベル"	s_bns_scl_b	="このクラスをレベルアップすると、呪文詠唱クラスの有効な呪文詠唱レベルも増加します。"
+s_bns_scl_d			=[[この上級クラスの新しいレベルが獲得されると、キャラクターは上級クラスを追加する前に属していた呪文詠唱クラスのレベルも獲得したかのように、1 日あたり新しい呪文 (および該当する場合は既知の呪文) を獲得します。 ただし、彼は、呪文詠唱の有効レベルの増加を除いて、そのクラスのキャラクターが得られるであろう他の恩恵を得ることができません。
 
-This essentially means that he adds the level of the prestige class to the level of some other spellcasting class the character has, then determines spells per day, spells known, and caster level accordingly.
+これは基本的に、そのキャラクターが持っている他の呪文クラスのレベルに上級クラスのレベルを加え、それに応じて1日あたりの呪文、既知の呪文、キャスター・レベルを決定することを意味する。
 
-If a character had more than one spellcasting class before adding the prestige class, he must decide to which class he adds each level of the prestige class for the purpose of determining spells per day.
+上級クラスを追加する前に、キャラクターが複数の呪文クラスを持っていた場合、1日あたりの呪文を決定する目的で、上級クラスの各レベルをどのクラスに追加するかを決定しなければならない。
 
-<b>Special:</b>
-Arcane Trickster, Loremaster, Thaumaturgist: the previous spellcasting class can be any spellcasting class.
-Arcane Archer: the previous spellcasting class must be an arcane spellcasting class.
-Eldritch Knight: the previous spellcasting class must be an arcane spellcasting class, and it takes effect from eldritch knight level 2.
-Archmage: the previous spellcasting class must be an arcane spellcasting class in which the character could cast 7th-level spells.
-Mystic Theurge: applied on both a previous arcane spellcasting class and a previous divine spellcasting class.
-Elemental Lord: the previous spellcasting class must be an arcane spellcasting class, and it takes effect only at even-numbered levels before 10th level. After 10th level, it takes effect at each level.]]
-s_bns_scl_zaa		="No bonus spellcasting level for Arcane Archer."
-s_sel_cbt_cls		="Select a combat class"
-s_sel_cst_cls		="Select a spellcasting class"
-s_sel_arcane_cls	="Select an arcane spellcasting class"
-s_sel_divine_cls	="Select a divine spellcasting class"
+<b>特別:</b>
+アーケイントリックスター、ロアマスター、ソーマタージスト: 前の呪文詠唱クラスは任意の呪文詠唱クラスにすることができます。
+アーケインアーチャー: 前の呪文詠唱クラスは秘術呪文詠唱クラスでなければなりません。
+エルドリッチナイト: 前の呪文詠唱クラスは秘術呪文詠唱クラスでなければならず、エルドリッチナイトレベル 2 から有効になります。
+アークメイジ: 以前の呪文詠唱クラスは、キャラクターが第 7 レベルの呪文を詠唱できる秘術呪文詠唱クラスでなければなりません。
+ミスティックサージ: 以前の秘術呪文詠唱クラスと以前の神聖な呪文詠唱クラスの両方に適用されます。
+エレメンタルロード: 前の呪文詠唱クラスは秘術呪文詠唱クラスである必要があり、それは 10 レベルより前の偶数レベルでのみ有効になります。 10レベル以降は各レベルで有効になります。]]
+s_bns_scl_zaa		="アーケインアーチャーのボーナス呪文詠唱レベルはありません。"
+s_sel_cbt_cls		="戦闘クラスを選択してください"
+s_sel_cst_cls		="呪文詠唱クラスを選択してください"
+s_sel_arcane_cls	="秘術呪文詠唱クラスを選択してください"
+s_sel_divine_cls	="神聖な呪文を唱えるクラスを選択する"
 
 
-s_zaa	="Arcane Archer"	s_zaa_b	="An arcane spellcaster who draws upon ancient elven traditions to infuse his arrows with potent magical power."
-s_zaa_d	=[[Master of the elven warbands, the arcane archer is a warrior skilled in using magic to supplement her combat prowess. Beyond the woods, arcane archers gain renown throughout entire kingdoms for their supernatural accuracy with a bow and their ability to imbue their arrows with magic. In a group, they can strike fear into an entire enemy army.
+s_zaa	="アーケインアーチャー"	s_zaa_b	="古代エルフの伝統を利用して矢に強力な魔法の力を吹き込む秘術の呪術師。"
+s_zaa_d	=[[エルフの戦士団のマスターである秘術の射手は、戦闘能力を補うために魔法を使うことに熟練した戦士です。 森の向こうでは、秘術の射手がその超自然的な弓の正確さと、矢に魔法を吹き込む能力で王国全体で名声を博しています。 集団で行動すると、敵軍全体に恐怖を与えることができます。
 
-Many who seek to perfect the use of the bow sometimes pursue the path of the arcane archer. Arcane archers are masters of ranged combat, as they possess the ability to strike at targets with unerring accuracy and can imbue their arrows with powerful spells. Arrows fired by arcane archers fly at weird and uncanny angles to strike at foes around corners, and can pass through solid objects to hit enemies that cower behind such cover. At the height of their power, arcane archers can fell even the most powerful foes with a single, deadly shot.
+弓の使い方を完璧にしようとする多くの人が、時にはアーケインアーチャーの道を追求します。 アーケインアーチャーは、確実な精度で標的を攻撃する能力を持ち、矢に強力な呪文を吹き込むことができるため、遠距離戦闘の達人です。 アーケインアーチャーによって放たれる矢は、奇妙で不気味な角度で飛んで角を曲がった敵を攻撃し、固体物体を通過して遮蔽物の後ろにうずくまる敵を攻撃することもできます。 アーケインアーチャーは、その力が最高潮に達すると、最も強力な敵であっても一発の致命的な射撃で倒すことができます。
 
 
-<b>Base Classes: </b>Those who have trained as both rangers and wizards excel as arcane archers, although other multiclass combinations are not unheard of. Fighters, rangers, paladins, and barbarians become arcane archers to add a little magic to their combat abilities. Conversely, wizards and sorcerers may take this prestige class to add combat capabilities to their repertoire. Monks, clerics, druids, rogues, and bards rarely become arcane archers.
+<b>基本クラス: </b>レンジャーとウィザードの両方として訓練を受けた者はアーケインアーチャーとして優れていますが、他のマルチクラスの組み合わせも前例がないわけではありません。 ファイター、レンジャー、パラディン、バーバリアンは、戦闘能力に魔法を加えるためにアーケインアーチャーになります。 逆に、ウィザードやソーサラーは、戦闘能力をレパートリーに追加するためにこの上級クラスを取得する場合があります。 モンク、クレリック、ドルイド、ローグ、バードがアーケインアーチャーになることはめったにありません。
 
-<b>Role: </b>Arcane archers deal death from afar, winnowing down opponents while their allies rush into hand-to-hand combat. With their capacity to unleash hails of arrows on the enemy, they represent the pinnacle of ranged combat.
+<b>ロール: </b>アーケインアーチャーは遠くから死をもたらし、味方が白兵戦に突入する間、敵を追い詰めます。 敵に矢の雨を降らせる能力を備えた彼らは、遠距離戦闘の頂点を表します。
 
-<b>Alignment: </b>Arcane archers can be of any alignment. Elf or half-elf arcane arches tend to be free-spirited and are rarely lawful. Similarly, it is uncommon for elven arcane archers to be evil, and overall the path of the arcane archer is more often pursued by good or neutral characters.
+<b>アライメント: </b>アーケインアーチャーはどのような属性でも構いません。 エルフまたはハーフエルフのアーケインアーチャーは自由精神を持つ傾向があり、ロウフルであることはほとんどありません。 同様に、エルフのアーケインアーチャーがエビルであることはまれであり、全体としてアーケインアーチャーの道はグッドまたはナチュラルのキャラクターによって追求されることが多くなります。
 
-<b>Non-adventurers: </b>Arcane archers may be found wherever elves travel. Arcane archers often lead units of normal archers or form small, elite units formed entirely of arcane archers. These units are one of the prime reasons that the elves are so feared in battle.]]
+<b>非冒険者: </b>エルフが旅するところならどこでも、アーケインアーチャーを見つけることができます。 アーケインアーチャーは通常の射手の部隊を率いるか、アーケインアーチャーだけで構成される小規模なエリート部隊を形成することがよくあります。 これらの部隊は、エルフが戦闘において非常に恐れられる主な理由の 1 つです。]]
 
-s_zat	="Arcane Trickster"	s_zat_b	="A troublemaker and a scoundrel who uses arcane magic to enhance her thievery and trickery."
-s_zat_d	=[[Few can match the guile and craftiness of arcane tricksters. These prodigious thieves blend the subtlest aspects of the arcane with the natural cunning of the bandit and the scoundrel, using spells to enhance their natural thieving abilities. Arcane tricksters can pick locks, disarm traps, and lift purses from a safe distance using their magical legerdemain, and as often as not seek humiliation as a goal to triumph over their foes than more violent solutions.
+s_zat	="アーケイントリックスター"	s_zat_b	="トラブルメーカーであり、秘術魔法を使って窃盗と策略を強化する悪党。"
+s_zat_d	=[[アーケイン・トリックスターの悪知恵と狡猾さに匹敵する者はほとんどいない。この天才的な盗賊は、盗賊や悪党の生来の狡猾さと秘術魔術の微妙な側面を融合させ、呪文を使って生来の盗賊能力を高めている。アーケイントリックスターは、安全な距離から魔法を駆使して鍵を開け、罠を解除し、財布を持ち上げることができる。
 
-Arcane tricksters combine their knowledge of spells with a taste for intrigue, larceny, or just plain mischief. They are among the most adaptable of adventurers. Arcane tricksters tend to use a seat-of-the-pants approach to adventuring, loading up on spells that improve their stealth and mobility.
+アーケイントリックスターは、呪文の知識と陰謀、窃盗、または単なるいたずらの好みを組み合わせます。 彼らは冒険者の中で最も順応性の高い人物の一人です。 アーケイントリックスターは、ステルス性と機動性を向上させる呪文を積み込みながら、冒険に臨機応変に取り組む傾向があります。
 
 
-<b>Base Classes: </b>The path to becoming an arcane trickster is a natural progression for rogues who have supplemented their talents for theft with the study of the arcane. Arcane spellcasting and the sneak attack ability are needed to qualify for this class, making it a natural choice for multiclass wizard/rogues, sorcerer/rogues, or bard/rogues, although other combinations are possible. Assassins occasionally opt for this class, but usually only if they already have wizard or sorcerer levels.
+<b>基本クラス: </b>アーケイントリックスターへの道は、窃盗の才能をアーケインの研究で補ったローグにとっては自然な流れである。このクラスの資格を得るには、アーケインスペルキャスティングと急所攻撃能力が必要であるため、マルチクラスのウィザード／ローグ、ソーサラー／ローグ、バード／ローグの自然な選択となるが、他の組み合わせも可能である。アサシンがこのクラスを選ぶこともあるが、たいていはすでにウィザードかソーサラーのレベルを持っている場合に限られる。
 
-<b>Role: </b>With their mastery of magic, arcane tricksters can make for even more subtle or confounding opponents than standard rogues. Ranged legerdemain enhances their skill as thieves, and their ability to make sneak attacks without flanking or as part of a spell can make arcane tricksters formidable damage-dealers.
+<b>ロール: </b>魔法を使いこなすアーケイントリックスターは、標準的なローグよりもさらに巧妙で混乱させることができる。範囲攻撃は彼らの盗賊としての技能を高め、側面攻撃や呪文の一環としての急所攻撃は、アーケイントリックスターを手強いダメージ・ディーラーにすることができる。
 
-<b>Alignment: </b>All arcane tricksters have a penchant for mischief and thievery, and are therefore never lawful. Although they sometimes acquire their magical abilities through the studious path of wizardry, their magical aptitude more often stems from a sorcerous bloodline. As such, many arcane tricksters are of a chaotic alignment.
+<b>アライメント: </b>すべてのアーケイントリックスターはいたずらと盗みを好み、したがって決してロウフルではない。魔法使いの道を究めることで魔法の能力を身につけることもあるが、彼らの魔法の適性はウィザードの血筋に由来することの方が多い。そのため、多くのアーケイントリックスターはカオティックアラインメントである。
 
-<b>Non-adventurers: </b>Arcane tricksters are most often found in large, cosmopolitan cities where their talents for magical larceny can be most effectively put to use, prowling the streets and stealing from the unwary. An arcane trickster is just the sort of person that might bump into you in a crowded tavern. (Check your pockets.)]]
+<b>非冒険者: </b>アーケイントリックスターは、魔法の窃盗の才能を最も効果的に活用できる大規模で国際的な都市でよく見られ、街路を徘徊し、不注意な者から窃盗を行います。 アーケイントリックスターは、まさに混雑した居酒屋でぶつかりそうな人物です。 （ポケットを確認してください。）]]
 
-s_zam	="Archmage"	s_zam_b	="A great magical artist who bend spells in ways unavailable to other spellcasters."
-s_zam_d	=[[The highest art is magic—often referred to as the Art. Its most advanced practitioners are frequently archmages, characters who bend spells in ways unavailable to other spellcasters. An archmage gains strange powers and the ability to alter spells in remarkable ways, but must sacrifice some of her spell capability in order to master these arcane secrets.
+s_zam	="アークメイジ"	s_zam_b	="他の術者には不可能な方法で呪文を変化させる偉大な魔法の芸術家。"
+s_zam_d	=[[最高のアートはマジックであり、しばしばアートと呼ばれる。アークメイジは他の術者には不可能な方法で呪文を変化させるキャラクターである。アークメイジは不思議な力と、驚くべき方法で呪文を変化させる能力を得るが、これらの秘術を習得するためには、呪文の能力の一部を犠牲にしなければならない。
 
 
-<b>Base Classes: </b>Most archmages are purely wizards or sorcerers. They rarely multiclass, choosing instead to concentrate on perfecting their arcane skills.
+<b>基本クラス: </b>ほとんどのアークメイジは純粋にウィザードまたはソーサラーです。 彼らはマルチクラスになることはほとんどなく、代わりに秘術スキルを完璧にすることに集中することを選択します。
 
-<b>Role: </b>It's rare to see an archmage in an adventure. For the archmage, time spent outside of arcane research is an absolute waste. Sometimes individual archmages who will temporarily join up with other adventurers for special purposes. In battle, as long as the front line does not fall, the archmage can provide the group with endless and unparalleled arcane firepower in the back row.
+<b>ロール: </b>冒険でアークメイジを見るのは珍しいです。 アークメイジにとって、秘術の研究以外に費やす時間はまったくの無駄です。 場合によっては、特別な目的のために一時的に他の冒険者と合流する個々のアークメイジ。 戦闘では、前線が倒れない限り、アークメイジは後列で無限かつ比類のない神秘的な火力をグループに提供できます。
 
-<b>Alignment: </b>Like arcane itself, there is no good or evil, morality, duty or emotion in the archmage's code, the only thing worth spending time on is arcane. Archmages are usually neutral. The world may divide archmages into specific alignments according to what they do, and either be grateful to them or hate them. All of these are meaningless to an archmage, but are just additional effects of his arcane quests.
+<b>アライメント: </b>秘儀そのものと同様に、アークメイジの掟には善悪、道徳、義務、感情はなく、時間を費やす価値があるのは秘儀だけです。アークメイジは通常中立です。世界はアークメイジを彼らの行動に応じて特定の配列に分け、彼らに感謝するか憎むかのどちらかかもしれません。これらはすべてアークメイジにとって無意味であり、彼の秘儀クエストの追加効果にすぎません。
 
-<b>Non-adventurers: </b>Archmages in urban areas often hold positions of power in magic-focused guilds. Their pursuit of arcane excellence and their familiarity with high arcana place them above most of their peers. Some archmages choose a more solitary path, often eschewing society to study in quietude.]]
+<b>非冒険者: </b>都市部のアークメイジは、魔法を中心としたギルドで権力の座に就いていることがよくあります。 彼らは秘術の卓越性を追求し、ハイアルカナに精通しているため、ほとんどの仲間よりも優れています。 アークメイジの中には、より孤独な道を選び、社会を避けて静かに勉強する人もいます。]]
 
-s_zas	="Assassin"	s_zas_b	="A remorseless murderer who kills for money and the sheer thrill of death-dealing."
-s_zas_d	=[[A mercenary undertaking his task with cold, professional detachment, the assassin is equally adept at espionage, bounty hunting, and terrorism. At his core, an assassin is an artisan, and his medium is death. Trained in a variety of killing techniques, assassins are among the most feared classes.
+s_zas	="アサシン"	s_zas_b	="金のために人を殺す無慈悲な殺人者と、死の取引の純粋なスリル。"
+s_zas_d	=[[冷静かつプロとしての任務を遂行する傭兵であるアサシンは、スパイ活動、賞金稼ぎ、テロリズムにも同様に熟達しています。 アサシンは本質的には職人であり、その媒体は死です。 さまざまな殺害技術を訓練されたアサシンは、最も恐れられる階級の 1 つです。
 
-The assassin is the master of dealing quick, lethal blows. Assassins also excel at infiltration and disguise. Assassins often function as spies, informants, killers for hire, or agents of vengeance. Their training in anatomy, stealth, poison, and the dark arts allows them to carry out missions of death with shocking, terrifying precision.
+アサシンは素早く致命的な打撃を与える達人です。 アサシンは潜入と変装にも優れています。 アサシンは多くの場合、スパイ、情報提供者、雇われの殺し屋、または復讐の代理人として機能します。 彼らは解剖学、ステルス、毒薬、そして闇の芸術の訓練を受けており、衝撃的で恐ろしい正確さで死の任務を遂行することができます。
 
 
-<b>Base Classes: </b>Most rogues, monks, and bards who choose this class become examples of the classic assassin skulking in the shadows with a blade carrying certain death. Fighters, ex-paladins, rangers, druids, and barbarians operate as warrior assassins, with as much ability to kill in combat as from the shadows. Sorcerers, wizards, and clerics may be the most terrifying assassins of all, for with their spells they can infiltrate and slay with even greater impunity. While nearly any class is capable of becoming an assassin, rogues suit the part more than any other, from both an ability viewpoint and an ideological one. Though they make excellent allies during combat, assassins excel in more clandestine situations, and the best assassins are the ones the victims never knew existed.
+<b>基本クラス: </b>このクラスを選んだローグ、モンク、バードのほとんどは、確実な死を運ぶ刃を携えて影にこもる古典的なアサシン見本となる。ファイター、元パラディン、レンジャー、ドルイド、バーバリアンは戦士のアサシンとして活動し、影からと同様に戦闘で殺す能力を持つ。ソーサラー、ウィザード、クレリックは最も恐ろしいアサシンかもしれない。彼らは呪文によって潜入し、さらに堂々と殺すことができるからだ。ほとんどすべてのクラスがアサシンになれるが、ローグは能力的にも思想的にも、他のどのクラスよりもアサシンに適している。アサシンは戦闘時には優れた味方になるが、より密かな状況での活躍が得意であり、最高のアサシンは犠牲者がその存在を知らないものである。
 
-<b>Role: </b>Assassins tend to be loners by nature, seeing companions as liabilities at best. Sometimes an assassin's missions put him in the company of adventurers for long stretches at a time, but few people are comfortable trusting a professional assassin to watch their backs in a fight, and are more likely to let the emotionless killer scout ahead or help prepare ambushes.
+<b>ロール: </b>アサシンは本質的に孤独である傾向があり、仲間をせいぜい負債と見なします。 アサシンの任務では、一度に長時間にわたって冒険者たちと行動を共にすることもあるが、プロのアサシンに戦いの背後を見守ってもらうことに抵抗を感じない人はほとんどおらず、感情のない殺人者に先回りして偵察させたり、待ち伏せの準備を手伝ったりする可能性が高い。
 
-<b>Alignment: </b>Due to its necessary selfishness and callous indifference toward taking lives, the assassin class attracts those with evil alignments more than any others. Because the profession requires a degree of self-discipline, chaotic characters are ill suited to becoming these shadowy killers. Neutral characters sometimes become assassins, frequently thinking of themselves as simple professionals performing a job, yet the nature of their duties inevitably pushes them toward an evil alignment.
+<b>アライメント: </b>アサシンというクラスは、その必要不可欠な利己主義と、命を奪うことへの冷淡な無関心さゆえに、他のどのクラスよりもエビルのアラインメントを持つ者を惹きつける。この職業はある程度の自己規律を必要とするため、カオティックのキャラクターはこのような影の殺人者になるには不向きである。ニュートラルのキャラクターはアサシンになることがあり、自分自身を単純な仕事をこなすプロフェッショナルだと考えていることが多いが、その職務の性質上、必然的にエビルのアライメントに傾く。
 
-<b>Non-adventurers: </b>Assassins work in guilds or secret societies found hidden in cities or based in remote fortresses in the wilderness. Sometimes they serve more powerful evil characters singly or in a group. Occasionally an assassin works alone, but only the most capable are willing to operate without any sort of support or backup.]]
+<b>非冒険者: </b>アサシンは、都市に隠れたり、荒野の人里離れた要塞に拠点を置いたりするギルドや秘密結社で活動しています。 時には、彼らは単独またはグループで、より強力なエビルのキャラクターに仕えます。 アサシンが単独で活動することもありますが、いかなる支援やバックアップも受けずに行動しようとするのは最も有能な者だけです。]]
 
-s_zbg	="Blackguard"	s_zbg_b	="A symbol of evil and a mortal fiend, the blackguard is the antithesis of the paladin."
-s_zbg_d	=[[The blackguard epitomizes evil. He is nothing short of a mortal fiend. The quintessential black knight, this villain carries a reputation of the foulest sort that is very well deserved. Consorting with demons and devils and serving dark deities, the blackguard is hated and feared by all. Some people call these villains antipaladins due to their completely evil nature.
+s_zbg	="ブラックガード"	s_zbg_b	="エビルの象徴であり死すべき悪魔であるブラックガードはパラディンの対極です。"
+s_zbg_d	=[[ブラックガードはエビルの象徴です。 彼はまさに凶悪な悪魔です。 典型的な黒騎士であるこの悪役は、最も卑劣な評判を持っており、それは当然のことです。 デーモンやデビルと共生し、闇の神に仕えるブラックガードは、皆から憎まれ、恐れられています。 完全に邪悪な性質を持つこれらの悪役をアンチパラディンと呼ぶ人もいます。
 
-The blackguard has many options available to him — sending forth dark minions and servants to do his bidding, attacking with stealth and honorless guile, or straightforward smiting of the forces of good that stand in his way.
+ブラックガードには、自分の命令を遂行するために闇の手下や召使いを送り出す、ステルスと不名誉な狡猾さで攻撃する、あるいは立ちはだかるグッドの勢力を真っ向から打ち破るなど、多くの選択肢がある。
 
 
-<b>Base Classes: </b>Fighters, ex-paladins, rangers, monks, druids, and barbarians make for indomitable combat-oriented blackguards, while rogues and bards who become blackguards are likely to stress the subtle aspects of their abilities and spells. Sorcerers, wizards, and clerics who become blackguards are sometimes called diabolists and favor dealing with fiends even more than other blackguards do.
+<b>基本クラス: </b>ファイター、元パラディン、レンジャー、モンク、ドルイド、バーバリアンは不屈の戦闘志向のブラックガードになり、ブラックガードになるローグやバードは能力や呪文の微妙な側面を強調する傾向が強い。ブラックガードになるソーサラー、ウィザード、クレリックは、時に悪魔主義者と呼ばれ、他のブラックガード以上に魔物を相手にすることを好む。
 
-<b>Role: </b>The moment a living person sees a blackguard is usually the last moment of his life, and there is basically no place for these evil warriors in a normal adventuring party. Occasionally some adventurers are forced by circumstances to work with a blackguard, in disgust and alienation at the same time they can not deny the blackguard's strength at the front of the group.
+<b>ロール: </b>生きている人間がブラックガードを見る瞬間は、通常、その人生の最後の瞬間であり、通常の冒険パーティーにこれらの邪悪な戦士の居場所は基本的にありません。 時折、冒険者の中には、嫌悪感と疎外感を抱えながらも、グループの先頭に立っているブラックガードの強さを否定できず、事情によりブラックガードと協力することを余儀なくされる人もいる。
 
-<b>Alignment: </b>The blackguard is indisputably of an evil alignment. Blood, plague, disaster and destruction, these lingering infamies determine the blackguard has no connection with good even neutral. Blackguards usually tend to be chaotic, a few obey more powerful evil presence and tend to be lawful.
+<b>アライメント: </b>ブラックガードは紛れもなくエビルのアライメントを持つ。血、疫病、災害、破壊、これらの長引く悪名は、ブラックガードが中立であってもグッドとは無縁であることを決定づける。ブラックガードは通常カオティックである傾向があるが、より強力なエビルの存在に従順な者は少なく、ロウフルである傾向がある。
 
-<b>Non-adventurers: </b>Blackguards usually lead legions of undead, evil outsiders, or other monsters to conquer their own doomed demesne or expand their existing territory. Sometimes they serve more powerful evil characters as dark lieutenants. On occasion they operate alone as hired killers or wandering purveyors of ill, destruction, and chaos.]]
+<b>非冒険者: </b>ブラックガードは通常、アンデッド、エビルアウトサイダー、その他のモンスターの軍団を率いて、自分たちの破滅的な領地を征服したり、既存の領地を拡大したりする。時には、より強力な悪のキャラクターに暗黒の副官として仕えることもある。時には雇われの殺し屋として、あるいは病と破壊と混沌の放浪者として単独で活動することもある。]]
 
-s_zdr	="Dragon Disciple"	s_zdr_b	="An arcane spellcaster who has embraced his latent draconic heritage and, over the course of training and devotion, undergoes a partial transformation into a dragon."
-s_zdr_d	=[[As some of the most ancient, powerful, and capricious creatures in existence, dragons occasionally enter into trysts with unsuspecting mortals or sire offspring with exceptional individuals. Every child of this union unto the thousandth generation claims a bit of dragon blood, be it ever so small. Likewise, the great power wielded by these creatures has long intrigued wizards and alchemists who have sought various magical methods to infuse their bodies with draconic power. As a result, the blood of dragons runs through the veins of many races. For some, this heritage manifests as a sorcerous bloodline and a predilection for magic; for others, however, the power of their draconic ancestors becomes an obsession.
+s_zdr	="ドラゴンディサイプル"	s_zdr_b	="秘儀の呪文使いで、潜在的なドラコニックの遺産を受け入れ、訓練と献身の過程で、ドラゴンに部分的に変身します。"
+s_zdr_d	=[[現存する最も古く、強力で気まぐれなクリーチャーの一部として、ドラゴンは時折、無防備な定命の者と密会をしたり、例外的な個体と子孫を残したりします。 この組合の子供は千世代に至るまで、たとえそれが非常に小さいものであっても、少しずつドラゴンの血を主張しています。 同様に、これらの生き物が行使する偉大な力は、自分たちの体に竜の力を注入するためのさまざまな魔法の方法を模索してきたウィザードやアルケミストたちの長い間興味をそそってきました。 その結果、多くの種族に竜の血が流れている。 一部の人にとって、この伝統はソーサラーの血統や魔術への偏愛として現れます。 しかし、竜の祖先の力が強迫観念になる人もいます。
 
-Spellcasters who embrace their draconic heritage and learn to channel their abilities can become dragon disciples, fearsome warriors who possess not only the repertoire of an accomplished sorcerer but also the ability to unleash the furious power of dragons upon their foes. As dragon disciples discover the power of their forebears, they can learn to breathe fire, take flight on leathery wings, and—at the pinnacle of their abilities—assume the form of a dragon.
+ドラコニックの血統を受け入れ、その能力を活用することを学んだ術者は、ドラゴンの弟子となることができる。この弟子は、熟練したソーサラーのレパートリーだけでなく、ドラゴンの猛烈なパワーを敵に放つ能力を持つ恐るべき戦士である。ドラゴンの弟子たちは先祖の力を発見するにつれ、火を吐くことを学び、皮のような翼で空を飛び、そして能力の頂点ではドラゴンの姿になることができる。
 
 
-<b>Base Classes: </b>Most dragon disciples are barbarians, fighters, or rangers who have dabbled as sorcerers or bards. Occasionally, a serious spellcaster explores the path to further a goal of finding out more about his draconic heritage, though at the expense of most of his arcane studies. Clerics and druids rarely choose to become dragon disciples. Already adept at magic, many pursue adventure, especially if it furthers their goal of finding out more about their draconic heritage.
+<b>基本クラス: </b>ほとんどのドラゴンディサイプルは、ソーサラーやバードとして手を出したバーバリアン、ファイター、またはレンジャーです。 時折、真剣な術者は、秘術研究のほとんどを犠牲にしてでも、自分の竜の遺産についてさらに知るという目標をさらに進める道を模索します。 クレリックやドルイドがドラゴンディサイプルになることを選択することはほとんどありません。 すでに魔法に熟達しており、特に竜族の伝統についてさらに知るという目標をさらに進める場合、多くの人が冒険を追求します。
 
-<b>Role: </b>With the magic of a spellcasting class at their disposal, dragon disciples can assume the typical role of a magic-user, hampering the movement of the enemy and hurling damage-dealing spells at their opponents. Dragon disciples' draconic abilities, however, make these versatile spellcasters even more formidable, as they use their breath weapons and flight to destroy their foes directly.
+<b>ロール: </b>術者クラスの魔法を自由に使えるため、ドラゴンディサイプルは敵の動きを妨げ、ダメージを与える呪文を敵に投げつけるという、典型的な術者の役割を担うことができます。 しかし、ドラゴンディサイプルの竜の能力は、ブレス武器と飛行を使用して敵を直接破壊するため、これらの多用途の術者をさらに手ごわいものにします。
 
-<b>Alignment: </b>Those dragon disciples that assume the traits of chromatic dragons, such as bestial white and fearsome red dragons, have a proclivity for evil. Conversely, those that take after the metallic dragons, such as stoic brass and chivalric gold dragons, are often of good alignments.
+<b>アライメント: </b>獣のような白竜や恐ろしい赤竜など、色竜の特徴を受け継ぐドラゴンディサイプルたちは、エビルの傾向を持つ。逆に、ストイックなブラスドラゴンや騎士道精神に溢れたゴールドドラゴンなど、メタリックドラゴンの特徴を受け継ぐものは、多くの場合、グッドに傾く。
 
-<b>Non-adventurers: </b>Dragon disciples prefer a life of exploration to a cloistered existence. Dragon disciples are drawn to areas known to harbor dragons. Although they are rare, dragon disciples can be found in any land where dragons interact with mortals.]]
+<b>非冒険者: </b>ドラゴンディサイプルは隠遁生活よりも探検生活を好みます。 ドラゴンディサイプルたちは、ドラゴンの生息地として知られる地域に引き寄せられます。 まれではありますが、ドラゴンディサイプルは、ドラゴンが定命の者たちと交流するあらゆる土地で見つけることができます。]]
 
-s_zdu	="Duelist"	s_zdu_b	="A swashbuckling swordfighter who relies upon grace, poise, and acrobatics to win the day."
-s_zdu_d	=[[The duelist (sometimes known as the swashbuckler) is a nimble, intelligent fighter trained in making precise attacks with light weapons, such as the rapier. Duelists are often found in those regions that possess elaborate rules and etiquette for battle.
+s_zdu	="デュエリスト"	s_zdu_b	="優雅さ、落ち着き、そしてアクロバットに頼って勝利を掴む、勇敢な剣士。"
+s_zdu_d	=[[デュエリスト (剣士として知られることもあります) は、レイピアなどの軽い武器で正確な攻撃を行うように訓練された機敏で知的なファイターです。 デュエリストは、戦いのための緻密なルールや作法を持つ地域に多く見られます。
 
-Duelists represent the pinnacle of elegant swordplay. They move with a grace unmatched by most foes, parrying blows and countering attacks with swift thrusts of their blades. They thrive in melee, where their skill with the blade allows them to make sudden attacks against clumsy foes and to cripple opponents with particularly well-placed thrusts of the blade.
+デュエリストはエレガントな剣術の頂点を表します。 彼らはほとんどの敵が比類のない優雅さで動き、打撃を受け流し、刃の素早い突き出しで攻撃に反撃します。 彼らは近接戦闘で活躍し、刃のスキルにより、不器用な敵に対して突然攻撃を加えたり、特に適切な場所に刃を突き刺して敵を麻痺させたりすることができます。
 
-Duelists always take full advantage of their quick reflexes and wits in fights. Rather than wearing bulky armor, duelists feel the best way to protect themselves is not to get hit at all. While others flounder on treacherous terrain, duelists charge nimbly across the battlefield, leaping and tumbling into the fray.
+デュエリストは、戦いにおいて常に素早い反射神経と機知を最大限に活用します。 デュエリストは、かさばる鎧を着るよりも、まったく攻撃を受けないことが身を守る最善の方法であると考えています。 他の者が危険な地形でもがいている一方で、デュエリストは戦場を機敏に突進し、飛び跳ねたり転がりながら争いに加わっていく。
 
 
-<b>Base Classes: </b>Duelists are most often fighters or rangers, but almost as often are rogues or bards. Wizards, sorcerers, and monks make surprisingly good duelists due to those classes’ lack of reliance on armor. They benefit greatly from the weapon skill the duelist offers. Some paladins and barbarians who deviate a good deal from their archetypes become duelists.
+<b>基本クラス: </b>デュエリストはファイターかレンジャーであることがほとんどですが、ローグやバードであることもほぼ同じです。 ウィザード、ソーサラー、モンクは、これらのクラスが鎧に依存していないため、驚くほど優れたデュエリストになります。 彼らはデュエリストが提供する武器スキルから大きな恩恵を受けます。 パラディンやバーバリアンの中には、その原型から大きく逸脱した者がデュエリストになる場合があります。
 
-<b>Role: </b>The abilities of duelists complement those rogues or bards who wish to accentuate their fighting prowess but, because of their lack of heavy armor, are afraid to leap into combat. Duelists fight in the forefront alongside fighters, barbarians, and other melee combatants, deftly avoiding the blades of their opponents while expertly targeting their vulnerabilities.
+<b>ロール: </b>デュエリストの能力は、自分の戦闘能力を強調したいが、重い鎧がないために戦闘に飛び込むことを恐れているローグやバードを補完します。 デュエリストはファイター、バーバリアン、その他の近接戦闘員とともに最前線で戦い、敵の刃を巧みに避けながら敵の弱点を巧みに狙います。
 
-<b>Alignment: </b>Duelists can be of any alignment, although since most hail from backgrounds as rogues or bards, they tend to eschew lawful behavior. Lawful duelists are not unheard of, however, and such duelists often adhere to a strict code of honor, refusing to attack unarmed or obviously inferior opponents.
+<b>アライメント: </b>デュエリストはどのような組み合わせでも構いませんが、ほとんどがローグやバードとしてのバックグラウンドを持っているため、ロウフルな行動を避ける傾向があります。しかし、ロウフルなデュエリストは前代未聞ではなく、そのようなデュエリストはしばしば厳格な名誉の掟を守り、非武装の敵や明らかに劣った敵を攻撃することを拒否します。
 
-<b>Non-adventurers: </b>Duelists are usually loners looking for adventure or a get-rich-quick scheme. Occasionally they work in small, tight-knit groups, fighting with team-based tactics.]]
+<b>非冒険者: </b>デュエリストは通常、冒険や一攫千金を求める一匹狼です。 時には、彼らは小さく緊密なグループで活動し、チームベースの戦術で戦います。]]
 
-s_zdd	="ドワーフディフェンダー"	s_zdd_b	="A master of defending territory and holding the line at all costs."
-s_zdd_d	=[[The defender is a sponsored champion of a dwarven cause, a dwarf aristocrat, a dwarven deity, or the dwarven way of life. As the name might imply, this character is a skilled combatant trained in the arts of defense. A line of dwarven defenders is a far better defense than a 10-foot-thick wall of stone, and much more dangerous. When dwarven defenders set themselves in a defensive stance, they place their whole effort into weathering whatever foe, conflict, or threat comes their way.
+s_zdd	="ドワーフディフェンダー"	s_zdd_b	="領土を守り、どんな犠牲を払ってでも前線を維持する達人。"
+s_zdd_d	=[[ディフェンダーはドワーフの大義、ドワーフ貴族、ドワーフの神、あるいはドワーフの生活様式の後援者である。その名の通り、このキャラクターは防衛術の訓練を受けた熟練の戦闘員である。ドワーフディフェンダーの列は、厚さ10フィートの石の壁よりもはるかに優れた防衛であり、はるかに危険である。ドワーフディフェンダーは防御態勢をとるとき、どのような敵、紛争、脅威がやってきても、それを切り抜けることに全力を注ぐ。
 
 
-<b>Base Classes: </b>Most dwarven defenders are fighters, paladins, rangers, or clerics, often those desiring to be better guards for friends and allies, although ex-barbarians, sorcerers, wizards, and druids can certainly all benefit from the defensive capabilities of this prestige class. Rogues, bards, and monks usually depend too heavily on mobility to use the abilities of the dwarven defender class to their fullest.
+<b>基本クラス: </b>ほとんどのドワーフディフェンダーはファイター、パラディン、レンジャー、またはクレリックであり、多くの場合、友人や同盟者をより良く守ることを望んでいますが、元バーバリアン、ソーサラー、ウィザード、ドルイドはすべて、確かにこの上級クラスの防御能力の恩恵を受けることができます。 ローグ、バード、モンクは通常、機動力に大きく依存しすぎて、ドワーフディフェンダー クラスの能力を最大限に活用できません。
 
-<b>Role: </b>Dwarven defenders are masters of melee combat, striving to prove that the best offense is a good defense. They are normally found on the front lines of battle, holding a position to cover their allies, leaping into breaches of opposing formations and holding them open for others, and guarding more vulnerable allies by acting as mobile fortifications, stable points in the ever-changing chaos of battle.
+<b>ロール: </b>ドワーフディフェンダーは近接戦闘の達人であり、最高の攻撃は優れた防御であることを証明しようと努力しています。彼らは通常、戦闘の最前線で見られ、味方を援護する位置を保持し、敵のフォーメーションの突破口に飛び込んで他のフォーメーションのためにそれらをオープンにし、移動式要塞として機能することでより脆弱な味方を守り、絶え間なく変化する戦闘の混沌の中で安定したポイントです。
 
-<b>Alignment: </b>Dwarven defenders can be as stubborn as a rock and dedicated to holding one point no matter the cost. A strong respect for order and organization is essential for learning the talents of a dwarven defender, so dwarven defenders are always lawful.
+<b>アライメント: </b>ドワーフディフェンダーは岩のように頑固で、たとえ犠牲を払ってでも 1 点を保持することに専念することがあります。 ドワーフディフェンダーの才能を学ぶには、秩序と組織を強く尊重することが不可欠であるため、ドワーフディフェンダーは常にロウフルです。
 
-<b>Non-adventurers: </b>Dwarven defenders are usually soldiers in a dwarven citadel, segregated into their own units separate from regular warriors or fighters. Occasionally a lone, wandering dwarven defender can be encountered on some mission, although he usually guards his words so closely that it’s difficult to learn what his quest actually entails.]]
+<b>非冒険者: </b>ドワーフディフェンダーは通常、ドワーフの城塞に所属する兵士であり、通常の戦士や戦闘員とは別の部隊に分離されている。時折、一人で放浪しているドワーフディフェンダーが何かの任務に遭遇することがあるが、通常、彼は自分の言葉を厳重に守っているため、その任務の実際の内容を知ることは難しい。]]
 
-s_zek	="Eldritch Knight"	s_zek_b	="An arcane spellcaster who augments his magical skills with combat to create a deadly combination of weapons and magic."
-s_zek_d	=[[Fearsome warriors and spellcasters, eldritch knights are rare among magic-users in their ability to wade into battle alongside fighters, barbarians, and other martial classes. Those who must face eldritch knights in combat fear them greatly, for their versatility on the battlefield is tremendous; against heavily armed and armored opponents they may level crippling spells, while opposing spellcasters meet their ends on an eldritch knight's blade.
+s_zek	="エルドリッチナイト"	s_zek_b	="戦闘で魔法のスキルを強化し、武器と魔法の恐ろしい組み合わせを生み出す秘術の呪文使い。"
+s_zek_d	=[[恐ろしい戦士であり、呪文使いであるエルドリッチナイトは、ファイター、バーバリアン、その他の武術クラスと一緒に戦いに足を踏み入れる能力において、術者の間ではまれです。戦闘でエルドリッチナイトと対峙しなければならない者は、戦場での彼らの多才さが途方もないものであるため、彼らを非常に恐れています。重武装で鎧を身に着けた敵に対しては、壊滅的な呪文を平準化することができ、相手の呪文使いはエルドリッチナイトの剣で最期を迎えます。
 
 
-<b>Base Classes: </b>Because the road to becoming an eldritch knight requires both martial prowess and arcane power, eldritch knights almost always begin their paths as multiclassed characters, with fighter/wizard the most common combination. A few eldritch knights were once bards, and even paladin/sorcerers aren’t unheard of. They may be found wherever studies of the arcane are as prevalent as martial training.
+<b>基本クラス: </b>エルドリッチナイトへの道には武勇と秘術の力の両方が必要であるため、エルドリッチナイトはほとんどの場合マルチクラスのキャラクターとしてその道を開始し、最も一般的な組み合わせはファイターとウィザードです。 数人のエルドリッチナイトはかつてバードであり、パラディンやソーサラーでさえ前代未聞ではありません。 武術の訓練と同じくらい難解な研究が普及している場所ならどこでも、それらは見つかるかもしれません。
 
-<b>Role: </b>Eldritch knights blend the abilities of fighting classes and spellcasters, hurling magic at the enemy one moment and hewing down their opponents with steel the next. They are just as comfortable fighting in the thick of combat as they are casting spells at foes while remaining safely behind their compatriots. Their versatility makes them valuable allies when the nature of an upcoming battle is unclear.
+<b>ロール: </b>エルドリッチナイトは戦闘クラスと呪文使いの能力を融合し、ある瞬間には魔法を敵に投げつけ、次の瞬間には鋼鉄で敵を切り倒します。 彼らは、同胞の背後に安全に留まりながら、敵に呪文を唱えるのと同じくらい、戦闘の最中でも快適に戦います。 彼らの多用途性は、今後の戦いの性質が不透明な場合に貴重な味方になります。
 
-<b>Alignment: </b>The road to becoming an eldritch knight is as varied as the paths leading to apprenticeship under a wizard or a career as a soldier, and eldritch knights can therefore be of any alignment. Maintaining a balance between studies of arcane lore and martial techniques requires great discipline, however, and for that reason many favor lawful alignments.
+<b>アライメント: </b>エルドリッチナイトになるまでの道は、ウィザードの下での見習いや兵士としてのキャリアと同じくらい多様であり、したがってエルドリッチナイトはどのような傾向にもあり得ます。 しかし、難解な伝承の研究と武術のバランスを維持するには多大な規律が必要であり、そのため多くの人はロウフルな連携を支持します。
 
-<b>Non-adventurers: </b>Eldritch knights can be found wherever there’s a good fight or the promise of arcane lore. They find higher-level fighters and wizards particularly interesting, and some eldritch knights apprentice themselves for a time to learn the finer points of arcane technique or weapons prowess. Eldritch knights split their time between physical training to become better soldiers and arcane study to learn more powerful spells. They tend to be driven individuals, because simultaneously perfecting their spellcasting and combat prowess requires immense time and effort. Eldritch knights are never truly at home among arcane spellcasters or elite soldiers, so many drift from wizard school to mercenary unit to band of adventurers.]]
+<b>非冒険者: </b>エルドリッチナイトは良い戦いや秘術の伝承が約束されている場所ならどこにでもいる。エルドリッチナイトの中には、秘術特技や武器の腕前を学ぶために、一時的に見習いをする者もいる。エルドリッチナイトはより優れた兵士になるための肉体訓練と、より強力な呪文を学ぶための秘術研究に時間を割いている。呪術と戦闘能力を同時に完成させるには膨大な時間と努力が必要であるため、彼らは追い込まれがちである。エルドリッチナイトの多くは魔法学校から傭兵部隊、冒険者集団へと流浪する。]]
 
-s_zhi	="Hierophant"	s_zhi_b	="A divine spellcaster who rises high in the service of his deity."
-s_zhi_d	=[[A divine spellcaster who rises high in the service of his deity gains access to spells and abilities of which lesser faithful can only dream. The hierophant prestige class is open to powerful divine spellcasters who are approaching access to the strongest and most difficult divine spells. They delay the acquisition of these greatest gifts in exchange for a deeper understanding of and ability to control the power they channel.
+s_zhi	="ハイエロファント"	s_zhi_b	="神への奉仕で高みを目指す神聖な呪文の使い手。"
+s_zhi_d	=[[神への奉仕において高位に上り詰めた神聖呪文使いは、それ以下の信仰者たちが夢見ることしかできないような呪文や能力へのアクセスを得る。ハイエロファント上級クラスは、最も強力で最も困難な神聖呪文へのアクセスに近づいている強力な神聖呪文使いに対して開かれている。彼らはこれらの最高の賜物を得るのを遅らせる代わりに、より深い理解と、彼らがチャネルする力をコントロールする能力を得る。
 
 
-<b>Base Classes: </b>Most hierophants were clerics or druids. Some may have pursued another divine spellcasting-focused prestige class. Hierophants rarely multiclass into non-spellcasting classes.
+<b>基本クラス: </b>ほとんどのハイエロファントはクレリックまたはドルイドでした。 神聖な呪文の詠唱に焦点を当てた別の上級クラスを追求した人もいるかもしれません。 ハイエロファントが非呪文詠唱クラスにマルチクラスになることはほとんどありません。
 
-<b>Role: </b>The hierophant spends most time performing his duties and rarely gets involved with adventures. Occasionally, because of holy quests hierophants may join up with an adventuring party. A hierophant is a powerful ally for any group, providing divine support in all aspects of offense, defense, enhancing and healing.
+<b>ロール: </b>ハイエロファントはほとんどの時間を自分の職務を遂行することに費やし、冒険にはほとんど参加しません。 時折、神聖な探求のため、ハイエロファントが冒険パーティーに参加することがあります。 ハイエロファントはあらゆるグループにとって強力な味方であり、攻撃、防御、強化、治癒のあらゆる面で神聖なサポートを提供します。
 
-<b>Alignment: </b>Hierophants usually tend to be lawful good, but it is not uncommon for divine spellcasters to serve evil deities and thus qualify for this prestige class.
+<b>アライメント: </b>ハイエロファントは通常、ロウフルグッドを行う傾向がありますが、神聖な呪文の使い手がエビルの神に仕えることも珍しくなく、したがってこの上級クラスの資格を得ることができます。
 
-<b>Non-adventurers: </b>Hierophants are usually high-ranking members of a church or druidic circle. Most are exemplary representatives of their faith.]]
+<b>非冒険者: </b>ハイエロファントは通常、教会またはドルイド教のサークルの高位のメンバーです。 ほとんどは彼らの信仰を代表する模範的な人たちです。]]
 
-s_zhw	="Horizon Walker"	s_zhw_b	="A scout and wanderer comfortable in even the strangest terrain."
-s_zhw_d	=[[The horizon walker is an unceasing traveler to the universe’s most dangerous places. As her journeys take her from place to place, she adapts to become one with her environment. In time, she develops a mystic connection with the ground beneath her. But she is by no means tied to a particular place; her restless feet are ever leading her toward the horizon, where new adventures await.
+s_zhw	="ホライゾンウォーカー"	s_zhw_b	="どんなに奇妙な地形でも平気なスカウト兼放浪者。"
+s_zhw_d	=[[ホライゾン・ウォーカーは、宇宙の最も危険な場所を絶え間なく旅する。旅を続けるうちに、彼女は環境と一体化するようになる。やがて彼女は地下の大地と神秘的なつながりを持つようになる。しかし、彼女は決して特定の場所に縛られているわけではない。彼女の落ち着きのない足は、新たな冒険が待つ地平線へと常に彼女を導いているのだ。
 
-Horizon walkers are masters of travel, always seeking to find the safe ways through inhospitable terrain. They are comfortable in places others speak of only in hushed whispers, and they can both venture forth onto untrod paths themselves and guide the less-traveled through such hazardous lands.
+ホライゾンウォーカーは旅の達人であり、常に荒れ果てた地形を安全な方法で探し求めています。彼らは、他の人がひそひそとささやくだけで話す場所で快適であり、彼ら自身が未踏の道に足を踏み入れ、そのような危険な土地を旅の少ない人々を導くことができます。
 
-Horizon walkers tend to be hard to surprise or impress, because they’ve seen so many wonders during their travels. It’s common for a horizon walker to have an outward attitude of “been there, done that.” But horizon walkers are gripped by an unquenchable wanderlust, so they’re always in the midst of a journey or planning their next one. As they travel, horizon walkers develop a magical resonance with the terrain that surrounds them, making them unparalleled guides and scouts. And they’re formidable foes when their travels take them into danger, able to use the terrain they know so well to good advantage.
+ホライゾンウォーカーは、旅先で多くの不思議を見てきたため、驚かせたり感動させたりするのが難しい傾向がある。ホライゾンウォーカーには、行ったことがある、やったことがある という外向的な態度が一般的だ。しかし、ホライゾンウォーカーは抑えきれない放浪欲にとらわれているため、常に旅の真っ最中か、次の旅の計画を立てている。旅をするうちに、ホライゾンウォーカーは彼らを取り囲む地形と不思議な共鳴を起こし、比類なきガイドやスカウトとなる。また、旅先で危険な目に遭ったときには手強い敵となり、熟知している地形をうまく利用することができる。
 
 
-<b>Base Classes: </b>Those whose wanderlust drives them to push the boundary of safe environments sometimes seek the calling of the horizon walker. Rangers and bards take up the path of the horizon walker more often than other characters, but that’s more because they appreciate the wanderer’s life, not because the path of the horizon walker is particularly specialized. A fair number of horizon walkers were barbarians who strayed from their native lands or rogues who found their skills useful on the road. Occasionally a druid will adopt the prestige class, though most are loath to do so because they sacrifice their spellcasting advancement.
+<b>基本クラス: </b>放浪欲に駆られて安全な環境の境界を押し広げようとする者は、時にホライゾンウォーカーの召命を求める。レンジャーやバードは他のキャラクターよりもホライゾンウォーカーの道を歩むことが多いが、それは彼らが放浪者の生活を高く評価しているからであり、ホライゾンウォーカーの道が特別に特殊だからではない。ホライゾンウォーカーのかなりの数は、生まれ育った土地からはぐれたバーバリアンであったり、旅先で役立つ技能を見出したならず者であったりする。ドルイドが上級クラスを採用することもあるが、ほとんどのドルイドはそれを嫌がる。
 
-<b>Role: </b>Horizon walkers have the accuracy and resilience to face frontline combat. They also have the skills and abilities to make excellent scouts, often taking the role of the first member of a group into danger and the last one out. Of course, walkers shine when adventuring in areas that match their many favored terrains, but many of the tricks they pick up in specific regions have application in a wide range of situations, allowing a horizon walker to be more mobile and resourceful than typical combatants.
+<b>ロール: </b>ホライゾンウォーカーは前線での戦闘に耐えうる正確さと回復力を備えている。また、優秀なスカウトになるためのスキルと能力も備えており、しばしばグループの最初のメンバーとして危険に立ち向かい、最後のメンバーとして脱出する役割を担う。もちろんホライゾンウォーカーは、得意とする地形にマッチした地域で冒険をすることで輝きを放つが、特定の地域で身につけたトリックの多くは、さまざまな状況で応用できるため、ホライゾンウォーカーは一般的な戦闘員よりも機動力があり、機知に富んでいる。
 
-<b>Alignment: </b>Anyone can crave new vistas and constant travel, and thus a horizon walker can be of any alignment.
+<b>アライメント: </b>誰でも新しい景色や定期的な旅行を渇望することがあります。したがって、ホライゾンウォーカーはどのようなタイプでも構いません。
 
-<b>Non-adventurers: </b>You’ll find horizon walkers on the road, or in places so forbidding that roads don’t exist. Horizon walkers are most common in areas on the edge of civilization, where they can easily spend time away from the known and boring streets of settled lands. They rarely stay in one place for long, and they’re eager to launch a new expedition—the more exotic and remote the destination, the better.]]
+<b>非冒険者: </b>ホライゾンウォーカーは道端や、道が存在しないような禁断の場所で見かける。ホライゾンウォーカーは文明の端にある地域で最もよく見られ、定住地の既知で退屈な通りから離れた場所で過ごしやすい。彼らは1つの場所に長く留まることはめったになく、新しい探検を始めたがり、その目的地は珍しく辺鄙であればあるほどよい。]]
 
-s_zlm	="Loremaster"	s_zlm_b	="A spellcaster who devotes his life to research and rumination upon the mysteries of the world."
-s_zlm_d	=[[Loremasters are spellcasters who concentrate on knowledge, valuing lore and secrets over gold. They uncover secrets that they then use to better themselves mentally, physically, and spiritually.
+s_zlm	="ロアマスター"	s_zlm_b	="世界の謎の研究と思索に人生を捧げる魔法使い。"
+s_zlm_d	=[[ロアマスターは知識に集中し、金よりも伝承や秘密を重視する呪文の使い手です。 彼らは秘密を明らかにし、それを精神的、肉体的、霊的に向上させるために使用します。
 
-The loremaster is a gatherer and keeper of secrets. He is often obsessed by the written word, with cryptic and arcane lore serving as his devoted mistress. Holding to the adage that knowledge is power, the loremaster often forsakes material wealth and personal glory for rare or unusual information, an endless quest that brings him ever closer to his unattainable goal: perfection through edification. Often rejecting what he views as the pointless affectations and transitory pleasures of his short-sighted neighbors, the loremaster believes that the only worthwhile goal in life is the acquisition of intellectual might. After all, wealth is spent, passions fade, and the power of the body is limited by age, while the mind's capacity to grow greater with time is infinite.
+ロアマスターは秘密の収集者であり管理者である。彼はしばしば文字に取り憑かれ、暗号や難解な伝承を献身的な愛人としている。知識は力であるという格言を信奉する伝承者は、しばしば希少な情報や珍しい情報のために物質的な富や個人的な栄光を捨てる。近視眼的な隣人たちの無意味な情欲や一過性の快楽を拒絶することが多いロアマスターは、人生における唯一の価値ある目標は知的な力の獲得だと信じている。結局のところ、富は費やされ、情熱は衰え、肉体の力は年齢によって制限される。
 
 
-<b>Base Classes: </b>The loremaster class holds little appeal for non-spellcasters—indeed, before one can devote a life to the studies and traditions of the loremaster, a character must first master several spells of the school of divination. Most loremasters begin their paths as clerics or wizards, but any character capable of casting enough divination spells can, eventually, become a loremaster. However, characters without at least one level of wizard, sorcerer, cleric, or druid gain little benefit for becoming a loremaster. Paladins, rangers, and bards might gain some benefit, but overall, it would be minor.
+<b>基本クラス: </b>ロアマスターのクラスは非呪術師にとってはほとんど魅力的ではありません。実際、ロアマスターの研究と伝統に人生を捧げる前に、キャラクターはまず占いの流派のいくつかの呪文を習得する必要があります。 ほとんどのロアマスターはクレリックまたはウィザードとしてその道を開始しますが、十分な占い呪文を唱えることができるキャラクターであれば、最終的にはロアマスターになることができます。 ただし、少なくとも 1 つのレベルのウィザード、ソーサラー、クレリック、またはドルイドを持たないキャラクターは、ロアマスターになるメリットがほとんどありません。 パラディン、レンジャー、バードはある程度の恩恵を受けるかもしれませんが、全体としては軽微でしょう。
 
-<b>Role: </b>Loremasters' lives are spent in study, research, and fieldwork. While the first two lend themselves to the loremaster's reputation as a bookish recluse, the latter oftentimes forces a loremaster to seek out the aid of adventurers who, through a mutually beneficial arrangement, might provide a degree of protection to the scholar while he seeks whatever knowledge he is after. For his part, the loremaster provides a wealth of information and arcane firepower to a party. Some loremasters actively deride those of their kind who fear to leave the safety of the temple or library, pointing out that only old lore can be discovered in books—new lore must be sought out in the world. These more active loremasters might join up with an adventuring party for the benefit of the journey, content with whatever knowledge might be picked up along the way.
+<b>ロール: </b>ロアマスターの生活は研究、調査、フィールドワークに費やされる。前者2つはロアマスターが書物好きな隠遁者であるという評判につながるが、後者はしばしばロアマスターに冒険者の助力を求めることを余儀なくさせ、その冒険者は互いに有益な取り決めを通じて、学者が求める知識を得る間、ある程度の保護をしてくれるかもしれない。ロアマスターの側としては、豊富な情報と難解な火力をパーティに提供することになる。ロアマスターの中には、安全な寺院や図書館から出ることを恐れる同類の者たちを積極的に嘲笑する者もいる。このような積極的な伝承者たちは、冒険の旅のために冒険者パーティに加わるかもしれない。
 
-<b>Alignment: </b>Most loremasters cannot be bothered with distracting and pointless philosophies such as ethics, and so tend to be neutral, neutral good, or neutral evil.
+<b>アライメント: </b>ほとんどのロアマスターは、倫理学のような気を散らす無意味な哲学に煩わされることはなく、ナチュラル、ナチュラルグッド、またはナチュラルエビルになる傾向があります。
 
-<b>Non-adventurers: </b>Loremasters sometimes gather in secluded cabals but are more often found as members of an order attached to a university, a library, or some other source of information. They’re likely to earn extra money as sages and information brokers, pouring their wages into their own research. A loremaster might also adopt a position as a wise one in a community, or even as its leader, drawing upon her knowledge to help others.]]
+<b>非冒険者: </b>ロアマスターは人目につかない秘密結社に集まることもあるが、大学や図書館などの情報源に付属する騎士団に所属していることが多い。彼らは賢者や情報ブローカーとして副収入を得ており、その報酬を自らの研究に注ぎ込んでいる。ロアマスターはまた、コミュニティにおける賢者として、あるいはそのリーダーとして、自分の知識を活かして他の人々を助ける立場をとることもある。]]
 
-s_zmt	="Mystic Theurge"	s_zmt_b	="Equally devoted to divine and arcane magic, the mystic theurge combines both magical traditions into one incredibly diverse class."
-s_zmt_d	=[[Blurring the line between divine and arcane, mystic theurges draw power from divine sources and musty tomes alike. Mystic theurges place no boundaries on their magical abilities and find no irreconcilable paradox in devotion to the arcane as well as the divine. They seek magic in all of its forms, finding no reason or logic in denying themselves instruction by limiting their knowledge to one stifling paradigm, though many are simply hungry for limitless power. No matter what their motivations, mystic theurges believe that perception is reality, and through the divine forces and astral energies of the multiverse, that perception can be used to manipulate and control not only the nature of this reality, but destiny itself.
+s_zmt	="ミスティックサージ"	s_zmt_b	="神聖な魔法と秘術の魔法に同じように専念するミスティック サージは、両方の魔法の伝統を 1 つの信じられないほど多様なクラスに組み合わせています。"
+s_zmt_d	=[[神と難解なものの境界線を曖昧にするミスティックサージは、神と古びた書物から同様に力を引き出す。ミスティックサージは魔法の能力に境界線を設けず、神と同様に難解なものへの献身に和解しがたい矛盾を見出さない。彼らはあらゆる形の魔法を求め、自分の知識を1つの息苦しいパラダイムに限定することで、自分自身の教えを否定することに何の理由も論理も見いださないが、単に無限の力に飢えている者も多い。その動機が何であれ、ミスティックサージたちは知覚こそが現実であり、多元宇宙の神聖な力とアストラル・エネルギーによって、その知覚はこの現実の性質だけでなく、運命そのものを操作し、コントロールするために使うことができると信じている。
 
-While most spellcasters choose one path to magical power, mystic theurges walk two roads at once, simultaneously mastering spells common to clerics and wizards. Mystic theurges have unparalleled diversity of spells. In time, a mystic theurge can cast almost all spells. While a mystic theurge doesn’t have the uninterrupted spell advancement that a cleric, wizard, or sorcerer has, he makes up for this with versatility.
+多くの術者が魔法の力への道を1つ選ぶのに対し、ミスティックサージは2つの道を同時に歩み、クレリックやウィザードに共通する呪文を同時にマスターする。ミスティックサージは他に類を見ないほど多様な呪文を持っている。やがてミスティックサージはほとんどすべての呪文を唱えられるようになる。ミスティックサージはクレリックやウィザード、ソーサラーのように途切れることなく呪文を上達させることはできないが、それを補って余りある万能性を持っている。
 
-Mystic theurges are drawn from multiclass spellcasters who can already cast both arcane and divine spells, and the powers that they gain increase their mastery over both.
+ミスティックサージは、すでに秘術と神聖の両方の呪文を唱えることができるマルチクラスの呪文詠唱者から抽出され、彼らが獲得する力によって両方の習熟度が高まります。
 
 
-<b>Base Classes: </b>Because a mystic theurge casts both arcane and divine spells, all members of this class are multiclass spellcasters. Cleric/sorcerers and cleric/wizards are the most common mystic theurges, with druid/sorcerers more rare and druid/wizards almost unheard of.
+<b>基本クラス: </b>ミスティックサージは秘術と神聖の両方の呪文を唱えるため、このクラスのメンバーは全員マルチクラスの呪文詠唱者です。 クレリック/ソーサラーとクレリック/ウィザードは最も一般的なミスティックサージであり、ドルイド/ソーサラーはよりまれで、ドルイド/ウィザードはほとんど前例がありません。
 
-<b>Role: </b>The mystic theurge is a powerful component for any party, supplying magic for attack, defense, and healing. Mystic theurges travel the world in search of arcane and holy artifacts, magical lore, or divine revelations, and most have no qualms about teaming up with groups of adventurers so long as that group's goals do not directly conflict with their own.
+<b>ロール: </b>ミスティックサージはあらゆるパーティーにとって強力なコンポーネントであり、攻撃、防御、治癒のための魔法を供給します。 ミスティックサージは、秘宝や神聖な遺物、魔法の伝承、あるいは神の啓示を求めて世界を旅しており、そのグループの目標が自分たちの目標と直接矛盾しない限り、ほとんどの冒険者グループと協力することに何の躊躇もありません。
 
-<b>Alignment: </b>The motivations of a mystic theurge rarely stem from a sense of altruism or philanthropy, so most tend to be neutral, neutral good, or neutral evil. Lawful mystic theurges, whether good, neutral, or evil, are rarer, and often use their powers for either the benefit—or control—of society. Chaotic mystic theurges are rarer still, as the calling generally requires great personal discipline.
+<b>アライメント: </b>ミスティックサージの動機が利他主義や慈善活動から生じることはほとんどないため、ほとんどはナチュラル、ナチュラルグッド、またはナチュラルエビルとなる傾向があります。グッド、ナチュラル、エビルを問わず、ロウフルなミスティックサージは稀であり、多くの場合、社会の利益、または支配のためにその力を使用します。 カオティックなミスティックサージはさらに稀であり、その召命には一般に多大な個人的規律が必要とされるからである。
 
-<b>Non-adventurers: </b>Mystic theurges are often obsessed with magical lore, traveling to the ends of the earth to learn some new arcane secret or divine insight. Mystic theurges tend to be fascinated with magic in whatever form it takes. They’re always on the hunt for powerful magic items and new arcane spells. Those mystic theurges who worship a deity use the power of their spellcasting to further their deity’s agenda.]]
+<b>非冒険者: </b>ミスティックサージはしばしば魔法の伝承に取りつかれ、新しい難解な秘密や神の洞察力を学ぶために地の果てまで旅をする。ミスティックサージは、どのような形であれ魔法に魅了される傾向がある。彼らは常に強力な魔法のアイテムや新しい難解な呪文を探し求めている。神を崇拝するミスティックサージは、その呪術の力を神の目的を推進するために用いる。]]
 
-s_zsd	="Shadowdancer"	s_zsd_b	="A mysterious adventurer who walks the boundaries between the real world and the realm of shadows, and who can command shadows to do her bidding."
-s_zsd_d	=[[Civilized folk have always feared the night, barring themselves behind doors or comforting themselves with bonfires when the shadows grow long, rightfully wary of the creatures that prowl the darkness. Yet long ago, some learned that the best way to conquer an enemy is to embrace it. These were the first shadowdancers.
+s_zsd	="シャドウダンサー"	s_zsd_b	="現実世界と影の世界の境界を歩き、影を意のままに操る謎の冒険者。"
+s_zsd_d	=[[文明化された人々は常に夜を恐れ、影が長くなるとドアの後ろに閉じこもったり、たき火で慰めたりして、暗闇を徘徊する生き物を当然のことながら警戒してきました。 しかしずっと昔、敵を征服する最善の方法は敵を受け入れることだと学んだ人もいました。 彼らは最初のシャドウダンサーでした。
 
-Shadowdancers exist in the boundary between light and darkness, where they weave together the shadows to become half-seen artists of deception. They are mysterious and unknown, never completely trusted but always inducing wonder when met.
+シャドウダンサーは光と闇の境界に存在し、そこで影を織り交ぜて、半分見えている欺瞞の芸術家となります。 彼らは神秘的で未知であり、完全に信頼されることはありませんが、会うと常に驚きを引き起こします。
 
-Unbound by any specified morality or traditional code, shadowdancers encompass a wide variety of adventuring types who have seen the value of the dark. Spellcasters use their abilities to safely cast spells from hiding and then move quickly away, while classes devoted to hand-to-hand combat enjoy the ability to attack foes with the element of surprise. Some even take the name of their kind quite literally, becoming eerie and mysterious performers and dancers, though more often the temptation presented by their talents with deception and infiltration causes shadowdancers to turn to lives of thievery.
+特定の道徳や伝統的な規範に束縛されないシャドウダンサーには、暗闇の価値を理解したさまざまな冒険的なタイプが含まれます。 魔法使いはその能力を使って隠れているところから安全に呪文を唱え、すぐに離れますが、白兵戦に専念するクラスは奇襲の要素で敵を攻撃する能力を楽しんでいます。 なかには、自分たちの種族の名前をそのまま文字通りに受け取って、不気味で神秘的なパフォーマーやダンサーになる人もいますが、多くの場合、その才能による欺瞞や潜入という誘惑によって、シャドウダンサーは泥棒のような生活に転向してしまいます。
 
 
-<b>Base Classes: </b>Rogues, bards, and monks make excellent shadowdancers. Fighters, barbarians, rangers, and paladins also find that shadowdancer abilities allow them to strike at their opponents with surprise and skill. Wizard, sorcerer, cleric, and druid shadowdancers employ the defensive capabilities inherent in the prestige class to allow them to cast their spells from safety and move away quickly. Despite their link with shadows and trickery, shadowdancers are as often good as evil.
+<b>基本クラス: </b>ローグ、バード、モンクは優れたシャドウダンサーです。 ファイター、バーバリアン、レンジャー、パラディンも、シャドウダンサーの能力により、驚きとスキルで敵を攻撃できることに気づきました。 ウィザード、ソーサラー、クレリック、ドルイドのシャドウダンサーは、上級クラスに固有の防御能力を利用して、安全な場所から呪文を唱え、素早く立ち去ることができます。 影や策略とのつながりにもかかわらず、シャドウダンサーはしばしばグッドであると同時にエビルでもあります。
 
-<b>Role: </b>Shadowdancers adventure for a wide variety of reasons. Many adventuring parties find shadowdancers valuable members of their teams due to their incredible stealth and ability to surprise enemies with lightning-quick attacks where they're least expected. For this reason, their services are often sought out by those groups in need of scouts or spies.
+<b>ロール: </b>シャドウダンサーはさまざまな理由で冒険をします。 驚くべきステルス性と、予想外の場所に電光石火の攻撃で敵を驚かせる能力があるため、多くの冒険パーティーはシャドウダンサーをチームの貴重なメンバーだと考えています。 このため、彼らのサービスは、スカウトやスパイを必要とするグループによってしばしば求められます。
 
-<b>Alignment: </b>Because of their nature as visually duplicitous tricksters, shadowdancers do not fit comfortably into the lawful category, as many use their talents to avoid the eyes of legitimate authority. Yet though they are allies of darkness, shadowdancers are neither inherently evil nor predisposed to good. To them, the darkness is simply the darkness, without any of the usual moral connotations made by the unenlightened.
+<b>アライメント: </b>視覚的に二枚舌を使うトリックスターとしての性質から、シャドウダンサーはロウフルなカテゴリーにはなじまない。しかし、彼らは闇の味方ではあるが、シャドウダンサーは本質的にエビルでもグッドでもない。彼らにとっての闇は単なる闇であり、悟りを開いていない者が抱くような道徳的な意味合いは一切ない。
 
-<b>Non-adventurers: </b>Shadowdancers often work in troupes, never staying in one place too long. Some use their abilities to entertain. Others operate as thieves, using their abilities to infiltrate past defenses and dupe others. All shadowdancer troupes maintain an aura of mystery among the common folk, who never know whether to think well or ill of them.]]
+<b>非冒険者: </b>シャドウダンサーは一団で活動することが多く、同じ場所に長く滞在することはありません。 自分の能力を使って楽しませる人もいます。 他の者は泥棒として活動し、その能力を利用して過去の防御に侵入し、他人を騙します。 どのシャドウダンサーの一団も、庶民の間で謎の雰囲気を保っており、よく思われるか悪く思われるか分からない。]]
 
-s_ztt	="Thaumaturgist"	s_ztt_b	="Demons and devils, angels or eladrins, by virtue of divine power, the thaumaturgist can summon powerful planar allies to do his bidding."
-s_ztt_d	=[[The thaumaturgist reaches out with divine power to other planes of existence, calling creatures there to do his bidding. Evil thaumaturgists conspire with demons and devils to gain power on the Material Plane, while good thaumaturgists send powerful angels or eladrins on holy quests.
+s_ztt	="ソーマタージスト"	s_ztt_b	="デーモンやデビル、天使やエラドリンなど、神聖な力のおかげで、ソーマタージストは自分の命令に従って強力な次元の同盟者を召喚することができます。"
+s_ztt_d	=[[ソーマタージストは神聖な力で他の存在界に手を差し伸べ、そこにいる生き物たちを呼び出して自分の命令に従わせる。 エビルソーマタージストはデーモンやデビルと共謀して物質界で権力を手に入れますが、グッドソーマタージストは強力な天使やエラドリンを聖なる探求に送り込みます。
 
-In combat, thaumaturgists often summon creatures from the Outer Planes to fight on their behalf. These creatures fade away as soon as the battle is over, but thaumaturgists also make agreements with more powerful creatures for long-term service. The planar ally of a thaumaturgist is utterly devoted to furthering the thaumaturgist’s goals (or the goals of a deity, if the thaumaturgist worships one).
+戦闘において、ソーマタージストはしばしば外界からクリーチャーを召喚する。これらのクリーチャーは戦闘が終わるとすぐに消えてしまうが、ソーマタージストはより強力なクリーチャーと長期的な契約を結ぶこともある。ソーマタージストの盟友は、ソーマタージストの目的（ソーマタージストが神を崇拝している場合はその神）のために献身する。
 
 
-<b>Base Classes: </b>Almost all thaumaturgists were once clerics, because the first step on the path of thaumaturgy is making an agreement with a denizen of the Outer Planes by use of the lesser planar ally spell. But many of the class abilities are useful to arcane spellcasters, so multiclass cleric/wizards and the occasional cleric/sorcerer aren’t unheard of.
+<b>基本クラス: </b>ほとんどすべてのソーマタージストはかつてはクレリックでした。なぜなら、ソーマタージストの道への最初のステップは、より低い次元の同盟呪文を使用して外界の住人と協定を結ぶことだからです。 しかし、クラス能力の多くは秘術術者にとって有用であるため、マルチクラスのクレリック/ウィザードや、場合によってはクレリック/ソーサラーも存在します。
 
-<b>Role: </b>The extraordinary summoning ability makes the thaumaturgist popular among adventurer groups. In combat, the thaumaturgist summons powerful planar allies to act as a front-line of the party, while he provides magical support to the group from the back row.
+<b>ロール: </b>驚異的な召喚能力により、ソーマタージストは冒険者グループの間で人気を博している。 戦闘では、ソーマタージストは強力な次元の仲間を召喚してパーティーの最前線として行動し、後列からグループに魔法のサポートを提供します。
 
-<b>Alignment: </b>Thaumaturgists can be of any alignment, although they tend to be more chaotic than lawful. Those thaumaturgists who make pacts with demons or devils usually tend to be evil, while those who are close to angels or eladrins are often of good alignments. It is not uncommon for thaumaturgists to be neutral.
+<b>アライメント: </b>ソーマタージストはどのような系統にも属しますが、ロウフルというよりもカオティックとした傾向にあります。 デーモンやデビルと契約を結ぶソーマタージストは通常エビルである傾向があり、天使やエラドリンに近い人々は善良な関係にあることが多いです。 ソーマタージストがナチュラルであることは珍しいことではありません。
 
-<b>Non-adventurers: </b>A thaumaturgist is keenly aware that his unparalleled conjurations are just tools in service of his overall philosophy or deity. Thus, thaumaturgists often undertake quests to advance a cause, using their abilities to conjure up a strike force of summoned and called creatures at a moment’s notice.]]
+<b>非冒険者: </b>ソーマタージストは、彼の比類のない魔法が彼の全体的な哲学または神に奉仕するための単なる道具であることを痛感しています。 したがって、ソーマタージストは、自分の能力を利用して、即座に召喚され呼び出されたクリーチャーの攻撃力を呼び起こし、大義を推進するための探求を引き受けることがよくあります。]]
 
 
 -- zaa	魔射手		Arcane Archer		
-s_zaa_ea	="Enhance Arrow"	s_zaa_ea_d	="At 1st level, every nonmagical arrow an arcane archer nocks and lets fly becomes magical, gaining a +1 enhancement bonus.\n\nFor every two levels the character advances past 1st level in the prestige class, the magic arrows she creates gain +1 greater potency (+1 at 1st level, +2 at 3rd level, +3 at 5th level, +4 at 7th level, and +5 at 9th level)."	s_zaa_ea_hr	="The enhancement bonus of Enhance Arrow stacks with the enhancement bonus of magic bows."
-s_zaa_ia	="Imbue Arrow"		s_zaa_ia_d	="At 2nd level, an arcane archer gains the ability to place an area spell upon an arrow. When the arrow is fired, the spell’s area is centered on where the arrow lands, even if the spell could normally be centered only on the caster.\n\nThis ability allows the archer to use the bow’s range rather than the spell’s range."
-s_zaa_sa	="Seeker Arrow"		s_zaa_sa_d	="At 4th level, an arcane archer can launch an arrow once per day at a target known to her within range, and the arrow travels to the target, even around corners. Only an unavoidable obstacle or the limit of the arrow’s range prevents the arrow’s flight.\n\nThis ability negates cover and concealment modifiers, but otherwise the attack is rolled normally."
-s_zaa_pa	="Phase Arrow"		s_zaa_pa_d	="At 6th level, an arcane archer can launch an arrow once per day at a target known to her within range, and the arrow travels to the target in a straight path, passing through any nonmagical barrier or wall in its way. (Any magical barrier stops the arrow.)\n\nThis ability negates cover, concealment, and even armor modifiers, but otherwise the attack is rolled normally."
-s_zaa_ha	="Hail of Arrows"	s_zaa_ha_d	="At 8th level, in lieu of her regular attacks, once per day an arcane archer can fire an arrow at each and every target within range, to a maximum of one target for every arcane archer level she has earned.\n\nEach attack uses the archer’s primary attack bonus, and each enemy may only be targeted by a single arrow."
-s_zaa_da	="Arrow of Death"	s_zaa_da_d	="At 10th level, an arcane archer can create an arrow of death that forces the target, if damaged by the arrow’s attack, to make a Fortitude save (DC = 10 + arcane archer level + max of Int or Cha modifier) or be slain immediately.\n\nIt takes one day to make an arrow of death, and the arrow only functions for the arcane archer who created it. The arrow of death lasts no longer than one year, and the archer can only have one such arrow in existence at a time."
+s_zaa_ea	="エンハンスアロー"	s_zaa_ea_d	="第 1 レベルでは、アーケインアーチャーがノックして飛ばすすべての非魔法の矢が魔法になり、+1 の強化ボーナスを獲得します。\n\n2 レベルごとに、キャラクターが上級クラスの第 1 レベルを超えて進むごとに、彼女が作成する魔法の矢は +1 を獲得します。 より大きな効力（第 1 レベルで +1、第 3 レベルで +2、第 5 レベルで +3、第 7 レベルで +4、第 9 レベルで +5）。"	s_zaa_ea_hr	="エンハンスアローの強化ボーナスは、マジックボウの強化ボーナスと重複します。"
+s_zaa_ia	="インビューアロー"		s_zaa_ia_d	="2 レベルでは、アーケインアーチャーは矢に範囲呪文を配置する能力を獲得します。 矢が放たれると、呪文の範囲は、通常は術者のみを中心に配置できる場合でも、矢が着弾した場所を中心に配置されます。\n\nこの機能により、射手は呪文の射程ではなく弓の射程を使用できるようになります。"
+s_zaa_sa	="シーカーアロー"		s_zaa_sa_d	="4 レベルでは、アーケインアーチャーは 1 日に 1 回、射程内にある既知のターゲットに矢を放つことができ、矢は角を曲がった場合でもターゲットに到達します。 避けられない障害物または矢の射程の限界だけが矢の飛行を妨げます。\n\nこの能力は遮蔽と隠蔽の修正を無効にしますが、それ以外の場合、攻撃は通常通り行われます。"
+s_zaa_pa	="フェーズアロー"		s_zaa_pa_d	="6 レベルでは、アーケインアーチャーは射程内にあるターゲットに向かって 1 日に 1 回矢を放つことができ、矢は魔法以外の障壁や壁を通り抜けながら直線でターゲットに到達します。 (魔法の障壁は矢を止めます。)\n\nこの能力は遮蔽、隠蔽、さらには装甲修正を無効にしますが、それ以外の場合は攻撃は通常通り行われます。"
+s_zaa_ha	="ヘイルオブアロー"	s_zaa_ha_d	="8 レベルでは、通常の攻撃の代わりに、アーケインアーチャーは 1 日に 1 回、範囲内のすべてのターゲットに矢を放つことができます。これは、獲得した秘術射手レベルごとに最大 1 つのターゲットまでです。\n\n各攻撃で使用されるのは、 射手の主な攻撃ボーナス、および各敵は 1 本の矢のみでターゲットにできます。"
+s_zaa_da	="アローオブデス"	s_zaa_da_d	="レベル 10 では、アーケインアーチャーはアローオブデスを作成できます。これにより、矢の攻撃でダメージを受けた場合、ターゲットは不屈のセーブ (難易度 = 10 + アーケインアーチャーレベル + INT または CHA 修正値の最大値) を行うか、即時に殺害されます。 。\n\nアローオブデスを作るには 1 日かかりますが、その矢はそれを作成したアーケインアーチャーにしか機能しません。 死の矢の持続時間は 1 年以内であり、射手はそのような矢を一度に 1 本だけ持つことができます。"
 
 -- zat	诡术师		Arcane Trickster	
 
-s_rng_hand	="Ranged Legerdemain"	s_rng_hand_d	="An arcane trickster can perform one of the following class skills at a range of 30 feet: Disable Device, Open Lock, or Sleight of Hand. Working at a distance increases the normal skill check DC by 5, and an arcane trickster cannot take 10 on this check. Any object to be manipulated must weigh 5 pounds or less.\n\nAt 1st level and every 4 levels thereafter (1, 5, 9…), the uses per day for this ability increases by 1. He can make only one ranged legerdemain skill check each day, and only if he has at least 1 rank in the skill being used."
+s_rng_hand	="遠距離の魔術"	s_rng_hand_d	="アーケイントリックスターは、30フィートの範囲で以下のクラススキルのいずれかを行なうことができる： 装置無効化（Disable Device）、開錠（Open Lock）、早業（Sleight of Hand）。距離のある場所では通常の技能チェックの難易度が5増加し、アーケイントリックスターはこのチェックでテイク１０（ダイスを振らずに通常の能力値チェックを10として扱う）ができない。\n\n第1レベルとその後4レベル（1、5、9...）ごとに、この能力の1日あたりの使用回数が1回増加する。1日に1回だけ範囲奇術スキルチェックを行うことができ、使用するスキルのランクが1以上である場合に限る。"
 
-s_sa_frc	="Impromptu Sneak Attack"	s_sa_frc_d	="Beginning at 3rd level, once per day an arcane trickster can declare one melee or ranged attack he makes to be a sneak attack (the target can be no more than 30 feet distant if the impromptu sneak attack is a ranged attack). The target of an impromptu sneak attack loses any Dexterity bonus to AC, but only against that attack. The power can be used against any target, but creatures that are not subject to critical hits take no extra damage (though they still lose any Dexterity bonus to AC against the attack).\n\nAt 3rd level and every 4 levels thereafter (3, 7, 11…), the uses per day for this ability increases by 1."
+s_sa_frc	="即席の急所攻撃"	s_sa_frc_d	="第3レベルから、1日に1度、アーケイントリックスターは近接攻撃または遠距離攻撃のいずれかを急所攻撃と宣言できる（即席の急所攻撃が遠距離攻撃の場合、対象は30フィート以内にいることができる）。即席の急所攻撃の対象はACのDEXのボーナスを失うが、それはその攻撃に対してのみである。この能力はどの対象に対しても使用できるが、クリティカル・ヒットの対象でないクリーチャーは追加ダメージを受けない（ただし、その攻撃に対してはACに対するDEXのボーナスを失う）。\n\n3レベルとその後4レベル（3、7、11...）ごとに、この能力の1日あたりの使用回数が1回増える。"
 
 -- zam	大法师		Archmage			
 
-s_high_arcana	="High Arcana"	s_high_arcana_d	="An archmage gains the opportunity to select a special ability from among those described below by permanently eliminating one existing spell slot (she cannot eliminate a spell slot of higher level than the highest-level spell she can cast). Each special ability has a minimum required spell slot level, as specified in its description.\n\nAn archmage may choose to eliminate a spell slot of a higher level than that required to gain a type of high arcana."
+s_high_arcana	="ハイアルカナ"	s_high_arcana_d	="アークメイジは、既存の呪文スロットを 1 つ永久に削除することで、以下に説明する特殊能力の中から特殊能力を選択する機会を獲得します (彼女が唱えることのできる最高レベルの呪文よりも高いレベルの呪文スロットを削除することはできません)。 各特殊能力には、その説明で指定されているように、最低限必要な呪文スロット レベルがあります。\n\nアークメイジは、ある種のハイアルカナを獲得するために必要なレベルよりも高いレベルの呪文スロットを削除することを選択できます。"
 
-s_arcane_fire	="Arcane Fire"	s_arcane_fire_d	="The archmage gains the ability to change arcane spell energy into arcane fire, manifesting it as a bolt of raw magical energy. The bolt is a ranged touch attack with long range (400 feet + 40 feet/level of archmage) that deals 1d6 points of damage per class level of the archmage plus 1d6 points of damage per level of the spell used to create the effect. This ability costs one 9th-level spell slot."
+s_arcane_fire	="アーケインファイア"	s_arcane_fire_d	="アークメイジはアーケインスペルのエネルギーをアーケインファイアに変化させ、生の魔法エネルギーのボルトとして発現させる能力を得る。このボルトは射程の長い接触攻撃であり（射程400フィート＋アークメイジのレベルにつき40フィート）、アークメイジのクラス・レベルにつき1d6ポイントのダメージに加え、効果を生み出すのに使用した呪文のレベルにつき1d6ポイントのダメージを与える。この能力は9レベルの呪文スロットを1つ消費する。"
 
-s_arcane_reach	="Arcane Reach"	s_arcane_reach_d	="The archmage can use spells with a range of touch on a target up to 30 feet away. The archmage must make a ranged touch attack. Arcane reach can be selected a second time as a special ability, in which case the range increases to 60 feet. This ability costs one 7th-level spell slot."
+s_arcane_reach	="アーケインリーチ"	s_arcane_reach_d	="アークメイジは、最大 30 フィート離れたターゲットに接触範囲呪文を使用できます。 アークメイジは遠距離接触攻撃をしなければなりません。 アーケインリーチ は特殊能力として 2 回目に選択でき、その場合射程は 60 フィートに増加します。 この能力には第 7 レベルの呪文スロットが 1 つ必要です。"
 
-s_ctr_spl_bk	="Mastery of Counterspelling"	s_ctr_spl_bk_d	="When the archmage counterspells a spell, it is turned back upon the caster as if it were fully affected by a spell turning spell. If the spell cannot be affected by spell turning, then it is merely counterspelled. This ability costs one 7th-level spell slot."
+s_ctr_spl_bk	="マスタリーオブカウンタースペル"	s_ctr_spl_bk_d	="アークメイジが呪文を打ち消すと、あたかもカウンタースペル呪文の完全な影響を受けたかのように、その呪文は術者に返されます。 呪文がカウンタースペルの影響を受けない場合、それは単に打ち消されるだけです。 この能力には第 7 レベルの呪文スロットが 1 つ必要です。"
 
-s_mastery_of_elements	="Mastery of Elements"	s_mastery_of_elements_d	="The archmage can alter an arcane spell when cast so that it utilizes a different element from the one it normally uses. This ability can only alter a spell with the acid, cold, fire, electricity, or sonic descriptor. The spell’s casting time is unaffected. The caster decides whether to alter the spell’s energy type and chooses the new energy type when he begins casting. This ability costs one 8th-level spell slot."
+s_mastery_of_elements	="マスタリーオブエレメンツ"	s_mastery_of_elements_d	="アークメイジは、通常使用するものとは異なる要素を利用するように、詠唱時に秘術呪文を変更することができます。 この能力は、酸、冷気、火、電気、または音響の記述子を持つ呪文のみを変更できます。 呪文の詠唱時間は影響を受けません。 術者は呪文のエネルギータイプを変更するかどうかを決定し、詠唱を開始するときに新しいエネルギータイプを選択します。 この能力には第 8 レベルの呪文スロットが 1 つ必要です。"
 
-s_mastery_of_shaping	="Mastery of Shaping"	s_mastery_of_shaping_d	="The archmage can alter area and effect spells that use one of the following shapes: burst, cone, cylinder, emanation, or spread. The alteration consists of creating spaces within the spell’s area or effect that are not subject to the spell. The minimum dimension for these spaces is a 5-foot cube. Furthermore, any shapeable spells have a minimum dimension of 5 feet instead of 10 feet. This ability costs one 6th-level spell slot."
+s_mastery_of_shaping	="マスタリーオブシェイピング"	s_mastery_of_shaping_d	="アークメイジは、炸裂、円錐、円柱、噴出、拡散のいずれかの形状を使用する領域呪文や効果呪文を変更することができる。変更とは、その呪文の効果範囲内に、その呪文の効果を受けない空間を作り出すことである。これらの空間の最小寸法は5フィートの立方体である。さらに、変形可能な呪文の最小寸法は10フィートではなく5フィートである。この能力は6レベルの呪文スロットを1つ消費する。"
 
-s_zam_spell_power	="Spell Power"	s_zam_spell_power_d	="This ability increases the archmage’s effective caster level by +1 (for purposes of determining level-dependent spell variables such as damage dice or range, and caster level checks only). This ability costs one 5th-level spell slot."
+s_zam_spell_power	="スペルパワー"	s_zam_spell_power_d	="この能力は、アークメイジの実効キャスターレベルを +1 増加させます (ダメージダイスや射程などのレベル依存の呪文変数を決定する目的、およびキャスターレベルチェックのみ)。 この能力には第 5 レベルの呪文スロットが 1 つ必要です。"
 
-s_zam_spell_like_ability	="Spell-Like Ability"	s_zam_spell_like_ability_d	=[[An archmage who selects this type of high arcana can use one of her arcane spell slots (other than a slot expended to learn this or any other type of high arcana) to permanently prepare one of her arcane spells as a spell-like ability that can be used twice per day. The archmage does not use any components when casting the spell, although a spell that costs XP to cast still does so and a spell with a costly material component instead costs her 10 times that amount in XP. This ability costs one 5th-level spell slot. 
+s_zam_spell_like_ability	="スペルライクアビリティ"	s_zam_spell_like_ability_d	=[[このタイプのハイアルカナを選択したアークメイジは、自分の秘術呪文スロット（このハイアルカナや他のタイプのハイアルカナを習得するために使用したスロットを除く）の1つを使用して、自分の秘術呪文の1つを、1日 に2回使用できる呪文のような能力として恒久的に準備することができる。アークメイジはその呪文を唱える際に構成要素を使用しないが、唱えるのにXPを要する呪文は依然としてそうであり、高価な構成要素を要する呪文は代わりにその10倍のXPを要する。この能力は5レベルの呪文スロットを1つ消費する。 
 
-The spell-like ability normally uses a spell slot of the spell’s level, although the archmage can choose to make a spell modified by a metamagic feat into a spell-like ability at the appropriate spell level. 
+呪文のような能力は通常、その呪文のレベルの呪文スロットを使用するが、アークメイジはメタマジックの特技によって修正された呪文を、適切な呪文レベルの呪文のような能力にすることを選択できる。 
 
-The archmage may use an available higher-level spell slot in order to use the spell-like ability more often. Using a slot three levels higher than the chosen spell allows her to use the spell-like ability four times per day, and a slot six levels higher lets her use it six times per day. 
+アークメイジは、類似呪文能力をより頻繁に使用するために、利用可能な高レベルの呪文スロットを使用する場合があります。 選択した呪文より 3 レベル高いスロットを使用すると、呪文に似た能力を 1 日に 4 回使用でき、6 レベル高いスロットを使用すると 1 日に 6 回使用できます。 
 
-If spell-like ability is selected more than one time as a high arcana choice, this ability can apply to the same spell chosen the first time (increasing the number of times per day it can be used) or to a different spell.]]
+類似呪文能力がハイアルカナの選択肢として複数回選択された場合、この能力は最初に選択された同じ呪文 (1 日に使用できる回数が増加) または別の呪文に適用できます。]]
 
 
 -- zas	刺客		Assassin			
-s_death_atk		="Death Attack"	s_death_atk_d	=[[If an assassin studies his victim for 3 rounds and then makes a sneak attack with a melee weapon that successfully deals damage, the sneak attack has an additional effect: If the victim fails a Fortitude save (DC 10 + the assassin’s class level + the assassin’s Int modifier), he dies.
+s_death_atk		="デスアタック"	s_death_atk_d	=[[アサシンが自分の犠牲者を3ラウンド研究した後、近接武器で急所攻撃を行ない、ダメージを与えるのに成功した場合、その急所攻撃には追加効果がある：犠牲者が不屈のセーヴ（難易度10＋アサシンのクラス・レベル＋アサシンのINT修正値）に失敗した場合、その犠牲者は死亡する。
 
-While studying the victim, the assassin can undertake other actions so long as his attention stays focused on the target, but cannot use attack actions on the victim.
+犠牲者を研究している間、アサシンは注意がターゲットに集中している限り他の行動を起こすことができますが、犠牲者に対して攻撃アクションを使用することはできません。
 
-Once the assassin has completed the 3 rounds of study, he must make the death attack within the next 3 rounds. If a death attack is attempted and fails (the victim makes his save) or if the assassin does not launch the attack within 3 rounds of completing the study, 3 new rounds of study are required before he can attempt another death attack.]]
-s_death_atk_1	="Death Attack: Study"
-s_death_atk_2	="Death Attack: Ready"
-s_psn_use		="Poison Use"	s_psn_use_d	="Assassins and blackguards are trained in the use of poison and never risk accidentally poisoning themselves when applying poison to a blade."
-s_zas_def_psn	="Save Bonus against Poison"	s_zas_def_psn_d	="The assassin gains a natural saving throw bonus to all poisons gained at 2nd level that increases by +1 for every two additional levels the assassin gains."
-s_hide_sight	="Hide in Plain Sight"	s_hide_sight_d	="At 8th level, an assassin can use the Hide skill even while being observed. As long as he is within 10 feet of some sort of shadow, an assassin can hide himself from view in the open without having anything to actually hide behind.\n\nHe cannot, however, hide in his own shadow."
+アサシンは 3 ラウンドの学習を完了すると、次の 3 ラウンド以内にデスアタックを行わなければなりません。 デスアタックが試みられて失敗した場合（犠牲者がセーブした場合）、またはアサシンが研究を完了してから3ラウンド以内に攻撃を開始しなかった場合、別の死の攻撃を試みるには、新たに3ラウンドの研究が必要です。]]
+s_death_atk_1	="デスアタック: 研究"
+s_death_atk_2	="デスアタック: 準備完了"
+s_psn_use		="毒の使用"	s_psn_use_d	="アサシンとブラックガードは毒の使用について訓練を受けており、刃に毒をかけるときに誤って毒を摂取する危険はありません。"
+s_zas_def_psn	="毒に対するセーブボーナス"	s_zas_def_psn_d	="アサシンは、第 2 レベルで獲得したすべての毒に対して自然なセーヴィング スロー ボーナスを獲得します。このボーナスは、アサシンがさらに 2 レベル獲得するごとに +1 ずつ増加します。"
+s_hide_sight	="見えないところに隠れる"	s_hide_sight_d	="レベル 8 では、アサシンは監視されているときでも隠れ身スキルを使用できます。 アサシンは、何らかの影から 10 フィート以内にいる限り、実際に隠れるものがなくても、屋外で視界から身を隠すことができます。\n\nただし、自分の影に隠れることはできません。"
 
 
 -- zbg	暗黑卫士	Blackguard			
 
-s_dark_blessing	="Dark Blessing"	s_dark_blessing_d	="A blackguard applies his Charisma modifier (if positive) as a bonus on all saving throws."
+s_dark_blessing	="ダークブレッシング"	s_dark_blessing_d	="ブラックガードは、すべてのセーヴィングスローにボーナスとしてCHA修正値 (正の場合) を適用します。"
 
-s_aura_of_despair	="Aura of Despair"	s_aura_of_despair_d	="Beginning at 3rd level, the blackguard radiates a malign aura that causes enemies within 10 feet of him to take a –2 penalty on all saving throws."
+s_aura_of_despair	="絶望のオーラ"	s_aura_of_despair_d	="3 レベルから、ブラックガードは悪意のあるオーラを放射し、10 フィート以内の敵にすべてのセーヴィング スローに -2 のペナルティを課します。"
 
-s_zbg_cmd_ud	="Command Undead"	s_zbg_cmd_ud_d	="When a blackguard reaches 3rd level, he gains the supernatural ability to command and rebuke undead. He commands undead as would a cleric of two levels lower."
+s_zbg_cmd_ud	="コマンドアンデッド"	s_zbg_cmd_ud_d	="ブラックガードが第 3 レベルに達すると、アンデッドを指揮し叱責する超自然的な能力を獲得します。 彼は 2 レベル下のクレリックと同じようにアンデッドを指揮します。"
 
-s_fiendish_servant	="Fiendish Servant"	s_fiendish_servant_d	=[[Upon or after reaching 5th level, a blackguard can call a fiendish bat, cat, dire rat, horse, pony, raven, or toad to serve him. The blackguard’s servant further gains HD and special abilities based on the blackguard’s character level (see the table below).
+s_fiendish_servant	="悪魔の従者"	s_fiendish_servant_d	=[[5 レベルに到達したとき、または到達した後、ブラックガードは凶悪なコウモリ、猫、恐ろしいネズミ、馬、ポニー、カラス、またはヒキガエルを呼び出して奉仕させることができます。 ブラックガードの使用人は、ブラックガードのキャラクター レベルに基づいて ヒットダイス および特殊能力をさらに獲得します (以下の表を参照)。
 
-A blackguard may have only one fiendish servant at a time.
+ブラックガードは一度に 1 人の悪魔の従者しか持つことができません。
 
-Should the blackguard’s servant die, he may call for another one after a year and a day. The new fiendish servant has all the accumulated abilities due a servant of the blackguard’s current level.
+ブラックガードの使用人が死亡した場合、1年と1日後に別の使用人を呼び寄せる可能性があります。 新しい悪魔の従者は、ブラックガードの現在のレベルの従者にふさわしい蓄積された能力をすべて備えています。
 
-Character Level	Bonus HD	Natural Armor Adj.	Str Adj.	Int	Special
-12th or lower	+2			+1					+1			6	Empathic link, improved evasion, share saving throws, share spells
-13th–15th		+4			+3					+2			7	Speak with blackguard
-16th–18th		+6			+5					+3			8	Blood bond
-19th–20th		+8			+7					+4			9	Spell resistance
+キャラクターレベル	ボーナスヒットダイス	肉体鎧修正	STR修正	INT	特別
+12以下	+2			+1					+1			6	共感リンク、回避向上、セービングスローの共有、呪文の共有
+13から15		+4			+3					+2			7	ブラックガードと話す
+16から18		+6			+5					+3			8	血の絆
+19から20		+8			+7					+4			9	呪文耐性
 
-Character Level: The character level of the blackguard (his blackguard level plus his original class level).
+キャラクターレベル: ブラックガードのキャラクターレベル (ブラックガードレベルに元のクラスレベルを加えたもの)。
 
-Bonus HD: Extra eight-sided (d8) Hit Dice, each of which gains a Constitution modifier, as normal. Extra Hit Dice improve the servant’s base attack and base save bonuses, as normal.
+ボーナスヒットダイス：8面体（d8）の追加のヒットダイスで、それぞれ通常通りCONの修正を得る。追加のヒットダイスは通常通り、サーヴァントの基本攻撃力と基本セーヴボーナスを向上させる。
 
-Natural Armor Adj.: This is an improvement to the servant’s existing natural armor bonus.
+肉体鎧修正: これは、サーヴァントの既存の肉体鎧ボーナスの改善です。
 
-Str Adj.: Add this figure to the servant’s Strength score.
+STR修正: この数値をサーヴァントの STR スコアに加算します。
 
-Int: The servant’s Intelligence score. (A fiendish servant is smarter than normal animals of its kind.)]]
+INT:使用人のINTスコア。 (悪魔の召使いは、同種の通常の動物よりも賢い。)]]
 
-s_empathic_link	="Empathic Link"	s_empathic_link_d	="The blackguard has an empathic link with his servant out to a distance of up to 1 mile. The blackguard cannot see through the servant’s eyes, but they can communicate empathically. Because of the limited nature of the link, only general emotional content can be communicated.\n\nBecause of the empathic link between the servant and the blackguard, the blackguard has the same connection to a place or an item that the servant does."
+s_empathic_link	="共感リンク"	s_empathic_link_d	="ブラックガードは、最大 1 マイル離れたところにいる従者と共感的なつながりを持っています。 ブラックガードは使用人の目を通して見ることはできませんが、共感的にコミュニケーションをとることができます。 リンクの性質が限られているため、一般的な感情的な内容のみを伝えることができます。\n\n召使とブラックガードの間には共感的なリンクがあるため、ブラックガードは召使と同じ場所やアイテムとのつながりを持ちます。"
 
-s_share_saving_throws	="Share Saving Throws"	s_share_saving_throws_d	="For each of its saving throws, the servant uses either its own base save bonus or the blackguard’s, whichever is higher. The servant applies its own ability modifiers to saves, and it doesn’t share any other bonuses on saves that the blackguard might have."
+s_share_saving_throws	="セービングスローの共有"	s_share_saving_throws_d	="セーヴィング スローのたびに、サーバントは自身の基本セーブ ボーナスまたはブラックガードのいずれか高い方を使用します。 使用人はセーブに独自の能力修正を適用し、ブラックガードが持つ可能性のあるセーブに関する他のボーナスを共有しません。"
 
-s_speak_with_blackguard	="Speak with Blackguard"	s_speak_with_blackguard_d	="If the blackguard’s character level is 13th or higher, the blackguard and servant can communicate verbally as if they were using a common language. Other creatures do not understand the communication without magical help."
+s_speak_with_blackguard	="ブラックガードと話す"	s_speak_with_blackguard_d	="ブラックガードのキャラクターレベルが13以上であれば、ブラックガードと使用人は共通言語を使用しているかのように口頭でコミュニケーションをとることができます。 他の生き物は魔法の助けがなければコミュニケーションを理解できません。"
 
-s_blood_bond	="Blood Bond"	s_blood_bond_d	="If the blackguard’s character level is 16th or higher, the servant gains a +2 bonus on all attack rolls, checks, and saves if it witnesses the blackguard being threatened or harmed.\n\nThis bonus lasts as long as the threat is immediate and apparent."
+s_blood_bond	="血の絆"	s_blood_bond_d	="ブラックガードのキャラクター レベルが 16 以上の場合、使用人はブラックガードが脅迫されたり危害を加えられているのを目撃した場合、すべての攻撃ロール、チェック、セーブに +2 ボーナスを獲得します。\n\nこのボーナスは、見かけ上の脅威が差し迫ったもの "
 
-s_zbg_sr	="Spell Resistance"	s_zbg_sr_d	="If the blackguard’s character level is 19th or higher, the servant gains spell resistance equal to the blackguard’s level + 5. To affect the servant with a spell, another spellcaster must get a result on a caster level check (1d20 + caster level) that equals or exceeds the servant’s spell resistance."
+s_zbg_sr	="呪文耐性"	s_zbg_sr_d	="ブラックガードのキャラクターレベルが 19 位以上の場合、使用人はブラックガードのレベル + 5 に等しい呪文耐性を獲得します。 使用人に呪文を適用するには、別の術者が術者レベルチェック (1d20 + 術者レベル) で次の結果を得なければなりません。 またはサーヴァントの呪文耐性を超えます。"
 
 -- zdr	龙脉术士	Dragon Disciple		
-s_zdr_spls		="Bonus Spells"	s_zdr_spls_d	=[[Dragon disciples gain bonus spells as they gain levels in this prestige class, as if from having a high ability score. A bonus spell can be added to any level of spells the disciple already has the ability to cast.
+s_zdr_spls		="ボーナススペル"	s_zdr_spls_d	=[[ドラゴンディサイプルは、この上級クラスのレベルが上がると、まるで高い能力値を持つかのようにボーナス呪文を獲得します。 ボーナス呪文は、ドラゴンディサイプルがすでに唱える能力を持っているあらゆるレベルの呪文に追加できます。
 
-If a character has more than one spellcasting class, he must decide to which class he adds each bonus spell as it is gained. Once a bonus spell has been applied, it cannot be shifted.]]
-s_zdr_nac		="Natural Armor Increase"	s_zdr_nac_d	=[[At 1st, 4th, 7th, and 10th level, a dragon disciple gains an increase to his existing natural armor (if any).
+キャラクターが複数の呪文詠唱クラスを持つ場合、獲得したボーナス呪文をどのクラスに追加するかを決定する必要があります。 ボーナス呪文が適用されると、それを交代することはできません。]]
+s_zdr_nac		="肉体鎧増加"	s_zdr_nac_d	=[[1、4、7、10 レベルで、ドラゴンディサイプルは既存の肉体鎧 (存在する場合) を増加させます。
 
-As his skin thickens, a dragon disciple takes on more and more of his progenitor’s physical aspect.]]
-s_zdr_nwpns		="Claws and Bite"	s_zdr_nwpns_d	=[[At 2nd level, a dragon disciple gains claw and bite attacks if he does not already have them. Use the values below or the disciple’s base claw and bite damage values, whichever are greater.
+皮膚が厚くなるにつれて、ドラゴンディサイプルは祖先の肉体的な側面をますます帯びるようになります。]]
+s_zdr_nwpns		="爪と噛みつき"	s_zdr_nwpns_d	=[[2 レベルでは、ドラゴンディサイプルは爪と噛みつきをまだ持っていない場合は獲得します。 以下の値、またはドラゴンディサイプルの基本的な爪と噛みつきのダメージ値のいずれか大きい方を使用します。
 
-<b c=tw>Size	Bite Damage	Claw Damage</b>
-Small	1d4		1d3
-Medium	1d6		1d4
-Large	1d8		1d6
+<b c=tw>サイズ	噛みつきダメージ	爪ダメージ</b>
+小	1d4		1d3
+中	1d6		1d4
+大	1d8		1d6
 
-A dragon disciple is considered proficient with these attacks. When making a full attack, a dragon disciple uses his full base attack bonus with his bite attack but takes a –5 penalty on claw attacks. The Multiattack feat reduces this penalty to only –2.]]
-s_abi_inc		="Ability Boost"	s_abi_inc_d	=[[As a dragon disciple gains levels in this prestige class, his ability scores increase.
+ドラゴンディサイプルはこれらの攻撃に習熟しているとみなされる。フルアタックを行なう場合、ドラゴンディサイプルは基本攻撃ボーナスをフルに使って噛みつき攻撃を行なうが、クロー攻撃には-5のペナルティを受ける。マルチアタックの特技はこのペナルティを-2だけ軽減する。]]
+s_abi_inc		="アビリティブースト"	s_abi_inc_d	=[[ドラゴンディサイプルがこの上級クラスでレベルを上げると、能力スコアが増加します。
 
-These increases stack and are gained as if through level advancement.]]
-s_zdr_bwpn		="Breath Weapon"	s_zdr_bwpn_d	=[[At 3rd level, a dragon disciple gains a minor breath weapon. The type and shape depend on the dragon variety whose heritage he enjoys (see below).
+これらの増加は重複し、あたかもレベルアップしたかのように得られる。]]
+s_zdr_bwpn		="ブレスウェポン"	s_zdr_bwpn_d	=[[レベル3になると、ドラゴンディサイプルはマイナーブレスウェポンを得る。その種類と形状は、彼が受け継いでいるドラゴンの種類に依存する（下記参照）。
 
-Regardless of the ancestor, the breath weapon deals 2d8 points of damage of the appropriate energy type. At 7th level, 10th level, 13th level, and every 4 levels thereafter, the damage increases by 2d8.
+先祖に関係なく、ブレス武器は適切なエネルギー タイプの 2d8 ポイントのダメージを与えます。 7 レベル、10 レベル、13 レベル、およびその後 4 レベルごとに、ダメージは 2d8 ずつ増加します。
 
-Regardless of its strength, the breath weapon can be used only once per day.
+ブレス武器はその強さに関係なく、1日に1回しか使用できません。
 
 
-Use all the rules for dragon breath weapons except as specified here.
+ここで指定されている以外のドラゴンブレス武器のルールはすべて使用する。
 
-The DC of the breath weapon is 10 + dragon disciple level + Con modifier.
+ブレス武器の難易度は10＋ドラゴンディサイプルレベル＋CON補正です。
 
-A line-shaped breath weapon is 5 feet high, 5 feet wide, and 60 feet long. A cone-shaped breath weapon is 30 feet long.
+線状のブレス武器は高さ 5 フィート、幅 5 フィート、長さ 60 フィートです。 円錐形のブレス武器の長さは 30 フィートです。
 
-<b c=tw>Dragon Variety*	Breath Weapon</b>
-Black		Line of acid
-Blue		Line of lightning
-Green		Cone of corrosive gas (acid)
-Red		Cone of fire
-White		Cone of cold
-Brass		Line of fire
-Bronze		Line of lightning
-Copper		Line of acid
-Gold		Cone of fire
-Silver		Cone of cold
+<b c=tw>ドラゴンの種類* ブレスウェポン</b>
+黒		酸の線
+青		稲妻の線
+緑		腐食性ガス（酸）の円錐
+赤		火の円錐
+白		寒さの円錐
+真鍮		火線
+青銅		稲妻の線
+銅		酸の線
+金		火の円錐
+銀		寒さの円錐
 
-* Other varieties of dragon disciple are possible, using other dragon varieties as ancestors.]]
-s_drg_anc		="Dragon Ancestor"	s_drg_anc_d	=[[As dragon disciples discover the power of their forebears, they can learn to breathe fire, take flight on leathery wings, and—at the pinnacle of their abilities—assume the form of a dragon.
+* 他の種類のドラゴンを祖先に使用して、他の種類のドラゴンディサイプルを作成することも可能です。]]
+s_drg_anc		="ドラゴンの祖先"	s_drg_anc_d	=[[ドラゴンディサイプルたちは祖先の力を発見し、火を吐くことを学び、革のような翼で飛び立ち、そして能力の頂点ではドラゴンの姿をとることができます。
 
-At 3rd level, a dragon disciple gains a minor breath weapon. The type and shape depend on the dragon variety whose heritage he enjoys.
+3 レベルでは、ドラゴンディサイプルはマイナーなブレス武器を獲得します。 種類と形状は、彼がその伝統を享受しているドラゴンの種類によって異なります。
 
-Dragon Variety*	Breath Weapon
-Black		Line of acid
-Blue		Line of lightning
-Green		Cone of corrosive gas (acid)
-Red		Cone of fire
-White		Cone of cold
-Brass		Line of fire
-Bronze		Line of lightning
-Copper		Line of acid
-Gold		Cone of fire
-Silver		Cone of cold
+ドラゴンの種類*	ブレスウェポン
+黒		酸の線
+青		稲妻の線
+緑		腐食性ガス（酸）の円錐
+赤		火の円錐
+白		寒さの円錐
+真鍮		火線
+青銅		稲妻の線
+銅		酸の線
+金		火の円錐
+銀		寒さの円錐
 
-* Other varieties of dragon disciple are possible, using other dragon varieties as ancestors.
+* 他の種類のドラゴンを祖先に使用して、他の種類のドラゴンディサイプルを作成することも可能です。
 
-At 10th level, a dragon disciple acquires immunity to the energy type used by his breath weapon.]]
-s_drg_c_k		="Black Dragon"
-s_drg_c_b		="Blue Dragon"
-s_drg_c_g		="Green Dragon"
-s_drg_c_r		="Red  Dragon"
-s_drg_c_w		="White Dragon"
-s_drg_m_brs		="Brass Dragon"
-s_drg_m_brz		="Bronze Dragon"
-s_drg_m_cpr		="Copper Dragon"
-s_drg_m_gld		="Gold Dragon"
-s_drg_m_slv		="Silver Dragon"
-s_w_drg_c_k		="Line of acid"
-s_w_drg_c_b		="Line of lightning"
-s_w_drg_c_g		="Cone of corrosive gas (acid)"
-s_w_drg_c_r		="Cone of fire"
-s_w_drg_c_w		="Cone of cold"
-s_w_drg_m_brs	="Line of fire"
-s_w_drg_m_brz	="Line of lightning"
-s_w_drg_m_cpr	="Line of acid"
-s_w_drg_m_gld	="Cone of fire"
-s_w_drg_m_slv	="Cone of cold"
-s_zdr_fly		="Wings"	s_zdr_fly_d	="At 9th level, a dragon disciple grows a set of draconic wings. He may now fly at a speed equal to his normal land speed."
-s_zdr_max		="Dragon Apotheosis"	s_zdr_max_d	=[[At 10th level, a dragon disciple takes on the half-dragon template. His breath weapon becomes more powerful, and he gains +4 to Strength and +2 to Charisma.
+10 レベルでは、ドラゴンディサイプルはブレス武器によって使用されるエネルギー タイプに対する免疫を獲得します。]]
+s_drg_c_k		="ブラックドラゴン"
+s_drg_c_b		="ブルードラゴン"
+s_drg_c_g		="グリーンドラゴン"
+s_drg_c_r		="レッドドラゴン"
+s_drg_c_w		="ホワイトドラゴン"
+s_drg_m_brs		="ブラスドラゴン"
+s_drg_m_brz		="ブロンズドラゴン"
+s_drg_m_cpr		="カッパードラゴン"
+s_drg_m_gld		="ゴールドドラゴン"
+s_drg_m_slv		="シルバードラゴン"
+s_w_drg_c_k		="酸の線"
+s_w_drg_c_b		="稲妻の線"
+s_w_drg_c_g		="腐食性ガス（酸）の円錐"
+s_w_drg_c_r		="火の円錐"
+s_w_drg_c_w		="寒さの円錐"
+s_w_drg_m_brs	="火線"
+s_w_drg_m_brz	="稲妻の線"
+s_w_drg_m_cpr	="酸の線"
+s_w_drg_m_gld	="火の円錐"
+s_w_drg_m_slv	="寒さの円錐"
+s_zdr_fly		="翼"	s_zdr_fly_d	="9 レベルでは、ドラゴンディサイプルに一連のドラゴンの翼が生えます。 彼は通常の地上速度と同じ速度で飛行できるようになります。"
+s_zdr_max		="ドラゴンの神格化"	s_zdr_max_d	=[[10 レベルでは、ドラゴンディサイプルがハーフドラゴンのテンプレートを引き受けます。 彼のブレス武器はより強力になり、STRが +4 、CHAが +2 増加します。
 
-His natural armor bonus increases to +4, and he acquires low-light vision, 60-foot darkvision, immunity to sleep and paralysis effects, and immunity to the energy type used by his breath weapon.]]
+彼の肉体鎧ボーナスは +4 に増加し、彼は低照度視力、60 フィートの暗視、睡眠と麻痺効果に対する免疫、そしてブレス武器によって使用されるエネルギータイプに対する免疫を獲得します。]]
 
 -- zdu	决斗家		Duelist				
-s_zdu_ac_int	="Canny Defense"		s_zdu_ac_int_d	="At 1st level, when not wearing armor or using a shield, a duelist adds 1 point of Intelligence bonus (if any) per duelist class level to her Dexterity bonus to modify Armor Class while wielding a melee weapon.\n\nIf a duelist is caught flat-footed or otherwise denied her Dexterity bonus, she also loses this bonus."
-s_init_2		="Improved Reaction"	s_init_2_d		="At 2nd level, a duelist gains a +2 bonus on initiative checks. At 8th level, the bonus increases to +4. This bonus stacks with the benefit provided by the Improved Initiative feat."
-s_zdu_mob		="Enhanced Mobility"	s_zdu_mob_d		="At 3rd level, when wearing no armor and not using a shield, a duelist gains an additional +4 bonus to AC against attacks of opportunity caused when she moves out of a threatened square."
-s_zdu_rf		="Grace"				s_zdu_rf_d		="At 4th level, a duelist gains an additional +2 competence bonus on all Reflex saving throws. This ability functions for a duelist only when she is wearing no armor and not using a shield."
-s_prc_dmg		="Precise Strike"		s_prc_dmg_d		="At 5th level, a duelist gains the ability to strike precisely with a light or one-handed piercing weapon, gaining an extra 1d6 damage added to her normal damage roll.\n\nWhen making a precise strike, a duelist cannot attack with a weapon in her other hand or use a shield.\n\nA duelist’s precise strike only works against living creatures with discernible anatomies. Any creature that is immune to critical hits is not vulnerable to a precise strike, and any item or ability that protects a creature from critical hits also protects a creature from a precise strike.\n\nAt 10th level and every 5 levels thereafter (10, 15, 20…), the extra damage on a precise strike increases by 1d6."
-s_acr_chg		="Acrobatic Charge"		s_acr_chg_d		="At 6th level, a duelist gains the ability to charge in situations where others cannot. She may charge over difficult terrain that normally slows movement.\n\nDepending on the circumstance, she may still need to make appropriate checks to successfully move over the terrain."
-s_zdu_ac_def	="Elaborate Parry"		s_zdu_ac_def_d	="At 7th level, if a duelist chooses to fight defensively or use total defense in melee combat, she gains an additional +1 dodge bonus to AC for each level of duelist she has."
-s_zdu_dfl_arw	="Deflect Arrows"		s_zdu_dfl_arw_d	="At 9th level, a duelist gains the benefit of the Deflect Arrows feat when using a light or one-handed piercing weapon."
+s_zdu_ac_int	="巧みなディフェンス"		s_zdu_ac_int_d	="第 1 レベルでは、鎧を着ていない、または盾を使用していない場合、デュエリストはデュエリスト クラス レベルごとにINTボーナス (ある場合) 1 ポイントをDEXボーナスに追加し、近接武器を使用しているときにアーマークラスを変更します。\n\nデュエリストが立ちすくみで捕らえられるか、その他の理由でDEXボーナスを拒否された場合、彼女はこのボーナスも失います。"
+s_init_2		="リアクションの向上"	s_init_2_d		="第 2 レベルでは、デュエリストはイニシアチブチェックに +2 ボーナスを獲得します。 8 レベルでは、ボーナスは +4 に増加します。 このボーナスは、改良されたイニシアチブの特技によって提供される特典と重複します。"
+s_zdu_mob		="機動性の向上"	s_zdu_mob_d		="第3レベルにおいて、鎧を身に着けず盾を使用しない場合、デュエリストは脅威のあるマスから移動した際に発生する機会攻撃に対して、ACに＋4のボーナスを追加で得る。"
+s_zdu_rf		="恩寵"				s_zdu_rf_d		="レベル4で、デュエリストはすべての反射セーヴィングスローに＋2の能力ボーナスを追加で得る。この能力は、デュエリストが鎧を身につけず、盾を使用していないときにのみ機能する。"
+s_prc_dmg		="精密打撃"		s_prc_dmg_d		="5 レベルでは、デュエリストは軽い武器または片手の貫通武器で精密打撃できるようになり、通常のダメージ ロールに 1d6 の追加ダメージが追加されます。\n\n精密打撃を行う場合、デュエリストは武器で攻撃することはできません。 もう一方の手に持つか、盾を使用してください。\n\nデュエリストの精密打撃は、識別可能な解剖学的構造を持つクリーチャーに対してのみ機能します。 クリティカルヒットの影響を受けないクリーチャーは精密攻撃に対して脆弱ではありません。また、クリティカルヒットからクリーチャーを保護するアイテムや能力は、精密打撃からもクリーチャーを保護します。\n\n10 レベルとその後 5 レベルごと (10 、15、20…)、精密打撃による追加ダメージは 1d6 増加します。"
+s_acr_chg		="アクロバティックチャージ"		s_acr_chg_d		="6 レベルでは、デュエリストは他の人ができない状況で突撃する能力を獲得します。 彼女は、通常は移動が遅くなる困難な地形を突撃することがあります。\n\n状況によっては、地形をうまく移動するために適切なチェックを行う必要がある場合もあります。"
+s_zdu_ac_def	="精巧なパリィ"		s_zdu_ac_def_d	="7 レベルで、デュエリストが防御的に戦うか、近接戦闘で完全な防御を使用することを選択した場合、彼女はデュエリストのレベルごとに AC に追加の +1 回避ボーナスを獲得します。"
+s_zdu_dfl_arw	="矢をそらす"		s_zdu_dfl_arw_d	="9 レベルでは、デュエリストは軽い武器または片手の貫通武器を使用するときに矢をそらすの特技の恩恵を受けます。"
 
 -- zdd	矮人防御者	Dwarven Defender	
 
-s_zdd_ac_bonus	="ＡＣボーナス"	s_zdd_ac_bonus_d	="The dwarven defender receives a dodge bonus to Armor Class that improves as the defender gains levels.\n\nAt 1st level, and every 3 levels thereafter (1, 4, 7...), this bonus increases by 1."
+s_zdd_ac_bonus	="AC ボーナス"	s_zdd_ac_bonus_d	="ドワーフディフェンダーは、レベルが上がるにつれて向上するアーマー クラスへの回避ボーナスを受け取ります。\n\n第 1 レベルで、その後 3 レベルごと (1、4、7...)、このボーナスは 1 ずつ増加します。"
 
-s_zdd_def	="Defensive Stance"	s_zdd_def_d	=[[When he adopts a defensive stance, a defender gains phenomenal strength and durability, but he cannot move from the spot he is defending.
+s_zdd_def	="守備の姿勢"	s_zdd_def_d	=[[守備の姿勢をとると、ディフェンダーは驚異的な強さと耐久性を獲得しますが、防御している場所から動くことはできません。
 
-He gains +2 to Strength, +4 to Constitution, a +2 resistance bonus on all saves, and a +4 dodge bonus to AC. (The increase in Constitution increases the defender’s hit points by 2 points per level, but these hit points go away at the end of the defensive stance when the Constitution score drops back 4 points. These extra hit points are not lost first the way temporary hit points are.)
+彼は STR に +2、CON に +4、すべてのセーブに +2 の耐性ボーナス、AC に +4 の回避ボーナスを獲得します。 (CONの増加により、ディフェンダーのヒットポイントはレベルごとに 2 ポイント増加しますが、これらのヒットポイントは、守備の姿勢の終了時にCONスコアが 4 ポイント低下すると消滅します。これらの追加のヒットポイントは、一時的なヒットの方法で最初に失われることはありません。 ポイントはあります。）
 
-While in a defensive stance, a defender cannot use skills or abilities that would require him to shift his position.
+守備の姿勢にある間、ディフェンダーはポジションを変更する必要があるスキルや能力を使用することはできません。
 
-A defensive stance lasts for a number of rounds equal to 3 + the character’s (newly improved) Constitution modifier. A defender may end his defensive stance voluntarily prior to this limit. At the end of the defensive stance, the defender is winded and takes a –2 penalty to Strength for the duration of that encounter.
+守備の姿勢は3＋そのキャラクターの（新たに向上した）CON修正値に等しいラウンド数持続する。ディフェンダーは、この制限時間前に任意で守備の姿勢を終了させることができる。守備の姿勢が終了すると、ディフェンダーは風を受け、その遭遇の間、体力に-2のペナルティを受ける。
 
-A defender can only use his defensive stance a certain number of times per day as determined by his level. At 1st level, and every 2 levels thereafter (1, 3, 5...), this number increases by 1.
+ディフェンダーは、レベルに応じて 1 日に決められた回数だけ守備の姿勢を使用できます。 最初のレベル、およびその後 2 レベルごと (1、3、5...)、この数値は 1 ずつ増加します。
 
-Using the defensive stance takes no time itself, but a defender can only do so during his action.]]
+守備の姿勢を使用すること自体には時間はかかりませんが、ディフェンダーはアクション中にのみそれを行うことができます。]]
 
-s_zdd_def_mov	="Mobile Defense"	s_zdd_def_mov_d	="At 8th level, a dwarven defender can adjust his position while maintaining a defensive stance. While in a defensive stance, he can take one 5-foot step each round without losing the benefit of the stance."
+s_zdd_def_mov	="機動防御"	s_zdd_def_mov_d	="8 レベルでは、ドワーフディフェンダーは守備の姿勢を維持しながら位置を調整できます。 守備の姿勢の間、彼はその利点を失うことなく、各ラウンドで 5 フィートの一歩を踏み出すことができます。"
 
 -- zek	奥法骑士	Eldritch Knight		
 
-s_zek_afc		="Armoured Caster"		s_zek_afc_d		="At 1st level, spell failure chance suffered by an eldritch knight is decreased by 5%. It decreases by %5 every two levels thereafter (1, 3, 5...)."
-s_zek_undr		="Penetrating Strike"	s_zek_undr_d	="At 2nd level, an eldritch knight's weapon attacks ignore 2 points of damage reduction of any type. It increases by 2 points every two levels thereafter (2, 4, 6...)."
-s_zek_sr		="Eldritch Resistance"	s_zek_sr_d		="At 5th level, an eldritch knight gains a +1 bonus on his existing spell resistance. At 10th level, the bonus increases to +2."
+s_zek_afc		="アーマードキャスター"		s_zek_afc_d		="1 レベルでは、エルドリッチナイトが受ける呪文失敗の確率が 5% 減少します。 その後 2 レベル (1、3、5...) ごとに %5 ずつ減少します。"
+s_zek_undr		="貫通攻撃"	s_zek_undr_d	="第 2 レベルでは、エルドリッチナイトの武器攻撃は、あらゆるタイプの 2 ポイントのダメージ軽減を無視します。 以降は 2 レベル (2、4、6...) ごとに 2 ポイントずつ増加します。"
+s_zek_sr		="異界耐性"	s_zek_sr_d		="5 レベルでは、エルドリッチナイトは既存の呪文耐性に +1 ボーナスを獲得します。 10 レベルでは、ボーナスは +2 に増加します。"
 
 -- zhi	大祭司		Hierophant			
 
-s_bns_cl	="Spells and Caster Level"	s_bns_cl_d	="Levels in the hierophant prestige class, even though they do not advance spell progression in the character’s base class, still stack with the character’s base spellcasting levels to determine caster level."
+s_bns_cl	="呪文と術者レベル"	s_bns_cl_d	="ハイエロファントの上級クラスのレベルは、キャラクターの基本クラスでの呪文の進行を進めませんが、キャラクターの基本呪文詠唱レベルと積み重なって術者レベルを決定します。"
 
-s_zhi_special_ability	="Special Ability"	s_zhi_special_ability_d	="Every level, a hierophant gains a special ability of his choice from the corresponding list. A hierophant can choose a metamagic feat in place of one of the special abilities described here if desired."
+s_zhi_special_ability	="特殊能力"	s_zhi_special_ability_d	="レベルごとに、ハイエロファントは対応するリストから選択した特殊能力を獲得します。 ハイエロファントは、必要に応じて、ここで説明されている特殊能力の 1 つの代わりにメタマジック特技を選択できます。"
 
-s_blast_infidel	="Blast Infidel"	s_blast_infidel_d	=[[A hierophant can use negative energy spells to their maximum effect on creatures with an alignment opposed to the hierophant. (See the table below for a list of which alignments are opposed to each alignment.) Any spell with a description that involves inflicting or channeling negative energy cast on a creature of the opposed alignment works as if under the effect of a Maximize Spell feat (without using a higher-level spell slot). Undead affected by this ability heal the maximized amount of damage.
+s_blast_infidel	="ブラストインフィデル"	s_blast_infidel_d	=[[ハイエロファントは、ハイエロファントと反対の属性を持つクリーチャーに対して、負のエネルギー呪文を最大限の効果を発揮するように使用できます。 (どのアライメントが各アライメントと対立しているかのリストについては、以下の表を参照してください。) 反対のアライメントのクリーチャーにキャストされる負のエネルギーを与えたり流したりすることを伴う説明のある呪文は、あたかも呪文最大化特技の効果の下にあるかのように機能します ( より高いレベルの呪文スロットを使用せずに）。 この能力の影響を受けたアンデッドは最大量のダメージを回復します。
 
-Hierophant Alignment 	Opposed Alignment
-Lawful good			Chaotic evil
-Neutral good		Neutral evil
-Chaotic good		Lawful evil
-Lawful neutral		Chaotic neutral
-Neutral				Lawful good, chaotic good, lawful evil, chaotic evil*
-Chaotic neutral		Lawful neutral
-Lawful evil			Chaotic good
-Neutral evil		Neutral good
-Chaotic evil		Lawful good
+ハイエロファントアライメント 	反対のアライメント
+ロウフルグッド			カオティックエビル
+ナチュラルグッド		ナチュラルエビル
+カオティックグッド		ロウフルエビル
+ロウフルナチュラル		カオティックナチュラル
+ナチュラル				ロウフルグッド, カオティックグッド, ロウフルエビル, カオティックエビル*
+カオティックナチュラル		ロウフルナチュラル
+ロウフルエビル			カオティックグッド
+ナチュラルエビル		ナチュラルグッド
+カオティックエビル		ロウフルグッド
 
-* A neutral hierophant chooses one of these alignments to be the one that he opposes, for the purposes of this special ability.]]
+* 中立のハイエロファントは、この特殊能力の目的上、これらのアライメントから1つを選んで反対するアライメントとする。]]
 
-s_divine_reach	="Divine Reach"	s_divine_reach_d	="A hierophant with this ability can use touch spells on targets up to 30 feet away. If the spell requires a melee touch attack, the hierophant must make a ranged touch attack instead. Divine reach can be selected a second time as a special ability, in which case the range increases to 60 feet."
+s_divine_reach	="ディバインリーチ"	s_divine_reach_d	="この能力を持つハイエロファントは、最大30フィート離れたターゲットに接触呪文を使用できます。 呪文が近接接触攻撃を必要とする場合、ハイエロファントは代わりに遠隔接触攻撃を行わなければなりません。 ディバインリーチは特殊能力として 2 回目に選択でき、その場合射程は 60 フィートに増加します。"
 
-s_faith_healing	="Faith Healing"	s_faith_healing_d	="A hierophant can use healing spells to their maximum effect on creatures of the same alignment as the hierophant (including the hierophant himself ). Any spell with the healing descriptor cast on such creatures works as if under the effects of a Maximize Spell feat (without using a higher-level spell slot)."
+s_faith_healing	="フェイスヒーリング"	s_faith_healing_d	="ハイエロファントは、ハイエロファントと同じ属性のクリーチャー（ハイエロファント自身を含む）に対して最大の効果を発揮するように治癒呪文を使用できます。 そのようなクリーチャーに唱えられるヒーリングディスクリプタを持つ呪文は、（高レベルの呪文スロットを使用せずに）呪文最大化特技の効果を受けているかのように機能します。"
 
-s_gift_of_the_divine	="Gift of the Divine"	s_gift_of_the_divine_d	="Available only to hierophants with cleric levels, this ability allows a hierophant to transfer one or more uses of his turn undead ability to a willing creature. (Hierophants who rebuke undead transfer uses of rebuke undead instead.) The transfer lasts anywhere from 24 hours to one week (chosen at the time of transfer), and while the transfer is in effect, the number of turning attempts per day allowed to the hierophant is reduced by the number transferred. The recipient turns undead as a cleric of the hierophant’s cleric level but uses her own Charisma modifier."
+s_gift_of_the_divine	="神の贈り物"	s_gift_of_the_divine_d	="クレリックレベルを持つハイエロファンのみが使用できるこの能力は、ハイエロファンが自分のアンデッド化能力の使用を1回以上、意思を持つクリーチャーに譲渡することを可能にする（アンデッド化するハイエロファンは代わりにアンデッド化する能力の使用を譲渡する）。譲渡は24時間から1週間（譲渡時に選択）続き、譲渡が有効な間、ハイエロファンに許される1日あたりのターン試行回数は譲渡された回数だけ減少する。受け手はハイエロファンのクレリックレベルのクレリックとしてアンデッドに変身させるが、自分のCHA修正を使用する。"
 
-s_mastery_of_energy	="Mastery of Energy"	s_mastery_of_energy_d	="Available only to hierophants with cleric levels, this ability allows a hierophant to channel positive or negative energy much more effectively, increasing his ability to affect undead. Add a +4 bonus to the hierophant’s turning checks and turning damage rolls. This ability only affects undead, even if the hierophant can turn other creatures, such as with a granted power of a domain."
+s_mastery_of_energy	="エネルギーの習得"	s_mastery_of_energy_d	="クレリックレベルのハイエロファントのみが利用できるこの能力により、ハイエロファントはプラスまたはマイナスのエネルギーをより効果的に流し、アンデッドに影響を与える能力を高めることができます。 ハイエロファントのターンチェックとターンダメージロールに +4 ボーナスを追加します。 この能力は、ハイエロファントが領域の付与されたパワーなどで他のクリーチャーをターンさせることができる場合でも、アンデッドにのみ影響します。"
 
-s_power_of_nature	="Power of Nature"	s_power_of_nature_d	=[[Available only to hierophants with druid levels, this ability allows a hierophant to temporarily transfer one or more of his druid Class Features to a willing creature. The transfer lasts anywhere from 24 hours to one week (chosen at the time of transfer), and while the transfer is in effect, the hierophant cannot use the transferred power. He can transfer any of his druid powers except spellcasting and the ability to have an animal companion.
+s_power_of_nature	="自然の力"	s_power_of_nature_d	=[[ドルイドレベルのハイエロファントのみが利用できるこの能力により、ハイエロファントは自分のドルイドのクラス特徴を一時的に1つ以上の意欲のあるクリーチャーに移すことができます。 転送は 24 時間から 1 週間 (転送時に選択) 続きます。転送が有効である間、ハイエロファントは転送された力を使用できません。 彼は、呪文の詠唱と動物の仲間を持つ能力を除く、ドルイドのあらゆる力を譲渡することができます。
 
-The druid’s wild shape ability can be partially or completely transferred. The heirophant choses how many uses of wild shape per day to give to transfer and retains the rest of the uses for himself. If the hierophant can assume the form of Tiny or Huge animals, the recipient can as well.
+ドルイドのワイルドシェイプ能力は部分的または完全に移すことができます。 ハイエロファントは、1 日にワイルドシェイプを何回使用して転送するかを選択し、残りの使用を自分用に保持します。 ハイエロファントが小さな動物や巨大な動物の姿をとることができるなら、受け手も同様にそれができます。
 
-As with the imbue with spell ability spell, the hierophant remains responsible to his deity for any use to which the recipient puts the transferred abilities.]]
+呪文能力を付与する呪文と同様に、ハイエロファントは譲渡された能力を受け手がどのように使うかについて、その神に対して責任を負う。]]
 
-s_zhi_spell_power	="Spell Power"	s_zhi_spell_power_d	="This special ability increases a hierophant’s effective caster level by 1 for purposes of determining level-dependent spell variables and for caster level checks. This ability can be selected more than once, and changes to effective caster level are cumulative."
+s_zhi_spell_power	="スペルパワー"	s_zhi_spell_power_d	="この特殊能力は、レベル依存の呪文変数の決定と術者レベルのチェックのために、ハイエロファントの有効な詠唱者レベルを1増加させます。この能力は複数回選択でき、有効な術者レベルの変化は累積されます。"
 
-s_zhi_spell_like_ability	="Spell-Like Ability"	s_zhi_spell_like_ability_d	=[[A hierophant who selects this special ability can use one of his divine spell slots to permanently prepare one of his divine spells as a spell-like ability that can be used twice per day. The hierophant does not use any components when casting the spell, although a spell that costs XP to cast still does so, and a spell with a costly material component instead costs him 10 times that amount in XP.
+s_zhi_spell_like_ability	="呪文のような能力"	s_zhi_spell_like_ability_d	=[[この特殊能力を選択したハイエロファントは、神聖呪文スロットの 1 つを使用して、神聖呪文の 1 つを 1 日に 2 回使用できる呪文の様な能力として永続的に準備できます。 ハイエロファントは呪文を唱えるときに成分を一切使用しませんが、詠唱に XP が必要な呪文は引き続き使用され、高価な材料成分を含む呪文ではその代わりにその 10 倍の XP がかかります。
 
-The spell normally uses a spell slot of the spell’s level (or higher, if the hierophant chooses to permanently attach a metamagic feat to the spell chosen). The hierophant can use an available higher-level spell slot to use the spell-like ability more than once per day. Allocating a slot three levels higher allows him to cast the spell four times per day, and a slot six levels higher lets him cast it six times per day.
+この呪文は通常、その呪文のレベル（または、ハイエロファントが選択した呪文にメタマジック特技を永続的に付加することを選択した場合はそれ以上）の呪文スロットを使用します。 ハイエロファントは、利用可能な高レベルの呪文スロットを使用して、呪文に似た能力を 1 日に複数回使用できます。 3 レベル高いスロットを割り当てると、1 日に 4 回呪文を唱えることができ、6 レベル高いスロットを割り当てると、1 日に 6 回呪文を唱えることができます。
 
-If selected more than one time as a special ability, this ability can apply to the same spell (increasing the number of times per day it can be used) or to a different spell.]]
+特殊能力として複数回選択した場合、この能力は同じ呪文 (1 日に使用できる回数が増加) または別の呪文に適用できます。]]
 
 -- zhw	大地旅者	Horizon Walker		
 
-s_terrain_mastery	="Terrain Mastery"	s_terrain_mastery_d	=[[At each level, the Horizon Walker adds a new terrain environment to their repertoire from those given below. Terrain mastery gives a horizon walker a bonus on checks involving a skill useful in that terrain, or some other appropriate benefit. A horizon walker also knows how to fight dangerous creatures typically found in that terrain, gaining a +1 insight bonus on attack rolls and damage rolls against creatures with that terrain mentioned in the Environment entry of their descriptions. The horizon walker only gains the bonus if the creature description specifically lists the terrain type.
+s_terrain_mastery	="地形マスタリー"	s_terrain_mastery_d	=[[各レベルで、ホライゾンウォーカー は以下に示すものから新しい地形環境をレパートリーに追加します。 地形マスタリーは、その地形で役立つスキルを含む判定にボーナス、またはその他の適切な利益をホライゾンウォーカーに与えます。 ホライゾンウォーカーはまた、その地形で通常見られる危険なクリーチャーと戦う方法を知っており、説明の環境項目に記載されているその地形のクリーチャーに対する攻撃ロールとダメージロールに+1の洞察ボーナスを獲得します。 ホライズンウォーカーは、クリーチャーの説明に地形タイプが具体的に記載されている場合にのみボーナスを獲得します。
 
-Horizon walkers take their terrain mastery with them wherever they go. They retain their terrain mastery bonuses on skill checks, attack rolls, and damage rolls whether they’re actually in the relevant terrain or not.]]
+ホライゾンウォーカーはどこへ行くにも地形マスタリーを持ち運ぶ。実際にその地形にいるか否かにかかわらず、スキルチェック、攻撃ロール、ダメージロールに地形マスタリーボーナスを保持する。]]
 
-s_planar_terrain_mastery	="Planar Terrain Mastery"	s_planar_terrain_mastery_d	="Planar terrain mastery functions just like terrain mastery, except that the horizon walker can choose one of the planar categories at each level. The horizon walker can take a non-planar terrain type instead, if she wishes."
+s_planar_terrain_mastery	="平面地形マスタリー"	s_planar_terrain_mastery_d	="平面地形マスタリーは、ホライゾンウォーカーが各レベルで平面カテゴリの 1 つを選択できることを除いて、地形マスタリーと同じように機能します。 ホライゾンウォーカーは、希望に応じて、代わりに非平面の地形タイプを選択できます。"
 
 -- 地貌奖励	Terrain Mastery Benefits
-s_zhw_aquatic		="Aquatic"				s_zhw_aquatic_d		="You gain a +4 competence bonus on Swim checks, or a +10-foot bonus to your swim speed if you have one. You gain a +1 insight bonus on attack and damage rolls against aquatic creatures."
-s_zhw_desert		="Desert"				s_zhw_desert_d		="You resist effects that tire you. You are immune to fatigue, and anything that would cause you to become exhausted makes you fatigued instead. You gain a +1 insight bonus on attack and damage rolls against desert creatures."
-s_zhw_forest		="Forest"				s_zhw_forest_d		="You have a +4 competence bonus on Hide checks. You gain a +1 insight bonus on attack and damage rolls against forest creatures."
-s_zhw_hills			="Hills"				s_zhw_hills_d		="You gain a +4 competence bonus on Listen checks. You gain a +1 insight bonus on attack and damage rolls against hills creatures."
-s_zhw_marsh			="Marsh"				s_zhw_marsh_d		="You have a +4 competence bonus on Move Silently checks. You gain a +1 insight bonus on attack and damage rolls against marsh creatures."
-s_zhw_mountains		="Mountains"			s_zhw_mountains_d	="You gain a +4 competence bonus on Climb checks, or a +10- foot bonus to your climb speed if you have one. You gain a +1 insight bonus on attack and damage rolls against mountain creatures."
-s_zhw_plains		="Plains"				s_zhw_plains_d		="You have a +4 competence bonus on Spot checks. You gain a +1 insight bonus on attack and damage rolls against plains creatures."
-s_zhw_underground	="Underground"			s_zhw_underground_d	="You have 60-foot darkvision, or 120-foot darkvision if you already had darkvision from another source. You gain a +1 insight bonus on attack and damage rolls against underground creatures."
-s_zhw_fiery			="Fiery (Planar)"		s_zhw_fiery_d		="This kind of planar terrain mastery provides you with resistance to fire 20. You gain a +1 insight bonus on attack and damage rolls against outsiders and elementals with the fire subtype."
-s_zhw_weightless	="Weightless (Planar)"	s_zhw_weightless_d	="You gain a +30-foot bonus to your fly speed on planes with no gravity or subjective gravity. You gain a +1 insight on attack and damage rolls against creatures native to the Astral Plane, the Elemental Plane of Air, and the Ethereal Plane."
-s_zhw_cold			="Cold (Planar)"		s_zhw_cold_d		="This kind of planar terrain mastery provides you with resistance to cold 20. You gain a +1 insight bonus on attack and damage rolls against outsiders and elementals with the cold subtype."
-s_zhw_shifting		="Shifting (Planar)"	s_zhw_shifting_d	="You instinctively anticipate shifts in the reality of the plane that bring you closer to your destination, giving you the spell-like ability to use dimension door (as the spell cast at your character level) once every 1d4 rounds. You gain a +1 insight bonus on attack and damage rolls against outsiders and elementals native to a shifting plane."
-s_zhw_aligned		="Aligned (Planar)"		s_zhw_aligned_d		="You have the instinctive ability to mimic the dominant alignment of the plane. You incur none of the penalties for having an alignment at odds with that of the plane, and spells and abilities that harm those of the opposite alignment don’t affect you. You have the dominant alignment of the plane with regard to magic, but your behavior and any alignment-related Class Features you have are unaffected."
-s_zhw_cavernous		="Cavernous (Planar)"	s_zhw_cavernous_d	="You gain tremorsense with a 30-foot range."
+s_zhw_aquatic		="水棲"				s_zhw_aquatic_d		="水泳判定で +4 の能力ボーナスを獲得するか、水泳速度に +10 フィートのボーナス (持っている場合) を獲得します。 あなたは水棲生物に対する攻撃ロールとダメージロールに+1の洞察ボーナスを得る。"
+s_zhw_desert		="砂漠"				s_zhw_desert_d		="あなたは自分を疲れさせる影響に抵抗します。 あなたには疲労に対する免疫があり、あなたを疲れさせるものはすべて、逆にあなたを疲れさせます。 あなたは砂漠のクリーチャーに対する攻撃ロールとダメージロールに+1の洞察ボーナスを得る。"
+s_zhw_forest		="森林"				s_zhw_forest_d		="隠れ身チェックには +4 の能力ボーナスがあります。 あなたは森の生き物に対する攻撃とダメージロールに+1の洞察ボーナスを得る。"
+s_zhw_hills			="丘陵"				s_zhw_hills_d		="聞き耳チェックで +4 の能力ボーナスを獲得します。 あなたは丘陵のクリーチャーに対する攻撃ロールとダメージロールに+1の洞察ボーナスを得る。"
+s_zhw_marsh			="沼地"				s_zhw_marsh_d		="忍び足 チェックに +4 の能力ボーナスがあります。 あなたは沼地クリーチャーに対する攻撃ロールとダメージロールに+1の洞察ボーナスを得る。"
+s_zhw_mountains		="山岳"			s_zhw_mountains_d	="登坂判定で +4 の能力ボーナスを獲得するか、登坂速度に +10 フィートのボーナス (持っている場合) を獲得します。 あなたは山の生き物に対する攻撃とダメージロールに+1の洞察ボーナスを得る。"
+s_zhw_plains		="平原"				s_zhw_plains_d		="見破りチェックには +4 の能力ボーナスがあります。 あなたは平原のクリーチャーに対する攻撃ロールとダメージロールに+1の洞察ボーナスを得る。"
+s_zhw_underground	="地下"			s_zhw_underground_d	="あなたは60フィートの暗視を持っていますが、すでに別のソースからの暗視を持っている場合は120フィートの暗視を持っています。 あなたは地底生物に対する攻撃ロールとダメージロールに+1の洞察ボーナスを得る。"
+s_zhw_fiery			="熱い（平面）"		s_zhw_fiery_d		="この種の平面地形の習得により、火に対する耐性 20 が得られます。火のサブタイプを持つアウトサイダーおよびエレメンタルに対する攻撃とダメージ ロールに +1 の洞察ボーナスを獲得します。"
+s_zhw_weightless	="無重力 (平面)"	s_zhw_weightless_d	="無重力または主観的重力のない平面では、飛行速度に +30 フィートのボーナスが得られます。 あなたは、アストラル界、空気のエレメンタル界、およびエーテル界に生息するクリーチャーに対する攻撃とダメージロールについて+1の洞察を獲得します。"
+s_zhw_cold			="寒冷（平面）"		s_zhw_cold_d		="この種の平面地形の習得により、冷気に対する耐性 20 が得られます。あなたは、冷気のサブタイプを持つアウトサイダーおよびエレメンタルに対する攻撃とダメージ ロールに +1 の洞察ボーナスを獲得します。"
+s_zhw_shifting		="荒い（平面）"	s_zhw_shifting_d	="君は目的地に近づく平面の現実の変化を本能的に予測し、1d4ラウンドに1度、ディメンジョンドアー（君のキャラクターレベルで唱えられる呪文）を使用する呪文のような能力を得る。君は転移する平面に生息するアウトサイダーやエレメンタルに対する攻撃ロールとダメージ・ロールに＋1の洞察力ボーナスを得る。"
+s_zhw_aligned		="整列（平面）"		s_zhw_aligned_d		="君にはその平面の支配的なアライメントを模倣する本能的な能力がある。君はその平面のアライメントと相反するアライメントを持つことによるペナルティを一切受けず、反対のアライメントの者に害を及ぼす呪文や能力も君に影響を与えない。魔法に関してはその平面の支配的なアライメントを持つが、君の行動やアライメントに関連したクラス特徴には影響がない。"
+s_zhw_cavernous		="空洞（平面）"	s_zhw_cavernous_d	="30フィートの範囲で震動を感知する。"
 
 -- zlm	博学士		Loremaster			
 
-s_zlm_secret	="Secret"	s_zlm_secret_d	=[[At 1st level and every two levels higher than 1st (3rd, 5th, 7th, and 9th), the loremaster chooses one secret from the table below. Her level plus Intelligence modifier determines the total number of secrets she can choose. She can’t choose the same secret twice.
+s_zlm_secret	="秘密"	s_zlm_secret_d	=[[第 1 レベルおよび 1 より 2 つ上のレベル (3、5、7、9) ごとに、ロアマスターは以下の表から秘密を 1 つ選択します。 彼女のレベルとCHA修正値によって、彼女が選択できる秘密の総数が決まります。 彼女は同じ秘密を二度選ぶことはできません。
 
-Loremaster Secrets
-Level + Int Modifier	Secret				Effect
-1			Instant mastery					4 ranks of a skill in which the character has no ranks
-2			Secret health					+3 hit points
-3			Secrets of inner strength		+2 bonus on Will saves
-4			The lore of true stamina		+2 bonus on Fortitude saves
-5			Secret knowledge of avoidance	+2 bonus on Reflex saves
-6			Weapon trick					+1 bonus on attack rolls
-7			Dodge trick						+1 dodge bonus to AC
-8			Applicable knowledge 			Any one feat
-9			Newfound arcana 				1 bonus 1st-level spell*
-10			More newfound arcana 			1 bonus 2nd-level spell*
+ロアマスターの秘密
+レベル＋INT修正	秘密				効果
+1			瞬時に習得					ランクを持たないスキルを4ランク取得する。
+2			秘密の健康					+3ヒットポイント
+3			内なる強さの秘密		意志セーブに +2 ボーナス
+4			真のスタミナの伝承		不屈の精神セーブに +2 ボーナス
+5			回避に関する秘密の知識	反射セーブに +2 ボーナス
+6			武器のトリック					攻撃ロールに+1ボーナス
+7			回避トリック						AC への回避ボーナス +1
+8			応用可能な知識 			どれかひとつでも。
+9			新たに発見されたアルカナ 				ボーナスの第1レベル呪文1つ*
+10			さらに新たに発見されたアルカナ 			ボーナスの第2レベル呪文1つ*
 
-* As if gained through having a high ability score.]]
+* あたかも高い能力値を持つことで得たかのように。]]
 
-s_zlm_skl	="Instant mastery"					s_zlm_skl_d		="4 ranks of a skill in which the character has no ranks."
-s_zlm_hp	="Secret health"					s_zlm_hp_d		="+3 hit points."
-s_zlm_wl	="Secrets of inner strength"		s_zlm_wl_d		="+2 bonus on Will saves."
-s_zlm_ft	="The lore of true stamina"			s_zlm_ft_d		="+2 bonus on Fortitude saves."
-s_zlm_rf	="Secret knowledge of avoidance"	s_zlm_rf_d		="+2 bonus on Reflex saves."
-s_zlm_atk	="Weapon trick"						s_zlm_atk_d		="+1 bonus on attack rolls."
-s_zlm_ac	="Dodge trick"						s_zlm_ac_d		="+1 dodge bonus to AC."
-s_zlm_feat	="Applicable knowledge"				s_zlm_feat_d	="Any one feat."
-s_zlm_spl_1	="Newfound arcana "					s_zlm_spl_1_d	="1 bonus 1st-level spell."
-s_zlm_spl_2	="More newfound arcana "			s_zlm_spl_2_d	="1 bonus 2nd-level spell."
+s_zlm_skl	="瞬時に習得"					s_zlm_skl_d		="ランクを持たない技能のランクを4つ獲得する。"
+s_zlm_hp	="秘密の健康"					s_zlm_hp_d		="+3ヒットポイント。"
+s_zlm_wl	="内なる強さの秘密"		s_zlm_wl_d		="意志セーブに+2ボーナス。"
+s_zlm_ft	="真のスタミナの伝承"			s_zlm_ft_d		="不屈の精神セーブに +2 ボーナス。"
+s_zlm_rf	="回避に関する秘密の知識"	s_zlm_rf_d		="反射セーブに +2 ボーナス。"
+s_zlm_atk	="武器のトリック"						s_zlm_atk_d		="攻撃ロールに+1ボーナス。"
+s_zlm_ac	="回避トリック"						s_zlm_ac_d		="ACに+1の回避ボーナス。"
+s_zlm_feat	="応用可能な知識"				s_zlm_feat_d	="どれかひとつでも。"
+s_zlm_spl_1	="新たに発見されたアルカナ"					s_zlm_spl_1_d	="ボーナスの第1レベル呪文が1つ。"
+s_zlm_spl_2	="さらに新たに発見されたアルカナ"			s_zlm_spl_2_d	="ボーナスの第2レベル呪文が1つ。"
 
-s_zlm_lore	="Lore"	s_zlm_lore_d	="At 2nd level, a loremaster gains the ability to know legends or information regarding various topics, just as a bard can with bardic knowledge. The loremaster adds her level and her Intelligence modifier to the lore check, which functions otherwise exactly like a bardic knowledge check."
+s_zlm_lore	="伝承"	s_zlm_lore_d	="第 2 レベルでは、ロアマスターは、バードがバードの知識を持つのと同じように、さまざまなトピックに関する伝説や情報を知る能力を獲得します。 ロアマスターは自分のレベルとINT修正を伝承チェックに追加します。それ以外の点ではバードの知識チェックとまったく同じように機能します。"
 
-s_greater_lore	="Greater Lore"	s_greater_lore_d	="At 6th level, a loremaster gains the ability to understand magic items, as with the identify spell."
+s_greater_lore	="より大きな伝承"	s_greater_lore_d	="6 レベルでは、ロアマスターは識別呪文と同様に魔法のアイテムを理解する能力を獲得します。"
 
-s_true_lore	="True Lore"	s_true_lore_d	="At 10th level, once per day a loremaster can use her knowledge to gain the effect of a legend lore spell or an analyze dweomer spell."
+s_true_lore	="真実の伝承"	s_true_lore_d	="10レベルでは、1日1回、ロアマスターは自分の知識を使って伝説の伝承呪文や分析呪文の効果を得ることができます。"
 
-s_bonus_languages	="Bonus Languages"	s_bonus_languages_d	="A loremaster can choose any new language at 4th and 8th level."
+s_bonus_languages	="ボーナス言語"	s_bonus_languages_d	="ロアマスターは第 4 レベルと第 8 レベルで新しい言語を選択できます。"
 
 -- zmt	秘术师		Mystic Theurge		
 
 -- zsd	影舞者		Shadowdancer		
 
-s_shadow_illusion	="Shadow Illusion"	s_shadow_illusion_d	="When a shadowdancer reaches 3rd level, she can create visual illusions. This ability’s effect is identical to that of the arcane spell silent image and may be employed once per day."
+s_shadow_illusion	="シャドウイリュージョン"	s_shadow_illusion_d	="シャドウダンサーが 3 レベルに達すると、視覚的なイリュージョンを作り出すことができます。 この能力の効果はアーケインスペルのサイレントイメージの効果と同じであり、1 日に 1 回使用できます。"
 
-s_summon_shadow	="Summon Shadow"	s_summon_shadow_d	="At 3rd level, a shadowdancer can summon a shadow, an undead shade. Unlike a normal shadow, this shadow’s alignment matches that of the shadowdancer, and the creature cannot create spawn. The summoned shadow cannot be turned, rebuked, or commanded by any third party. This shadow serves as a companion to the shadowdancer and can communicate intelligibly with the shadowdancer. Every third level gained by the shadowdancer adds +2 HD (and the requisite base attack and base save bonus increases) to her shadow companion.\n\nIf a shadow companion is destroyed, or the shadowdancer chooses to dismiss it, the shadowdancer must attempt a DC 15 Fortitude save. If the saving throw fails, the shadowdancer loses 200 experience points per shadowdancer level. A successful saving throw reduces the loss by half, to 100 XP per prestige class level. The shadowdancer’s XP total can never go below 0 as the result of a shadow’s dismissal or destruction. A destroyed or dismissed shadow companion cannot be replaced for 30 days."
+s_summon_shadow	="サモンシャドウ"	s_summon_shadow_d	="3 レベルでは、シャドウダンサーはシャドウ、つまりアンデッドシェードを召喚できます。 通常のシャドウとは異なり、このシャドウの配置はシャドウダンサーの配置と一致し、クリーチャーはスポーンを作成できません。 召喚された影は、第三者によって方向転換したり、ターンされたり、命令されたりすることはできません。 この影はシャドウダンサーの仲間として機能し、シャドウダンサーと分かりやすくコミュニケーションをとることができます。 シャドウダンサーが 3 レベル上がるごとに、シャドウコンパニオンに +2 ヒットダイス (そして必要な基本攻撃と基本セーブ ボーナスが増加) が追加されます。\n\nシャドウコンパニオンが破壊された場合、またはシャドウ ダンサーがそれを解雇することを選択した場合、シャドウダンサーは再試行する必要があります。 難易度 15 の耐久力セーブ。 セーヴィング スローが失敗した場合、シャドウダンサーはシャドウダンサー レベルごとに 200 の経験値を失います。 セーヴィングスローに成功すると、損失は半分に減り、上級クラスレベルごとに 100 XP になります。 シャドウダンサーの XP の合計は、シャドウの解除または破壊の結果として 0 を下回ることはありません。 破壊または解雇されたシャドウコンパニオンは 30 日間は交換できません。"
 
-s_shadow_jump	="Shadow Jump"	s_shadow_jump_d	="At 4th level, a shadowdancer gains the ability to travel between shadows as if by means of a dimension door spell. The limitation is that the magical transport must begin and end in an area with at least some shadow. A shadowdancer can jump up to a total of 20 feet each day in this way; this may be a single jump of 20 feet or two jumps of 10 feet each. Every two levels higher than 4th, the distance a shadowdancer can jump each day doubles (40 feet at 6th, 80 feet at 8th, and 160 feet at 10th). This amount can be split among many jumps, but each one, no matter how small, counts as a 10-foot increment."
+s_shadow_jump	="シャドウジャンプ"	s_shadow_jump_d	="4 レベルでは、シャドウダンサーは次元の扉の呪文を使っているかのように影の間を移動する能力を獲得します。 制限は、魔法の輸送が少なくともある程度の影のある領域で開始および終了する必要があることです。 シャドウダンサーはこの方法で毎日合計 20 フィートまでジャンプできます。 これは、20 フィートのジャンプを 1 回行う場合もあれば、それぞれ 10 フィートのジャンプを 2 回行う場合もあります。 4 レベルより 2 レベル上がるごとに、シャドウダンサーが毎日ジャンプできる距離は 2 倍になります (6 レベルで 40 フィート、8 レベルで 80 フィート、10 レベルで 160 フィート)。 この量は多くのジャンプに分割できますが、どれだけ小さくても、それぞれのジャンプは 10 フィートの増分としてカウントされます。"
 
 -- ztt	咒法召唤师	Thaumaturgist		
 
-s_improved_ally	="Improved Ally"	s_improved_ally_d	=[[When a thaumaturgist casts a planar ally spell (including the lesser and greater versions), he makes a Diplomacy check to convince the creature to aid him for a reduced payment. If the thaumaturgist’s Diplomacy check adjusts the creature’s attitude to helpful the creature will work for 50% of the standard fee, as long as the task is one that is not against its nature.
+s_improved_ally	="強化された味方"	s_improved_ally_d	=[[ソーマタージストが次元の同盟呪文（下位バージョンと上位バージョンを含む）を唱えるとき、彼は外交チェックを行って、そのクリーチャーに支払いを減らして協力するよう説得します。 魔術師の「外交」チェックによってクリーチャーの態度が役立つように調整された場合、その仕事がその性質に反するものでない限り、クリーチャーは標準料金の 50% で働きます。
 
-The thaumaturgist’s improved ally class feature only works when the planar ally shares at least one aspect of alignment with the thaumaturgist.
+ソーマタージストの "味方の強化 "は、その次元の味方がソーマタージストとアライメントを少なくとも1つ共有している場合にのみ有効である。
 
-A thaumaturgist can have only one such ally at a time, but he may bargain for tasks from other planar allies normally.]]
+ソーマタージストは一度にそのような同盟者を一人しか持つことができませんが、通常は他の次元の同盟者からの仕事を交渉することができます。]]
 
-s_extended_summoning	="Extended Summoning"	s_extended_summoning_d	="At 3rd level and higher, all spells from the summoning subschool that the thaumaturgist casts have their durations doubled, as if the Extend Spell feat had been applied to them. The levels of the summoning spells don’t change, however. This ability stacks with the effect of the Extend Spell feat, which does change the spell’s level."
+s_extended_summoning	="拡張召喚"	s_extended_summoning_d	="3レベル以上では、召喚魔法を使用する場合、呪文の持続時間が2倍になる。ただし、召喚呪文のレベルは変化しない。この能力は、呪文のレベルを変化させる呪文延長の特技と重複する。"
 
-s_contingent_conjuration	="Contingent Conjuration"	s_contingent_conjuration_d	="A 4th-level thaumaturgist can prepare a summoning or calling spell ahead of time to be triggered by some other event. This functions as described for the contingency spell, including having the thaumaturgist cast the summoning or calling spell beforehand. The spell is cast instantly when the trigger event occurs.\n\nThe conditions needed to bring the spell into effect must be clear, although they can be general. If complicated or convoluted condition as are prescribed, the contingent conjuration may fail when triggered. The conjuration spell occurs based solely on the stated conditions, regardless of whether the thaumaturgist wants it to, although most conjurations can be dismissed normally. A thaumaturgist can have only one contingent conjuration active at a time."
+s_contingent_conjuration	="偶発的な召喚"	s_contingent_conjuration_d	="4 レベルのソーマタージストは、他のイベントによってトリガーされるように、事前に召喚または呼び出しの呪文を準備できます。 これは、ソーマタージストが事前に召喚または呼び出しの呪文を唱えることを含め、不測の事態の呪文で説明したように機能します。 トリガーイベントが発生すると、呪文は即座に唱えられます。\n\n呪文を有効にするために必要な条件は、一般的なものであってもかまいませんが、明確でなければなりません。 条件が複雑または入り組んだ場合、トリガー時に偶発的な召喚が失敗する可能性があります。 召喚呪文は、ソーマタージストが望んでいるかどうかに関係なく、指定された条件にのみ基づいて発生しますが、ほとんどの召喚は通常どおりに却下できます。 ソーマタージストは、一度に 1 つの偶発的召喚術のみをアクティブにすることができます。"
 
-s_planar_cohort	="Planar Cohort"	s_planar_cohort_d	=[[A 5th-level thaumaturgist can use any of the planar ally spells to call a creature to act as his cohort. The called creature serves loyally and well as long as the thaumaturgist continues to advance a cause important to the creature.
+s_planar_cohort	="平面の仲間"	s_planar_cohort_d	=[[5レベルのソーマタージストは、次元の同盟呪文のいずれかを使用して、クリーチャーを呼び出し、彼の仲間として行動することができます。 呼び出されたクリーチャーは、ソーマタージストがそのクリーチャーにとって重要な大義を推進し続ける限り、忠実かつよく奉仕します。
 
-To call a planar cohort, the thaumaturgist must cast the relevant spell, paying the XP costs normally. It takes an offering of 1,000 gp x the HD of the creature to convince it to serve as a planar cohort, and the improved ally class feature can’t be used to reduce or eliminate this cost. The planar cohort can’t have more Hit Dice than the thaumaturgist has, and must have an ECL no higher than the thaumaturgist’s character level –2.
+平面の仲間を呼び出すには、ソーマタージストは関連する呪文を唱え、通常通りXPを支払わなければならない。そのクリーチャーに平面の仲間として奉仕するよう説得するには、1,000gp×そのクリーチャーの体格を提供する必要がある。平面の仲間はソーマタージストが持つヒットダイスより大きいヒットダイスを持つことはできず、ECLはソーマタージストのキャラクター・レベル-2以下でなければならない。
 
-A thaumaturgist can have only one planar cohort at a time, but he can continue to make agreements with other called creatures normally. A planar cohort replaces a thaumaturgist’s existing cohort, if he has one by virtue of the Leadership feat.]]
+ソーマタージストは一度に 1 つの平面の仲間しか持つことができませんが、他の呼び出されたクリーチャーと通常通り契約を結び続けることができます。 リーダーシップの功績によりソーマタージストが既存の平面の仲間を持っている場合、平面の仲間はそのソーマタージストの既存の平面の仲間を置き換えます。]]
 
 
 -- zbm	剑圣			Blade Master
-s_zbm	="Blade Master"		s_zbm_b	="A warrior who dedicated his life to the mastery of a single weapon."
-s_zbm_d	=[[Class differences aside, adventurers usually have some sort of preference for weapons. Some prefer the heavy greatsword, others prefer the fine, handy rapier or kukri, but few have an obsession with a certain kind of weapon to the extent of blade masters.
+s_zbm	="ブレードマスター"		s_zbm_b	="一つの武器を極めることに人生を捧げた戦士。"
+s_zbm_d	=[[クラスの違いは別として、冒険者には通常、武器に何らかの好みがあります。 重いグレートソードを好む人もいれば、細くて便利なレイピアやククリを好む人もいますが、ブレードマスターほど特定の種類の武器に執着する人はほとんどいません。
 
-Blade masters focus their lifelong training on a single weapon (usually a sword), called favored weapon. Throughout his career, the blade master relentlessly seeks the mastery of the weapon, seeking to wield it without thought as any other limb, and ultimately to unite the weapon with the body, to make them one.
+ブレードマスターは、愛用武器と呼ばれる単一の武器 (通常は剣) に生涯にわたる訓練を集中します。 ブレードマスターはそのキャリアを通して、武器の習得を執拗に追求し、他の手足のように何も考えずに武器を扱い、最終的には武器と身体を一体化させて一つにすることを追求します。
 
-Although the blade master can choose any weapon as his favored weapon, he usually selects a weapon from the sword category. Compared to other weapons, swords with high critical rates are more suitable for the blade master's special abilities.
+ブレードマスターは好みの武器を選択できますが、通常は剣のカテゴリから武器を選択します。 他の武器と比較して、クリティカル率の高い剣はブレードマスターの特殊能力に適しています。
 
 
-<b>Base Classes: </b>Most blade masters are fighters. Many of the blade master's class abilities are in the same vein as the fighter's specific feats, and further perfected and sublimated. Characters of other combat classes can also benefit from this prestige class, but not as well suited as the fighter.
+<b>基本クラス: </b>ブレードマスターのほとんどはファイターです。 ブレードマスターのクラス能力の多くはファイター特有の特技と同様のものであり、さらに完成され昇華されています。 他の戦闘クラスのキャラクターもこの上級クラスの恩恵を受けることができますが、ファイターほど適していません。
 
-<b>Role: </b>The blade master is the sharpest sword of a party, tearing apart the enemy's formation and cutting off their leader's head. Compared to other combat classes, the blade master focuses more on offense than defense.
+<b>ロール: </b>ブレードマスターはパーティの中で最も鋭い剣であり、敵の陣形を引き裂き、リーダーの首を切り落とします。 他の戦闘クラスと比較して、ブレードマスターは防御よりも攻撃に重点を置きます。
 
-<b>Alignment: </b>Blade masters can be of any alignment, but usually tend to be lawful, because the path to becoming a blade master requires strong concentration and self-discipline.
+<b>アライメント: </b>ブレードマスターはどのような属性にもなりえますが、ブレードマスターへの道には強い集中力と自己規律が必要なため、通常はロウフルな傾向があります。
 
-<b>Non-adventurers: </b>Blade masters rarely appear in public, and spend most of their time alone in secluded places honing their skills. However, do not be mistaken that they have no communication with the outside world, training behind closed doors is never a good way to practice martial arts. In fact, most blade masters come from professional academies that have extensive communication with all walks of life, and only a few are trained individually under the tutelage of an established blade master. In addition, many blade masters are also famous swordsmiths, and like to forge their favored weapons with their own hands.]]
-s_fav_wpn		="Favored Weapon"					s_fav_wpn_d		="The blade master dedicated his life to the mastery of a single weapon (usually a sword), and his weapon related special abilities apply only when using that type of weapon.\n\nThe blade master must be proficient in the weapon. Once chosen his destined weapon, the blade master cannot (and won't) change it."
-s_fav_wpn_atk	="Favored Weapon Focus"				s_fav_wpn_atk_d	="+1 bonus on attack rolls with the favored weapon."
-s_fav_wpn_dmg	="Favored Weapon Specialization"	s_fav_wpn_dmg_d	="+2 bonus on damage rolls with the favored weapon."
-s_fav_wpn_ch	="Favored Weapon Mastery"			s_fav_wpn_ch_d	="+10% critical rate of the favored weapon. This bonus is applied last, after any multipliers, such as those given by the Improved Critical feat or by keen weapons."
-s_zbm_next		="Poised Strike"					s_zbm_next_d	="If you do not take any attack action actively during this turn, you gain a +1 bonus to attack rolls and a +2 bonus to damage rolls when you attack with your favored weapon on your next turn."
-s_zbm_blunt		="Back-edge Strike"					s_zbm_blunt_d	="A combat style specially designed to overcome the damage reduction for sharp weapons. You can make attacks with a special part of your favored weapon: -4 penalty on attack rolls and the weapon damage type becomes bludgeoning, with a critical rate of 5% and a critical multiplier of x2."
-s_zbm_blunt_2	="Improved Back-edge Strike"		s_zbm_blunt_2_d	="The critical rate and critical multiplier are no longer changed when using Back-edge Strike."
-s_zbm_max_dmg	="Extreme Strike"					s_zbm_max_dmg_d	="When deal normal damage (not a critical hit) with the favored weapon, maximized the weapon base damage. This ability can be used once per day per blade master level."
-s_zbm_ch_dmg	="Infinite Strike"					s_zbm_ch_dmg_d	="When deal critical damage with the favored weapon, the critical multiplier increases by 1. At 2nd level and every two levels thereafter (2, 4, 6…), the uses per day for this ability increases by 1."
-s_zbm_wa		="Sprint Whirlwind Attack"			s_zbm_wa_d		="Make a Whirlwind Attack as a standard action rather than a full-round action."
-s_zbm_spd		="Wind Walk"						s_zbm_spd_d		="+5 feet to land speed when not wearing heavy armor and not carrying a heavy load."
-s_zbm_spd_2		="Improved Wind Walk"				s_zbm_spd_2_d	="When not wearing heavy armor and not carrying a heavy load, you can shift to difficult terrain and the shift range on normal terrain increases by 5 feet."
-s_sel_fav_wpn	="Choose Favored Weapon"
+<b>非冒険者: </b>ブレードマスターはめったに公の場に現れず、ほとんどの時間を人里離れた場所で一人で過ごし、スキルを磨きます。 ただし、外界とのコミュニケーションがまったくないことを誤解しないでください。密室での訓練は武道の練習には決して良い方法ではありません。 実際、ほとんどのブレードマスターは、あらゆる分野と広範なコミュニケーションを持つ専門アカデミーの出身であり、確立されたブレードマスターの指導の下で個別に訓練を受けるのはほんのわずかです。 さらに、ブレードマスターの多くは有名な刀鍛冶でもあり、お気に入りの武器を自分の手で鍛造することを好みます。]]
+s_fav_wpn		="得意武器"					s_fav_wpn_d		="ブレード マスターは、単一の武器 (通常は剣) の習得に人生を捧げ、彼の武器関連の特殊能力は、その種類の武器を使用する場合にのみ適用されます。\n\nブレード マスターは、その武器に熟練している必要があります。 運命の武器を一度選択すると、ブレードマスターはそれを変更することはできません（そして変更するつもりはありません）。"
+s_fav_wpn_atk	="得意武器の焦点"				s_fav_wpn_atk_d	="お気に入りの武器による攻撃ロールに +1 ボーナス。"
+s_fav_wpn_dmg	="得意武器の特化"	s_fav_wpn_dmg_d	="お気に入りの武器によるダメージロールに +2 ボーナス。"
+s_fav_wpn_ch	="得意武器マスタリー"			s_fav_wpn_ch_d	="得意武器のクリティカル率+10%。 このボーナスは、改良されたクリティカル特技や鋭利な武器によって与えられる乗数の後に、最後に適用されます。"
+s_zbm_next		="構えたストライク"					s_zbm_next_d	="このターン中に積極的に攻撃アクションを行わなかった場合、次のターンにお気に入りの武器で攻撃すると、攻撃ロールに +1 ボーナスを獲得し、ダメージ ロールに +2 ボーナスを獲得します。"
+s_zbm_blunt		="バックエッジストライク"					s_zbm_blunt_d	="鋭利な武器のダメージ減少を克服するために特別に設計された戦闘スタイル。 お気に入りの武器の特別な部分を使って攻撃を行うことができます。攻撃ロールに -4 ペナルティが与えられ、武器のダメージ タイプは殴打となり、クリティカル率は 5%、クリティカル倍率は 2 倍になります。"
+s_zbm_blunt_2	="バックエッジストライクの向上"		s_zbm_blunt_2_d	="バックエッジストライク使用時のクリティカル率とクリティカル倍率は変更されなくなりました。"
+s_zbm_max_dmg	="エクストリームストライク"					s_zbm_max_dmg_d	="得意武器で通常のダメージ（クリティカルヒットではない）を与えると、武器の基本ダメージが最大化されました。 この能力は、ブレードマスターレベルごとに 1 日に 1 回使用できます。"
+s_zbm_ch_dmg	="インフィニットストライク"					s_zbm_ch_dmg_d	="得意武器でクリティカル ダメージを与えると、クリティカル乗数が 1 ずつ増加します。第 2 レベルとその後 2 レベルごと (2、4、6…)、この能力の 1 日あたりの使用回数は 1 ずつ増加します。"
+s_zbm_wa		="スプリント旋風攻撃"			s_zbm_wa_d		="フルラウンドアクションではなく標準アクションとして旋風攻撃を行います。"
+s_zbm_spd		="ウィンドウォーク"						s_zbm_spd_d		="重装甲を着用せず、重い荷物を積んでいない場合、陸上速度が +5 フィートになります。"
+s_zbm_spd_2		="改良されたウィンドウォーク"				s_zbm_spd_2_d	="重い鎧を着用しておらず、重い荷物を背負っていない場合、困難な地形に移動することができ、通常の地形での移動範囲が5フィート広がる。"
+s_sel_fav_wpn	="得意武器を選択してください"
 
 
 -- zel	元素领主		Elemental Lord
-s_zel	="Elemental Lord"		s_zel_b	="An arcane spellcaster who has a powerful elemental companion and can turn himself into an elemental."
-s_zel_d	=[[For arcane spellcasters, the endless mysteries contained in the Planes have a fatal allure, especially those of the Elemental Planes. Summon elemental spells or rituals known to adventurers, and the overwhelming combat advantage brought by a variety of powerful elemental allies, all attracted many spellcasters to indulge in.
+s_zel	="エレメンタルロード"		s_zel_b	="強力なエレメンタルの仲間を持ち、自分自身をエレメンタルに変えることができるアーケインスペルキャスター。"
+s_zel_d	=[[アーケインスペルキャスターにとって、プレインに含まれる無限の神秘は宿命的な魅力を持っている。冒険者が知っているエレメンタルの呪文や儀式を召喚し、さまざまな強力なエレメンタルの味方がもたらす圧倒的な戦闘の優位性は、どれも多くのスペルキャスターを魅了し、耽溺させた。
 
-The elemental lord takes it a step further. Years of intense research and even fieldwork have made the elemental lord more knowledgeable about all aspects of elementals than other spellcasters. He has studied the ways, means, origins, and formation of elementals, and instinctively knows an elemental’s strengths and develops an unbreakable bond with a powerful elemental companion.
+エレメンタルロードはさらに一歩進んだものです。 長年にわたる熱心な研究とフィールドワークによって、エレメンタル ロードは他の呪文詠唱者よりもエレメンタルのあらゆる側面についてより知識が豊富になりました。 彼はエレメンタルの方法、手段、起源、形成を研究しており、エレメンタルの強みを本能的に理解しており、強力なエレメンタルの仲間との切っても切れない絆を築いています。
 
-Elemental companions are usually summoned through spells or rituals, and then bargained and contracted for a longer-term partnership. However, rumor has it that some radical elemental lords are deeply uncomfortable with this, and they consider it too hasty, even a sacrilege to do so. They prefer to spend huge amounts of resources, through various means, to reach the Elemental Planes, in order to an official visit and negotiate a partnership with the elemental of their choice, believing that the bond established in this way is more trustworthy.
+エレメンタルコンパニオンは通常、呪文や儀式を通じて召喚され、その後交渉され、長期的なパートナーシップを結ぶために契約されます。 しかし、一部の過激なエレメンタルロードはこれに非常に不快感を抱いており、そうするのは性急すぎる、さらには冒涜であると考えているという噂があります。 彼らは、公式訪問し、自分が選んだエレメンタルとのパートナーシップについて交渉するために、さまざまな手段を通じてエレメンタル界に到達するために莫大な資源を費やすことを好み、この方法で確立された絆はより信頼できると信じています。
 
-Either way, as this bond deepens over time, the elemental lord's kinship with the elemental companion deepens, blurring the line between master and servant. Eventually, the journey of discovery made both stronger, and even the elemental lord himself transformed into an elemental and became part of the elemental forces.
+いずれにせよ、この絆が時間とともに深まるにつれ、エレメンタルロードとエレメンタルコンパニオンの親近感も深まり、主人と従僕の境界線が曖昧になる。やがて発見の旅は両者をより強くし、エレメンタルロード自身もエレメンタルへと変身し、エレメンタル勢力の一部となる。
 
 
-<b>Base Classes: </b>The knowledge required to learn the secrets of the Planes is arcane in nature, and thus this prestige class is filled mostly with wizards and sorcerers — though anyone else who meets the requirements may choose to take the journey of an elemental lord.
+<b>基本クラス: </b>次元の秘密を学ぶのに必要な知識は本質的に難解なものであるため、この上級クラスは主にウィザードやソーサラーで埋め尽くされる。
 
-<b>Role: </b>Although rarely seen in adventure groups, once an elemental lord decided to become part of a group, with his powerful elemental companion, uncanny traits, and impressive spellcasting ability, in the front line or back row of the battlefield can be at ease, he will soon become reliable for other members.
+<b>ロール: </b>冒険グループではめったに見られませんが、エレメンタルロードがグループの一員になることを決心すると、強力なエレメンタルコンパニオン、驚異的な特性、そして印象的な呪文詠唱能力を備えて、戦場の最前列でも後列でも安心して行動できます。 すぐに他のメンバーからも信頼されるようになる。
 
-<b>Alignment: </b>Similar to most arcane spellcasters who are addicted to a certain field of study, elemental lords spend their lives in pursuit of the mysteries of the Planes and the way to live in harmony with elementals. They have no time for morals and ethics, which are meaningless to them, so they tend to be neutral, neutral good, or neutral evil.
+<b>アライメント: </b>特定の研究分野に熱中するほとんどのアーケインスペルキャスターと同様に、エレメンタルロードは次元の謎とエレメンタルと調和して生きる方法の追求に人生を費やします。 彼らには意味のない道徳や倫理を考える時間がないため、ナチュラル、ナチュラルグッド、またはナチュラルエビルになる傾向があります。
 
-<b>Non-adventurers: </b>With a reliable elemental companion by his side, the elemental lord usually embarks on the journey of discovery alone, no need to group with other adventurers, unless as a last resort. Most adventurer groups certainly welcome the addition of an elemental lord (plus a powerful ally).]]
-s_et_a			="風"
-s_et_e			="地"
-s_et_f			="火"
-s_et_w			="水"
-s_elm_cmp		="Elemental Companion"	s_elm_cmp_d	=[[At 1st level, an elemental lord picks his element of study: air, earth, fire, or water. This choice cannot be changed.
+<b>非冒険者: </b>信頼できるエレメンタルコンパニオンがそばにいるので、エレメンタルロードは通常、最後の手段でない限り、他の冒険者とグループを組む必要はなく、一人で発見の旅に乗り出します。ほとんどの冒険者グループは、エレメンタルロード(および強力な味方)の追加を歓迎します。]]
+s_et_a			="エア"
+s_et_e			="アース"
+s_et_f			="ファイアー"
+s_et_w			="ウォーター"
+s_elm_cmp		="エレメンタルコンパニオン"	s_elm_cmp_d	=[[第 1 レベルでは、エレメンタルロードは研究対象の要素 (空気、土、火、または水) を選択します。 この選択は変更できません。
 
-At the same time, the elemental lord gains an elemental companion of the type chosen that starts at Medium size. It grows larger every two levels thereafter (3, 5, 7...). At 9th level it becomes an elder elemental.
+同時に、エレメンタルロードは選択したタイプのエレメンタルコンパニオンを得る。それはその後2レベル（3、5、7...）ごとに大きくなる。レベル9になるとエルダーエレメンタルとなる。
 
-The elemental's level is always equal to the master's arcane level. If the elemental dies, the elemental lord takes damage equal to the elemental's level, and also takes 1d4 points of damage to each ability score.]]
-s_arc_lv		="Arcane Level"
-s_ac_bns		="AC Bonus"
-s_abis_bns		="Abilities Bonus"
-s_elm_cmp_bns	="Growth of Elemental Companion"	s_elm_cmp_bns_d	=[[As an elemental lord gains levels, his elemental companion becomes more powerful, as described below.
+エレメンタルのレベルは常にマスターの秘術レベルと同じです。 エレメンタルが死亡した場合、エレメンタルロードはエレメンタルのレベルに等しいダメージを受け、さらに各能力値に 1d4 ポイントのダメージを受けます。]]
+s_arc_lv		="アーケインレベル"
+s_ac_bns		="ACボーナス"
+s_abis_bns		="アビリティボーナス"
+s_elm_cmp_bns	="エレメンタルコンパニオンの成長"	s_elm_cmp_bns_d	=[[以下で説明するように、エレメンタルロードがレベルを上げると、彼のエレメンタルコンパニオンはより強力になります。
 
-<b c=tw>Arcane Level	<x=150>AC Bonus	<x=300>Abilities Bonus	<x=450>Special</b>
-1st						<x=150>+0		<x=300>+1				<x=450>Devotion, empathic link
-7th						<x=150>+0		<x=300>+2				<x=450>Share spells
-9th						<x=150>+1		<x=300>+3				<x=450>Improved evasion
-11th					<x=150>+1		<x=300>+4				<x=450>Spell resistance
-13th					<x=150>+2		<x=300>+5				<x=450>Improved speed
+<b c=tw>アーケインレベル	<x=150>ACボーナス<x=300>アビリティボーナス<x=450>特別</b>
+1st						<x=150>+0		<x=300>+1				<x=450>献身、共感的なつながり
+7th						<x=150>+0		<x=300>+2				<x=450>呪文を共有する
+9th						<x=150>+1		<x=300>+3				<x=450>回避力の向上
+11th					<x=150>+1		<x=300>+4				<x=450>呪文耐性
+13th					<x=150>+2		<x=300>+5				<x=450>速度の向上
 15th					<x=150>+2		<x=300>+6
 
-<b>Arcane Level: </b>The elemental lord’s total of levels in the elemental lord class and other arcane spellcasting classes.
+<b>アーケインレベル: </b>エレメンタルロードクラスと他の秘術呪文詠唱クラスのエレメンタルロードのレベルの合計。
 
-<b>AC Bonus: </b>The number noted here is an improvement to the companion’s existing natural armor bonus.
+<b>ACボーナス: </b>ここに記載されている数値は、コンパニオンの既存の肉体鎧ボーナスの改善です。
 
-<b>Abilities Bonus: </b>Add this value to the companion’s Strength, Dexterity and Constitution scores.]]
-s_elm_form		="Elemental Form"	s_elm_form_d	=[[An elemental lord gains the ability to turn himself into an elemental three times per day.
+<b>アビリティボーナス: </b>この値をコンパニオンのSTR、DEX、CONのスコアに追加します。]]
+s_elm_form		="エレメンタルフォーム"	s_elm_form_d	=[[エレメンタルロードは、1 日に 3 回、自分自身をエレメンタルに変える能力を獲得します。
 
-This elemental is an elder elemental of the elemental lord’s element of study, and its level is equal to the elemental lord’s arcane level.
+このエレメンタルはエレメンタルロードの研究エレメントのエルダーエレメンタルであり、そのレベルはエレメンタルロードの秘儀レベルと同じです。
 
-The effect lasts for 12 hours, or until the elemental lord changes back.]]
-s_elm_res		="Resistance to Energy"	s_elm_res_d	=[[An elemental lord gains resistance against the energy type associated with his element of study (air: electricity, earth: acid, fire: fire, and water: cold).
+この効果は 12 時間、またはエレメンタルロードが元に戻るまで持続します。]]
+s_elm_res		="エネルギーに対する耐性"	s_elm_res_d	=[[エレメンタルロードは、研究の要素に関連付けられたエネルギータイプ（空気：電気、土：酸、火：火、水：冷）に対する耐性を獲得します。
 
-At 1st level, this resistance is 5. It increases by 5 every two levels thereafter (3, 5, 7...). At 9th level, the elemental lord gains immunity to the energy type in question.]]
-s_imm_elm		="Immunity to Energy"
-s_imm_par_stn	="Immunity to Paralysis and Stunning"	s_imm_par_stn_d	=[[Over time, an elemental lord slowly turns into an elemental, gaining an elemental's traits along the way.
+最初のレベルでは、この抵抗は 5 です。その後、2 レベルごとに 5 ずつ増加します (3、5、7...)。 9レベルでは、エレメンタルロードは問題のエネルギータイプに対する免疫を獲得します。]]
+s_imm_elm		="エネルギーに対する免疫"
+s_imm_par_stn	="麻痺と気絶に対する耐性"	s_imm_par_stn_d	=[[時間の経過とともに、エレメンタルロードはゆっくりとエレメンタルに変化し、その過程でエレメンタルの特性を獲得します。
 
-At 2nd level, he gains darkvision 60 ft.
+2レベルでは、彼は60フィートの暗視を獲得します。
 
-At 4th level, he becomes immune to sleep effects.
+レベル4では、睡眠の影響を受けなくなります。
 
-At 6th level, he becomes immune to poison.
+6レベルになると、毒に対する耐性が得られます。
 
-At 8th level, he becomes immune to paralysis and stunning.
+8レベルでは、麻痺と気絶に対する耐性が得られます。
 
-At 10th level, the elemental lord’s type changes to elemental, and he gains the subtype of the appropriate element. He becomes so much like an elemental that he loses the normal human orientation toward “front” and “back.” Like an elemental, he can’t be flanked and is no longer subject to critical hits.]]
-s_imm_slp		="Immunity to Sleep"
-s_imm_poi		="Immunity to Poison"
-s_imm_flk_ch	="Cannot Be Flanked or Critical Hit"
-s_elm_sub		="Elemental Type"
-s_elm_sr		="Spell Resistance"	s_elm_sr_d		="An elemental companion gains spell resistance equal to the elemental lord’s arcane level +5."
-s_spd_2			="Improved Speed"	s_spd_2_d		="+10 feet to land speed."
+10 レベルでは、エレメンタル ロードのタイプがエレメンタルに変わり、適切なエレメントのサブタイプを獲得します。 彼はエレメンタルに非常に似てきて、「前」と「後ろ」に対する通常の人間の方向性を失います。 エレメンタルと同様に、彼は側面を攻撃されることができず、クリティカルヒットの影響を受けなくなります。]]
+s_imm_slp		="睡眠に対する免疫"
+s_imm_poi		="毒に対する耐性"
+s_imm_flk_ch	="側面攻撃やクリティカルヒットは不可"
+s_elm_sub		="エレメントタイプ"
+s_elm_sr		="呪文耐性"	s_elm_sr_d		="エレメンタルコンパニオンは、エレメンタルロードの秘術レベル+5に等しい呪文耐性を獲得します。"
+s_spd_2			="速度の向上"	s_spd_2_d		="陸上速度に+10フィート。"
 
 
 -- z_u_bld
-s_u_bld		="プリビルド"		s_u_bld_d	=[[新規プレーヤーが最初からキャラクターを作成することは困難です。種族、クラス、能力、特技、呪文など、あまりにも多くの知識が必要となります。
+s_u_bld		="プレビルド"	s_u_bld_d=[[初心者にとって、キャラクターを一から作成するのは困難です。 種族、クラス、能力、特技、呪文など、学習し考慮する必要のある用語や知識が多すぎます。
 
-このため、事前に作成されたビルドをリストから選択し、ワンステップで完全なキャラクターを作成できることが重要です。プリビルドのキャラクターは自動的に上記のすべての属性を設定し、新しい特技を習得し、レベルアップ時も自動的に設定されます。これは新しいプレーヤーにとって理想的な選択肢と言えます。
+現時点では、リストからプレビルドを選択し、ワンステップで完全なキャラクターを作成する方が良い解決策です。 プレビルドのキャラクターは上記の属性をすべて自動的に選択し、レベルアップ時に新しい特技や呪文を自動的に学習するため、手動で制御する必要はありません。 新しいプレイヤーにとって完璧な選択肢です。
 
-ゲームに精通しているか、またはプリビルドのキャラクターに不満がある場合は、キャラクターをステップバイステップで作成する必要があります。]]
-s_bld		="ビルド"	s_bld_d		=s_u_bld_d
-s_u_blds	=s_u_bld	s_u_blds_d	=s_u_bld_d
-s_u_bld_post="レベルアップ時、キャラクターが新しい呪文や特技を自動的に学習するので、手動で選択する必要はありません。\n\n手動でレベルアップしたい場合は、カスタムオプションでキャラクターを作成してください。"
+ゲームに慣れている場合、または既存のプレビルドが要件を満たせない場合にのみ、段階的にキャラクターを作成する必要があります。]]
+s_bld		="ビルド"		s_bld_d		=s_u_bld_d
+s_u_blds	="プレビルド"	s_u_blds_d	=s_u_bld_d
+s_u_bld_post="プレビルドのキャラクターは、レベルアップ時に新しい特技と呪文を自動的に学習します。手動で制御する必要はありません。\n\n手動でレベルアップしたい場合は、カスタムオプションを選択してキャラクターを作成してください。"
 
 u_blds_text={
 
-[ub_cust]={n="カスタム キャラクター", d=[[既存のビルドが気に入らない場合は、レースとクラスを選択し、理想的なキャラクターを作成できます。
+[ub_cust]={n="カスタムキャラクター", d=[[既存のプレビルドでは要件を満たせない場合は、種族やクラスの選択から段階的に理想のキャラクターを作成できます。
 
-また、カスタム キャラクターを使用すると、レベルアップ時に好みの特技や呪文を習得させることができます。]]},
-
-
-[ub_th ]={n="グレート・ウェポン・ウォーリアー", a="GW", c="Fighter", d=[[<c=desc>相手に出来るだけ多くのダメージを与えるよう訓練された。</c>
-
-<c=lbl b>近接攻撃型戦士ビルド:</c>
-グレートソードやグレートアックスなどの大型の両手武器を得意とする。
-
-<c=lbl b>適正能力: </c>Str, Con.]]},
+カスタムキャラクターを使用すると、レベルアップ時に特技や呪文を手動で学習することもできます。]]},
 
 
-[ub_shd]={n="ガーディアン", a="Gdn", c="Fighter", d=[[<c=desc>戦闘を有利に進めるために、賢く戦う。</c>
+[ub_th ]={n="グレートウェポンウォリアー", a="GW", c="ファイター", d=[[
+<c=desc>あなたが興味があるのは、できるだけ多くのダメージを与えることだけです。</c>
 
-<c=lbl b>防御型戦士ビルド:</c>
-ヘヴィ・シールドとロングソード、ウォーハンマーやフレイルのような片手武器を使って戦う。
+<c=lbl b>近接攻撃型ファイターのビルド:</c>
+グレートソードやグレートアクスなどの大型の両手武器を好む。
 
-優れた防御と戦場をコントロールする能力を得る代わりに、攻撃の代償を払う。
-
-<c=lbl b>適正能力: </c>Str, Dex, Con.]]},
-
-
-[ub_tw ]={n="デュアル・ブレード", a="DB", c="Fighter", d=[[<c=desc>絢爛な死の舞で敵を捕獲する。</c>
-
-<c=lbl b>アジャイル・ファイタービルド：</c>
-相手に近づき、名高い二刀流の戦闘スタイルで戦う。
-
-<c=lbl b>適正能力：</c>Dex, Str, Con.]]},
+<c=lbl b>好ましい能力: </c>STR, CON.]]},
 
 
-[ub_rng]={n="アーチャー", a="Arc", c="Fighter", d=[[<c=desc>敵に発見される前に戦闘が終了することさえある。</c>
+[ub_shd]={n="ガーディアン", a="Gdn", c="ファイター", d=[[
+<c=desc>より良く戦うには、より賢く戦う必要があります。</c>
 
-<c=lbl b>遠隔ファイター ビルド：</c>
-弓の達人（またはクロスボウや投擲武器）。
+<c=lbl b>防御ファイタービルド:</c>
+ヘビーシールドとロングソード、ウォーハンマー、フレイルなどの優れた片手武器を使って戦います。 攻撃力を引き換えに、優れた防御力と戦場をコントロールする能力を向上させます。
 
-<c=lbl b>適正能力：</c>Dex, Str, Con.]]},
-
-
-[ub_hlr]={n="ヒーラー", a="Hlr", c="Cleric", d=[[<c=desc>信頼できる友。</c>
-
-<c=lbl b>治療とサポート系クレリック ビルド：</c>
-後方に回り込み、仲間の健康を最適に保つ。
-
-<c=lbl b>適正能力：</c>Wis, Dex, Con.]]},
+<c=lbl b>好ましい能力: </c>STR, DEX, CON.]]},
 
 
-[ub_wrp]={n="バトル・クレリック", a="BC", c="Cleric", d=[[<c=desc>パラディンの信仰を受け継ぐもの。</c>
+[ub_tw ]={n="デュアルブレード", a="DB", c="ファイター", d=[[
+<c=desc>華麗な死の舞で敵を捕らえる。</c>
 
-<c=lbl b>近接攻撃型クレリック ビルド：</c>
-ファイターのように最前線で戦い、大事な時には仲間に対し支援を行う。
+<c=lbl b>機敏なファイタービルド:</c>
+近づいて、有名な二刀流の格闘スタイルを披露します。
 
-<c=lbl b>適正能力：</c>Str, Wis, Dex, Con.]]},
-
-
-[ub_udh]={n="アンデッドハンター", a="UH", c="Cleric", d=[[<c=desc>アンデッドの天敵。</c>
-
-<c=lbl b>特化型クレリック ビルド：</c>
-あらゆるアンデッドを狩る事に集中する。
-
-<c=lbl b>適正能力：</c>Cha, Wis, Con.]]},
+<c=lbl b>好ましい能力: </c>DEX,STR,CON.]]},
 
 
-[ub_ctl]={n="コントローラ", a="CTL", c="Wizard", d=[[<c=desc>最大の関心事は、敵を翻弄すること。</c>
+[ub_rng]={n="アーチャー", a="Arc", c="ファイター", d=[[
+<c=desc>多くの場合、敵に見つかる前に戦闘が終了します。</c>
 
-<c=lbl b>戦場コントロール型ウィザード ビルド：</c>
-さまざまな呪文を駆使し、敵の動きを封じる - 深い眠りに陥らせたり、滑りやすいグリースをばら撒いたり、酸の雲に包み込む。
+<c=lbl b>遠距離ファイターのビルド:</c>
+弓（またはクロスボウ、または投擲武器）の達人。
 
-<c=lbl b>適正能力：</c>Int, Dex, Con.]]},
-
-
-[ub_elm]={n="エレメンタリスト", a="ELM", c="Wizard", d=[[<c=desc>“まずは、ファイアーボール、そして チェイン・ライトニング、さらに、もう一発 ファイアーボールだ。”</c>
-
-<c=lbl b>範囲効果(AoE)型ウィザード ビルド：</c>
-一度により多くの敵、より多くのダメージを与える、巨大なバースト射撃、目がくらむほどのライトニング・ボルトや腐食性酸の波などの呪文が得意です。
-
-<c=lbl b>適正能力：</c>Int, Dex, Con.]]},
+<c=lbl b>好ましい能力: </c>DEX,STR,CON.]]},
 
 
-[ub_sum]={n="サモナー", a="SUM", c="Wizard", d=[[<c=desc>仲間からは時折、召喚されたその奇妙な生き物と一緒に暮らしている事に疑問を持たれる。</c>
+[ub_hlr]={n="ヒーラー", a="Hlr", c="クレリック", d=[[
+<c=desc>仲間はあなたを頼りにしています。</c>
 
-<c=lbl b>召喚型ウィザード ビルド：</c>
-どこからともなくやってくる様々な種類のアウトサイダーを呼び出すことに特化しています。召喚されたクリーチャーの強靭性は仲間たちも息を呑むでしょう。
+<c=lbl b>治癒とサポートのクレリックビルド:</c>
+一歩下がって、仲間の健康と最適化を保ちます。
 
-<c=lbl b>適正能力：</c>Cha, Int, Dex, Con.]]},
+<c=lbl b>好ましい能力: </c>WIS,DEX,CON.]]},
 
 
-[ub_rog_1]={n="Skirmisher"			,d="One of the typical builds of the Rogue class, focusing on melee strikes."},
-[ub_rog_2]={n="Poacher"				,d="One of the typical builds of the Rogue class, specializing in long-range sneak attacks."},
-[ub_bbn_1]={n="Rageblood"			,d="One of the typical builds of the Barbarian class."},
-[ub_mnk_1]={n="Flowing First"		,d="One of the typical builds of the Monk class."},
-[ub_sor_1]={n="Wild Mage"			,d="One of the typical builds of the Sorcerer class."},
-[ub_pal_1]={n="Blade of Order"		,d="One of the typical builds of the Paladin class."},
-[ub_pal_2]={n="Hammer of Judgment"	,d="One of the typical builds of the Paladin class."},
-[ub_rgr_1]={n="Verdant Guardian"	,d="One of the typical builds of the Ranger class, specializing in two-weapon fighting."},
-[ub_rgr_2]={n="Wild Sentinel"		,d="One of the typical builds of the Ranger class, specializing in long-range combat."},
-[ub_drd_1]={n="Earth Warden"		,d="One of the typical builds of the Druid class."},
-[ub_brd_1]={n="Fatesinger"			,d="One of the typical builds of the Bard class."},
+[ub_wrp]={n="バトルクレリック", a="BC", c="クレリック", d=[[
+<c=desc>あなたはパラディンの信仰を受け継いでいます。</c>
+
+<c=lbl b>近接攻撃型クレリックビルド:</c>
+ファイターのように最前線で戦い、重要なときに仲間に追加の助けを提供します。
+
+<c=lbl b>好ましい能力: </c>STR,WIS,DEX,CON.]]},
+
+
+[ub_udh]={n="アンデッドハンター", a="UH", c="クレリック", d=[[
+<c=desc>あなたはすべてのアンデッドクリーチャーの天敵です。</c>
+
+<c=lbl b>特別なクレリックビルド:</c>
+さまざまな種類のアンデッドクリーチャーの狩猟に焦点を当てています。
+
+<c=lbl b>好ましい能力: </c>CHA,WIS,CON.]]},
+
+
+[ub_ctl]={n="コントローラ", a="Ctl", c="ウィザード", d=[[
+<c=desc>敵を制限することがあなたの最大の関心事です。</c>
+
+<c=lbl b>戦場コントロールウィザードビルド:</c>
+さまざまな呪文を使用して対戦相手を制限します。対戦相手を深い眠りに落ち込ませたり、滑りやすいグリースのプールに閉じ込めたり、酸の雲に閉じ込めたりします。
+
+<c=lbl b>好ましい能力: </c>INT,DEX,CON.]]},
+
+
+[ub_elm]={n="エレメンタリスト", a="Elm", c="ウィザード", d=[[
+<c=desc>“さて、この火の玉の後に連鎖稲妻が起こり、さらに別の火の玉が起こります。"</c>
+
+<c=lbl b>広範囲ウィザードビルド:</c>
+あなたのお気に入りの呪文は、一度に多くの敵にダメージを与えるものです。 巨大な火の噴出、まばゆいばかりの稲妻、そして腐食性の酸の波があなたの武器です。
+
+<c=lbl b>好ましい能力: </c>INT,DEX,CON.]]},
+
+
+[ub_sum]={n="サモナー", a="Sum", c="ウィザード", d=[[
+<c=desc>仲間は、あなたが最終的にあの奇妙な召喚獣と結婚するのかどうか疑うことさえある。</c>
+
+<c=lbl b>召喚ウィザードビルド:</c>
+あなたのために戦ってもらうために外界からあらゆる種類のアウトサイダーを呼び出すことに特化しています。 召喚されたクリーチャーのタフさは、多くの場合、本物の仲間が感嘆の声を上げます。
+
+<c=lbl b>好ましい能力: </c>CHA,INT,DEX,CON.]]},
+
+
+[ub_rog_1]={n="スカーミッシャー"			,d="近接攻撃に重点を置いた、ローグクラスの典型的なビルドの 1 つ。"},
+[ub_rog_2]={n="ポーチャー"				,d="ローグクラスの代表的なビルドの1つで、遠距離の急所攻撃に特化しています。"},
+[ub_bbn_1]={n="レイジブラッド"			,d="バーバリアンクラスの典型的なビルドの1つ。"},
+[ub_mnk_1]={n="フローイングファースト"		,d="モンククラスの代表的なビルドの一つ。"},
+[ub_sor_1]={n="ワイルドメイジ"			,d="ソーサラークラスの代表的なビルドの一つ。"},
+[ub_pal_1]={n="ブレードオブオーダー"		,d="パラディンクラスの代表的なビルドの一つ。"},
+[ub_pal_2]={n="ハンマーオブジャッジメント"	,d="パラディンクラスの代表的なビルドの一つ。"},
+[ub_rgr_1]={n="ヴァーダントガーディアン"	,d="レンジャークラスの代表的なビルドの一つで、二刀流での戦闘に特化している。"},
+[ub_rgr_2]={n="ワイルドセンチネル"		,d="レンジャークラスの代表的なビルドの一つで、長距離戦闘を得意とする。"},
+[ub_drd_1]={n="アースウォーデン"		,d="ドルイドクラスの典型的なビルドの 1 つ。"},
+[ub_brd_1]={n="フェイトシンガー"			,d="バードクラスの典型的なビルドの 1 つ。"},
 }
