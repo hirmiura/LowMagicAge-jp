@@ -3136,7 +3136,7 @@ s_tiger			="タイガー"
 s_tiger_x		="ダイア・タイガー"
 
 s_dog			="犬"
-s_dog_ride		="常用犬"
+s_dog_ride		="乗用犬"
 s_hyena			="ハイエナ"
 
 s_wolf			="ウルフ"--"Wolf"
