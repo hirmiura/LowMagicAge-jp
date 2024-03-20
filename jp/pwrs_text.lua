@@ -1,22 +1,22 @@
---s_wip				="\n\n<c=o>(In Development)</c>"
---wpn_prof_d		="You understand how to use weapons of this group in combat."
---simple_wpn_d		="\n\nAs the name implies, these weapons are simple and easy to use. Most classes are proficient with all simple weapons."..s_auto_prof
---s_exotic_wp_d		="You understand how to use this type of exotic weapon in combat.\n\nCompared to simple and military weapons, exotic weapons are relatively rare and difficult to use, and require specialized training to proficient with."
+--s_wip				="\n\n<c=o>(Under Development)</c>"
+--wpn_prof_d		="このグループの武器を戦闘で使用する方法を理解している。"-- 戦闘でこのグループの武器の使い方を理解している。\n\nこのグループの武器を使った攻撃時に+4のボーナスを得る。
+--simple_wpn_d		="\n\n名前が示すように、これらの武器はシンプルで使いやすい。ほとんどのクラスは、すべての単純武器に習熟している。"..s_auto_prof-- \n\nその名の通り、シンプルで使いやすい武器だ。ほとんどのクラスでは、すべての単純武器を使いこなすことができる。
+--s_exotic_wp_d		="このタイプの特殊武器を戦闘で使用する方法を理解してる。\n\n単純武器や軍用武器と比較して、特殊武器は比較的まれで使用が難しく、熟練するには専門的な訓練が必要となる。"
 s_for_touch			="This feat applies to touch attacks, too."
 s_for_touch_m		="This feat applies to melee touch attacks, too."
 s_for_touch_r		="This feat applies to ranged touch attacks, too."
-ch_1_eff			="\n\nYou can only apply one critical effect to a given critical hit unless you have Critical Mastery."
-dodge_bns			="\n\nA condition that makes you lose your Dex bonus to AC (if any) also makes you lose dodge bonuses.\n\nDodge bonuses stack with each other, unlike most types of bonuses."
-melee_only			="This feat is for melee weapons only."
-th_note				="\n\nIncluding one-handed weapons wielded with two hands.\n\n"..melee_only
-atk_pnl_2			=" -2 penalty on the attack rolls."
-use_a				="\n\n<c=fc_b>Uses per day: 5 + Character level/4.\nNo more than 15 uses per day.</c>"
-use_b				="\n\n<c=fc_b>Uses per day: Character level/4.\nNo more than 5 uses per day.</c>"
-s_feat_x_spl_add_2x	="You can gain this feat multiple times."
-s_feat_x_spl_cvt_1x	="You can gain this feat multiple times. Each time you take the feat, it applies to a different spell."
-s_feat_x_spl_cpy_1x	="You can gain this feat multiple times. Each time you take the feat, it applies to a different spell or spell-like ability."
-s_feat_x_mle_undr	="You can gain this feat multiple times. Each time you take the feat, it applies to a different special material. Your melee attacks are treated as being crafted of all chosen materials for purposes of bypassing damage reduction."
-s_feat_x			="You can gain this feat multiple times. Its effects stack."
+ch_1_eff			="\n\n《クリティカル体得》を持っていない限り、特定のクリティカルヒットにクリティカルエフェクトは1回しか適用されない。"
+dodge_bns			="\n\nACへの【敏捷力】ボーナス（もしあれば）を失った状態は、回避ボーナスも失うことになる。\n\n回避ボーナスは、ほとんどのボーナスとは異なり、互いに累積される。"
+melee_only			="近接武器専用。"
+th_note				="\n\n両手で握った片手武器を含む。\n\n"..melee_only
+atk_pnl_2			="攻撃ロールに -2のペナルティ。"
+use_a				="\n\n<c=fc_b>１日の使用回数：5 + キャラクターレベル / 4。\n１日の使用回数は15回まで。</c>"
+use_b				="\n\n<c=fc_b>１日の使用回数：キャラクターレベル / ４。\n１日の使用回数は５回まで。</c>"
+s_feat_x_spl_add_2x	="この特技は複数回行うことができ。"
+s_feat_x_spl_cvt_1x	="この特技は複数回行うことができ。Each time you take the feat, it applies to a different spell."
+s_feat_x_spl_cpy_1x	="この特技は複数回行うことができ。Each time you take the feat, it applies to a different spell or spell-like ability."
+s_feat_x_mle_undr	="この特技は複数回行うことができ。Each time you take the feat, it applies to a different special material. Your melee attacks are treated as being crafted of all chosen materials for purposes of bypassing damage reduction."
+s_feat_x			="この特技は複数回行うことができ、その効果は累積される。"
 s_feat_x_max		="Up to %d times."
 s_feat_x_23			="Remember that two doublings equals a tripling, and so on."
 s_feat_no_stk		="This feat does not stack with similar abilities."
@@ -34,9 +34,9 @@ Like the regular feat, the epic feat is a special feature that either gives your
 Epic feats are available only to epic characters whose character level is 21st or higher. The epic character is largely defined by his selection of epic feats.]]
 
 
-s_turn1				="Improved Turning"					s_turn1_d				="+1 bonus on turn checks."
-s_turn2				="Greater Turning"					s_turn2_d				="+1 bonus to Improved Turning."
-s_turn_extra		="Extra Turning"					s_turn_extra_d			="+4 uses per day of Turn."
+s_turn1				="《退散強化》"						s_turn1_d				="退散判定に+1ボーナスを得る。"
+s_turn2				="《上級退散》"						s_turn2_d				="《退散強化》の効果に加え+1ボーナスを得る。"
+s_turn_extra		="《退散回数追加》"					s_turn_extra_d			="ターンの１日につき＋４回使用する。"
 
 s_abi_1_1x			="Great Strength"					s_abi_1_1x_d			="Your muscle and physical power are greater than normal.\n\nYour Strength increases by 1 point."
 s_abi_2_1x			="Great Dexterity"					s_abi_2_1x_d			="Your agility and coordination are greater than normal.\n\nYour Dexterity increases by 1 point."
@@ -133,133 +133,171 @@ s_unarm_law			="Righteous Strike"					s_unarm_law_d			="Your unarmed strikes are
 s_unarm_ch3			="Keen Strike"						s_unarm_ch3_d			="Your unarmed strikes become as sharp as blades.\n\nYour unarmed strike has a critical threat range of 18–20 and deals slashing damage. (At your option, any unarmed strike can deal bludgeoning damage instead, but cannot then take advantage of the enhanced threat range.)"
 s_unarm_kill		="Vorpal Strike"					s_unarm_kill_d			="Your unarmed strikes can behead your opponents.\n\nYour unarmed strike is considered to be a slashing vorpal weapon. (At your option, any unarmed strike can do bludgeoning damage instead, but it loses the vorpal quality.)"
 
-s_spl_dc_1			="Spell Focus"						s_spl_dc_1_d			="Your spells of the school of magic are far more potent than normal.\n\n+1 DC for all saving throws against spells from the school of magic."
+s_spl_dc_1			="呪文熟練"							s_spl_dc_1_d			="Your spells of the school of magic are far more potent than normal.\n\n+1 DC for all saving throws against spells from the school of magic."-- スペルスクールでの攻撃ロールに＋１のボーナス。
 s_spl_dc_2			="Greater Spell Focus"				s_spl_dc_2_d			=s_spl_dc_1_d
 s_spl_dc_3			="Epic Spell Focus"					s_spl_dc_3_d			=s_spl_dc_1_d
-s_spl_unsr1			="Spell Penetration"				s_spl_unsr1_d			="Your spells are very powerful, defeating spell resistance more easily.\n\nYou get a +2 bonus on caster level checks to beat a creature’s spell resistance."
-s_spl_unsr2			="Greater Spell Penetration"		s_spl_unsr2_d			="Your spells are especially potent, defeating spell resistance more readily than normal.\n\nYou get a +2 bonus on caster level checks to beat a creature’s spell resistance."
+s_spl_unsr1			="《抵抗破り》"						s_spl_unsr1_d			="Your spells are very powerful, defeating spell resistance more easily.\n\nYou get a +2 bonus on caster level checks to beat a creature’s spell resistance."
+s_spl_unsr2			="《上級抵抗破り》"					s_spl_unsr2_d			="Your spells are especially potent, defeating spell resistance more readily than normal.\n\nYou get a +2 bonus on caster level checks to beat a creature’s spell resistance."
 s_unsr_6			="Epic Spell Penetration"			s_unsr_6_d				="Your spells are tremendously potent, breaking through spell resistance with ease.\n\nYou get a +2 bonus on caster level checks to beat a creature’s spell resistance."
-s_spl_summ1			="Augment Summoning"				s_spl_summ1_d			="Summoned creatures gain +4 bonus on Str and Con."
-s_spl_elem1			="Evocation Specialization"			s_spl_elem1_d			="+2 bonus on damage rolls of Evocation spells."
+s_spl_summ1			="《招来クリーチャー強化》"				s_spl_summ1_d			="招来されたクリーチャーは【筋力】と【耐久力】に+4を得る。"
+s_spl_elem1			="Evocation Specialization"			s_spl_elem1_d			="+2 damage on Evocation spells."
 s_cst_no_ao			="Improved Combat Casting"			s_cst_no_ao_d			="You don't incur attacks of opportunity for casting spells when threatened."
 s_spl_add_2x		="Spell Knowledge"					s_spl_add_2x_d			="You learn two new arcane spells of any level up to the maximum level you can cast."
 s_spl_cpy_1x		="Spell Stowaway"					s_spl_cpy_1x_d			="Choose a spell-like ability you possess or a spell you can cast. You gain the benefits of this magic whenever it is used near you.\n\nYou are attuned to the magic you chose. If another spellcaster within 300 feet of you uses this magic, you also immediately gain the magic’s effect as if it had been used on you by the same caster.\n\nYou must have direct line of effect to the spellcaster in order to gain the benefit of the attuned magic (though you do not have to know the spellcaster is present, and you can be flat-footed). The magic’s duration, effect, and other specifics are determined by its original caster’s level."
 s_spl_cvt_1x		="Spontaneous Spell"				s_spl_cvt_1x_d			="Choose a spell you can cast. You may spontaneously convert any prepared spell of that spell’s level into that spell, just as a cleric channels energy to convert spells into cure spells."
 
-s_sf_3				="Skill Focus"						s_sf_3_d				="+3 bonus on all checks with the skill."
-s_sf_10				="Epic Skill Focus"					s_sf_10_d				="You have a legendary knack with the skill.\n\n+10 bonus on all checks with the skill."
+s_sf_3				="《技能熟練》"						s_sf_3_d				="技能を含むすべての判定で +3 のボーナス。"
+s_sf_10				="Epic Skill Focus"					s_sf_10_d				="You have a legendary knack with the skill.\n\n技能を含むすべての判定で +10 のボーナス。"
 s_sf_4_rep			="Epic Reputation"					s_sf_4_rep_d			="Your reputation provides great bonuses on interactions with others.\n\n+4 bonus on Bluff, Diplomacy, Gather Information, Intimidate, and Perform checks."
 s_polyglot			="Polyglot"							s_polyglot_d			="You can speak all languages. If you’re literate, you can also read and write all languages (not including magical script)."
 
 
-s_quick_draw		="Quick Draw"	s_quick_draw_d	="You can draw or swap weapons as a free action instead of as a move action, and does not provoke attacks of opportunity."
-s_pa				="Power Attack"	s_pa_d			=[[Trade extra melee attack bonus for damage.
+s_quick_draw		="《早抜き》"		s_quick_draw_d	="移動アクションではなく、フリー・アクションで武器を抜くことができる。"
+s_pa				="《強打》"		s_pa_d			=[[余剰した近接攻撃ボーナスをダメージに変換する。
 
-If your melee attack bonus is higher than your opponent's AC, redundant part automatically converts to damage bonus (up to your base attack bonus).
+使用者の近接攻撃ボーナスが相手防御を上回ったならば、自動的に余剰分がダメージ・ボーナスに変換される (up to your base attack bonus)。
 
 If you attack with a two-handed weapon, or with a one-handed weapon wielded in two hands, or with sole primary natural weapon, this damage bonus is doubled. However, this damage bonus doesn’t apply to light weapons (except unarmed attacks or natural weapons).]]
-pwr_rng_pa_n		="Deadly Aim"	pwr_rng_pa_d	="Similar with <t=@pwr_pa c=fc_b>Power Attack</t>, but for ranged attacks (except the double damage bonus rule)."
+pwr_rng_pa_n		="《致命傷狙い》"	pwr_rng_pa_d	="<t=@pwr_pa c=fc_b>《強打》</t>と同様だが、遠隔攻撃でのみ使える。\n\n使用者の遠隔攻撃ボーナスが相手防御を上回ったならば、自動的に余剰分がダメージ・ボーナスに変換される。"-- Similar with <t=@pwr_pa c=fc_b>Power Attack</t>, but for ranged attacks (except the double damage bonus rule).
 
-s_tw="Two-Weapon Fighting"	s_tw_d=[[You can fight with a weapon in each hand. You can make one extra attack each round with the second weapon.
+s_tw="《二刀流》"
+s_tw_d=[[オフ・ハンドに二つ目の武器を装備しているならば、その武器で1ラウンドに1回その武器で追加攻撃を行える。
 
-When fighting in this way you suffer a –6 penalty with your regular attack or attacks with your primary hand and a –10 penalty to the attack with your off hand.
+このように戦闘を行った際、利き手での通常攻撃に-6のペナルティを受け、オフ・ハンドでの攻撃に-10のペナルティを受ける。
 
 You can reduce these penalties in two ways:
-- If your off-hand weapon is light, the penalties are reduced by 2 each. (An unarmed strike is always considered light.)
+- オフ・ハンドの武器が軽武器ならばこのペナルティは2ずつ軽減される。(An unarmed strike is always considered light.)
 - The Two-Weapon Fighting feat lessens the primary hand penalty by 2, and the off-hand penalty by 6.
 
 The table below summarizes the interaction of all these factors.
 
-Two-Weapon Fighting Penalties:
-<b>Circumstances		Primary	Off</b>
-Normal penalties		-6	-10
-Off-hand weapon is light	-4	-8
-TW Fighting feat		-4	-4
-Feat + Light		-2	-2
+二刀流戦闘ペナルティ:
+<b>状況				利き手	オフ・ハンド</b>
+通常ペナルティ			-6	-10
+オフ・ハンドが軽武器			-4	-8
+《二刀流戦闘》			-4	-4
+オフ・ハンドが軽武器で《二刀流戦闘》	-2	-2
 
 <b>Double Weapons: </b>You can use a double weapon to make an extra attack with the off-hand end of the weapon as if you were fighting with two weapons. The penalties apply as if the off-hand end of the weapon were a light weapon.]]
-s_hr_tw_ratk_2="<t=$s_tw_nd c=fc_b>Two-Weapon Fighting</t>: one extra attack with second weapon for regular attack <c=twa>(unchecked: for full attack only)</c>"
-pwr_tw_n="Two-Weapon Fighting"	pwr_tw_d=[[Your penalties on attack rolls for fighting with two weapons are reduced. The penalty for your primary hand lessens by 2 and the one for your off hand lessens by 6.
+s_hr_tw_ratk_2="<t=$s_tw_nd c=fc_b>《二刀流》</t>: one extra attack with second weapon for regular attack <c=twa>(unchecked: for full attack only)</c>"
+pwr_tw_n="《二刀流》"
+pwr_tw_d=[[
+二つの武器を使った戦闘の際の攻撃ロールへのペナルティを軽減する。利き手のペナルティを2、オフ・ハンドのペナルティを6軽減する。
 
-Normal: ]]..s_tw_d..[[
+通常：]]..s_tw_d..[[
 
 
-Special: A 2nd-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
-pwr_tw1_n="Improved Two-Weapon Fighting"	pwr_tw1_d=[[In addition to the standard single extra attack you get with an off-hand weapon, you get a second attack with it, albeit at a –5 penalty.
+特殊: 二刀流の戦闘スタイルを選択した2レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持つものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。
+]]
+pwr_tw1_n="《二刀流強化》"
+pwr_tw1_d=[[
+オフ・ハンド武器で得られる標準的な1回の追加攻撃に加えて、-5ペナルティではあるが、2回目の攻撃を得ることができる。
 
-Special: A 6th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
-pwr_tw2_n="Greater Two-Weapon Fighting"		pwr_tw2_d=[[You are a master at fighting two-handed.\n\nYou get a third attack with your off-hand weapon, albeit at a –10 penalty.
+特殊: 二刀流の戦闘スタイルを選択した6レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持っているものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。
+]]
+pwr_tw2_n="《上級二刀流》"	pwr_tw2_d=[[オフ・ハンド武器で3回目の攻撃を与えるが、ペナルティは-10である。
 
-Special: An 11th-level ranger who has chosen the two-weapon combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
-pwr_tw3_n="Perfect Two-Weapon Fighting"	pwr_tw3_d="No penalty on attack rolls for fighting with two weapons, even your off-hand weapon is not light."
-pwr_tw_def_n="Two-Weapon Defence"	pwr_tw_def_d=[[When wielding a double weapon or two weapons (not including natural weapons or unarmed strikes), you gain a +1 shield bonus to your AC.
+特殊: 二刀流の戦闘スタイルを選択した11レベルのレンジャーは、この技の前提条件を満たしていなくても、この技を持つものとして扱われるが、軽装または無装の鎧を着ている場合に限られる。]]
+pwr_tw3_n="《二刀流戦闘皆伝》"
+pwr_tw3_d="二つの武器で戦っている場合の攻撃ロールへのペナルティを受けない。オフ・ハンドの武器が軽武器でなくてもペナルティを受けない。"
+pwr_tw_def_n="《二刀の守り》"
+pwr_tw_def_d=[[
+二つの武器を身に着けている場合 (肉体武器や素手攻撃は含まない),ACに+1盾ボーナスを得る。
 
-When you are using the total defense action, this shield bonus increases to +2.]]
-pwr_tw_def1_n="Improved Two-Weapon Defence"	pwr_tw_def1_d="+1 bonus to Two-Weapon Defence."
-pwr_tw_off_n="Double Slice"	pwr_tw_off_d="Add Str bonus to off-hand damage rolls.\n\nNormal: You normally add only half of your Str bonus to damage rolls made with a weapon wielded in your off-hand.\n\nThis feat applies to extra damage bonus of Power Attack and charges, too."
-pwr_tw_rend_n="Two-Weapon Rend"	pwr_tw_rend_d="Rend a foe hit by both your weapons.\n\nIf you hit an opponent with both your primary hand and your off-hand weapon, you deal an additional 1d10 points of damage plus 1-1/2 times your Strength modifier.\n\nKills by rend damage do not provoke Cleave."
+完全防御アクションを取った場合、このボーナスは+2になる。
+]]
+pwr_tw_def1_n="《二刀の守り強化》"
+pwr_tw_def1_d="《二刀の守り》の効果に加え、さらに+1のボーナスを得る。"
+pwr_tw_off_n="《二刀の切り裂き》"
+pwr_tw_off_d="オフ・ハンドのダメージ・ロールに【筋力】ボーナスを加える。\n\n通常: 二つの武器を身に着けている場合、オフ・ハンド武器のダメージ・ロールには【筋力】ボーナスの半分しか加えられない。\n\nこの特技は《強打》、《突撃》の追加ダメージボーナスにも適用される。"
+pwr_tw_rend_n="《二刀のかきむしり》"
+pwr_tw_rend_d="両方の武器が命中した相手を引き裂く。\n\n利き手とオフ・ハンド両方の武器が命中した場合は、追加で1d10+（【筋力】修正値の1.5倍）のダメージを与える。\n\nこの特技で相手を倒した場合、《薙ぎ払い》は誘発しない。"
 
-pwr_th_n="Two-Handed Weapon Fighting"	pwr_th_d="+2 bonus on damage rolls with two-handed weapons."..th_note
-pwr_th1_n="Improved Two-Handed Weapon Fighting"	pwr_th1_d="+2 bonus to Two-Handed Weapon Fighting."
-pwr_th_ko_n="Knockdown"	pwr_th_ko_d="When hit with a two-handed weapon, 10% rate to trigger a combat maneuver check, the target falls if failed the check."..th_note
-pwr_th_ko1_n="Improved Knockdown"	pwr_th_ko1_d="Increase the rate of Knockdown to 20%."
-pwr_th_atk1_n="Two-Handed Weapon Focus"	pwr_th_atk1_d="+1 bonus on attack rolls with two-handed weapons."..th_note
+pwr_th_n="《両手武器戦闘》"
+pwr_th_d="両手武器のダメージに+2ボーナスを得る。"..th_note
+pwr_th1_n="《両手武器戦闘強化》"
+pwr_th1_d="《両手武器戦闘》の効果に加え、さらに+2ボーナスを得る。"
+pwr_th_ko_n="《打ち倒し》"
+pwr_th_ko_d="両手武器の攻撃が命中した場合、10%の確率で戦技判定を引き起こす。対象が判定に失敗した場合、対象は伏せ状態になる。"..th_note
+pwr_th_ko1_n="《打ち倒し強化》"
+pwr_th_ko1_d="《打ち倒し》と同様だが確率は20%。"
+pwr_th_atk1_n="《両手武器戦闘熟練》"
+pwr_th_atk1_d="両手武器による攻撃ロールに+1ボーナスを得る。"..th_note
 
-pwr_rng_near_n="Point Blank Shot"	pwr_rng_near_d="You get a +1 bonus on attack and damage rolls with ranged weapons at ranges of up to 30 feet."
-pwr_rng_far_n="Far Shot"	pwr_rng_far_d="When you use a projectile weapon, such as a bow, its range increases by one-half (multiply by 1-1/2). When you use a thrown weapon, its range is doubled."
-pwr_rng_precise_n="Precise Shot"	pwr_rng_precise_d="No penalty for shooting into melee.\n\nYou can shoot or throw ranged weapons at an opponent engaged in melee without taking the standard -4 penalty on your attack roll."
-pwr_rng_precise1_n="Improved Precise Shot"	pwr_rng_precise1_d=[[Your ranged attacks ignore any effects of cover and concealment but total cover or total concealment.
+pwr_rng_near_n="《近距離射撃》"
+pwr_rng_near_d="対象が６スクエア以内にいる場合、遠隔攻撃ロールとダメージ・ロールに+1を得る。"
+pwr_rng_far_n="《遠距離射撃》"-- Far Shot
+pwr_rng_far_d="When you use a projectile weapon, such as a bow, its range increases by one-half (multiply by 1-1/2). When you use a thrown weapon, its range is doubled."
+pwr_rng_precise_n="《精密射撃》"
+pwr_rng_precise_d="近接戦闘中の対象に遠隔攻撃する際のペナルティがなくなる。\n\n近接戦闘状態にある相手に射撃武器や投擲武器で攻撃を行う場合、通常ならば攻撃ロールに-4ペナルティを受ける。"
+pwr_rng_precise1_n="《精密射撃強化》"
+pwr_rng_precise1_d=[[
+Your ranged attacks ignore any effects of cover and concealment but total cover or total concealment.
 
 In addition, when you shoot or throw ranged weapons at a grappling opponent, you automatically strike at the opponent you have chosen. Without this feat, you must roll randomly to see which grappling combatant the attack strikes.
 
-Special: An 11th-level ranger who has chosen the archery combat style is treated as having Improved Precise Shot, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
-pwr_atk_r_atk2_n="Rapid Shot"	pwr_atk_r_atk2_d=[[You can get one extra attack per round with a ranged weapon. The attack is at your highest base attack bonus, but each attack you make in that round (the extra one and the normal ones) takes a –2 penalty. You must use the full attack action to use this feat.
+Special: An 11th-level ranger who has chosen the archery combat style is treated as having Improved Precise Shot, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+]]-- old 遠隔攻撃に対して遮蔽は意味を持たない。\n\nあなたの遠隔攻撃は、完全遮蔽以外の遮蔽による対象へのACボーナスを無効化する。
+pwr_atk_r_atk2_n="《速射》"
+pwr_atk_r_atk2_d=[[
+You can get one extra attack per round with a ranged weapon. The attack is at your highest base attack bonus, but each attack you make in that round (the extra one and the normal ones) takes a –2 penalty. You must use the full attack action to use this feat.
 
-Special: A 2nd-level ranger who has chosen the archery combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]
-pwr_atk_r_atk2_1_n="Improved Rapid Shot"	pwr_atk_r_atk2_1_d="No penalty for Rapid Shot."
-pwr_atk_r_atk2_2_n="Greater Rapid Shot"	pwr_atk_r_atk2_2_d="Three shots for Rapid Shot."
-pwr_atk_r_tgt3_n="Manyshot"	pwr_atk_r_tgt3_d=[[Make ranged attacks on multiple foes in designated area. Each attack is at your highest base attack bonus, but takes -2 penalty.
+Special: A 2nd-level ranger who has chosen the archery combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+]]
+pwr_atk_r_atk2_1_n="《速射強化》"
+pwr_atk_r_atk2_1_d="《速射》のペナルティがなくなる。"
+pwr_atk_r_atk2_2_n="《より強力な速射》"
+pwr_atk_r_atk2_2_d="《速射》で3回の攻撃が行える。"
+pwr_atk_r_tgt3_n="《束ね射ち》"
+pwr_atk_r_tgt3_d=[[
+指定された範囲内の複数の敵に遠隔攻撃を行える。Each attack is at your highest base attack bonus, but takes -2 penalty.
 
-Special: A 6th-level ranger who has chosen the archery combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.]]..use_a
-pwr_atk_r_tgt3_1_n="Improved Manyshot"	pwr_atk_r_tgt3_1_d="No penalty for Manyshot."
-pwr_atk_r_tgtx_n="Rain of Arrows"	pwr_atk_r_tgtx_d="Make ranged attacks on all foes in ranged attack range. Each attack is at your highest base attack bonus, but takes -2 penalty."..use_b
-pwr_atk_r_tgtx_1_n="Improved Rain of Arrows"	pwr_atk_r_tgtx_1_d="No penalty for Rain of Arrows."
-pwr_rng_xbow_n="Crossbow Sniper"	pwr_rng_xbow_d="+2 bonus on damage rolls with crossbows."
-pwr_rng_wis_n="Zen Archery"	pwr_rng_wis_d="When making ranged attacks, you may use your Wisdom modifier instead of your Dexterity modifier on attack rolls."
+Special: A 6th-level ranger who has chosen the archery combat style is treated as having this feat, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.
+]]..use_a
+pwr_atk_r_tgt3_1_n="《束ね射ち強化》"
+pwr_atk_r_tgt3_1_d="《束ね射ち》のペナルティがなくなる。"
+pwr_atk_r_tgtx_n="《矢の雨》"
+pwr_atk_r_tgtx_d="遠隔攻撃の射程範囲内のすべての敵に遠隔攻撃を行える。Each attack is at your highest base attack bonus, but takes -2 penalty."..use_b
+pwr_atk_r_tgtx_1_n="《矢の雨強化》"
+pwr_atk_r_tgtx_1_d="《矢の雨》のペナルティがなくなる。"
+pwr_rng_xbow_n="《クロスボウ狙撃手》"
+pwr_rng_xbow_d="クロスボウのダメージに+2を得る。"
+pwr_rng_wis_n="《弓禅一如》"
+pwr_rng_wis_d="遠隔攻撃ロールに【敏捷力】ではなく【判断力】を用いてもよい。"-- z_new		When making ranged attacks, you may use your Wisdom modifier instead of your Dexterity modifier on attack rolls.
 
 pwr_snt_arw_d=[[
-When using the Deflect Arrows feat you may catch the weapon instead of just deflecting it.
+《矢つかみ》の特技を使用すると、武器を逸らすだけでなく、武器を掴むことができる。
 
-Thrown weapons will be thrown back immediately at the original attacker without attacks of opportunity.
+投擲武器は、機会攻撃なしにすぐに元の攻撃者に投げ戻すことができる。
 
-<c=o>When this ability is actived as a switch ability, thrown weapons will be kept for later use, too.</c>
+<c=o>この能力が switch 能力として有効化されると、投擲武器は後で使用するために保持される。</c>
 ]]-- Special: A fighter may select Snatch Arrows as one of his fighter bonus feats.
 
 pwr_stunning_fist_d=[[
-Stunning Fist forces a foe damaged by your unarmed attack to make a Fortitude saving throw (your character level / 2 + Wis modifier vs. foe's Fortitude), in addition to dealing damage normally. A defender who fails this saving throw is <t=@cond_stunned_nd c=r>stunned</t> for 1 round.
+《朦朧化打撃》は君の素手攻撃でダメージを受けた相手に頑健セーヴ（キャラクターのレベル/2 + Wis修正値 対 敵の頑健）を強制する。このセーヴィング・スローに失敗した標的は、１ラウンドの間<t=@cond_stunned_nd c=r>朦朧状態</t>にする。
 
-Uses per day: Monk level + Non-nonk level/4.
-Can be used no more than once per round. A failed attack roll ruins the attempt, too.
+１日の使用回数：: モンクレベル ＋ モンク以外のレベル / 4
+ラウンドごとに１回のみ使用できる。失敗した場合は攻撃ロールが無駄になる。
 ]]-- A stunned character can’t act, loses any Dexterity bonus to AC, and takes a –2 penalty to AC.	Constructs, oozes, plants, undead, incorporeal creatures, and creatures immune to critical hits cannot be stunned.	You must declare that you are using this feat before you make your attack roll (thus, a failed attack roll ruins the attempt).	Special: A monk may select Stunning Fist as a bonus feat at 1st level, even if she does not meet the prerequisites. A monk who selects this feat may attempt a stunning attack a number of times per day equal to her monk level, plus one more time per day for every four levels she has in classes other than monk. A fighter may select Stunning Fist as one of his fighter bonus feats.	You may attempt a stunning attack once per day for every four levels you have attained, and no more than once per round. A failed attack roll ruins the attempt, too.	1 round (until just before your next action)
 
 pwr_ch_mle_dmg_d=[[
-When using a proficient melee weapon, you deal an extra damage on a successful critical hit:
-If the weapon’s critical multiplier is x2, add an extra 1d6 points of damage.
-If the weapon’s critical multiplier is x3, add an extra 2d6 points of damage.
-If the weapon’s critical multiplier is x4, add an extra 3d6 points of damage.
+近接武器を使用すると、クリティカルヒット成功時に追加のダメージを与える。
+武器のクリティカル倍率がx2の場合、さらに1d6ポイントのダメージを追加する。
+武器のクリティカル倍率がx3の場合、さらに2d6ポイントのダメージを追加する。
+武器のクリティカル倍率がx4の場合、さらに3d6ポイントのダメージを追加する。
 
-Creatures immune to critical hits can’t be affected by this feat.
+クリティカルヒットの影響を受けないクリーチャーは、この特技の影響を受けない。
 ]]-- Choose one type of melee weapon, such as longsword or greataxe. With that weapon, you do more damage on a critical hit.	Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of weapon.
 
 pwr_unarmed_strike_d=[[
-Monks are highly trained in fighting unarmed, giving them considerable advantages when doing so.
+モンクは素手で戦うために高度な訓練を受けており、そのような状況ではかなりの利点がある。
 
-A monk's attacks may be with either fist interchangeably or even from elbows, knees, and feet. This means that a monk may even make unarmed strikes with her hands full. There is no such thing as an off-hand attack for a monk striking unarmed. A monk may thus apply her full Str bonus on damage rolls for all her unarmed strikes.
+モンクの攻撃は拳を交互に使うこともあれば、肘、膝、足からの攻撃もある。つまり、モンクは両手をフルに使って素手攻撃をすることもある。モンクの《素手打撃》には、オフ・ハンドによる攻撃はない。このように、モンクはすべての素手状態での攻撃に対して、【筋力】ボーナスをフルに適用することができる。
 
-As the monk level increases, her unarmed strikes have more attacks (1 extra attack at 6th, 14th and 18th) and damage.
+モンクのレベルが上がるにつれ、《素手打撃》はより多く（6、14、18レベルでそれぞれ一回）の攻撃とダメージを与える。
 
-Small, Medium and Large Monk Unarmed Damage:
-Level	Small	Medium	Large
+モンクの素手ダメージ（小/中/大）：
+レベル	小	中	大
 1	1d4	1d6	1d8
 4	1d6	1d8	2d6
 8	1d8	1d10	2d8
@@ -267,45 +305,45 @@ Level	Small	Medium	Large
 16	2d6	2d8	3d8
 20	2d8	2d10	4d8
 
-<c=o>When this ability is actived as a switch ability, you always make unarmed strikes in melee, even holding a melee weapon.</c>
+<c=o>この能力が有効な時は、近接武器を保持していても常に《素手打撃》を行う。</c>
 ]]-- Usually a monk's unarmed strikes deal lethal damage, but she can choose to deal nonlethal damage instead with no penalty on her attack roll. She has the same choice to deal lethal or nonlethal damage while grappling.	A monk's unarmed strike is treated both as a manufactured weapon and a natural weapon for the purpose of spells and effects that enhance or improve either manufactured weapons or natural weapons.
 
 pwr_flurry_of_blows_d=[[
-When unarmored, a monk may strike with a flurry of blows at the expense of accuracy.
+鎧を着用していない時、モンクは精度を犠牲にして連打で攻撃することができる。
 
-Lv 1: +1 extra attack. All attacks made that round takes a –2 penalty.
-Lv 5: the penalty lessens to –1.
-Lv 9: the penalty disappears.
-Lv 11: +1 extra attack.
+Lv 1: 攻撃力が+1される。そのラウンドの攻撃はすべて-2のペナルティを受ける。
+Lv 5: ペナルティが-1になる。
+Lv 9: ペナルティがなくなる。
+Lv 11: +1 追加攻撃。
 
-When using flurry of blows, a monk may attack only with unarmed strikes or with special monk weapons. When with unarmed strikes, the extra attacks from Unarmed Strike count.
+モンクは、連打を使用する際、《素手打撃》かモンク専用の武器でのみ攻撃を行うことができる。《素手打撃》を使用している場合、《素手打撃》からの追加攻撃がカウントされる。
 
-A monk always applies her full Str bonus to damage rolls of a flurry of blows.
+モンクは攻撃を受けた時のダメージロールには常にStrボーナスが適用される。
 
-When wearing armor, using a shield, or carrying a medium or heavy load, the monk cannot use this ability.
+鎧や盾を使用している時、中程度または重い荷物を持っている時は、このアビリティを使用することはできない。
 ]]-- When using weapons as part of a flurry of blows, a monk applies her full Strength bonus to her damage rolls for all successful attacks, whether she wields a weapon in one or both hands.	(kama, nunchaku, quarterstaff, sai, shuriken, and siangham)	She may attack with unarmed strikes and special monk weapons interchangeably as desired.	The monk can't use any weapon other than a special monk weapon as part of a flurry of blows.	In the case of the quarterstaff, each end counts as a separate weapon for the purpose of using the flurry of blows ability. Even though the quarterstaff requires two hands to use, a monk may still intersperse unarmed strikes with quarterstaff strikes, assuming that she has enough attacks in her flurry of blows routine to do so.	she gets a second extra attack at her full base attack bonus	 (not Str bonus x1-1/2 or x1/2)
 
-pwr_ac_bonus_d=[[A monk is highly trained at dodging blows, and she has a sixth sense that lets her avoid even unanticipated attacks.
+pwr_ac_bonus_d=[[モンクは打撃をかわす訓練を受けており、不意の攻撃も避けることができる第六感を持っている。
 
-When unarmored and unencumbered, the monk adds her Wisdom bonus to her AC. In addition, a monk gains a +1 bonus to AC every 5 monk levels (+1 at 5th, +2 at 10th, ...).
+鎧を身につけていない場合、モンクは自分のACに【判断力】ボーナスを加算する。さらに、モンクは５レベルごとにACに＋１のボーナスを得る(５レベルで＋１、１０レベルで＋２)。
 
-These bonuses to AC apply even against touch attacks or when the monk is flat-footed.
+これらのACボーナスは接触攻撃や立ちすくみ状態でも適用される。
 
-She loses these bonuses when she is immobilized or helpless, when she wears any armor or robe, etc., when she carries a shield, or when she carries a medium or heavy load.
+モンクが移動不能状態や無防備状態の時、鎧やローブを身につけている時、盾を持っている時、中・重たい荷物を持っている時、これらのボーナスは失われる。
 ]]
 
 pwr_ki_atk_d=[[
-A monk's unarmed attacks are empowered with ki which improves with her monk level.
+モンクの素手攻撃は、モンクのレベルと共に向上する"気"で強化される。
 
-+1 enhancement bonus to her unarmed strikes every 5 levels (+1 at 5th, +2 at 10th, ...).
+5レベルごとに《素手打撃》に＋１の強化ボーナス（５レベルで＋１、１０レベルに＋２、...）。
 
-Her unarmed attacks are treated as specific types of weapons for the purpose of dealing damage to creatures with damage reduction:
-Lv 4:	magic weapons
-Lv 7:	cold iron and alchemical silver weapons
-Lv 10:	lawful weapons
-Lv 16:	adamantine weapons
+素手攻撃は、ダメージ軽減を持つクリーチャーにダメージを与える目的で特定の武器として扱われる。
+Lv 4：	魔法の武器
+Lv 7：	冷たい鉄と錬金術銀の武器
+Lv 10：	秩序の武器
+Lv 16：	アダマンティンの武器
 
-<c=o>(Cold iron and lawful weapons related monsters are in development)</c>
+<c=o>（冷たい鉄と秩序の武器関連のモンスターは開発中です）</c>
 ]]--  and bypassing hardness
 
 pwr_quivering_palm_d=[[
@@ -345,7 +383,7 @@ It deals 1d6 points of fire damage per caster level and 1d6 points of bludgeonin
 ]]
 
 
-pwr_ice_nova_d="Freezes all enemies around you. Makes them unable to move and deals little cold damage."
+pwr_ice_nova_d="あなたの周囲の敵を凍らせる。対象は移動できなくなり、わずかな［冷気］ダメージを受ける。"
 
 pwr_ice_storm_d=[[
 Great magical hailstones pound down for 1 full round, dealing 1d6 points of bludgeoning damage per two caster level and 1d6 points of cold damage per three caster level to every creature in the area.
@@ -383,12 +421,12 @@ Each round on your turn, starting when you cast the spell, the fog deals 1d6 poi
 
 
 pwr_mm_d=[[
-A missile of magical energy darts forth from your fingertip and strikes its target, dealing 1d4+1 points of force damage.
+魔法のエネルギーを持つミサイルが指先から飛び出し、ターゲットを攻撃し、殴打ダメージを与える。
 
-The missile strikes unerringly, even if the target is in melee combat or has less than total cover or total concealment.
+ミサイルは、たとえ目標が接近戦闘中であったり、遮蔽や視認困難であっても、外れることなく命中する。
 
-For every two caster levels beyond 1st, you gain an additional missile - two at 3rd level, three at 5th, four at 7th, and the maximum of five missiles at 9th level or higher.
-]]
+術者レベルが1レベルを超えて1レベルごとに、追加のミサイルを得る。3レベルで2本、5レベルで3本、7レベルで4本、9レベル以上で最大5本のミサイルを得る。
+]]--A missile of magical energy darts forth from your fingertip and strikes its target, dealing 1d4+1 points of force damage.	The missile strikes unerringly, even if the target is in melee combat or has less than total cover or total concealment.	For every two caster levels beyond 1st, you gain an additional missile - two at 3rd level, three at 5th, four at 7th, and the maximum of five missiles at 9th level or higher.
 
 
 pwr_searing_lit_d=[[
@@ -403,18 +441,18 @@ A construct or inanimate object takes only 1d6 points of damage per two caster l
 
 
 pwr_heal_d=[[
-When laying your hand upon a living creature, you channel positive energy that cures 2d8 points per caster level +1 point of damage per caster level.
+生き物に手を置き損傷を治す正のエネルギーを導く。
 
-In addition, the positive energy will cure the poisoning, bleeding, madness, coma and other bad conditions on the living body.
+加えて、正のエネルギーが生きている対象に対して［毒］、［出血］、［狂気］、［昏睡］、その他不利な状態から回復するよう試みることができる。
 
-Since undead are powered by negative energy, this spell deals damage to them instead of curing their wounds. An undead creature can apply spell resistance, and can attempt a Will save to take half damage.
-]]
+生きているクリーチャーとは異なり、アンデッド・クリーチャーはエネルギーとして負のエネルギーを用いている。そのため、この呪文は回復の代わりに正のエネルギーダメージを与える。アンデッドクリーチャーはこの呪文に抵抗するために呪文抵抗を適用することができ、さらに、意志セーヴに成功すればダメージを半減できる。
+]]--When laying your hand upon a living creature, you channel positive energy that cures 2d8 points per caster level +1 point of damage per caster level.	In addition, the positive energy will try to cure the poisoning, bleeding, madness, coma and other bad conditions on the living body, clears them with successful checks.	Since undead are powered by negative energy, this spell deals damage to them instead of curing their wounds. An undead creature can apply spell resistance, and can attempt a Will save to take half damage.
 
 pwr_harm_d=[[
-When laying your hand upon a creature, you channel negative energy that deals 1d8 points per caster level +1 point of negative energy damage per caster level.
+生き物に手を置きダメージを与える負のエネルギーを導く。
 
-Since undead are powered by negative energy, this spell cures such a creature of a like amount of damage, rather than harming it.
-]]
+アンデッドクリーチャーにとって、この呪文はヒールとは逆に機能し、ダメージを与えるのではなく回復させる。
+]]--When laying your hand upon a creature, you channel negative energy that deals 1d8 points per caster level +1 point of negative energy damage per caster level.	Since undead are powered by negative energy, this spell cures such a creature of a like amount of damage, rather than harming it.
 
 pwr_heal2_d=[[
 Heal enables you to channel positive energy into a creature to wipe away injury and afflictions. It cures 10 hit points of damage per caster level.
@@ -432,16 +470,16 @@ Harm charges a subject with negative energy that deals 10 points of damage per c
 If used on an undead creature, harm acts like heal.
 ]]
 
-pwr_heal_x_d="This spell functions like Cure Wounds, except that it affects multiple creatures."
-pwr_harm_x_d="This spell functions like Inflict Wounds, except that it affects multiple creatures."
-pwr_heal2_x_d="This spell functions like Heal, except that it affects multiple creatures."
-pwr_harm2_x_d="This spell functions like Harm, except that it affects multiple creatures."
+pwr_heal_x_d="この呪文は、複数のクリーチャーに影響を与えることを除いて、キュア・ウーンズのように機能する。"
+pwr_harm_x_d="この呪文は、複数のクリーチャーに影響を与えることを除いて、インフリクト・ウーンズのように機能する。"
+pwr_heal2_x_d="この呪文は、複数のクリーチャーに影響を与えることを除いて、ヒールのように機能する。"
+pwr_harm2_x_d="この呪文は、複数のクリーチャーに影響を与えることを除いて、ハームのように機能する。"
 
-pwr_resurrect_d="You restore life to a deceased creature. No living creatures, such as constructs, elementals, and undead creatures can't be raised."
+pwr_resurrect_d="死亡したクリーチャーを蘇らせる。生命を持たないクリーチャー、例えば人造、エレメンタル、アンデッドなどは蘇生しない。"
 
 pwr_slay_live_d="You can slay any one living creature. You must succeed on a melee touch attack to touch the subject, and it can avoid death with a successful Fortitude save. If it succeeds, it instead takes 1d6 points of damage per three caster level +1 point per caster level."
 pwr_dead_finger_d="You can slay any one living creature within range. The target is entitled to a Fortitude saving throw to survive the attack. If the save is successful, the creature instead takes 1d6 points of damage per four caster level +1 point per caster level."
-pwr_wail_of_the_banshee_d="You emit a terrible scream that kills creatures that hear it (except for yourself)."
+pwr_wail_of_the_banshee_d="恐ろしい叫び声を発し、それを聞いたクリーチャーを殺す（自分を除く）。"
 
 
 pwr_false_life_d="You harness the power of unlife to grant yourself a limited ability to avoid death. While this spell is in effect, you gain temporary hit points equal to 1d10 per three caster level +1 per caster level."
@@ -455,70 +493,70 @@ Additionally, your effective caster level goes up by +1, improving spell effects
 ]]
 
 
-pwr_power_word_stun_d="You utter a single word of power that instantly causes one creature of your choice to become stunned 1d4 rounds. The current HP of the creature must be less than 150 or 1/5 of max HP."
-pwr_power_word_kill_d="You utter a single word of power that instantly kills one living creature of your choice. The current HP of the creature must be less than 100 or 1/10 of max HP."
+pwr_power_word_stun_d="あなたは力ある言葉を発し、選んだ対象は即座に1d4ラウンドの朦朧状態を被る。そのクリーチャーのヒット・ポイントは150以下か最大ヒット・ポイントの1/5以下でなければならない。"
+pwr_power_word_kill_d="あなたは力ある言葉を発し、対象の生きているクリーチャー1体を即座に殺す。対象のヒット・ポイントは100以下か最大ヒット・ポイントの1/10以下でなければならない。"
 
 
-pwr_bulls_strength_d="The affected creature becomes stronger. +4 bonus to Strength."
-pwr_cats_grace_d="The affected creature becomes more graceful, agile, and coordinated. +4 bonus to Dexterity."
-pwr_bears_endurance_d="The affected creature gains greater vitality and stamina. +4 bonus to Constitution."
-pwr_foxs_cunning_d="The affected creature becomes smarter. +4 bonus to Intelligence."
-pwr_owls_wisdom_d="The affected creature becomes wiser. +4 bonus to Wisdom."
-pwr_eagles_splendor_d="The affected creature becomes more poised, articulate, and personally forceful. +4 bonus to Charisma."
-pwr_mass_bulls_strength_d="Works like Bull's Strength, except that it affects multiple creatures."
-pwr_mass_cats_grace_d="Works like Cat's Grace, except that it affects multiple creatures."
-pwr_mass_bears_endurance_d="Works like Bear's Endurance, except that it affects multiple creatures."
-pwr_mass_foxs_cunning_d="Works like Fox's Cunning, except that it affects multiple creatures."
-pwr_mass_owls_wisdom_d="Works like Owl's Wisdom, except that it affects multiple creatures."
-pwr_mass_eagles_splendor_d="Works like Eagle's Splendor, except that it affects multiple creatures."
+pwr_bulls_strength_d="この呪文の影響を受けたクリーチャーは、力が強くなる。この呪文は対象の【筋力】に＋4の強化ボーナス。"
+pwr_cats_grace_d="この呪文の影響を受けたクリーチャーは、より機敏かつ軽やかで調和のとれた動きができるようになる。この呪文は対象の【敏捷力】に＋4のボーナス。"
+pwr_bears_endurance_d="この呪文の影響を受けたクリーチャーは高い生命力とスタミナを得る。この呪文は対象の【耐久力】に＋4ボーナス。"
+pwr_foxs_cunning_d="この呪文の影響を受けたクリーチャーは頭が良くなる。この呪文は対象の【知力】に＋4の強化ボーナス。"
+pwr_owls_wisdom_d="この変成術の影響を受けたクリーチャーはより賢明となる。この呪文は対象の【判断力】に＋4のボーナス。"
+pwr_eagles_splendor_d="この変成術の影響を受けたクリーチャーは落ち着きが出て、意見をはっきりと述べられるようになり、また、人格的にも説得力が高められる。この呪文は対象の【魅力】に＋4のボーナス。"
+pwr_mass_bulls_strength_d="複数のクリーチャーに影響を与えることを除いて、ブルズ・ストレンクスと同じである。"
+pwr_mass_cats_grace_d="複数のクリーチャーに影響を与えることを除いて、キャッツ・グレイスと同じである。"
+pwr_mass_bears_endurance_d="複数のクリーチャーに影響を与えることを除いて、ベアズ・エンデュアランスと同じである。"
+pwr_mass_foxs_cunning_d="複数のクリーチャーに影響を与えることを除いて、フォクセス・カニングと同じである。"
+pwr_mass_owls_wisdom_d="複数のクリーチャーに影響を与えることを除いて、アウルズ・ウィズダムと同じである。"
+pwr_mass_eagles_splendor_d="複数のクリーチャーに影響を与えることを除いて、イーグルズ・スプレンダーと同じである。"
 
-pwr_true_strike_d="You gain temporary, intuitive insight into the immediate future during your next attack. Your next single attack roll gains a +20 insight bonus."
-pwr_divine_favor_d="Calling upon the strength and wisdom of a deity, you gain a +1 luck bonus on attack and weapon damage rolls for every three caster levels you have (at least +1, maximum +3).\n\nThe attack rolls include attack rolls of weapon attacks, combat maneuvers, and touch attacks of spells."
-pwr_divine_power_d="Calling upon the divine power of your patron, you imbue yourself with strength and skill in combat.\n\nYour base attack bonus equals your character level (which may give you extra attacks), you gain a +6 enhancement bonus to Strength, and you gain 1 temporary hit point per caster level."
-pwr_heroism_d="Imbues target with great bravery and morale in battle. The target gains a +2 morale bonus on attack rolls and saves."
-pwr_greater_heroism_d="Functions like heroism, but the bonus is +4. Additionally, the target gains immunity to fear effects, and temporary hit points equal to your caster level."
-pwr_shield_of_faith_d="Creates a shimmering, magical field around the touched creature that averts attacks. The creature gain +2 deflection bonus to AC, with an additional +1 to the bonus for every 6 levels you have (maximum +5 deflection bonus at 18th level)."
-pwr_shield_d="Creates an invisible, tower shield-sized mobile disk of force that hovers in front of you. It negates magic missile attacks directed at you. The disk also provides a +4 shield bonus to AC."
-pwr_mage_armor_d="An invisible but tangible field of force surrounds the subject, providing a +4 armor bonus to AC."
-pwr_expeditious_retreat_d="+6 enchantment bonus on speed."
-pwr_protection_from_spells_d="The subject gains a +8 resistance bonus against spells."
-pwr_death_ward_d="The subject is immune to all death spells, magical death effects, and any negative energy effects."
+pwr_true_strike_d="次の攻撃の間に、即座の将来についての一時的で直感的な洞察を得ることができます。あなたの次の攻撃ロールは +20の洞察ボーナスを得る。"
+pwr_divine_favor_d="神の強さと知恵を頼りに、you gain a +1 luck bonus on attack and weapon damage rolls for every three caster levels you have (最低でも +1、最大で +3).\n\nThe attack rolls include attack rolls of weapon attacks, combat maneuvers, and touch attacks of spells."--pwr_divine_favor_d="神の強さと知恵を頼りに、３レベル毎に武器攻撃とダメージロールに +1 のボーナス(最低でも +1、最大で +3)を得る。"	--pwr_divine_favor_d="Calling upon the strength and wisdom of a deity, you gain a +1 luck bonus on attack and weapon damage rolls for every three caster levels you have (at least +1, maximum +3).\n\nThe attack rolls include attack rolls of weapon attacks, combat maneuvers, and touch attacks of spells."
+pwr_divine_power_d="自身の信仰対象から神性な力を呼び寄せ、戦闘に関する力と技を引き込む。 \n\n基本攻撃ボーナスはキャラクター・レベルに等しく（追加攻撃を与える場合もある）、【筋力】に+6の強化ボーナスを得て、キャスター・レベルごとに一時的にヒット・ポイントを1つ得る。"
+pwr_heroism_d="戦場での偉大な勇気と高い士気を与える。ターゲットは攻撃ロール、セーヴに +2 の士気ボーナスを得る。"
+pwr_greater_heroism_d="ヒロイズムと同様だが、与えるボーナスは+4になる。さらに、対象は恐怖に対する完全耐性を得て、あなたの術者レベルに等しい一時的ヒット・ポイントを得る。"
+pwr_shield_of_faith_d="接触したクリーチャーの周りに、攻撃を避ける揺らめく魔法のフィールドを作成します。クリーチャーはACに +2の反発ボーナスを得ます。6レベル毎に+1のボーナス(18レベルで最大+5まで与えられます)。"
+pwr_shield_d="目の前に目に見えない、タワー・シールドサイズの可動ディスクを作り出します。 これは自分に向けて発射されたマジック・ミサイルを無効化します。 このディスクはACに +4のシールドボーナスが与えられます。"
+pwr_mage_armor_d="不可視だが実体のある力場がメイジ・アーマーの対象を取り巻き、ACに +4の鎧ボーナスを与える。"
+pwr_expeditious_retreat_d="速度を+６スクエア上昇させる。"
+pwr_protection_from_spells_d="対象は呪文に対して、+8の抵抗ボーナスを得る。"
+pwr_death_ward_d="対象は全ての死に関する呪文に対する完全耐性を得る。魔法的な即死効果、あらゆる負のエネルギーに関する効果が該当する。"
 
-s_fear1d	="Remove Fear"	s_fear1d_u	="+4 morale bonus against fear effects\nRemove fear effects"	s_fear1d_d	=[[You instill courage in the subject, granting it a +4 morale bonus against fear effects for 10 minutes.
+s_fear1d	="リムーヴ・フィアー"	s_fear1d_u	="恐怖効果に対して+4士気ボーナス\nリムーヴ・フィアー 効果"	s_fear1d_d	=[[対象者に勇気を与え、10分間、恐怖効果に対して+4の士気ボーナスを付与する。
 
-If the subject is under the influence of a fear effect when receiving the spell, that effect is suppressed for the duration of the spell.]]
-s_fear1		="Cause Fear"	s_fear1_d	=[[The affected creature becomes frightened for 1d4 rounds.
+この呪文を受けたとき、対象が恐怖効果の影響下にある場合、その効果は呪文の持続時間中抑制される。]]
+s_fear1		="コーズ・フィアー"	s_fear1_d	=[[The affected creature becomes frightened for 1d4 rounds.
 
 If the subject succeeds on a Will save, it is shaken for 1 round.]]
-s_fear2		="Scare"	s_fear2_d	=[[This spell functions like cause fear, but affects multiple targets.]]
-s_fear4		="Fear"	s_fear4_d	=[[An invisible cone of terror causes each living creature in the area to become panicked for 1d4 rounds.
+s_fear2		="スケアー"	s_fear2_d	=[[This spell functions like cause fear, but affects multiple targets.]]
+s_fear4		="フィアー"	s_fear4_d	=[[An invisible cone of terror causes each living creature in the area to become panicked for 1d4 rounds.
 
 If the subject succeeds on a Will save, it is shaken for 1 round.
 
 If cornered, a panicked creature begins cowering.]]
 
-pwr_halt_undead_d="Renders undead creatures immobile. A nonintelligent undead creature gets no saving throw; an intelligent undead creature does. The effect is broken if the halted creatures are attacked or take damage."
-pwr_hold_person_d="The subject becomes paralyzed, freezes in place and cannot take any actions.\n\nEach round on its turn, the subject attempts a saving throw automatically to end the effect."
-pwr_hold_monster_d="Functions like Hold Person, but affects any living creature."
-pwr_mass_hold_person_d="Functions like Hold Person, but bigger area of effect."
-pwr_mass_hold_monster_d="Functions like Hold Monster, but bigger area of effect."
+pwr_halt_undead_d="アンデッドに移動不能状態を与える。知性のないアンデッドクリーチャーはセーヴング・スローを行えない。;知性を持つアンデッドはセーヴィング・スローを行える。動けないクリーチャーが攻撃を受けたりダメージを受けた場合、この効果は打ち破られる。"
+pwr_hold_person_d="対象は麻痺状態になり、その場で固まり、行動できなくなる。\n\n毎ラウンドの自分のターンに、この効果を終わらせるためのセーヴィング・スローを試みることができる。"
+pwr_hold_monster_d="ホールド・パースンと同様に機能するが、あらゆる生きているクリーチャーに対して効果がある。"
+pwr_mass_hold_person_d="ホールド・パースンと同様に機能するが、影響を与える効果範囲がより大きい。"
+pwr_mass_hold_monster_d="ホールド・モンスターと同様に機能するが、影響を与える効果範囲がより大きい。"
 
-pwr_sleep_d="Causes a magical slumber to creatures. Sleeping creatures are helpless. Slapping or wounding awakens an affected creature, but normal noise does not.\n\nSleep does not target unconscious creatures, constructs, or undead creatures."
-pwr_irresistible_dance_d="The subject feels an undeniable urge to dance and begins doing so, complete with foot shuffling and tapping.\n\nThe spell effect makes it impossible for the subject to do anything other than caper and prance in place. The effect imposes a -4 penalty to AC and a -10 penalty on Reflex saves, and it negates any AC bonus granted by a shield the target holds. The dancing subject provokes opportunity attacks each round on its turn."
-pwr_grease_d="Covers a solid surface with a layer of slippery grease. Any creature in the area must make a Reflex save each round, falls if failed."
-pwr_web_d="Creates a many-layered mass of strong, sticky spiderwebs. These strands trap those caught in them. The creature will be Immobilized if the Reflex save fails.\n\nSpells with fire damage can ignite spiderwebs. All creatures within flaming webs take 2d4 points of fire damage from the flames."
-pwr_sum_d="Summons a random type of elemental creature of level equal to the caster level at the designated position. It acts immediately and attacks your opponents automatically until it's destroyed or battle ends. You can only maintain 1 elemental creature.\n\nThe summoner's Charm modifier applies to the 3 physical abilities of summoned creatures."
+pwr_sleep_d="クリーチャーを魔法の眠りに陥らせる。 眠っているクリーチャーは無防備状態である。 頬を叩いたり、傷つけたりすれば、この呪文が作用しているクリーチャーを目覚めさせることができるが、普通の騒音では目覚めさせることはできない。\n\n気絶状態のクリーチャーや、構造物、アンデッド・クリーチャーはスリープの目標とはならない。"-- クリーチャーを魔法の眠りに陥らせる。 眠っているクリーチャーは無防備状態である。 頬を叩いたり、傷つけたりすれば、この呪文が作用しているクリーチャーを目覚めさせることができるが、普通の騒音では目覚めさせることはできない。 クリーチャーを目覚めさせるのは標準アクションである。\n\n気絶状態のクリーチャーや、構造物、アンデッド・クリーチャーはスリープの目標とはならない。
+pwr_irresistible_dance_d="対象は踊りたいという否定しがたい衝動にかられ、足を交差させ打ち鳴らす。\n\nこの呪文の効果により、対象はその場で跳ね回る以外の行動ができなくなる。効果として、ACに-4ペナルティ、反応セーヴに-10ペナルティ、盾を装備していた場合でもそのボーナスを得られない。踊っている対象は毎ラウンドの自分のターンに機会攻撃を誘発する。"
+pwr_grease_d="滑りやすい脂の層で地表を覆う。 領域内のどのクリーチャーも、各ラウンドで反応セーブを行う必要があり、失敗すると滑って転ぶ。"
+pwr_web_d="ウェブは何層にも重なった強靭な粘着性のある糸の塊を作り出す。この糸は入り込んだものを絡めとる。反応セーヴに失敗した場合は、そのクリーチャーは動けない状態になる。\n\n［火］ダメージの呪文を受けた場合は、蜘蛛の糸に引火することがある。炎上する蜘蛛の糸の中にいるクリーチャーは 2d4の［火］ダメージを受ける。"
+pwr_sum_d="指定された位置の術者と同じレベルのランダムなタイプのエレメンタル クリーチャーを召喚する。それはすぐに行動し、破壊されるか戦闘が終了するまで自動的に対戦相手を攻撃する。エレメンタルクリーチャーは１体しか維持できない。\n\n召喚者の【魅力】修正値が招来されたクリーチャーの3つの身体能力値に適用される。"
 pwr_mk_ud_d=[[
-This spell turns the bones or bodies of dead creatures into undead skeletons or zombies that follow your commands.
+この呪文はアンデッドの骨を操りスケルトンやゾンビに変える。
 
-They attack your enemies automatically and remain animated until they are destroyed or battle ends.
+彼らは敵を自動的に攻撃し、破壊されるか戦闘が終了するまで生き残る。
 
-You can only maintain 2 undead creatures at most.
+アンデッドは２体しか維持できない。
 
-The summoner's Charm modifier applies to the 3 physical abilities of summoned creatures.
+召喚者の【魅力】修正値が招来されたクリーチャーの３つの身体能力値に適用される。
 ]]
-pwr_dispel_d="Cancels all effects and creatures that created by spells, such as the Asleep condition, spiderwebs and summoned creatures."
-pwr_teleport_d="Instantly transports yourself to the designated destination or transports a creature to a random position near the creature."
+pwr_dispel_d="眠り状態、蜘蛛の糸、召喚されたクリーチャーなど、呪文によって作成されたすべての効果とクリーチャーをキャンセルする。"
+pwr_teleport_d="術者を指定した目的地に瞬時に転送するか、クリーチャーをそのクリーチャーの近くのランダムな位置に移動させる。"
 
 
 
@@ -566,11 +604,11 @@ Waves of negative energy render all living creatures in the spell's area fatigue
 ]]
 
 pwr_stoneskin_d=[[
-The warded creature gains resistance to blows, cuts, stabs, and slashes. The subject gains damage reduction 10/adamantine per 5 caster levels. Once the spell has prevented a total of 10 points of damage per caster level, it is discharged.
+結界を張ったクリーチャーは打撃、切り傷、刺し傷、斬り傷に対する耐性を得ることができる。対象はキャスター・レベル5につきアダマンティン/10のダメージ軽減を得る。キャスター・レベルあたり合計10ポイントのダメージを防いだら、この呪文は解除される。
 ]]
 
 pwr_good_hope_d=[[
-This spell instills powerful hope in the subjects. Each affected creature gains a +2 morale bonus on saving throws, attack rolls, ability checks, skill checks, and weapon damage rolls.
+この呪文は、対象者に強力な希望を植え付ける。影響を受けた各クリーチャーは、セービング・スロー、攻撃ロール、能力チェック、スキル・チェック、武器ダメージ・ロールに+2士気ボーナスを得る。
 ]]
 
 pwr_crushing_despair_d=[[
@@ -716,7 +754,7 @@ This spell fills a single subject with a feeling of horrible dread that causes i
 ]]
 
 pwr_sound_burst_d=[[
-You blast an area with a tremendous cacophony. Every creature in the area takes 1d8 points of sonic damage per three caster levels and must succeed on a Fortitude save to avoid being stunned for 1 round. 
+You blast an area with a tremendous cacophony. Every creature in the area takes 1d8 points of sonic damage per three caster levels and must succeed on a Fortitude save to avoid being stunned for 1 round.
 Creatures that cannot hear are not stunned but are still damaged.
 ]]
 
@@ -812,7 +850,7 @@ Daylight brought into an area of deeper darkness (or vice versa) is temporarily 
 ]]
 
 pwr_bless_d=[[
-Bless fills your allies with courage. Each ally gains a +1 morale bonus on attack rolls and on saving throws against fear effects.
+Blessはあなたの味方を勇気で満たす。各味方は攻撃ロールと恐怖効果に対するセービングスローに+1士気ボーナスを得る。
 ]]
 
 pwr_bane_d=[[
@@ -820,7 +858,7 @@ Bane fills your enemies with fear and doubt. Each affected creature takes a -1 p
 ]]
 
 pwr_prayer_d=[[
-You bring special favor upon yourself and your allies while bringing disfavor to your enemies. You and your each of your allies gain a +1 luck bonus on attack rolls, weapon damage rolls, saves, and skill checks, while each of your foes takes a -1 penalty on such rolls.
+自分と味方に特別な恩恵をもたらし、敵に不利な状況をもたらす。あなたとあなたの味方は、攻撃ロール、武器ダメージロール、セーブ、スキルチェックに+1の幸運ボーナスを得るが、あなたの敵はそれぞれそれらのロールに-1のペナルティを受ける。
 ]]
 
 pwr_shield_other_d=[[
@@ -880,14 +918,14 @@ An undead creature struck by the ray gains 2d4x5 temporary hit points.
 ]]
 
 pwr_haste_d=[[
-The transmuted creatures move and act more quickly than normal.
+変質されたクリーチャーは、通常よりも素早く動き、行動する。
 
-This extra speed has several effects:
-- Makes one extra attack when making a full attack.
-- The movement speed increase by 30 feet enhancement bonus, to a maximum of twice the normal speed.
-- Gains a +1 bonus on attack rolls and a +1 dodge bonus to AC and Reflex saves.
+この追加スピードにはいくつかの効果がある：
+- 全力攻撃時に1回の追加攻撃を行う。
+- 移動速度が30フィート強化ボーナスで増加し、最大で通常の2倍の速度になる。
+- 攻撃ロールに+1ボーナス、ACと反射セーヴに+1ドッジボーナスを獲得する。
 
-Multiple haste effects don't stack. Haste dispels slow.
+複数のヘイスト効果はスタックしない。ヘイストはスローを払拭する。
 ]]
 
 pwr_slow_d=[[
@@ -997,25 +1035,25 @@ A banishment spell is a more powerful version of the dismissal spell. It enables
 ]]
 
 pwr_lesser_restoration_d=[[
-Lesser restoration dispels any magical effects reducing one of the subject's ability scores or cures 1d4 points of temporary ability damage to one of the subject's ability scores.
+レッサー・レストレーションは、対象者の能力値1つを低下させる魔法効果を解呪するか、対象者の能力値1つに対する一時的な能力ダメージを1d4点回復させる。
 
-It also eliminates any fatigue suffered by the character, and improves an exhausted condition to fatigued.
+また、キャラクターが受けている疲労を解消し、過労状態を疲労状態に改善することができる。
 ]]
 
 pwr_restoration_d=[[
-This spell functions like lesser restoration, except that it also dispels negative levels.
+この魔法は、負のレベルも解呪することを除けば、レッサー・レストレーションと同様の機能を持つ。
 
-Restoration cures all temporary ability damage, and it restores all points permanently drained from a single ability score.
+レストレーションは一時的な能力ダメージをすべて治し、能力値1つに対する能力値吸収をすべて回復させる。
 
-It also eliminates any fatigue or exhaustion suffered by the target.
+また、対象が受けた疲労や過労も解消される。
 ]]
 
 pwr_greater_restoration_d=[[
-This spell functions like lesser restoration, except that it also dispels negative levels.
+この魔法は、負のレベルも解呪することを除けば、レッサー・レストレーションと同様の機能を持つ。
 
-Greater restoration dispels all magical effects penalizing the creature's abilities, cures all temporary ability damage, and restores all points permanently drained from all ability scores.
+グレーター・レストレーションは、そのクリーチャーの能力にペナルティを与えるすべての魔法効果を払い、すべての一時的な能力ダメージを治し、すべての能力値に対する能力値吸収をすべて回復させる。
 
-It also eliminates fatigue and exhaustion, and removes all forms of insanity, confusion, and similar mental effects.
+また、疲労や過労を取り除き、あらゆる狂気や混乱、それに類する精神的な影響を取り除く。
 ]]
 
 pwr_delay_poison_d=[[
@@ -1067,7 +1105,7 @@ pwr_contagion_d=[[
 The subject contracts a disease selected from the table below, which strikes immediately (no incubation period).
 
 Disease		DC	Damage
-=================================
+==============================
 Blinding sickness	16	1d4 Str (may blinded; see below)
 Red ache		15	1d6 Str
 Shakes		13	1d8 Dex
@@ -1085,7 +1123,7 @@ If he succeeds, the disease has no effect — his immune system fought off the i
 If he fails, he is infected and takes damage immediately. Once per 5 rounds afterward, he must make a successful Fortitude saving throw (using the disease's save DC in the table) to avoid repeated damage.
 
 Two successful saving throws in a row indicate that he has fought off the disease and recovers, taking no more damage.
-]]-- and then deals damage again every 5 rounds afterward
+]]
 
 pwr_mind_fog_d=[[
 Mind fog produces a bank of thin mist that weakens the mental resistance of those caught in it.
@@ -1179,7 +1217,7 @@ pwr_blink_d=[[
 You \"blink\" back and forth between the Material Plane and the Ethereal Plane. You look as though you're winking in and out of reality very quickly and at random.
 
 Physical attacks against you have a 50% miss chance. Your attacks have a 20% miss chance. You strike as an invisible creature (with a +2 bonus on attack rolls), denying your target any Dexterity bonus to AC.
- 
+
 Individually targeted spells against you has a 50% chance to fail. Your spells have a 20% chance to fail.
 
 You take only half damage from area attacks or falling.
@@ -1334,79 +1372,89 @@ You may spend a move action to target a single living creature, striking it with
 
 pwrs_text={
 -- z_pwrs.act
-[pwr_atk_m					]={n="Melee Attack"		,d="With a normal melee weapon, you can strike any adjacent opponent. Some melee weapons, such as longspears, have reach. With a reach weapon, you can strike opponents 2 squares away."},
-[pwr_atk_r					]={n="Ranged Attack"	,d="With a ranged weapon, you can shoot or throw at any target that is within the weapon's range and in line of sight.\n\nUnlike melee attacks, ranged attacks may provoke attacks of opportunity from adjacent foes."},
-[pwr_swap_wpn				]={n="Swap Weapon"		,d="Switch to a backup weapon."},
-[pwr_use_item				]={n="Use Item"			,d="Use a consumable item in your backpack, such as a potion."},
-[pwr_wait					]={n="Delay"			,d="Put off your initiative order to last.\n\nDelay can be used to implement advanced tactics: waiting for ally to flank togeter, or rush to frontline and wait enemies, etc."},
-[pwr_drop_prone				]={n="Drop Prone"		,d="Drop to a prone position actively to avoid ranged attacks."},
-[pwr_stand_up				]={n="Stand Up"			,d="Standing up from a prone position."},
-[pwr_wake					]={n="Wake Up"			,d="Awaken a sleeping companion."},
-[pwr_end_turn				]={n="Defend"			,d="You can defend yourself as a standard action. You get a +2 (+4 if as a full-round action) dodge bonus to your AC for 1 round.\n\nIf you cannot do any action, simply end your turn."},
+[pwr_atk_m					]={n="近接攻撃"		,d="通常の近接武器では、隣接する相手を攻撃できます。 ロングスピアなどのいくつかの近接武器は長い間合いを持ちます。 間合いの長い武器では、２スクエア先の敵を攻撃することができます。"},
+[pwr_atk_r					]={n="遠隔攻撃"		,d="遠隔武器を使用すると、武器の範囲内で視線が通っている任意のターゲットを攻撃することができる。\n\n近接攻撃とは異なり、遠隔攻撃は近隣の敵から機会攻撃を受ける可能性があります。"},
+[pwr_swap_wpn				]={n="武器交換"		,d="バックアップの武器に切り替えます。"},
+[pwr_use_item				]={n="アイテムを使用"	,d="バックパックにあるポーションなどの消耗品を使用します。"},
+[pwr_wait					]={n="行動遅延"		,d="イニシアチブの順番を延期する。\n\n行動遅延は高度な戦術を実行するために使用することができる：例えば、挟撃の仲間の到着を待ったり、最前線に突入して敵を待つなど。"},
+[pwr_drop_prone				]={n="伏せる"		,d="遠隔攻撃を避けるためその場に伏せる。"},
+[pwr_stand_up				]={n="立ち上がる"		,d="伏せの状態から立ち上がります。"},
+[pwr_wake					]={n="目覚めさせる"	,d="眠っている仲間を目覚めさせます。"},
+[pwr_end_turn				]={n="防御専念"		,d="自分のターンで敵を攻撃できない場合は、防御態勢を取ることができる。"},-- You can defend yourself as a standard action. You get a +2 (+4 if as a full-round action) dodge bonus to your AC for 1 round.\n\nIf you cannot do any action, simply end your turn.
 
 -- z_pwrs.feat
 -- cmn
-[pwr_init1					]={n="Improved Initiative"							,d="+4 bonus on initiative checks."},
-[pwr_hp1					]={n="Toughness"									,d="+3 hit points initially and +1 additional hit point for each level beyond 3."},
-[pwr_ft1					]={n="Great Fortitude"								,d="+2 bonus on all Fortitude saving throws."},
-[pwr_rf1					]={n="Lightning Reflexes"							,d="+2 bonus on all Reflex saving throws."},
-[pwr_wl1					]={n="Iron Will"									,d="+2 bonus on all Willpower saving throws."},
-[pwr_def1					]={n="Improved Defenses"							,d="+1 bonus on all Fortitude, Reflex and Willpower save throws."},
-[pwr_dodge					]={n="Dodge"										,d="+1 dodge bonus to AC."..dodge_bns},
-[pwr_mobility				]={n=	"Mobility"									,d="+4 dodge bonus to AC against opportunity attacks caused when you move out of or within a threatened area."..dodge_bns},
--- wpn
-[pwr_atk1					]={n=	"Weapon Focus"								,d="+1 bonus on attack rolls with all proficient weapons."},
-[pwr_atk2					]={n=		"Greater Weapon Focus"					,d="+1 bonus to Weapon Focus."},
-[pwr_dmg1					]={n=		"Weapon Specialization"					,d="+2 bonus on damage rolls with all proficient weapons."},
-[pwr_dmg2					]={n=			"Greater Weapon Specialization"		,d="+2 bonus to Weapon Specialization."},
-[pwr_ch1					]={n=	"Improved Critical"							,d="Double the critical rate of all proficient weapons.\n\nIf the critical rate of a weapon is already doubled by any other effect, this feat +5% critical rate to the weapon instead."},
-[pwr_ch2					]={n=		"Greater Critical"						,d="+5% critical rate of all proficient weapons."},
-[pwr_ch_pwr					]={n=		"Power Critical"						,d="Deal additional one time of weapon damage on a critical hit."},
-[pwr_ch_bleed				]={n=		"Bleeding Critical"						,d="Whenever you score a critical hit with a sharp weapon, your opponent takes additional 5 bleed damage/3 turns if the Fortitude save fails. Bleed damage can be stopped by any healing. The effects of this feat stack."..ch_1_eff},
-[pwr_ch_bleed2				]={n=			"Improved Bleeding Critical"		,d="Increase the damage points of Bleeding Critical to 10."},
-[pwr_ch_cripple				]={n=		"Crippling Critical"					,d="Whenever you score a critical hit, the target's speed is halved for 1 turn if the Fortitude save fails."..ch_1_eff},
-[pwr_ch_cripple2			]={n=			"Improved Crippling Critical"		,d="Similar with Crippling Critical, but the effect is Immobilized."},
-[pwr_ch_stun				]={n=		"Stunning Critical"						,d="Whenever you score a critical hit with a blunt weapon, the target becomes stunned for 1 turn if the Fortitude save fails."..ch_1_eff},
-[pwr_ch_2_effs				]={n=		"Critical Mastery"						,d="Apply two critical effects to your critical hits.\n\nNormal: You can only apply one critical effect to a given critical hit."},
+[pwr_init1					]={n="《イニシアチブ強化》"							,d="イニシアチブ判定に+4のボーナス。"},
+[pwr_hp1					]={n="《追加hp》"									,d="ヒット・ポイントが＋3される。3ヒット・ダイスを越える1ヒット・ダイスごとに、ヒット・ポイントが1増加する。"},
+[pwr_ft1					]={n="《頑健無比》"								,d="頑健セーヴィング・スローに＋2のボーナスを得る。"},
+[pwr_rf1					]={n="《神速の反応》"							,d="反応セーヴィング・スローに＋2のボーナスを得る。"},
+[pwr_wl1					]={n="《鋼の意志》"									,d="意志セーヴィング・スローに＋2のボーナスを得る。"},
+[pwr_def1					]={n="《防御強化》"							,d="全てのセーヴ (頑健, 反応, 意志)に+1ボーナスを得る。"},
+[pwr_dodge					]={n="《回避》"										,d="ACに+1の回避ボーナスを得る。"..dodge_bns},
+[pwr_mobility				]={n="《強行突破》"									,d="機会攻撃の範囲内から外に出た時に誘発した機会攻撃に対して ACに＋4の回避ボーナスを得る。"..dodge_bns},
+-- wpn	z_wpn_grp
+--[pwr_wp_hb					]={n="《軍用武器習熟》: 大剣"		,d=wpn_prof_d},
+--[pwr_wp_axe					]={n="《軍用武器習熟》: アックス"				,d=wpn_prof_d},
+--[pwr_wp_hmr					]={n="《軍用武器習熟》: ハンマー"			,d=wpn_prof_d},
+--[pwr_wp_fla					]={n="《軍用武器習熟》: フレイル"			,d=wpn_prof_d},
+--[pwr_wp_spr					]={n="《軍用武器習熟》: スピア"			,d=wpn_prof_d},
+--[pwr_wp_bow					]={n="《軍用武器習熟》: ボウ"				,d=wpn_prof_d},
+--[pwr_wp_lb					]={n="《軍用武器習熟》: 小剣"		,d=wpn_prof_d},
+--[pwr_wp_pick				]={n="《軍用武器習熟》: ピック"				,d=wpn_prof_d},
+--[pwr_wp_mace				]={n="《軍用武器習熟》: メイス"				,d=wpn_prof_d},
+--[pwr_wp_simple				]={n="《単純武器習熟》"					,d=wpn_prof_d..simple_wpn_d},-- : 単純
+[pwr_atk1					]={n="《武器熟練》"								,d="習熟した武器を使って行う全ての攻撃ロールに＋1のボーナスを得る。"},
+[pwr_atk2					]={n="《上級武器熟練》"					,d="《武器熟練》の効果に加え、さらに+1のボーナスを得る。"},
+[pwr_dmg1					]={n="《武器開眼》"					,d="習熟した武器を使って行う全てのダメージ・ロールに＋2のボーナスを得る。"},
+[pwr_dmg2					]={n="《上級武器開眼》"		,d="《武器開眼》の効果に加え、さらに＋2のボーナスを得る。"},
+[pwr_ch1					]={n="《クリティカル強化》"							,d="習熟したすべての武器のクリティカル領域が2倍になる。(※訳注：クリティカル領域が5%(20)ならば10%(19-20)に、10%(19-20)ならば20%(17-20)になる。)\n\n武器のクリティカル領域がすでに他の効果によって2倍になっている場合、代わりにこの特技はのクリティカル領域が5%分だけ増える。(※訳注：元のクリティカル領域が5%(20)で他の効果で10%(19-20)になっているならば15%(18-20)になる)"},
+[pwr_ch2					]={n="《上級クリティカル強化》"						,d="全ての習熟した武器のクリティカル領域が5%分だけ増える。"},
+[pwr_ch_pwr					]={n="《パワークリティカル》"						,d="クリティカル・ヒット時に一度だけ武器ダメージを追加する。"},
+[pwr_ch_bleed				]={n="《出血化クリティカル》"						,d="刺突武器でクリティカル・ヒットを放った時、相手が頑健に失敗すると、さらに＋5の出血ダメージを3ターンの間与える。\n\n出血は、なんらかの魔法による治癒で止めることができる。"..ch_1_eff},
+[pwr_ch_bleed2				]={n="《出血化クリティカル強化》"		,d="《出血化クリティカル》に似ているが、与えるダメージは10になる。"},
+[pwr_ch_cripple				]={n="《足萎えさせるクリティカル》"					,d="クリティカル・ヒットを達成するたびに、頑健セーブに失敗した場合、ターゲットの移動速度は1ターンの間半分になる。"..ch_1_eff},
+[pwr_ch_cripple2			]={n="《足萎えさせるクリティカル強化》"		,d="《足萎えさせるクリティカル》に似ているが、移動不能状態になる。"},
+[pwr_ch_stun				]={n="《朦朧化クリティカル》"						,d="殴打の武器でクリティカル・ヒットした場合、対象は頑健セーヴィング・スローに失敗した場合、1ターン朦朧状態となる。"..ch_1_eff},
+[pwr_ch_2_effs				]={n="《クリティカル体得》"						,d="クリティカル・ヒットに二回のクリティカル効果を与える。\n\n通常：特定のクリティカル・ヒットには一回しかクリティカル効果は得られない。"},
 -- shd/amr
-[pwr_shd_use1				]={n="Shield Proficiency"							,d="No penalties on attack rolls when using a shield (except a tower shield).\n\nNormal: When you are using a shield with which you are not proficient, you take the shield's armor check penalty on attack rolls."},
-[pwr_shd_use2				]={n=	"Tower Shield Proficiency"					,d="Similar with Shield Proficiency, but aim at tower shields."},
-[pwr_shd_def1				]={n=	"Shield Focus"								,d="+1 bonus to AC and Reflex when using a shield."},
-[pwr_shd_def2				]={n=		"Greater Shield Focus"					,d="+1 bonus to Shield Focus."},
-[pwr_amr_use1				]={n="Light Armor Proficiency"						,d="No penalties on attack rolls while wearing light armor.\n\nNormal: Wearing nonproficient armor applies its armor check penalty to attack rolls."},
-[pwr_amr_use2				]={n=	"Medium Armor Proficiency"					,d="Similar with Light Armor Proficiency, but aim at medium armors."},
-[pwr_amr_use3				]={n=		"Heavy Armor Proficiency"				,d="Similar with Light Armor Proficiency, but aim at heavy armors."},
+[pwr_shd_use1				]={n="《盾習熟》"							,d="盾を装備していることによる攻撃ロールへのペナルティを受けない（タワー・シールドを除く)。\n\n通常：未習熟の盾を装備すると、攻撃ロールに盾の未習熟ペナルティを受ける。"},
+[pwr_shd_use2				]={n="《タワー・シールド習熟》"					,d="タワー・シールドを装備していることによる攻撃ロールへのペナルティを受けない。"},
+[pwr_shd_def1				]={n="《盾熟練》"								,d="盾を使用している間、ACと反応セーヴに+1ボーナスを得る。"},
+[pwr_shd_def2				]={n="《上級盾熟練》"					,d="《盾熟練》の効果に加え、さらに+1ボーナスを得る。"},
+[pwr_amr_use1				]={n="《鎧習熟：軽装》"						,d="軽装鎧を装備していることによる攻撃ロールへのペナルティを受けない。\n\n通常：未習熟の鎧を装備すると、攻撃ロールに鎧の未習熟ペナルティを受ける。"},
+[pwr_amr_use2				]={n="《鎧習熟：中装》"					,d="中装鎧を装備していることによる攻撃ロールへのペナルティを受けない。\n\n通常：未習熟の鎧を装備すると、攻撃ロールに鎧の未習熟ペナルティを受ける。"},
+[pwr_amr_use3				]={n="《鎧習熟：重装》"				,d="重装鎧を装備していることによる攻撃ロールへのペナルティを受けない。\n\n通常：未習熟の鎧を装備すると、攻撃ロールに鎧の未習熟ペナルティを受ける。"},
 -- melee
-[pwr_cleave					]={n=	"Cleave"									,d="If you deal a creature enough damage to make it drop (typically by killing it), you get an immediate, extra melee attack against another creature within reach.\n\nThe extra attack is with the same weapon and at the same bonus as the attack that dropped the previous creature. You can use this ability once per round."},
-[pwr_cleave_x				]={n=		"Great Cleave"							,d="Same as Cleave but unlimited free attacks per round."},
-[pwr_cleave_ko				]={n=		"Improved Cleave"						,d="Knock down triggers Cleave, too."},
-[pwr_atk_m_tgt2				]={n=		"Sweeping Strikes"						,d="Strike two adjacent creatures with a single melee attack."..atk_pnl_2..use_a},
-[pwr_atk_m_tgt2_1			]={n=			"Improved Sweeping Strikes"			,d="No penalty for Sweeping Strikes."},
-[pwr_atk_m_tgt2_2			]={n=				"Greater Sweeping Strikes"		,d="Sweeping Strikes can effect on three adjacent creatures."},
-[pwr_atk_m_tgtx				]={n="Whirlwind Attack"								,d="Make one melee attack against all creatures within reach."..use_b},
-[pwr_del_2					]={n="Useless Ability"								,d="You've forgotten why you acquired this useless ability. Maybe it would be better to retrain with a mentor and forget about it."},
-[pwr_atk_m_dmg2				]={n=	"Vital Strike"								,d="Deal twice the normal damage on a single melee attack."..use_a},
-[pwr_atk_m_dmg3				]={n=		"Devastating Strike"					,d="Deal three times the normal damage on a single melee attack. Half damage if missed."..use_b},
-[pwr_charge1				]={n=	"Improved Charge"							,d="+2 bonus on attack and damage rolls of charges.\n\nNormal: the bonus is 1."},
-[pwr_charge2				]={n=		"Greater Charge"						,d="+2 bonus to Improved Charge."},
-[pwr_ao_dex					]={n="Combat Reflexes"								,d="You may make a number of additional attacks of opportunity equal to your Dexterity bonus.\n\nWith this feat, you may also make attacks of opportunity while flat-footed."},
-[pwr_dex_wpn				]={n="Weapon Finesse"								,d="With a light weapon, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity modifier instead of your Strength modifier on attack rolls. If you carry a shield, its armor check penalty applies to your attack rolls.\n\nNatural weapons are always considered light weapons."},
+[pwr_cleave					]={n="《薙ぎ払い》"									,d="複数の敵に接しているとき、近接攻撃で1体を倒した際、別の1体に追加で攻撃する。（※訳注1ラウンドに1回のみ）"},-- If you deal a creature enough damage to make it drop (typically by killing it), you get an immediate, extra melee attack against another creature within reach.\n\nThe extra attack is with the same weapon and at the same bonus as the attack that dropped the previous creature. You can use this ability once per round.
+[pwr_cleave_x				]={n="《薙ぎ払い強化》"							,d="《薙ぎ払い》と同様だが、1ラウンドでの追加攻撃の回数に制限がない。"},
+[pwr_cleave_ko				]={n="《上級薙ぎ払い》"						,d="打ち倒しに成功した際にも《薙ぎ払い》を行える。"},
+[pwr_atk_m_tgt2				]={n="《隣接同時攻撃》"						,d="1回の近接攻撃で、隣接する2体のクリーチャーに攻撃できる。"..atk_pnl_2..use_a},
+[pwr_atk_m_tgt2_1			]={n="《隣接同時攻撃強化》"			,d="《隣接同時攻撃》のペナルティがなくなる。"},
+[pwr_atk_m_tgt2_2			]={n="《上級隣接同時攻撃》"		,d="隣接する3体のクリーチャーにも《隣接同時攻撃》が使用できる。"},
+[pwr_atk_m_tgtx				]={n="《大旋風》"								,d="1回の近接攻撃で、間合い内のすべてのクリーチャーに攻撃できる。"..use_b},
+[pwr_del_2					]={n="役に立たない能力"								,d="なぜこの役立たずの能力を身につけたのか、忘れてしまったのではないでしょうか。師匠のもとで再訓練して忘れてしまった方がいいのかもしれませんね。"},
+[pwr_atk_m_dmg2				]={n="《致命的な一撃》"								,d="1回の近接攻撃で、通常の2倍のダメージを与える。"..use_a},
+[pwr_atk_m_dmg3				]={n="《破壊的な一撃》"					,d="1回の近接攻撃で、通常の3倍のダメージを与える。攻撃ロールに失敗した時は、半分のダメージを与える。"..use_b},
+[pwr_charge1				]={n="《突撃強化》"							,d="突撃の攻撃ロールとダメージ・ロールに+2ボーナスを得る。\n\n通常:《突撃》のボーナスは+1。"},
+[pwr_charge2				]={n="《上級突撃》"						,d="《突撃強化》の効果に加え、さらに+2ボーナスを得る。"},
+[pwr_ao_dex					]={n="《迎え討ち》"								,d="機会攻撃の回数に制限を受けない。\n\n通常:この特技がない場合、機会攻撃は1ラウンドに1回のみしか行えない。"},
+[pwr_dex_wpn				]={n="《武器の妙技》"								,d="軽武器や妙技武器の攻撃ロールに【筋力】ではなく【敏捷力】を使用できる。If you carry a shield, its armor check penalty applies to your attack rolls.\n\n肉体武器は軽武器として扱われる。"},
 -- skl z_skl_bns
-[pwr_s2_athletic			]={n="Athletic			",d="+2 bonus on all Climb and Swim checks."},
-[pwr_s2_acrobatic			]={n="Acrobatic			",d="+2 bonus on all Jump and Tumble checks."},
-[pwr_s2_agile				]={n="Agile				",d="+2 bonus on all Balance and Escape Artist checks."},
-[pwr_s2_deft_hands			]={n="Deft Hands		",d="+2 bonus on all Use Rope and Sleight of Hand checks."},
-[pwr_s2_stealthy			]={n="Stealthy			",d="+2 bonus on all Hide and Move Silently checks."},
-[pwr_s2_animal_affinity		]={n="Animal Affinity	",d="+2 bonus on all Ride and Handle Animal checks."},
-[pwr_s2_nimble_fingers		]={n="Nimble Fingers	",d="+2 bonus on all Open Lock and Disable Device checks."},
-[pwr_s2_diligent			]={n="Diligent			",d="+2 bonus on all Appraise and Decipher Script checks."},
-[pwr_s2_deceitful			]={n="Deceitful			",d="+2 bonus on all Disguise and Forgery checks."},
-[pwr_s2_magical_aptitude	]={n="Magical Aptitude	",d="+2 bonus on all Spellcraft and Use Magic Device checks."},
-[pwr_s2_investigator		]={n="Investigator		",d="+2 bonus on all Search and Gather Information checks."},
-[pwr_s2_alertness			]={n="Alertness			",d="+2 bonus on all Spot and Listen checks.\n\nSpecial: The master of a familiar gains the benefit of the Alertness feat whenever the familiar is within arm’s reach."},
-[pwr_s2_self_sufficient		]={n="Self-Sufficient	",d="+2 bonus on all Heal and Survival checks."},
-[pwr_s2_negotiator			]={n="Negotiator		",d="+2 bonus on all Sense Motive and Diplomacy checks."},
-[pwr_s2_persuasive			]={n="Persuasive		",d="+2 bonus on all Intimidate and Bluff checks."},
+[pwr_s2_athletic			]={n="Athletic			",d="すべての〈Climb〉と〈Swim〉判定に +2 のボーナス。"},
+[pwr_s2_acrobatic			]={n="Acrobatic			",d="すべての〈Jump〉と〈Tumble〉判定に +2 のボーナス。"},
+[pwr_s2_agile				]={n="Agile				",d="すべての〈Balance〉と〈Escape Artist〉判定に +2 のボーナス。"},
+[pwr_s2_deft_hands			]={n="Deft Hands		",d="すべての〈Use Rope〉と〈Sleight of Hand〉判定に +2 のボーナス。"},
+[pwr_s2_stealthy			]={n="Stealthy			",d="すべての〈Hide〉と〈Move Silently〉判定に +2 のボーナス。"},
+[pwr_s2_animal_affinity		]={n="Animal Affinity	",d="すべての〈Ride〉と〈Handle Animal〉判定に +2 のボーナス。"},
+[pwr_s2_nimble_fingers		]={n="〔素早い指先〕		",d="すべての〈解錠〉と〈装置無力化〉判定に +2 のボーナス。"},
+[pwr_s2_diligent			]={n="Diligent			",d="すべての〈Appraise〉と〈Decipher Script〉判定に +2 のボーナス。"},
+[pwr_s2_deceitful			]={n="Deceitful			",d="すべての〈Disguise〉と〈Forgery〉判定に +2 のボーナス。"},
+[pwr_s2_magical_aptitude	]={n="Magical Aptitude	",d="すべての〈Spellcraft〉と〈Use Magic Device〉判定に +2 のボーナス。"},
+[pwr_s2_investigator		]={n="Investigator		",d="すべての〈捜索〉と〈Gather Information〉判定に +2 のボーナス。"},
+[pwr_s2_alertness			]={n="《鋭敏感覚》		",d="すべての〈Spot〉と〈聞き耳〉判定に +2 のボーナス。\n\nSpecial: The master of a familiar gains the benefit of the Alertness feat whenever the familiar is within arm’s reach."},
+[pwr_s2_self_sufficient		]={n="《自力生存》		",d="すべての〈治療〉と〈Survival〉判定に +2 のボーナス。"},
+[pwr_s2_negotiator			]={n="Negotiator		",d="すべての〈真意看破〉と〈Diplomacy〉判定に +2 のボーナス。"},
+[pwr_s2_persuasive			]={n="《説得》			",d="すべての〈威圧〉と〈はったり〉判定に +2 のボーナス。"},
 --[pwr_sf_...				]={n=s_sf_3.."...	",d=s_sf_3_d}, set by code	z_skl_focus_name
 -- z_pwrs.ex
 [pwr_dr2					]={n="PR2"},
@@ -1493,177 +1541,199 @@ pwrs_text={
 [pwr_nac_d2					]={n="Armor Weakened"},
 [pwr_no_fixed				]={n="No Fixed Shape"},
 
-[pwr_imm_m					]={n="Magic Immunity"			,d="Immunity to spell damage (except vulnerable damage types) and effects."},
-[pwr_er_50p					]={n="Energy Resistance"		,d="Takes only half damage of any energy type."},
-[pwr_aura5_atk2				]={n="Trueattack Aura"			,d="Allies within 3 squares gain a +2 bonus on attack rolls."},
-[pwr_aura5_dmg2				]={n="Cruelty Aura"				,d="Allies within 3 squares gain a +2 bonus on damage rolls."},
-[pwr_aura5_heal5			]={n="Healing Aura"				,d="Allies within 3 squares recover 5 hit points per turn."},
-[pwr_aura1_fire5			]={n="Flaming Aura"				,d="Adjacent enemies take 5 fire damage per turn."},
-[pwr_aura1_toxic5			]={n="Ptomaine Aura"			,d="Adjacent enemies take 5 poison damage per turn."},
-[pwr_aura5_fear				]={n="Fear Aura"				,d="Every turn, adjacent enemies must succeed on a Will save or flee."},-- within 3 squares
-[pwr_pack_atk				]={n="Mass Brawl"				,d="+1 bonus on attack rolls from each adjacent ally who own this feat."},
-[pwr_pack_dmg				]={n="Pack Attack"				,d="+5 bonus on damage rolls of the enemy who adjacent to two or more allies of you who own this feat."},
-[pwr_rend					]={n="Rend"						,d="If the creature hits with both claw attacks, it latches onto the opponent’s body and tears the flesh. This attack automatically deals an additional 2d6 + 1-1/2 times Str modifier points of damage."},
-[pwr_rend_co				]={n="Cooperative Rend"			,d="Trigger rend with only one hit when you and an ally who own this feat adjacent to the same enemy."},
-[pwr_blood_tgt1				]={n="Bloodlust"				,d="+1 bonus on attack rolls and +2 bonus on damage rolls against bloodied targets."},
-[pwr_blood_tgt2				]={n="Bloodthirsty"				,d="+2 bonus on attack rolls and +5 bonus on damage rolls against bloodied targets."},
-[pwr_blood_rage				]={n="Blood Rage"				,d="+2 bonus on attack rolls, +5 bonus on damage rolls and -2 penalty to AC when bloodied."},
-[pwr_blood_rage2			]={n="Extreme Blood Rage"		,d="+2 bonus on attack rolls, +5 bonus on damage rolls (+10 when bloodied) and -2 penalty to AC when wounded."},
-[pwr_imbue_arrow			]={n="Imbue Arrow"				,d="Deals extra 1d6 random elemental damage with ranged weapons."},
-[pwr_tox					]={n="Poison Use"				,d="When hit, the target may be poisoned."},
+[pwr_imm_m					]={n="魔法への完全耐性"			,d="呪文のダメージ（脆弱性を持つダメージ種別を除く）と呪文の効果に対する完全耐性。"},
+[pwr_er_50p					]={n="エレメンタル抵抗"		,d="元素ダメージが半減する。"},
+[pwr_aura5_atk2				]={n="トゥルーアタック・オーラ"			,d="３スクエア以内にいる味方は攻撃ロールで +2 のボーナスを得る。"},
+[pwr_aura5_dmg2				]={n="クルエルティー・オーラ"				,d="３スクエア以内にいる味方はダメージロールで +2 のボーナスを得る。"},
+[pwr_aura5_heal5			]={n="ヒーリング・オーラ"				,d="３スクエア以内の仲間に対し、ターン毎に５ヒットポイントを回復する。"},
+[pwr_aura1_fire5			]={n="フレーミング・オーラ"				,d="隣接する敵にターン毎に5[火]ダメージを与える。"},
+[pwr_aura1_toxic5			]={n="プトマイン・オーラ"			,d="隣接する敵にターン毎に5[毒]ダメージを与える。"},
+[pwr_aura5_fear				]={n="恐怖のオーラ"				,d="毎ターン、隣接する敵は、意思セービングスローや逃げるに成功しなければならない。(混乱状態)"},-- within 3 squares
+[pwr_pack_atk				]={n="マス・ブロール"				,d="この特技を有した隣接する各味方からの攻撃ロールに+1のボーナスを得る。"},
+[pwr_pack_dmg				]={n="パック・アタック"				,d="この特技を有したキャラクターは、2人以上の味方に隣接する敵に +5のダメージを与える。"},
+[pwr_rend					]={n="レンド"						,d="両方の攻撃が当たった場合、追加のダメージを与える。\n\nIf the creature hits with both claw attacks, it latches onto the opponent’s body and tears the flesh. This attack automatically deals an additional 2d6 + 1-1/2 times Str modifier points of damage."},
+[pwr_rend_co				]={n="コンパレーティブ・レンド"			,d="この特技を有している仲間で自分と同じ敵に隣接している場合、攻撃時にレンドを発動する。"},
+[pwr_blood_tgt1				]={n="ブラッドラスト"				,d="攻撃ロールに+1のボーナス、ターゲットに対して+2のダメージを与る。"},
+[pwr_blood_tgt2				]={n="ブラッドサースティー"				,d="攻撃ロールに+2のボーナス、ターゲットに対して+5のダメージを与る。"},
+[pwr_blood_rage				]={n="ブラッド・レイジ"				,d="攻撃ロールに+2のボーナス、+5のダメージを与る、さらに流血した場合は防御に-2のペナルティを与える。"},
+[pwr_blood_rage2			]={n="エクストリーム・ブラッド・レイジ"		,d="攻撃ロールに+2のボーナス、+5のダメージを与える（血撃時は+10のダメージ）、さらに負傷したときは防御に-2のペナルティを与える。"},
+[pwr_imbue_arrow			]={n="インビュー・アロー"				,d="遠隔武器に1d6のランダムな元素ダメージを追加する。"},
+[pwr_tox					]={n="毒の使用"				,d="ヒットすると、ターゲットが毒に侵されることがある。"},
 [pwr_tox_drow				]={n="Poison"					,d="An opponent hit by a drow’s poisoned weapon must succeed on a base DC 13 Fortitude save or fall unconscious.\n\nAfter 1 minute, the subject must succeed on another same DC Fortitude save or remain unconscious for 2d4 hours.\n\nA typical drow carries 1d4–1 doses of drow knockout poison. Drow typically coat arrows and crossbow bolts with this poison, but it can also be applied to a melee weapon. Note that drow have no special ability to apply poison without risking being poisoned themselves. Since this poison is not a magical effect, drow and other elves are susceptible to it."},
-[pwr_hit_down				]={n="Brute Knockdown"			,d="When hit with a melee weapon, trigger a knockdown check."},
-[pwr_charge_ex1				]={n="Violent Charge"			,d="When charging, +5 bonus on damage rolls and trigger a knockdown check."},
-[pwr_charge_ex2				]={n="Furious Charge"			,d="When charging, +10 bonus on damage rolls and the target must succeed on a CM check or be knocked back by 2 square and fall."},
-[pwr_grap_dmg1				]={n="Strangle"					,d="The grappled target takes 5 damage points per turn."},
-[pwr_grap_dmg2				]={n="Ursine Crush"				,d="The grappled target takes 10 damage points per turn."},
-[pwr_grap_sting1			]={n="Sting"					,d="The grappled target takes 5 damage points per turn."},
-[pwr_grap_sting2			]={n="Giant Sting"				,d="The grappled target takes 10 damage points per turn."},
-[pwr_grap_suck				]={n="Blood Drain"				,d="The grappled target takes 5 damage points per turn and you recover 5 hit points per turn."},
-[pwr_dead_tox				]={n="Ptomaine"					,d="When dead, adjacent enemies may be poisoned."},
-[pwr_x2_atk					]={n="Double-attack"			,d="Makes two attacks with a single weapon."},
-[pwr_phalanx2				]={n="Phalanx Soldier"			,d="+2 bonus to AC when adjacent to one or more allies who own this feat."},
-[pwr_crowd_ac				]={n="Crowd Cover"				,d="+2 bonus to AC and Reflex saves when adjacent to one creature. +4 when adjacent to two or more creatures."},
-[pwr_ao_ac2					]={n="Nimble Reaction"			,d="+2 bonus to AC against attacks of opportunity."},
-[pwr_shift_hard				]={n="Graceful Step"			,d="Ignores difficult terrain when shift."},
-[pwr_mov_no_ao				]={n="Mobile Tactics"			,d="Does not provoke attacks of opportunity when move."},
-[pwr_web_mov				]={n=s_web_mov					,d=s_web_mov_d},
-[pwr_swamper				]={n="Swamper"					,d="Ignores grease area."},
-[pwr_all_eyes				]={n="All-Around Vision"		,d="Immunes to flanking."},
-[pwr_trance					]={n="Trance"					,d="Only one action per turn."},
-[pwr_fey_blood				]={n="Elven Immunities"			,d="Immunes to magic sleep effects. +2 racial bonus against mind-affecting spells and effects."},
-[pwr_cha_spl				]={n="Draconic Magic"			,d="Charisma Spellcasting: May use Cha instead of Int as spellcasting ability."},
-[pwr_con_spl				]={n="Scar Witchcraft"			,d="Constitution Spellcasting: May use Con instead of Int as spellcasting ability."},
-[pwr_ghoul_bite				]={n="Ghoul Bite"				,d="+10 bonus on melee damage rolls against stunned targets."},
-[pwr_cha_hp					]={n="Extraordinary Life"		,d="May use Cha instead of Con on hit points calculating."},
-[pwr_str_hp					]={n="Artificial Life"			,d="May use Str instead of Con on hit points calculating."},
-[pwr_avg_atk				]={n="Conservative Attack"		,d="Conservative attack mode. Deals stable damage but no crits."},
-[pwr_liz_shock				]={n="Lightning Shock"			,d="Delivers an electrical shock to a single opponent, dealing electricity damage."},
-[pwr_pack_shock				]={n="Mass Discharge"			,d="On turn starts, if the shocker lizard adjacents to shocker lizards, they can work together to create an area shock to all creatures within 3 squares. The more shocker lizards, the higher the damage."},
-[pwr_tox_arrow				]={n="Poison Spit"				,d="Sprays venom, dealing poison damage and the target may be poisoned."},
-[pwr_tox_fog				]={n="Poison Cloud"				,d="Makes a toxic area. All creatures within the area may be poisoned."},
-[pwr_tox_erupt				]={n="Poison Burst"				,d="Close burst attack deals poison damage and targets may be poisoned."},
-[pwr_spit_f					]={n="Fire Breath"				,d="Close blast attack deals fire damage."},
-[pwr_spit_a					]={n="Acid Breath"				,d="Close blast attack deals acid damage."},
-[pwr_heal_cw				]={n="Repair"					,d="Repairs clockwork, recovering hit points."},
-[pwr_web_a0					]={n="Web"						,d="Throws spiderwebs to make the target immobilized."},
-[pwr_shd_bash				]={n="Shield Bash"				,d="Slams a target with your shield to make it stunned."},
-[pwr_down_a1				]={n="Stomp Ground"				,d="Stomps on the ground to make adjacent creatures prone."},
-[pwr_polym					]={n="Polymorph"				,d="Transforms a target into a small animal that only moves at random."},
-[pwr_turn					]={n="Turn"						,d="Channels positive energy to turn undeads, making them flee away from the caster.\n\nA paladin turns undead as a cleric of three levels lower would.\n\n<c=fc_b>Uses per day: 3 + Cha modifier.</c>"},
-[pwr_fear					]={n="Fear"						,d="Makes all creatures within the area flee."},
-[pwr_mad					]={n="Mad"						,d="Makes a target mad and attacks a closed creature indiscriminately."},
-[pwr_charm					]={n="Charm"					,d="Makes an enemy believe it is your ally."},
-[pwr_eye_ctrl				]={n="Dominating Gaze"			,d="The target is dominated."},
-[pwr_eye_stone				]={n="Petrifying Gaze"			,d="Turns a target to stone."},
-[pwr_sum_spiders			]={n="Conjure Giant Spiders"	,d="Calls two giant spiders to fight for you."},
+[pwr_hit_down				]={n="ブルート・ノックダウン"			,d="近接武器でヒットした場合、ノックダウンチェックをトリガーします。"},
+[pwr_charge_ex1				]={n="バイオレント・チャージ"			,d="突撃した時に+5のダメージを与え、ノックダウンチェックをトリガーする。"},
+[pwr_charge_ex2				]={n="フューリアス・チャージ"			,d="突撃した時に+10のダメージ。ターゲットは戦技判定に失敗した場合は、２スクエア ノックバックする。"},
+[pwr_grap_dmg1				]={n="ストラングル"					,d="組み付かれた状態のターゲットに1ターンにつき5ダメージを与える。"},
+[pwr_grap_dmg2				]={n="アルサイン・クラッシュ"				,d="組み付かれた状態のターゲットに1ターンにつき10ダメージを与える。"},
+[pwr_grap_sting1			]={n="スティング"					,d="組み付かれた状態のターゲットに1ターンにつき5ダメージを与える。"},
+[pwr_grap_sting2			]={n="ジャイアント・スティング"				,d="組み付かれた状態のターゲットに1ターンにつき10ダメージを与える。"},
+[pwr_grap_suck				]={n="ブラッド・ドレイン"				,d="組み付かれた状態のターゲットに1ターンにつき5ダメージを与え、1ターンに自分のヒットポイントを5回復する。"},
+[pwr_dead_tox				]={n="プトマイン"					,d="死亡時、隣接する敵を[毒]状態になることがある。"},
+[pwr_x2_atk					]={n="ダブルアタック"			,d="1つの武器で2回攻撃を行う。"},
+[pwr_phalanx2				]={n="ファランクス・ソルジャー"			,d="この特技を有する1人以上の仲間に隣接している場合は、防御力に+2のボーナスを与える。"},
+[pwr_crowd_ac				]={n="クラウド・カバー"				,d="1体クリーチャーに隣接しているときは+2のACと反応セーブを得る。2体以上のクリーチャーに隣接するときは+4になる。"},
+[pwr_ao_ac2					]={n="ニンブル・リアクション"			,d="機会攻撃に対して+2 AC。"},
+[pwr_shift_hard				]={n="グレイスフル ステップ"			,d="シフト時に移動困難な地形を無視します。"},
+[pwr_mov_no_ao				]={n="モバイル タクティクス"			,d="移動時の機会攻撃を無効化する。"},
+[pwr_web_mov				]={n=s_web_mov						,d=s_web_mov_d},
+[pwr_swamper				]={n="スワンパー"						,d="グリース領域を無効化する。"},
+[pwr_all_eyes				]={n="全周囲視覚"						,d="挟撃への完全耐性"},
+[pwr_trance					]={n="トランス"						,d="1ターンにつき1つのアクションのみ行える。"},
+[pwr_fey_blood				]={n="Elven Immunities"				,d="魔法的なスリープに対する完全耐性を持ち、精神に作用する呪文および効果に対するセーヴィング・スローに ＋2の種族ボーナスを得る。"},-- フェイの血筋
+[pwr_cha_spl				]={n="ドラコニック・マジック"			,d="【魅力】による呪文発動: 呪文発動に関する能力値に【知力】の代わりに【魅力】を用いてもよい。"},
+[pwr_con_spl				]={n="スカー・ウィッチクラフト"			,d="【耐久力】による呪文発動: 呪文発動に関する能力値に【知力】の代わりに【耐久力】を用いてもよい。"},
+[pwr_ghoul_bite				]={n="グールの噛みつき"				,d="朦朧状態の対象に対して近接ダメージ+10．"},
+[pwr_cha_hp					]={n="エクストラ・オーディナリィ・ライフ"		,d="HPを計算する際に、【耐久力】の代わりに【魅力】を用いてもよい。"},
+[pwr_str_hp					]={n="アーティフィシャル・ライフ"			,d="HPを計算する際に、【耐久力】の代わりに【筋力】を用いてもよい。"},
+[pwr_avg_atk				]={n="コンサヴァティヴ・アタック"		,d="コンサヴァティヴ・アタック。殺さない程度のダメージを与え、クリティカル・ヒットしない。"},
+[pwr_liz_shock				]={n="ライトニング・ショック"			,d="1体の対象に電撃の衝撃をもたらし、わずかな［電気］ダメージを与える。"},
+[pwr_pack_shock				]={n="マス・ディスチャージ"			,d="ターン開始時に、ショッカー・リザード同士が隣接していた場合、３スクエア以内のすべてのクリーチャーに雷撃を与えるために協力する。ショッカー・リザードが多いほどダメージも大きい。"},
+[pwr_tox_arrow				]={n="ポイズン・スピット"				,d="毒をまき散らし、わずかな［毒］ダメージを与えるとともに毒状態にする。"},
+[pwr_tox_fog				]={n="ポイズン・クラウド"				,d="猛毒の範囲を作り出す。範囲内のすべてのクリーチャーは毒状態になる。"},
+[pwr_tox_erupt				]={n="ポイズン・バースト"				,d="近接爆発攻撃により、多くの［毒］ダメージを与えるとともに毒状態にする。"},
+[pwr_spit_f					]={n="ファイア・ブレス"				,d="近接爆発攻撃により、中程度の［火］ダメージを与える。"},
+[pwr_spit_a					]={n="アシッド・ブレス"				,d="近接爆発攻撃により、中程度の［酸］ダメージを与える。"},
+[pwr_heal_cw				]={n="リペア"					,d="機械を修復し、中程度のヒット・ポイントを回復する。"},
+[pwr_web_a0					]={n="蜘蛛の巣"						,d="ターゲットを移動不能状態にするために蜘蛛の糸を投げる。"},
+[pwr_shd_bash				]={n="シールド・バッシュ"				,d="対象を盾で殴り、朦朧状態にする。"},
+[pwr_down_a1				]={n="ストンプ・グラウンド"				,d="大地を踏み鳴らし隣接するクリーチャーを伏せ状態にする。"},
+[pwr_polym					]={n="ポリモルフ"				,d="対象をランダムに移動する小型の動物に変身させる。"},
+[pwr_turn					]={n="アンデッド退散"						,d="アンデッドを退散させるために正のエネルギーを導く。アンデッドは術者から遠ざかるように逃げる。１日の使用回数：3 + Cha修正値。\n\nA paladin turns undead as a cleric of three levels lower would."},
+[pwr_fear					]={n="フィアー"						,d="範囲内のすべてのクリーチャーは逃げ出す。"},
+[pwr_mad					]={n="マッド"						,d="対象を狂気状態にし、無差別に隣接する対象を攻撃するようになる。"},
+[pwr_charm					]={n="チャーム"					,d="敵はあなたを味方だと信じるようになる。"},
+[pwr_eye_ctrl				]={n="ドミネイティング・ゲイズ"			,d="対象は支配された状態になる。"},
+[pwr_eye_stone				]={n="ペトリファイング・ゲイズ"			,d="対象は石化する。"},
+[pwr_sum_spiders			]={n="ジャイアント・スパイダー招来"	,d="2体のジャイアント・スパイダーを招来し、共に戦わせる。"},
 -- skl acts
-[pwr_intimidate				]={n="Intimidate"				,d="Make an Intimidate check opposed by the target's level check. If you win, the target becomes shaken for a number of rounds.\n\nA shaken character takes a -2 penalty on attack rolls and saving throws."},
-[pwr_feint					]={n="Feint"					,d="Make a Bluff check opposed by your target's Sense Motive check. If you win, the target is denied its Dexterity bonus to AC (if any) for the next melee attack you make against it.\n\nThis attack must be made on or before your next turn."},
-[pwr_treat_wounds			]={n="First Aid"				,d="Make a DC 15 Heal check. If you succeed, the target restores 1/4 of max HP.\n\nIf you exceed the DC by 5 or more, add your Wisdom bonus to this amount.\n\n<c=to>A creature can only benefit from this ability once per battle.</c>"},
-[pwr_treat_bleeding			]={n="Treat Bleeding"			,d="Make a DC 15 Heal check. If you succeed, bleeding effects will be removed from the target."},
-[pwr_treat_poison			]={n="Treat Poison"				,d="Make a DC 15 Heal check. If you succeed, poison effects will be removed from the target."},
-[pwr_improved_feint			]={n="Improved Feint"			,d="Use Feint as a move action instead of a standard action."},
+[pwr_intimidate				]={n="〈威圧〉"				,d="対象のレベル判定に対抗するために〈威圧〉判定を行う。成功すると対象は何ラウンドも怯え状態になる。\n\n怯え状態のキャラクターは攻撃ロールとセーヴィング・スローに -2 のペナルティを受ける。"},
+[pwr_feint					]={n="フェイント"					,d="対象の〈真意看破〉判定に対抗するために〈はったり〉判定を行う。成功した場合、対象に行う次の近接攻撃において、対象はACに【敏捷力】ボーナスを（もしあれば）加えることができない。\n\nこの攻撃は次のターンまでに行なわれなければならない。"},
+[pwr_treat_wounds			]={n="応急手当"				,d="DC 15 の〈治療〉判定を行う。成功した場合は、対象の最大HPの1/4を回復する。\n\n自分の DC が 5 以上の場合は、【判断力】の値をボーナスとしてこの値に加算する。\n\n<c=to>クリーチャーはこの能力から戦闘ごとに一度だけ利益を得ることができる。</c>"},
+[pwr_treat_bleeding			]={n="［出血］の治療"			,d="DC 15 の〈治療〉判定を行う。成功した場合は、対象から［出血］の効果が取り除かれる。"},
+[pwr_treat_poison			]={n="［毒］の治療"				,d="DC 15 の〈治療〉判定を行う。成功した場合は、対象から［毒］の効果が取り除かれる。"},
+[pwr_improved_feint			]={n="《フェイント強化》"			,d="標準アクションの代わりに移動アクションとしてフェイントを使用する。"},
 -- misc
-[pwr_dfl_arw				]={n="Deflect Arrows"			,d="Once per round when you would normally be hit with a ranged weapon, you may deflect it so that you take no damage from it.\n\nYou must have at least one hand free (holding nothing) to use this feat. You must be aware of the attack and not flatfooted."},-- Attempting to deflect a ranged weapon doesn’t count as an action. Unusually massive ranged weapons and ranged attacks generated by spell effects can’t be deflected.	Special: A monk may select Deflect Arrows as a bonus feat at 2nd level, even if she does not meet the prerequisites.	A fighter may select Deflect Arrows as one of his fighter bonus feats.
-[pwr_snt_arw				]={n="Snatch Arrows"			,d=pwr_snt_arw_d},
-[pwr_stunning_fist			]={n="Stunning Fist"			,d=pwr_stunning_fist_d},
-[pwr_improved_stunning_fist	]={n="Improved Stunning Fist"	,d="Add +2 bonus to the Fortitude saving throw of your stunning attack.\n\nSpecial: This feat may be taken multiple times. Its effects stack."},
-[pwr_ch_mle_dmg				]={n="Overwhelming Critical"	,d=pwr_ch_mle_dmg_d},
-[pwr_sa_1x					]={n="Improved Sneak Attack"	,d="Your sneak attacks are more deadly than normal.\n\nAdd +1d6 to your sneak attack damage.\n\nSpecial: This feat may be taken multiple times. Its effects stack."},
-[pwr_rage_fear				]={n="Terrifying Rage"			,d="While in a rage, you panic your opponents.\n\nWhile you are raging, any enemy that views you must make a Will save opposed by your Intimidate check or become panicked (if its character level less than yours) or shaken (if its character level equal to or up to twice your character level) for 1d4 rounds.\n\nAn enemy with character level greater than twice your character level is not affected by this feat."},
+[pwr_dfl_arw				]={n="《矢止め》"				,d="１ラウンドに１回、普通なら遠隔武器が君に命中するような時に、それをそらしてダメージを受けないようにすることができる。\n\nこの特技を使うためには、少なくとも片手を自由（何も持たない状態）にしておかなければならない。君はその攻撃に気づいていなければならず、立ちすくみ状態であってはならない。"},-- Attempting to deflect a ranged weapon doesn’t count as an action. Unusually massive ranged weapons and ranged attacks generated by spell effects can’t be deflected.	Special: A monk may select Deflect Arrows as a bonus feat at 2nd level, even if she does not meet the prerequisites.	A fighter may select Deflect Arrows as one of his fighter bonus feats.
+[pwr_snt_arw				]={n="《矢つかみ》"			,d=pwr_snt_arw_d},
+[pwr_stunning_fist			]={n="《朦朧化打撃》"			,d=pwr_stunning_fist_d},
+[pwr_improved_stunning_fist	]={n="《朦朧化打撃強化》"		,d="Add +2 bonus to the Fortitude saving throw of your stunning attack.\n\nSpecial: This feat may be taken multiple times. Its effects stack."},
+[pwr_ch_mle_dmg				]={n="《圧倒的クリティカル》"	,d=pwr_ch_mle_dmg_d},
+[pwr_sa_1x					]={n="《急所攻撃強化》"		,d="Your sneak attacks are more deadly than normal.\n\nAdd +1d6 to your sneak attack damage.\n\nSpecial: This feat may be taken multiple times. Its effects stack."},
+[pwr_rage_fear				]={n="《恐怖の激怒》"			,d="While in a rage, you panic your opponents.\n\nWhile you are raging, any enemy that views you must make a Will save opposed by your Intimidate check or become panicked (if its character level less than yours) or shaken (if its character level equal to or up to twice your character level) for 1d4 rounds.\n\nAn enemy with character level greater than twice your character level is not affected by this feat."},
 -- mnk 17 + 2
-[pwr_unarmed_strike			]={n="Unarmed Strike"				,d=pwr_unarmed_strike_d},
-[pwr_flurry_of_blows		]={n="Flurry of Blows"				,d=pwr_flurry_of_blows_d},
-[pwr_ac_bonus				]={n="AC Bonus"						,d=pwr_ac_bonus_d},
-[pwr_fast_movement_monk		]={n="Fast Movement"				,d="A monk gains a +2 enhancement bonus to her speed every 3 levels (+2 at 3rd, +4 at 10th, ..., +20 at 30th).\n\nA monk in armor, using a shield, or carrying a medium or heavy load loses this extra speed."},
-[pwr_still_mind				]={n="Still Mind"					,d="A monk gains a +2 bonus on saving throws against mind-affecting spells and effects, since her meditation and training improve her resistance to mind-affecting attacks."},-- from the school of enchantment
-[pwr_ki_atk				]={n="Ki Strike"					,d=pwr_ki_atk_d},
-[pwr_slow_fall				]={n="Slow Fall"					,d="A monk within arm's reach of a wall can use it to slow her descent. When calculate the distance of the fall, reduce by 5 feet per monk level. At 20th level, she can fall any distance without harm."},
-[pwr_purity_of_body			]={n="Purity of Body"				,d="A monk gains control over her body's immune system. She gains immunity to all diseases except for supernatural and magical diseases."},-- (such as mummy rot and lycanthropy)
-[pwr_wholeness_of_body		]={n="Wholeness of Body"			,d="A monk can heal her own wounds.\n\nHealing points per day: level x 2. The healing can be divided among several uses."},-- twice her current monk level	She can heal a number of hit points of damage equal to her monk level x (2 + her Wis bonus / 2) each day, and she can spread this healing out among several uses.
-[pwr_diamond_body			]={n="Diamond Body"					,d="A monk is in such firm control of her own metabolism that she gains immunity to poisons of all kinds."},
-[pwr_abundant_step			]={n="Abundant Step"				,d="A monk can slip magically between spaces once per day."},-- , as if using the spell dimension door, once per day. Her caster level for this effect is one-half her monk level.
-[pwr_diamond_soul			]={n="Diamond Soul"					,d="A monk gains spell resistance equal to her current monk level + 10."},-- In order to affect the monk with a spell, a spellcaster must get a result on a caster level check (1d20 + caster level) that equals or exceeds the monk's spell resistance.
-[pwr_quivering_palm			]={n="Quivering Palm"				,d=pwr_quivering_palm_d},
-[pwr_timeless_body			]={n="Timeless Body"				,d="The character no longer take penalties to her ability scores for aging and cannot be magically aged. Any such penalties that she has already taken, however, remain in place. The character still dies of old age when her time is up."},
-[pwr_tongue_monk			]={n="Tongue of the Sun and Moon"	,d="A monk can speak with any living creature."},
-[pwr_empty_body				]={n="Empty Body"					,d=pwr_empty_body_d},
-[pwr_perfect_self			]={n="Perfect Self"					,d="A monk has tuned her body with skill and quasi-magical abilities to the point that she becomes a magical creature.\n\nThe monk gains damage reduction 10/magic. She is forevermore treated as an outsider rather than as a humanoid for the purpose of spells and magical effects. For instance, charm person does not affect her. But the monk can still be brought back from the dead."},--, which allows her to ignore the first 10 points of damage from any attack made by a nonmagical weapon or by any natural attack made by a creature that doesn't have similar damage reduction	Unlike other outsiders, the monk can still be brought back from the dead as if she were a member of her previous creature type.
+[pwr_unarmed_strike			]={n="《素手打撃》"	,d=pwr_unarmed_strike_d},
+[pwr_flurry_of_blows		]={n="連打"			,d=pwr_flurry_of_blows_d},
+[pwr_ac_bonus				]={n="ＡＣボーナス"	,d=pwr_ac_bonus_d},
+[pwr_fast_movement_monk		]={n="高速移動"		,d="A monk gains a +2 enhancement bonus to her speed every 3 levels (+2 at 3rd, +4 at 10th, ..., +20 at 30th).\n\nA monk in armor, using a shield, or carrying a medium or heavy load loses this extra speed."},
+[pwr_still_mind				]={n="不動心"		,d="A monk gains a +2 bonus on saving throws against mind-affecting spells and effects, since her meditation and training improve her resistance to mind-affecting attacks."},-- from the school of enchantment
+[pwr_ki_atk				]={n="気打撃"		,d=pwr_ki_atk_d},
+[pwr_slow_fall				]={n="浮身"			,d="A monk within arm's reach of a wall can use it to slow her descent. When calculate the distance of the fall, reduce by 5 feet per monk level. At 20th level, she can fall any distance without harm."},
+[pwr_purity_of_body			]={n="無病身"		,d="A monk gains control over her body's immune system. She gains immunity to all diseases except for supernatural and magical diseases."},-- (such as mummy rot and lycanthropy)
+[pwr_wholeness_of_body		]={n="肉体の完成"		,d="A monk can heal her own wounds.\n\nHealing points per day: level x 2. The healing can be divided among several uses."},-- twice her current monk level		She can heal a number of hit points of damage equal to her monk level x (2 + her Wis bonus / 2) each day, and she can spread this healing out among several uses.
+[pwr_diamond_body			]={n="金剛身"		,d="A monk is in such firm control of her own metabolism that she gains immunity to poisons of all kinds."},
+[pwr_abundant_step			]={n="縮地の法"		,d="A monk can slip magically between spaces once per day."},-- , as if using the spell dimension door, once per day. Her caster level for this effect is one-half her monk level.
+[pwr_diamond_soul			]={n="金剛心"		,d="A monk gains spell resistance equal to her current monk level + 10."},-- In order to affect the monk with a spell, a spellcaster must get a result on a caster level check (1d20 + caster level) that equals or exceeds the monk's spell resistance.
+[pwr_quivering_palm			]={n="激震掌"		,d=pwr_quivering_palm_d},
+[pwr_timeless_body			]={n="時知らずの肉体"	,d="The character no longer takes penalties to her ability scores for aging and cannot be magically aged. Any such penalties that she has already taken, however, remain in place. The character still dies of old age when her time is up."},
+[pwr_tongue_monk			]={n="日月語"		,d="A monk can speak with any living creature."},
+[pwr_empty_body				]={n="虚身"			,d=pwr_empty_body_d},
+[pwr_perfect_self			]={n="即身成道"		,d="A monk has tuned her body with skill and quasi-magical abilities to the point that she becomes a magical creature.\n\nThe monk gains damage reduction 10/magic. She is forevermore treated as an outsider rather than as a humanoid for the purpose of spells and magical effects. For instance, charm person does not affect her. But the monk can still be brought back from the dead."},--, which allows her to ignore the first 10 points of damage from any attack made by a nonmagical weapon or by any natural attack made by a creature that doesn't have similar damage reduction	Unlike other outsiders, the monk can still be brought back from the dead as if she were a member of her previous creature type.
 -- misc
-[pwr_flurry_of_blows_r		]={n="Ranged Flurry of Blows"	,d="Similar to the normal melee flurry of blows, using a special monk weapon shuriken to perform a flurry of blows from a distance."},
-[pwr_quivering_palm_kill	]={n="Quivering Palm: Kill"		,d="A monk can try to will the victim of her quivering palm to die. If succeed, it dies. If failed, the quivering palm effect disappears."},
-[pwr_end_act				]={n="End Action"				,d="You are free to end certain ongoing actions or effects."},
-[pwr_end_spl				]={n="Dismiss Ability"			,d="After certain spells or abilities take effect, the casters can dismiss them at will."},
+--[pwr_wp_swd_e				]={n="《特殊武器習熟》: Bastard Sword"			,d=s_exotic_wp_d},
+--[pwr_wp_swd_2				]={n="《特殊武器習熟》: Two-Bladed Sword"		,d=s_exotic_wp_d},
+--[pwr_wp_dwf_axe				]={n="《特殊武器習熟》: Dwarven Waraxe"		,d=s_exotic_wp_d},
+--[pwr_wp_dwf_axe_2			]={n="《特殊武器習熟》: Dwarven Urgrosh"		,d=s_exotic_wp_d},
+--[pwr_wp_orc_axe_2			]={n="《特殊武器習熟》: Orc Double Axe"		,d=s_exotic_wp_d},
+--[pwr_wp_gnm_hmr				]={n="《特殊武器習熟》: Gnome Hooked Hammer"	,d=s_exotic_wp_d},
+--[pwr_wp_spk_chain			]={n="《特殊武器習熟》: Spiked Chain"			,d=s_exotic_wp_d},
+--[pwr_wp_flail_2				]={n="《特殊武器習熟》: Dire Flail"			,d=s_exotic_wp_d},
+--[pwr_wp_whip				]={n="《特殊武器習熟》: Whip"					,d=s_exotic_wp_d},
+--[pwr_wp_bow_x_t				]={n="《特殊武器習熟》: Hand Crossbow"			,d=s_exotic_wp_d},
+--[pwr_wp_kama				]={n="《特殊武器習熟》: Kama"					,d=s_exotic_wp_d},
+--[pwr_wp_siangham			]={n="《特殊武器習熟》: Siangham"				,d=s_exotic_wp_d},
+--[pwr_wp_sai					]={n="《特殊武器習熟》: Sai"					,d=s_exotic_wp_d},
+--[pwr_wp_nunchaku			]={n="《特殊武器習熟》: Nunchaku"				,d=s_exotic_wp_d},
+--[pwr_wp_shuriken			]={n="《特殊武器習熟》: Shuriken"				,d=s_exotic_wp_d},
+--[pwr_wp_elf					]={n="《種族武器習熟》: エルフ"					,d="Elves are proficient with longsword, rapier, longbow (including composite longbow), and shortbow (including composite shortbow)."},
+--[pwr_wp_brd					]={n="《クラス武器習熟》: Bard"				,d="Bards are proficient with short sword, longsword, rapier, shortbow, sap, and whip."},
+--[pwr_wp_drd					]={n="《クラス武器習熟》: Druid"				,d="Druids are proficient with club, dart, quarterstaff, scimitar, sickle, shortspear, sling, and spear. They are also proficient with all natural attacks (claw, bite, and so forth) of any form they assume with wild shape."},
+--[pwr_wp_mnk					]={n="《クラス武器習熟》: モンク"				,d="Monks are proficient with club, light crossbow, heavy crossbow, dagger, throwing axe, javelin, kama, nunchaku, quarterstaff, sai, shuriken, siangham, and sling."},
+--[pwr_wp_rog					]={n="《クラス武器習熟》: ローグ"				,d="Rogues are proficient with hand crossbow, rapier, sap, shortbow, and short sword."},
+--[pwr_wp_wiz					]={n="《クラス武器習熟》: ウィザード"			,d="Wizards are proficient with club, dagger, heavy crossbow, light crossbow, and quarterstaff."},
+--[pwr_wp_any					]={n="Any Weapon Proficiency"				,d="Proficient with any weapon."},
+[pwr_flurry_of_blows_r		]={n="Ranged Flurry of Blows"				,d="Similar to the normal melee flurry of blows, using a special monk weapon shuriken to perform a flurry of blows from a distance."},
+[pwr_quivering_palm_kill	]={n="Quivering Palm: Kill"					,d="A monk can try to will the victim of her quivering palm to die. If succeed, it dies. If failed, the quivering palm effect disappears."},
+[pwr_end_act				]={n="アクション終了"							,d="特定の進行中のアクションや効果を自由に終了できる。"},
+[pwr_end_spl				]={n="能力解除"								,d="特定の呪文やそれに類する能力を発動した後、術者は任意にそれらを解除することができる。"},
 
 -- z_pwrs.spl
-[pwr_fire_ball						]={n="Fireball"							,d=pwr_fire_ball_d							},
-[pwr_fire_cloud						]={n="Incendiary Cloud"					,d=pwr_fire_cloud_d							},
-[pwr_meteor_swarm					]={n="Meteor Swarm"						,d=pwr_meteor_swarm_d						},
-[pwr_ice_nova						]={n="Frost Nova"						,d=pwr_ice_nova_d							},
-[pwr_ice_storm						]={n="Ice Storm"						,d=pwr_ice_storm_d							},
-[pwr_litn							]={n="Lightning Bolt"					,d=pwr_litn_d								},
-[pwr_litn_x							]={n="Chain Lightning"					,d=pwr_litn_x_d								},
-[pwr_acid_arrow						]={n="Acid Arrow"						,d=pwr_acid_arrow_d							},
-[pwr_acid_fog						]={n="Acid Fog"							,d=pwr_acid_fog_d							},
-[pwr_mm								]={n="Magic Missile"					,d=pwr_mm_d									},
-[pwr_searing_lit					]={n="Searing Light"					,d=pwr_searing_lit_d						},
-[pwr_heal							]={n="Cure Wounds"						,d=pwr_heal_d								,u="Heals %s HP"},-- u for potions
-[pwr_harm							]={n="Inflict Wounds"					,d=pwr_harm_d								},
-[pwr_heal_x							]={n="Mass Cure Wounds"					,d=pwr_heal_x_d								},
-[pwr_harm_x							]={n="Mass Inflict Wounds"				,d=pwr_harm_x_d								},
-[pwr_heal2							]={n="Heal"								,d=pwr_heal2_d								},
-[pwr_harm2							]={n="Harm"								,d=pwr_harm2_d								},
-[pwr_heal2_x						]={n="Mass Heal"						,d=pwr_heal2_x_d							},
-[pwr_harm2_x						]={n="Mass Harm"						,d=pwr_harm2_x_d							},
-[pwr_resurrect						]={n="Raise Dead"						,d=pwr_resurrect_d							},
-[pwr_slay_live						]={n="Slay Living"						,d=pwr_slay_live_d							},
-[pwr_dead_finger					]={n="Finger of Death"					,d=pwr_dead_finger_d						},
-[pwr_wail_of_the_banshee			]={n="Wail of the Banshee"				,d=pwr_wail_of_the_banshee_d				},
-[pwr_power_word_stun				]={n="Power Word Stun"					,d=pwr_power_word_stun_d					},
-[pwr_power_word_kill				]={n="Power Word Kill"					,d=pwr_power_word_kill_d					},
-[pwr_false_life						]={n="False Life"						,d=pwr_false_life_d							},
-[pwr_aid							]={n="Aid"								,d=pwr_aid_d								,u="+%s temporary HP\n+1 morale bonus on attack rolls and saves against fear"},
-[pwr_death_knell					]={n="Death Knell"						,d=pwr_death_knell_d						},
-[pwr_bulls_strength					]={n="Bull's Strength"					,d=pwr_bulls_strength_d						,u="+4 Str"},
-[pwr_cats_grace						]={n="Cat's Grace"						,d=pwr_cats_grace_d							,u="+4 Dex"},
-[pwr_bears_endurance				]={n="Bear's Endurance"					,d=pwr_bears_endurance_d					,u="+4 Con"},
-[pwr_foxs_cunning					]={n="Fox's Cunning"					,d=pwr_foxs_cunning_d						,u="+4 Int"},
-[pwr_owls_wisdom					]={n="Owl's Wisdom"						,d=pwr_owls_wisdom_d						,u="+4 Wis"},
-[pwr_eagles_splendor				]={n="Eagle's Splendor"					,d=pwr_eagles_splendor_d					,u="+4 Cha"},
-[pwr_mass_bulls_strength			]={n="Mass Bull's Strength"				,d=pwr_mass_bulls_strength_d				},
-[pwr_mass_cats_grace				]={n="Mass Cat's Grace"					,d=pwr_mass_cats_grace_d					},
-[pwr_mass_bears_endurance			]={n="Mass Bear's Endurance"			,d=pwr_mass_bears_endurance_d				},
-[pwr_mass_foxs_cunning				]={n="Mass Fox's Cunning"				,d=pwr_mass_foxs_cunning_d					},
-[pwr_mass_owls_wisdom				]={n="Mass Owl's Wisdom"				,d=pwr_mass_owls_wisdom_d					},
-[pwr_mass_eagles_splendor			]={n="Mass Eagle's Splendor"			,d=pwr_mass_eagles_splendor_d				},
-[pwr_true_strike					]={n="True Strike"						,d=pwr_true_strike_d						},
-[pwr_divine_favor					]={n="Divine Favor"						,d=pwr_divine_favor_d						},
-[pwr_divine_power					]={n="Divine Power"						,d=pwr_divine_power_d						},
-[pwr_heroism						]={n="Heroism"							,d=pwr_heroism_d							,u="+2 morale bonus on attack rolls and saves"},
-[pwr_greater_heroism				]={n="Greater Heroism"					,d=pwr_greater_heroism_d					},
-[pwr_shield_of_faith				]={n="Shield of Faith"					,d=pwr_shield_of_faith_d					,u="+%d deflection bonus to AC"},
-[pwr_shield							]={n="Shield"							,d=pwr_shield_d								},
-[pwr_mage_armor						]={n="Mage Armor"						,d=pwr_mage_armor_d							,u="+4 armor bonus to AC"},
-[pwr_expeditious_retreat			]={n="Expeditious Retreat"				,d=pwr_expeditious_retreat_d				},
-[pwr_protection_from_spells			]={n="Protection from Spells"			,d=pwr_protection_from_spells_d				},
-[pwr_death_ward						]={n="Death Ward"						,d=pwr_death_ward_d							},
-[pwr_halt_undead					]={n="Halt Undead"						,d=pwr_halt_undead_d						},
-[pwr_hold_person					]={n="Hold Person"						,d=pwr_hold_person_d						},
-[pwr_hold_monster					]={n="Hold Monster"						,d=pwr_hold_monster_d						},
-[pwr_mass_hold_person				]={n="Mass Hold Person"					,d=pwr_mass_hold_person_d					},
-[pwr_mass_hold_monster				]={n="Mass Hold Monster"				,d=pwr_mass_hold_monster_d					},
-[pwr_sleep							]={n="Sleep"							,d=pwr_sleep_d								},
-[pwr_irresistible_dance				]={n="Irresistible Dance"				,d=pwr_irresistible_dance_d					},
-[pwr_grease							]={n="Grease"							,d=pwr_grease_d								},
-[pwr_web							]={n="Web"								,d=pwr_web_d								},
-[pwr_sum							]={n="Summon Elemental"					,d=pwr_sum_d								},
-[pwr_mk_ud							]={n="Animate Undead"					,d=pwr_mk_ud_d								},
-[pwr_dispel							]={n="Dispel Magic"						,d=pwr_dispel_d								},
-[pwr_teleport						]={n="Teleport"							,d=pwr_teleport_d							},
+[pwr_fire_ball						]={n="ファイアーボール"							,d=pwr_fire_ball_d							},
+[pwr_fire_cloud						]={n="インセンディアリィ・クラウド"					,d=pwr_fire_cloud_d							},
+[pwr_meteor_swarm					]={n="メテオ・スウォーム"						,d=pwr_meteor_swarm_d						},
+[pwr_ice_nova						]={n="フロスト・ノヴァ"						,d=pwr_ice_nova_d							},
+[pwr_ice_storm						]={n="アイス・ストーム"						,d=pwr_ice_storm_d							},
+[pwr_litn							]={n="ライトニング・ボルト"					,d=pwr_litn_d								},
+[pwr_litn_x							]={n="チェイン・ライトニング"					,d=pwr_litn_x_d								},
+[pwr_acid_arrow						]={n="アシッド・アロー"						,d=pwr_acid_arrow_d							},
+[pwr_acid_fog						]={n="アシッド・フォッグ"							,d=pwr_acid_fog_d							},
+[pwr_mm								]={n="マジック・ミサイル"					,d=pwr_mm_d									},
+[pwr_searing_lit					]={n="シアリング・ライト"					,d=pwr_searing_lit_d						},
+[pwr_heal							]={n="キュア・ウーンズ"						,d=pwr_heal_d								,u="%s HP回復。"},-- u for potions
+[pwr_harm							]={n="インフリクト・ウーンズ"					,d=pwr_harm_d								},
+[pwr_heal_x							]={n="マス・キュア・ウーンズ"					,d=pwr_heal_x_d								},
+[pwr_harm_x							]={n="マス・インフリクト・ウーンズ"				,d=pwr_harm_x_d								},
+[pwr_heal2							]={n="ヒール"								,d=pwr_heal2_d								},
+[pwr_harm2							]={n="ハーム"								,d=pwr_harm2_d								},
+[pwr_heal2_x						]={n="マス・ヒール"						,d=pwr_heal2_x_d							},
+[pwr_harm2_x						]={n="マス・ハーム"						,d=pwr_harm2_x_d							},
+[pwr_resurrect						]={n="レイズ・デッド"						,d=pwr_resurrect_d							},
+[pwr_slay_live						]={n="スレイ・リヴィング"						,d=pwr_slay_live_d							},
+[pwr_dead_finger					]={n="フィンガー・オヴ・デス"					,d=pwr_dead_finger_d						},
+[pwr_wail_of_the_banshee			]={n="ウェイル・オヴ・ザ・バンシー"				,d=pwr_wail_of_the_banshee_d				},
+[pwr_power_word_stun				]={n="パワー・ワード・スタン"					,d=pwr_power_word_stun_d					},
+[pwr_power_word_kill				]={n="パワー・ワード・キル"					,d=pwr_power_word_kill_d					},
+[pwr_false_life						]={n="フォールス・ライフ"						,d=pwr_false_life_d							},
+[pwr_aid							]={n="エイド"								,d=pwr_aid_d								,u="一時的に +%s HP\n攻撃ロールに +1 の士気ボーナスを与え、恐怖から救う"},
+[pwr_death_knell					]={n="デス・ネル"						,d=pwr_death_knell_d								},
+[pwr_bulls_strength					]={n="ブルズ・ストレンクス"					,d=pwr_bulls_strength_d						,u="+4 Str"},
+[pwr_cats_grace						]={n="キャッツ・グレイス"						,d=pwr_cats_grace_d							,u="+4 Dex"},
+[pwr_bears_endurance				]={n="ベアズ・エンデュアランス"					,d=pwr_bears_endurance_d					,u="+4 Con"},
+[pwr_foxs_cunning					]={n="フォクセス・カニング"					,d=pwr_foxs_cunning_d						,u="+4 Int"},
+[pwr_owls_wisdom					]={n="アウルズ・ウィズダム"					,d=pwr_owls_wisdom_d						,u="+4 Wis"},
+[pwr_eagles_splendor				]={n="イーグルズ・スプレンダー"					,d=pwr_eagles_splendor_d					,u="+4 Cha"},
+[pwr_mass_bulls_strength			]={n="マス・ブルズ・ストレンクス"				,d=pwr_mass_bulls_strength_d				},
+[pwr_mass_cats_grace				]={n="マス・キャッツ・グレイス"					,d=pwr_mass_cats_grace_d					},
+[pwr_mass_bears_endurance			]={n="マス・ベアズ・エンデュアランス"			,d=pwr_mass_bears_endurance_d				},
+[pwr_mass_foxs_cunning				]={n="マス・フォクセス・カニング"				,d=pwr_mass_foxs_cunning_d					},
+[pwr_mass_owls_wisdom				]={n="マス・アウルズ・ウィズダム"				,d=pwr_mass_owls_wisdom_d					},
+[pwr_mass_eagles_splendor			]={n="マス・イーグルズ・スプレンダー"			,d=pwr_mass_eagles_splendor_d				},
+[pwr_true_strike					]={n="トゥルー・ストライク"						,d=pwr_true_strike_d					},
+[pwr_divine_favor					]={n="ディヴァイン・フェイヴァー"						,d=pwr_divine_favor_d				},
+[pwr_divine_power					]={n="ディヴァイン・パワー"						,d=pwr_divine_power_d					},
+[pwr_heroism						]={n="ヒロイズム"							,d=pwr_heroism_d								,u="攻撃ロール、セーヴに +2 の士気ボーナス"},
+[pwr_greater_heroism				]={n="グレーター・ヒロイズム"					,d=pwr_greater_heroism_d					},
+[pwr_shield_of_faith				]={n="シールド・オヴ・フェイス"					,d=pwr_shield_of_faith_d					,u="ACに +%d の反射ボーナス"},
+[pwr_shield							]={n="シールド"							,d=pwr_shield_d									},
+[pwr_mage_armor						]={n="メイジ・アーマー"						,d=pwr_mage_armor_d							,u="ACに +4 の鎧ボーナス"},
+[pwr_expeditious_retreat			]={n="エクスペディシャス・リトリート"				,d=pwr_expeditious_retreat_d			},
+[pwr_protection_from_spells			]={n="プロテクション・フロム・スペルズ"			,d=pwr_protection_from_spells_d				},
+[pwr_death_ward						]={n="デス・ウォード"						,d=pwr_death_ward_d								},
+[pwr_halt_undead					]={n="ホールト・アンデッド"						,d=pwr_halt_undead_d						},
+[pwr_hold_person					]={n="ホールド・パースン"						,d=pwr_hold_person_d						},
+[pwr_hold_monster					]={n="ホールド・モンスター"						,d=pwr_hold_monster_d						},
+[pwr_mass_hold_person				]={n="マス・ホールド・パースン"					,d=pwr_mass_hold_person_d					},
+[pwr_mass_hold_monster				]={n="マス・ホールド・モンスター"				,d=pwr_mass_hold_monster_d					},
+[pwr_sleep							]={n="スリープ"							,d=pwr_sleep_d								},
+[pwr_irresistible_dance				]={n="イレジスティブル・ダンス"				,d=pwr_irresistible_dance_d					},
+[pwr_grease							]={n="グリース"							,d=pwr_grease_d								},
+[pwr_web							]={n="蜘蛛の巣"								,d=pwr_web_d								},
+[pwr_sum							]={n="サモン・エレメンタル"					,d=pwr_sum_d								},
+[pwr_mk_ud							]={n="アニメイト・アンデッド"					,d=pwr_mk_ud_d								},
+[pwr_dispel							]={n="ディスペル・マジック"						,d=pwr_dispel_d								},
+[pwr_teleport						]={n="テレポート"							,d=pwr_teleport_d							},
 
-[pwr_burning_hands					]={n="Burning Hands						",d=pwr_burning_hands_d						},
-[pwr_scorching_ray					]={n="Scorching Ray						",d=pwr_scorching_ray_d						},
+[pwr_burning_hands					]={n="バーニング・ハンズ",d=pwr_burning_hands_d						},
+[pwr_scorching_ray					]={n="スコーチング・レイ",d=pwr_scorching_ray_d						},
 [pwr_flame_strike					]={n="Flame Strike						",d=pwr_flame_strike_d						},
 [pwr_fire_storm						]={n="Fire Storm						",d=pwr_fire_storm_d						},
 [pwr_cone_of_cold					]={n="Cone of Cold						",d=pwr_cone_of_cold_d						},
@@ -1697,7 +1767,7 @@ pwrs_text={
 [pwr_bane							]={n="Bane								",d=pwr_bane_d								},
 [pwr_prayer							]={n="Prayer							",d=pwr_prayer_d							},
 [pwr_hideous_laughter				]={n="Hideous Laughter					",d=pwr_hideous_laughter_d					},
-[pwr_rage2							]={n="Rage								",d=pwr_rage2_d								},
+[pwr_rage2							]={n="激怒",d=pwr_rage2_d								},
 [pwr_good_hope						]={n="Good Hope							",d=pwr_good_hope_d							},
 [pwr_crushing_despair				]={n="Crushing Despair					",d=pwr_crushing_despair_d					},
 [pwr_power_word_blind				]={n="Power Word Blind					",d=pwr_power_word_blind_d					},
@@ -1707,7 +1777,7 @@ pwrs_text={
 [pwr_ray_of_exhaustion				]={n="Ray of Exhaustion					",d=pwr_ray_of_exhaustion_d					},
 [pwr_waves_of_fatigue				]={n="Waves of Fatigue					",d=pwr_waves_of_fatigue_d					},
 [pwr_waves_of_exhaustion			]={n="Waves of Exhaustion				",d=pwr_waves_of_exhaustion_d				},
-[pwr_haste							]={n="Haste								",d=pwr_haste_d								},
+[pwr_haste							]={n="ヘイスト							",d=pwr_haste_d								},
 [pwr_slow							]={n="Slow								",d=pwr_slow_d								},
 [pwr_flesh_to_stone					]={n="Flesh to Stone					",d=pwr_flesh_to_stone_d					},
 [pwr_stone_to_flesh					]={n="Stone to Flesh					",d=pwr_stone_to_flesh_d					},
@@ -1719,9 +1789,9 @@ pwrs_text={
 [pwr_glitterdust					]={n="Glitterdust						",d=pwr_glitterdust_d						},
 [pwr_stinking_cloud					]={n="Stinking Cloud					",d=pwr_stinking_cloud_d					},
 [pwr_sleet_storm					]={n="Sleet Storm						",d=pwr_sleet_storm_d						},
-[pwr_lesser_restoration				]={n="Lesser Restoration				",d=pwr_lesser_restoration_d				},
-[pwr_restoration					]={n="Restoration						",d=pwr_restoration_d						},
-[pwr_greater_restoration			]={n="Greater Restoration				",d=pwr_greater_restoration_d				},
+[pwr_lesser_restoration				]={n="レッサー・レストレーション		",d=pwr_lesser_restoration_d				},
+[pwr_restoration					]={n="レストレーション					",d=pwr_restoration_d						},
+[pwr_greater_restoration			]={n="グレーター・レストレーション		",d=pwr_greater_restoration_d				},
 [pwr_delay_poison					]={n="Delay Poison						",d=pwr_delay_poison_d						},
 [pwr_neutralize_poison				]={n="Neutralize Poison					",d=pwr_neutralize_poison_d					},
 [pwr_remove_paralysis				]={n="Remove Paralysis					",d=pwr_remove_paralysis_d					},
@@ -1730,7 +1800,7 @@ pwrs_text={
 [pwr_remove_curse					]={n="Remove Curse						",d=pwr_remove_curse_d						},
 [pwr_shield_other					]={n="Shield Other						",d=pwr_shield_other_d						},
 [pwr_protection_from_arrows			]={n="Protection from Arrows			",d=pwr_protection_from_arrows_d			},
-[pwr_stoneskin						]={n="Stoneskin							",d=pwr_stoneskin_d							},
+[pwr_stoneskin						]={n="ストーンスキン					",d=pwr_stoneskin_d							},
 [pwr_resist_energy					]={n="Resist Energy						",d=pwr_resist_energy_d						},
 [pwr_protection_from_energy			]={n="Protection from Energy			",d=pwr_protection_from_energy_d			},
 [pwr_spell_resistance				]={n="Spell Resistance					",d=pwr_spell_resistance_d					},
@@ -1794,7 +1864,7 @@ pwrs_text={
 [pwr_calm_emotions					]={n="Calm Emotions						",d=pwr_calm_emotions_d						},
 [pwr_mind_fog						]={n="Mind Fog							",d=pwr_mind_fog_d							},
 [pwr_confusion						]={n="Confusion							",d=pwr_confusion_d							},
-[pwr_insanity						]={n="Insanity							",d=pwr_insanity_d							},
+[pwr_insanity						]={n="狂気",d=pwr_insanity_d							},
 [pwr_bestow_curse					]={n="Bestow Curse						",d=pwr_bestow_curse_d						},
 [pwr_contagion						]={n="Contagion							",d=pwr_contagion_d							},
 [pwr_eyebite						]={n="Eyebite							",d=pwr_eyebite_d							},
@@ -1866,118 +1936,118 @@ abbr_pwrs(pwrs_text)
 s_dominated	="Dominated"	s_dominated_d	="You are controlled by the caster and forced to perform as he desire."
 -- z_cond
 conds_text={
-[cond_rsv_1				]={n="Reserved Condition 1"			,d="No description."},
-[cond_rsv_2				]={n="Reserved Condition 2"			,d="No description."},
-[cond_rsv_3				]={n="Reserved Condition 3"			,d="No description."},
-[cond_rsv_4				]={n="Reserved Condition 4"			,d="No description."},
-[cond_rsv_5				]={n="Reserved Condition 5"			,d="No description."},
-[cond_rsv_6				]={n="Reserved Condition 6"			,d="No description."},
-[cond_rsv_7				]={n="Reserved Condition 7"			,d="No description."},
-[cond_rsv_8				]={n="Reserved Condition 8"			,d="No description."},
-[cond_rsv_9				]={n="Reserved Condition 9"			,d="No description."},
+[cond_rsv_1				]={n="Reserved Condition 1"	,d="説明なし。"},
+[cond_rsv_2				]={n="Reserved Condition 2"	,d="説明なし。"},
+[cond_rsv_3				]={n="Reserved Condition 3"	,d="説明なし。"},
+[cond_rsv_4				]={n="Reserved Condition 4"	,d="説明なし。"},
+[cond_rsv_5				]={n="Reserved Condition 5"	,d="説明なし。"},
+[cond_rsv_6				]={n="Reserved Condition 6"	,d="説明なし。"},
+[cond_rsv_7				]={n="Reserved Condition 7"	,d="説明なし。"},
+[cond_rsv_8				]={n="Reserved Condition 8"	,d="説明なし。"},
+[cond_rsv_9				]={n="Reserved Condition 9"	,d="説明なし。"},
 
-[cond_burn				]={n="Burning"						,d="On turn start, takes a specified number of fire damage points."},
-[cond_corrode			]={n="Corroded"						,d="On turn start, takes a specified number of acid damage points."},
-[cond_tox				]={n="Poisoned"						,d="On turn start, takes a specified number of poison damage points."},
-[cond_bleed				]={n="Bleeding"						,d="On turn start, takes a specified number of bleeding damage points."},
-[cond_hr				]={n="Regenerating"					,d="On turn start, restores a specified number of health points."},
+[cond_burn				]={n="炎上状態"				,d="ターン開始時に決められた［火］ダメージを受ける。"},
+[cond_corrode			]={n="腐食状態"				,d="ターン開始時に決められた［酸］ダメージを受ける。"},
+[cond_tox				]={n="毒状態"				,d="ターン開始時に決められた［毒］ダメージを受ける。"},
+[cond_bleed				]={n="出血状態"				,d="ターン開始時に決められた出血ダメージを受ける。"},
+[cond_hr				]={n="回復状態"				,d="ターン開始時に決められた値のHPを回復する。"},
 
-[cond_thp				]={n="Temporary Hit Points			",d="Certain effects give a character temporary hit points. When a character gains temporary hit points, note his current hit point total. When the temporary hit points go away the character’s hit points drop to his current hit point total. If the character’s hit points are below his current hit point total at that time, all the temporary hit points have already been lost and the character’s hit point total does not drop further.\n\nWhen temporary hit points are lost, they cannot be restored as real hit points can be, even by magic.\n\nIncreases in Constitution Score and Current Hit Points: An increase in a character’s Constitution score, even a temporary one, can give her more hit points (an effective hit point increase), but these are not temporary hit points. They can be restored and they are not lost first as temporary hit points are."},
-[cond_def				]={n="Standard Defense"				,d="Focused on defenses until the next turn."},
-[cond_def_full			]={n="Total Defense"				,d="Totally focused on defenses until the next turn."},
-[cond_fgt_def			]={n=s_fgt_def						,d=s_fgt_def_d},
+[cond_thp				]={n="Temporary Hit Points"	,d="Certain effects give a character temporary hit points. When a character gains temporary hit points, note his current hit point total. When the temporary hit points go away the character’s hit points drop to his current hit point total. If the character’s hit points are below his current hit point total at that time, all the temporary hit points have already been lost and the character’s hit point total does not drop further.\n\nWhen temporary hit points are lost, they cannot be restored as real hit points can be, even by magic.\n\nIncreases in Constitution Score and Current Hit Points: An increase in a character’s Constitution score, even a temporary one, can give her more hit points (an effective hit point increase), but these are not temporary hit points. They can be restored and they are not lost first as temporary hit points are."},
+[cond_def				]={n="標準防御状態"			,d="次のターンまで防衛に集中する。"},
+[cond_def_full			]={n="完全防御状態"			,d="次のターンまで完全防衛に集中する。"},
+[cond_fgt_def			]={n=s_fgt_def				,d=s_fgt_def_d},
 
-[cond_dazzled			]={n="Dazzled						",d="The creature is unable to see well because of overstimulation of the eyes. A dazzled creature takes a –1 penalty on attack rolls, and Search checks."},-- , and Spot checks
-[cond_blinded			]={n="Blinded						",d="The character cannot see. He takes a –2 penalty to Armor Class, loses his Dexterity bonus to AC (if any), moves at half speed, and takes a –4 penalty on Search checks and on most Strength- and Dexterity-based skill checks. All checks and activities that rely on vision automatically fail. All opponents are considered to have total concealment (50% miss chance) to the blinded character."},-- All checks and activities that rely on vision (such as reading and Spot checks) automatically fail. Characters who remain blinded for a long time grow accustomed to these drawbacks and can overcome some of them.
-[cond_deafened			]={n="Deafened						",d="A deafened character cannot hear. She takes a –4 penalty on initiative checks, automatically fails Listen checks, and has a 20% chance of spell failure when casting spells with verbal components."},-- Characters who remain deafened for a long time grow accustomed to these drawbacks and can overcome some of them.
-[cond_fatigued			]={n="Fatigued						",d="A fatigued character cannot charge and takes a –2 penalty to Strength and Dexterity. A fatigued character becomes exhausted by doing something else that would normally cause fatigue."},-- Doing anything that would normally cause fatigue causes the fatigued character to become exhausted. After 8 hours of complete rest, fatigued characters are no longer fatigued.	can neither run nor charge
-[cond_exhausted			]={n="Exhausted						",d="An exhausted character moves at half speed and takes a –6 penalty to Strength and Dexterity."},-- After 1 hour of complete rest, an exhausted character becomes fatigued. A fatigued character becomes exhausted by doing something else that would normally cause fatigue.
-[cond_sickened			]={n="Sickened						",d="The character takes a –2 penalty on all attack rolls, weapon damage rolls, saving throws, skill checks, and ability checks."},
-[cond_nauseated			]={n="Nauseated						",d="Experiencing stomach distress. Nauseated creatures are unable to attack, cast spells, or do anything else requiring attention. The only action such a character can take is a single move action per turn."},-- cast spells, concentrate on spells
-[cond_staggered			]={n="Staggered						",d="A staggered character may take a single move or standard action each round."},-- A character whose nonlethal damage exactly equals his current hit points is staggered.  A character whose current hit points exceed his nonlethal damage is no longer staggered; a character whose nonlethal damage exceeds his hit points becomes unconscious.	 (but not both, nor can she take full-round actions)
-[cond_dazed				]={n="Dazed							",d="A dazed creature can take no actions, but has no penalty to AC."},-- The creature is unable to act normally. A dazed condition typically lasts 1 round.
-[cond_flat_footed		]={n="Flat-Footed					",d="A character who has not yet acted during a combat is flat-footed, not yet reacting normally to the situation. A flat-footed character loses his Dexterity bonus to AC (if any) and cannot make attacks of opportunity."},
-[cond_surprise			]={n="Surprised"					,d="No actions in the first round of the battle."},
+[cond_dazzled			]={n="目が眩んだ状態			",d="目に対する過剰な刺激のため、クリーチャーはよく見えなくなっている。目が眩んでいるクリーチャーは、攻撃ロールと〈捜索〉判定で－１のペナルティを受ける。"},-- , and Spot checks
+[cond_blinded			]={n="盲目状態				",d="The character cannot see. He takes a –2 penalty to Armor Class, loses his Dexterity bonus to AC (if any), moves at half speed, and takes a –4 penalty on Search checks and on most Strength- and Dexterity-based skill checks. All checks and activities that rely on vision automatically fail. All opponents are considered to have total concealment (50% miss chance) to the blinded character."},-- All checks and activities that rely on vision (such as reading and Spot checks) automatically fail. Characters who remain blinded for a long time grow accustomed to these drawbacks and can overcome some of them.
+[cond_deafened			]={n="Deafened				",d="A deafened character cannot hear. She takes a –4 penalty on initiative checks, automatically fails Listen checks, and has a 20% chance of spell failure when casting spells with verbal components."},-- Characters who remain deafened for a long time grow accustomed to these drawbacks and can overcome some of them.
+[cond_fatigued			]={n="Fatigued				",d="A fatigued character cannot charge and takes a –2 penalty to Strength and Dexterity. A fatigued character becomes exhausted by doing something else that would normally cause fatigue."},-- Doing anything that would normally cause fatigue causes the fatigued character to become exhausted. After 8 hours of complete rest, fatigued characters are no longer fatigued.	can neither run nor charge
+[cond_exhausted			]={n="Exhausted				",d="An exhausted character moves at half speed and takes a –6 penalty to Strength and Dexterity."},-- After 1 hour of complete rest, an exhausted character becomes fatigued. A fatigued character becomes exhausted by doing something else that would normally cause fatigue.
+[cond_sickened			]={n="Sickened				",d="The character takes a –2 penalty on all attack rolls, weapon damage rolls, saving throws, skill checks, and ability checks."},
+[cond_nauseated			]={n="Nauseated				",d="Experiencing stomach distress. Nauseated creatures are unable to attack, cast spells, or do anything else requiring attention. The only action such a character can take is a single move action per turn."},-- cast spells, concentrate on spells
+[cond_staggered			]={n="Staggered				",d="A staggered character may take a single move or standard action each round."},-- A character whose nonlethal damage exactly equals his current hit points is staggered.  A character whose current hit points exceed his nonlethal damage is no longer staggered; a character whose nonlethal damage exceeds his hit points becomes unconscious.	 (but not both, nor can she take full-round actions)
+[cond_dazed				]={n="Dazed					",d="A dazed creature can take no actions, but has no penalty to AC."},-- The creature is unable to act normally. A dazed condition typically lasts 1 round.
+[cond_flat_footed		]={n="Flat-Footed			",d="A character who has not yet acted during a combat is flat-footed, not yet reacting normally to the situation. A flat-footed character loses his Dexterity bonus to AC (if any) and cannot make attacks of opportunity."},
+[cond_surprise			]={n="不意を討たれた状態"		,d="戦闘の最初のラウンドで行動できない状態。"},
 
-[cond_shaken			]={n="Shaken"						,d="–2 penalty on all attack rolls, saving throws, skill checks, and ability checks."},-- A shaken character takes a	Shaken is a less severe state of fear than frightened or panicked.
-[cond_frightened		]={n="Frightened"					,d="A frightened creature flees from the source of its fear as best it can. If unable to flee, it may fight.\n\nIn addition, the creature takes a -2 penalty on all attack rolls, saving throws, skill checks, and ability checks."},-- A frightened creature takes a	A frightened creature can use special abilities, including spells, to flee; indeed, the creature must use such means if they are the only way to escape. Frightened is like shaken, except that the creature must flee if possible. Panicked is a more extreme state of fear.
-[cond_panicked			]={n="Panicked"						,d="A panicked creature drops anything it holds and flees at top speed from the source of its fear. It can't take any other actions.\n\nIn addition, the creature takes a -2 penalty on all saving throws, skill checks, and ability checks."},--, as well as any other dangers it encounters, along a random path	A panicked creature can use special abilities, including spells, to flee; indeed, the creature must use such means if they are the only way to escape.	If cornered, the creature cowers and does not attack, typically using the total defense action in combat.	Panicked is a more extreme state of fear than shaken or frightened.
-[cond_cowering			]={n="Cowering"						,d="The creature is frozen in fear and can take no actions. It takes a -2 penalty to AC and loses its Dexterity bonus to AC (if any)."},
+[cond_shaken			]={n="怯え状態"				,d="すべての攻撃ロール、セービング・スロー、技能判定、および能力判定に -2 のペナルティを受ける。"},-- A shaken character takes a	Shaken is a less severe state of fear than frightened or panicked.
+[cond_frightened		]={n="恐怖状態"				,d="恐怖状態のクリーチャーは［恐怖］の原因から全力で逃げる。逃げることができない場合、彼らは戦うこともある。\n\n全ての攻撃ロール、セーヴィング・スロー、技能判定、能力判定に -2 のペナルティを受ける。"},-- A frightened creature takes a	A frightened creature can use special abilities, including spells, to flee; indeed, the creature must use such means if they are the only way to escape. Frightened is like shaken, except that the creature must flee if possible. Panicked is a more extreme state of fear.
+[cond_panicked			]={n="恐慌状態"				,d="恐慌状態に陥ったクリーチャーは、手に持っている全てのものを落とし、［恐怖］の原因から可能な限り早く逃げ去る。他のアクションは実行できない。\n\nさらに、クリーチャーはすべてのセービング・スロー、技能判定、能力判定に -2 のペナルティを受ける。"},--, as well as any other dangers it encounters, along a random path	A panicked creature can use special abilities, including spells, to flee; indeed, the creature must use such means if they are the only way to escape.	If cornered, the creature cowers and does not attack, typically using the total defense action in combat.	Panicked is a more extreme state of fear than shaken or frightened.
+[cond_cowering			]={n="戦慄状態"				,d="クリーチャーは［恐怖］に凍りつきアクションを行うことができない。戦慄状態のクリーチャーはACに -2 のペナルティを受け、【敏捷力】ボーナスを（もしあるなら）失う。"},
 
-[cond_dmg_str			]={n="Str Damage"					,d="Str score reduced temporarily. Str 0 means prone and helpless."},
-[cond_dmg_dex			]={n="Dex Damage"					,d="Dex score reduced temporarily. Dex 0 means helpless."},
-[cond_dmg_con			]={n="Con Damage"					,d="Con score reduced temporarily. Con 0 means dead."},
-[cond_dmg_int			]={n="Int Damage"					,d="Int score reduced temporarily. Int 0 means unconscious."},
-[cond_dmg_wis			]={n="Wis Damage"					,d="Wis score reduced temporarily. Wis 0 means unconscious."},
-[cond_dmg_cha			]={n="Cha Damage"					,d="Cha score reduced temporarily. Cha 0 means unconscious."},
-[cond_drn_str			]={n="Str Drain"					,d="Str score reduced permanently. Str 0 means prone and helpless."},
-[cond_drn_dex			]={n="Dex Drain"					,d="Dex score reduced permanently. Dex 0 means helpless."},
-[cond_drn_con			]={n="Con Drain"					,d="Con score reduced permanently. Con 0 means dead."},
-[cond_drn_int			]={n="Int Drain"					,d="Int score reduced permanently. Int 0 means unconscious."},
-[cond_drn_wis			]={n="Wis Drain"					,d="Wis score reduced permanently. Wis 0 means unconscious."},
-[cond_drn_cha			]={n="Cha Drain"					,d="Cha score reduced permanently. Cha 0 means unconscious."},
-[cond_dmg_phy			]={n="Physical Abilities Damage"	,d="Physical ability scores reduced temporarily."},
-[cond_dmg_mtl			]={n="Mental Abilities Damage"		,d="Mental ability scores reduced temporarily."},
-[cond_dmg_all			]={n="All Abilities Damage"			,d="All ability scores reduced temporarily."},
-[cond_drn_phy			]={n="Physical Abilities Drain"		,d="Physical ability scores reduced permanently."},
-[cond_drn_mtl			]={n="Mental Abilities Drain"		,d="Mental ability scores reduced permanently."},
-[cond_drn_all			]={n="All Abilities Drain"			,d="All ability scores reduced permanently."},
-[cond_energy_drained	]={n="Energy Drained"				,d="The character gains one or more negative levels. If he has at least as many negative levels as his levels, he dies. Each negative level gives the following penalties: –1 penalty on attack rolls, saving throws, skill checks, ability checks; loss of 5 hit points; and –1 to effective level (for determining the power, duration, DC, and other details of spells or special abilities). In addition, a spellcaster loses one spell or spell slot from the highest spell level castable."},-- , which might permanently drain the character’s levels	Hit Dice
+[cond_dmg_str			]={n="【筋力】ダメージ"		,d="【筋力】が一時的に減少する。【筋力】が 0 とは、伏せ状態で無防備状態であることを意味する。"},
+[cond_dmg_dex			]={n="【敏捷力】ダメージ"		,d="【敏捷力】が一時的に減少する。【敏捷力】が 0 とは無防備状態を意味する。"},
+[cond_dmg_con			]={n="【耐久力】ダメージ"		,d="【耐久力】が一時的に減少する。【耐久力】が 0 とは死んだことを意味する。"},
+[cond_dmg_int			]={n="【知力】ダメージ"		,d="【知力】が一時的に減少する。 【知力】が 0 とは気絶状態を意味する。"},
+[cond_dmg_wis			]={n="【判断力】ダメージ"		,d="【判断力】が一時的に減少する。【判断力】が 0 とは気絶状態を意味する。"},
+[cond_dmg_cha			]={n="【魅力】ダメージ"		,d="【魅力】が一時的に減少する。【魅力】が 0 とは気絶状態を意味する。"},
+[cond_drn_str			]={n="【筋力】吸収"			,d="【筋力】の値が恒久的に低下した。 【筋力】 0 とは、伏せ状態 かつ 無防備状態 を意味する。"},
+[cond_drn_dex			]={n="【敏捷力】吸収"			,d="【敏捷力】の値が恒久的に低下した。 【敏捷力】 0 とは、無防備状態 を意味する。"},
+[cond_drn_con			]={n="【耐久力】吸収"			,d="【耐久力】の値が恒久的に低下した。 【耐久力】 0 とは、死亡状態 を意味する。"},
+[cond_drn_int			]={n="【知力】吸収"			,d="【知力】の値が恒久的に低下した。 【知力】 0 とは、気絶状態 を意味する。"},
+[cond_drn_wis			]={n="【判断力】吸収"			,d="【判断力】の値が恒久的に低下した。 【判断力】 0 とは、気絶状態 を意味する。"},
+[cond_drn_cha			]={n="【魅力】吸収"			,d="【魅力】の値が恒久的に低下した。 【魅力】 0 とは、気絶状態 を意味する。"},
+[cond_dmg_phy			]={n="能力（物理）ダメージ"	,d="能力（物理）が一時的に低下した。"},
+[cond_dmg_mtl			]={n="能力（精神）ダメージ"	,d="能力（精神）が一時的に低下した。"},
+[cond_dmg_all			]={n="能力（すべて）ダメージ"	,d="能力（すべて）が一時的に低下した。"},
+[cond_drn_phy			]={n="能力（物理）ダメージ"	,d="能力（物理）が恒久的に低下した。"},
+[cond_drn_mtl			]={n="能力（精神）ダメージ"	,d="能力（精神）が恒久的に低下した。"},
+[cond_drn_all			]={n="能力（すべて）ダメージ"	,d="能力（すべて）が恒久的に低下した。"},
+[cond_energy_drained	]={n="Energy Drained"		,d="The character gains one or more negative levels. If he has at least as many negative levels as his levels, he dies. Each negative level gives the following penalties: –1 penalty on attack rolls, saving throws, skill checks, ability checks; loss of 5 hit points; and –1 to effective level (for determining the power, duration, DC, and other details of spells or special abilities). In addition, a spellcaster loses one spell or spell slot from the highest spell level castable."},-- , which might permanently drain the character’s levels	Hit Dice
 
-[cond_hf_mov			]={n="Slowed"						,d="Movement speed halved and unable to charge."},
-[cond_no_mov			]={n="Immobilized"					,d="Unable to move."},
-[cond_prone				]={n="Prone"						,d="Lying on the ground, melee attack and defense reduced and movement slowed."},
-[cond_entangled			]={n="Entangled"					,d=""},
+[cond_hf_mov			]={n="減速状態"				,d="移動速度が半分になり、《突撃》できない。"},
+[cond_no_mov			]={n="移動不能状態"			,d="移動できない状態。"},
+[cond_prone				]={n="伏せ状態"				,d="地面に横たわっている状態。近接攻撃と防御が減り、移動が遅くなる。"},
+[cond_entangled			]={n="Entangled"			,d=""},
 
-[cond_grapper			]={n="Grappling"					,d="Focused on suppressing the target and can not do other action, unless cancel the grappling first."},
-[cond_grap				]={n="Grappled"						,d="Suppressed and can not act. Automatically try to break free on turn start."},
-[cond_pinned			]={n="Pinned"						,d=""},
-[cond_stunned			]={n="Stunned"						,d="A stunned creature drops everything held, can't take actions, takes a -2 penalty to AC, and loses its Dexterity bonus to AC (if any)."},
-[cond_helpless			]={n="Helpless"						,d="Cannot take any actions."},
-[cond_unconscious		]={n="Unconscious"					,d="Unconscious, cannot take any actions."},
-[cond_paralyzed			]={n="Paralyzed"					,d="Freezes in place, cannot take any actions."},
-[cond_stone				]={n="Stoned"						,d="Turned into a stone. Cannot take any actions, but resists most types of damage, except the bludgeoning damage type that deal more damage."},
-[cond_sleep				]={n="Asleep"						,d=pwr_sleep_d},
-[cond_turn				]={n="Turned"						,d="Out of control and automatically run away from the dispeller."},
+[cond_grapper			]={n="組み付き"				,d="ターゲットのアクションを抑止することに集中する。他のアクションを実行することはできない。"},
+[cond_grap				]={n="組み付かれた状態"		,d="行動が抑制され身動きが取れない状態。 ターン開始時に自動的に脱出しようと試みます。"},
+[cond_pinned			]={n="Pinned"				,d=""},
+[cond_stunned			]={n="朦朧状態"				,d="朦朧状態のクリーチャーは手に持っているものを全て落とし、アクションを行うことができず、ACに -2 のペナルティを受け、（もしあるならば）ACへの【敏捷力】ボーナスを失う。"},
+[cond_helpless			]={n="無防備状態"				,d="行動することができない状態。"},
+[cond_unconscious		]={n="気絶状態"				,d="無意識の状態。行動することができない。"},
+[cond_paralyzed			]={n="麻痺状態"				,d="麻痺状態のキャラクターはその場に凍りつき、移動したり行動することができない状態。"},
+[cond_stone				]={n="石化状態"				,d="石化した状態。何の行動も取れないが、殴打ダメージを除き、ほとんどのダメージタイプに抵抗する。"},
+[cond_sleep				]={n="睡眠状態"				,d=pwr_sleep_d},
+[cond_turn				]={n="退散状態"				,d="制御不能で自動的に退散使用者から逃げる。"},
 
-[cond_disabled			]={n="Disabled"						,d=""},
-[cond_dying				]={n="Dying"						,d=""},
-[cond_stable			]={n="Stable"						,d=""},
-[cond_dead				]={n="Dead"							,d=""},
-[cond_fascinated		]={n="Fascinated"					,d=""},
-[cond_confused			]={n="Confused"						,d=""},
-[cond_invisible			]={n="Invisible"					,d=""},
-[cond_incorporeal		]={n="Incorporeal"					,d=""},
-[cond_checked			]={n="Checked"						,d=""},
-[cond_knocked_down		]={n="Knocked Down"					,d=""},
-[cond_blown_away		]={n="Blown Away"					,d=""},
+[cond_disabled			]={n="Disabled"				,d=""},
+[cond_dying				]={n="Dying"				,d=""},
+[cond_stable			]={n="Stable"				,d=""},
+[cond_dead				]={n="Dead"					,d=""},
+[cond_fascinated		]={n="Fascinated"			,d=""},
+[cond_confused			]={n="Confused"				,d=""},
+[cond_invisible			]={n="Invisible"			,d=""},
+[cond_incorporeal		]={n="Incorporeal"			,d=""},
+[cond_checked			]={n="Checked"				,d=""},
+[cond_knocked_down		]={n="Knocked Down"			,d=""},
+[cond_blown_away		]={n="Blown Away"			,d=""},
 
-[cond_red_ache			]={n="Red Ache						",d="Skin turns red, bloated, and warm to the touch. Deals 1d6 Str damage when strikes."},
-[cond_devil_chills		]={n="Devil Chills					",d="Barbazu and pit fiends spread it. Deals 1d4 Str damage when strikes. It takes three, not two, successful saves in a row to recover from devil chills."},-- The victim must make three successful Fortitude saving throws in a row to recover from devil chills.
-[cond_blinding_sickness	]={n="Blinding Sickness				",d="Spread in tainted water. Deals 1d4 Str damage when strikes. Each time the victim takes 2 or more damage from the disease, he must make another Fortitude save or be permanently blinded."},
-[cond_shakes			]={n="Shakes						",d="Causes involuntary twitches, tremors, and fits. Deals 1d8 Dex damage when strikes."},
-[cond_filth_fever		]={n="Filth Fever					",d="Dire rats and otyughs spread it. Those injured while in filthy surroundings might also catch it. Deals 1d3 Dex and 1d3 Con damage when strikes."},
-[cond_demon_fever		]={n="Demon Fever					",d="Night hags spread it. Deals 1d6 Con damage when strikes. When damaged, character must succeed on another saving throw or 1 point of damage is permanent drain instead."},-- Can cause permanent ability drain.
-[cond_mummy_rot			]={n="Mummy Rot						",d="Spread by mummies. Deals 1d6 Con damage when strikes. Successful saving throws do not allow the character to recover (though they do prevent damage normally). Only magical healing can save the character."},
-[cond_slimy_doom		]={n="Slimy Doom					",d="Victim turns into infectious goo from the inside out. Deals 1d4 Con damage when strikes. When damaged, character must succeed on another saving throw or 1 point of damage is permanent drain instead."},-- Can cause permanent ability drain.
-[cond_mindfire			]={n="Mindfire						",d="Feels like your brain is burning. Causes stupor. Deals 1d4 Int damage when strikes."},
-[cond_cackle_fever		]={n="Cackle Fever					",d="Symptoms include high fever, disorientation, and frequent bouts of hideous laughter. Also known as “the shrieks”. Deals 1d6 Wis damage when strikes."},
+[cond_red_ache			]={n="Red Ache				",d="Skin turns red, bloated, and warm to the touch. Deals 1d6 Str damage when strikes."},
+[cond_devil_chills		]={n="Devil Chills			",d="Barbazu and pit fiends spread it. Deals 1d4 Str damage when strikes. It takes three, not two, successful saves in a row to recover from devil chills."},-- The victim must make three successful Fortitude saving throws in a row to recover from devil chills.
+[cond_blinding_sickness	]={n="Blinding Sickness		",d="Spread in tainted water. Deals 1d4 Str damage when strikes. Each time the victim takes 2 or more damage from the disease, he must make another Fortitude save or be permanently blinded."},
+[cond_shakes			]={n="Shakes				",d="Causes involuntary twitches, tremors, and fits. Deals 1d8 Dex damage when strikes."},
+[cond_filth_fever		]={n="Filth Fever			",d="Dire rats and otyughs spread it. Those injured while in filthy surroundings might also catch it. Deals 1d3 Dex and 1d3 Con damage when strikes."},
+[cond_demon_fever		]={n="Demon Fever			",d="Night hags spread it. Deals 1d6 Con damage when strikes. When damaged, character must succeed on another saving throw or 1 point of damage is permanent drain instead."},-- Can cause permanent ability drain.
+[cond_mummy_rot			]={n="Mummy Rot				",d="Spread by mummies. Deals 1d6 Con damage when strikes. Successful saving throws do not allow the character to recover (though they do prevent damage normally). Only magical healing can save the character."},
+[cond_slimy_doom		]={n="Slimy Doom			",d="Victim turns into infectious goo from the inside out. Deals 1d4 Con damage when strikes. When damaged, character must succeed on another saving throw or 1 point of damage is permanent drain instead."},-- Can cause permanent ability drain.
+[cond_mindfire			]={n="Mindfire				",d="Feels like your brain is burning. Causes stupor. Deals 1d4 Int damage when strikes."},
+[cond_cackle_fever		]={n="Cackle Fever			",d="Symptoms include high fever, disorientation, and frequent bouts of hideous laughter. Also known as “the shrieks”. Deals 1d6 Wis damage when strikes."},
 
-[cond_command_fight		]={n="Command: Fight				",d="On your turn, You fight as hard as you can."},
-[cond_command_approach	]={n="Command: Approach				",d="On your turn, you may do nothing but move toward the caster as quickly and directly as possible for 1 round."},
-[cond_command_flee		]={n="Command: Flee					",d="On your turn, you may do nothing but move away from the caster as quickly as possible for 1 round."},
-[cond_command_halt		]={n="Command: Halt					",d="On your turn, you stand in place for 1 round. You may not take any actions but are not considered helpless."},
-[cond_command_fall		]={n="Command: Fall					",d="On your turn, you fall to the ground and remains prone for 1 round. You may act normally while prone but take any appropriate penalties."},
-[cond_command_drop		]={n="Command: Drop					",d="On your turn, you drop whatever you are holding. You can't pick up any dropped item until your next turn."},
+[cond_command_fight		]={n="Command: Fight		",d="On your turn, You fight as hard as you can."},
+[cond_command_approach	]={n="Command: Approach		",d="On your turn, you may do nothing but move toward the caster as quickly and directly as possible for 1 round."},
+[cond_command_flee		]={n="Command: Flee			",d="On your turn, you may do nothing but move away from the caster as quickly as possible for 1 round."},
+[cond_command_halt		]={n="Command: Halt			",d="On your turn, you stand in place for 1 round. You may not take any actions but are not considered helpless."},
+[cond_command_fall		]={n="Command: Fall			",d="On your turn, you fall to the ground and remains prone for 1 round. You may act normally while prone but take any appropriate penalties."},
+[cond_command_drop		]={n="Command: Drop			",d="On your turn, you drop whatever you are holding. You can't pick up any dropped item until your next turn."},
 
-[cond_warm_shield		]={n="Warm Shield					",d=pwr_fire_shield_f},
-[cond_chill_shield		]={n="Chill Shield					",d=pwr_fire_shield_c},
-[cond_prayer_favor		]={n="Prayer: Favor					",d="Special favor is upon you. You gain a +1 luck bonus on attack rolls, weapon damage rolls, saves, and skill checks."},
-[cond_prayer_disfavor	]={n="Prayer: Disfavor				",d="Special disfavor is upon you. You take a -1 penalty on attack rolls, weapon damage rolls, saves, and skill checks."},
-[cond_curse_penalty		]={n="Curse: Penalty				",d="-4 penalty on attack rolls, saves, ability checks, and skill checks."},
-[cond_curse_disorder	]={n="Curse: Disorder				",d="Has a 50% chance to act normally; otherwise, takes no action."},
-[cond_comatose			]={n="Comatose						",d="The subject falls into a catatonic coma. During this time, it cannot be awakened by any means short of dispelling the effect. This is not a sleep effect, and thus elves are not immune to it."},-- The subject falls into a catatonic coma for 10 minutes per caster level
-[cond_ethereal			]={n="Ethereal"						,d=pwr_ethereal_jaunt_d},
-[cond_death_atk_1		]={n=s_death_atk_1					,d=s_death_atk_d},
-[cond_death_atk_2		]={n=s_death_atk_2					,d=s_death_atk_d},
+[cond_warm_shield		]={n="Warm Shield			",d=pwr_fire_shield_f},
+[cond_chill_shield		]={n="Chill Shield			",d=pwr_fire_shield_c},
+[cond_prayer_favor		]={n="Prayer: Favor			",d="特別な恩恵があなたに与えられる。攻撃ロール、武器ダメージロール、セーブ、スキルチェックに+1幸運ボーナスを得ることができる。"},
+[cond_prayer_disfavor	]={n="Prayer: Disfavor		",d="特別な不運があなたを襲う。攻撃ロール、武器ダメージロール、セーブ、スキルチェックに-1ペナルティを受ける。"},
+[cond_curse_penalty		]={n="Curse: Penalty		",d="-4 penalty on attack rolls, saves, ability checks, and skill checks."},
+[cond_curse_disorder	]={n="Curse: Disorder		",d="Has a 50% chance to act normally; otherwise, takes no action."},
+[cond_comatose			]={n="Comatose				",d="The subject falls into a catatonic coma. During this time, it cannot be awakened by any means short of dispelling the effect. This is not a sleep effect, and thus elves are not immune to it."},-- The subject falls into a catatonic coma for 10 minutes per caster level
+[cond_ethereal			]={n="エーテル"				,d="エーテル状態のクリーチャーは目に見えず、実体がなく、固体の物体を通り抜けることができる。 エーテル状態のクリーチャーと物質的なクリーチャーはお互いを攻撃することはできない。"},-- pwr_ethereal_jaunt_d
+[cond_death_atk_1		]={n=s_death_atk_1			,d=s_death_atk_d},
+[cond_death_atk_2		]={n=s_death_atk_2			,d=s_death_atk_d},
 }

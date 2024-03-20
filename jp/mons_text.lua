@@ -1,174 +1,170 @@
 -- z_mon	there are some same text in races.lua, copy & paste may needed.
 monsters={
-{n="Giant Ant Soldier"},
-{n="Giant Ant Worker"},
-{n="Giant Ant Drone"},
-{n="Giant Ant Queen"},
-{n="Hunting Giant Spider"},
-{n="Web-Spinning Giant Spider"},
+{n="ジャイアント・アント・ソルジャー"},
+{n="ジャイアント・アント・ワーカー"},
+{n="ジャイアント・アント・ドローン"},
+{n="ジャイアント・アント・クイーン"},
+{n="ハンティング・ジャイアント・スパイダー"},
+{n="ウェブスピニング・ジャイアント・スパイダー"},
 
-{n="Giant Rat"},
-{n="Dire Rat"},
-{n="Wolf"},
-{n="Dire Wolf"},
-{n="Boar"},
-{n="Dire Boar"},
-{n="Brown Bear"},
-{n="Dire Bear"},
+{n="ジャイアント・ラット"},
+{n="ダイア・ラット"},
+{n="ウルフ"},
+{n="ダイア・ウルフ"},
+{n="ボア"},
+{n="ダイア・ボア"},
+{n="ブラウンベア"},-- Brown Bear
+{n="ダイア・ベア"},
 
-{n="Salamander"},
-{n="Toxic Lizard"},
-{n="Shocker Lizard"},
-{n="Basilisk"},
+{n="サラマンダー"},
+{n="トキシック・リザード"},
+{n="ショッカー・リザード"},
+{n="バジリスク"},
 
-{n="Goblin Recruit"},
-{n="Goblin Scout"},
-{n="Goblin Cutthroat"},
-{n="Goblin Impaler"},
-{n="Goblin Rogue"},
-{n="Goblin Shooter"},
-{n="Goblin Arsonist"},
-{n="Goblin Frog Whisperer"},
+{n="ゴブリンの新兵"},
+{n="ゴブリンの斥候"},
+{n="ゴブリン人殺し"},
+{n="ゴブリン刺突者"},
+{n="ゴブリンのローグ"},
+{n="ゴブリンの射手"},
+{n="ゴブリンの放火魔"},
+{n="ゴブリンのフロッグ・ウィスパラー"},
 
-{n="Bugbear Fleshcarver"},
-{n="Bugbear Bloodseeker"},
-{n="Bugbear Strangler"},
-{n="Bugbear Chieftain"},
+{n="バグベア・フレッシュカーヴァー"},
+{n="バグベア・ブラッドシーカー"},
+{n="バグベアの絞殺魔"},
+{n="バグベア・チーフテン"},
 
-{n="Hobgoblin Recruit"},
-{n="Hobgoblin Soldier"},
-{n="Hobgoblin Archer"},
-{n="Hobgoblin Ranger"},
-{n="Hobgoblin Warpriest"},
-{n="Hobgoblin Warcaster"},
-{n="Hobgoblin Commander"},
-{n="Hobgoblin Warlord"},
+{n="ホブゴブリンの新兵"},
+{n="ホブゴブリンの兵士"},
+{n="ホブゴブリンの射手"},
+{n="ホブゴブリンの警備隊"},
+{n="ホブゴブリンの戦司祭"},
+{n="ホブゴブリンの戦呪文使い"},
+{n="ホブゴブリンの指揮官"},
+{n="ホブゴブリンの将軍"},
 
-{n="Kobold Miner"},
-{n="Kobold Skirmisher"},
-{n="Kobold Slinger"},
-{n="Kobold Dragonshield"},
-{n="Kobold Wyrmsorcerer"},
-{n="Kobold Wyrmpriest"},
+{n="コボルドの鉱夫"},
+{n="コボルドの散兵"},
+{n="コボルドのスリング使い"},
+{n="コボルドの竜盾使い"},
+{n="コボルドの竜呪文使い"},
+{n="コボルドの竜司祭"},
 
-{n="Greenscale Seeker"},
-{n="Blackscale Bruiser"},
-{n="Greenscale Hunter"},
-{n="Greenscale Marsh Mystic"},
-{n="Poisonscale Magus"},
-{n="Blackscale Dragonsorcerer"},
+{n="グリーンスケールの探索者"},
+{n="ブラックスケールの乱暴者"},
+{n="グリーンスケールの狩人"},
+{n="グリーンスケールの沼秘術使い"},
+{n="ポイズンスケールの大魔術師"},
+{n="ブラッドスケールの竜術使い"},
 
-{n="Gnoll Poacher"},
-{n="Gnoll Marauder"},
-{n="Gnoll Claw Fighter"},
-{n="Gnoll Hunter"},
-{n="Gnoll Huntmaster"},
-{n="Gnoll Packleader"},
+{n="ノールの密猟者"},
+{n="ノールの殺人鬼"},
+{n="ノールの爪戦士"},
+{n="ノールの狩人"},
+{n="ノールの熟練狩人"},
+{n="ノールの群れを率いる者"},
 
-{n="Orc Drudge"},
-{n="Orc Scout"},
-{n="Orc Raider"},
-{n="Orc Bloodrager"},
-{n="Orc Scar Witch Doctor"},
-{n="Orc Blademaster"},
-{n="Orc Chieftain"},
-{n="Orog Archer"},
-{n="Orog Chieftain"},
+{n="オークの奴隷"},
+{n="オークの斥候"},
+{n="オークの略奪者"},
+{n="オークのブラッドレイジャー"},
+{n="オークのスカー・ウィッチ・ドクター"},
+{n="オークの剣術使い"},
+{n="オーク・チーフテン"},
+{n="オログの射手"},
+{n="オログ・チーフテン"},
 
-{n="Ogre"},
-{n="Ogre King"},
+{n="オーガ"},
+{n="オーガ・キング"},
 
-{n="Troll"},
-{n="War Troll"},
-{n="Troll Great Mistress"},
+{n="トロール"},
+{n="ウォー・トロール"},
+{n="トロール・グレート・ミストレス"},
 
-{n="Wererat Swordman"},
-{n="Wererat Crossbowman"},
+{n="ワーラットの剣士"},
+{n="ワーラットのクロスボウ使い"},
 
-{n="Werewolf"},
-{n="Werewolf Lord"},
+{n="ワーウルフ"},
+{n="ワーウルフの群れを率いる者"},-- Werewolf Lord
 
-{n="Minotaur"},
-{n="Medusa"},
+{n="ミノタウロス"},
+{n="メドゥーサ"},
 
-{n="Drow Deathblades"},
-{n="Drow Poison Crossbowmaster"},
-{n="Drow Priestess"},
-{n="Drow Mistress"},
+{n="ドラウ・デスブレード"},
+{n="ドラウ・ポイズン・クロスボウマスター"},
+{n="ドラウ・プリーステス"},
+{n="ドラウ・ミストレス"},
 
-{n="Human Swordman Recruit"},
-{n="Human Crossbowman Recruit"},
-{n="Human Cleric"},
-{n="Human Archbishop"},
-{n="Human Mage"},
-{n="Elf Archer"},
-{n="Elf Arcane Archer"},
-{n="Elf Scout"},
-{n="Dwarf Guard"},
-{n="Dwarf Mauler"},
-{n="Gnome Hypnotist"},
-{n="Halfling Slinger"},
-{n="Halfling Thief"},
-{n="Halfling Assassin Leader"},
-{n="Half-orc Berserker"},
+{n="ヒューマンの新兵（剣使い）"},
+{n="ヒューマンの新兵（クロスボウ使い）"},
+{n="ヒューマンのクレリック"},
+{n="ヒューマンのアークビショップ"},
+{n="ヒューマンのメイジ"},
+{n="エルフの射手"},
+{n="エルフのアーケイン・アーチャー"},
+{n="エルフの斥候"},
+{n="ドワーフの守備兵"},
+{n="ドワーフのモール使い"},
+{n="ノームの催眠術師"},
+{n="ハーフリングのスリング使い"},
+{n="ハーフリングの盗賊"},
+{n="ハーフリングの暗殺者のリーダー"},
+{n="ハーフオークのバーサーカー"},
 
-{n="Skeleton Warrior"},
-{n="Skeleton Archer"},
-{n="Decrepit Skeleton"},
-{n="Skeletal Champion"},
-{n="Zombie"},
-{n="Plague Zombie"},
-{n="Zombie Lord"},
-{n="Ghoul"},
-{n="Horde Ghoul"},
-{n="Vampire"},
-{n="Vampire Spawn"},
-{n="Vampire Lord"},
-{n="Lich"},
-{n="Demilich"},
+{n="スケルトン・ウォリアー"},
+{n="スケルトン・アーチャー"},
+{n="ガタガタのスケルトン"},
+{n="スケルトン・チャンピオン"},
+{n="ゾンビ"},
+{n="疫病ゾンビ"},
+{n="ゾンビ・ロード"},
+{n="グール"},
+{n="グールの群れ"},
+{n="ヴァンパイア"},
+{n="ヴァンパイア・スポーン"},
+{n="ヴァンパイア・ロード"},
+{n="リッチ"},
+{n="デミリッチ"},
 
-{n="Clay Golem"},
-{n="Stone Golem Guard"},
-{n="Obsidian Golem"},
-{n="Iron Golem Defender"},
-{n="Clockwork Servant"},
-{n="Clockwork Soldier"},
+{n="クレイ・ゴーレム"},
+{n="ストーン・ゴーレム・ガード"},
+{n="オブシディアン・ゴーレム"},
+{n="アイアン・ゴーレム・ディフェンダー"},
+{n="クロックワーク・サーヴァント"},
+{n="クロックワーク・ソルジャー"},
 
---{n="Air Elemental"},
---{n="Fire Elemental"},
---{n="Water Elemental"},
---{n="Earth Elemental"},
+--{n="エア・エレメンタル"},
+--{n="ファイア・エレメンタル"},
+--{n="ウォーター・エレメンタル"},
+--{n="アース・エレメンタル"},
 }
 
 s_abi_mods_ex=[[
-<b c=tg>+2 One Ability Score: </b>Human characters get a +2 bonus to one ability score of their choice at creation to represent their varied nature.
+<b c=tg>能力値：</b>人間のキャラクターは、様々な性質を表現するために作成時に選択した1つの能力値に +2のボーナスを得る。
 
-<b c=tg>+2 Dex, +2 Int, <c=tr>-2 Con: </c></b>Elves are nimble, both in body and mind, but their form is frail.
+<b c=tg>+2 Dex, +2 Int, <c=tr>-2 Con：</c></b>エルフは、心身共に鋭敏だが、その姿は華奢だ。
 
-<b c=tg>+2 One Ability Score: </b>Half-elf characters get a +2 bonus to one ability score of their choice at creation to represent their varied nature.
+<b c=tg>能力値：</b>ハーフエルフのキャラクターは、彼らの多様な特質の為、作成時に選択した一つの能力値に対して +2 のボーナスを得る。
 
-<b c=tg>+2 Con, +2 Wis, <c=tr>-2 Cha: </c></b>Dwarves are both tough and wise, but also a bit gruff.
+<b c=tg>+2 Con, +2 Wis, <c=tr>-2 Cha:</c></b>ドワーフは、タフで賢いが、ちょっと無愛想でもある。
 
-<b c=tg>+2 Int, +2 Cha, <c=tr>-2 Str: </c></b>Gnomes are physically weak but surprisingly hardy, and their attitude makes them naturally agreeable.
+<b c=tg>+2 Int, +2 Cha, <c=tr>-2 Str:</c></b>ノームは物理的に弱いが驚くほど頑丈であり、彼らの態度は自然で快い。
 
-<b c=tg>+2 Dex, +2 Cha, <c=tr>-2 Str: </c></b>Halflings are nimble and strong-willed, but their small stature makes them weaker than other races.
+<b c=tg>+2 Dex, +2 Cha, <c=tr>-2 Str:</c></b>ハーフリングは、機敏で強い意志を持つが、彼らの小さな身長故に、他の種族よりも脆弱だ。
 
-<b c=tg>+2 Str, +2 Con, <c=tr>-2 Int, -2 Cha: </c></b>Half-orcs are strong, but their orc lineage makes them dull and crude.
+<b c=tg>+2 Str, +2 Con, <c=tr>-2 Int, -2 Cha:</c></b>ハーフオークは強いが、緩慢で粗雑だ。
 ]]
 
 
 -- 类人生物	Humanoid
 
 
-s_hum			= "Human"
+s_hum			= "人間"
 s_hum_d			= [[
-Humans possess exceptional drive and a great capacity to endure and expand, and as such are currently the dominant race in the world.
+人間は種族の中で最も適応力があり、柔軟で野心的です。
 
-Their empires and nations are vast, sprawling things, and the citizens of these societies carve names for themselves with the strength of their sword arms and the power of their spells.
-
-Ambitious, sometimes heroic, and always confident, humans have an ability to work together toward common goals that makes them a force to be reckoned with.
-
-Though short-lived compared to other races, their boundless energy and drive allow them to accomplish much in their brief lifetimes.
+ほとんどの人間は、パイオニア、征服者、トレーダー、旅行者、難民や活動的な人々の子孫です。 その結果、人間の土地には、肉体的、文化的、宗教的、政治的に異なる人々が混在しています。
 ]]
 s_hum_eds={
 [race_ed_dd1]=[[
@@ -226,13 +222,13 @@ Even humans who speak the same language may have names that are as varied as the
 }
 
 
-s_elf			= "Elf"
+s_elf			= "エルフ"
 s_elf_d			= [[
-Tall, noble, and often haughty, elves are long-lived and subtle masters of the wilderness.
+エルフは他の人型生物とも自由にまじわるものの、自宅では必ずしも歓迎という様子ではない。
 
-Elves excel in the arcane arts. Often they use their intrinsic link to nature to forge new spells and create wondrous items that, like their creators, seem nearly impervious to the ravages of time.
+エルフたちは自然の物と単純な美を好み、詩文、舞踏、歌唱、伝承知識、そして魔法の技で名を馳せている。
 
-A private and often introverted race, elves can give the impression they are indifferent to the plights of others.
+彼らの森の故郷に脅威が迫ると、彼らのその断固たる軍事的側面があらわになり、ソード、ボウ、そして戦術に関する技能を存分に立証する。
 ]]
 s_elf_eds={
 [race_ed_dd1]=[[
@@ -290,7 +286,7 @@ Amrunelara, Dardlara, Faunra, Jathal, Merisiel, Oparal, Soumral, Tessara, Yaland
 }
 
 
-s_drow="Drow"
+s_drow="ドラウ"
 s_drow_c="This dark-skinned elf stands in a battle-ready pose, her hair silver and eyes white and pupilless."
 s_drow_fav_cls="Male drow favor martial or stealth classes that put them close to their enemies and their homes, as either soldiers or spies. Female drow typically assume classes that lend themselves to leadership, such as bards and especially clerics. Both genders have an innate talent for the arcane arts, and may be wizards or summoners."..add_hr("Changed drow's favored class from Wizard (male) or Cleric (female) to Wizard temporarily.")
 s_drow_traits=[[
@@ -408,11 +404,13 @@ Drow nobles are more powerful than the majority of their kin, and as such they q
 ]]
 
 
-s_hfe			= "Half-elf"
+s_hfe			= "ハーフエルフ"
 s_hfe_d			= [[
-Often caught between the worlds of their progenitor races, half-elves are a race of both grace and contradiction.
+人間とエルフは、時々結婚し、エルフは人間のエネルギーに、人間はエルフの恵みに引き寄せらた。
 
-Their dual heritage and natural gifts often create brilliant diplomats and peacemakers, but half-elves are often susceptible to an intense and even melancholic isolation, realizing that they are never truly part of elven or human society.
+人間の寿命は短いためエルフから見ればあっという間である。しかし、彼らは永続的な遺産そしてハーフエルフの子供を残す。
+
+ほとんどのハーフエルフは、洗練された感覚、自然の愛、そして親であるエルフの芸術的な趣味と共に、人間の親の好奇心、創造性、そして野心を持っている。
 ]]
 s_hfe_eds={
 [race_ed_dd1]=[[
@@ -468,13 +466,11 @@ Cathran, Elsbeth, Iandoli, Kieyanna, Lialda, Maddela, Reda, Tamarie.
 }
 
 
-s_dwf			= "Dwarf"
+s_dwf			= "ドワーフ"
 s_dwf_d			= [[
-These short and stocky defenders of mountain fortresses are often seen as stern and humorless.
+世間ではドワーフたちの戦場における技量、物理的および魔法的な損傷に対する強い忍耐力、そして大地の秘密に関する知識といったものを認めている。彼らは過酷な労働をこなすことと共に、大量のエールを痛飲する能力でも有名である。
 
-Known for mining the earth's treasures and crafting magnificent items from ore and gemstones, they have an unrivaled affinity for the bounties of the deep earth.
-
-Dwarves also have a tendency toward traditionalism and isolation that sometimes manifests as xenophobia.
+彼らの古代の神秘的な王国は山脈の中心部に掘り抜かれていたものであり、彼らの感嘆すべき宝物で有名であった。
 ]]
 s_dwf_eds={
 [race_ed_dd1]=[[
@@ -603,13 +599,11 @@ Though these dwarves are typically evil and few can be described as anything oth
 }
 
 
-s_gnm			= "Gnome"
+s_gnm			= "ノーム"
 s_gnm_d			= [[
-Expatriates of the strange land of fey, these small folk have a reputation for flighty and eccentric behavior.
+ノームは、技術者、錬金術師、発明家としてあらゆる場所で歓迎されている。
 
-Many gnomes are whimsical artisans and tinkers, creating strange devices powered by magic, alchemy, and their quirky imagination.
-
-Gnomes have an insatiable need for new experiences that often gets them in trouble.
+技能が求められているにもかかわらず、ほとんどのノームは動物が豊富な森林の下にある快適な巣穴に住んでいる。
 ]]
 s_gnm_eds={
 [race_ed_dd1]=[[
@@ -695,7 +689,7 @@ s_gnm_s_hr_splk="blindness/deafness, blur, disguise self."
 s_gnm_s_langs=[[
 <b>Automatic Languages: </b>Common, Gnome, and Undercommon.
 <b>Bonus Languages: </b>Dwarven, Elven, Giant, Goblin, Orc, and Terran.
- 
+
 <c=twc>Svirfneblin speak Gnome, Common, and Undercommon.</c>
 ]]
 s_gnm_s_d=[[
@@ -737,11 +731,11 @@ Svirfneblin have long fought wars against the duergar, and have a difficult time
 }
 
 
-s_hfl			= "Halfling"
+s_hfl			= "ハーフリング"
 s_hfl_d			= [[
-Members of this diminutive race find strength in family, community, and their own innate and seemingly inexhaustible luck.
+ハーフリングは、賢く有能な日和見主義者だ。ハーフリングは、個人であれ一族であれ、その機会があればいつでも自らの居場所を見つけ出す。
 
-While their fierce curiosity is sometimes at odds with their intrinsic common sense, halflings are eternal optimists and cunning opportunists with an incredible knack for getting out the worst situations.
+彼らは多くの場合、流れ者、旅烏であり、他者は彼らに疑念や好奇心をもって応じる。その一族によって、彼らは（排他的ではあるが）信頼できる、勤勉な市民であるかもしれないし、あるいはただ大きな稼ぎを手にし、真夜中に消える機会を待つ盗賊であるかもしれない。いずれにしても、ハーフリングは狡猾で機知に富んだ、苦境を生き延びる者たちである。
 ]]
 s_hfl_eds={
 [race_ed_dd1]=[[
@@ -797,13 +791,11 @@ Anafa, Bellis, Etune, Filiu, Irlana, Marra, Pressi, Rilka, Sistra, Wyssal, Yamyr
 }
 
 
-s_hfo			= "Half-orc"
+s_hfo			= "ハーフオーク"
 s_hfo_d			= [[
-Often fierce and savage, sometimes noble and resolute, half-orcs can manifest the best and worst qualities of their parent races.
+人間とオークの野蛮な部族の間に生まれ、戦争の時代には戦い、平和の時代には取引をという不安定なバランスで生きている。未開の地で生まれたハーフオークは、人間またはオークの両親と一緒に暮らしており両方の文化にさらされている。一方で、文明社会におけるハーフオークはその武勇を評価される。
 
-Many half-orcs struggle to keep their more bestial natures in check in order to epitomize the most heroic values of humanity.
-
-Unfortunately, many outsiders see half-orcs as hopeless abominations devoid of civility, if not monsters unworthy of pity or parley.
+ハーフオークは短気と鈍い傾向がある。彼らは熟考よりも行動を、議論よりも戦いを好む。しかし、成功した者は、狂った土地ではなく、文明的な土地に住むために十分な自制を持っている。
 ]]
 s_hfo_eds={
 [race_ed_dd1]=[[
@@ -869,7 +861,7 @@ Canan, Drogheda, Goruza, Mazon, Shirish, Tevaga, Zeljka.
 }
 
 
-s_orc			= "Orc"
+s_orc			= "オーク"
 s_orc_c			= "This savage creature looks like a bestial version of a savage human, with green-gray skin and greasy black hair."
 s_orc_d			= [[
 Savage, brutish, and hard to kill, orcs are often the scourge of far-flung wildernesses and cavern deeps.
@@ -962,9 +954,9 @@ Yet the evil personified by the bugbear may be the most terrifying, for they act
 When a hobgoblin kills, it's because of tradition and order. When a goblin kills, it's for fun. But when a bugbear holds its blade, it kills only when it can be assured that the murder will cause maximum pain and suffering to those its weapon does not touch; to a bugbear, the true goal of murder is to strike not at the victim, but at those who held the victim dear.]]
 
 
-s_gob	= "Goblin"
-s_gob_c	= "This creature stands barely three feet tall, its scrawny, humanoid body dwarfed by its wide, ungainly head."
-s_gob_d	= [[
+s_gob			= "ゴブリン"
+s_gob_c			= "This creature stands barely three feet tall, its scrawny, humanoid body dwarfed by its wide, ungainly head."
+s_gob_d			= [[
 Crazy pyromaniacs with a tendency to commit unspeakable violence, goblins are the smallest of the goblinoid races.
 
 While they are a fun-loving race, their humor is often cruel and hurtful.
@@ -1028,9 +1020,9 @@ Geedra, Goomluga, Hoglob, Luckums.
 }
 
 
-s_gob_h		= "Hobgoblin"
-s_gob_h_c	= "Standing as tall as a human, this muscular, orange-skinned creature peers about with tiny, observant eyes."
-s_gob_h_d	= [[
+s_gob_h			= "ホブゴブリン"
+s_gob_h_c		= "Standing as tall as a human, this muscular, orange-skinned creature peers about with tiny, observant eyes."
+s_gob_h_d		= [[
 Hobgoblins are larger cousins of goblins. These creatures are the most disciplined and militaristic of the goblinoid races.
 
 Tall, tough as nails, and strongly built, hobgoblins would be a boon to any adventuring group, were it not for the fact that they tend to be cruel and malicious, and often keep slaves.
@@ -1096,7 +1088,7 @@ Arinet, Eloqi, Eskani, Horinnia, Korumun, Moranassa, Moritla, Nimanisi, Noranill
 }
 
 
-s_gob_b		= "Bugbear"
+s_gob_b		= "バグベア"
 s_gob_b_c	= "This dark-furred creature raises a spiked morningstar, its tiny, milk-white eyes glittering with the thrill of the coming kill."
 s_gob_b_d	= [[
 The bugbear is the largest of the goblinoid races, a lumbering brute that stands at least a head taller than most humans.
@@ -1194,9 +1186,9 @@ Bugbears, when they turn to religion, favor gods of murder and violence, with va
 }
 
 
-s_kobold	= "Kobold"
-s_kobold_c	= "This short, reptilian humanoid has scaled skin, a snout filled with tiny teeth, and a long tail."
-s_kobold_d	= [[
+s_kobold		= "コボルド"
+s_kobold_c		= "This short, reptilian humanoid has scaled skin, a snout filled with tiny teeth, and a long tail."
+s_kobold_d		= [[
 Kobolds are creatures of the dark, found most commonly in enormous underground warrens or the dark corners of the forest where the sun is unable to reach.
 
 Considering themselves the scions of dragons, kobolds have diminutive statures but massive egos.
@@ -1413,7 +1405,7 @@ s_trog_traits=[[
 
 <b>Armor: </b>+6 natural armor bonus.
 
-<b>Natural Weapons: </b>2 claws (1d4) and bite (1d4).
+<b>Natural Weapons: </b>2 claws (1d4) and bite (1d4).{hlp_nwpn}
 
 <b>Weapon Proficiency: </b>Proficient with simple weapons.
 
@@ -1476,7 +1468,7 @@ Troglodyte druids are usually neutral evil if they dwell with their own kind (an
 }
 
 
-s_gnoll		= "Gnoll"
+s_gnoll		= "ノール"--"Gnoll"
 s_gnoll_c	= "Hunched and feral, this furred, hyena-headed humanoid stands slightly taller than the average human."
 s_gnoll_d	= [[Gnolls are hyena-headed, evil humanoids that wander in loose tribes.
 
@@ -1637,7 +1629,7 @@ Alyara, Duline, Hoya, Jilyana, Milah, Miniri, Siphelele, Tiyeri.
 -- 巨人		Giant
 
 
-s_ogre="Ogre"
+s_ogre="オーガ"--"Ogre"
 s_ogre_c="This lumbering giant's beady eyes are devoid of wit or kindness, and its puffy face features a wide mouth with ill-fitting teeth."
 s_ogre_fav_cls="Their inherent bent toward chaos combines with their size and strength to make ogres natural barbarians. Indeed, their leaders are almost always barbarians of low to middle level, monstrous brutes whose fury in battle is truly fearsome. A raging ogre barbarian is an inspiration to other ogres.\n\nMarginally more intelligent than his brutish fellows, an ogre barbarian is slightly more likely to enter a fair fight, but in general prefers the brutish tactics common to all its kind."
 s_ogre_traits=[[
@@ -1746,7 +1738,7 @@ Ogres have been incorporated into large armies on past occasions, but usually on
 }
 
 
-s_troll="Troll"
+s_troll="トロール"--"Troll"
 s_troll_c="This tall creature has rough, green hide. Its hands end in claws, and its bestial face has a hideous, tusked underbite."
 s_troll_fav_cls="Some trolls, more cunning than most, are not satisfied with merely eating civilized beings but train to hunt them relentlessly. These troll hunters are fearsome rangers who focus on slaying and devouring humanoid prey.\n\nA troll hunter makes full use of its scent ability to track its favored enemies and generally prefers to hunt in darkness. The troll hunter uses its limited repertoire of spells to protect itself from damaging forms of energy and to immobilize enemies."
 s_troll_traits=[[
@@ -2148,7 +2140,7 @@ A satyr is about as tall and heavy as a half-elf.
 [race_ed_btl]=[[
 The keen senses of a satyr make it almost impossible to surprise one in the wild. Conversely, with their own natural grace and agility, satyrs can sneak up on travelers who are not carefully watching the surrounding wilderness.
 
-Once engaged in battle, an unarmed satyr attacks with a powerful head butt. A satyr expecting trouble is likely to be armed with a bow and a dagger and typically looses arrows from hiding, weakening an enemy before closing. 
+Once engaged in battle, an unarmed satyr attacks with a powerful head butt. A satyr expecting trouble is likely to be armed with a bow and a dagger and typically looses arrows from hiding, weakening an enemy before closing.
 ]],
 [race_ed_soc]=[[
 ]],
@@ -2178,7 +2170,7 @@ This gives them immunity to maze spells, prevents them from ever becoming lost, 
 
 Further, they are never caught flat-footed.]]
 
-s_minotaur="Minotaur"
+s_minotaur="ミノタウロス"--"Minotaur"
 s_minotaur_c="With the body of a powerfully built man and the head of a snarling bull, this creature stomps its hooves as if preparing to charge."
 s_minotaur_fav_cls=""
 s_minotaur_traits=[[
@@ -2326,7 +2318,7 @@ Often such free-spirited centaurs are considered outcasts and are shunned by the
 }
 
 
-s_medusa	= "Medusa"
+s_medusa	= "メドゥーサ"--"Medusa"
 s_medusa_c	= "This slender, attractive woman has strangely glowing eyes and a full head of hissing snakes for hair."
 s_medusa_d	= [[Medusas are human-like creatures with snakes instead of hair. At distances of 30 feet or more, a medusa can easily pass for a beautiful woman if she wears something to cover her serpentine locks—when wearing clothing that conceals her head and face, she can be mistaken for a human at even closer distances.
 
@@ -2541,7 +2533,7 @@ Despite their fiendish appearance and netherworld origins, tieflings have a huma
 [race_ed_dd2]=[[
 Tieflings are humans with demonic, devilish, or other evil outsider blood in their ancestry. Often persecuted for their strange appearance and unnatural mannerisms, most tieflings disguise their nature or are forced to live on the fringes or underbelly of civilized society. Though they are not born evil, it is an easy path for them to find, especially as most suffer at the hands of "normal" folks while growing up.
 
-Tieflings look mostly human except for some physical traits that reveal their strange heritage. 
+Tieflings look mostly human except for some physical traits that reveal their strange heritage.
 ]],
 [race_ed_phy]=[[
 No two tieflings look alike; the fiendish blood running through their veins manifests inconsistently, granting them an array of fiendish traits.
@@ -2843,7 +2835,7 @@ s_pc_elm_e_langs=[[
 <c=twc>Oreads speak Common and Terran.</c>
 ]]
 s_pc_elm_e_d=[[
-Creatures of human ancestry mixed with the blood of creatures from the Plane of Earth, oreads are as strong and solid as stone. 
+Creatures of human ancestry mixed with the blood of creatures from the Plane of Earth, oreads are as strong and solid as stone.
 
 Often stubborn and steadfast, their unyielding nature makes it hard for them to get along with most races other than dwarves.
 
@@ -2988,6 +2980,11 @@ s_genie_d		=[[Genies are humanlike beings who dwell on the elemental planes. The
 Genies prefer to outmaneuver and outthink their foes. They are not too proud to flee if it means they’ll live to fight another day. If trapped, they bargain, offering treasure or favors in return for their lives and freedom.]]
 
 -- 元素		Elemental
+-- old names
+--{n="エア・エレメンタル"},
+--{n="ファイア・エレメンタル"},
+--{n="ウォーター・エレメンタル"},
+--{n="アース・エレメンタル"},
 s_elm_sz_s		="Small"
 s_elm_sz_m		="Medium"
 s_elm_sz_l		="Large"
@@ -3023,7 +3020,7 @@ s_elm_w_h		="Huge Water Elemental"
 s_elm_w_g		="Greater Water Elemental"
 s_elm_w_e		="Elder Water Elemental"
 
-s_elm_a2		="Air Elemental"	s_elm_a2_d=[[Air elementals speak Auran, though they rarely choose to do so.
+s_elm_a2		="エア・エレメンタル"	s_elm_a2_d=[[Air elementals speak Auran, though they rarely choose to do so.
 
 <b c=tw>Combat</b>
 Their rapid speed makes air elementals useful on vast battlefields or in extended aerial combat.
@@ -3037,7 +3034,7 @@ Huge	32 ft.	8 lb.
 Greater	36 ft.	10 lb.
 Elder	40 ft.	12 lb.]]
 
-s_elm_e2		="Earth Elemental"	s_elm_e2_d=[[When summoned to the Material Plane, an earth elemental consists of whatever types of dirt, stones, precious metals, and gems it was conjured from.
+s_elm_e2		="アース・エレメンタル"	s_elm_e2_d=[[When summoned to the Material Plane, an earth elemental consists of whatever types of dirt, stones, precious metals, and gems it was conjured from.
 
 Earth elementals speak Terran but rarely choose to do so.
 
@@ -3053,7 +3050,7 @@ Huge	32 ft.	48,000 lb.
 Greater	36 ft.	54,000 lb.
 Elder	40 ft.	60,000 lb.]]
 
-s_elm_f2		="Fire Elemental"	s_elm_f2_d=[[A fire elemental cannot enter water or any other nonflammable liquid. A body of water is an impassible barrier unless the fire elemental can step or jump over it.
+s_elm_f2		="ファイア・エレメンタル"	s_elm_f2_d=[[A fire elemental cannot enter water or any other nonflammable liquid. A body of water is an impassible barrier unless the fire elemental can step or jump over it.
 
 Fire elementals speak Ignan, though they rarely choose to do so.
 
@@ -3069,7 +3066,7 @@ Huge	32 ft.	8 lb.	22
 Greater	36 ft.	10 lb.	24
 Elder	40 ft.	12 lb.	26]]
 
-s_elm_w2		="Water Elemental"	s_elm_w2_d=[[A water elemental can’t venture more than 180 feet from the body of water from which it was conjured.
+s_elm_w2		="ウォーター・エレメンタル"	s_elm_w2_d=[[A water elemental can’t venture more than 180 feet from the body of water from which it was conjured.
 
 Water elementals speak Aquan but rarely choose to do so.
 
@@ -3121,28 +3118,28 @@ s_half_dragon	="Half-dragon"
 s_half_dragon_d	=[[Half-dragon creatures are always more formidable than others of their kind that do not have dragon blood, and their appearance betrays their nature—scales, elongated features, reptilian eyes, and exaggerated teeth and claws. Sometimes they have wings.]]
 
 -- 动物		Animal
-s_rat			="Rat"
+s_rat			="ラット"--"Rat"
 s_rat_d			=[[These omnivorous rodents thrive almost anywhere. When faced with a fight, rats usually run away. They bite only as a last resort.]]
 
-s_rat_x			="Dire Rat"
+s_rat_x			="ダイア・ラット"--"Dire Rat"
 s_rat_x_c		="This filthy rat is the size of a small dog. It has a coat of coarse fur, a long and scabby tail, and two glittering eyes."
 s_rat_x_d		=[[Dire rats are omnivorous scavengers, but will attack to defend their nests and territories. Dire rat packs attack fearlessly, biting and chewing with their sharp incisors. They are common menaces in dungeons and city sewers alike.
 
 A dire rat can grow to be up to 4 feet long and weigh over 50 pounds. A dire rat is the size of a small dog. It has a coat of coarse fur, a long and scabby tail, and two glittering eyes.]]
 
-s_cat			="Cat"
-s_cheetah		="Cheetah"
-s_leopard		="Leopard"
-s_lion			="Lion"
-s_lion_x		="Dire Lion"
-s_tiger			="Tiger"
-s_tiger_x		="Dire Tiger"
+s_cat			="ネコ"
+s_cheetah		="チーター"
+s_leopard		="レオパルド"
+s_lion			="ライオン"
+s_lion_x		="ダイア・ライオン"
+s_tiger			="タイガー"
+s_tiger_x		="ダイア・タイガー"
 
-s_dog			="Dog"
-s_dog_ride		="Riding Dog"
-s_hyena			="Hyena"
+s_dog			="犬"
+s_dog_ride		="乗用犬"
+s_hyena			="ハイエナ"
 
-s_wolf			="Wolf"
+s_wolf			="ウルフ"--"Wolf"
 s_wolf_c		="This powerful canine watches its prey with piercing yellow eyes, darting its tongue across sharp white teeth."
 s_wolf_d		=[[Wolves are pack hunters known for their persistence and cunning. Wandering alone or in packs, wolves sit at the top of the food chain. Ferociously territorial and exceptionally wide-ranging in their hunting, wolf packs cover broad areas.
 
@@ -3152,7 +3149,7 @@ Generally, a wolf stands from 2-1/2 to 3 feet tall at the shoulder and weighs be
 
 A favorite tactic is to send a few individuals against the foe’s front while the rest of the pack circles and attacks from the flanks or rear.]]
 
-s_wolf_x		="Dire Wolf"
+s_wolf_x		="ダイア・ウルフ"--"Dire Wolf"
 s_wolf_x_c		="This immense black wolf is the size of a horse, its fangs as large and sharp as knives."
 s_wolf_x_d		=[[An enormous version of a normal wolf, dire wolves represent the wolf in its most primal form. These creatures follow the same basic behaviors of regular wolves, but are much more aggressive. Dire wolves prefer to attack in packs, surrounding and flanking a foe when they can. Dire wolves are efficient pack hunters that will kill anything they can catch.
 
@@ -3178,28 +3175,28 @@ s_mule			="Mule"
 
 s_camel			="Camel"
 s_camel_2		="Two-humped Camel"
-s_boar			="Boar"
-s_boar_x		="Dire Boar"
+s_boar			="ボア"--"Boar"
+s_boar_x		="ダイア・ボア"--"Dire Boar"
 s_bison			="Bison"
 s_rhinoceros	="Rhinoceros"
 s_elephant		="Elephant"
 
-s_monkey		="Monkey"
-s_baboon		="Baboon"
-s_ape			="Ape"
-s_ape_x			="Dire Ape"
+s_monkey		="モンキー"
+s_baboon		="ヒヒ"
+s_ape			="エイプ"
+s_ape_x			="ダイア・エイプ"
 
-s_bear_k		="Black Bear"
-s_bear_y		="Brown Bear"
-s_bear_w		="Polar Bear"
-s_bear_x		="Dire Bear"
+s_bear_k		="ブラックベア"
+s_bear_y		="ブラウンベア"--"Brown Bear"
+s_bear_w		="ポーラーベア"
+s_bear_x		="ダイア・ベア"--"Dire Bear"
 
-s_bat			="Bat"
-s_bat_x			="Dire Bat"
-s_raven			="Raven"
-s_owl			="Owl"
-s_hawk			="Hawk"
-s_eagle			="Eagle"
+s_bat			="バット"
+s_bat_x			="ダイア・バット"
+s_raven			="レイブン"
+s_owl			="オウル"
+s_hawk			="ホーク"
+s_eagle			="イーグル"
 
 s_toad			="Toad"
 s_snake_v_t		="Tiny Viper Snake"
@@ -3209,16 +3206,16 @@ s_snake_v_l		="Large Viper Snake"
 s_snake_v_h		="Huge Viper Snake"
 s_snake_c		="Constrictor Snake"
 s_snake_c_g		="Giant Constrictor Snake"
-s_lizard		="Lizard"
-s_lizard_g		="Monitor Lizard"
-s_croc			="Crocodile"
-s_croc_g		="Giant Crocodile"
+s_lizard		="リザード"
+s_lizard_g		="モニターリザード"
+s_croc			="クロコダイル"
+s_croc_g		="ジャイアント・クロコダイル"
 
-s_dino_dein		="Deinonychus"
-s_dino_mega		="Megaraptor"
-s_dino_elas		="Elasmosaurus"
-s_dino_tric		="Triceratops"
-s_dino_tyra		="Tyrannosaurus"
+s_dino_dein		="デイノニクス"
+s_dino_mega		="メガラプトル"
+s_dino_elas		="エラスモサウルス"
+s_dino_tric		="トリケラトプス"
+s_dino_tyra		="ティラノサウルス"
 
 s_manta_ray		="Manta Ray"
 s_octopus		="Octopus"
@@ -3243,7 +3240,7 @@ s_dinosaur_d	=[[Dinosaurs come in many sizes and shapes. Bigger varieties have d
 Dinosaurs take full advantage of their size and speed. The swift carnivores stalk prey, staying hidden in cover until they can get into charge range and rush to the attack. Herbivores frequently overrun and trample their opponents.]]
 
 -- 魔法兽	Magical Beast
-s_basilisk		="Basilisk"
+s_basilisk		="バジリスク"--"Basilisk"
 s_basilisk_c	="This squat, reptilian monster has eight legs, bony spurs jutting from its back, and eyes that glow with pale green fire."
 s_basilisk_d	=[[A basilisk is a reptilian monster that petrifies living creatures with a mere gaze.
 
@@ -3262,7 +3259,7 @@ An adult basilisk is 13 feet long, with fully half of that made up by its long t
 
 For unknown reasons, weasels and ferrets are immune to the basilisk's stare, and sometimes sneak into basilisk lairs while a parent is hunting in order to consume its young. Some legends suggest that a basilisk's blood can transmute common stones into other material, but this is likely a case of witnesses misinterpreting the magical restoration of previously petrified creatures or body parts.]]
 
-s_liz_l		="Shocker Lizard"
+s_liz_l	="ショッカー・リザード"--"Shocker Lizard"
 s_liz_l_c	="This dog-sized lizard has two horns, one on either side of its head, and scales that crackle with sparks of lightning."-- green scales
 s_liz_l_d	=[[A shocker lizard has a pale gray or blue underside, shading to a darker hue on its back. It has blue-black markings along its back and tail.
 
@@ -3297,7 +3294,7 @@ Monstrous spiders come in two general types: hunters and web-spinners. Hunters r
 -- 泥形怪物	Ooze
 
 -- 不死生物	Undead
-s_skeleton		="Skeleton"
+s_skeleton		="スケルトン"--"Skeleton"
 s_skeleton_d	=[[Skeletons are the animated bones of the dead, mindless automatons that obey the orders of their evil masters.
 
 A skeleton is seldom garbed in anything more than the rotting remnants of any clothing or armor it was wearing when slain.
@@ -3306,23 +3303,23 @@ A skeleton does only what it is ordered to do. It can draw no conclusions of its
 
 A skeleton attacks until destroyed.]]
 
-s_zombie	="Zombie"
+s_zombie	="ゾンビ"--"Zombie"
 s_zombie_d	=[[Zombies are corpses reanimated through dark and sinister magic.
 
 Because of their utter lack of intelligence, the instructions given to a newly created zombie must be very simple.]]
 
-s_ghost		="Ghost"
+s_ghost		="ゴースト"
 s_ghost_d	=[[Ghosts are the spectral remnants of intelligent beings who, for one reason or another, cannot rest easily in their graves.
 
 A ghost greatly resembles its corporeal form in life, but in some cases the spiritual form is somewhat altered.]]
 
-s_ghoul		="Ghoul"
+s_ghoul		="グール"
 s_ghoul_c	="This humanoid creature has long, sharp teeth, and its pallid flesh is stretched tightly over its starved frame."
 s_ghoul_d	=[[Ghouls are undead that haunt graveyards and eat corpses. Legends hold that the first ghouls were either cannibalistic humans whose unnatural hunger dragged them back from death or humans who in life fed on the rotting remains of their kin and died (and were reborn) from the foul disease—the true source of these undead scavengers is unclear.
 
 Ghouls lurk on the edges of civilization (in or near cemeteries or in city sewers) where they can find ample supplies of their favorite food. Though they prefer rotting bodies and often bury their victims for a while to improve their taste, they eat fresh kills if they are hungry enough. Though most surface ghouls live primitively, rumors speak of ghoul cities deep underground led by priests who worship ancient cruel gods or strange demon lords of hunger. These “civilized” ghouls are no less horrific in their eating habits, and in fact the concept of a well-laid ghoul banquet table is perhaps even more horrifying than the concept of taking a meal fresh from the coffin.]]
 
-s_lich		="Lich"
+s_lich		="リッチ"--"Lich"
 s_lich_d	=[[A lich is an undead spellcaster, usually a wizard or sorcerer but sometimes a cleric or other spellcaster, who has used its magical powers to unnaturally extend its life.
 
 A lich is a gaunt and skeletal humanoid with withered flesh stretched tight across horribly visible bones. Its eyes have long ago been lost to decay, but bright pinpoints of crimson light burn on in the empty sockets.
@@ -3339,7 +3336,7 @@ The most common form of phylactery is a sealed tiny metal box containing strips 
 
 As a rule, the only way to get rid of a lich for sure is to destroy its phylactery. Unless its phylactery is located and destroyed, a lich reappears 1d10 days after its apparent death.]]
 
-s_vampire	="Vampire"
+s_vampire	="ヴァンパイア"--"Vampire"
 s_vampire_d	=[[Vampires appear just as they did in life, although their features are often hardened and feral, with the predatory look of wolves.
 
 Like liches, they often embrace finery and decadence and may assume the guise of nobility.
@@ -3366,7 +3363,7 @@ Driving a wooden stake through a vampire’s heart instantly slays the monster. 
 
 A popular tactic is to cut off the creature’s head and fill its mouth with holy wafers (or their equivalent).]]
 
-s_vampire_spawn		="Vampire Spawn"
+s_vampire_spawn		="ヴァンパイア・スポーン"--"Vampire Spawn"
 s_vampire_spawn_d	=[[Vampire spawn are undead creatures that come into being when vampires slay mortals. Like their creators, spawn remain bound to their coffins and to the soil of their graves. Vampire spawn appear much as they did in life, although their features are often hardened, with a predatory look.
 
 Vampire spawn speak Common.
@@ -3376,7 +3373,7 @@ Vampire spawn use their inhuman strength when engaging mortals, hammering their 
 Vampire spawn are vulnerable to all attacks and effects that repel or slay vampires.]]
 
 -- 构装体	Construct
-s_golem		="Golem"
+s_golem		="・ゴーレム"--"Golem"
 s_golem_d	=[[Golems are magically created automatons of great power. Constructing one involves the employment of mighty magic and elemental forces.
 
 The animating force for a golem is a spirit from the Elemental Plane of Earth. The process of creating the golem binds the unwilling spirit to the artificial body and subjects it to the will of the golem’s creator.
@@ -3469,11 +3466,11 @@ Humanoids with more than 1 Hit Die are the only humanoids who make use of the fe
 -- z_u_tp
 u_tps_text={
 
-[uc_hum]={n="Humanoid"	,d=[[A humanoid usually has two arms, two legs, and one head, or a humanlike torso, arms, and a head.
+[uc_hum]={n="人型生物"	,d=[[人型生物は一般的に、二本の腕、二本の脚、一つの頭を持つか、人型に似た胴体、腕、頭を持つ。
 
-Humanoids have few or no supernatural or extraordinary abilities, but most can speak and usually have well-developed societies.
+人型生物は超常能力や特殊能力を全く持たないかわずかしか持たないが、多くは言葉を話し、適度に発展した社会を持つ。
 
-They usually are Small or Medium. Every humanoid creature also has a subtype.
+一般的には小型かサイズである。Every humanoid creature also has a subtype.
 
 <b>Features:</b>
 — Hit Dice: d8, or by character class.
@@ -3481,7 +3478,7 @@ They usually are Small or Medium. Every humanoid creature also has a subtype.
 — Good Saves: Reflex (usually; a humanoid’s good save varies).
 — Skill Points per HD: 2 + Int modifier, or by character class.
 
-<b>Traits:</b>
+<b>特徴：</b>
 — Proficient with all simple weapons, or by character class.
 — If wears armor, proficient with that type of armor and all lighter types, plus shields; or by character class.
 — Need to eat, sleep, and breathe.]]},
@@ -3497,7 +3494,7 @@ All giants speak Giant. Those with Int scores of 10 or higher also speak Common.
 — Good Saves: Fortitude.
 — Skill Points per HD: 2 + Int modifier.
 
-<b>Traits:</b>
+<b>特徴：</b>
 — Low-light vision.
 — Proficient with all simple and martial weapons, as well as any natural weapons.
 — If wears armor, proficient with that type of armor and all lighter types, plus shields.
@@ -3512,7 +3509,7 @@ All giants speak Giant. Those with Int scores of 10 or higher also speak Common.
 — Good Saves: Reflex and Will.
 — Skill Points per HD: 6 + Int modifier.
 
-<b>Traits:</b>
+<b>特徴：</b>
 — Low-light vision.
 — Proficient with all simple weapons and any using weapons.
 — If wears armor, proficient with that type of armor and all lighter types, plus shields.
@@ -3527,7 +3524,7 @@ All giants speak Giant. Those with Int scores of 10 or higher also speak Common.
 — Good Saves: Reflex and Will.
 — Skill Points per HD: 2 + Int modifier.
 
-<b>Traits:</b>
+<b>特徴：</b>
 — Darkvision 60 ft.
 — Proficient with all simple weapons and any using weapons.
 — If wears armor, proficient with that type of armor and all lighter types, plus shields.
@@ -3546,7 +3543,7 @@ Typical outsiders include angels, devils, and genies, among others. The planetou
 — Good Saves: Fortitude, Reflex, and Will.
 — Skill Points per HD: 8 + Int modifier.
 
-<b>Traits:</b>
+<b>特徴：</b>
 — Darkvision 60 ft.
 — Unlike most other living creatures, an outsider does not have a dual nature — its soul and body form one unit. When an outsider is slain, no soul is set loose. Normal spells that restore souls to their bodies don’t work on a non-native outsider. It takes a different more powerful magical effect to restore it to life.
 — Proficient with all simple and martial weapons, as well as any using weapons.
@@ -3554,7 +3551,7 @@ Typical outsiders include angels, devils, and genies, among others. The planetou
 — Need to breathe, but do not need to eat or sleep (although they can do so if they wish). Native outsiders eat, sleep, and breathe.]]},
 
 
-[uc_elm]={n="Elemental"	,d=[[An elemental is a being composed of one of the four classical elements: air, earth, fire, or water. Elementals are incarnations of the elements that compose existence.
+[uc_elm]={n="エレメンタル"	,d=[[エレメンタルは4種類の元素（地水火風）のうちの一つから構成されている存在です。Elementals are incarnations of the elements that compose existence.
 
 <b>Features:</b>
 — Hit Dice: d8.
@@ -3562,7 +3559,7 @@ Typical outsiders include angels, devils, and genies, among others. The planetou
 — Good Saves: Fortitude (earth, water) or Reflex (air, fire).
 — Skill Points per HD: 2 + Int modifier.
 
-<b>Traits:</b>
+<b>特徴：</b>
 — Darkvision 60 ft.
 — Immunity to poison, sleep effects, paralysis, and stunning.
 — Not subject to critical hits or flanking.
@@ -3580,7 +3577,7 @@ Typical outsiders include angels, devils, and genies, among others. The planetou
 — Good Saves: Will.
 — Skill Points per HD: 2 + Int modifier.
 
-<b>Traits:</b>
+<b>特徴：</b>
 — Darkvision 60 ft.
 — Proficient with its natural weapons. If generally humanoid in form, proficient with all simple weapons and any using weapons.
 — If wears armor, proficient with that type of armor and all lighter types, plus shields.
@@ -3595,7 +3592,7 @@ Typical outsiders include angels, devils, and genies, among others. The planetou
 — Good Saves: Fortitude, Reflex, and Will.
 — Skill Points per HD: 6 + Int modifier.
 
-<b>Traits:</b>
+<b>特徴：</b>
 — Darkvision 60 ft. and low-light vision.
 — Immunity to magic sleep effects and paralysis effects.
 — Proficient with its natural weapons only unless humanoid in form (or capable of assuming humanoid form), in which case proficient with all simple weapons and any using weapons.
@@ -3603,7 +3600,7 @@ Typical outsiders include angels, devils, and genies, among others. The planetou
 — Need to eat, sleep, and breathe.]]},
 
 
-[uc_ani]={n="Animal"	,d=[[An animal is a living, nonhuman creature, usually a vertebrate with no magical abilities and no innate capacity for language or culture.
+[uc_ani]={n="動物"	,d=[[動物は人間以外の生き物のことで、 通常は魔法能力を持たず、 言語や文化なのど能力も持たない脊椎動物です。
 
 These creatures generally operate on instinct, driven by simple needs such as food and reproduction. Most animals, even predators, do not attack unless they or their young are threatened.
 
@@ -3617,8 +3614,8 @@ Some herbivorous animals do not normally use their natural weapons to attack. As
 — Good Saves: Fortitude and Reflex saves (dire animals have all 3 good saves; certain animals have different good).
 — Skill Points per HD: 2 + Int modifier.
 
-<b>Traits:</b>
-— Int score of 1 or 2 (no creature with an Int score of 3 or higher can be an animal).
+<b>特徴：</b>
+— 【知力】は １または２で、 ３以上の【知力】を持つ動物は存在しない。
 — Low-light vision.
 — Alignment: Always neutral. Animals are not governed by a human sense of morality.
 — Treasure: Generally possess no treasure. For those that do, this treasure consists of possessions formerly owned by a creature that the monster has killed.
@@ -3627,7 +3624,7 @@ Some herbivorous animals do not normally use their natural weapons to attack. As
 — Need to eat, sleep, and breathe.]]},
 
 
-[uc_anm]={n="Magical Beast"	,d=[[Magical beasts are similar to animals but can have Int scores higher than 2. Magical beasts usually have supernatural or extraordinary abilities, but sometimes are merely bizarre in appearance or habits.
+[uc_anm]={n="魔獣"	,d=[[魔獣は 動物に似ているが、 ３以上の【知力】を持つことができる。 魔獣は通常、 超自然的または並外れた能力を持っているが、 外見や習慣は奇妙である。
 
 <b>Features:</b>
 — Hit Dice: d10.
@@ -3635,14 +3632,14 @@ Some herbivorous animals do not normally use their natural weapons to attack. As
 — Good Saves: Fortitude and Reflex.
 — Skill Points per HD: 2 + Int modifier.
 
-<b>Traits:</b>
+<b>特徴：</b>
 — Darkvision 60 ft. and low-light vision.
 — Proficient with its natural weapons only.
 — Proficient with no armor.
 — Need to eat, sleep, and breathe.]]},
 
 
-[uc_bug]={n="Vermin"	,d=[[This type includes insects, arachnids, other arthropods, worms, and similar invertebrates.
+[uc_bug]={n="蟲"	,d=[[昆虫、クモ、その他節足動物、蠕虫（ミミズなどの細くて足のない虫）その他似たような無脊椎動物。
 
 These creatures operate on instinct, driven by simple needs such as food and reproduction. Except where noted, vermin attack only when hungry or threatened.
 
@@ -3652,8 +3649,8 @@ These creatures operate on instinct, driven by simple needs such as food and rep
 — Good Saves: Fortitude.
 — Skill Points per HD: 2 + Int modifier. Most vermin are mindless and gain no skill points or feats.
 
-<b>Traits:</b>
-— Mindless: No Int score, and immunity to all mind-affecting effects.
+<b>特徴：</b>
+— 精神がない：【知力】なし。全ての精神作用からの完全耐性。
 — Darkvision 60 ft.
 — Alignment: Always neutral. Vermin are not governed by a human sense of morality.
 — Treasure: Generally possess no treasure. For those that do, this treasure consists of possessions formerly owned by a creature that the monster has killed.
@@ -3670,9 +3667,9 @@ These creatures operate on instinct, driven by simple needs such as food and rep
 — Good Saves: Fortitude.
 — Skill Points per HD: 2 + Int modifier. Some plant creatures are mindless and gain no skill points or feats.
 
-<b>Traits:</b>
+<b>特徴：</b>
 — Low-light vision.
-— Immunity to all mind-affecting effects.
+— 全ての精神作用からの完全耐性。
 — Immunity to poison, sleep effects, paralysis, polymorph, and stunning.
 — Not subject to critical hits.
 — Proficient with its natural weapons only.
@@ -3692,8 +3689,8 @@ Oozes attack any creatures they encounter. They lash out with pseudopods or simp
 — Good Saves: None.
 — Skill Points per HD: 2 + Int modifier. Most oozes are mindless and gain no skill points or feats.
 
-<b>Traits:</b>
-— Mindless: No Int score, and immunity to all mind-affecting effects.
+<b>特徴：</b>
+— 精神がない：【知力】なし。全ての精神作用からの完全耐性。
 — Blind (but have the blindsight special quality), with immunity to gaze attacks, visual effects, illusions, and other attack forms that rely on sight.
 — Blindsight (Ex): An ooze’s entire body is a primitive sensory organ that can ascertain prey by scent and vibration within 60 feet.
 — Immunity to poison, sleep effects, paralysis, polymorph, and stunning.
@@ -3704,7 +3701,7 @@ Oozes attack any creatures they encounter. They lash out with pseudopods or simp
 — Need to eat and breathe, but do not sleep.]]},
 
 
-[uc_und]={n="Undead"	,d=[[Undead are once-living creatures animated by spiritual or supernatural forces.
+[uc_und]={n="アンデッド"	,d=[[アンデッドは精神的もしくは超常的な力により動いている、以前は生きていたクリーチャーである。
 
 <b>Features:</b>
 — Hit Dice: d12.
@@ -3712,10 +3709,10 @@ Oozes attack any creatures they encounter. They lash out with pseudopods or simp
 — Good Saves: Will.
 — Skill Points per HD: 4 + Int modifier. Many undead are mindless and gain no skill points or feats.
 
-<b>Traits:</b>
-— No Con score.
+<b>特徴：</b>
+— 【耐久力】なし。
 — Darkvision 60 ft.
-— Immunity to all mind-affecting effects.
+— 全ての精神作用からの完全耐性。
 — Immunity to poison, sleep effects, paralysis, stunning, disease, and death effects.
 — Immunity to any effect that requires a Fortitude save (unless the effect also works on objects or is harmless).
 — Not subject to critical hits, nonlethal damage, ability drain, or energy drain. Immune to damage to its physical ability scores (Str, Dex, and Con), as well as to fatigue and exhaustion effects.
@@ -3727,7 +3724,7 @@ Oozes attack any creatures they encounter. They lash out with pseudopods or simp
 — Do not eat, sleep, and breathe.]]},
 
 
-[uc_cst]={n="Construct"	,d=[[A construct is an animated object or artificially constructed creature.
+[uc_cst]={n="人造"	,d=[[人造は動いている物体や人工的に製作されたクリーチャーである。
 
 <b>Features:</b>
 — Hit Dice: d10.
@@ -3735,10 +3732,10 @@ Oozes attack any creatures they encounter. They lash out with pseudopods or simp
 — No good saving throws.
 — Skill Points per HD: 2 + Int modifier. Most constructs are mindless and gain no skill points or feats.
 
-<b>Traits:</b>
-— No Con score.
+<b>特徴：</b>
+— 【耐久力】なし。
 — Darkvision 60 ft. and low-light vision.
-— Immunity to all mind-affecting effects.
+— 全ての精神作用からの完全耐性。
 — Immunity to poison, sleep effects, paralysis, stunning, disease , death effects, and necromancy effects.
 — Immunity to any effect that requires a Fortitude save (unless the effect also works on objects or is harmless).
 — Not subject to critical hits, nonlethal damage, ability damage, ability drain, fatigue, exhaustion, or energy drain.
@@ -3788,7 +3785,7 @@ u_sub_tps_text={
 
 
 [ust_ang]={n=s_angel		,d=s_angel_d.."\n\n"..[[
-<b>Traits:</b>
+<b>特徴：</b>
 — Darkvision 60 ft. and low-light vision.
 — Immunity to acid, cold, and petrification.
 — Resistance to electricity 10 and fire 10.
@@ -3798,7 +3795,7 @@ u_sub_tps_text={
 
 
 [ust_arc]={n=s_archon		,d=s_archon_d.."\n\n"..[[
-<b>Traits:</b>
+<b>特徴：</b>
 — Darkvision 60 ft. and low-light vision.
 — Immunity to electricity and petrification.
 — +4 racial bonus on saves against poison.
@@ -3810,7 +3807,7 @@ u_sub_tps_text={
 
 [ust_shp]={n="Shapechanger"	,d=[[A shapechanger has the supernatural ability to assume one or more alternate forms. Many magical effects allow some kind of shape shifting, and not every creature that can change shapes has the shapechanger subtype.
 
-<b>Traits:</b>
+<b>特徴：</b>
 — Proficient with its natural weapons, with simple weapons, and with any weapons mentioned in the creature’s description.
 — If wears armor, proficient with that type of armor and all lighter types, plus shields.]]},
 
@@ -3850,7 +3847,7 @@ A swarm of Fine creatures consists of 10,000 creatures, whether they are flying 
 
 Swarms of nonflying creatures include many more creatures than could normally fit in a 10-foot square based on their normal space, because creatures in a swarm are packed tightly together and generally crawl over each other and their prey when moving or attacking. Larger swarms are represented by multiples of single swarms. A large swarm is completely shapeable, though it usually remains contiguous. Gigantic hordes are actually composed of dozens of swarms in close proximity.
 
-<b>Traits:</b>
+<b>特徴：</b>
 A swarm composed of Fine or Diminutive creatures is immune to all weapon damage.
 A swarm made up of Tiny creatures takes half damage from slashing and piercing weapons.
 A swarm has no clear front or back and no discernable anatomy, so it is not subject to critical hits or flanking.
